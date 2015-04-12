@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE14177">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE14177</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 104v</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0104v" to="0104v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-11-18" n="Friday" evidence="inferred"/></p>
+<p><time notBefore="05:25:00" notAfter="10:40:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="religiousExperience"><person sameAs="#rnapier" resp="#mhawkins"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-11-07">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-11-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>R N nov<choice><orig>&eover;</orig><reg>em</reg></choice>b 18. <add place="supralinear"><choice><sic>18.</sic><corr type="noText"/></choice></add> &FridayLatin; hor <lb/>5. <subst><del type="over">30</del><add place="over">25</add></subst>. &antm; <choice><sic><unclear cert="high" reason="blot">1603</unclear></sic><corr type="noText"/></choice> <add place="infralinear">1603.</add></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>n<choice><orig>&uover;</orig><reg>un</reg></choice>qu<choice><orig>&aover;</orig><reg>am</reg></choice> melius <lb/>deo misericord<choice><orig><hi rend="overline">issi</hi></orig><reg>issimi</reg></choice> <lb/><choice><orig>g<hi rend="overline">r&aelig;</hi></orig><reg>grati&aelig;</reg></choice> quas possit <lb/>mens mea capere <lb/>et reddere maximas</p>
+</div>
+</body>
+</text>
+</TEI>

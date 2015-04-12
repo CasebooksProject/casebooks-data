@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE26718">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26718</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 42v</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0042v" to="0042v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tp">
+<persName><forename>Thomas</forename> <surname>Peace</surname></persName>
+<sex value="1">M</sex>
+<age value="46">46</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-02-07" n="Friday"/></p>
+<p><time when="17:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tp"/>
+<cb:subject ref="#tp" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#tp"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-11">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-03-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Tho: Pease <rs type="address" xml:id="address1">of Brackly</rs> <lb/>46 y feb. 7. &Friday; ho 5. 30 <lb/>p. m. 1606</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

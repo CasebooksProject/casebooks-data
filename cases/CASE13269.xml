@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13269">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13269</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 120r/Q1, f. 120v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 120r-v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0120r" to="0120v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sb">
+<persName><forename>Susan</forename> <surname>Blundell</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1586-09-17" n="Saturday" sameAs="#date1"/><time xml:id="head-time1" when="20:07:00" sameAs="#time1" exclude="#head-time2"/><time xml:id="head-time2" when="18:00:00" sameAs="#time2" exclude="#head-time1"/><placeName sameAs="#address1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597" cert="medium"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#sb"/>
+<cb:subject ref="#sb" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#sb" resp="#mhawkins"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0244.jpg" url="Ashmole-175-0244.jpg" n="120v"/>
+<graphic xml:id="Ashmole-175-0243.jpg" url="Ashmole-175-0243.jpg" n="120r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><add place="lineBeginning">Susan Blundle</add> <rs type="date" xml:id="date1">1586. the 17 of Septemb <lb/><del type="strikethrough">at</del> on satterd</rs> <rs type="time" xml:id="time1">morning <lb/>at 8. 7 mi</rs>. <del type="strikethrough">at.</del></p>
+</div>
+&astroChartPartial;
+
+<div><pb xml:id="f120v" n="120v"/>
+<p><lb/>Susan Blundle borne betwixt <lb/>8 &amp; 9 in the <choice><sic>mornng</sic><corr>morning</corr></choice> on <lb/><rs type="date" sameAs="#date1">saterday 1586</rs>. <rs type="address" xml:id="address1">in Great <lb/>Linford <foreign xml:lang="la">in comit. Bucchingh.</foreign></rs> <lb/><rs type="date" sameAs="#date1">the 17 of Septemb.</rs> <del type="strikethrough">7 at <subst><del type="over">8</del><add place="over">6</add></subst></del> <lb/><del type="strikethrough">a clock. 30. m.</del> <rs type="time" xml:id="time2">at <del type="cancelled">8</del> 6 a clock</rs> <lb/><choice><sic>&amp;</sic><corr type="delText"/></choice> <del type="strikethrough">57. mi. 5</del> <del type="strikethrough">6 &amp; 5 mi:</del> <add place="infralinear"><del type="strikethrough">6 h. &amp; 11. m.</del></add> <add place="infralinear">at <rs type="time" sameAs="#time1">8. <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">7</add></subst> m.</rs></add></p>
+</div>
+&astroChartPartial;
+</body>
+</text>
+</TEI>

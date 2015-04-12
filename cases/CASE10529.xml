@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10529">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10529</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 63v</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0063v" to="0063v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="g1">
+<persName><surname evidence="inferred">Gascoyne</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1599-09-16" n="Sunday" sameAs="#date1"/><time when="04:15:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="g2">
+<persName><roleName>Mr</roleName> <surname>Gascoyne</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="father" active="#g2" passive="#g1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-05-10" n="Saturday" evidence="external"/></p>
+<p><time when="04:50:00" evidence="external"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#g2" evidence="external" present="unclear"/>
+<cb:subject ref="#g1" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="external"><person sameAs="#g1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-26">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-10-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-01">Split into two files by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2012-03-02">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0134.jpg" url="Ashmole-202-0134.jpg" n="63v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Gascoynes Daughter <lb/><foreign xml:lang="la">nata <rs type="date" xml:id="date1">septemb. 16. &SundayN;</rs> <rs type="time" xml:id="time1">h. <lb/>4.<choice><orig><subst><del type="over"><unclear reason="over" cert="medium">20</unclear></del><add place="over">i5</add></subst></orig><reg>15</reg></choice> mi. <choice><orig><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice></rs>. <rs type="date" sameAs="#date1"><choice><sic><subst><del type="strikethrough">1600</del> <add place="supralinear">1<subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">5</add></subst>99</add></subst>.</sic><corr type="delText"/></choice> <lb/>1599</rs>.</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

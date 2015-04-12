@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE28317">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE28317</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 299r</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0299r" to="0299r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="pt">
+<persName><forename>Paul</forename> <surname>Tye</surname></persName>
+<sex value="1">M</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-10-22" n="Wednesday"/></p>
+<p><time when="12:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#pt"/>
+<cb:subject ref="#pt" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#pt"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-06-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-06-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Paule Tye <rs type="address" xml:id="address1">of litle Harwood</rs> <lb/>30 y <choice><orig><choice><sic>vnmayed</sic><corr>vnmaryed</corr></choice></orig><reg>unmaryed</reg></choice>. Octob. 22 &Wednesday; h. 12. 50 <lb/><choice><sic>ant m</sic><corr>pm</corr></choice>. 1606</p>
+</div>
+&astroChartPartial;
+</body>
+</text>
+</TEI>

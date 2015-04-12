@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10022">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10022</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-11-05">05 November 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="195">MS Ashmole 195, f. 45v</idno>
+&Forman003;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0045v" to="0045v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ao">
+<persName><forename>Anne</forename> <surname>Oxford</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w" evidence="internal">
+<persName><surname>Ward</surname></persName>
+<sex value="1">M</sex>
+<residence key="databaseNormalizedIDKey">at the spittel gate</residence>
+<occupation>Surgeon</occupation>
+</person>
+<person xml:id="o" evidence="internal">
+<persName><surname>Owen</surname></persName>
+<sex value="1">M</sex>
+<residence key="databaseNormalizedIDKey">at smithfild</residence>
+<occupation>Surgeon</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-04-29" n="Saturday"/></p>
+<p><time when="09:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#ao" evidence="internal"/>
+<cb:subject ref="#ao" present="unclear"/>
+<cb:topic key="diz" resp="#sforman"><person sameAs="#ao"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="previousConsultation"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2010-11-04">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-01-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-01-16">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-195-0092.jpg" url="Ashmole-195-0092.jpg" n="45v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>An Oxford <lb/>of 40 years 1598 <lb/>the 29 Aprill &Saturday; <lb/>&anmfl; 15 &past; 9 Diz <lb/>her self <rs type="address" xml:id="address1">at broken <lb/>wharf</rs>&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE28948">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE28948</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 87v</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0087v" to="0087v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mw">
+<persName><forename>Margaret</forename> <surname>Wincot</surname></persName>
+<sex value="2">F</sex>
+<age value="44">44</age>
+</person>
+<person xml:id="d">
+<persName><roleName>Lady</roleName> <surname>Denton</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="w">
+<persName><surname evidence="inferred" cert="medium">Wincot</surname></persName>
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<listRelation><relation name="wife" active="#mw" passive="#w"/><relation name="servant" active="#w" passive="#d"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-05-08" n="Wednesday"/></p>
+<p><time when="10:12:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mw"/>
+<cb:subject ref="#mw" present="unclear"/>
+<cb:topic key="pregnancy"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="nausea"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="appetite"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="dry"><person sameAs="#mw"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-11-20">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>my lady Dentons mans wife <lb/>mai&jVowel; 8 &Wednesday; h. <del type="strikethrough">12.</del> 10. 12. &antm; <lb/>1605. <add place="inline">Margaret Wincot 44 y</add></p>
+<p><lb/>hath taken her selfe to be <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child sinc twelfetyde to <lb/>Easter. but hath had a great <lb/>many of her sicknesses &amp; doe <lb/>follow her ever since but she <lb/>is as big as if shee were <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>child &amp; shee thincketh <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> shee <lb/>feeleth something styrr as if <lb/>shee were <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child. very sick <lb/>fr<choice><orig>&oover;</orig><reg>om</reg></choice> 3 in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> morning to 2 in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>noone <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she c<choice><orig>&aover;</orig><reg>an</reg></choice> take no rest. <lb/>neith<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> a bed nor &vVowel;p.</p>
+<p><lb/>shee maketh &amp; laboureth sometymes <lb/>to vomite but brin<subst><del type="over"><unclear cert="low" reason="del">k</unclear></del><add place="over">g</add></subst>eth &vVowel;p nothing <lb/>but wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> eateth nothing but <lb/>breath. shee is very dry.</p>
+</div>
+<div>
+<cb xml:id="colA" n="a"/>
+<p><lb/>Margaret wyncot 44 <lb/>y. mai&jVowel; 8 &Wednesday; h. 10. 12 <lb/>&antm; 1605.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

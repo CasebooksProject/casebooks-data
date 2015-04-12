@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12469">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12469</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 165r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0165r" to="0165r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Amy</forename> <surname>Harbarte</surname></persName>
+<sex value="2">F</sex>
+<age value="34">34</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Harbarte</surname></persName>
+<sex value="0">U</sex>
+<death><date when="1597" precision="low"/></death>
+</person>
+<listRelation><relation name="mother" active="#ah" passive="#h"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-05-16" n="Wednesday"/></p>
+<p><time when="15:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ah"/>
+<cb:subject ref="#ah" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-11-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-11-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0331.jpg" url="Ashmole-228-0331.jpg" n="165r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Amy Harburd. 34. had <lb/>a child but is ded 2 <rs type="date" xml:id="date1">yeres <lb/>sinc</rs>. may the <choice><orig>i</orig><reg>1</reg></choice>6 <choice><orig>die <lb/>&MercurySymbol;</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> h. 3. 20. 1599. sick ever <lb/>sinc midlent <add place="supralinear"><rs type="address" xml:id="address1">of Olnye</rs></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

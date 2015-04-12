@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11688">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11688</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 28v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0028v" to="0028v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ac">
+<persName><forename>Agnes</forename> <surname>Cowly</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c">
+<persName><surname evidence="inferred">Cowly</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1598-09-12" n="Tuesday" sameAs="#date1"/><time when="22:30:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="sister" mutual="#ac #anon"/><relation name="son" active="#c" passive="#ac"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-09-14" n="Thursday"/></p>
+<p><time when="14:12:00"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ac" evidence="internal" present="no"/>
+<cb:subject ref="#c" present="no"/>
+<cb:messenger ref="#anon"/>
+<cb:topic key="throatMouth"><person sameAs="#c"/></cb:topic>
+<cb:topic key="treatment"><person sameAs="#c"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-03-01">Split into two files by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2012-03-05">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0060.jpg" url="Ashmole-228-0060.jpg" n="28v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><del type="strikethrough">Goody A<unclear reason="hand" cert="low">i</unclear>g</del></p>
+<p><lb/>Agnes Cowly was Delivered <lb/>&vVowel;ppon <del type="strikethrough">weddensday</del> <choice><sic>morning</sic><corr type="delText"/></choice> <lb/><del type="strikethrough">of a little boy</del> tuesday night. <lb/>Sept 12 of Sept. of a boy <lb/>who is tounge tyed. shee <lb/>sent her sister to me to knowe <lb/>where the signe is <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <del type="strikethrough">her <lb/>boyes</del> this 14 of Sept. <choice><orig>die <lb/>&JupiterSymbol;</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> <del type="strikethrough">b</del> at h. 2. <del type="strikethrough">p</del> 12. m. <choice><orig><subst><del type="over">f</del><add place="over">p</add></subst>ost <lb/>m</orig><reg>pm</reg></choice> <foreign xml:lang="la">fortassis &vVowel;t lingu<choice><orig>&aover;</orig><reg>am</reg></choice> nerv<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>abscinderet. 1598 hic puer natus <lb/><rs type="time" xml:id="time1"><choice><orig>nocte</orig><reg>nocte</reg><reg type="gloss">at night</reg></choice> 10. 30. m.</rs> natus <lb/><rs type="date" xml:id="date1"><choice><sic>Setemb.</sic><corr>Septemb.</corr></choice> 12. &TuesdayN;</rs> h. 10. 30.</foreign><note place="chart">nativitas <lb/>pueris.</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

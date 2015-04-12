@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13431">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13431</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 116v</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0116v" to="0116v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="el">Greek</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="an">
+<persName><forename>Avis</forename> <surname>Nichols</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="n">
+<persName><forename evidence="external">Thomas</forename> <surname evidence="inferred">Nichols</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><surname>Foulkes</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="mother" active="#an" passive="#n"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-09-20" n="Tuesday"/></p>
+<p><time when="16:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#an #f #n"/>
+<cb:topic key="history"><person sameAs="#an"/><person sameAs="#f"/></cb:topic>
+<cb:topic key="paternity"><person sameAs="#n"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-23">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-03-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0236.jpg" url="Ashmole-182-0236.jpg" n="116v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Avis Nichols venit ad me 1597. <lb/>et poma sec<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> attulit sept. 20 <lb/>&TuesdayN; h. 4. <del type="strikethrough">1<subst><del type="over">6</del><add place="over">7</add></subst></del> <choice><sic>mi.</sic><corr type="delText"/></choice> 15. m <choice><orig>post <lb/>merid</orig><reg>pm</reg></choice> qu&aelig;ro cuiusmodi sit habet fili<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> <lb/>Anonymon. et ipsa <del type="strikethrough">fo</del> <foreign xml:lang="el">&pi;&omicronacute;&rho;&nu;&eta;</foreign> fer<unclear reason="hand" cert="medium">re</unclear>t <lb/>fookes esse suppositit&flourish; patr<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice> huius fili&jVowel;</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

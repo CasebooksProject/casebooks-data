@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21895">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21895</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 210v</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0210v" to="0210v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rt">
+<persName><roleName>Mr</roleName> <forename>Richard</forename> <surname>Trist</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d">
+<persName><roleName>Mrs</roleName> <surname>Duncombe</surname></persName>
+<sex value="2">F</sex>
+<age value="55" xml:id="age1" exclude="#age2">55</age>
+<age value="60" xml:id="age2" exclude="#age1">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="mother-in-law" active="#d" passive="#rt"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-01-10" n="Thursday"/></p>
+<p><time when="09:40:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rt" evidence="internal" present="unclear"/>
+<cb:subject ref="#d" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#d"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-09-30">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><add place="supralinear"><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> dunc<choice><orig>&oover;</orig><reg>om</reg></choice>be <rs type="address" xml:id="address1">of East Claydon</rs> <lb/>55 yeres.</add> M<hi rend="superscript">r</hi> Rich <del type="strikethrough">S</del> Tryst <lb/>for his mother in <lb/>law. 60 y &IConsonant;an. 10 <lb/>&Thursday; h. 9. 40 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1605.</p>
+</div>
+</body>
+</text>
+</TEI>

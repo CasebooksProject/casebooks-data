@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29329">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE29329</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 135r</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0135r" to="0135r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jf">
+<persName><roleName>Mrs</roleName> <forename>Jane</forename> <surname>Flood</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lady</roleName></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="f1">
+<persName><surname evidence="inferred">Flood</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="f2">
+<persName><surname evidence="inferred">Flood</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="f3">
+<persName><surname evidence="inferred">Flood</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="f4">
+<persName><surname evidence="inferred">Flood</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="f5">
+<persName><surname evidence="inferred">Flood</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="f6">
+<persName><surname evidence="inferred">Flood</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="f7">
+<persName><surname evidence="inferred">Flood</surname></persName>
+<death><date notAfter="1605-06-25"/></death>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="daughter" active="#jf" passive="#person1"/><relation name="mother" active="#jf" passive="#f1 #f2 #f3 #f4 #f5 #f6 #f7"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-06-26" n="Wednesday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation type="horary">
+<cb:location type="querentVisitsPractitioner"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jf"/>
+<cb:subject ref="#jf" present="yes"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jf"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-01-31">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> &IConsonant;ane flood <rs type="address" xml:id="address1">of lecham<lb/>steede</rs>. 30 y &IConsonant;une 26. &Wednesday; h. 12 <lb/>&antm; 1605. my ladyes. <lb/>Daughter above 3 quarters <lb/>of a yere hath had 7 chi<gap reason="damage" extent="unclear"/> <lb/>the last Dyed. 16 weekes <lb/>aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; smothered.</p>
+</div>
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

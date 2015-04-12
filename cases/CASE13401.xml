@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13401">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13401</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<notesStmt><note type="blank" resp="#jyoung">This entry is wholly deleted.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 100v</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0100v" to="0100v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<birth><date when="1559-05-04" n="Thursday" sameAs="#date1"/><time notBefore="21:00:00" notAfter="22:00:00" sameAs="#time1"/><placeName sameAs="#address1"/></birth>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1597" notAfter="1598" evidence="conjecture" cert="low"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-02-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-02-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0204.jpg" url="Ashmole-182-0204.jpg" n="100v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/><del type="blockStrikethrough">Rich Nap<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <add place="supralinear"><rs type="date" xml:id="date1">mai&jVowel; 4. die Asc:</rs></add> devoniensis <rs type="address" xml:id="address1">Exoni&jVowel;</rs> nat<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/><rs type="date" sameAs="#date1">a<choice><orig><hi rend="overline">no</hi></orig><reg>nno</reg></choice> <choice><orig><hi rend="overline">dni</hi></orig><reg>domini</reg></choice> 1559. p<choice><orig><hi rend="overline">rio</hi></orig><reg>rimo</reg></choice> <subst><del type="over">E</del><add place="over">a</add></subst><choice><orig><hi rend="overline">no</hi></orig><reg>nno</reg></choice> regni Elisa<lb/>beth&aelig; &ThursdayN; et Ascens</rs> <rs type="time" xml:id="time1">hor <choice><orig>post <lb/>m</orig><reg>pm</reg></choice>. quando lucern&aelig; accendabant<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice>. int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>9 et 10</rs>. sed de hora recte c<choice><orig>&oover;</orig><reg>on</reg></choice>i&jVowel;cere <lb/>n<choice><orig>&oover;</orig><reg>on</reg></choice> possum<choice><orig>&uscon;</orig><reg>us</reg></choice> duob<choice><orig>&uscon;</orig><reg>us</reg></choice> dieb<choice><orig>&uscon;</orig><reg>us</reg></choice> aut <choice><orig>&conjunctionSymbol;</orig><reg>coniunctionibus</reg></choice> <choice><orig>&SunSymbol;</orig><reg>Solis</reg></choice> et <choice><orig>&MoonSymbol;</orig><reg>Lun&aelig;</reg></choice>.</del></p>
+</div>
+&astroChartDeleted;
+</body>
+</text>
+</TEI>

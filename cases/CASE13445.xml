@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13445">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13445</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 126r</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0126r" to="0126r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<age value="42">42</age>
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<birth><date when="1559-05-04" n="Thursday" sameAs="#date1"/><time when="19:19:00" sameAs="#time1"/><placeName sameAs="#address1"/></birth>
+<sex value="1">M</sex>
+</person>
+<person xml:id="an">
+<persName><forename>Alexander</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><forename>Agnes</forename> <surname>Birchley</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="son" active="#rnapier" passive="#an #ab"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-05-04" n="Monday"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-23">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-03-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0255.jpg" url="Ashmole-182-0255.jpg" n="126r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Richardus Na<choice><orig>&crossedp;</orig><reg>per</reg></choice> filius Alexandri <del type="strikethrough">et Ag</del> <lb/>Na<choice><orig>&crossedp;</orig><reg>per</reg></choice><unclear cert="low" reason="hand">s</unclear> et Agnetis Burchly natus <rs type="address" xml:id="address1"><add place="lineEnd">in civitate</add> <lb/>Exoni&jVowel; in comitatu devoni&aelig;</rs> sub latitudine <lb/>52. <del type="strikethrough">16</del> <rs type="date" xml:id="date1">mai&jVowel; 4 die Ascensionis <choice><orig><hi rend="overline">Ihu<del type="strikethrough">s</del></hi></orig><reg>Jehu</reg></choice> <choice><orig>Ch<hi rend="overline">ri</hi></orig><reg>Christi</reg></choice> <lb/>salvatoris et redemptoris <choice><orig><hi rend="overline">nri</hi></orig><reg>nostri</reg></choice> <choice><orig><hi rend="overline">oi</hi>b&uscon;</orig><reg>omnibus</reg></choice> modis vene<lb/>randi &Thursday;</rs> <rs type="time" xml:id="time1">hor 7 septima. minutis 19. p m</rs> <lb/><rs type="date" sameAs="#date1">1559 in <choice><orig>p<hi rend="overline">rio</hi></orig><reg>primo</reg></choice> <choice><sic>An<hi rend="overline">no</hi></sic><corr>Anno</corr></choice> regni Elisabeth&aelig;</rs>. <lb/><del type="strikethrough">16</del> facta 1601. c<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> esset <foreign xml:lang="en">42 y c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>plete</foreign><note place="pageTop">vera supputatio</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

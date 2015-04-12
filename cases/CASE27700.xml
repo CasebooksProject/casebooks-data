@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE27700">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE27700</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 203r</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0203r" to="0203r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="td">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Duncombe</surname></persName>
+<sex value="1">M</sex>
+<age value="13">13</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1593-04-20" xml:id="date2" sameAs="#date1" exclude="#date3" cert="low"/><date when="1593-04-15" n="Sunday" xml:id="date3" exclude="#date2" cert="high"/><time when="15:00:00" sameAs="#time1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1606-07-01T07:00:00" notAfter-custom="1606-07-02T08:00:00" evidence="inferred"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#td"/>
+<cb:subject ref="#td" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#td"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-05-29">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-06-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Thomas Dunc<choice><orig>&oover;</orig><reg>om</reg></choice>be <lb/><rs type="address" xml:id="address1">of Broughton</rs> 13 y <lb/><rs type="date" xml:id="date1">East<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> day last was 13. <lb/>y &Sunday;</rs> <rs type="time" xml:id="time1">h 3. p m</rs> <rs type="date" sameAs="#date1"><subst><del type="strikethrough">16</del> <add place="infralinear">1593</add></subst></rs></p>
+</div>
+</body>
+</text>
+</TEI>

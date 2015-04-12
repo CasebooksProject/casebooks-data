@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12383">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12383</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 150v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0150v" to="0150v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jk">
+<persName><forename>John</forename> <surname>Kilpine</surname></persName>
+<sex value="1">M</sex>
+<age value="23">23</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="k">
+<persName><forename evidence="external">Richard</forename> <surname evidence="external">Kilpine</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#jk" passive="#k"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-05-05" n="Saturday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jk" evidence="internal"/>
+<cb:subject ref="#jk" present="no"/>
+<cb:topic key="diz" resp="#rnapier"><person sameAs="#jk"/></cb:topic>
+<cb:topic key="fallingSickness"><person sameAs="#jk"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-10-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-04">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0302.jpg" url="Ashmole-228-0302.jpg" n="150v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Kilpine <rs type="address" xml:id="address1">of Northe <lb/>Crowly</rs> 23. yeres old sent <lb/>&vVowel;nto me for his disease <lb/>who hath bene troubled <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a falling sicknes <lb/>who fometh very litle but Drou<lb/>leth. who falleth when it <lb/>taketh him on his backe <lb/>&amp; <subst><del type="over">&crossedp;</del><add place="over">st</add></subst>retcheth him selfe <choice><sic>a</sic><corr type="noText"/></choice> <lb/>&amp; p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently riseth again <lb/>&amp; is well. as often as <lb/>any thing hitteth him or <lb/>st<choice><orig>&uover;</orig><reg>um</reg></choice>bleth or at meate if <lb/>any thinge feareth him it <lb/>come as it were by a fright<lb/>ment Mai&jVowel; 5. &SaturdayN;. h. 9 <lb/>&antm;. 1599. very desirous <lb/>his father should come.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

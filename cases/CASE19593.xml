@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE19593">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE19593</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 147r</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0147r" to="0147r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ms">
+<persName><forename>Mary</forename> <surname>Sandy</surname> <surname type="alternate" evidence="external">Napier</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="sister-in-law" active="#ms" passive="#rnapier" evidence="external"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-05-18" n="Monday"/></p>
+<p><time when="09:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ms"/>
+<cb:subject ref="#ms" present="unclear"/>
+<cb:topic key="problemCause"><person sameAs="#ms"/></cb:topic>
+<cb:topic key="catarrh"><person sameAs="#ms"/></cb:topic>
+<cb:topic key="head"><person sameAs="#ms"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#ms"/></cb:topic>
+<cb:topic key="joints"><person sameAs="#ms"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-05-17">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-06-06">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0297.jpg" url="Ashmole-404-0297.jpg" n="147r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>soror mea Maria Sandye <lb/><rs type="address" xml:id="address1">Londinensis</rs> petit morbi caus<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice> catarrhe et capite frigido <lb/>et iuncturis Mai&jVowel; 18 <lb/>&Monday; hor 9. 45 &antm; <choice><orig>160<subst><del type="over">0</del><add place="over">i</add></subst></orig><reg>1601</reg></choice>. <lb/><choice><sic>160<choice><orig>i</orig><reg>1</reg></choice></sic><corr type="noText"/></choice></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

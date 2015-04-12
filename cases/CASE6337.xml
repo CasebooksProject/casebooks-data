@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE6337">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE6337</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="219">MS Ashmole 219, f. 195r</idno>
+&Forman004;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0195r" to="0195r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jt">
+<persName><forename><del type="redactedCancelled">John</del></forename> <surname><del type="redactedCancelled">T<gap reason="del" extent="10" unit="chars"/></del></surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="2" cert="medium">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-11-14" n="Wednesday"/></p>
+<p><time when="17:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:object ref="#jt #anon"/>
+<cb:topic key="unknown" reason="deleted"><person sameAs="#sforman"/><person sameAs="#jt"/><person sameAs="#anon"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-05-12">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-05-17">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-07-14">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-219-0396.jpg" url="Ashmole-219-0396.jpg" n="195r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<head rend="centered"><foreign xml:lang="la">nota &slash;</foreign></head>
+<p><lb/>Questo wher <del type="redactedCancelled"><gap reason="del" unit="words" extent="2"/></del> <rs type="address" xml:id="address1">of <del type="redactedCancelled"><gap reason="del" unit="words" extent="2"/></del> in <del type="redactedCancelled"><gap reason="del" unit="words" extent="3"/> <add place="infralinear"><gap reason="del" unit="words" extent="1"/></add></del></rs> <lb/><choice><sic>somtms</sic><corr>somtims</corr></choice> of <placeName><unclear reason="hand" cert="medium">ch</unclear>e<choice><unclear reason="hand" cert="medium">n</unclear><unclear reason="hand" cert="medium">u</unclear></choice>son</placeName> <foreign xml:lang="la">vult <del type="redactedCancelled"><gap reason="del" unit="words" extent="1"/></del> <lb/><unclear reason="hand" cert="medium">Ad</unclear><del type="redactedCancelled"><gap reason="del" unit="chars" extent="8"/></del> <unclear reason="blot" cert="low">si</unclear> <del type="redactedCancelled"><gap reason="del" unit="words" extent="1"/></del> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> <del type="redactedCancelled"><gap reason="del" unit="words" extent="1"/> <lb/>ali<gap reason="del" extent="1" unit="chars"/>s <gap reason="del" unit="words" extent="2"/> c<choice><orig>&uover;</orig><reg>um</reg></choice> <unclear reason="del" cert="low"><choice><orig><hi rend="overline">Ihoe</hi></orig><reg>Johanne</reg></choice></unclear> <lb/>T<gap reason="del" unit="chars" extent="10"/></del></foreign> <del type="redactedCancelled"><rs type="address" xml:id="address2">of <gap reason="del" unit="words" extent="1"/></rs></del> <foreign xml:lang="la"><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice></foreign> <lb/>1599 the 14 of novemb &slash; &Wednesday; <choice><orig>p <lb/>m&flourish;</orig><reg>pm</reg></choice> at 30 &past; 5 <foreign xml:lang="la"><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice></foreign> noe &slash;</p>
+</div>
+
+&astroChartBlank;
+</body>
+</text>
+</TEI>

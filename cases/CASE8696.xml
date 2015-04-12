@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE8696">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE8696</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#rralley">This entry is inserted in gaps in the previous entry. Its question comes between question and chart of <ref target="CASE8695" type="case">CASE8695</ref>, its judgment below the judgment for 8695.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="411">MS Ashmole 411, f. 13r</idno>
+&Forman006;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0013r" to="0013r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Borman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><forename>Anne</forename> <surname type="married" evidence="inferred">Borman</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="wife" active="#ab" passive="#b"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-01-25" n="Sunday"/></p>
+<p><time when="13:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#b" evidence="internal" present="unclear"/>
+<cb:subject ref="#ab" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ab"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-03-16">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-05-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-25">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-411-0027.jpg" url="Ashmole-411-0027.jpg" n="13r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/><choice><sic>nn<hi rend="superscript">r</hi></sic><corr>m<hi rend="superscript">r</hi></corr></choice> Borman for An his wif <lb/><foreign xml:lang="la">ad hoc tempus</foreign>.</p>
+</div>
+</body>
+</text>
+</TEI>

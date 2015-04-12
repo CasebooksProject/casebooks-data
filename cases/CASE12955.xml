@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12955">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12955</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 249r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0249r" to="0249r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tl">
+<persName><forename>Thomas</forename> <surname>Longueville</surname></persName>
+<sex value="1">M</sex>
+<death><date notBefore="1600-01-01" notAfter="1600-01-02" cert="medium" sameAs="#date1"/></death>
+</person>
+<org xml:id="suo">
+<orgName>The surgeons in Oxford</orgName>
+</org>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1600-01-06T08:35:00" notAfter-custom="1600-01-07T11:30:00" evidence="inferred"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#tl #suo"/>
+<cb:topic key="lunatic"><person sameAs="#tl"/></cb:topic>
+<cb:topic key="treatment"><org sameAs="#suo"/><person sameAs="#tl"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-07">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-02-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-05">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0499.jpg" url="Ashmole-228-0499.jpg" n="249r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>The surgions in <placeName>Oxford</placeName> <lb/>began to cut M<hi rend="superscript">r</hi> Thomas <lb/>Longfilds head &amp; afterward <lb/>seered his scull &amp; after<lb/>ward Did Drill his skull <lb/>that is poure &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> his <lb/>skull some corrosives that <lb/>so they <choice><sic>may</sic><corr type="noText"/></choice> <subst><del type="over">g</del><add place="over">m</add></subst>might get <lb/>out a bladder <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> they <lb/>thought caused his mad<lb/>nes. <del type="strikethrough">but he</del> <choice><sic>the</sic><corr>they</corr></choice> beg<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>to cut his head the 5 <lb/>of Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. &WednesdayN; h p m <lb/>3. 30. mi. 1599. but <lb/>he dyed <rs type="date" xml:id="date1">the weddensday <lb/>moneth after or the <lb/>tuesday</rs></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

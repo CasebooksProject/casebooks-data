@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13132">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13132</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#rralley">This entry is entirely deleted.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 31r/Q1, f. 30v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 31r, f. 30v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0031r" to="0030v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sb">
+<persName><forename>Susan</forename> <surname>Blundell</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1586-09-17" n="Saturday" sameAs="#date1"/><time when="05:00:00" sameAs="#time1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1597-01-29" cert="medium" evidence="conjecture"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#sb"/>
+<cb:subject ref="#sb" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#sb" resp="#mhawkins"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0065.jpg" url="Ashmole-175-0065.jpg" n="31r"/>
+<graphic xml:id="Ashmole-175-0064.jpg" url="Ashmole-175-0064.jpg" n="30v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><del type="blockStrikethrough">Susan <choice><sic>Bludle</sic><corr>Blundle</corr></choice> borne <lb/><rs type="date" sameAs="#date1">1586. the 17 of Septemb. <lb/>on Saterday</rs>. 
+morning betwixt <lb/>7 &amp; 8 as others betwixt 2 &amp; <lb/>3 mor. but we 
+take it about <lb/>7 &amp; 30 m. mor. <add place="inline">or rather <lb/>as we find at <rs type="time" sameAs="#time1">5 a clock mor</rs>.</add></del></p>
+</div>
+&astroChartPartialDeleted;
+<div><pb xml:id="f30v" n="30v"/>
+<p><lb/><del type="blockStrikethrough">Susan Blundle. borne <rs type="date" xml:id="date1">1586 the <lb/>17 of Septemb. on satterd</rs> <choice><sic>morng</sic><corr>morning</corr></choice> <lb/><rs type="time" xml:id="time1">at 5 a clock morning</rs> the neerest <lb/>to the houre in our gesse &amp; leekliest <lb/>the trueth.<note place="marginLeft"><foreign xml:lang="la">verius c&aelig;teris cal<lb/>culata h&aelig;c nativitas</foreign></note></del></p>
+</div>
+&astroChartDeleted;
+</body>
+</text>
+</TEI>

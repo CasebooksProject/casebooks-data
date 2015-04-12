@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE6627">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE6627</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 10v</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0010v" to="0010v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mu">
+<persName><forename>Margery</forename> <surname type="maiden">Upton</surname></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rb">
+<persName><forename>Richard</forename> <surname>Bedall</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="nu">
+<persName><forename>Nicholas</forename> <surname evidence="external">Upton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cm">
+<persName><forename>Catherine</forename> <surname>Maddox</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="daughter" active="#mu" passive="#nu #cm"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-01-22" n="Tuesday"/></p>
+<p><time when="10:10:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#mu"/>
+<cb:subject ref="#mu" present="unclear"/>
+<cb:object ref="#rb"/>
+<cb:topic key="maritalProspects"><person sameAs="#mu"/> <person sameAs="#rb"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-12-03">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-03-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0030.jpg" url="Ashmole-236-0030.jpg" n="10v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/>Mar&iConsonant;erie &VVowel;pton of 24 yers <add place="supralinear">the daughter of nicolas &amp; Katerin maddox</add> <lb/>1600 the 22 of &IConsonant;ani &Tuesday; &Anmfl; <lb/>at 10 &past; 10. <foreign xml:lang="la">&VVowel;trum Ric<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/>Bedo vult eam <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>ducere <lb/>necnon</foreign>&slash; both dwell <rs type="address" xml:id="address1">in <lb/>S<hi rend="superscript">t</hi> clemens <choice><orig>&crossedp;</orig><reg>par</reg></choice>ish in the strond&slash; <lb/>in the church yerd</rs></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10277">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10277</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 31v</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0031v" to="0031v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="md">
+<persName><forename>Margery</forename> <surname>Dayrell</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ad">
+<persName><forename>Anne</forename> <surname type="maiden">Dayrell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="daughter" active="#ad" passive="#md"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-04-08" n="Tuesday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#md" evidence="internal"/>
+<cb:subject ref="#md" present="unclear"/>
+<cb:subject ref="#ad" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#md"/></cb:topic>
+<cb:topic key="greenSickness"><person sameAs="#ad"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-31">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-09-06">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-07-06">Merged with CASE10278 by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-09-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0070.jpg" url="Ashmole-202-0070.jpg" n="31v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">M<hi rend="superscript">res</hi></hi></orig><reg>Mrs</reg></choice> Margarie Dorell <lb/><rs type="address" xml:id="address1">of lillingstone</rs> for <lb/>her selfe Ap. 8 <choice><orig>die <lb/>&MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 10. 30 <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> 1600</p>
+</div>
+
+<div>
+<p><lb/>&amp; for her <del type="strikethrough">w</del>yongest <lb/>daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>. An Dayrell <lb/>the grene sicknes.</p>
+</div>
+</body>
+</text>
+</TEI>

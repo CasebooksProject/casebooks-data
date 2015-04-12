@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE26619">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26619</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 22r</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0022r" to="0022r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mc">
+<persName><roleName>Lady</roleName> <forename>Mary</forename> <surname>Cheyney</surname></persName>
+<sex value="2">F</sex>
+<age value="45">45</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1560-02-25" xml:id="date2" sameAs="#date1" exclude="#date3"/><date when="1560-01-25" xml:id="date3" sameAs="#date1" exclude="#date2"/><time notBefore="06:00:00" notAfter="07:00:00" xml:id="time2" sameAs="#time1" exclude="#time3"/><time notBefore="18:00:00" notAfter="19:00:00" xml:id="time3" sameAs="#time1" exclude="#time2"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-01-17" n="Friday"/></p>
+<p><time when="08:25:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mc"/>
+<cb:subject ref="#mc" present="unclear"/>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#mc"/></cb:topic>
+<cb:topic key="problemCause"><person sameAs="#mc"/></cb:topic>
+<cb:topic key="requestingTreatment"><person sameAs="#mc"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-03">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>my lady mary Chayne <lb/><rs type="address" xml:id="address1">of Drayton</rs> 46 y at <lb/><foreign xml:lang="la"><rs type="date" xml:id="date1">feb 25 die <choice><orig><hi rend="overline">scti</hi></orig><reg>sancti</reg></choice> pauli</rs> <lb/><rs type="time" xml:id="time1">int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 6 et 7</rs> nata nunc <lb/>pr<choice><orig>&iover;</orig><reg>im</reg></choice>o qu&aelig;rit morbi caus<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>et remedi<choice><orig>&uover;</orig><reg>um</reg></choice>.</foreign> &IConsonant;an. 17. <lb/>&Friday;. h. 8. 25 <choice><orig>ant</orig><reg>am</reg></choice> 1606.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

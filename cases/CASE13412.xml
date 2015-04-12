@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13412">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13412</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 106r</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0106r" to="0106r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gr">
+<persName><forename>Gregory</forename> <surname>Reynolds</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Commissary</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-09-19" n="Monday"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal" present="yes"/>
+<cb:subject ref="#gr" present="yes"/>
+<cb:topic key="legalMatters"><person sameAs="#gr"/></cb:topic>
+<cb:topic key="clearingName"><person sameAs="#gr"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-03-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0215.jpg" url="Ashmole-182-0215.jpg" n="106r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Greg Raynold. 1597. Sept <lb/>19. &MondayN;. h. 3. 50 m. <choice><orig>post <lb/>merid</orig><reg>pm</reg></choice>. venit ad nos &vVowel;t <choice><orig>lr<hi rend="overline">as</hi></orig><reg>litteras</reg></choice> <lb/><choice><orig>n<del type="cancelled"><gap reason="del" unit="chars" extent="1"/></del><hi rend="overline">ra</hi>s</orig><reg>nostras</reg></choice> ad c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>missari<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> afferret. <lb/>et &vVowel;t se purgaret a crimine ad&vVowel;l</p>
+<p><lb/>cui dixi me libent<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> ei <choice><orig>lras</orig><reg>litteras</reg></choice> nostras concessur<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>, modo ex hac <lb/>fig. e<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> ab hoc <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">c</add></subst>rimine liberum <lb/>invenirem.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE3512">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE3512</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="195">MS Ashmole 195, f. 41v</idno>
+&Forman003;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0041v" to="0041v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mr</roleName> <surname>Culpaper</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-04-21" n="Friday"/></p>
+<p><time when="05:30:00"/></p>
+<cb:consultation type="caseNotes">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:object ref="#c"/>
+
+<cb:topic key="treatment"><person sameAs="#c"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-11-04">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-01-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-02-16">Coding upgraded by <name sameAs="#rralley">Robert Ralley</name>.</change>
+ <change when="2011-07-12">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-01-16">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-195-0084.jpg" url="Ashmole-195-0084.jpg" n="41v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/>the 21 of Aprill &Friday; &Anmfl; <lb/>at 30 &past; 5.</p>
+</div>
+&astroChart;
+<div>
+ <p><lb/>at this tym m<hi rend="superscript">r</hi> culpa<choice><orig>&crossedp;</orig><reg>per</reg></choice> tok <lb/>hys vomit <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> wrote alto<lb/>gether <choice><sic>doward&pluralLoop;</sic><corr>downward&pluralLoop;</corr></choice> &amp; not &vVowel;p<lb/>ward&pluralLoop; at all. <add place="lineEnd"><unclear reason="hand" cert="medium" resp="#rralley">stu<choice><orig>&mover;</orig><reg>mm</reg></choice>i</unclear> gr 5</add></p>
+<p><lb/>On Sundai morn<choice><orig>&iover;</orig><reg>in</reg></choice>g folowin<supplied reason="binding">g</supplied> <lb/>being the 23. Aprill he toke the <lb/>sam dos of stibi<choice><orig>&uover;</orig><reg>um</reg></choice> again for a <lb/>vomit And yt wrot D<choice><orig><hi rend="overline">owa</hi></orig><reg>ownwa</reg></choice>rd&pluralLoop; <lb/>Again altogether and not <lb/>&vVowel;pward at all &amp; yt brought <lb/>moch veri ill &amp; stinking mater <lb/>from him</p>
+</div>
+</body>
+</text>
+</TEI>

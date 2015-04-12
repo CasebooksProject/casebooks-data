@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13144">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13144</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 39r/Q1, f. 38v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, ff. 39r, 38v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0039r" to="0038v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="vl">
+<persName><forename>Valentine</forename> <surname>Lane</surname></persName>
+<sex value="1">M</sex>
+<birth><date xml:id="head-date1" when="1576-01-23" n="Monday" sameAs="#date1" exclude="#head-date2"/><date xml:id="head-date2" when="1576-01-22" n="Sunday" sameAs="#date2" exclude="#head-date1"/><time when="01:30:00" sameAs="#time1"/><placeName sameAs="#address1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597" cert="medium"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#vl"/>
+<cb:subject ref="#vl" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="external" cert="high"><person sameAs="#vl"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0081.jpg" url="Ashmole-175-0081.jpg" n="39r"/>
+<graphic xml:id="Ashmole-175-0080.jpg" url="Ashmole-175-0080.jpg" n="38v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Valent Lane. <foreign xml:lang="la">natus <rs type="date" xml:id="date1">1576</rs></foreign> <rs type="date" sameAs="#date1">the <lb/>23 of &IConsonant;an: &MondayN;</rs> on munday 
+<choice><sic>mornng</sic><corr>morning</corr></choice> <lb/><rs type="time" xml:id="time1">betwixt on &amp; 2. a clock. at <del type="strikethrough">on</del> <add place="supralinear">h.</add> 1. 30 m. <lb/><choice><orig>ant mer:</orig><reg>am</reg></choice></rs> <rs type="address" xml:id="address1">at Lowton in Buckinghamshire <lb/><foreign xml:lang="la">sub Latitud:</foreign></rs></p>
+</div>
+&astroChartDeleted;
+&astroChart;
+<div><pb xml:id="f38v" n="38v"/>
+<p><lb/>Valentyne lane <foreign xml:lang="la">natus</foreign> <rs type="address" sameAs="#address1">at lowton</rs> &Monday; <lb/>&IConsonant;an. 23. <add place="supralinear">or rath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <rs type="date" xml:id="date2">&Sunday;</rs> <rs type="time" sameAs="#time1">h. 13. 30. p m.</rs> <del type="strikethrough">1615</del> 1576.</add> <add place="inline"><rs type="date" sameAs="#date2">&IConsonant;an. 22. &Sunday;</rs> <rs type="time" sameAs="#time1">h. 13. 30 p m</rs>. <rs type="date" sameAs="#date2">1576</rs>.</add></p>
+</div>
+&astroChart;
+&astroChart;
+</body>
+</text>
+</TEI>

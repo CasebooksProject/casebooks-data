@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE5292">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE5292</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="219">MS Ashmole 219, f. 57v</idno>
+&Forman004;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0057v" to="0057v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#unknown-x">Unidentified Hand (1630)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="unknown-x">
+<persName><roleName>Unidentified scribe (1630)</roleName></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="ew">
+<persName><forename>Edward</forename> <surname>Weston</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><surname>Cox</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="widow" active="#c" passive="#ew"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1630-01-12" n="Tuesday"/></p>
+<p><time when="13:40:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c"/>
+<cb:subject ref="#c" present="unclear"/>
+<cb:topic key="pregnancy"><person sameAs="#c"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-04-19">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-04-26">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-219-0120.jpg" url="Ashmole-219-0120.jpg" n="57v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>Cooke<choice><orig>&loop;</orig><reg>s</reg></choice> wife of Edee weston <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> is nowe <lb/>A widdowe where shee bee with Child or noe <lb/>1630 the 12 of &IConsonant;anua&flourish; &Tuesday; <choice><orig>p <add place="supralinear">me&flourish;</add></orig><reg>pm</reg></choice> at 40 &past; i</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

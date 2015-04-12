@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE18920">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE18920</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 34v</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0034v" to="0034v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p1">
+<persName><roleName>Mrs</roleName> <surname>Piggot</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="p2">
+<persName><surname evidence="inferred">Piggot</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="husband" active="#p2" passive="#p1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-02-17" n="Tuesday"/></p>
+<p><time when="08:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#p1" evidence="internal" present="no"/>
+<cb:subject ref="#p2" present="no" consent="no"/>
+<cb:topic key="requestingTreatment"><person sameAs="#p2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-03-29">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-04-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0072.jpg" url="Ashmole-404-0072.jpg" n="34v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> <del type="strikethrough">P<unclear cert="medium" reason="del">n</unclear>g</del> pigget <lb/>sent for me to come &amp; c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>fort <lb/>her husb: <foreign xml:lang="la">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign> <lb/>feb. 17. <choice><orig>die <choice><sic>&MoonSymbol;</sic><corr type="delText"/></choice> &MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> hor 8 <lb/>15 <del type="strikethrough">p m</del> &antm;. 1601.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

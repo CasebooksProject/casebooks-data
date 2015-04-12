@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12125">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12125</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 109r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0109r" to="0109r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Anne</forename> <surname>Hammon</surname></persName>
+<sex value="2">F</sex>
+<age value="56">56</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<death evidence="internal"><date when="1599-05-22" precision="medium"/></death>
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Hammon</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="husband" active="#h" passive="#ah"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-03-22" n="Thursday"/></p>
+<p><time when="13:10:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ah" evidence="internal"/>
+<cb:subject ref="#ah" present="no"/>
+<cb:messenger ref="#h"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="torso"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="stiffness"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="costive"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="shortWinded"><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0221.jpg" url="Ashmole-228-0221.jpg" n="109r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>An Haman 56 <rs type="address" xml:id="address1">of litle brick<lb/>hill</rs>: sick ever sinc Christ<lb/>mas not hart sick but swol<lb/>len in her body &amp; in her legs <lb/>&amp; very stiffe sent to me by her <lb/>husband. Marti&jVowel; 22. &ThursdayN; <lb/><choice><sic>&SaturnSymbol;</sic><corr>h</corr></choice>. 1. 10. 1599. very costive <lb/>&amp; as if shee were st<unclear reason="hand" cert="medium">oun</unclear>ge <lb/>&amp; cannot rise except shee be <lb/>lifted. very cold &amp; stiffe &amp; <lb/>short winded &amp; leekely to die <lb/>1599.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

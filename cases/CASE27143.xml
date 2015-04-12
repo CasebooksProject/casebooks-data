@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE27143">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE27143</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 108r</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0108r" to="0108r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h">
+<persName><roleName>Mr</roleName> <surname>Haselrigg</surname></persName>
+<sex value="1">M</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="mh">
+<persName><forename>Mary</forename> <surname>Haselrigg</surname></persName>
+<sex value="2">F</sex>
+<age value="11">11</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="dh">
+<persName><forename>Donald</forename> <surname>Haselrigg</surname></persName>
+<sex value="1">M</sex>
+<age value="6">6</age>
+</person>
+<listRelation><relation name="daughter" active="#mh" passive="#h"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-04-15" n="Tuesday"/></p>
+<p><time when="11:25:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h #mh"/>
+<cb:subject ref="#h #dh #mh" present="unclear"/>
+<cb:topic key="looseness"><person sameAs="#h"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="head"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="skin"><person sameAs="#dh"/></cb:topic>
+<cb:topic key="face"><person sameAs="#dh"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-04-07">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-05-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Haselrig <rs type="address" xml:id="address1">of <lb/>Alderton</rs> 40 y Apr <lb/>15 &Tuesday; h. 11. 25. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1606 soluble this <lb/>fortnight 5 or six stooles <lb/>a day. not weake <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>it.</p>
+<p><lb/>yellowish wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</p>
+<p><lb/>Mary Hazlerig his <lb/>Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>. 11 y Apr 15. <add place="infralinear">hed ach.</add></p>
+<p><lb/>Donald Haselr: 6. y Apr <lb/>15. breaketh out in his <lb/>face.&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

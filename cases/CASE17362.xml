@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE17362">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE17362</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 113v/Q3, f. 114r/Q1A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="221">MS Ashmole 221, ff. 113v-114r</idno>
+&Napier006;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0113v" to="0114r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w1">
+<persName><roleName>Mrs</roleName> <surname type="married">Whaley</surname></persName>
+<sex value="2">F</sex>
+<age value="23">23</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w2">
+<persName><roleName>Mr</roleName> <surname>Whaley</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="wife" active="#w1" passive="#w2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1602-06-26" n="Saturday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#w1" evidence="internal" present="yes"/>
+<cb:subject ref="#w2" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#w2"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-05-19">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-06-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-221-0232.jpg" url="Ashmole-221-0232.jpg" n="114r"/>
+<graphic xml:id="Ashmole-221-0231.jpg" url="Ashmole-221-0231.jpg" n="113v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Whaly. 23. y. <rs type="address" xml:id="address1">of <lb/>Cosgrave</rs> &IConsonant;une. 26. &Saturday; <lb/>hor. 10. &antm;. 1602.</p>
+</div>
+&astroChart;
+
+<div><pb xml:id="f114r" n="114r"/>
+<p><lb/>this day M<hi rend="superscript">r</hi> Whaly <lb/>came to me for his <lb/>wife &amp; I invited them <lb/>to Dynner.</p>
+</div>
+</body>
+</text>
+</TEI>

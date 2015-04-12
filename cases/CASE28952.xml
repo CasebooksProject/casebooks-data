@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE28952">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE28952</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<notesStmt><note type="editorial" resp="#jyoung">This entry is an addendum to <ref type="case" target="CASE28951">CASE28951</ref>. The time and date have been taken from that case.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 88r</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0088r" to="0088r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="dh">
+<persName><roleName>Mr</roleName> <forename>Donald</forename> <surname>Haselrigg</surname></persName>
+<sex value="1">M</sex>
+<age value="5">5</age>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-05-08" n="Wednesday" evidence="conjecture"/></p>
+<p><time when="11:20:00" evidence="conjecture"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#dh" present="unclear"/>
+<cb:topic key="impostume"><person sameAs="#dh"/></cb:topic>
+<cb:topic key="head"><person sameAs="#dh"/></cb:topic>
+<cb:topic key="nose"><person sameAs="#dh"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-11-20">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Donald Hazelrigge 5 y <lb/>voydeth mutch filth <del type="strikethrough">at h</del> at boath <lb/>his nostrels stincking not <lb/>sick <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it <del type="strikethrough">c<unclear cert="low" reason="del">orre</unclear></del> feare of <lb/>some Impostumation of hed.</p>
+</div>
+</body>
+</text>
+</TEI>

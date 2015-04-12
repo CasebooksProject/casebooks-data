@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11811">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11811</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 54r/Q4, f. 54v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 54r-v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0054r" to="0054v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mf">
+<persName><forename>Margaret</forename> <surname>Fowler</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h">
+<persName><name>H</name></persName>
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-11-18" n="Saturday" evidence="external"/></p>
+<p><time when="11:20:00" evidence="external"/></p>
+<cb:consultation type="decumbiture">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mf"/>
+<cb:subject ref="#mf" present="unclear"/>
+<cb:object ref="#h"/>
+<cb:topic key="heart"><person sameAs="#mf"/></cb:topic>
+<cb:topic key="joints"><person sameAs="#mf"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#mf"/></cb:topic>
+<cb:topic key="head"><person sameAs="#mf"/></cb:topic>
+<cb:topic key="eyes"><person sameAs="#mf"/></cb:topic>
+<cb:topic key="rheum"><person sameAs="#mf"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#h"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-01">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-03-01">Split into two files by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2012-03-05">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0111.jpg" url="Ashmole-228-0111.jpg" n="54r"/>
+<graphic xml:id="Ashmole-228-0112.jpg" url="Ashmole-228-0112.jpg" n="54v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Margaret fowler <rs type="address" xml:id="address1">of New<lb/>port</rs> of 30 yeres old. <lb/>sick a longe time about <lb/>h<subst><del type="over">is</del><add place="over">er</add></subst> hart &amp; every &iConsonant;oynt <lb/>&amp; a great payne in her <lb/>hed of long time. <subst><del type="over"><unclear reason="del" cert="low">t</unclear></del><add place="over">c</add></subst>om<lb/>playned on thursdaye <lb/>last</p>
+<pb xml:id="f54v" n="54v"/>
+<p><lb/>Margaret fowler <rs type="address" sameAs="#address1">of Newport</rs> <lb/>&vVowel;nmaried of <del type="strikethrough">40</del> 30 yeres <lb/>old sick a long time in hed <lb/><choice><sic>hed</sic><corr type="noText"/></choice> &amp; hart &amp; hath a great <lb/>reume come over her eyes <lb/>for this longe time complayneth <lb/>sinc thursday last about 12 <lb/>at midnight. &ThursdayN; novemb <lb/>16. &ThursdayN;. h. 12. at midnight <lb/>1598. they feare lest shee be <lb/>bewitched of H.</p>
+</div>
+&astroChartPartial;
+&astroChart;
+</body>
+</text>
+</TEI>

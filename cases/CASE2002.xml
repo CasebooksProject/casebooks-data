@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE2002">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE2002</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#jyoung">This entry is unusual in layout: the question begins in the lower part of the left column, then runs across both columns, then picks up again a little further up the right column. The judgment comes immediately below this last section of the question.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 139v</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0139v" to="0139v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<person xml:id="wp1">
+<persName><forename>William</forename> <surname>Palmer</surname></persName>
+<sex value="1">M</sex>
+<age value="38">38</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Merchant</occupation>
+</person>
+<person xml:id="wp2">
+<persName><forename>William</forename> <surname>Palmer</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cp">
+<persName><forename>Catherine</forename> <surname>Palmer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="fr">
+<persName><forename>Frances</forename> <surname>Randall</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="tr">
+<persName><forename>Thomas</forename> <surname>Randall</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ma">
+<persName><forename>Mary</forename> <surname>Agborough</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="l">
+<persName><roleName>Captain</roleName> <surname>Lancaster</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="son" active="#wp1" passive="#wp2 #cp"/>
+<relation name="husband" active="#wp1" passive="#fr"/>
+<relation name="daughter" active="#fr" passive="#tr #ma"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-07-04" n="Monday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#anon" present="unclear" evidence="inferred"/>
+<cb:subject ref="#wp1" present="no"/>
+<cb:judgment/>
+<cb:topic key="absentPerson"><person sameAs="#wp1"/></cb:topic>
+<cb:topic key="aliveOrDead"><person sameAs="#wp1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-11-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2010-12-07">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-02-14">Header revised by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0288.jpg" url="Ashmole-226-0288.jpg" n="139v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/><choice><orig><hi rend="overline">Willm</hi></orig><reg>William</reg></choice> Palmer of 38 yers <lb/><rs type="address" xml:id="address1">of whitcrose stret</rs> marchant <lb/>the sonn&flourish; of <choice><orig><hi rend="overline">willm</hi></orig><reg>william</reg></choice> &amp; katerin&flourish; <lb/>The husband of &ff;raunces Ran<lb/>dole <del type="strikethrough">&amp; mary</del> Daughter of <lb/>Thomas Randoll &amp; mary <lb/>Agborough. this man <lb/>went awai 3 yers agoe <lb/>almost at mihelmas into <placeName>India</placeName> <lb/>to knowe what is becom of him <lb/><foreign xml:lang="la">vita at mors &slash;</foreign> he went awai <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> captain Lancaster <lb/>in <name type="ship">the Re&uConsonant;endg</name>.</p> <cb xml:id="colB" n="b"/>
+<p><lb/>questo 1597 <gap reason="blotDel" unit="chars" extent="2"/> the 4 &IConsonant;uly &Monday; <lb/>&Anflmfl; at 9.</p>
+
+</div>
+</body>
+</text>
+</TEI>

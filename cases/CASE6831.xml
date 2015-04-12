@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE6831">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE6831</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 36r</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0036r" to="0036r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m1">
+<persName><surname evidence="inferred" cert="medium">Marsh</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m2">
+<persName><surname evidence="inferred" cert="medium">Marsh</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wa">
+<persName><forename>Winifred</forename> <surname>Armitage</surname></persName>
+<sex value="2">F</sex>
+<age value="22">22</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="jm">
+<persName><forename>Joan</forename> <surname>Marsh</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="son" active="#m1" passive="#jm"/><relation name="brother" mutual="#m1 #m2"/><relation name="daughter" active="#wa" passive="#m2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-02-29" n="Friday"/></p>
+<p><time when="13:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#m1" evidence="internal" present="unclear"/>
+<cb:subject ref="#wa #jm" present="no"/>
+<cb:topic key="childbirth"><person sameAs="#wa"/></cb:topic>
+<cb:topic key="liveOrDie"><person sameAs="#jm"/></cb:topic>
+<cb:topic key="fortune"><person sameAs="#wa"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-12-16">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+ <change when="2011-03-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0081.jpg" url="Ashmole-236-0081.jpg" n="36r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/>&VVowel;nifret Armitage <lb/>of 22 years 1600 the <lb/>29 of feb. &Friday; &pmfl; at <lb/>30 &past; &jVowel; <rs type="address" xml:id="address1">of Kirlies abby <lb/>in yeorkshire</rs> beinge <lb/><choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> child howe she shall be deli&uConsonant;ered of yt. <foreign xml:lang="la">et de <lb/>vita et morte illius</foreign></p>
+ <p><lb/>Also wher &IConsonant;one marsh his <lb/>mother be in Any <choice><orig>&crossedp;</orig><reg>per</reg></choice>ill of Deth</p>
+</div>
+&astroChart;
+<div>
+ <p><lb/>The third house is the <choice><orig>as&ssquiggle;</orig><reg>ascendant</reg></choice> of <lb/>the question because the &vVowel;nkell <lb/>Demaundeth the question of his <lb/>brothers daughter. &amp; the 7<hi rend="superscript">th</hi> <lb/>house for that it is the house of <lb/>children from the brother&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

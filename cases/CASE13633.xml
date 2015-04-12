@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13633">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13633</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 17r</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0017r" to="0017r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><roleName>Mr</roleName> <surname>Lea</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><surname>Cooper</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-04-01" n="Friday" evidence="inferred"/></p>
+<p><time notBefore="10:00:00" notAfter="12:15:00" evidence="inferred"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="journeys"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-10-03">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-10-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> lea sent <del type="strikethrough">his</del> <lb/>Coo<choice><orig>&crossedp;</orig><reg>per</reg></choice> to pray me to <lb/>tend to the child <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>was sore sicke &vVowel;p <lb/>marti&jVowel; 30 &Wednesday; hor. 7. <lb/>&antm;. 1603. <foreign xml:lang="la">eo <choice><orig>&crossedp;</orig><reg>pro</reg></choice>fect<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/>s<choice><orig>&uover;</orig><reg>um</reg></choice>. post intendens ne <lb/>v<choice><orig>&loopedr;</orig><reg>er</reg></choice>sus <placeName>hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sham.</placeName></foreign> on met <lb/>me in the way &amp; tur<lb/>ned me wh<unclear cert="medium" reason="hand">ence</unclear>.</p>
+<p><lb/><foreign xml:lang="la">qu&aelig;ro quid remor&aelig; et <lb/><unclear cert="low" reason="hand">our</unclear> dom<choice><orig>&uover;</orig><reg>um</reg></choice> redeo</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

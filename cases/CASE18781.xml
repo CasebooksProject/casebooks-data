@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE18781">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE18781</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 7r</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0007r" to="0007r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="es">
+<persName><forename>Edward</forename> <surname>Simons</surname></persName>
+<sex value="1">M</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ae" evidence="internal">
+<persName><forename>Alice</forename> <surname>Evans</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-01-12" n="Monday"/></p>
+<p><time when="11:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#es" evidence="internal"/>
+<cb:subject ref="#es" present="no"/>
+<cb:object ref="#ae"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#es"/></cb:topic>
+<cb:topic key="witchcraft" evidence="inferred" cert="medium"><person sameAs="#ae"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-03-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-04-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2014-01-16">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0017.jpg" url="Ashmole-404-0017.jpg" n="7r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><del type="strikethrough">Simo</del> Edward Symon <rs type="address" xml:id="address1">of <lb/>Asho<unclear reason="hand" cert="medium">n</unclear></rs> 40 y. <choice><sic>I</sic><corr type="noText"/></choice> about <subst><del type="strikethrough">a 12 <lb/>moneth</del> <add place="supralinear">last <choice><orig><hi rend="overline">sum</hi>er</orig><reg>summer</reg></choice></add></subst> <choice><sic>sinc</sic><corr type="delText"/></choice> he was sick of a bur<lb/>ning ague. &amp; god vouchsafed that <lb/>I should helpe him <choice><orig>p&loopedr;</orig><reg>pre</reg></choice>sently <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>that physicke I sent him god be <lb/>praysed sent nowe to me this <lb/>12 of &IConsonant;an. &MondayN; hor. 11. 45. <lb/>&antm;. 1601.</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

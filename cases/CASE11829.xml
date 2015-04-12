@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11829">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11829</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 58r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0058r" to="0058r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="js">
+<persName><forename>Jane</forename> <surname>Smith</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="s">
+<persName><surname evidence="inferred" cert="high">Smith</surname></persName>
+<sex value="0">U</sex>
+<age atMost="3" evidence="inferred">under 4</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="mother" active="#js" passive="#s"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-11-30" n="Thursday"/></p>
+<p><time when="09:18:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#js"/>
+<cb:subject ref="#js" present="unclear"/>
+<cb:topic key="scouring"><person sameAs="#js"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#js"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#js"/></cb:topic>
+<cb:topic key="stitch"><person sameAs="#js"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#js"/></cb:topic>
+<cb:topic key="head"><person sameAs="#js"/></cb:topic>
+<cb:topic key="sleeplessness"><person sameAs="#js"/></cb:topic>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-02">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0119.jpg" url="Ashmole-228-0119.jpg" n="58r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ane Smithe 30 yeres old <del type="strikethrough">sc</del> <rs type="address" xml:id="address1">of haversham</rs> sick this sennet. <lb/>scoureth mutch this 2 days. Dry, will nothing mouth sore <lb/>water high coloured. well blooded woman Novemb. 30. <lb/>&ThursdayN; h. 9. 1598. h. 9. 18. m. &antm;. 1598. a stitch &vVowel;nder <lb/>her right side. shee sucketh her child mutch payne in her <lb/>hed &amp; cannot sleepe.</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

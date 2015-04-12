@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11374">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11374</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 188v</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0188v" to="0188v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="em">
+<persName><forename>Elizabeth</forename> <surname>Morgan</surname></persName>
+<sex value="2">F</sex>
+<age value="38">38</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rn">
+<persName><forename>Richard</forename> <surname>Nichols</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="b">
+<persName><roleName>Mother</roleName> <surname>Balle</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="mb">
+<persName><forename>Margery</forename> <surname>Bagly</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c">
+<persName><surname>Cole</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Widow</roleName> <surname>Man</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#c" passive="#mb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-11-05" n="Wednesday"/></p>
+<p><time when="12:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#em"/>
+<cb:subject ref="#em" present="unclear"/>
+<cb:object ref="#b #mb #c #m"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#em"/></cb:topic>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#em"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#b"/><person sameAs="#mb"/><person sameAs="#c"/><person sameAs="#m"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-01-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-01-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0384.jpg" url="Ashmole-202-0384.jpg" n="188v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elis. Morgan <rs type="address" xml:id="address1">of Lawndon</rs> <lb/>38. novemb. 5. &Wednesday; h. 12. 15 <lb/>p m. 1600</p>
+<p><lb/>Rich. Nichols <rs type="address" xml:id="address2">of Chipping warden</rs> <lb/>20 miles. sayth see was bewitchd</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Bale.</p>
+<p><lb/>Margary Baglye her <lb/>mother Cole susp.</p>
+<p><lb/>Widow Man.</p>
+</div>
+</body>
+</text>
+</TEI>

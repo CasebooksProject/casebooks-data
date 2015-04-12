@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE18754">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE18754</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 2v</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0002v" to="0002v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><roleName>Mr</roleName> <surname>Piggot</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="gp">
+<persName><roleName>Mr</roleName> <forename>George</forename> <surname evidence="external">Piggot</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="brother" mutual="#p #gp"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-01-05" n="Monday"/></p>
+<p><time when="08:54:00" xml:id="time1" exclude="#time2 #time3"/></p>
+<p><time when="09:00:00" xml:id="time2" exclude="#time1 #time3"/></p>
+<p><time when="09:30:00" xml:id="time3" exclude="#time1 #time2"/></p>
+<cb:consultation type="horary"> 
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#p" evidence="internal"/>
+<cb:subject ref="#p" present="unclear"/>
+<cb:subject ref="#gp" present="no"/>
+<cb:topic key="haemorrhoids"><person sameAs="#p"/></cb:topic>
+<cb:topic key="witchcraft"/>
+<cb:topic key="weak"><person sameAs="#gp"/></cb:topic>
+<cb:topic key="everywhere"><person sameAs="#gp"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-03-19">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-04-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0008.jpg" url="Ashmole-404-0008.jpg" n="2v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Pigget <rs type="address" xml:id="address1">of lathbury</rs> <lb/>for him selfe &amp; his broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</p>
+<p><lb/>M<hi rend="superscript">r</hi> George <rs type="address" xml:id="address2">of Bech<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice></rs>pton</p>
+<p><lb/><foreign xml:lang="la">prior habet hemeroydes. alt<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>&vVowel;ni&uConsonant;<choice><orig>&loopedr;</orig><reg>er</reg></choice>sal<choice><orig>&eover;</orig><reg>em</reg></choice> debilitat<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice> corp. me<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over"><unclear cert="medium" reason="over">tu</unclear></add></subst>s <lb/>venef.</foreign> &IConsonant;an. 5 &MondayN; h. 8. <lb/><subst><del type="over">4</del><add place="over">5</add></subst>4. &antm;. <choice><sic>1600</sic><corr>1601</corr></choice> <lb/>hor. 9. <subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">h</add></subst>or. 9. 30. &antm;.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

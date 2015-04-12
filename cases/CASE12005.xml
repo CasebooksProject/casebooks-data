@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12005">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12005</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 90r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0090r" to="0090r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ow">
+<persName><forename>Oliver</forename> <surname>Whiting</surname></persName>
+<sex value="1">M</sex>
+<age value="60">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="s">
+<persName><surname>Spenser</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+<person xml:id="f">
+<persName><surname>Farnwell</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+<listRelation><relation name="brother-in-law" active="#ow" passive="#s"/><relation name="brother" active="#ow" passive="#f"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-02-28" n="Wednesday"/></p>
+<p><time when="10:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#ow" evidence="internal"/>
+<cb:subject ref="#ow" present="yes"/>
+<cb:topic key="pain"><person sameAs="#ow"/></cb:topic>
+<cb:topic key="huckbone"><person sameAs="#ow"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#ow"/></cb:topic>
+<cb:topic key="sciatica"><person sameAs="#ow"/></cb:topic>
+<cb:topic key="back"><person sameAs="#ow"/></cb:topic>
+<cb:topic key="groin"><person sameAs="#ow"/></cb:topic>
+<cb:topic key="aCold"><person sameAs="#ow"/></cb:topic>
+<cb:topic key="hotAndCold"><person sameAs="#ow"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-12">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0183.jpg" url="Ashmole-228-0183.jpg" n="90r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Oliver Whiting <rs type="address" xml:id="address1">of Bedford</rs> <lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an ach in huck<lb/>bone left side taketh it to be <lb/>a sciatica. &amp; thenc to his <lb/>back &amp; inside of his share <lb/>came <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a cold or a listing <lb/>as he thincketh more hot <lb/>&amp; then cold. 60 yeres old. <lb/>came him selfe the 28 <lb/>of feb. &WednesdayN; h. 10. <del type="strikethrough">3</del> <choice><orig><subst><del type="over">20</del><add place="over">i5</add></subst></orig><reg>15</reg></choice> <lb/>&antm;. 1599. Spencers broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>in lawe &amp; farnewels brother.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

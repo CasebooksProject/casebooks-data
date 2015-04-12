@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13276">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13276</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 124v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0124v" to="0124v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gr">
+<persName><forename evidence="external">Gregory</forename> <surname evidence="external">Reynolds</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="u">
+<persName><roleName>Mr</roleName> <surname>Uvedale</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-03-08" n="Tuesday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#gr"/>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#gr"/><person sameAs="#rnapier"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0252.jpg" url="Ashmole-175-0252.jpg" n="124v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/><foreign xml:lang="en">1597 the 8 of March <lb/>at 9 h. <choice><orig>ante merid</orig><reg>am</reg></choice> <lb/>&TuesdayN; for G. R.</foreign><note place="pageTop">qu&aelig;re quo <del type="strikethrough"><unclear cert="low" reason="del"><subst><del type="over">e</del><add place="over">t</add></subst></unclear></del> anni temp. Raynold<choice><orig>&uscon;</orig><reg>us</reg></choice> a me qu&aelig;si<lb/>vit &vVowel;t sese &iConsonant;ustificaret ab ad&vVowel;lt: quo tempore M<hi rend="superscript">r</hi> <lb/>&VVowel;&uConsonant;edall multos currus habuit post fest<unclear cert="low" reason="hand">u</unclear></note></p>
+</div>
+&astroChartDeleted;
+</body>
+</text>
+</TEI>

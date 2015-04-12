@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12129">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12129</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 110r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0110r" to="0110r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ph">
+<persName><forename>Phillip</forename> <surname>Hull</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+
+<person xml:id="h1">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+<death evidence="inferred"><date notAfter="1599-03-23"/></death>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+<death evidence="inferred"><date notAfter="1599-03-23"/></death>
+</person>
+<person xml:id="h3">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+<death evidence="inferred"><date notAfter="1599-03-23"/></death>
+</person>
+<person xml:id="h4">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+<death evidence="inferred"><date notAfter="1599-03-23"/></death>
+</person>
+<person xml:id="h5">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="h6">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="h7">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="h8">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="h9">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="h10">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="h11">
+<persName><surname evidence="inferred" cert="medium">Hull</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="mother" active="#ph" passive="#h1 #h2 #h3 #h4 #h5 #h6 #h7 #h8 #h9 #h10 #h11"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-03-24" n="Saturday"/></p>
+<p><time when="08:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#ph" evidence="internal"/>
+<cb:subject ref="#ph" present="yes"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ph"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0223.jpg" url="Ashmole-228-0223.jpg" n="110r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Phylip Hull. a woman <rs type="address" xml:id="address1">of Stony <lb/>stratford</rs>. <del type="strikethrough">30</del> 40. maried. had a <lb/>11 child. but now but 7. came <lb/>her selfe. the 24 of Marti&jVowel; &SaturdayN;. <lb/>h. 8. 30. 1599.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

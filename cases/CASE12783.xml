@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12783">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12783</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 214v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0214v" to="0214v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="em">
+<persName><forename>Elizabeth</forename> <surname>Macum</surname></persName>
+<sex value="2">F</sex>
+<age value="16">16</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1583-05-04" n="Saturday" sameAs="#date1"/><time notBefore="10:00:00" notAfter="12:00:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Barker</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-10-06" n="Saturday"/></p>
+<p><time when="09:52:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#em"/>
+<cb:subject ref="#em" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#em"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-01-31">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-02-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-05">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0430.jpg" url="Ashmole-228-0430.jpg" n="214v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elisabeth Makum <rs type="address" xml:id="address1"><rs type="address" xml:id="address2">in North<choice><orig>&aover;</orig><reg>am</reg></choice>p<lb/>ton shere</rs> dwelling <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> M<hi rend="superscript">r</hi> <lb/>Barker</rs>. <rs type="date" xml:id="date1">16 y. May last the <lb/>4 of may being satterday</rs> <lb/><rs type="time" xml:id="time1">betwixt 10 &amp; 12</rs>. Octob <lb/>6. &SaturdayN;. hor. 9. 52. &antm; <lb/>1599.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

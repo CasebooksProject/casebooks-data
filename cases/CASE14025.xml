@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE14025">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE14025</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 81v</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0081v" to="0081v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="r1">
+<persName><roleName>Mr</roleName> <surname>Reynolds</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="r2">
+<persName><surname evidence="inferred" cert="medium">Reynolds</surname></persName>
+<sex value="1">M</sex>
+<death><date when="1603-09-13" n="Tuesday" sameAs="#date1" cert="high"/></death>
+</person>
+
+<listRelation><relation name="son" active="#r2" passive="#r1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-09-17" n="Saturday"/></p>
+<p><time when="11:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#r1" evidence="internal" present="yes"/>
+<cb:subject ref="#r2" present="no"/>
+<cb:topic key="problemCause"><person sameAs="#r2"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#r2"/></cb:topic>
+<cb:topic key="death"><person sameAs="#r2"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-10-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-11-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-06">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Raynolds <rs type="address" xml:id="address1">of Stony <lb/>stratford</rs> sept 17 &Saturday; hor <lb/>11. 15. &antm; 1603.</p>
+<p><lb/>he came to enquire of <lb/>me the cause of his <lb/>sons sicknes whea<lb/>th<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> he dyed of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>plauge I or noe for <del type="strikethrough">he</del> els he would <lb/>have div<choice><orig>&loopedr;</orig><reg>er</reg></choice>se of his <lb/>neighbours sons be<lb/>fore a &iConsonant;ustice on <lb/>for giving him a <lb/>shrewd fall &vVowel;p<lb/>pon <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> he grew <lb/>sick &amp; dyed &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> <lb/><rs type="date" xml:id="date1">tuesday</rs> he had <lb/>blacke spots</p>
+</div>
+</body>
+</text>
+</TEI>

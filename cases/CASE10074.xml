@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10074">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10074</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-03-17">17 March 2011</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#jyoung">This entry is somewhat erratically inserted into <ref target="CASE8741" type="case">CASE8741</ref>. It consists of one paragraph added below the question paragraph of 8471, a second paragraph in the right margin below that case&rsquo;s judgment, and a geomantic chart in the main text field, also below that case&rsquo;s judgment.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="411">MS Ashmole 411, f. 18r</idno>
+&Forman006;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0018r" to="0018r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Agnes</forename> <surname>Howe</surname></persName>
+<sex value="2">F</sex>
+<age value="16">16</age>
+</person>
+<person xml:id="ew">
+<persName evidence="external"><forename>Edward</forename> <surname>Waterhouse</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-02-03" n="Tuesday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman" cert="medium"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:object ref="#ah #ew"/>
+<cb:topic key="maritalProspects" cert="medium" xml:id="topic1" exclude="#topic2"><person sameAs="#ew"/><person sameAs="#ah"/></cb:topic>
+<cb:topic key="romanticRelations" cert="medium" xml:id="topic2" exclude="#topic1"><person sameAs="#ew"/><person sameAs="#ah"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-03-17">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-05-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-25">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-411-0037.jpg" url="Ashmole-411-0037.jpg" n="18r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Agnis howe of 16 yeres&slash;</p>
+<p><lb/><foreign xml:lang="la">aqua domus. <choice><orig>q<hi rend="superscript">d</hi></orig><reg>quid</reg></choice> inter howe <lb/>et illum</foreign> at 30 &past; 3 <choice><orig>p <lb/>m&flourish;</orig><reg>pm</reg></choice> the 3 feb&slash;</p>
+</div>
+&geoChart;
+</body>
+</text>
+</TEI>

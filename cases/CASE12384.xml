@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12384">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12384</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 151r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0151r" to="0151r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jk">
+<persName><forename>John</forename> <surname>Kilpine</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1576-01-25" n="Wednesday" sameAs="#date1" cert="high"/><time notBefore="03:00:00" notAfter="05:00:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="rk">
+<persName><forename>Richard</forename> <surname>Kilpine</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#jk" passive="#rk"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-05-05" n="Saturday"/></p>
+<p><time notBefore="09:00:00" notAfter="10:30:00"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jk"/>
+<cb:subject ref="#jk" present="unclear"/>
+<cb:topic key="fallingSickness"><person sameAs="#jk"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-11-07">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-11-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0303.jpg" url="Ashmole-228-0303.jpg" n="151r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Kilpine the sonne of Richard <lb/>Kilpine was borne <del type="strikethrough">15</del> <rs type="date" xml:id="date1">the 25 of <lb/>&IConsonant;an. being weddensday</rs> <rs type="time" xml:id="time1">betwixt 3 &amp; <lb/>5 in the morninge</rs>. troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>falling sicknes &vVowel;ppon any sudden <lb/>feare. when he was 1 yere <lb/>old taken first <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it or there <lb/>about. a very fat Corpulent <lb/>hevy fellowe most troubled in his bed.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

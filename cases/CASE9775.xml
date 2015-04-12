@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE9775">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE9775</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="411">Ashmole Ms. 411, f. 150v</idno>
+&Forman006;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0150v" to="0150v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eh">
+<persName><forename>Eleanor</forename> <surname>Hughes</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Hughes</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="husband" active="#h" passive="#eh"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-10-08" n="Thursday"/></p>
+<p><time when="13:40:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#eh"/>
+<cb:subject ref="#eh" present="unclear"/>
+<cb:object ref="#h"/>
+<cb:topic key="absentPerson"><person sameAs="#h"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-03-30">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-06-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-25">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-411-0302.jpg" url="Ashmole-411-0302.jpg" n="150v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elinor Hues <rs type="address" xml:id="address1">of Lymous</rs> <lb/>1601 the 8 of octob &Thursday; <choice><orig>p <lb/>m&flourish;</orig><reg>pm</reg></choice> at &slash; 40 &past; 1 <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> marito <lb/>suo</foreign> that went to Sea 7 <lb/>monethes a goe in <name type="ship">the Sea<lb/>mewe</name>. <foreign xml:lang="la"><choice><orig><hi rend="overline">q</hi></orig><reg>quan</reg></choice>do venit</foreign>. <placeName>brasile</placeName></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

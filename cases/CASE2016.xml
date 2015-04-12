@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE2016">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE2016</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 141v</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0141v" to="0141v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t1">
+<persName><surname evidence="inferred" cert="high">Turnbull</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t2">
+<persName><surname evidence="inferred" cert="high">Turnbull</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="mt">
+<persName><forename>Mary</forename> <surname>Turnbull</surname></persName>
+<sex value="2">F</sex>
+<age value="7">7</age>
+</person>
+<listRelation><relation name="daughter" active="#mt" passive="#t1 #t2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-07-05" n="Tuesday"/></p>
+<p><time when="10:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#t1 #t2" present="unclear" evidence="internal"/>
+<cb:subject ref="#mt" present="unclear"/>
+<cb:topic key="diz" resp="#sforman"><person sameAs="#mt"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-11-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2010-12-07">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0292.jpg" url="Ashmole-226-0292.jpg" n="141v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>Mary Trunnbull <lb/>of 7 <choice><sic><unclear reason="hand" cert="medium">s</unclear></sic><corr type="noText"/></choice> yers 1597 the <lb/>5 of &IConsonant;uli&jVowel; &Tuesday; &Anmfl; <lb/>at 15 &past; 10 Diz the father <lb/>and mother for the chile</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

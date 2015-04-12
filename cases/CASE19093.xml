@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE19093">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE19093</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 63v/Q2, f. 64r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, ff. 63v-64r</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0063v" to="0064r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hh">
+<persName><forename>Harry</forename> <surname>Hartwell</surname></persName>
+<sex value="1">M</sex>
+<age value="18">18</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-03-26" n="Thursday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#hh"/>
+<cb:subject ref="#hh" present="unclear"/>
+<cb:topic key="back"><person sameAs="#hh"/></cb:topic>
+<cb:topic key="trauma"><person sameAs="#hh"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-04-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-04-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0131.jpg" url="Ashmole-404-0131.jpg" n="64r"/>
+<graphic xml:id="Ashmole-404-0130.jpg" url="Ashmole-404-0130.jpg" n="63v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Harry Hartwell <rs type="address" xml:id="address1">of Stockgolding</rs> <lb/>18. y. Marti&jVowel; 26 &ThursdayN; hor. 11. <lb/>&antm;. 160<choice><orig>i</orig><reg>1</reg></choice></p>
+<p><lb/>c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>playneth of his backe <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he c<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice>not stoope. <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> he toake <lb/>8 yeres since <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <del type="strikethrough">th</del> on cruell beatinge.</p>
+<pb xml:id="f64r" n="64r"/>
+<p><lb/>Harry Hartwell <rs type="address" sameAs="#address1">of Stock<lb/>golding</rs> 18 y. Marti&jVowel; 26 <lb/>&ThursdayN; hor 11 &antm;. 1601</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

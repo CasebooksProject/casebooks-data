@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21864">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21864</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 205v</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0205v" to="0205v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wh">
+<persName><forename>William</forename> <surname>Hopkins</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Blundell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gjames">
+<persName><roleName>Mr</roleName> <forename>G</forename> <surname evidence="external">James</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1605-01-01T08:45:00" notAfter-custom="1605-01-02T08:00:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#wh #b #gjames"/>
+<cb:topic key="gambling"><person sameAs="#rnapier"/><person sameAs="#wh"/><person sameAs="#b"/><person sameAs="#gjames"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-22">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>I &amp; wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Hopkins. <lb/>aganst m<hi rend="superscript">r</hi> Blundell <lb/>&amp; m<hi rend="superscript">r</hi> G. &IConsonant;an. 1. new <lb/>yeres day h. 8. 45. <lb/>p m 1604.</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>they began &amp; got <del type="strikethrough">of</del> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>g fr<choice><orig>&oover;</orig><reg>om</reg></choice> &vVowel;s by wyll. H. <lb/>bad play <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> moved <lb/>me very mutche. <lb/>After D<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>ner <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> Day <lb/>we played with <lb/>them &amp; did beate <lb/>them downe.</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12234">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12234</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 125r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0125r" to="0125r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w1">
+<persName><forename>John</forename>  <surname>Windmill</surname></persName>
+<sex value="1">M</sex>
+<age value="1">1</age> 
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w2">
+<persName><surname evidence="inferred" cert="medium">Windmill</surname></persName>
+<sex value="2">F</sex> 
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="mother" active="#w2" passive="#w1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-04-10" n="Tuesday"/></p>
+<p><time when="07:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#w2" evidence="internal" present="yes"/>
+<cb:subject ref="#w1" present="yes"/>
+<cb:topic key="pain"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="fits"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="trembling"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="ague"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="costive"><person sameAs="#w1"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-10-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-04">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0253.jpg" url="Ashmole-228-0253.jpg" n="125r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Windmill <rs type="address" xml:id="address1">of Yardly <lb/>Gubbin</rs> a twelmoneth old <lb/>&amp; as mutch as candelmas <lb/>the sunday after candlemas. <lb/>came &amp; brought her Child <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> was payned in the body <lb/>&amp; had divers <del type="strikethrough">fi</del> strange <lb/>fits. but before it tooke it <lb/>had a fit of an ague <lb/>before it. <del type="strikethrough">not v</del> this <lb/>beating &amp; panting began <lb/>on friday night <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a qui<lb/>vering &amp; shakings of the <lb/>belly &amp; armes Apr. 10. <lb/>&TuesdayN; h. 7. &antm;. 1599 <lb/>goeth ha<subst><del type="over">d</del><add place="over">r</add></subst>d to grounde <lb/>cryeth</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

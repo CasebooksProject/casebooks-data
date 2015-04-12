@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11620">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11620</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 14r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0014r" to="0014r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Blundell</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-08-12" n="Saturday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b" evidence="internal"/>
+<cb:subject ref="#b" present="unclear"/>
+<cb:topic key="diz" resp="#rnapier"><person sameAs="#b"/></cb:topic>
+<cb:topic key="problemCause"><person sameAs="#b"/></cb:topic>
+<cb:topic key="requestingTreatment"><person sameAs="#b"/></cb:topic>
+<cb:topic key="stone"><person sameAs="#b"/></cb:topic>
+<cb:topic key="strangury"><person sameAs="#b"/></cb:topic>
+<cb:topic key="windColic"><person sameAs="#b"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-08-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0031.jpg" url="Ashmole-228-0031.jpg" n="14r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Blundell enquireth <del type="strikethrough">what</del> <lb/>his disease the cause therof <lb/>&amp; the remedy &amp; he c<choice><orig>&oover;</orig><reg>om</reg></choice>playneth <lb/>of the winde cholick &amp; see<lb/>meth to be troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>stone &amp; strangury. August <lb/>the 12 &SaturdayN;. h. 8. <lb/>&antm;. 1598.</p>
+</div>
+&astroChartPartial;
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>M<hi rend="superscript">r</hi> Blundell</p> 
+<p>Goodman Blundell <lb/>enquired in his owne <lb/><choice><orig>&crossedp;</orig><reg>per</reg></choice>son &amp; was well when <lb/>he enquired Aug. 12 &SaturdayN; <lb/>hor. 8. 1598<note place="chart">a wind cholicke</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

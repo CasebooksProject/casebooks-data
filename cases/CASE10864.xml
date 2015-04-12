@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10864">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10864</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4, 2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 111r</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0111r" to="0111r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rh">
+<persName><forename>Robert</forename> <surname>Hodges</surname></persName>
+<sex value="1">M</sex>
+<age value="50">50</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-06-17" n="Tuesday"/></p>
+<p><time notBefore="13:15:00" notAfter="15:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rh"/>
+<cb:subject ref="#rh" present="unclear"/>
+
+<cb:topic key="shoulders"><person sameAs="#rh"/></cb:topic>
+<cb:topic key="lumps"><person sameAs="#rh"/></cb:topic>
+<cb:topic key="bruise"><person sameAs="#rh"/></cb:topic>
+<cb:topic key="pricking"><person sameAs="#rh"/></cb:topic>
+<cb:topic key="witchcraft" cert="low"/>
+<cb:treatment/>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-10-27">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-10-31">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0229.jpg" url="Ashmole-202-0229.jpg" n="111r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Robart Hodges <rs type="address" xml:id="address1">of <lb/>Greenefild</rs> 50 <lb/>a marid man nev<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>had child. hath purchased a ground <lb/>of 2 Hundred pound <lb/>&amp; the next yere fol<lb/>lowing was troubled <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> som ill thing <lb/>or two as big as <lb/>mice <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in his shoulders <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> when he bruised he <lb/>was wonderfully <choice><sic>prucked</sic><corr>pricked</corr></choice></p>
+</div>
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

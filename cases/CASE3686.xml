@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE3686">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE3686</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="195">MS Ashmole 195, f. 68r</idno>
+&Forman003;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0068r" to="0068r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="j">
+<persName><forename>Joan</forename></persName>
+<sex value="2">F</sex>
+<age value="20">20</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="r">
+<persName><roleName>Mr</roleName> <surname>Redding</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="mg">
+<persName><forename>Mary</forename> <surname>Griffen</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="servant" active="#j" passive="#r"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-09-05" n="Tuesday"/></p>
+<p><time when="06:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#mg" evidence="internal" present="yes"/>
+<cb:querent ref="#j" evidence="internal"/>
+<cb:subject ref="#j" present="yes"/>
+<cb:judgment/>
+<cb:topic key="pregnancy"><person sameAs="#j" resp="#mhawkins"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-11-12">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-01-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-01-16">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-195-0137.jpg" url="Ashmole-195-0137.jpg" n="68r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;one M<hi rend="superscript">r</hi> Redding&pluralLoop; maid <lb/><rs type="address" xml:id="address1">in teamstret</rs>. that mary griffen <lb/>broughte 1598 the 5 of Septm <lb/>&Tuesday; &anflmfl; at 30 &past; 6 of 20 <lb/>yeres <foreign xml:lang="la">&VVowel;trum sit <choice><sic>gra&uConsonant;da</sic><corr>gra&uConsonant;ida</corr></choice>&slash;</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13127">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13127</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 28r/Q1, f. 27v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, ff. 28r, 27v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0028r" to="0027v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gk">
+<persName><forename>Godfrey</forename> <surname>Kirkland</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1582-04-17" n="Tuesday" sameAs="#date1"/><time when="22:00:00" sameAs="#time1"/><placeName sameAs="#address1"/></birth>
+<death><date when="1597-02-12" sameAs="#date2"/><time when="10:30:00" sameAs="#time2"/></death>
+</person>
+<person xml:id="ck">
+<persName><forename>Christopher</forename> <surname>Kirkland</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ep">
+<persName><forename>Elizabeth</forename> <surname>Pope</surname> <surname type="alternate">Bird</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="son" active="#gk" passive="#ep #ck"/></listRelation>    
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1597-02-12"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#gk" present="no"/>
+<cb:topic key="history" evidence="inferred"><person sameAs="#gk"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0059.jpg" url="Ashmole-175-0059.jpg" n="28r"/>
+<graphic xml:id="Ashmole-175-0058.jpg" url="Ashmole-175-0058.jpg" n="27v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>Godfrey Kirkland the sonne of <lb/>Christ: <subst><del type="over">C</del><add place="over">K</add></subst>irkland &amp; Elisabeth <del type="strikethrough">Bird</del> <lb/>Pope. <foreign xml:lang="la"><choice><sic>nuic</sic><corr>nunc</corr></choice></foreign> Bird was borne <lb/><rs type="date" xml:id="date1">1582. in the <subst><del type="cancelled"><subst><del type="over"><gap reason="del" extent="2" unit="chars" cert="medium"/></del><add place="over">17</add></subst></del> <add place="supralinear"><subst><del type="strikethrough">5<unclear cert="medium" reason="del"><hi rend="superscript">th</hi></unclear></del> <add place="inline">17</add></subst></add></subst> of Aprill being <lb/>the <del type="strikethrough">su</del> Tuesday after Easter. Apr <lb/>17. being tuesday</rs> betwixt 9 &amp; 10 <lb/>but rather. <del type="strikethrough">10 after 10. 15</del> <add place="supralinear"><choice><sic>m</sic><corr type="delText"/></choice></add> <rs type="time" xml:id="time1">10 &iConsonant;ust</rs>. <lb/><foreign xml:lang="la"><rs type="address" xml:id="address1">in comitatu Warwick</rs>. qui obi&jVowel;t <lb/>an<choice><orig>&uover;</orig><reg>um</reg></choice> circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 15<hi rend="subscript">t<choice><orig>&uover;</orig><reg>um</reg></choice></hi>. fere. <del type="strikethrough">1582</del> <rs type="date" xml:id="date2">a<choice><orig>&nover;</orig><reg>nn</reg></choice>o 1597 <lb/>feb. 12</rs>. int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> x &amp; x&jVowel;.</foreign> <add place="infralinear"><rs type="time" xml:id="time2">betwixt 10 a clock. 30 m. <choice><orig>ant. merid.</orig><reg>am</reg></choice></rs></add></p>
+</div>
+&astroChartDeleted;
+<div><pb xml:id="f27v" n="27v"/>
+<p><lb/><foreign xml:lang="la">Godf. Kirkl<unclear cert="high" reason="faded">and</unclear> obi&jVowel;t <lb/>an<choice><orig>&uover;</orig><reg>um</reg></choice> <del type="strikethrough">d</del> 15. fere ingress <lb/>feb. 12. int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 10 et 11</foreign></p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="la">nativ: Godfr. Kirckland</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

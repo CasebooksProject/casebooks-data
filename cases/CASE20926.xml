@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE20926">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE20926</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 60v</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0060v" to="0060v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Anne</forename> <surname>Haward</surname></persName>
+<sex value="2">F</sex>
+<age value="17">17</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h1">
+<persName><surname evidence="inferred" cert="medium">Haward</surname></persName>
+<sex value="1">M</sex>
+<death><date notAfter="1604-03-28" evidence="inferred"/></death>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" type="married" cert="medium">Haward</surname></persName>
+<sex value="2">F</sex>
+<death><date notAfter="1604-03-28" evidence="inferred"/></death>
+</person>
+<person xml:id="h3">
+<persName><surname evidence="inferred" cert="medium" type="maiden">Haward</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="daughter" active="#ah #h3" passive="#h1 #h2"/><relation name="sister" mutual="#ah #h3"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-03-29" n="Thursday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ah"/>
+<cb:subject ref="#ah" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-01-11">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-02-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>An Howard <rs type="address" xml:id="address1">of <lb/>Bonyst</rs> 17. &Thursday; <lb/>Marti&jVowel; 29 &Thursday; hor 1. <lb/>p m 1604</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>nor fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> nor mother boath dead but on sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; the lands are <lb/>divided betwixt them</p>
+</div>
+</body>
+</text>
+</TEI>

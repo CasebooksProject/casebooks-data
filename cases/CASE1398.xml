@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE1398">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE1398</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 46v</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0046v" to="0046v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tg">
+<persName><forename>Thomasin</forename> <surname>Goodrom</surname></persName>
+<sex value="2">F</sex>
+<age value="18">18</age>
+<birth><date when="1579-06-23"/> <time when="12:00:00" precision="high"/> <placeName sameAs="#address1" key="databaseNormalizedIDKey"/></birth>
+</person>
+<person xml:id="jb">
+<persName><forename>Joan</forename> <surname>Bevin</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="hg">
+<persName><forename>Henry</forename> <surname>Goodrom</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="daughter" active="#tg" passive="#jb #hg"/>
+<relation name="husband" active="#hg" passive="#jb"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-03-22" n="Tuesday"/></p>
+<p><time notBefore="09:15:00" notAfter="17:20:00"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#tg"/>
+<cb:subject ref="#tg" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#tg" resp="#mhawkins"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-08-24">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2010-09-02">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2010-09-29">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0104.jpg" url="Ashmole-226-0104.jpg" n="46v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+ <p><lb/>Tomson goodrom of <lb/>18 yeres last midsomer  was <lb/>borne 15<subst><del type="over">97</del><add place="over">79</add></subst> the 23 of &IConsonant;une <lb/><subst><del type="cancelled">&Friday;</del> <add place="lineBeginning">&Tuesday;</add></subst>. at hie none vz at 12 of the <lb/>clok&slash;</p>
+ <p><lb/><rs type="address" xml:id="address1">the Rainbow &amp; the sheirs <lb/>in southwark in S<hi rend="superscript">t</hi> mari ofories</rs><note place="marginLeft"><lb/>&IConsonant;one bevin.&slash; <lb type="intentional"/>henri goodro<hi rend="superscript">m&flourish;</hi>.</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

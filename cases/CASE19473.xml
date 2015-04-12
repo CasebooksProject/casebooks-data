@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE19473">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE19473</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 126v</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0126v" to="0126v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Goodman</roleName> <surname>Cunningham</surname></persName>
+<sex value="1">M</sex>
+<age value="52">52</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="cf">
+<persName><forename>Cicely</forename> <surname>Fisher</surname></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-06-27" n="Saturday"/></p>
+<p><time when="06:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c #cf"/>
+<cb:subject ref="#c #cf" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal" cert="high"><person sameAs="#c"/></cb:topic>
+<cb:topic key="head"><person sameAs="#cf"/></cb:topic>
+<cb:topic key="eyes"><person sameAs="#cf"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-05-11">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-06-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0256.jpg" url="Ashmole-404-0256.jpg" n="126v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Goodm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> Conyngh<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> <rs type="address" xml:id="address1">of Newp</rs> <lb/>52 y. &IConsonant;une 27 &SaturdayN; hor <lb/>6. &antm;. 160<choice><orig>i</orig><reg>1</reg></choice> <add place="infralinear">Cicely fish<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 24 y <rs type="address" xml:id="address2">of Newport</rs> <lb/>her hed &amp; eyes.</add></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

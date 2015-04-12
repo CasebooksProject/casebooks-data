@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE491">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE491</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="234">MS Ashmole 234, f. 65v</idno>
+&Forman001;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0065v" to="0065v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><roleName>Mrs</roleName> <surname>Lockley</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="dh">
+<persName><forename>Dorothy</forename> <surname>Headlowe</surname></persName>
+<sex value="2">F</sex>
+<age value="22">22</age>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="r" evidence="internal">
+<persName><forename>Richard</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon" evidence="internal">
+<sex value="0">U</sex>
+<birth><date when="1596-07-08" n="Thursday" evidence="internal"/></birth>
+</person>
+<listRelation>
+<relation name="servant" active="#dh" passive="#l"/><relation name="child" active="#anon" passive="#dh #r"/><relation name="husband" active="#r" passive="#dh" from="1596-06-28" xml:id="relation1" exclude="#relation2 #relation3 #relation4 #relation5 #relation6 #relation7 #relation8 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-06-29" xml:id="relation2" exclude="#relation1 #relation3 #relation4 #relation5 #relation6 #relation7 #relation8 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-06-30" xml:id="relation3" exclude="#relation1 #relation2 #relation4 #relation5 #relation6 #relation7 #relation8 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-01" xml:id="relation4" exclude="#relation1 #relation2 #relation3 #relation5 #relation6 #relation7 #relation8 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-02" xml:id="relation5" exclude="#relation1 #relation2 #relation3 #relation4 #relation6 #relation7 #relation8 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-03" xml:id="relation6" exclude="#relation1 #relation2 #relation3 #relation4 #relation5 #relation7 #relation8 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-04" xml:id="relation7" exclude="#relation1 #relation2 #relation3 #relation4 #relation5 #relation6 #relation8 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-05" xml:id="relation8" exclude="#relation1 #relation2 #relation3 #relation4 #relation5 #relation6 #relation7 #relation9 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-06" xml:id="relation9" exclude="#relation1 #relation2 #relation3 #relation4 #relation5 #relation6 #relation7 #relation8 #relation10 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-07" xml:id="relation10" exclude="#relation1 #relation2 #relation3 #relation4 #relation5 #relation6 #relation7 #relation8 #relation9 #relation11"/><relation name="husband" active="#r" passive="#dh" from="1596-07-08" xml:id="relation11" exclude="#relation1 #relation2 #relation3 #relation4 #relation5 #relation6 #relation7 #relation8 #relation9 #relation10"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1596-06-28" n="Monday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#l" evidence="internal" present="unclear"/>
+<cb:subject ref="#dh" present="no" consent="no"/>
+<cb:topic key="pregnancy"><person sameAs="#dh"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-09-22">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2010-10-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-07-05">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-234-0132.jpg" url="Ashmole-234-0132.jpg" n="65v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Doryty Headlowe of <lb/>22 yeares m<hi rend="superscript">rs</hi> Locklyes <lb/>maid <foreign xml:lang="la">&VVowel;trum sit <choice><sic>gra&uConsonant;da</sic><corr>gra&uConsonant;ida</corr></choice></foreign> <lb/>1596 the 28 &IConsonant;une &Monday; pm at &jVowel; <lb/>The <choice><orig>m<hi rend="superscript">rs</hi></orig><reg>mistress</reg></choice> mad the question with<lb/>out c<choice><orig>&oover;</orig><reg>on</reg></choice>sent of the maid</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

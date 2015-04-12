@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE27010">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE27010</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 85r</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0085r" to="0085r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><roleName>Dr</roleName> <surname>Shephard</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ss">
+<persName><forename>Sara</forename> <surname type="married">Shephard</surname> <surname evidence="inferred" cert="medium" type="maiden">Hall</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="mh">
+<persName><forename>Martha</forename> <surname>Hall</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="bb">
+<persName><forename>Benjamin</forename> <surname>Barlowe</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Hall</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="father" active="#h" passive="#ss #mh"/><relation name="sister" mutual="#ss #mh"/><relation name="wife" active="#ss" passive="#s"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-03-27" n="Thursday"/></p>
+<p><time when="18:20:00" xml:id="time1" exclude="#time2"/></p>
+<p><time when="18:25:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s #ss" evidence="internal"/>
+<cb:subject ref="#s #ss" present="no"/>
+<cb:object ref="#mh #bb"/>
+<cb:item type="letter"/>
+<cb:topic key="requestingTreatment"><person sameAs="#ss"/></cb:topic>
+<cb:topic key="fertility"><person sameAs="#ss"/></cb:topic>
+<cb:topic key="maritalProspects"><person sameAs="#mh"/><person sameAs="#bb"/></cb:topic>
+<cb:topic key="financeAndProperty"><person sameAs="#s"/></cb:topic>
+<cb:topic key="residence" evidence="internal"><person sameAs="#s"/><person sameAs="#ss"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-04-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><gap reason="binding" extent="1" unit="chars"/> Sheph <rs type="address" xml:id="address1">of London</rs>. <lb/>march 27. &Thursday; h. 6. 20 p <lb/>m. 1606. <foreign xml:lang="la"><del type="strikethrough">lra</del> <choice><orig>&crossedp;</orig><reg>per</reg></choice> <choice><orig>l<hi rend="overline">ras</hi></orig><reg>litteras</reg></choice> qu&aelig;rit</foreign></p>
+</div>
+&astroChart;
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>D Shephard <rs type="address" sameAs="#address1">of <lb/>London</rs> &amp; Sarah <lb/>his wife march <lb/>27. &Thursday; h. 6. 25 p <lb/>m 1606.</p>
+<p><lb/>his wife for phy<lb/>sick &amp; to cause <lb/>fruictfulnes</p>
+<p><lb/>also wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> there <lb/>fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> will like of <lb/>the mariadg betwixt <lb/>her sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> martha hall <lb/>&amp; Ben&iConsonant;amyn Barloe <lb/>boath <choice><orig>&crossedp;</orig><reg>par</reg></choice>tyes agreed <lb/>but martha feareth least <lb/>her fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> wyll break it</p>
+<p><lb/>the Doctor <foreign xml:lang="la">qu&aelig; plaga <lb/>c&aelig;li c<choice><orig>&oover;</orig><reg>om</reg></choice>modior ad divitias <lb/>acquerendas.</foreign></p>
+</div>
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

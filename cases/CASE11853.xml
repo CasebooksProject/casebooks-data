@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11853">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11853</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 62v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0062v" to="0062v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jm1">
+<persName><forename>Joan</forename> <surname>Malins</surname></persName>
+<sex value="0" evidence="external">U</sex>
+<age value="15" unit="months">a year and a quarter</age>
+</person>
+<person xml:id="m" evidence="internal">
+<persName><surname evidence="inferred">Malins</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="jm2">
+<persName><forename evidence="external">Joan</forename> <surname evidence="inferred">Malins</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#jm2" passive="#jm1 #m"/><relation name="twin" mutual="#jm1 #m" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-12-07" n="Thursday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jm2" evidence="internal" present="unclear"/>
+<cb:subject ref="#jm1" present="unclear"/>
+<cb:topic key="head"><person sameAs="#jm1"/></cb:topic>
+<cb:topic key="limbs"><person sameAs="#jm1"/></cb:topic>
+<cb:topic key="torso"><person sameAs="#jm1"/></cb:topic>
+<cb:topic key="pining"><person sameAs="#jm1"/></cb:topic>
+<cb:topic key="sleeplessness"><person sameAs="#jm1"/></cb:topic>
+<cb:topic key="shortWinded"><person sameAs="#jm1"/></cb:topic>
+<cb:topic key="witchcraft"/>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-02">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-03">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0128.jpg" url="Ashmole-228-0128.jpg" n="62v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Malins <rs type="date" xml:id="date1">a yere &amp; a <lb/>quarter lacking a fortnight</rs> <lb/>as it were pined in all <lb/>her lims &amp; bodye hed <lb/>a poer bare creature. <lb/>cannot sleepe not at <lb/>any time in a moneth or <lb/>fortnight but crye and <lb/>Drinke <foreign xml:lang="la">mater adduxit se <unclear reason="hand" cert="low">c<choice><orig>&uover;</orig><reg>um</reg></choice></unclear> <lb/>filiol<choice><orig>&aover;</orig><reg>am</reg></choice> veret<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> ne sit male<lb/>ficio <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> veneficio afflic<lb/>tus.</foreign> Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 7. &ThursdayN; <lb/>hor. 3. 30. mi. 1598 <lb/>very short winded.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

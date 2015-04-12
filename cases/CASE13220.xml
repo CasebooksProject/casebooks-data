@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13220">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13220</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 88v/Q1, f. 89r/Q4, f. 85v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 88v, f. 89r, f. 85v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0088v" to="0089r"/>
+<locus from="0085v" to="0085v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fg">
+<persName><forename evidence="external">Francis</forename> <surname>Gadstone</surname></persName>
+<sex value="1" evidence="external">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1597-03-18"/></p>
+<cb:consultation type="decumbiture">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#fg"/>
+<cb:subject ref="#fg" present="unclear"/>
+<cb:topic key="lunatic"><person sameAs="#fg"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0180.jpg" url="Ashmole-175-0180.jpg" n="88v"/>
+<graphic xml:id="Ashmole-175-0181.jpg" url="Ashmole-175-0181.jpg" n="89r"/>
+<graphic xml:id="Ashmole-175-0174.jpg" url="Ashmole-175-0174.jpg" n="85v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&ff;. Gadstone &FridayN; at h <lb/>8 <choice><orig>ante merid:</orig><reg>am</reg></choice> 1597 <lb/>1<subst><del type="over">9</del><add place="over">8</add></subst> of march. <foreign xml:lang="la">qui <add place="supralinear">paulo</add> post incidit <lb/>in phrenesin.</foreign></p>
+</div>
+&astroChartDeleted;
+<div><pb xml:id="f89r" n="89r"/>
+<p><lb/><handShift new="#sforman"/>at 8 &anmfl; the 18 m<choice><orig>&loopedr;<hi rend="superscript">ch</hi></orig><reg>arch</reg></choice></p>
+</div>
+&astroChart;
+<div><pb xml:id="f85v" n="85v"/>
+<p><lb/><handShift new="#rnapier"/>Gadstone</p>
+</div>
+&astroChartPartial;
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE2171">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE2171</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 163r</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0163r" to="0163r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ao">
+<persName><forename>Alice</forename> <surname type="maiden">Overbery</surname> <surname type="married" evidence="inferred">Tolarge</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="lt">
+<persName><forename>Lawrence</forename> <surname>Tolarge</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Broker</occupation>
+</person>
+<person xml:id="jc">
+<persName><forename>Joan</forename> <surname>Cheltenham</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="to">
+<persName><forename>Thomas</forename> <surname>Overbery</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="wife" active="#ao" passive="#lt"/><relation name="daughter" active="#ao" passive="#jc #to"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-07-28" n="Thursday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#ao" present="no"/>
+<cb:object ref="#lt"/>
+<cb:topic key="fortune"><person sameAs="#ao"/></cb:topic>
+<cb:topic key="maritalRelations"><person sameAs="#ao"/><person sameAs="#lt"/></cb:topic>
+<cb:topic key="history" cert="high"><person sameAs="#ao"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-12-10">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-02-16">Coding upgraded by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0335.jpg" url="Ashmole-226-0335.jpg" n="163r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/><choice><orig><hi rend="overline">Als</hi></orig><reg>Alis</reg></choice> Overver the new <lb/>wif of Lawrence to large <lb/><rs type="address" xml:id="address1">at the gat <choice><sic>a</sic><corr>at</corr></choice> <choice><sic>Lindon</sic><corr>Lundon</corr></choice> bridge</rs> <lb/>A broker&slash; the daughter of <lb/>&IConsonant;on cheltname &amp; Thomas Over<lb/>bery 1597 the 28 of &IConsonant;uli&jVowel; &Thursday; &pmfl; at 5.</p>
+</div>
+&astroChart;
+<div>
+<p><foreign xml:lang="la"><lb/>&vVowel;trum <choice><orig><hi rend="overline">&vVowel;</hi></orig><reg>un</reg></choice>qu<choice><orig>&aover;</orig><reg>am</reg></choice> coi&uConsonant;it cum Al<choice><orig><hi rend="overline">iqo</hi></orig><reg>iquo</reg></choice> alio <lb/>p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>ter marit<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> &amp; what fort<choice><orig>&uover;</orig><reg>un</reg></choice> <lb/>is to com&flourish;</p>
+</div>
+</body>
+</text>
+</TEI>

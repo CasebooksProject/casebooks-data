@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10784">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10784</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 100r</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0100r" to="0100r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><roleName>Goodman</roleName> <surname>Phillips</surname></persName>
+<sex value="1">M</sex>
+<age value="54">54</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ja">
+<persName><forename>Joan</forename> <surname>Allen</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Maid</occupation>
+</person>
+<listRelation><relation name="servant" active="#ja" passive="#p"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-06-09" n="Monday"/></p>
+<p><time when="06:10:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ja" evidence="internal" present="unclear"/>
+<cb:subject ref="#p" present="no" consent="no"/>
+<cb:topic key="unspecifiedMedical" evidence="external" cert="high"><person sameAs="#p"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-10-17">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-10-28">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0207.jpg" url="Ashmole-202-0207.jpg" n="100r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Goodm<choice><orig>&aover;</orig><reg>an</reg></choice> Phylip <add place="supralinear"><note place="marginLeft">&IConsonant;one <lb/>Allen</note>his servant mead <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> out <lb/>his consente.</add> <rs type="address" xml:id="address1">of <lb/><choice><orig>o<hi rend="superscript">r</hi></orig><reg>our</reg></choice> towne</rs> 5<subst><del type="over">5</del><add place="over">4</add></subst>. &IConsonant;une <lb/>9 &MondayN; h: 6. 10 <choice><orig>ant. m</orig><reg>am</reg></choice> <lb/>1600 <foreign xml:lang="la">sine consensu. serva <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice> <choice><orig>d<hi rend="overline">no</hi></orig><reg>domino</reg></choice></foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

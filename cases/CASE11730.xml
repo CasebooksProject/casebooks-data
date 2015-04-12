@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11730">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11730</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 39v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0039v" to="0039v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jm">
+<persName><forename>Joan</forename> <surname>Miller</surname></persName>
+<sex value="2">F</sex>
+<age value="41">41</age>
+</person>
+<person xml:id="m">
+<persName><surname evidence="inferred" cert="medium">Miller</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="wife" active="#jm" passive="#m" from="1597-11-01" precision="medium"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-10-04" n="Wednesday"/></p>
+<p><time when="15:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#jm" evidence="internal"/>
+<cb:subject ref="#jm" present="yes"/>
+<cb:topic key="pregnancy"><person sameAs="#jm" resp="#mhawkins"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0082.jpg" url="Ashmole-228-0082.jpg" n="39v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;hone Miller a young woman <lb/>newly maried <choice><sic>snce</sic><corr>since</corr></choice> alhalloutide <lb/>somewhat sickly but goeth abroad <lb/>would <choice><sic>knewe</sic><corr>knowe</corr></choice> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> shee be <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> Child as shee supposeth. <lb/>Octob. 4. &WednesdayN; <choice><sic>&SaturnSymbol;</sic><corr>h</corr></choice>. 3. 20. <lb/>not well this quarter of <lb/>this yere. 41. maried a twelfemonth.</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>shee came at that time <lb/>that &Mres; Rowe sent to me. <foreign xml:lang="la"><choice><orig>vid&etTironian;</orig><reg>videlicet</reg></choice></foreign> <lb/>at 1. 38. mi. but I spake not <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her &vVowel;ntill 3. 30.</p>
+</div>
+</body>
+</text>
+</TEI>

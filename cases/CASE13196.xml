@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13196">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13196</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 73v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0073v" to="0073v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gk">
+<persName><forename>Godfrey</forename> <surname>Kirkland</surname></persName>
+<sex value="1">M</sex>
+<age value="14">14</age>
+<birth><date when="1582-04-17" n="Tuesday" sameAs="#date1"/><time notBefore="10:00:00" notAfter="11:00:00" sameAs="#time1"/><placeName sameAs="#address1"/></birth>
+<death><date notBefore="1597-02-12" sameAs="#date2"/><date notAfter="1597-04-16" sameAs="#date3"/></death>
+</person>
+<person xml:id="jb">
+<persName><forename>John</forename> <surname evidence="external">Bird</surname></persName>
+<sex value="1">M</sex>
+<occupation>Minister</occupation>
+</person>
+<person xml:id="ep">
+<persName><forename>Elizabeth</forename> <surname>Pope</surname> <surname type="married">Bird</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="son" active="#gk" passive="#ep"/><relation name="stepfather" active="#jb" passive="#gk" evidence="external"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1597-04-17" cert="medium"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#gk" present="no"/>
+<cb:topic key="history" evidence="inferred"><person sameAs="#gk"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-15">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0150.jpg" url="Ashmole-175-0150.jpg" n="73v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Godfrey Kirkland was borne <lb/>the <choice><sic>some</sic><corr>sonne</corr></choice> of &IConsonant;ohn Kirkland mi<lb/>nister &amp; Elisab. Pope <foreign xml:lang="la">nunc Bird</foreign> <lb/>was borne <rs type="date" xml:id="date1">1582 the 17 of <lb/>Aprill on tuesday</rs> <rs type="time" xml:id="time1">betwixt 10 &amp; <lb/>a 11 of the clocke in the mor<lb/>ning</rs>. <foreign xml:lang="la"><rs type="address" xml:id="address1">in comit: <del type="strikethrough">Buc</del> Warwicke</rs> <lb/>qui vixit 14 a<choice><orig>&nover;</orig><reg>nn</reg></choice>os plene et si vix<lb/>isset ad</foreign> <rs type="date" xml:id="date3">17 of Aprill 1597</rs>. <foreign xml:lang="la">esset <lb/><choice><sic>an&oover;&crossedr;</sic><corr>a<choice><orig>&nover;</orig><reg>nn</reg></choice>o<choice><orig>&crossedr;</orig><reg>rum</reg></choice></corr></choice> 15. obi&jVowel;t <rs type="date" xml:id="date2">1597</rs>.</foreign> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a cold <lb/>he tooke <rs type="date" sameAs="#date2">after his thrashing the 12 <lb/>of feb. 1597</rs>.<note place="infralinear"><foreign xml:lang="la">nativitas vere calc:</foreign></note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE7798">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE7798</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 161r</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0161r" to="0161r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sb">
+<persName><forename>Stephen</forename> <surname>Ballard</surname></persName>
+<sex value="1">M</sex>
+<age value="47">47</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rb">
+<persName><forename>Robert</forename> <surname>Ballard</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#rb" passive="#sb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-07-06" n="Sunday"/></p>
+<p><time when="15:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sb" evidence="internal"/>
+<cb:subject ref="#sb" present="no"/>
+<cb:messenger ref="#rb"/>
+<cb:topic key="treasure"><person sameAs="#sb" resp="#mhawkins"/></cb:topic>
+<cb:judgment/>
+
+</cb:consultation>
+
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-01-18">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-03-28">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0329.jpg" url="Ashmole-236-0329.jpg" n="161r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Ste&uConsonant;en Ballard <lb/><rs type="address" xml:id="address1">of the <choice><orig>&crossedp;</orig><reg>par</reg></choice>ishe of Ramsbery in <lb/>wiltshire</rs> of 47 yeares <foreign xml:lang="la">fecit <lb/><choice><sic>inquison<choice><orig>&eover;</orig><reg>em</reg></choice></sic><corr>inquisition<choice><orig>&eover;</orig><reg>em</reg></choice></corr></choice> <choice><orig>&crossedp;</orig><reg>per</reg></choice> Robart<choice><orig>&uover;</orig><reg>um</reg></choice> ballard <lb/>fili<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice>. &vVowel;trum sit thezaur<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> <lb/>in <rs type="address" sameAs="#address1">Chapple close in the <lb/><choice><orig>&crossedp;</orig><reg>par</reg></choice>ish of Ramsbery</rs> nowe in <lb/>the tenure of the abo&uConsonant;esaid <lb/>Steven. questo 1600 the <lb/>6 of &IConsonant;uli&jVowel; &Sunday; <choice><orig>pm&flourish;</orig><reg>pm</reg></choice> 20 <lb/>&past; 3.</p>
+</div>
+&astroChart;
+
+<div><cb xml:id="colB" n="b"/>
+<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> thezauro in <rs type="address" sameAs="#address1">chapple clos</rs> <lb/>supradic ballard</foreign></p>
+</div>
+&geoChart;
+</body>
+</text>
+</TEI>

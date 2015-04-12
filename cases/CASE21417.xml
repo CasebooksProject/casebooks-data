@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21417">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21417</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 132r</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0132r" to="0132r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="n">
+<persName><roleName>Father</roleName> <surname>Newcombe</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jn">
+<persName><forename>John</forename> <surname>Newcombe</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#jn" passive="#n"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-08-19" n="Sunday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#n" evidence="internal"/>
+<cb:subject ref="#n" present="unclear"/>
+<cb:object ref="#jn"/>
+<cb:topic key="absentPerson"><person sameAs="#jn"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-06">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-02-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Pater <add place="supralinear">Nuec<choice><orig>&oover;</orig><reg>om</reg></choice>be</add> qu&aelig;rit cuius dispositi<lb/>onis filius &IConsonant;oh<choice><orig>&aover;</orig><reg>an</reg></choice>n<subst><del type="over"><gap reason="del" extent="2" unit="chars"/></del><add place="over">is</add></subst> Nuec<choice><orig>&oover;</orig><reg>om</reg></choice>be <lb/><del type="strikethrough">sit</del> et quomodo se geret in <lb/>hoc itinere <del type="strikethrough">v&loopedr;sus</del> in <placeName>Hispa</placeName> <lb/>Aug. 19. &SundayLatin;. h. 2. p m. 1604. <lb/>sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu fili&jVowel;</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

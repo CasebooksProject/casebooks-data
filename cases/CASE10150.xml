@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10150">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10150</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 9v</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0009v" to="0009v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<person xml:id="jc">
+<persName><forename>John</forename> <surname>Chivoll</surname></persName>
+<sex value="1">M</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="n1">
+<persName><surname evidence="inferred" cert="medium">Nichols</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="n2">
+<persName><surname evidence="inferred" cert="medium">Nichols</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="en">
+<persName><forename>Elizabeth</forename> <surname>Nichols</surname></persName>
+<sex value="2">F</sex>
+<age value="19">19</age>
+<occupation>Servant</occupation>
+</person>
+<listRelation>
+<relation name="friend" active="#anon" passive="#n1 #n2"/>
+<relation name="daughter" active="#en" passive="#n1 #n2"/>
+<relation name="servant" active="#en" passive="#rnapier"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-03-12" n="Wednesday"/></p>
+<p><time when="07:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#en" evidence="internal" cert="high"/>
+<cb:subject ref="#en" present="unclear"/>
+<cb:object ref="#jc"/>
+<cb:topic key="maritalProspects"><person sameAs="#en"/><person sameAs="#jc"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-02">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-08-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0024.jpg" url="Ashmole-202-0024.jpg" n="9v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Chivoll <rs type="address" xml:id="address1">of <add place="supralinear">far</add> woulson</rs> <lb/>30. y. wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> he be a fit <lb/>match for her for as yet <lb/>shee cannot love him <lb/>nor away <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him &amp; <lb/>her frinds are exceeding <lb/>willing to have there <lb/>Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Elisabeth Nichols <lb/>my servant to have her. &amp; <lb/>bid her nowe to looke to it <lb/>or never. this question <lb/>was moved by her selfe <lb/>who is growen moopish <lb/>in a mane &amp; mutch dis<lb/>quieted in mind <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it <lb/>March. <del type="strikethrough">1<subst><del type="over">3</del><add place="over">2</add></subst>.</del> 12. &WednesdayN; <choice><sic>&SaturnSymbol;</sic><corr>h</corr></choice>. 7 <lb/><del type="strikethrough">15</del> <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">A</add></subst>nt m.</orig><reg>am</reg></choice> 1600&slash; of 19. y <lb/>ever since Christmas. tendred</p>
+</div>
+&astroChartPartialDeleted;
+&astroChartDeleted;
+<cb xml:id="colB" n="b"/>
+&astroChartDeleted;
+</body>
+</text>
+</TEI>

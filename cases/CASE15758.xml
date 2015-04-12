@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE15758">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE15758</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="207">MS Ashmole 207, f. 149v</idno>
+&Napier007;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0149v" to="0149v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="er">
+<persName><forename>Elizabeth</forename> <surname>Radford</surname></persName>
+<sex value="2">F</sex>
+<age value="18">18</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<occupation>Carrier</occupation>
+</person>
+<listRelation><relation name="servant" active="#er" passive="#anon"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-10-18" n="Tuesday"/></p>
+<p><time when="08:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#er"/>
+<cb:subject ref="#er" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#er"/></cb:topic>
+<cb:topic key="head"><person sameAs="#er"/></cb:topic>
+<cb:topic key="shortWinded"><person sameAs="#er"/></cb:topic>
+<cb:topic key="faintness"><person sameAs="#er"/></cb:topic>
+<cb:topic key="greenSickness"><person sameAs="#er"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-01-10">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-03-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-01-13">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elsabeth Radford <rs type="address" xml:id="address1">of North <lb/>Crowley</rs> 18 y. Octob. 18 <lb/>&Tuesday; ho. 8. 45 a m. 1603 <lb/>payne in her head and stomacke <lb/>shortwynded and faynt</p>
+<p><lb/><foreign xml:lang="la">nunqu<choice><orig>&aover;</orig><reg>am</reg></choice> habuit menstrua</foreign></p>
+<p><lb/>greene sickenes <add place="infralinear">the caryers maid</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

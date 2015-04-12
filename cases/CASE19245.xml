@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE19245">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE19245</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 87r</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0087r" to="0087r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jl">
+<persName><forename>John</forename> <surname>Leech</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w">
+<persName><surname>Wilkes</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-04-21" n="Thursday" cert="medium"/></p>
+<p><time notBefore="08:00:00" notAfter="09:45:00"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#jl"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jl"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-04-26">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-05-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0177.jpg" url="Ashmole-404-0177.jpg" n="87r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>&IConsonant;ohan leach venit ad <rs type="address" xml:id="address1"><choice><orig>D<hi rend="overline">omu</hi></orig><reg>Domum</reg></choice> Wilkes in <placeName>Oxford</placeName></rs> <del type="strikethrough">vbi</del> qu<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice>prim<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> intellexerat me<del type="strikethrough"><gap reason="del" unit="chars" extent="1"/></del> adfuisse <lb/>Marti&jVowel; <del type="strikethrough">27. 26.</del> 27. <lb/>&FridayN; hor p m. 4. <subst><del type="strikethrough">30</del> <add place="supralinear">15</add></subst> <lb/>160<choice><orig>i</orig><reg>1</reg></choice>.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

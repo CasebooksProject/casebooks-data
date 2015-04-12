@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE26844">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26844</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 59v</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0059v" to="0059v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="bc">
+<persName><forename>Bridget</forename> <surname>Charnock</surname></persName>
+<sex value="2">F</sex>
+<age value="14">14</age>
+</person>
+<person xml:id="rc">
+<persName><forename>Richard</forename> <surname>Charnock</surname></persName>
+<sex value="1">M</sex>
+<age value="14">14</age>
+</person>
+<person xml:id="c">
+<persName><genName>Old</genName> <roleName>Mr</roleName> <surname>Charnock</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-03-10" n="Monday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c" evidence="conjecture" cert="medium"/>
+<cb:subject ref="#bc #rc" present="no"/>
+<cb:subject ref="#c" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#bc"/><person sameAs="#c"/></cb:topic>
+<cb:topic key="head"><person sameAs="#bc"/><person sameAs="#c"/></cb:topic>
+<cb:topic key="anxietyAndMelancholy"><person sameAs="#bc"/><person sameAs="#c"/></cb:topic>
+<cb:topic key="fitsPassions"><person sameAs="#bc"/></cb:topic>
+<cb:topic key="itch"><person sameAs="#c"/></cb:topic>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#rc"/></cb:topic>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-17">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-03-31">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-03-31">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2014-10-04">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Brydget Char<lb/>nock 14 y march <lb/>10 &Monday; h 3. 30 p <lb/>m 1606. <add place="supralinear">hedach melancholy <lb/>fits</add></p>
+
+<p><lb/>Rich. Charnock <lb/>14 y <choice><sic>marh</sic><corr>march</corr></choice> 10 <lb/>&Monday; h. 3. 30 p <lb/>m 1606.</p>
+<p><lb/>Old M<hi rend="superscript">r</hi> Charnock <lb/>him selfe.</p>
+<p><lb/>itch hed ache <lb/>sorow &amp; greefe.</p>
+</div>
+</body>
+</text>
+</TEI>

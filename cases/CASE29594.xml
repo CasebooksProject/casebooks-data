@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29594">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE29594</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 177r</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0177r" to="0177r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tm">
+<persName><forename>Thomas</forename> <surname>Meacocke</surname></persName>
+<sex value="1">M</sex>
+<age value="45">45</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="gp">
+<persName><forename>George</forename> <surname>Paget</surname></persName>
+<sex value="1">M</sex>
+</person>
+<personGrp xml:id="mef">
+<sex value="0">U</sex>
+</personGrp>
+<listRelation><relation name="friend" mutual="#tm #mef"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-08-20" n="Tuesday"/></p>
+<p><time when="07:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#tm" evidence="internal"/>
+<cb:subject ref="#tm" present="yes"/>
+<cb:topic key="temptedAndSuicidal"><person sameAs="#tm"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-02-20">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-02-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Thomas Meacocke <rs type="address" xml:id="address1">of <lb/>Ket<subst><del type="over"><unclear reason="del" cert="medium">p</unclear></del><add place="over">e</add></subst>ringe in North<choice><orig>&aover;</orig><reg>am</reg></choice>p<lb/>ton sheer</rs> <subst><del type="over">3</del><add place="over">4</add></subst>5 maryed. <lb/>a fully faced m<choice><orig>&aover;</orig><reg>an</reg></choice> swarfe <lb/>of face. Aug. 20 &Tuesday; <lb/>h. 7. &antm;. 1601. <lb/>came sooner but I could <lb/>not talke <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him. &amp; <lb/>George Pagget &amp; this <lb/>Thomas Meacocke <lb/>came yesterday but I <lb/>was from home.</p>
+<p><lb/>Tempted to many <lb/>follyes to make him <lb/>selfe awaye &amp; his <lb/>frinds.</p>
+</div>
+</body>
+</text>
+</TEI>

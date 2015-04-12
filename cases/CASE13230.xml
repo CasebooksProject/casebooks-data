@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13230">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13230</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 94v/Q2, f. 95r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 94v, f. 95r</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0094v" to="0095r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sb">
+<persName><forename>Susan</forename> <surname>Blundell</surname></persName>
+<sex value="2">F</sex>
+<age value="11">11</age>
+</person>
+<person xml:id="b">
+<persName><surname evidence="external">Blundell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#b" passive="#sb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-08-19" n="Friday"/></p>
+<p><time when="10:54:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b" evidence="internal" present="unclear"/>
+<cb:querent ref="#sb" evidence="internal"/>
+<cb:subject ref="#sb" present="unclear"/>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#sb"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0192.jpg" url="Ashmole-175-0192.jpg" n="94v"/>
+<graphic xml:id="Ashmole-175-0193.jpg" url="Ashmole-175-0193.jpg" n="95r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Susan Blundell qu&aelig;rit sua sponte morb<choice><orig>&uover;</orig><reg>um</reg></choice> 1597. Aug. 19 <choice><orig>die <lb/>&VenusSymbol;</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h. 10 m. 54.</p>
+</div>
+&astroChartBlank;
+<div><pb xml:id="f95r" n="95r"/>
+<p><lb/>Susan Blundell <foreign xml:lang="en">11 yeres old</foreign> <lb/>qu&aelig;rit <choice><orig>&crossedp;</orig><reg>pro</reg></choice> morb. 1597 August <lb/>19. &FridayN;. h. 10. 54. mi. <lb/>ipsa c<choice><orig>&uover;</orig><reg>um</reg></choice> matre et mater c<choice><orig>&uover;</orig><reg>um</reg></choice> ipsa</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

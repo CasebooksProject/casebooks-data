@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13200">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13200</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 77r/Q1, f. 76v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 77r, f. 76v</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0077r" to="0076v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jb">
+<persName><forename>Joan</forename> <surname type="maiden">Blea</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1594-09-10" n="Tuesday" sameAs="#date1"/><time when="04:15:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="tb">
+<persName><forename>Thomas</forename> <surname>Blea</surname> <genName>the younger</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="father" active="#tb" passive="#jb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597" cert="medium"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#jb" present="unclear"/>
+<cb:topic key="speechless"><person sameAs="#jb"/></cb:topic>
+<cb:topic key="deafness"><person sameAs="#jb"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-15">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0156.jpg" url="Ashmole-175-0156.jpg" n="76v"/>
+<graphic xml:id="Ashmole-175-0157.jpg" url="Ashmole-175-0157.jpg" n="77r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;hone Blea the Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of Thomas <lb/>Blea the younger. <foreign xml:lang="la">nata</foreign>. <rs type="date" xml:id="date1">1594 the <lb/>10 of Septemb. &TuesdayN;</rs> at <rs type="time" xml:id="time1">4 a clock <lb/>15 m <add place="supralinear"><choice><orig>in aurora</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice>.</add></rs> <foreign xml:lang="la">post medi<choice><orig>&aover;</orig><reg>am</reg></choice> noct<choice><orig>&eover;</orig><reg>em</reg></choice>. qu&aelig; nata est <lb/>et muta et surda.</foreign></p>
+</div>
+&astroChartDeleted;
+&astroChartPartial;
+<div><pb xml:id="f76v" n="76v"/>
+<p><lb/>&IConsonant;hone Blea <rs type="date" sameAs="#date1">1594 sept. 10. <choice><orig>die martis</orig><reg>die martis</reg><reg type="gloss">Tuesday</reg></choice></rs> at <lb/><rs type="time" sameAs="#time1">h. 4. m. 15 <choice><orig>in auror.</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice></rs><note place="lineEnd">verius calculat.</note></p>
+</div>
+&astroChartDeleted;
+<div>
+<p><lb/>&IConsonant;hones Bleas <lb/>nativit. <rs type="date" sameAs="#date1"><choice><orig>die <lb/>&MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs>. <rs type="time" sameAs="#time1">h. 4. 15</rs>.<note place="infralinear">vere calculata</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

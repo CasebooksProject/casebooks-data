@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE19512">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE19512</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 134r</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0134r" to="0134r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rk">
+<persName><forename>Robert</forename> <surname>Kinsweeke</surname></persName>
+<sex value="1">M</sex>
+<age value="54">54</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-07-04" n="Saturday" evidence="external"/></p>
+<p><time when="08:00:00" evidence="external"/></p>
+<cb:consultation type="decumbiture">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rk"/>
+<cb:subject ref="#rk" present="unclear"/>
+<cb:topic key="sides"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="finger"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="head"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="feet"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="paralysis"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="speechless"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="fairyPinched"><person sameAs="#rk"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-05-14">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-06-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0271.jpg" url="Ashmole-404-0271.jpg" n="134r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Robart Kinsweeke <rs type="address" xml:id="address1">of Elstoe</rs> <lb/>54 y. taken in <placeName>London</placeName> taken <lb/>on the right syde fyngers head <lb/>&amp; feete <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a swelling. Apr. <lb/>25. &vVowel;ppon S<hi rend="superscript">t</hi> Markes Day <lb/>being satterday betwixt 6 &amp; 7 <lb/>in the morning. was first <lb/>taken. Apr. 25. &SaturdayN; hor <lb/>6. 30. &antm;. 160<choice><orig>i</orig><reg>1</reg></choice>. betwixt 3 &amp; 4 aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> noone could not styrre <lb/>&amp; the sunday morning could not speake</p>
+</div>
+&astroChartPartialDeleted;
+<div>
+<p><lb/>he was blasted in a garden.<note place="chart">blasted in a garden</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

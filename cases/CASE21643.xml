@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21643">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21643</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 169r</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0169r" to="0169r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Agnes</forename> <surname>Horwood</surname></persName>
+<sex value="2">F</sex>
+<age value="19">19</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="dh">
+<persName><forename>Dorothy</forename> <surname>Horwood</surname></persName>
+<sex value="2">F</sex>
+<age value="8">8</age>
+</person>
+<listRelation><relation name="sister" mutual="#ah #dh"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-10-24" n="Wednesday"/></p>
+<p><time when="13:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ah"/>
+<cb:subject ref="#ah #dh" present="unclear"/>
+<cb:topic key="dizziness"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#ah"/><person sameAs="#ah"/></cb:topic>
+
+<cb:topic key="everywhere"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="faintness"><person sameAs="#dh"/><person sameAs="#ah"/></cb:topic>
+<cb:topic key="weak"><person sameAs="#dh"/><person sameAs="#ah"/></cb:topic>
+<cb:topic key="pale"><person sameAs="#dh"/><person sameAs="#ah"/></cb:topic>
+<cb:topic key="head"><person sameAs="#dh"/><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Agnys Horwood <rs type="address" xml:id="address1">of Buc<lb/>kingh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> 19 y Octob <del type="strikethrough">16</del> 24 <lb/>&Wednesday; hor. 1. <subst><del type="over">2</del><add place="over">3</add></subst>0 p m. 1604. <add place="infralinear">hed light</add> <lb/>hed extreeme ill ever <lb/>sinc thre weekes before <lb/>miklemas being styrred <lb/>ill in all her bodye. <lb/>faynt &amp; weake <add place="interlinear">keepeth her <lb/>bed most c<choice><orig>&oover;</orig><reg>om</reg></choice>monlye</add></p>
+<p><lb/>Dorothy Horwood her 8. y. <lb/>sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> at the same tyme <lb/>boath a leeke. faynt <lb/>&amp; weake boath. pale <lb/>a very bad head <choice><sic>hed</sic><corr type="noText"/></choice></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

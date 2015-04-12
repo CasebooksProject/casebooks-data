@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29160">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE29160</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 114r</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0114r" to="0114r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ra">
+<persName><forename>Robert</forename> <surname>Andrews</surname></persName>
+<sex value="1">M</sex>
+<age value="60">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Miller</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-06-04" n="Tuesday"/></p>
+<p><time when="13:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ra"/>
+<cb:subject ref="#ra" present="unclear"/>
+<cb:topic key="trauma"><person sameAs="#ra"/></cb:topic>
+<cb:topic key="gonorrhoea"><person sameAs="#ra"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-12-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-02-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Robert Androwes <rs type="address" xml:id="address1">of Patn<choice><orig>&aover;</orig><reg>am</reg></choice></rs>. 60 y. <lb/>&IConsonant;une 4 &Tuesday; ho. 1. 30 p. m. 1605 <lb/>A miller. hurt by a milston <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> <lb/>fell downe suddenly &vVowel;pon his <lb/>chest hurt his backe and ever since <lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> gonorrh&aelig;a. &slash;</p>
+</div>
+</body>
+</text>
+</TEI>

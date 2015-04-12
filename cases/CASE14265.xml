@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE14265">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE14265</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 116r</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0116r" to="0116r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gc">
+<persName><forename>Griffin</forename> <surname>Crokar</surname></persName>
+<sex value="1">M</sex>
+<age value="60">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="c1">
+<persName><surname evidence="inferred" type="married">Crokar</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="c2">
+<persName><surname evidence="inferred">Crokar</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="c3">
+<persName><surname evidence="inferred">Crokar</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="hg">
+<persName><forename>Henry</forename> <surname>Ginger</surname></persName>
+<sex value="1">M</sex>
+<age value="80">80</age>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<occupation>Minister</occupation>
+</person>
+<person xml:id="ek">
+<persName><roleName>Lord</roleName> <forename>Everett</forename> <surname>Knotsby</surname></persName>
+<sex value="1">M</sex>
+<death><date notAfter="1603-12-03" evidence="inferred"/></death>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+<death><date notAfter="1603-12-03" evidence="inferred"/></death>
+</person>
+<listRelation><relation name="servant" active="#anon2" passive="#ek"/><relation name="wife" active="#c1" passive="#gc"/><relation name="father" active="#gc" passive="#c2 #c3"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-12-03" n="Saturday"/></p>
+<p><time when="09:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#gc"/>
+<cb:subject ref="#gc" present="unclear"/>
+<cb:topic key="eyesight"><person sameAs="#gc"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-11-14">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-11-30">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Gryphen Crocker <rs type="address" xml:id="address1">of litle <lb/>Kymble</rs> 60 y. Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 3. <lb/>&Saturday; hor. 9. 50 &antm;. 1603. <lb/>his eyesight <subst><del type="strikethrough">blasted on</del> <add place="supralinear">fayled him</add></subst> <lb/><del type="strikethrough">&thorn;<hi rend="superscript">t</hi></del> by litle he knoweth <lb/>not howe</p>
+
+<p><lb/>his grond is haunted &amp; trea<lb/>sure is hid there as the <lb/>report goeth.</p>
+<p><lb/>there is hard mutch <lb/>musicke &amp; melodye. <lb/><add place="interlinear">this Gryphen Crocker <del type="strikethrough">dwelleth in &thorn;<hi rend="superscript">t</hi> house</del> <lb/>hath seene light&pluralLoop;.</add> the <choice><orig>&crossedp;</orig><reg>par</reg></choice>son of <placeName>Elsborough</placeName> 1<subst><del type="over"><subst><del type="over">6</del><add place="over">7</add></subst></del><add place="over">8</add></subst> y <lb/>sinc delivered a note out of a <lb/>booke &vVowel;nto Henry Gynger <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>now dwelleth <rs type="address" xml:id="address2">at wiggynto in <lb/>hartford sheere</rs> an old man <lb/>of 80 yeres. as followeth.</p> 
+<p><lb/><placeName>Elsborough church</placeName> &amp; <placeName>litle Kymble church</placeName> of the right syde of <lb/>the way <del type="strikethrough">betw</del> even against <lb/><placeName>the castle hill</placeName> ther lyethe <lb/>of gold &amp; sylver &amp; &IConsonant;ewels <lb/>brasse &amp; pewter a weane <lb/>load layd in by lord Eve<lb/>ret knotsby &amp; his man at <lb/>the conquest this was all <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> was delivered him in a <lb/>note <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> he lost willing <lb/>him to enquire furth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> for he <lb/>him selfe saw often a great <lb/>light <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> hath bene seene <lb/>since by many sinc his death. <lb/>&amp; sometymes there will appeare <lb/>a thing leeke a blacke hogge &amp; ve<lb/>ry lately seene a <add place="supralinear">white</add> catt <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a marve<lb/>lous long &amp; great teale <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> r<choice><orig>&aover;</orig><reg>an</reg></choice>ne <lb/>into a pond musick hard lately by <lb/>Crockwell &amp; his wife &amp; children.</p>
+<cb xml:id="colA" n="a"/>
+
+<p><lb/>Henry Ginger <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> in those 2 <lb/>yeres when some came to seek <lb/>this treasure saw a white bullocke <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out <del type="strikethrough">ye</del> eares &amp; hornes. &amp; <lb/>others saw a feare gentlewom<choice><orig>&aover;</orig><reg>an</reg></choice>. <lb/>a lyon an Antlop a <choice><sic>fyer</sic><corr cert="high" resp="#jyoung">fryer</corr></choice> <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a gray cloke cast &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> <lb/>his shoulders. but none could <lb/>fynd the treasure.&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

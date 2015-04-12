@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE26618">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26618</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 22r</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0022r" to="0022r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <surname>Mansell</surname></persName>
+<sex value="2">F</sex>
+<age value="35">35</age>
+</person>
+<person xml:id="c">
+<persName><roleName>Lady</roleName> <surname>Cheyney</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-01-24" n="Friday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="practitionerVisitsQuerent" ref="#address1"/>
+<cb:querent ref="#m" evidence="internal"/>
+<cb:subject ref="#m" present="yes"/>
+<cb:item type="urine"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#m"/></cb:topic>
+<cb:topic key="nausea"><person sameAs="#m"/></cb:topic>
+<cb:topic key="menstruation"><person sameAs="#m"/></cb:topic>
+<cb:topic key="whites"><person sameAs="#m"/></cb:topic>
+<cb:topic key="faintness"><person sameAs="#m"/></cb:topic>
+<cb:topic key="feebleness"><person sameAs="#m"/></cb:topic>
+<cb:topic key="wind"><person sameAs="#m"/></cb:topic>
+<cb:topic key="costive"><person sameAs="#m"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-03">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>my lady <subst><del type="strikethrough">came</del> <add place="supralinear">Maunsell</add></subst> showed me <lb/>her wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &IConsonant;an 24 &Friday; h <lb/>10. 30 &antm;. 1606. <lb/>who was at <rs type="address" xml:id="address1">my lady <lb/>Chaynes howse at Drayton</rs> <lb/>35 y. a long visage leane <lb/>&amp; yellowish full of melanch. <lb/>long sick &amp; casteth every foote <lb/>mutch reds. <choice><orig><subst><del type="over">&amp;</del><add place="over">w</add></subst><hi rend="superscript">ch</hi></orig><reg>which</reg></choice> trouble her <lb/>mutch. &amp; c<choice><orig>&oover;</orig><reg>on</reg></choice>tinew long also <lb/>whit&pluralLoop; but <choice><sic>the</sic><corr cert="medium" resp="#jyoung">they</corr></choice> weaken not <lb/>yet have c<choice><orig>&oover;</orig><reg>on</reg></choice>tinewed longe <lb/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> come 3 days before the <lb/>red. casteth mutch faynt &amp; feeble mutch wynd costive <add place="infralinear">Lady Maunsell. 35 y.</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

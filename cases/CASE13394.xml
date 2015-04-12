@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13394">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13394</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 96v</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0096v" to="0096v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mp">
+<persName><forename>Matthew</forename> <surname type="maiden">Patrick</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1597-09-19" n="Monday" sameAs="#date1"/><time notBefore="23:00:00" notAfter="23:59:59" sameAs="#time1"/></birth>
+<death><date when="1597-10-10" n="Monday" sameAs="#date2" xml:id="date3" exclude="#date4"/><date when="1597-10-11" n="Tuesday" sameAs="#date2" xml:id="date4" exclude="#date3"/><time notBefore="13:00:00" when="14:00:00" sameAs="#time2"/></death>
+</person>
+<person xml:id="jp">
+<persName><forename>John</forename> <surname>Patrick</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="father" active="#jp" passive="#mp"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1597-10-11"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#mp" present="no"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#mp"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-02-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0196.jpg" url="Ashmole-182-0196.jpg" n="96v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><sic>Mathue</sic><corr type="delText"/></choice> <del type="strikethrough">Robinson the daug</del></p>
+<p><lb/>Mathue Patricke the daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of &IConsonant;ohn <lb/>Patricke was borne <rs type="date" xml:id="date1">1597. the 19 of <lb/>Septemb. &MondayN;</rs>. <foreign xml:lang="la"><choice><sic>int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></sic><corr type="delText"/></choice> <del type="strikethrough">11. et 12</del> h. 11. 10. 49 <lb/><add place="supralinear">in nocte p m</add> <add place="supralinear">1597.</add> qu&aelig; obi&jVowel;t 3<hi rend="superscript">bus</hi> post hebdom. <rs type="date" xml:id="date2">11 Octob. &MondayN;</rs>. <lb/><rs type="time" xml:id="time2">1 et 2<hi rend="superscript"><choice><orig>&uover;</orig><reg>um</reg></choice></hi> <choice><orig>post merid</orig><reg>pm</reg></choice></rs> <rs type="time" xml:id="time1">int<choice><orig><hi rend="superscript">r</hi>.</orig><reg>er</reg></choice> 11. et 12. nocte</rs>.</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE28090">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE28090</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 267v</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0267v" to="0267v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tk">
+<persName><forename>Thomas</forename> <surname>Kent</surname></persName>
+<sex value="1">M</sex>
+<age value="27">27</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="r">
+<persName><surname>Ruly</surname></persName>
+<sex value="1" cert="medium" evidence="conjecture">M</sex>
+</person>
+<person xml:id="k">
+<persName><surname evidence="inferred" type="married">Kent</surname> <surname evidence="inferred" type="maiden" cert="high">Ruly</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="wife" active="#k" passive="#tk"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-09-05" n="Friday"/></p>
+<p><time when="16:12:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tk"/>
+<cb:subject ref="#tk" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#tk"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="unclear"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-06-11">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-06-19">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Thomas Kent <rs type="address" xml:id="address1">of <lb/><choice><orig>o<hi rend="superscript">r</hi></orig><reg>our</reg></choice> towne</rs> 27 y Sept <lb/>5 &Friday; h. 4. 12. p m 1606 <add place="infralinear"><choice><sic>mayed</sic><corr>maryed</corr></choice> Rulyes daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

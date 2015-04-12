@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE6215">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE6215</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="219">MS Ashmole 219, f. 177r</idno>
+&Forman004;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0177r" to="0177r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ja">
+<persName><forename>John</forename> <surname>Aynsworth</surname></persName>
+<sex value="1">M</sex>
+<age value="23">23</age>
+<birth><date when="1577-03-15" n="Friday" sameAs="#date1"/><time when="01:30:00" sameAs="#time1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-10-20" n="Saturday"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#ja"/>
+<cb:subject ref="#ja" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#ja" resp="#mhawkins"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-05-10">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-05-11">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-219-0360.jpg" url="Ashmole-219-0360.jpg" n="177r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>&IConsonant;hon Aynsworth of <lb/>23 yers <del type="strikethrough">15</del> born <rs type="date" xml:id="date1">on <choice><orig><subst><del type="cancelled">&JupiterSymbol;</del> <add place="lineEnd">&VenusSymbol;</add></subst> <lb/>Day</orig><reg>Venus Day</reg><reg type="gloss">Friday</reg></choice></rs> <rs type="time" xml:id="time1"><choice><sic>mornng</sic><corr>morning</corr></choice> <del type="cancelled"><gap reason="del" unit="chars" extent="1"/></del> at 30 &jVowel;</rs> <rs type="date" sameAs="#date1">the <lb/>15 of <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">M</add></subst>arch</rs> next <choice><orig>c<hi rend="overline">omnge</hi></orig><reg>cominge</reg></choice>&slash;</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

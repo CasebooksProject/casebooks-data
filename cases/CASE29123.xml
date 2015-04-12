@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29123">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE29123</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1C</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 111v</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0111v" to="0111v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ee">
+<persName><forename>Ellen</forename> <surname>Estridge</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="m">
+<persName><roleName>Mr</roleName> <surname>Miller</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="servant" active="#ee" passive="#m"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-05-27" n="Monday"/></p>
+<p><time when="10:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ee"/>
+<cb:subject ref="#ee" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ee"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-12-20">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-02-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Ellen Estridge <rs type="address" xml:id="address1">of Northt&flourish;</rs> <lb/>30 y. May 27 &Monday; ho. 10. <subst><del type="cancelled">15</del> <add place="supralinear">50</add></subst> <lb/>a m. 1605. <add place="supralinear">m<hi rend="superscript">r</hi></add> millers maid</p>
+</div>
+</body>
+</text>
+</TEI>

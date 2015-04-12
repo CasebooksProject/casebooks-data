@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE8197">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE8197</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 211v</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0211v" to="0211v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mj">
+<persName><forename>Margery</forename> <surname type="married">Jacket</surname> <surname type="maiden" evidence="inferred">Old</surname></persName>
+<sex value="2">F</sex>
+<age value="28">28</age>
+</person>
+<person xml:id="ro">
+<persName><forename>Richard</forename> <surname>Old</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jo">
+<persName><forename>Joan</forename> <surname>Old</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="to">
+<persName><forename>Thomas</forename> <surname evidence="inferred">Old</surname></persName>
+<sex value="1">M</sex>
+<age value="30">30</age>
+</person>
+<person xml:id="j1">
+<persName><surname evidence="inferred">Jacket</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="j2">
+<persName><surname evidence="inferred">Jacket</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="daughter" active="#mj" passive="#ro #jo"/><relation name="son" active="#to" passive="#ro #jo"/><relation name="brother" active="#to" passive="#mj"/><relation name="son" active="#j1" passive="#j2"/><relation name="husband" active="#j1" passive="#mj"/><relation name="father-in-law" active="#j2" passive="#mj"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-09-15" n="Monday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#mj" evidence="internal"/>
+<cb:subject ref="#mj" present="unclear"/>
+<cb:topic key="financeAndProperty"><person sameAs="#mj" resp="#mhawkins"/></cb:topic>
+<cb:judgment/>
+<cb:info type="financial"/>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-01-25">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+ <change when="2011-04-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0430.jpg" url="Ashmole-236-0430.jpg" n="211v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/>mar&iConsonant;ery &IConsonant;acket 28 y<supplied reason="binding">ers</supplied> <lb/>the daughter of Richard and <lb/>&IConsonant;one old. <foreign xml:lang="la">fecit inquisision&flourish;</foreign> <lb/>the <choice><orig>i</orig><reg>1</reg></choice>5 of Septm &Monday; &pmfl; at <lb/>5. &slash; wher ever she shall ha&uConsonant;e <lb/>her fathers Ly&uConsonant;ing in <placeName>bars<lb/><unclear reason="hand" cert="medium" resp="#rralley">co</unclear>lle</placeName>. or wher thomas her <lb/>brother shall overcom her <lb/>father in Lawe for yt thom<supplied reason="binding">as</supplied> <lb/>is of 30 yers&slash;</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

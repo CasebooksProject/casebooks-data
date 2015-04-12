@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE20470">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE20470</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 302r/Q2C, f. 302v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 302r-v</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0302r" to="0302v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ib">
+<persName><forename>Isabel</forename> <surname type="married">Barber</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="bb">
+<persName><forename>Bartholomew</forename> <surname>Barber</surname></persName>
+<sex value="1">M</sex>
+<age value="52">52</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Butcher</occupation>
+</person>
+<listRelation><relation name="wife" active="#ib" passive="#bb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1602-02-26" n="Friday"/></p>
+<p><time when="11:25:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ib #bb"/>
+<cb:subject ref="#ib #bb" present="unclear"/>
+<cb:topic key="cough"><person sameAs="#ib"/></cb:topic>
+<cb:topic key="shortWinded"><person sameAs="#ib"/></cb:topic>
+<cb:topic key="windColic"><person sameAs="#ib"/></cb:topic>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#bb"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="urine"/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-08-15">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-08-29">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-07-06">Merged with CASE20471 by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2014-01-17">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0608.jpg" url="Ashmole-404-0608.jpg" n="302v"/>
+<graphic xml:id="Ashmole-404-0607.jpg" url="Ashmole-404-0607.jpg" n="302r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Isbell Barber <rs type="address" xml:id="address1">of Kempson</rs> 55 <lb/>febr. 26 &Friday; hor. 11. <subst><del type="over">3</del><add place="over">2</add></subst>0 &antm; <lb/>1602. <add place="infralinear">a great cough short wynded</add></p>
+</div>
+
+<div>
+<p><lb/>Bartholomew Barber <rs type="address" sameAs="#address1">of Kempson</rs> her <lb/>husband a butcher 52 y feb 26 &Friday; hor <lb/>11. 20 &antm; 1602.</p>
+</div>
+<div><pb xml:id="f302v" n="302v"/>
+<p><lb/>Bartholomew &amp; Isbell Barber <lb/>the former for a wynd cholic <lb/>52 y feb. 26 &Friday; hor. 11. 25. <lb/>&antm; 1602</p>
+</div></body>
+</text>
+</TEI>

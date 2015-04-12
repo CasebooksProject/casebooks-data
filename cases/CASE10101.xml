@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10101">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10101</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#rralley">This entry is a marginal note beside <ref target="CASE7046" type="case">CASE7046</ref>.</note>
+<note type="editorial" resp="#rralley">Although that note is extremely elliptical, the details of the case are given in the Ashmole 389 copy of Forman&rsquo;s guide to astrology (p. 64). The details of the consultation as recorded in 389 (Harry Cook for his maid) match the text in the casebooks note, and the time and date from the 389 account match the marginal note&rsquo;s placement in the casebooks manuscript.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 64r</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0064r" to="0064r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hc">
+<persName><forename evidence="external">Harry</forename> <surname>Cook</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+<occupation>Maid</occupation>
+</person>
+<listRelation><relation name="servant" active="#anon" passive="#hc"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-03-30" n="Sunday" evidence="external"/></p>
+<p><time when="07:50:00" evidence="external"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#hc" evidence="external" present="unclear"/>
+<cb:subject ref="#anon" present="no" consent="no" evidence="external"/>
+<cb:topic key="unspecifiedMedical" evidence="external"><person sameAs="#anon"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-01-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0137.jpg" url="Ashmole-236-0137.jpg" n="64r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+    <p><lb/>Cokes maid&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10251">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10251</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 28v/Q3, f. 28Av/Q2, f. 28Av/Q4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 28v, f. 28Av</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0028v" to="0028v"/>
+<locus from="0028Av" to="0028Av"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rp">
+<persName><forename>Richard</forename> <surname>Perry</surname></persName>
+<sex value="1">M</sex>
+<age value="24">24</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-04-03" n="Thursday"/></p>
+<p><time when="07:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rp"/>
+<cb:subject ref="#rp" present="unclear"/>
+<cb:topic key="diz" resp="#rnapier"><person sameAs="#rp"/></cb:topic>
+<cb:topic key="apoplexy"><person sameAs="#rp"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="unclear"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-08-31">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0064.jpg" url="Ashmole-202-0064.jpg" n="28Av"/>
+<graphic xml:id="Ashmole-202-0062.jpg" url="Ashmole-202-0062.jpg" n="28v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Rich Perry <rs type="address" xml:id="address1">of haversham</rs>. <lb/>24 hath a spice of the <lb/>apoplexie. Apr. 3 <choice><orig>die <lb/>&JupiterSymbol;</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 7. <add place="inline">15</add> <choice><orig>ant</orig><reg>am</reg></choice> 1600. <lb/>he had his d<subst><del type="over"><unclear reason="del" cert="medium">ro</unclear></del><add place="over">is</add></subst>ease last night <lb/>aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 12 of the clock in his bed.</p>
+</div>
+&astroChart;
+<pb xml:id="f28Av" n="28Av"/>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE22036">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE22036</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="207">MS Ashmole 207, f. 198r</idno>
+&Napier007;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0198r" to="0198r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rf">
+<persName><forename>Richard</forename> <surname>Feltes</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><surname evidence="inferred">Feltes</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Widow</roleName></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="father" active="#f" passive="#rf"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-06-18" n="Monday"/></p>
+<p><time when="10:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#f" evidence="internal" present="unclear"/>
+<cb:subject ref="#person1" present="no"/>
+<cb:topic key="lossAndTheft"><person sameAs="#person1"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-01-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-03-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-07-06">Divided from CASE16182 by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">eod<choice><orig>&eover;</orig><reg>em</reg></choice> tempore pater eiusd<choice><orig>&eover;</orig><reg>em</reg></choice> R. felts <lb/>proposuit qu&aelig;stion<choice><orig>&eover;</orig><reg>em</reg></choice> de furto</foreign></p>
+<p><lb/>A widow <rs type="address" xml:id="address1">of Steventon</rs> robd last <lb/>night and <foreign xml:lang="la"><choice><orig>9<hi rend="superscript"><hi rend="overline">li</hi></hi></orig><reg>9 libra</reg></choice></foreign> taken away.</p>
+</div>
+</body>
+</text>
+</TEI>

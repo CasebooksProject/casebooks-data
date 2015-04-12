@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE5247">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE5247</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="219">MS Ashmole 219, f. 49v</idno>
+&Forman004;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0049v" to="0049v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="np">
+<persName><forename>Nicholas</forename> <surname>Parker</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><surname evidence="inferred">Parker</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ep">
+<persName><forename>Elizabeth</forename> <surname>Parker</surname></persName>
+<sex value="2">F</sex>
+</person>
+
+<person xml:id="w1">
+<persName><surname>Whitfield</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<occupation>Smith</occupation>
+</person>
+<person xml:id="wc">
+<persName><forename>William</forename> <surname>Casson</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w2">
+<persName><genName>Old</genName> <surname>Wheatly</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="r">
+<persName><roleName>Captain</roleName> <surname>Riddlesden</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="f1">
+<persName><surname>Fardell</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Brag</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="f2">
+<persName><surname evidence="inferred" type="married">Fardell</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Baker</occupation>
+</person>
+<listRelation>
+<relation name="brother" mutual="#np #p"/>
+<relation name="wife" active="#f2" passive="#f1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-04-24" n="Tuesday"/></p>
+<p><time when="19:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#np #p"/>
+<cb:subject ref="#np #p" present="unclear"/>
+<cb:object ref="#ep #w1 #anon1 #wc #w2 #r #f1 #anon2"/>
+
+<cb:topic key="paternity"><person sameAs="#ep"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-04-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-04-26">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-219-0104.jpg" url="Ashmole-219-0104.jpg" n="49v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>Elizab parker</p>
+<p><lb/><choice><sic>Amo</sic><corr>Anno</corr></choice> 1599 the 24 of aprill <lb/>&Tuesday; &pmfl; at 15 &past; 7. Nicolas <lb/>parker &amp; his Brother for <lb/>Besse&slash; <foreign xml:lang="la">quid incid&flourish; &slash; et <choice><sic>quus</sic><corr>quis</corr></choice> <lb/>est <choice><orig>pr</orig><reg>pater</reg></choice> ei<choice><orig>&uscon;</orig><reg>us</reg></choice> <choice><orig><subst><del type="over"><unclear reason="del" cert="low" resp="#rralley">f</unclear>r</del><add place="over">C</add></subst>onceptois</orig><reg>Conceptionis</reg></choice></foreign></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>In this Action Rem<choice><orig>&eover;</orig><reg>em</reg></choice>ber thes <lb/>that followe</p>
+<p><lb/>Whitfild howe he had her &vVowel;p</p>
+<p><lb/>The Smith that &vVowel;sed to her</p>
+<p><lb/><choice><orig><hi rend="overline">Willm</hi></orig><reg>William</reg></choice> Casson howe he had her</p>
+<p><lb/>Old Whetley howe he did &vVowel;se her</p>
+<p><lb/>Captain Reddelsdon <rs type="address" xml:id="address1">at m<hi rend="superscript">r</hi> <subst><del type="strikethrough">blagu&flourish;</del> <add place="infralinear">brag&pluralLoop;</add></subst></rs></p>
+<p><lb/>fardell <rs type="address" xml:id="address2">of Southworke</rs> when I sent <lb/>her to see his wyf lying in</p>
+<p><lb/>The tyme that she went to <placeName>hackney</placeName> and she went not thether <lb/>but to <placeName>Lambeth</placeName> <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">a</add></subst> baker &amp; other fellows&slash; <add place="lineEnd">&amp; cam home dronk</add></p>
+<p><lb/>The tyme that she went to <placeName>flit streat</placeName> when I went to <placeName>Lambeth</placeName> <lb/>in An Afternon&slash; &amp; forbad her to goe out&slash;</p>
+<p><lb/>The tyme that she staid soe long at market&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

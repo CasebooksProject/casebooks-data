@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13194">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13194</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 71r</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0071r" to="0071r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rv">
+<persName><forename>Ralph</forename> <surname>Vines</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1585-09-26" n="Sunday" sameAs="#date1"/><time xml:id="head-time1" when="15:30:00" sameAs="#time1" exclude="#head-time2 #head-time3"/><time xml:id="head-time2" when="16:00:00" sameAs="#time2" exclude="#head-time1 #head-time3"/><time xml:id="head-time3" when="14:30:00" sameAs="#time3" exclude="#head-time1 #head-time2"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597" cert="medium"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rv"/>
+<cb:subject ref="#rv" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#rv"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-15">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0145.jpg" url="Ashmole-175-0145.jpg" n="71r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Ralfe Vines natus <rs type="date" xml:id="date1">1585. <foreign xml:lang="en">the <lb/>26 of Septemb.</foreign> &SundayN;</rs> <lb/><rs type="time" xml:id="time1">h. 3. <choice><sic>30.</sic><corr type="delText"/></choice> <add place="supralinear"><subst><del type="strikethrough">15.</del> <add place="inline">30</add></subst></add> mi</rs> <rs type="time" xml:id="time2"><choice><orig>post merid:</orig><reg>pm</reg></choice> h. 4</rs>. <lb/><rs type="time" xml:id="time3">h. 2. 30</rs>.</p>
+</div>
+&astroChartPartialDeleted;
+</body>
+</text>
+</TEI>

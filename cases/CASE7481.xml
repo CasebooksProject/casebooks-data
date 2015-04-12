@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE7481">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE7481</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 121r/Q3, f. 124v/Q2, f. 124vQ4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 121r, f. 124v</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0121r" to="0121r"/>
+<locus from="0124v" to="0124v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+<language ident="el">Greek</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jf">
+<persName><forename>Jean</forename> <surname type="married">Flood</surname> <surname type="alternate">Sondes</surname></persName>
+<sex value="2">F</sex>
+<age value="26">26</age>
+</person>
+<person xml:id="vr">
+<persName><forename>Vincent</forename> <surname>Randall</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cb">
+<persName><roleName>Sir</roleName> <forename>Calistines</forename> <surname>Brooke</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><surname>Flood</surname></persName>
+<sex value="1">M</sex>
+<death><date when="1597-05-21" precision="low" evidence="inferred"/></death>
+</person>
+<person xml:id="sr">
+<persName><forename>Susan</forename> <surname>Rigden</surname></persName>
+<sex value="2">F</sex>
+<occupation cert="high">Maid</occupation>
+</person>
+<person xml:id="hw">
+<persName><forename>Henry</forename> <surname>Wotten</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tg">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Gates</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="pr">
+<persName><forename>Phillip</forename> <surname>R<gap reason="faded" extent="unclear"/></surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tw">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Walsingham</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><surname>Covell</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Priest</occupation>
+</person>
+<person xml:id="rr">
+<persName><forename>Robert</forename> <surname>Rimington</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rj">
+<persName><forename>Robin</forename> <surname>Jones</surname></persName>
+<sex value="1">M</sex>
+<occupation>Clerk</occupation>
+</person>
+<person xml:id="s">
+<persName><surname evidence="external">Sondes</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w">
+<persName><surname>Wilmar</surname></persName>
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+<death><date notAfter="1600-05-20" evidence="inferred"/></death>
+</person>
+<person xml:id="tf">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Flood</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="v1">
+<persName><roleName>Lady</roleName> <surname>Vane</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="v2">
+<persName><surname evidence="inferred" cert="medium">Vane</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="husband" active="#f" passive="#jf"/><relation name="servant" active="#sr" passive="#jf" cert="high"/><relation name="father" active="#s" passive="#jf"/><relation name="servant" active="#rj" passive="#s"/><relation name="servant" active="#w" passive="#tf"/><relation name="son" active="#v2" passive="#v1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-05-21" n="Wednesday"/></p>
+<p><time when="15:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#jf" evidence="external"/>
+<cb:subject ref="#jf" present="unclear"/>
+<cb:object ref="#vr"/>
+<cb:topic key="maritalProspects"><person sameAs="#vr"/><person sameAs="#jf"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-01-13">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-03-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-29">Material added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0249.jpg" url="Ashmole-236-0249.jpg" n="121r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>at 45 &past; 3 1600&slash; <lb/>21 of may &pmfl; &Wednesday;</p>
+<p><lb/>&IConsonant;ean flod of 26 years <lb/>1600 <foreign xml:lang="la"><choice><sic>&VVowel;trm</sic><corr>&VVowel;trum</corr></choice> Vincent Randole <lb/>vult eam conducere <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice></foreign>&slash; <lb/>26 firme&slash;</p>
+</div>
+&astroChart;
+
+<div><pb xml:id="f124v" n="124v"/>
+<p><lb/>&IConsonant;ean Sand&pluralLoop; alias flud of 27 yers <foreign xml:lang="la">&vVowel;id <choice><orig>&crossedp;</orig><reg>per</reg></choice> 3 annos. <choice><orig><hi rend="overline">het</hi></orig><reg>habet</reg></choice> &vVowel;n<choice><orig>&aover;</orig><reg>am</reg></choice> v<hi rend="superscript">r</hi><gap reason="faded" extent="unclear"/> <lb/><unclear cert="medium" reason="hand">fuit</unclear> <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>ducta flud <choice><orig>&crossedp;</orig><reg>per</reg></choice> 6 Annos ad <choice><orig><hi rend="overline">natiutatm</hi></orig><reg>nativitatem</reg></choice> <choice><orig><foreign xml:lang="el">&chi;&rho;</foreign>i</orig><reg>christi</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>terit<choice><orig>&uover;</orig><reg>um</reg></choice> <gap reason="faded" extent="unclear"/> <lb/>3<hi rend="superscript">os</hi> vel 4<hi rend="superscript">os</hi> Annos ab hinc c<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">S</add></subst><hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Calistines brok <foreign xml:lang="la">et scripsit <choice><orig><hi rend="overline">li<supplied reason="binding" cert="low">ras</supplied></hi></orig><reg>litteras</reg></choice> <gap reason="faded" extent="unclear"/> <lb/>et posuit sub capite illius Dormient.: et vellet secum ob<unclear reason="hand" cert="low">&uConsonant;i</unclear><gap reason="faded" extent="unclear"/></foreign> <lb/>at <placeName>throwly parke</placeName>. <foreign xml:lang="la">et nemo secum sed <subst><del type="over">p</del><add place="over">S</add></subst>usan Rigden</foreign> her ma<supplied reason="faded" cert="high">id</supplied><gap reason="faded" extent="unclear"/> <lb/>since she hath Lo&uConsonant;ed henry wotten &amp; Sir thomas gates and <add place="supralinear">phillip</add> R<gap reason="faded" extent="unclear"/> <lb/><unclear reason="hand" cert="medium">martin&flourish;</unclear> <add place="supralinear">la <unclear cert="low" reason="hand">princ de la mer</unclear></add> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> many other. <foreign xml:lang="la">et n<choice><orig>&uover;</orig><reg>un</reg></choice>c</foreign> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> thom&flourish; walsing<choice><orig>&aover;</orig><reg>am</reg></choice>. And she <lb/>Lo&uConsonant;ed on cofild a priste <rs type="address" xml:id="address1">of throwly</rs>. &amp; <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Robart Kymingt<unclear cert="low" reason="faded">on</unclear> <lb/>And Robin &IConsonant;ones her fathers man a clarke &slash; and also she wore willo <lb/>for his sake. and a bramble for calistines broke. And tym<gap reason="faded" extent="unclear"/> <lb/>thomas gates.&slash; also she Lo&uConsonant;ed my Lady vanes soon the y<gap reason="faded" extent="unclear"/> <lb/>of <placeName>Kente</placeName> &amp; he toke her garter fr<choice><orig>&oover;</orig><reg>om</reg></choice> her leg to were for her sa<supplied reason="binding" cert="high">ke</supplied></p>
+<p><lb/>And nowe ther is on <add place="supralinear">vincent</add> Randole. that she supposeth &amp; hopeth will ha&uConsonant;e her</p>
+</div>
+</body>
+</text>
+</TEI>

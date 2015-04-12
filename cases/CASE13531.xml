@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13531">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13531</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 203v/Q1, f. 204r/Q3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 203v, f. 204r</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0203v" to="0204r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="am">
+<persName><forename>Anne</forename> <surname>Malins</surname></persName>
+<sex value="2">F</sex>
+<death evidence="internal"><date when="1598-07-11"/></death>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-07-11" n="Tuesday"/></p>
+<p><time when="05:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#am" evidence="internal"/>
+<cb:subject ref="#am" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#am"/></cb:topic>
+<cb:item type="urine"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-28">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-03-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0410.jpg" url="Ashmole-182-0410.jpg" n="203v"/>
+<graphic xml:id="Ashmole-182-0411.jpg" url="Ashmole-182-0411.jpg" n="204r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Agnes Malins requested me to cast <lb/>her water &amp; to tell her how I leeked <lb/>of her &TuesdayN; h. <choice><orig>ant merid</orig><reg>am</reg></choice> <subst><del type="over">3</del><add place="over">4</add></subst><hi rend="superscript">ta</hi> 1598. <lb/>&IConsonant;uli&jVowel; 11. there about as we aymed the <lb/>clocke. <foreign xml:lang="la">potius</foreign> at 5. 15.</p>
+</div>
+&astroChartDeleted;
+<div><pb xml:id="f204r" n="204r"/>
+<p><lb/>verior <choice><sic>figur</sic><corr type="noText"/></choice> figura</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

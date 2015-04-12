@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29862">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE29862</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 218r/Q2B, f. 218v/Q3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 218r-v</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0218r" to="0218v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ey">
+<persName><forename>Edward</forename> <surname>Young</surname></persName>
+<sex value="1">M</sex>
+<age value="7">7</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1598-09-29" sameAs="#date1" evidence="internal"/><time when="16:00:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="y">
+<persName><surname evidence="inferred">Young</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="father" active="#y" passive="#ey"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-11-04" n="Monday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#y" evidence="internal" present="unclear"/>
+<cb:subject ref="#ey" present="no" consent="no"/>
+<cb:topic key="afflictedInMind"><person sameAs="#ey"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-07">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-04-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Edward young <rs type="address" xml:id="address1">of <lb/>Cranford in North<choice><orig>&aover;</orig><reg>am</reg></choice>pton <lb/>sheere</rs> 7 y. nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 4 <lb/>&Monday; hor. 3. 28 p m 1605.</p>
+<p><lb/>not well in his mynd <lb/><add place="supralinear"><rs type="date" xml:id="date1">1598</rs></add> <foreign xml:lang="la">pater sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu. <add place="supralinear">natus <rs type="date" sameAs="#date1">15<subst><del type="over">6</del><add place="over">9</add></subst>8</rs></add> &FridayLatin; <rs type="time" xml:id="time1">h 4. p m</rs> <add place="infralinear"><del type="strikethrough">1605</del> <choice><sic>1558</sic><corr type="noText"/></choice></add></foreign></p>
+
+</div>
+<div><pb xml:id="f218v" n="218v"/>
+<p><lb/>Edward young <rs type="address" sameAs="#address1">of <lb/>Cranford</rs> 7 y. nov<choice><orig>&eover;</orig><reg>em</reg></choice>b <lb/>4 &Monday;. h. 3. 30 p m <lb/>1605. <foreign xml:lang="la">pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio <lb/>sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu.</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

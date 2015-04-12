@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11784">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11784</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 49r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0049r" to="0049r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jn">
+<persName><forename>Joan</forename> <surname>Nelson</surname></persName>
+<sex value="2">F</sex>
+<age value="52">52</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-11-08" n="Wednesday"/></p>
+<p><time when="10:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jn"/>
+<cb:subject ref="#jn" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="nausea"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="bentDouble"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="bedridden"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="back"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="feet"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="hands"><person sameAs="#jn"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#jn"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-30">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-03">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0101.jpg" url="Ashmole-228-0101.jpg" n="49r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;hone Nelson <rs type="address" xml:id="address1">of Moulso</rs> of <lb/>52 yeres old. sick this 14 <lb/>yere. always vomiteth &vVowel;p <lb/>her meate espec. this last <lb/>yere. keepeth nowe her bed <lb/>it g<unclear reason="hand" cert="medium">oo</unclear>gleth in her body. <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> <lb/>cometh &vVowel;p is black as sote <lb/>nothing given her will: make <lb/>her <del type="strikethrough">vomit</del> shee bendeth her <lb/>selfe forward &amp; always must <lb/>reatch <del type="strikethrough">fleume</del> sick her back <lb/>&amp; left side &amp; keepeth her bed. <lb/>&amp; tumbleth &vVowel;p all 10. 45. &antm; <lb/>1598. shee feareth lest shee be <lb/>wasted <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in. 1598. &WednesdayN; <lb/>always cold feete hands <lb/>novemb. 8.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

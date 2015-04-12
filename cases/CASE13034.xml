@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13034">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13034</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 263r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0263r" to="0263r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="dm">
+<persName><roleName>Mrs</roleName> <forename>Dorothy</forename> <surname>Mainwaring</surname> <surname type="maiden" cert="medium">Edmonds</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="e">
+<persName><roleName>Mr</roleName> <surname>Edmonds</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><surname evidence="inferred" cert="medium">Mainwaring</surname></persName>
+<sex value="1">M</sex>
+<occupation>Vicar</occupation>
+</person>
+<listRelation><relation name="daughter" active="#dm" passive="#e"/><relation name="wife" active="#dm" passive="#m"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-02-01" n="Friday"/></p>
+<p><time when="10:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#dm" evidence="internal"/>
+<cb:subject ref="#dm" present="no"/>
+<cb:topic key="pain"><person sameAs="#dm"/></cb:topic>
+<cb:topic key="back"><person sameAs="#dm"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#dm"/></cb:topic>
+<cb:topic key="trauma"><person sameAs="#dm"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-02-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0525.jpg" url="Ashmole-228-0525.jpg" n="263r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Dorothy Mannering <lb/>M<hi rend="superscript">r</hi> Edmunds Daughter <lb/>maried to the vicar of <lb/><placeName>Winsloe</placeName>. payned over<lb/>thwarte her backe &amp; <lb/>left syde <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a brushe <lb/>fall ever sinc miklemas <lb/>sent to me. feb. 1. &FridayN; <lb/><choice><sic>&SaturnSymbol;</sic><corr>h</corr></choice>. 10. <subst><del type="over">42</del><add place="over">50</add></subst> &antm;. 1600. <lb/>maried halfe a yere.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

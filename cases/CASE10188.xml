@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10188">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10188</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 18r</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0018r" to="0018r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eb">
+<persName><roleName>Goodman</roleName> <forename>Edward</forename> <surname>Banes</surname></persName>
+<sex value="1">M</sex>
+<age value="52">52</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-03-20" n="Thursday"/></p>
+<p><time when="12:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#eb"/>
+<cb:subject ref="#eb" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="consumed"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="knees"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="feet"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="thighs"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="sinews"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="hotAndCold"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="back"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="head"><person sameAs="#eb"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-19">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-08-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0041.jpg" url="Ashmole-202-0041.jpg" n="18r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Goodman <add place="supralinear">Edward</add> Banes <rs type="address" xml:id="address1">of Newport</rs> <lb/>52. for a payne &amp; ache in his <lb/>knees &amp; to his back &amp; so to his <lb/>head &amp; the flesh about the knees <lb/>is c<choice><orig>&oover;</orig><reg>on</reg></choice>sumed. hot ther<unclear reason="hand" cert="medium">s</unclear>about but <lb/>cold in his feete &amp; &amp; ben<choice><orig>&uover;</orig><reg>um</reg></choice>med <lb/>about his thighes &amp; hath scarc <lb/>any feele in them. not able to <lb/>goe. lyeth about the sinewes <lb/>veines &amp; h<choice><orig>&aover;</orig><reg>am</reg></choice>m strings &amp; not <lb/>in the flesh. the 20 of March. <lb/>&ThursdayN; h. 12. 20&slash; 1600</p>
+</div>
+    &astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21646">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21646</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3A, 2A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 169v</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0169v" to="0169v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m1">
+<persName><roleName>Mrs</roleName> <surname>Mansell</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="m2">
+<persName><surname evidence="inferred" type="maiden" cert="medium">Mansell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="h">
+<persName><surname evidence="external">Haselwood</surname></persName>
+<sex value="1">M</sex>
+</person>
+
+<listRelation><relation name="daughter" active="#m2" passive="#m1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-10-24" n="Wednesday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#m1" evidence="internal"/>
+<cb:subject ref="#m1" present="unclear"/>
+<cb:object ref="#m2 #h"/>
+<cb:topic key="maritalProspects"><person sameAs="#m2"/><person sameAs="#h"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">mres</hi></orig><reg>Mrs</reg></choice> maunsell <lb/><rs type="address" xml:id="address1">of haversh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> Octo <lb/>24. &Wednesday; h 4 p m <lb/>1604</p>
+<p><lb/>told me <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the <lb/>gentlem<choice><orig>&aover;</orig><reg>an</reg></choice> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> loveth <lb/>her <unclear cert="low" reason="hand">soure</unclear> is now <lb/>come to her daugt<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>agayne</p>
+<cb xml:id="colA" n="a"/>
+<p><lb/>At this tyme <choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Maunsell <lb/>enquired <del type="strikethrough">whea</del> <del type="strikethrough">how</del> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> good <lb/>to make a match betwixt th<choice><orig>&eover;</orig><reg>em</reg></choice> <lb/>as shee intendeth her daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>relyeth wholy &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> the pa<lb/>rent&pluralLoop; to be Disposed by th<choice><orig>&eover;</orig><reg>em</reg></choice> <lb/>Octob. 24 &Wednesday; hor. 3 30 p m 1604.</p>
+</div>
+</body>
+</text>
+</TEI>

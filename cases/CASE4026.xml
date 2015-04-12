@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE4026">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE4026</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="195">MS Ashmole 195, f. 127v</idno>
+&Forman003;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0127v" to="0127v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ja">
+<persName><forename>Joan</forename> <surname>Andrews</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="a">
+<persName><roleName>Mr</roleName> <surname>Allen</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rc">
+<persName><forename>Robert</forename> <surname>Conyears</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="servant" active="#ja" passive="#a"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-07-10" n="Monday"/></p>
+<p><time when="16:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#ja"/>
+<cb:subject ref="#ja" present="unclear"/>
+<cb:object ref="#rc"/>
+<cb:topic key="maritalProspects"><person sameAs="#ja"/> <person sameAs="#rc"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-11-18">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-01-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-01-16">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-195-0262.jpg" url="Ashmole-195-0262.jpg" n="127v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/>&IConsonant;one Andrewe m<hi rend="superscript">r</hi> Allens <lb/>maid <rs type="address" xml:id="address1">in temstret</rs> of 40 <lb/>years 1598 the 10 of &IConsonant;uli&jVowel; <lb/>&Monday; &pmfl; at 30 &past; 4 <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> <lb/>Robarte Conyeres <choice><sic>&vVowel;nelius</sic><corr>melius</corr></choice> <lb/>eum <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>ducer <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice>non</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

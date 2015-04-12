@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10921">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10921</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 120v</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0120v" to="0120v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c1">
+<persName><roleName>Mr</roleName> <surname>Conny</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c2">
+<persName><surname evidence="inferred" cert="medium">Conny</surname></persName>
+<sex value="2">F</sex>
+<death><date sameAs="#date1" when="1600-06-29"/></death>
+</person>
+<person xml:id="c3">
+<persName><surname evidence="inferred" cert="medium">Conny</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="mother" active="#c2" passive="#c1 #c3" cert="medium"/><relation name="brother" mutual="#c1 #c3" cert="medium"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-06-22" n="Sunday"/></p>
+<p><time when="14:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c1" evidence="internal" present="unclear"/>
+<cb:subject ref="#c2 #c3" present="no" cert="medium"/>
+<cb:topic key="mendOrNo"><person sameAs="#c2"/><person sameAs="#c3"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-10-31">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-11-04">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0248.jpg" url="Ashmole-202-0248.jpg" n="120v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><sic>ma<hi rend="superscript">r</hi>ster</sic><corr>master</corr></choice> C<choice><orig>&oover;</orig><reg>on</reg></choice>ny <foreign xml:lang="la">requirit <lb/>an mat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> et filius sanita<lb/>t<choice><orig>&eover;</orig><reg>em</reg></choice> recuperare poterit.</foreign> <lb/><add place="pageTop">&IConsonant;une 22.</add> &SundayN; h. 2. 15 p m <lb/>1600 <add place="inline">dyed on <rs type="date" xml:id="date1">the 29 of <lb/>&IConsonant;une</rs></add></p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="la">frat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> filius <choice><orig>&crossedp;</orig><reg>pro</reg></choice> matre</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

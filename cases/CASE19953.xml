@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE19953">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE19953</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 209v</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0209v" to="0209v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="k">
+<persName><roleName>Mr</roleName> <surname>King</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Assistant preacher</occupation>
+</person>
+<person xml:id="w">
+<persName><roleName>Mr</roleName> <surname>Whaley</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Assistant preacher</occupation>
+</person>
+<person xml:id="j">
+<persName><roleName>Mr</roleName> <surname>Johnson</surname></persName>
+<sex value="1">M</sex>
+<occupation>Minister</occupation>
+</person>
+<personGrp xml:id="ass">
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Assistant preacher</occupation>
+</personGrp>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-10-10" n="Saturday"/></p>
+<p><time when="18:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal" present="yes"/>
+<cb:subject ref="#j" present="no"/>
+<cb:topic key="morbusPassions" resp="#rnapier"><person sameAs="#j"/></cb:topic>
+<cb:topic key="curable"><person sameAs="#j"/></cb:topic>
+<cb:topic key="lunatic"><person sameAs="#j"/></cb:topic>
+<cb:topic key="anxietyAndMelancholy"><person sameAs="#j"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-07-02">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-07-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0422.jpg" url="Ashmole-404-0422.jpg" n="209v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> kinge m<hi rend="superscript">r</hi> whaly &amp; <lb/>the rest of the lectu<lb/>rers <rs type="address" xml:id="address1">of Toceter</rs> sente <lb/>&vVowel;nto me that I would <lb/>come over to see M<hi rend="superscript">r</hi> <lb/>&IConsonant;ansone a minister <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><sic>is</sic><corr type="noText"/></choice> lyeth <lb/>as it were in <del type="cancelled">a</del> despayre <lb/>&amp; cannot be comforted. by a letter <lb/>Octob. 10 &SaturdayN; hor. 6. 30 p <lb/>m. 160<choice><orig>i</orig><reg>1</reg></choice> <foreign xml:lang="la">qu&aelig;ro &vVowel;tr<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> <del type="strikethrough">sit <lb/>pos</del> morb<choice><orig>&uscon;</orig><reg>us</reg></choice> eius sit curabilis <lb/>nec ne. frenetic<choice><orig>&uscon;</orig><reg>us</reg></choice>. desperabundus.</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

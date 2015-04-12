@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE20232">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE20232</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 264r</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0264r" to="0264r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="av">
+<persName><forename>Alice</forename> <surname>Vans</surname></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1577-09-29" n="Monday" precision="low"/><time notBefore="20:00:00" notAfter="21:00:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<person xml:id="gj" evidence="internal">
+<persName><forename>Gillian</forename> <surname>Johnson</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="f1" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Farren</surname></persName>
+<sex value="2">F</sex>
+<residence xml:id="address2" key="databaseNormalizedIDKey">of filgrave</residence>
+</person>
+<person xml:id="f2" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Farren</surname></persName>
+<sex value="0">U</sex>
+<residence key="databaseNormalizedIDKey" evidence="inferred">of filgrave</residence>
+<death><date notAfter="1602-01-11" evidence="internal"/></death>
+</person>
+<listRelation><relation name="mother" active="#f1" passive="#f2" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1602-01-12" n="Tuesday"/></p>
+<p><time when="12:55:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#av" present="no" consent="no"/>
+<cb:object ref="#gj"/>
+<cb:topic key="lunatic"><person sameAs="#av"/></cb:topic>
+<cb:topic key="lightheadedPassions"><person sameAs="#av"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#gj"/></cb:topic>
+<cb:treatment/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-08-02">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-08-24">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0531.jpg" url="Ashmole-404-0531.jpg" n="264r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Alce vans <rs type="address" xml:id="address1">of filgrave</rs> <lb/>24 y. &IConsonant;an xi&jVowel;. &Tuesday; hor. <lb/>12. 55. p m 1602. was <lb/>last miklemas 24 yeres old. <lb/>as shee thincketh on a <choice><sic>muday</sic><corr>munday</corr></choice> <lb/><rs type="time" xml:id="time1">betwixt 8 &amp; 9 in the evening</rs></p>
+<p>very light headed.</p> 
+<p><lb/>rageth &amp; will away &amp; gr<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>deth her teethe. <add place="supralinear"><foreign xml:lang="la">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></add></p>
+</div>
+&astroChartPartial;
+<cb xml:id="colB" n="b"/>
+&astroChart;
+</body>
+</text>
+</TEI>

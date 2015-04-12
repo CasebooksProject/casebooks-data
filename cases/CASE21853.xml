@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21853">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21853</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 203v/Q4, f. 204r/Q3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, ff. 203v-204r</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0203v" to="0204r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jb">
+<persName><forename>John</forename> <surname>Bird</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wh">
+<persName><forename>William</forename> <surname>Hopkins</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gjames">
+<persName><roleName>Mr</roleName> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1604-12-29T18:40:00" notAfter-custom="1604-12-31T09:38:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#gjames #jb #wh"/>
+<cb:topic key="gambling"><person sameAs="#rnapier"/><person sameAs="#gjames"/><person sameAs="#jb"/><person sameAs="#wh"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-22">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-09-30">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> <subst><del type="strikethrough">Malyns</del> <add place="supralinear">Hopkins</add></subst> <lb/>&amp; &IConsonant;ohn Byrd play<supplied reason="binding" cert="medium">ed</supplied> <lb/>ag</p>
+<pb xml:id="f204r" n="204r"/>
+<p><lb/>&IConsonant;ohn Byrd &amp; wylli<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>Hopkins playd aganst <lb/>M<hi rend="superscript">r</hi> &IConsonant;ames &amp; my selfe Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b <lb/>29. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> h. 6. 40. p m 1604. <lb/>&amp; there syde d<subst><del type="over">y</del><add place="over">e</add></subst>aled &amp; we <lb/>could not get on set but <lb/>lost at 2<hi rend="superscript">d</hi> a man. 5 sets <lb/>at rou<subst><del type="over">gh</del><add place="over">fe</add></subst></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

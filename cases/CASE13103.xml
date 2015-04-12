@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13103">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13103</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 273v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0273v" to="0273v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ad">
+<persName><forename>Agnes</forename> <surname>Dickins</surname></persName>
+<sex value="2">F</sex>
+<age value="36">36</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="d">
+<persName><surname evidence="inferred" cert="medium">Dickins</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="mother" active="#ad" passive="#d"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-02-20" n="Wednesday"/></p>
+<p><time when="14:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ad"/>
+<cb:subject ref="#ad" present="unclear"/>
+<cb:topic key="legs"><person sameAs="#ad"/></cb:topic>
+<cb:topic key="paralysis"><person sameAs="#ad"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#ad"/></cb:topic>
+<cb:topic key="sweating"><person sameAs="#ad"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#ad"/></cb:topic>
+<cb:topic key="back"><person sameAs="#ad"/></cb:topic>
+<cb:topic key="pricking"><person sameAs="#ad"/></cb:topic>
+<cb:topic key="shooting"><person sameAs="#ad"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="financial"/>
+<cb:info type="event" subtype="unclear"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-02-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-05">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0546.jpg" url="Ashmole-228-0546.jpg" n="273v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Agnes Dickins <rs type="address" xml:id="address1">of <lb/>Wavendon</rs> 36 lyeth <lb/>in <choice><sic>h</sic><corr type="noText"/></choice> childbead <del type="strikethrough">t</del><subst><del type="over">h</del><add place="over">y</add></subst>ester<lb/>day was fortnight. her <lb/>right leg hath lost the <lb/>&vVowel;se of it full of ache <lb/>&amp; payne sweateth &amp; <lb/>is swelled. payned <lb/>in her backe. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a <lb/>pricking &amp; shooting <lb/>feb. 20 &WednesdayN; h. 2. 30 <lb/>p m. 1600. <add place="infralinear">delivered of a boye</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

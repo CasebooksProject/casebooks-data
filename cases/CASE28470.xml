@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE28470">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE28470</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 17v</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0017v" to="0017v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><genName>Young</genName> <roleName>Lady</roleName> <surname>Longueville</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="el">
+<persName><forename>Edward</forename> <surname>Longueville</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1604-04-17" n="Tuesday" sameAs="#date1"/><time when="20:40:00" sameAs="#time1"/></birth>
+</person>
+<listRelation><relation name="mother" active="#l" passive="#el"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-03-29" n="Friday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#l" evidence="internal" present="no"/>
+<cb:subject ref="#el #l" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="nonDizDisease"><person sameAs="#el"/></cb:topic>
+<cb:topic key="fallingSickness"><person sameAs="#el"/></cb:topic>
+<cb:topic key="pregnancy"><person sameAs="#l"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-09-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-09-30">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>young lady longfild sent <lb/>me a lett<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> touching her <lb/>child <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> is sicke march. 29 &Friday; <lb/>h. 1. p m. 1605.</p>
+<p><lb/>feareth falling sicknes</p>
+<p><lb/>my lady his moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <foreign xml:lang="la">qu&aelig;rit an mat<subst><del type="over"><gap reason="del" unit="chars" extent="3"/></del><add place="over">rix</add></subst> <lb/><add place="lineBeginning">eius</add> sit gravida. <choice><sic><gap reason="hand" unit="chars" extent="1"/></sic><corr type="noText"/></choice></foreign><note place="chart">falling sicknes</note></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+<div>
+<p><lb/><del type="strikethrough">my</del> Edward longfild <lb/>borne <rs type="date" xml:id="date1">Apr. 17. &Tuesday;</rs> <rs type="time" xml:id="time1">h. 8. 40</rs> <lb/>p m <del type="strikethrough">16<gap reason="blot" unit="chars" extent="2"/></del> <rs type="date" sameAs="#date1">1604</rs>.</p>
+</div>
+</body>
+</text>
+</TEI>

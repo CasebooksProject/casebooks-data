@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13669">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13669</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 23r</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0023r" to="0023r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rb">
+<persName><forename>Rebecca</forename> <surname>Busbridge</surname></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<death><date when="1603-05-19" precision="medium" evidence="internal"/></death>
+</person>
+<person xml:id="b">
+<persName><surname evidence="inferred" cert="medium">Busbridge</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<occupation>Grocer</occupation>
+</person>
+<listRelation><relation name="husband" active="#b" passive="#rb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-04-19" n="Tuesday"/></p>
+<p><time when="17:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rb" evidence="internal"/>
+<cb:subject ref="#rb" present="no"/>
+<cb:messenger ref="#b"/>
+<cb:item type="urine"/>
+<cb:topic key="pregnancy"><person sameAs="#rb"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#rb"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#rb"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-10-03">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-10-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Rebecca Busbridg <rs type="address" xml:id="address1">londinensis</rs> <lb/>a grocers wife 24 y Apr <choice><orig>i</orig><reg>1</reg></choice>9 <lb/>&Tuesday; hor 5. 15. p m. 1603.</p>
+<p><lb/><foreign xml:lang="la">qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> sit gravida <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> t<choice><orig><hi rend="overline">y</hi></orig><reg>ym</reg></choice>panit<choice><orig>&eover;</orig><reg>em</reg></choice> habeat.</foreign></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>her husb. brought this <lb/>wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</p>
+</div>
+</body>
+</text>
+</TEI>

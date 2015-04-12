@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE800">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE800</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="234">MS Ashmole 234, f. 104v</idno>
+&Forman001;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0104v" to="0104v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<org xml:id="drs">
+<orgName>The doctors</orgName>
+</org>
+<person xml:id="person1">
+<persName><roleName>Lord Mayor</roleName></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1596-09-24" n="Friday" cert="medium"/></p>
+<p><time notBefore="11:20:00" notAfter="18:40:00" cert="medium"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:topic key="prison"><person sameAs="#sforman" resp="#mhawkins"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-10-07">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2010-11-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-07-21">Additional material transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-07-22">Additional material checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2012-07-05">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-234-0210.jpg" url="Ashmole-234-0210.jpg" n="104v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Anno 1596 <foreign xml:lang="en">the 15 Septm <choice><orig>an <lb/>m&flourish;</orig><reg>am</reg></choice> at 20 &past; 8</foreign> in <choice><orig>q<hi rend="superscript">o</hi></orig><reg>quo</reg></choice> tempore <lb/>capt<choice><orig>&uscon;</orig><reg>us</reg></choice> fui et miss<choice><orig>&uscon;</orig><reg>us</reg></choice> ad carce<choice><orig><hi rend="overline">&crossedr;</hi></orig><reg>rum</reg></choice></p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="en">at this tyme I was <choice><orig><hi rend="overline">co</hi></orig><reg>com</reg></choice>mitted to <lb/>prisson by my L maior. and the <lb/>docters Laid their <choice><sic><choice><orig><hi rend="overline">co</hi></orig><reg>com</reg></choice>madmt</sic><corr><choice><orig><hi rend="overline">co</hi></orig><reg>com</reg></choice>mandment</corr></choice> on <lb/>me and the 23 &pmfl; I was baild <lb/>but I cam not out of prison till the <lb/>24 dai &Friday; &inmfl; 24 &past; 11.</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

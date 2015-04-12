@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11285">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11285</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 176r</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0176r" to="0176r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="el">
+<persName><forename>Elizabeth</forename> <surname>Lea</surname></persName>
+<sex value="2">F</sex>
+<age value="33">33</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1567-11-30" sameAs="#date2"/><time when="16:00:00" sameAs="#time1"/></birth>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="anon3">
+<sex value="1">M</sex>
+<death><date when="1598" sameAs="#date1"/></death>
+</person>
+<person xml:id="anon1" evidence="internal">
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Mr</roleName> <surname>Fortescue</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Gardener</occupation>
+</person>
+<listRelation><relation name="father" active="#anon3" passive="#el"/><relation name="gardener" active="#anon2" passive="#f"/><relation name="romanticPartner" mutual="#el #anon1" notAfter="1593"/><relation name="romanticPartner" mutual="#el #anon2" from="1593" precision="low" notAfter="1600-09-14"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-09-15" n="Monday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#el"/>
+<cb:subject ref="#el" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#el"/></cb:topic>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-01-12">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-01-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0359.jpg" url="Ashmole-202-0359.jpg" n="176r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elisabeth Lee <rs type="address" xml:id="address1">of Cublington</rs> <lb/>33. y. Sept 15 &MondayN; h. 9 <lb/>&antm;. 1600 a servant <lb/>her fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> dyed <rs type="date" xml:id="date1">2 y. since</rs></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>Elis. Lee <rs type="address" sameAs="#address1">of Cublington</rs> <lb/><foreign xml:lang="la">nata</foreign> <rs type="date" xml:id="date2"><choice><sic>1607</sic><corr>1567</corr></choice> &SundayN; <del type="strikethrough">h.</del> <lb/>being S<hi rend="superscript">t</hi> Androwes day</rs> <del type="strikethrough">an houre</del> <rs type="time" xml:id="time1">about evening <lb/>prayer. betwixt 4. h. 4 <lb/>p m</rs>. <choice><sic>1607</sic><corr>1567</corr></choice>.</p>
+</div>
+</body>
+</text>
+</TEI>

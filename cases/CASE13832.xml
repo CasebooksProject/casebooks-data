@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13832">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13832</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 48r</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0048r" to="0048r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jd">
+<persName><forename>John</forename> <surname>Daunt</surname></persName>
+<sex value="1">M</sex>
+<age value="42">42</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="h">
+<persName><roleName>Dr</roleName> <surname>Hickman</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="jw">
+<persName><forename>Joan</forename> <surname>Wood</surname></persName>
+<sex value="2">F</sex>
+<age value="25">25</age>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="servant" active="#jd" passive="#h"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-06-13" n="Monday"/></p>
+<p><time when="08:40:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jd #jw"/>
+<cb:subject ref="#jd #jw" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jd"/><person sameAs="#jw"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-10-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-10-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-06">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Daunt Docter Hickmans <lb/>servant <rs type="address" xml:id="address1">of North<choice><orig>&aover;</orig><reg>am</reg></choice>pton</rs>. 4<subst><del type="over">0</del><add place="over">2</add></subst> y <lb/>&IConsonant;une 13. <subst><del type="over"><unclear cert="high" reason="del">&SunSymbol;</unclear></del><add place="over">&Monday;</add></subst> hor. 8. 40. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1603. <add place="inline">&IConsonant;one Wood 25 y. <rs type="address" xml:id="address2">of <lb/>North<choice><orig>&aover;</orig><reg>am</reg></choice>pton</rs>. at the same <lb/>tyme.</add></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

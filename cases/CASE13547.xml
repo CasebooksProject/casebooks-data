@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13547">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13547</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 216v</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0216v" to="0216v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="r1">
+<persName><surname>Rawlins</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+<person xml:id="r2">
+<persName><surname type="maiden" evidence="inferred">Rawlins</surname></persName>
+<sex value="2">F</sex>
+<age value="5">5</age>
+</person>
+<listRelation><relation name="daughter" active="#r2" passive="#r1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-07-13" n="Thursday"/></p>
+<p><time when="17:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#r1" evidence="internal" present="unclear"/>
+<cb:subject ref="#r2" present="unclear"/>
+<cb:topic key="requestingTreatment"><person sameAs="#r2"/></cb:topic>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#r2"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-03-01">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-03-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0436.jpg" url="Ashmole-182-0436.jpg" n="216v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/><add place="marginLeft">1598</add> Rawlings <del type="strikethrough">mor</del> qu&aelig;rit remedi<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice> morbo <del type="strikethrough">p</del> <add place="supralinear"><del type="strikethrough">fere</del></add> fili&aelig; <add place="supralinear">fere</add> sex annos nat&aelig;. <lb/>&IConsonant;uli&jVowel; 13 &ThursdayN;. h. <choice><orig>post m</orig><reg>pm</reg></choice> 5. <subst><del type="cancelled">30.</del> <add place="supralinear">20.</add></subst></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

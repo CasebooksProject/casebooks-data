@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE19392">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE19392</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 113v</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0113v" to="0113v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Mrs</roleName> <surname>Askewe</surname></persName>
+<sex value="2">F</sex>
+<age value="40">F</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ja">
+<persName><forename>Jane</forename> <surname>Askewe</surname></persName>
+<sex value="2">F</sex>
+<age value="16">16</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ra">
+<persName><forename>Richard</forename> <surname>Askewe</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="daughter" active="#ja" passive="#a"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-05-08" n="Friday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#a #ja #ra"/>
+<cb:subject ref="#a #ja #ra" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#a"/><person sameAs="#ra"/></cb:topic>
+<cb:topic key="head"><person sameAs="#a"/></cb:topic>
+<cb:topic key="greenSickness"><person sameAs="#ja"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#ra"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#ra"/></cb:topic>
+<cb:topic key="liver"><person sameAs="#ra"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-05-08">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-05-29">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0230.jpg" url="Ashmole-404-0230.jpg" n="113v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="superscript"><hi rend="overline">res</hi></hi></orig><reg>Mrs</reg></choice> Askue <rs type="address" xml:id="address1">of midle <lb/>Claydon</rs>. 40 y. mai&jVowel; <lb/>8 &FridayN; hor. 12. &antm;. <lb/>160<choice><orig>i</orig><reg>1</reg></choice></p>
+<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> capitis dolore <choice><orig>&crossedp;</orig><reg>per</reg></choice> 3<hi rend="superscript">es</hi> <lb/>annos</foreign></p>
+<p><lb/><foreign xml:lang="la">It<choice><orig>m&flourish;</orig><reg>em</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> puella</foreign> &IConsonant;ane <lb/>Askue <rs type="address" sameAs="#address1">of Middle Claydon</rs> <lb/>16 y. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice></foreign> greene sicknes.</p>
+<p><lb/>It<choice><orig>m&flourish;</orig><reg>em</reg></choice> Rich Askue. <rs type="address" sameAs="#address1">of <lb/>midle Claydon</rs>. 40 y. hor <lb/>12. &FridayN;.</p>
+<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> lateris dextri dolore <lb/>et algore et pulsu <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice>cedente &vVowel;ti arbitrat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>ex obstructione hepatis.</foreign></p>
+<cb xml:id="colA" n="a"/>
+</div>
+</body>
+</text>
+</TEI>

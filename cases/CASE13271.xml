@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13271">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13271</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 121r</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0121r" to="0121r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sb">
+<persName><forename>Susan</forename> <surname>Blundell</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1586-09-17" n="Saturday" sameAs="#date1"/><time notBefore="08:00:00" notAfter="09:00:00" sameAs="#time1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597" cert="medium"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#sb"/>
+<cb:subject ref="#sb" present="unclear"/>
+<cb:topic key="rising"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="swooning"><person sameAs="#sb"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0245.jpg" url="Ashmole-175-0245.jpg" n="121r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Susan Blundle <rs type="date" xml:id="date1">1586 <lb/>sept 17</rs> <rs type="time" xml:id="time1">betwixt 8 &amp; 9 <lb/>mor.</rs> <rs type="date" sameAs="#date1">on a satterd.</rs> shee <lb/>is in danger every foote <lb/>to have her breath stopped <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>a thinge <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> riseth at her <lb/>throote <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> maketh her often <lb/>to s<subst><del type="over">o<gap reason="del" extent="2" unit="chars"/></del><add place="over">w</add></subst>ounde</p>
+</div>
+<cb xml:id="colA" n="a"/>
+&astroChart;
+</body>
+</text>
+</TEI>

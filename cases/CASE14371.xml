@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE14371">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE14371</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 2B, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 130r</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0130r" to="0130r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mg">
+<persName><forename>Mary</forename> <surname>Goodyear</surname></persName>
+<sex value="2">F</sex>
+<age value="26">26</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Servant</occupation>
+<death><date when="1604-01-10" xml:id="date1" exclude="#date2" evidence="internal"/><date notBefore-custom="1604-01-11T00:00:00" notAfter-custom="1604-01-11T12:00:00" xml:id="date2" exclude="#date1" evidence="internal"/></death>
+</person>
+<person xml:id="c">
+<persName><genName>Old</genName> <surname>Clitheroe</surname></persName>
+<sex value="1" cert="medium" evidence="conjecture">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="servant" active="#mg" passive="#c"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-01-06" n="Friday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mg"/>
+<cb:subject ref="#mg" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#mg"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-11-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-12-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-06">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Mary Goodgere <rs type="address" xml:id="address1">of Newe<lb/>porte</rs> a servant to old <lb/>Glydero <rs type="address" sameAs="#address1">of Newport</rs> <lb/>26 y &IConsonant;an 6. &Friday; hor <lb/>9. &antm; 160<subst><del type="over">3</del><add place="over">4</add></subst>.</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE16151">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE16151</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 192v/Q4B, f. 193r/Q4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="207">MS Ashmole 207, ff. 192v-193r</idno>
+&Napier007;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0192v" to="0193r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Mr</roleName> <surname>Matthews</surname></persName>
+<sex value="1">M</sex>
+<age value="50">50</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="b">
+<persName><roleName>Mrs</roleName> <surname>Bird</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-02-09" n="Thursday"/></p>
+<p><time when="16:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#m #b"/>
+<cb:subject ref="#m #b" present="unclear"/>
+<cb:topic key="windColic"><person sameAs="#m"/><person sameAs="#b"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-01-25">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-03-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Mathew <rs type="address" xml:id="address1">of <choice><sic>Calver</sic><corr type="noText"/></choice> Calverton</rs> <lb/>50 y feb 9. &Thursday; <lb/>hor 4: 45. p m <lb/>1604.</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg/></choice> Bird at <lb/>the same tyme <lb/>boath for w<choice><orig>&yover;</orig><reg>yn</reg></choice>de <lb/>cholicke<note place="chart">M<hi rend="superscript">r</hi> Mathew <rs type="address" sameAs="#address1">Claverton</rs> <lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Birde <rs type="address" xml:id="address2">of Haversham</rs>.</note></p>
+<pb xml:id="f193r" n="193r"/>
+<p><lb/>M<hi rend="superscript">r</hi> Mathew <rs type="address" sameAs="#address1">of Calverton</rs> 50 y <lb/>febr 9 &Thursday; hor <lb/>4. 45. p m 1604 <lb/>w<choice><orig>&yover;</orig><reg>yn</reg></choice>de cholicke</p>
+<p><lb/><choice><orig>m<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Byrd <foreign xml:lang="la">eod<choice><orig>&eover;</orig><reg>em</reg></choice> <lb/>tempore</foreign> w<choice><orig>&yover;</orig><reg>yn</reg></choice>de <lb/>cholicke.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

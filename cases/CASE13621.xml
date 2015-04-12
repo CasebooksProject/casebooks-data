@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13621">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13621</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 14r/Q4, f. 13v/Q4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="197">MS Ashmole 197, f. 14r, f. 13v</idno>
+&Napier008;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0014r" to="0013v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ib">
+<persName><roleName>Mrs</roleName> <forename>Isabel</forename> <surname>Brocket</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<birth><date when="1572-04-25" evidence="internal" cert="high"/><time when="18:00:00" precision="medium" evidence="internal"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1603-03-29" n="Tuesday" evidence="inferred"/></p>
+<p><time notBefore="10:00:00" notAfter="12:30:00" evidence="inferred"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ib"/>
+<cb:subject ref="#ib" present="unclear"/>
+<cb:topic key="stomach"><person sameAs="#ib"/></cb:topic>
+<cb:topic key="skin"><person sameAs="#ib"/></cb:topic>
+<cb:topic key="face"><person sameAs="#ib"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-10-01">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-10-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&Mres; Isabella <lb/>Brocket 30 y <lb/>for her stomack <lb/>&amp; pimpels in face <lb/>&amp; chin <choice><orig>&crossedp;</orig><reg>pro</reg></choice>ceeding <lb/>of o<unclear cert="high" reason="hand">bstru</unclear>ctions.</p>
+</div>
+<pb xml:id="f13v" n="13v"/>
+</body>
+</text>
+</TEI>

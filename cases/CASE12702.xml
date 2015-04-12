@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12702">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12702</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 204r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0204r" to="0204r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eh">
+<persName><forename>Elizabeth</forename> <surname type="maiden">Hartwell</surname></persName>
+<sex value="2">F</sex>
+<age value="25">25</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="u">
+<persName><roleName>Mrs</roleName> <surname>Uvedale</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="servant" active="#eh" passive="#u" notAfter="1599-09-14"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-09-15" n="Saturday"/></p>
+<p><time when="13:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#eh"/>
+<cb:subject ref="#eh" present="unclear"/>
+<cb:topic key="throatMouth"><person sameAs="#eh"/></cb:topic>
+<cb:topic key="bleeding"><person sameAs="#eh"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-01-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-01-30">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0409.jpg" url="Ashmole-228-0409.jpg" n="204r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elisabeth Hartwell <rs type="address" xml:id="address1">of <lb/>Astwood</rs> onc <choice><orig>M<hi rend="superscript"><hi rend="overline">r</hi>s</hi></orig><reg>Mrs</reg></choice> &VVowel;&uConsonant;edales <lb/>servant. 25 y. &vVowel;nmaried. <lb/>hath clum<choice><orig>&crossedp;</orig><reg>per</reg></choice>s of bloode in <lb/>her mouthe 15 of Sept <lb/>&SaturdayN; h. 1. 15 p m. 1599<note place="chart">cl<choice><orig>&uover;</orig><reg>um</reg></choice>pers of blood in her <lb/>mouth</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

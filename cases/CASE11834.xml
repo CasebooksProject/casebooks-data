@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11834">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11834</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 59r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0059r" to="0059r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rk">
+<persName><forename>Richard</forename> <surname>Kirby</surname></persName>
+<sex value="1">M</sex>
+<age value="56">56</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Miller</occupation>
+</person>
+<person xml:id="y">
+<persName><roleName>Mr</roleName> <surname>Yarrow</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="servant" active="#y" passive="#rk"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-12-01" n="Friday"/></p>
+<p><time when="10:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#y" evidence="internal" present="unclear"/>
+<cb:subject ref="#rk" present="no" consent="yes"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#rk"/></cb:topic>
+
+
+<cb:topic key="heart"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="head"><person sameAs="#rk"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#rk"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-02">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0121.jpg" url="Ashmole-228-0121.jpg" n="59r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Rich Kerby Miller <rs type="address" xml:id="address1">of <lb/>Newport</rs> <subst><del type="strikethrough">60</del> <add place="supralinear">56</add></subst> yeres <lb/>old. long &amp; grevously <lb/>sick <foreign xml:lang="la"><subst><del type="strikethrough"><unclear reason="del" cert="high">filiu</unclear>s <choice><orig>&crossedp;</orig><reg>pro</reg></choice> patre</del> <add place="supralinear"><unclear reason="faded" cert="high">servus</unclear> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> Domino</add></subst> c<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/><choice><sic>eu&uscon;</sic><corr>ei<choice><orig>&uscon;</orig><reg>us</reg></choice></corr></choice> consensu</foreign> it hath <lb/>held this 4 yeres by <lb/>fits but this quarter of <lb/>this yere held him sorely <lb/>&amp; keepeth home some days <lb/>his bed in his fit &amp; then <lb/>abroad. a payne in his <lb/>hart <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a sighing black <lb/>coloured very fat of his <lb/>face but <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> this sicknes <lb/>shrunk in his bodye &amp; legs. <lb/>M<hi rend="superscript">r</hi> yarrow for him <lb/><choice><sic>novemb.</sic><corr type="delText"/></choice> 1 Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. <choice><orig>die <lb/>&VenusSymbol;</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h. 10. 15. 1598<note place="chart">hed hart. bellye</note></p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

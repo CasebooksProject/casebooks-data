@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE6839">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE6839</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 37r</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0037r" to="0037r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fp">
+<persName><forename>Frances</forename> <surname>Prannell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon2">
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="romanticPartner" mutual="#fp #anon1" notAfter="1600-03-01"/><relation name="wife" active="#anon2" passive="#anon1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-03-02" n="Sunday"/></p>
+<p><time when="18:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#fp" evidence="internal"/>
+<cb:subject ref="#fp" present="no"/>
+<cb:object ref="#anon1 #anon2"/>
+<cb:item type="letter"/>
+<cb:topic key="maritalProspects"><person sameAs="#fp"/></cb:topic>
+<cb:topic key="romanticRelations"><person sameAs="#fp"/></cb:topic>
+<cb:topic key="dieFirst"><person sameAs="#anon1"/><person sameAs="#anon2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-12-16">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-03-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-08-07">Coding upgraded by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0083.jpg" url="Ashmole-236-0083.jpg" n="37r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>fraunces prannel. 1600 <lb/>the 2 of March &Sunday; &pmfl; at <lb/>30 &past; 6. sent hir Letter to me to <lb/>be certained of all thing&pluralLoop; wher<lb/>of before we had <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>ference lok <lb/>25 of feb. what woers she hath and <lb/>with whom And when she shal marrie <lb/>&amp; of her old Lo&uConsonant;e what <choice><sic>wilbe com</sic><corr>wil becom</corr></choice> of <lb/>him wher ever she shall en&iConsonant;oy him <lb/>or noe &amp; yf yea when. best to tarry <lb/>for him or noe. <foreign xml:lang="la">et quis prius obi&jVowel;t <lb/>de se aut &vVowel;xor&flourish; ei<choice><orig>&uscon;</orig><reg>us</reg></choice></foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

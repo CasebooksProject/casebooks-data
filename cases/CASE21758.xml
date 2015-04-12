@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21758">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21758</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 188v</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0188v" to="0188v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="en">
+<persName><forename>Elizabeth</forename> <surname>Nichols</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="jb" evidence="internal">
+<persName><forename>John</forename> <surname>Blundell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon" evidence="internal">
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="wife" active="#en" passive="#anon" evidence="internal" from="1604-11-26"/><relation name="servant" active="#en" passive="#rnapier" notAfter="1604-11-23"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-11-24" n="Saturday" evidence="inferred"/></p>
+<p><time notBefore="10:20:00" notAfter="13:00:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#en"/>
+<cb:topic key="preaching"><person sameAs="#rnapier"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elis nichols <rs type="address" xml:id="address1">of our towne</rs> <lb/>onc my servante entreated <lb/>me to mar<subst><del type="over"><gap reason="del" extent="2" unit="chars"/></del><add place="over">ry</add></subst>e her <choice><sic>on</sic><corr type="noText"/></choice> <add place="supralinear">my</add> <lb/>selfe on munday next &amp; <lb/>to take <choice><orig>&crossedp;</orig><reg>par</reg></choice>te of her D<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>ner <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 24 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 10. 20 <lb/>&antm; 1604</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

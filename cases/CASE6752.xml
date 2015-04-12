@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE6752">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE6752</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 25v</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0025v" to="0025v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tb">
+<persName><roleName>Mr</roleName> <forename evidence="external">Thomas</forename> <surname>Blague</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ow">
+<persName><roleName>Dean</roleName> <forename evidence="external">Owen</forename> <surname>Wood</surname></persName>
+<sex value="1">M</sex>
+</person>
+
+<person xml:id="j" evidence="internal">
+<persName><roleName>Lady</roleName> <surname>Jarret</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="t" evidence="internal">
+<persName><roleName>Mrs</roleName> <surname>Townsend</surname></persName>
+<sex value="2">F</sex>
+<residence xml:id="address1" key="databaseNormalizedIDKey">at hackny</residence>
+</person>
+<person xml:id="w1" evidence="internal">
+<persName><roleName>Lady Windsor</roleName></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="w2" evidence="internal">
+<persName><roleName>Mrs</roleName> <surname>Wenes</surname></persName>
+<sex value="2">F</sex>
+<occupation>Apothecary</occupation>
+</person>
+<person xml:id="f" evidence="internal">
+<persName><roleName>Mrs</roleName> <surname>Ferdinando</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="romanticPartner" mutual="#ow #j"/><relation name="romanticPartner" mutual="#ow #t"/><relation name="romanticPartner" mutual="#ow #w1"/><relation name="romanticPartner" mutual="#ow #w2"/><relation name="romanticPartner" mutual="#ow #f"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-02-18" n="Monday"/></p>
+<p><time when="15:10:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#tb"/>
+<cb:subject ref="#tb" present="unclear"/>
+<cb:object ref="#ow"/>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#tb"/><person sameAs="#ow"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-03-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0060.jpg" url="Ashmole-236-0060.jpg" n="25v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>at 30 &past; 10. the 18 of <lb/>feb. 1600 m<hi rend="superscript">r</hi> blagu&flourish; <lb/>for Dean wod</p>
+</div>
+&astroChart;
+
+</body>
+</text>
+</TEI>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12155">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12155</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 114v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0114v" to="0114v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mb">
+<persName><forename>Margery</forename> <surname type="maiden">Brightwell</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+
+<person xml:id="b1" evidence="inferred" cert="high">
+<persName><surname>Brightwell</surname></persName>
+<sex value="1">M</sex>
+<death><date notAfter="1588" evidence="inferred"/></death>
+</person>
+<person xml:id="b2" evidence="inferred" cert="high">
+<persName><surname>Brightwell</surname></persName>
+<sex value="2">F</sex>
+<death><date notAfter="1588" evidence="inferred"/></death>
+</person>
+<listRelation><relation name="daughter" active="#mb" passive="#b1 #b2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-03-27" n="Tuesday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mb"/>
+<cb:subject ref="#mb" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#mb"/></cb:topic>
+
+<cb:topic key="lean"><person sameAs="#mb"/></cb:topic>
+<cb:topic key="pining"><person sameAs="#mb"/></cb:topic>
+<cb:topic key="bentDouble"><person sameAs="#mb"/></cb:topic>
+<cb:info type="event" subtype="previousConsultation"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0232.jpg" url="Ashmole-228-0232.jpg" n="114v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Margery Brightwell <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> this <lb/>11 yeres. <rs type="address" xml:id="address1">of Milton Kenes</rs>. <lb/>40 yeres old. a meaden &vVowel;nmarid <lb/>&amp; kept of almes by the towne. <lb/>sick ever sinc Alhalloutide. loketh <lb/>leane &amp; yellowe &amp; pineth as in a <lb/>c<choice><orig>&oover;</orig><reg>on</reg></choice>sumption &amp; bendeth double. 27 <lb/>of March. &TuesdayN;. h 2. p m. <lb/>1599. shee came yesterday <choice><orig>die <lb/>&MoonSymbol;</orig><reg>die Lun&aelig;</reg><reg type="gloss">Monday</reg></choice> h. 12. <del type="strikethrough">but</del> 26 of March but <lb/>then I could not speak <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

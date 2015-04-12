@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE28009">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE28009</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 255r</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0255r" to="0255r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jj">
+<persName><forename>John</forename> <surname>Jefferies</surname></persName>
+<sex value="1">M</sex>
+<age value="34">34</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-08-22" n="Friday"/></p>
+<p><time when="14:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jj"/>
+<cb:subject ref="#jj" present="unclear"/>
+<cb:topic key="swelling"><person sameAs="#jj"/></cb:topic>
+<cb:topic key="knees"><person sameAs="#jj"/></cb:topic>
+<cb:topic key="burning"><person sameAs="#jj"/></cb:topic>
+<cb:topic key="hot"><person sameAs="#jj"/></cb:topic>
+<cb:topic key="sweating"><person sameAs="#jj"/></cb:topic>
+<cb:topic key="witchcraft"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-06-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-06-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn &IConsonant;effry <rs type="address" xml:id="address1">of Tingewicke</rs> 34 y <lb/>Aug. 22 &Friday; ho. 2. 50 p. m. 1606 <lb/>A swelling in his knee tooke him <lb/>on monday was sevenight burnes <lb/>and is very hott that he cannot <lb/>sleepe the left knee he sweates <lb/>as he lyes</p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="la">metuit venefici<choice><orig>&uover;</orig><reg>um</reg></choice></foreign></p>
+</div>
+<cb xml:id="colB" n="b"/>
+&geoChartPreliminary;
+&geoChart;
+</body>
+</text>
+</TEI>

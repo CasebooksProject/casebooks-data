@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE9203">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE9203</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="411">MS Ashmole 411, f. 74v</idno>
+&Forman006;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0074v" to="0074v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ch">
+<persName><roleName>Sir</roleName> <forename>Clement</forename> <surname>Heigham</surname></persName>
+<sex value="1">M</sex>
+<age value="37">37</age>
+</person>
+<person xml:id="ah">
+<persName><forename>Anne</forename> <surname type="married" evidence="inferred">Heigham</surname></persName>
+<sex value="2">F</sex>
+<age value="43">43</age>
+</person>
+
+<person xml:id="r">
+<persName><forename>Robert</forename></persName>
+<age value="35">35</age>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a">
+<persName><forename>Anne</forename></persName>
+<sex value="2">F</sex>
+<age value="28">28</age>
+</person>
+ <listRelation><relation name="wife" active="#ah" passive="#ch"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-05-03" n="Sunday"/></p>
+<p><time when="16:55:00" cert="high" evidence="internal"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#ch"/>
+<cb:subject ref="#ch" present="unclear"/>
+<cb:object ref="#ah"/>
+<cb:topic key="secretEnemies"><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-03-23">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-06-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-25">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-411-0150.jpg" url="Ashmole-411-0150.jpg" n="74v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Clemment heihom <lb/>of 37 years <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> An &vVowel;xor&flourish; <lb/>e&iConsonant;us</foreign> of 43 yers 1601. 3 <lb/>may <foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> sit mulier De qua <lb/>Locuti sum<choice><orig>&uscon;</orig><reg>us</reg></choice> et &vVowel;tr<choice><orig>&mover;</orig><reg>um</reg></choice> <choice><orig>aliq<hi rend="superscript">d</hi></orig><reg>aliquid</reg></choice> <lb/>mali <choice><orig>&crossedp;</orig><reg>per</reg></choice> ill<choice><orig>&aover;</orig><reg>am</reg></choice> sib Accd</foreign></p>
+</div>
+&astroChart;
+<div>
+
+<table>
+<row>
+<cell>Ane 40</cell><cell>Clemment 8 36 yers</cell>
+</row>
+<row>
+<cell>Robartus 8 35<note place="infralinear">Robart died</note></cell><cell>Ane &dash; 28 yers<note place="lineEnd">Died</note></cell>
+</row>
+</table>
+</div>
+</body>
+</text>
+</TEI>

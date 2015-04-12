@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE27141">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE27141</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 107v</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0107v" to="0107v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jv">
+<persName><forename>Jane</forename> <surname>Verney</surname></persName>
+<sex value="2">F</sex>
+<age value="29">29</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="v">
+<persName><surname evidence="inferred" cert="medium">Verney</surname></persName>
+<sex value="0">U</sex>
+<age value="10">10</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="mother" active="#jv" passive="#v"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-04-15" n="Tuesday" evidence="inferred"/></p>
+<p><time notBefore="10:00:00" notAfter="11:00:00" evidence="inferred"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jv"/>
+<cb:subject ref="#jv" present="unclear"/>
+<cb:topic key="gnawing"><person sameAs="#jv"/></cb:topic>
+<cb:topic key="heart"><person sameAs="#jv"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#jv"/></cb:topic>
+<cb:topic key="wind"><person sameAs="#jv"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-04-07">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-05-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ane varney <rs type="address" xml:id="address1">of <lb/>great Horwood</rs> <lb/>29 y. maryed <lb/>11 y. on child 10 <lb/>y old. <subst><del type="over"><unclear cert="low" reason="del">w</unclear></del><add place="over">h</add></subst>ad on aft<supplied reason="binding"><choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></supplied> <lb/><foreign xml:lang="la">&amp; abort<choice><orig>&uover;</orig><reg>um</reg></choice></foreign>. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a <lb/>continuall grudg<supplied reason="binding" cert="low">ing</supplied> <lb/>a gnawing abo<supplied reason="binding" cert="low">ut</supplied> <lb/>her harte &amp; right <lb/>syde. most pyt<gap reason="binding" extent="4" unit="chars"/> <lb/>hath th<choice><orig>&eover;</orig><reg>em</reg></choice> monthly <lb/>a spot or 2. trob<supplied reason="binding">led</supplied> <lb/>also <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> wynd. <lb/>pale colourd</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13164">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13164</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="175">MS Ashmole 175, f. 51r</idno>
+&Napier001;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0051r" to="0051r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hr">
+<persName><forename>Henry</forename> <surname>Rookes</surname></persName>
+<sex value="1">M</sex>
+<death><date when="1595-10-01" n="Wednesday" sameAs="#date2"/><time when="12:00:00" precision="medium" sameAs="#time1"/></death>
+<event type="burial"><p>Buried on <date when="1595-10-02" n="Thursday" sameAs="#date1">Thursday 2 October 1595</date>.</p></event>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597" evidence="conjecture" cert="low"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal" present="yes"/>
+<cb:querent ref="#anon" evidence="internal" present="unclear"/>
+<cb:subject ref="#hr" present="no"/>
+<cb:topic key="death"><person sameAs="#hr"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-15">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-03-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-175-0105.jpg" url="Ashmole-175-0105.jpg" n="51r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Henry Rook&pluralLoop; <rs type="date" xml:id="date1">1595 <foreign xml:lang="en">was buried <lb/>the 2 of Octob.</foreign> &ThursdayN;</rs>. decessit <lb/><rs type="date" xml:id="date2">the 1 of Octob. &WednesdayN;</rs>. <rs type="time" xml:id="time1">circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> me<lb/>ridiem</rs>. eiusd<choice><orig>&eover;</orig><reg>em</reg></choice> d<subst><del type="over">e</del><add place="over">i</add></subst>ei.</p>
+<p><lb/>Henr. Rookes qu&aelig;rimus <choice><orig>&crossedp;</orig><reg>pro</reg></choice> h. 8 <choice><orig>ante merid</orig><reg>am</reg></choice>. <lb/>&Wednesday; 1 die Oct. <lb/>1595.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

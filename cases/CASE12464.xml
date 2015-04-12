@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12464">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12464</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 164r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0164r" to="0164r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wc">
+<persName><forename>William</forename> <surname>Colles</surname></persName>
+<sex value="1">M</sex>
+<age value="58">58</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-05-15" n="Tuesday"/></p>
+<p><time when="16:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#wc" evidence="internal"/>
+<cb:subject ref="#wc" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#wc"/></cb:topic>
+
+<cb:topic key="wind"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="back"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="hot"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="liver"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="head"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="dizziness"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="trembling"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="hands"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="hot"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="chest"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="numbness"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="face"><person sameAs="#wc"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-11-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-11-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0329.jpg" url="Ashmole-228-0329.jpg" n="164r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Will: <del type="strikethrough">Co<unclear cert="medium" reason="hand"><subst><del type="over">l</del><add place="over">e</add></subst></unclear>lles</del> Colles <lb/><rs type="address" xml:id="address1">of Parke berrye</rs> of 58 <lb/>troubled sick this <choice><orig>i</orig><reg>1</reg></choice>6 <lb/>yeres &amp; hath had the <lb/>Counsell of the most <lb/>ex<choice><orig>&crossedp;</orig><reg>per</reg></choice>te phisitions trou<lb/>bled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a windy cause as he <lb/>sayth c<choice><orig>&oover;</orig><reg>om</reg></choice>ming from his backe <lb/>by a great heate &amp; obstruction <lb/>from my liver. also <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a bad <lb/>stomacke elevating winde into <lb/>my hed. <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> causeth gydi<lb/>nes or streming in my <lb/>head <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> cometh as he <lb/>thinketh by the ascending <lb/>&vVowel;p of bad &amp; melancholy <lb/>humours &amp; <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a shaking <lb/>in my left hand mightely <lb/>as it were the palsye <lb/>but always very hotte. <lb/>nowe of late <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <lb/>brevity of wind in my <lb/>stomacke &amp; chest &amp; lately <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a <choice><sic>m&uover;mnes</sic><corr>n<choice><orig>&uover;</orig><reg>um</reg></choice>nes</corr></choice> &amp; tinckling in my <lb/>hands. lips &amp; sydes &amp; face. this <lb/>15 of may. &TuesdayN; h. 4. 45. p <lb/>m. 1599.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

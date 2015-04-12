@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11804">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11804</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 53r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0053r" to="0053r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rd">
+<persName><forename>Reynold</forename> <surname>Davis</surname></persName>
+<sex value="1">M</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Glover</occupation>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation cert="medium">Boy (Servant)</occupation>
+</person>
+<listRelation><relation name="servant" active="#anon" passive="#rd" cert="medium"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-11-16" n="Thursday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rd" evidence="internal"/>
+<cb:subject ref="#rd" present="no"/>
+<cb:messenger ref="#anon"/>
+<cb:item type="urine"/>
+<cb:topic key="nonDizDisease"><person sameAs="#rd"/></cb:topic>
+
+<cb:topic key="bruise"><person sameAs="#rd"/></cb:topic>
+<cb:topic key="bedridden"><person sameAs="#rd"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-31">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0109.jpg" url="Ashmole-228-0109.jpg" n="53r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Raynold Davyes <del type="strikethrough">of</del> the glover <lb/><rs type="address" xml:id="address1">of Stonystratford</rs> sent his <lb/>boy <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his water keepeth <lb/>his bed most of all but sometimes <lb/>riseth &vVowel;ppon the 11 of novemb<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it <lb/>took him first, but was very ill <lb/>handled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it &vVowel;ppon &SundayN; <lb/>sent his boy to me for my consell <lb/>this 16 of novemb &ThursdayN; h. <lb/>8. &antm;. 1598 he thincketh he took <lb/>it <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a bruise he took <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the caring of <lb/>hides a yere since. 40 yeres old.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

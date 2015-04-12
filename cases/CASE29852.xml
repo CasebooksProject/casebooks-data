@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29852">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE29852</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-21">21 August 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="216">MS Ashmole 216, f. 216v</idno>
+&Napier010;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0216v" to="0216v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mh">
+<persName><roleName>Mrs</roleName> <forename>Mary</forename> <surname>Hartop</surname></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="r">
+<persName><roleName>Mrs</roleName> <surname>Rol<gap extent="2" unit="chars" reason="binding"/></surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="h1">
+<persName><surname evidence="inferred" cert="medium">Hartop</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" cert="medium">Hartop</surname></persName>
+<sex value="0">U</sex>
+<death><date notAfter="1605-11-01" evidence="inferred"/></death>
+</person>
+<listRelation><relation name="daughter" active="#mh" passive="#r"/><relation name="mother" active="#mh" passive="#h1 #h2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-11-02" n="Saturday"/></p>
+<p><time when="13:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mh" evidence="external"/>
+<cb:subject ref="#mh" present="no"/>
+<cb:item type="urine" evidence="external"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#mh"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-06">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-04-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Mary Hartop <lb/><rs type="address" xml:id="address1">of Milton</rs> <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Rol<gap reason="binding" unit="chars" extent="3"/> <lb/>Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>. 24 y Nov<supplied reason="binding" cert="medium"><choice><orig>&eover;</orig><reg>em</reg></choice>b</supplied> <lb/>2 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 1. 30 p m <lb/>1605.</p>
+<p><lb/>maryed 6 y. hath <lb/>had 2. child on liv<supplied reason="binding" cert="high">ing</supplied> <lb/>&amp; thoth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> dead</p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

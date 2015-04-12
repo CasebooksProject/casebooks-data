@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11785">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11785</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 49r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0049r" to="0049r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jr">
+<persName><forename>John</forename> <surname>Risely</surname></persName>
+<sex value="1">M</sex>
+<age value="72">72</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Fuller</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-11-08" n="Wednesday"/></p>
+<p><time when="12:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jr" evidence="internal"/>
+<cb:subject ref="#jr" present="no"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="colic"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="teeth"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="feet"><person sameAs="#jr"/></cb:topic>
+<cb:recipe/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-30">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-03">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0101.jpg" url="Ashmole-228-0101.jpg" n="49r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Risely <rs type="address" xml:id="address1">of Rawnson <lb/>mill</rs>. <del type="strikethrough">l</del> 72 yeres old sick <lb/>in <choice><sic>L</sic><corr type="noText"/></choice> his body this 2 or 3 <lb/>yeres about his <add place="supralinear">6 weekes.</add> he c<choice><orig>&oover;</orig><reg>om</reg></choice>play<lb/>neth <add place="supralinear">of his navell</add> it is sore &amp; r<choice><orig>&uover;</orig><reg>un</reg></choice>neth <lb/><subst><del type="over">a</del><add place="over">i</add></subst>t reeseth at his navell leek <lb/>an oake water. it looketh red <lb/>&amp; is rawe. he hath the cho<lb/>lick <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> all &amp; <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> for this <lb/>7 yeres: maketh water very <lb/>often. he thinketh his teeth <lb/>to <unclear reason="hand" cert="high">stink</unclear> in his hed. &amp; his <lb/>feete to Double &vVowel;nder him <lb/>&WednesdayN;. h. 12. 15. 1598 <lb/>he sent me a dish of oates <lb/>he is a fuller. <lb/>novemb. 8. 1598.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

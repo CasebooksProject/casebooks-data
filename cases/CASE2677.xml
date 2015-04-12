@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE2677">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE2677</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 233v</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0233v" to="0233v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mh">
+<persName><forename>Mary</forename> <surname>Holcrafte</surname></persName>
+<sex value="2">F</sex>
+<age value="48">48</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="th">
+<persName><forename>Thomas</forename> <surname>Holcrafte</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="e">
+<persName><roleName>Queen</roleName> <forename>Elizabeth</forename> <genName>I</genName></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="sister" active="#mh" passive="#th" evidence="external"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-10-14" n="Friday"/></p>
+<p><time when="08:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#mh" evidence="internal"/>
+<cb:subject ref="#mh" present="unclear"/>
+<cb:object ref="#th"/>
+<cb:topic key="diz" resp="#sforman"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="legalMatters" evidence="external"><person sameAs="#mh"/><person sameAs="#th"/></cb:topic>
+<cb:topic key="financeAndProperty"><person sameAs="#mh"/><person sameAs="#th"/></cb:topic>
+<cb:topic key="preferment"><person sameAs="#mh"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-02-16">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-02-17">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-29">CASE10068 merged into this case by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0476.jpg" url="Ashmole-226-0476.jpg" n="233v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>Mary holcrafte of <lb/>48 yeares 1597 the 14 <lb/>octob. &Friday; &Anflmfl; at 30 <lb/>&past; 8 Diz her self <rs type="address" xml:id="address1">of <lb/>Smithfild</rs>&slash;. <add place="infralinear">Thomas holcrafte in <placeName><choice><sic>notingane</sic><corr>notingame</corr></choice> shire</placeName> &slash;</add></p>
+</div>
+&astroChart;
+
+<div>
+<p><lb/>wher she shall obtein her <foreign xml:lang="la"><choice><orig>40<hi rend="superscript"><hi rend="overline">li</hi></hi></orig><reg>40 libra</reg></choice></foreign> <lb/>a yere or no. &amp; wher the <lb/>Quens <choice><orig>M<hi rend="superscript">atis</hi></orig><reg>Majesties</reg></choice> will doe for her&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

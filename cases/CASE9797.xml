@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE9797">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE9797</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="411">Ashmole Ms. 411, f. 153r</idno>
+&Forman006;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0153r" to="0153r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sb">
+<persName><forename>Susan</forename> <surname>Brooke</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="rl">
+<persName><forename>Robert</forename> <surname>Lovet</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fl">
+<persName><forename>Francis</forename> <surname>Lovet</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ac1">
+<persName><forename>Anne</forename> <surname>Crisp</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="ac2">
+<persName><forename>Augustine</forename> <surname>Crisp</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="em">
+<persName><forename>Elizabeth</forename> <surname>Morgan</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="son" active="#rl" passive="#fl #ac1"/><relation name="daughter" active="#ac1" passive="#ac2 #em"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-10-16" n="Friday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sb" evidence="internal"/>
+<cb:subject ref="#sb" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#sb" resp="#mhawkins"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-03-30">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+ <change when="2011-06-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-25">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-411-0307.jpg" url="Ashmole-411-0307.jpg" n="153r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/>Susan brok&pluralLoop; Letter cam&flourish; <lb/>1601 the 16 octob &Friday; &anmfl; at 11 <lb/><foreign xml:lang="la">questo <choice><orig>&crossedp;</orig><reg>pro</reg></choice> le&uConsonant;et</foreign> <lb/>her fathers name</p><space dim="vertical" extent="2" unit="lines"/>
+ <p><lb/>Robart le&uConsonant;et the sonn of fraunces le&uConsonant;et <lb/>and of An crispe. And this An was <lb/>the Daughter of Austin crispe &amp; <choice><sic>e</sic><corr type="delText"/></choice> <lb/>Elizabeth morgan. <rs type="address" xml:id="address1">in buckingam <lb/>shire</rs></p>
+</div>
+</body>
+</text>
+</TEI>

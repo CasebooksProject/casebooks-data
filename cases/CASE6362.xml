@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE6362">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE6362</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="219">MS Ashmole 219, f. 198v</idno>
+&Forman004;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0198v" to="0198v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jf1">
+<persName><forename>Joan</forename> <surname>Fox</surname></persName>
+<sex value="2">F</sex>
+<age value="80" cert="medium">80</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="jf2">
+<persName><forename>John</forename> <surname>Fox</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Goldsmith</occupation>
+</person>
+<person xml:id="rf">
+<persName><forename>Robin</forename> <surname>Fox</surname></persName>
+<sex value="1">M</sex>
+<age value="14">14</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ec">
+<persName><forename>Elizabeth</forename> <surname>Collins</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="es">
+<persName><forename>Edward</forename> <surname>Smith</surname></persName>
+<sex value="1">M</sex>
+<age value="20">20</age>
+</person>
+<person xml:id="j">
+<persName><forename>Joseph</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ir">
+<persName><forename>Isabel</forename> <surname>Roper</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="jf3">
+<persName><forename>John</forename> <surname>Fox</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+<occupation>Preacher</occupation>
+</person>
+<listRelation>
+<relation name="husband" active="#jf2" passive="#jf1"/>
+<relation name="grandson" active="#rf" passive="#jf1"/>
+<relation name="servant" active="#ec" passive="#jf1"/>
+<relation name="kinswoman" mutual="#ir #jf1"/>
+<relation name="son" active="#jf3" passive="#jf1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-11-21" n="Wednesday"/></p>
+<p><time when="09:40:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#jf1"/>
+<cb:subject ref="#jf1" present="unclear"/>
+<cb:object ref="#rf #ec #es #j #ir #jf3"/>
+<cb:topic key="lossAndTheft"><person sameAs="#jf1"/><person sameAs="#rf"/><person sameAs="#ec"/><person sameAs="#es"/><person sameAs="#j"/><person sameAs="#ir"/><person sameAs="#jf3"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-05-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-05-19">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-07-14">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-219-0403.jpg" url="Ashmole-219-0403.jpg" n="198v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>&IConsonant;one fox of <unclear reason="damage" cert="medium">8</unclear>0 yers 1599 <lb/><rs type="address" xml:id="address1">at milke strete corner</rs> the <lb/>wife of &IConsonant;ohn fox a gould<lb/>smith <rs type="address" sameAs="#address1">at the Signe of the <lb/>fox</rs> <foreign xml:lang="la"><del type="cancelled"><unclear reason="del" cert="high"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> Rebus</unclear></del> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> <subst><del type="over">Am</del><add place="over">que</add></subst>sto</foreign> <lb/>1599 the 21 of novemb <lb/>&Wednesday; &Anflmfl; at 40 &past; 9</p>
+<p><lb/>of money <foreign xml:lang="la"><choice><orig>viij<hi rend="superscript"><hi rend="overline">li</hi></hi></orig><reg>viii libra</reg></choice></foreign></p>
+<p><lb/>a peir of gould bracslet&pluralLoop; <lb/><choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> the fox engra&uConsonant;en <lb/>on them &slash;. loste on <lb/>Tuesdai last was <lb/>3 wick&pluralLoop; or ther about</p>
+<p><lb/>Ther is in <placeName>the house</placeName> a child <lb/>Robin fox her sonns sonne <lb/>of 14 yers</p>
+<p><lb/>Elizab collins her maid</p>
+<p><lb/>Edward smith of 20 yers <lb/>that keps the shope</p>
+<p><lb/>&IConsonant;osepth.</p>
+<p><lb/>Isabell Ro<choice><orig>&crossedp;</orig><reg>per</reg></choice> a kinswoman <lb/>of hers that &vVowel;seth to com <lb/>to <del type="cancelled">my</del> <placeName>her house</placeName></p>
+<p><lb/>&IConsonant;hon fox her sonn a p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>cher <lb/>that lyeth <rs type="address" xml:id="address2">at the Courte</rs>&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

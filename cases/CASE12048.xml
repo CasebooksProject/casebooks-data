@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12048">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12048</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 97v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0097v" to="0097v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jw">
+<persName><forename>John</forename> <surname>Wethered</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w">
+<persName><surname evidence="inferred" cert="high">Wethered</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1597-03-25" n="Friday" sameAs="#date1"/><time when="13:30:00" sameAs="#time1"/></birth>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="father" active="#jw" passive="#w"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-03-10" n="Saturday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jw" evidence="internal" present="unclear"/>
+<cb:subject ref="#w" present="unclear"/>
+<cb:topic key="cannotStand"><person sameAs="#w"/></cb:topic>
+<cb:topic key="cannotWalk"><person sameAs="#w"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-04">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0198.jpg" url="Ashmole-228-0198.jpg" n="97v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Weatherhed <rs type="address" xml:id="address1">of Olny</rs> <lb/>for a Child of 3 yeres <lb/>old. it cannot stand nor goe <lb/>s<subst><del type="over"><unclear reason="del" cert="medium">e</unclear></del><add place="over">i</add></subst>nc this twelmoneth taken <lb/>in his lims. cannot abide <lb/>to stand but then Cryeth <lb/>loveth to sit eateth his meate <lb/>well. <foreign xml:lang="la">pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio</foreign>. Marti&jVowel; <lb/>10. &SaturdayN;. <choice><sic>&SaturnSymbol;</sic><corr>h</corr></choice>. 1. 1599. <lb/>It was borne <rs type="date" xml:id="date1">1597. Marti&jVowel; 25 <choice><orig>die <lb/>&VenusSymbol;</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice></rs> at <rs type="time" xml:id="time1">1. 30. p m</rs> <rs type="date" sameAs="#date1">1597</rs>.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

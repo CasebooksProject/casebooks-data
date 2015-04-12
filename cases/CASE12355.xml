@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12355">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12355</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 145v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0145v" to="0145v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Agnes</forename> <surname>Harwood</surname></persName>
+<sex value="2">F</sex>
+<age value="50">50</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-05-01" n="Tuesday"/></p>
+<p><time when="08:35:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ah" evidence="internal"/>
+<cb:subject ref="#ah" present="no"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#ah"/></cb:topic>
+
+<cb:topic key="pain"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="torso"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="impostume"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="nausea"><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-10-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0292.jpg" url="Ashmole-228-0292.jpg" n="145v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Agnes Harwood <rs type="address" xml:id="address1">of Cosgrave</rs> <lb/>50 yeres payned in her <lb/>legs &amp; body. hoven in <lb/>the neither side of her belly as it were an impostume <lb/>very sicke <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>all &amp; vomiteth <lb/>&vVowel;p every daye what <choice><sic>serve</sic><corr cert="high">soever</corr></choice> shee <lb/>taketh. sent to me this first <lb/>of may. <subst><del type="over">8</del><add place="over">h</add></subst>or 8. 3<subst><del type="over">0</del><add place="over">5</add></subst>. <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt <lb/>m</orig><reg>am</reg></choice>. 1599.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

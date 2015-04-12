@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12407">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12407</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 154v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0154v" to="0154v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Mr</roleName> <surname>Farindon</surname></persName>
+<sex value="1">M</sex>
+</person>
+<personGrp xml:id="fdr">
+<sex value="0">U</sex>
+<occupation>Doctor</occupation>
+</personGrp>
+<listRelation><relation name="doctor" active="#fdr" passive="#f"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-05-08" n="Tuesday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#f" evidence="internal"/>
+<cb:subject ref="#f" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="heart"><person sameAs="#f"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-11-07">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-11-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0310.jpg" url="Ashmole-228-0310.jpg" n="154v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> &ff;arindon sent to me for my <lb/>Counsell for his passion of <lb/>his hart. very <choice><sic>s</sic><corr type="noText"/></choice> &vVowel;suall &amp; easely <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice>cured <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> every small sturring <lb/>&amp; continueth <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him 3 dayes. <lb/>&amp; for the Correcting of the <lb/>spleene <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> is supposed by <lb/>the docters to be the cause <lb/>therof. becaus he feeleth him <lb/>selfe not well in the spleen <lb/>sent his letter. may the <lb/>8. &TuesdayN; h. <del type="strikethrough">7. 50</del> 8. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1599.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

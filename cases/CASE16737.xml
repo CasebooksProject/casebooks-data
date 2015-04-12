@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE16737">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE16737</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="221">MS Ashmole 221, f. 18v</idno>
+&Napier006;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0018v" to="0018v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m1">
+<persName><roleName>Mr</roleName> <surname>Mansell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m2">
+<persName><surname evidence="inferred" cert="medium">Mansell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><roleName>Mr</roleName> <surname>Leate</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#m2" passive="#m1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1602-03-28" n="Sunday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#m1" evidence="internal" present="yes"/>
+<cb:subject ref="#m2" present="no"/>
+<cb:object ref="#l"/>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#m2"/><person sameAs="#l"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-03-22">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2012-04-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+<change when="2014-01-14">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-221-0040.jpg" url="Ashmole-221-0040.jpg" n="18v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Maunsell came <lb/>to talke <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> me touching <lb/>his sonne in <placeName>london</placeName> <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> M<hi rend="superscript">r</hi> leate Marti&jVowel; <lb/><choice><sic>28</sic><corr type="noText"/></choice> 28 &Sunday; hor 2. p m <lb/>1602. <foreign xml:lang="la">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an nuc<unclear cert="low" reason="binding">i</unclear><choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>sit b<unclear cert="low" reason="hand">omi</unclear>t nec ne an <lb/>filius sit <del type="strikethrough">male<unclear cert="medium" reason="del">fang</unclear></del> fing. <lb/><choice><orig>&crossedp;</orig><reg>per</reg></choice>da necne.</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE1719">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE1719</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 94r</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0094r" to="0094r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hf">
+<persName><forename>Hugh</forename> <surname>Fort</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ay">
+<persName evidence="external"><forename>Anne</forename> <surname>Young</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-05-15" n="Sunday" cert="medium" evidence="internal"/></p>
+<p><time when="00:50:00" cert="medium" evidence="internal"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:object ref="#ay #hf"/>
+<cb:topic key="nonDizDisease"><person sameAs="#ay"/></cb:topic>
+<cb:topic key="liveOrDieMedical"><person sameAs="#ay"/></cb:topic>
+<cb:topic key="visits" cert="medium"><person sameAs="#sforman"/><person sameAs="#hf"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-10-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2010-10-26">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0199.jpg" url="Ashmole-226-0199.jpg" n="94r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body>
+<div>
+<p><lb/>AY hugo forte venit <lb/>ad me. &VVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> AY egrotate <lb/><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice> et &VVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> melius est <lb/>Ire ad se nec <choice><orig><hi rend="overline">n</hi></orig><reg>non</reg></choice> &amp;c. De <lb/>Accidentib<choice><orig>&uscon;</orig><reg>us</reg></choice> su<choice><orig>&crossedp;</orig><reg>per</reg></choice> viut<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>illius et &VVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> obi&jVowel;t <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice>n<choice><orig>&oover;</orig><reg>on</reg></choice> <lb/>et &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> missa est <choice><orig>&crossedp;</orig><reg>pro</reg></choice> me et ob qu<choice><orig>&aover;</orig><reg>am</reg></choice> caus<choice><orig>&aover;</orig><reg>am</reg></choice></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

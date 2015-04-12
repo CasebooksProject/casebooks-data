@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE8162">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE8162</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="236">MS Ashmole 236, f. 207r</idno>
+&Forman005;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0207r" to="0207r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="je1">
+<persName><forename>Joan</forename> <surname type="married">Eade</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="je2">
+<persName><forename>James</forename> <surname>Eade</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Captain</roleName> <surname>Adie</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w">
+<persName><surname>Watts</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="husband" active="#je2" passive="#je1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-09-08" n="Monday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#je1"/>
+<cb:subject ref="#je1" present="unclear"/>
+<cb:object ref="#je2"/>
+<cb:topic key="absentPerson"><person sameAs="#je2"/></cb:topic>
+ <cb:topic key="aliveOrDead"><person sameAs="#je2"/></cb:topic>
+<cb:judgment/>
+<cb:info type="financial"/>
+
+</cb:consultation>
+
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-01-24">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+ <change when="2011-03-31">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-07-24">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-236-0421.jpg" url="Ashmole-236-0421.jpg" n="207r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+ <p><lb/>&IConsonant;one Eade for &IConsonant;eams <lb/>eade her husband 1600 the <lb/>8 of Septm &Monday; &pmfl; at 5 <lb/>that went for <placeName>the Indians</placeName> <lb/>4 years a goe &amp; lefte ther <lb/>and from thence sent pri<lb/>soner to <placeName>Cy&uConsonant;ill</placeName> in <placeName>spaine</placeName>&slash; <lb/><foreign xml:lang="la">&VVowel;trum sit vi&uConsonant;us aut <lb/>mortuus</foreign>. And wher <lb/>he will ever com to her <lb/>Again or noe he went <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <lb/><add place="lineBeginning">Captin</add> Adey in <name type="ship">the goulden Phenix</name> <lb/>of wat&pluralLoop;</p>
+</div>
+&astroChart;
+
+<div>
+ <p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> eodem supra&slash;</foreign></p>
+</div>
+ &geoChart;
+
+</body>
+</text>
+</TEI>

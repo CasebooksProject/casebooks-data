@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21968">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21968</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 223r</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0223r" to="0223r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<age value="26">26</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+</person>
+<person xml:id="s">
+<persName><surname>Shelton</surname></persName>
+<sex value="2" evidence="conjecture" cert="high">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1605-02-20" n="Wednesday"/></p>
+<p><time when="14:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#anon2" evidence="internal" present="yes"/>
+<cb:subject ref="#anon1" present="yes" consent="no"/>
+<cb:object ref="#s"/>
+<cb:topic key="afflictedInMind"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#s"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-27">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>a young m<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Bothon in <lb/>Huntington shire</rs> 26 y was <lb/>brought <foreign xml:lang="la">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign> feb <del type="strikethrough">r</del> <lb/>20. &Wednesday; h. 2. 45. p m. 1605. <lb/>strangly tormented by witchraft <lb/>sinc shreve<subst><del type="over"><gap reason="del" extent="3" unit="chars"/></del><add place="over">tue</add></subst>sday Shelton the <lb/>witch in prison<note place="chart">witchraft. <lb/>troubled in mynd</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

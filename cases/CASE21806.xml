@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21806">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE21806</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-11-23">23 November 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="415">MS Ashmole 415, f. 197r</idno>
+&Napier009;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0197r" to="0197r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ea">
+<persName><forename>Em</forename> <surname>Ashby</surname></persName>
+<sex value="2">F</sex>
+<age value="23">23</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="a">
+<persName><surname evidence="inferred" cert="medium">Ashby</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth><date when="1604-11-02" precision="medium" sameAs="#date1"/></birth>
+</person>
+<listRelation><relation name="mother" active="#ea" passive="#a"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1604-12-14" n="Friday"/></p>
+<p><time when="10:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ea"/>
+<cb:subject ref="#ea" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#ea"/></cb:topic>
+
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-02-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-03-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Em Ashby <rs type="address" xml:id="address1">of Sisam</rs> 23 <lb/>maryed 4 y hath had a child <lb/><rs type="date" xml:id="date1">about six weekes sinc</rs> now <lb/>very sicke Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 14 &Friday;. h <lb/><choice><sic>&VenusSymbol; h.</sic><corr type="noText"/></choice> 10. 20 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> 1604.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

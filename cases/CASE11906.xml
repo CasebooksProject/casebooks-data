@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11906">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11906</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 73r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0073r" to="0073r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rr">
+<persName><forename>Richard</forename> <surname>Risely</surname></persName>
+<sex value="1">M</sex>
+<age value="2">2</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1597-04-10" sameAs="#date1"/><time when="03:00:00" sameAs="#time1"/><placeName sameAs="#address1"/></birth>
+</person>
+<person xml:id="r1">
+<persName><surname evidence="inferred" cert="high">Risely</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="r2">
+<persName><surname evidence="inferred" type="married" cert="high">Risely</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="wife" active="#r2" passive="#r1" cert="high"/><relation name="son" active="#rr" passive="#r1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-12-29" n="Friday"/></p>
+<p><time when="09:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#r1 #r2" evidence="internal" present="yes"/>
+<cb:subject ref="#rr" present="yes"/>
+<cb:topic key="fallingSickness" cert="medium"><person sameAs="#rr"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0149.jpg" url="Ashmole-228-0149.jpg" n="73r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Rich. Risely <rs type="address" xml:id="address1">of Willing</rs> 2 yeres old. <del type="strikethrough">the</del> fortnight <lb/>after <subst><del type="over">Chr</del><add place="over">E</add></subst>sterday &Sunday; morning <lb/>about 3 a clock morning <lb/>troubled by fits. especially <lb/>the 18 of Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. after noone <lb/>it <choice><sic>wull</sic><corr>will</corr></choice> fall Downe &amp; crye <lb/>&amp; tak hold of any thing. <lb/>Richard Risely a very feare <lb/>child &amp; of a goodly c<choice><orig>&oover;</orig><reg>om</reg></choice>plex<lb/>ion was borne <rs type="date" xml:id="date1">1597. the <lb/>10 of Aprill. &SundayN;</rs> <rs type="time" xml:id="time1">h. <lb/>3. &antm;</rs>. 1597. came to <lb/>me Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 29 &FridayN; &dash; h. 9. 30. <lb/><foreign xml:lang="la">c<choice><orig>&uover;</orig><reg>um</reg></choice> &vVowel;xore et filiolo.</foreign> borne <rs type="address" sameAs="#address1">at wil<lb/>ling</rs>.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

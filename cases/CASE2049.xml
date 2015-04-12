@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE2049">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE2049</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 146r</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0146r" to="0146r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon3">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon1">
+<sex value="0">U</sex>
+<occupation>Draper</occupation>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Bowar</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Goldsmith</occupation>
+</person>
+<listRelation><relation name="countrywoman" active="#anon3" passive="#sforman"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-07-11" n="Monday"/></p>
+<p><time when="16:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#anon3"/>
+<cb:subject ref="#anon3" present="unclear"/>
+<cb:object ref="#anon2"/>
+<cb:topic key="maritalProspects"><person sameAs="#anon3"/><person sameAs="#anon2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-12-03">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2010-12-07">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-08-05">Revised by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0301.jpg" url="Ashmole-226-0301.jpg" n="146r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>my Countri wom<choice><orig>&aover;</orig><reg>an</reg></choice> that <lb/>dwelte in <placeName>watlinge <lb/>strete</placeName> <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> the draper <lb/>that Dwelte <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> m<hi rend="superscript">r</hi> <lb/>bowar of <placeName>Sarum</placeName> 1597 <lb/>the x&jVowel; of &IConsonant;uli&jVowel; &Monday; <choice><orig>p <lb/>m&flourish;</orig><reg>pm</reg></choice> <subst><del type="strikethrough">30</del> <add place="supralinear">50</add></subst> &past; 4 <foreign xml:lang="la"><choice><sic>&vVowel;trm</sic><corr>&vVowel;trum</corr></choice> conduc&flourish; <lb/>Auri fabr<choice><orig>&uover;</orig><reg>um</reg></choice> &amp;c</foreign>&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

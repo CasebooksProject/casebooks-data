@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11932">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11932</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 77r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0077r" to="0077r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ct">
+<persName><roleName>Mr</roleName> <forename>Charles</forename> <surname>Toucher</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="t1">
+<persName><surname evidence="inferred" type="married">Toucher</surname></persName>
+<sex value="2">F</sex>
+<age value="45">45</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<person xml:id="t2">
+<persName><surname evidence="inferred">Toucher</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="wife" active="#t1" passive="#ct"/><relation name="brother" mutual="#ct #t2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-01-03" n="Wednesday"/></p>
+<p><time when="12:09:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#t1" evidence="internal"/>
+<cb:subject ref="#t1" present="no"/>
+<cb:messenger ref="#anon"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="costive"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="bleeding"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="chest"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="stuffed"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="faintness"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="nose"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="noCourses"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="back"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="mother"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="shortWinded"><person sameAs="#t1"/></cb:topic>
+
+
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-09-20">Topic coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0157.jpg" url="Ashmole-228-0157.jpg" n="77r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/><choice><sic>M<hi rend="superscript">r</hi></sic><corr cert="high" resp="#jyoung">Mrs</corr></choice> <del type="strikethrough">Charels</del> Tutcher Charles <lb/><rs type="address" xml:id="address1">at Stonystratford at the swan <lb/>of 2 neckes</rs>. 45. sick this <lb/>fortnight. <choice><sic>sonewhat</sic><corr>somewhat</corr></choice> Costive <lb/>shee doth bleede &amp; is very mutch <lb/>stuffed in her chest can scarce <lb/>tak her winde. ready to sound <lb/>a grosse &amp; fat woman. sent <lb/>a poer woman. &IConsonant;an. 3. <choice><orig>die <lb/>&MercurySymbol;</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice>. h. 12. 9. mi. 1599. <add place="supralinear"><del type="strikethrough">at 1. p m</del> </add><add place="lineEnd">twice &amp; <lb/>thrice a day <lb/>bleedeth at <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> nose. half a pint at a time <add place="supralinear">every oth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> daye</add></add></p>
+</div>
+&astroChart;
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>Charels Touchers wife hath <lb/>not had her termes this <lb/>6 yeres her stomack <lb/>hoven <lb/>&amp; her hed ill &amp; backe her <lb/>wombe &amp; chest stuffed <lb/>short winded. hart ill <lb/>water good. yellowe <lb/>but thin. taken a greefe <lb/>for payment of monyes for <lb/>her husb. brother for s<unclear reason="hand" cert="medium">ur</unclear><lb/>tiship. <foreign xml:lang="la"><choice><orig>200<hi rend="superscript"><hi rend="overline">li</hi></hi></orig><reg>200 libra</reg></choice></foreign></p>
+</div>
+&astroChartDeleted;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE9715">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE9715</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 142v/Q2, f. 54v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="411">MS Ashmole 411, f. 142v, f. 54v</idno>
+&Forman006;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0142v" to="0142v"/>
+<locus from="0054v" to="0054v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w">
+<persName><roleName>Mr</roleName> <surname>Web</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jp">
+<persName><forename evidence="external">John</forename> <surname>Pet</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-09-10" n="Thursday"/></p>
+<p><time when="08:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#w" cert="medium"/>
+<cb:subject ref="#w" present="no"/>
+<cb:item type="letter"/>
+<cb:object ref="#jp"/>
+<cb:topic key="controversies"><person sameAs="#w"/><person sameAs="#jp"/></cb:topic>
+</cb:consultation>
+
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-03-30">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2011-06-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-11-02">Merged with CASE9027 by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-07-25">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-411-0286.jpg" url="Ashmole-411-0286.jpg" n="142v"/>
+<graphic xml:id="Ashmole-411-0110.jpg" url="Ashmole-411-0110.jpg" n="54v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>1<subst><del type="over">5</del><add place="over">6</add></subst>01 the 10 of Septembr <lb/>&Thursday; &anmfl; 20 &past; 8. m<hi rend="superscript">r</hi> <lb/>web. <foreign xml:lang="la">si <choice><sic>hebebit</sic><corr>habebit</corr></choice> victori<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>De pet. pro <unclear reason="hand" cert="high" resp="#rralley">R</unclear>ioto su<choice><orig>&crossedp;</orig><reg>per</reg></choice> <lb/>literam</foreign></p>
+</div>
+&astroChart;
+<div><pb xml:id="f54v" n="54v"/>
+<p><lb/><foreign xml:lang="en">1601 10 of Septe <lb/>20 &past; 8.</foreign> quis victorizat <lb/>e <choice><orig>m<hi rend="superscript">ro</hi></orig><reg>magistro</reg></choice> web et pet <lb/>su<choice><orig>&crossedp;</orig><reg>per</reg></choice> literam <choice><orig>&crossedp;</orig><reg>pro</reg></choice> Rioto&slash;</p>
+</div>
+&geoChart;
+</body>
+</text>
+</TEI>

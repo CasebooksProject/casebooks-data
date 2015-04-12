@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10235">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE10235</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 27r</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0027r" to="0027r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="uc">
+<persName><forename>Ursula</forename> <surname>Cole</surname></persName>
+<sex value="2">F</sex>
+<age value="26">26</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="jl">
+<persName><forename>James</forename> <surname>Linwell</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-04-02" n="Wednesday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation type="horary">
+<cb:location type="querentVisitsPractitioner"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#uc" evidence="internal"/>
+<cb:subject ref="#uc" present="yes"/>
+<cb:topic key="afflictedInMind"><person sameAs="#uc"/></cb:topic>
+<cb:topic key="haunted" evidence="internal"><person sameAs="#uc"/></cb:topic>
+<cb:topic key="devil" evidence="internal"><person sameAs="#uc"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-29">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-08-31">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0059.jpg" url="Ashmole-202-0059.jpg" n="27r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&VVowel;rsula Coles <rs type="address" xml:id="address1">of Ashon</rs> <lb/>26. y. Apr. 2. &WednesdayN; h. 10 <lb/>&antm; 1600 this day sennet <lb/>at night. <foreign xml:lang="la">c<choice><orig>&uover;</orig><reg>um</reg></choice> consensu</foreign><note place="chart">troubled in minde.</note></p>
+</div>
+&astroChart;
+
+<div>
+<p><lb/>&IConsonant;ames Linwell <rs type="address" xml:id="address2">of Ashon</rs> <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> was amis &amp; nowe is <lb/>mended by <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I gave him <lb/>ill in his mynd about <lb/>a yere since he causd <lb/>this body to come.</p>
+</div>
+
+</body>
+</text>
+</TEI>

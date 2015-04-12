@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11100">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11100</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 147r</idno>
+&Napier004;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0147r" to="0147r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gr">
+<persName><forename>Guy</forename> <surname>Reeve</surname></persName>
+<sex value="1">M</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Tailor</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-07-31" n="Thursday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#gr"/>
+<cb:subject ref="#gr" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#gr"/></cb:topic>
+<cb:topic key="feet"><person sameAs="#gr"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#gr"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-11-16">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-01-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-202-0301.jpg" url="Ashmole-202-0301.jpg" n="147r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Guy Rive <rs type="address" xml:id="address1">of Haversham</rs> <lb/>30. <del type="strikethrough">m</del> batcheler a Tayler <lb/>sometymes of <placeName>Hanslop</placeName>. <lb/>&IConsonant;uly 31 &ThursdayN; h. 12. <lb/>1600. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an ache <choice><sic>in</sic><corr type="delText"/></choice> <lb/><del type="strikethrough">his right hip. &amp; thenc</del> <lb/>into the soule of his <lb/>feete. cold ache. ever <lb/>sinc whitsontide.</p>
+<p><lb/>hath bene cupped nev<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> the <lb/>better&slash;.</p>
+<p><lb/>hath had a seere clooth &amp; <lb/>was the better for it.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

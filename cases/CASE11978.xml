@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11978">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11978</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 86r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0086r" to="0086r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mm">
+<persName><forename>Margaret</forename> <surname>Marshal</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="tm">
+<persName><forename evidence="external">Thomas</forename> <surname evidence="inferred">Marshal</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="am">
+<persName><forename evidence="external">Alice</forename> <surname evidence="external">Mason</surname></persName>
+<sex value="2" evidence="external">F</sex>
+<age value="15">15</age>
+</person>
+<listRelation><relation name="husband" active="#tm" passive="#mm"/><relation name="mother" active="#mm" passive="#am"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-02-25" n="Sunday"/></p>
+<p><time when="17:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#mm #tm" evidence="internal" present="yes"/>
+<cb:subject ref="#am" present="no"/>
+<cb:topic key="requestingTreatment"><person sameAs="#am"/></cb:topic>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-12">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0175.jpg" url="Ashmole-228-0175.jpg" n="86r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Margaret Marcholl &amp; her <lb/>husband came to me for <lb/>some ease for her child <lb/>of 15 yeres age 3 week&pluralLoop; <lb/>afore shrovetide. &vVowel;ppon <lb/>a friday somewhat before <lb/>daye. at 25 of feb: <choice><orig>die <lb/>&SunSymbol;</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice> h. 5. 15. m p m. 1599.</p>
+</div>
+</body>
+</text>
+</TEI>

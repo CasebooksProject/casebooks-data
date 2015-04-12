@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE18880">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE18880</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 24v</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0024v" to="0024v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="n1">
+<persName><surname>Newcombe</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="n2">
+<persName><surname>Newcombe</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="kinsman" active="#rnapier" passive="#anon"/><relation name="brother-in-law" mutual="#n1 #rnapier" evidence="external"/><relation name="sister" active="#n2" passive="#rnapier"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-02-06" n="Friday"/></p>
+<p><time when="06:35:00"/></p>
+<cb:consultation type="horary">
+<cb:item type="letter"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#n1 #n2" evidence="internal" present="no"/>
+<cb:subject ref="#n2" present="no"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#n2"/></cb:topic>
+
+<cb:topic key="weak"><person sameAs="#n2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-03-28">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-04-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0052.jpg" url="Ashmole-404-0052.jpg" n="24v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>My broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; Syst<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Nuec<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>be wrote <lb/>to me by my Cosens touching my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s <lb/>sicknes at <subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">f</add></subst>eb. 6. <choice><orig>die <choice><sic>&JupiterSymbol;</sic><corr>&VenusSymbol;</corr></choice></orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> hor 6. 3<unclear cert="medium" reason="blot">5</unclear> <lb/>m 1601. very sickly &amp; weake</p>
+</div>
+</body>
+</text>
+</TEI>

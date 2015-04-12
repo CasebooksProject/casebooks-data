@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE1779">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE1779</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<notesStmt><note type="interest" resp="#rralley">It appears from the judgment that this case concerns sleepwalking.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 104v</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0104v" to="0104v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mb">
+<persName><forename>Margaret</forename> <surname type="maiden">Bull</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1585-05-08" n="Saturday" sameAs="#date1"/> <time when="07:00:00" sameAs="#time1"/></birth>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+ <person xml:id="tb">
+  <persName><forename>Thomas</forename> <surname>Bull</surname></persName>
+  <sex value="1">M</sex>
+ </person>
+ <person xml:id="ab">
+  <persName><forename>Agnes</forename> <surname type="married">Bull</surname></persName>
+  <sex value="2">F</sex>
+ </person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+ <listRelation>
+ <relation name="daughter" active="#mb" passive="#tb #ab"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-05-23" n="Monday"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#anon" evidence="conjecture" cert="medium" present="unclear"/>
+<cb:subject ref="#mb" present="no"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#mb"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2010-10-26">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2010-10-29">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-226-0218.jpg" url="Ashmole-226-0218.jpg" n="104v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>Margaret bull the <lb/>Daughter of thomas And Agnis <lb/>bull <rs type="address" xml:id="address1">of haggersted</rs> was born <lb/><rs type="date" xml:id="date1">1585 the 8 of may &Saturday;</rs> <rs type="time" xml:id="time1"><choice><orig>An&flourish; <lb/>m&flourish;</orig><reg>am</reg></choice> at 7</rs> <foreign xml:lang="la">nata erat</foreign></p>
+</div>
+&astroChartBlank;
+</body>
+</text>
+</TEI>

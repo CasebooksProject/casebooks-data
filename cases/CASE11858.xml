@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11858">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11858</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 63v</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0063v" to="0063v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jb">
+<persName><forename>John</forename> <surname>Bynion</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1595-09-29" n="Monday" sameAs="#date1"/><time when="14:30:00" sameAs="#time1"/></birth>
+</person>
+<person xml:id="b" evidence="external">
+<persName><surname evidence="inferred" cert="high">Bynion</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-12-08" n="Friday" evidence="external" cert="high"/></p>
+<p><time when="09:45:00" evidence="external" cert="high"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b" evidence="external" present="unclear"/>
+<cb:subject ref="#jb" present="unclear"/>
+<cb:topic key="head"><person sameAs="#jb"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#jb"/></cb:topic>
+<cb:topic key="appetite"><person sameAs="#jb"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-09-05">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-09-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0130.jpg" url="Ashmole-228-0130.jpg" n="63v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Bynion <foreign xml:lang="la">natus</foreign> <lb/><rs type="date" xml:id="date1">1595. &MondayN; 29 sept<choice><orig>&eover;</orig><reg>em</reg></choice>b.</rs> <lb/>h <rs type="time" xml:id="time1">2. 30. <choice><sic>ni.</sic><corr>mi.</corr></choice> p m.</rs> <rs type="date" sameAs="#date1">1595</rs>. <lb/>troubled exceedingly <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>hed ache. &amp; will eate <lb/>but litle.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

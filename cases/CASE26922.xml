@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE26922">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26922</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-11-11">11 November 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 72r/Q2, f. 72r/Q4, f. 72v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="215">MS Ashmole 215, f. 72r-v</idno>
+&Napier011;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0072r" to="0072v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ap">
+<persName><forename>Alice</forename> <surname>Pearce</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<listRelation><relation name="uncle" active="#anon1" passive="#ap"/><relation name="kinswoman" active="#ap" passive="#anon2"/><relation name="servant" active="#anon2" passive="#rnapier"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1606-03-20" n="Thursday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ap"/>
+<cb:subject ref="#ap" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ap"/></cb:topic>
+<cb:topic key="pregnancy" evidence="internal" cert="low"><person sameAs="#ap"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-03-19">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-04-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Alce Pearce of <placeName>Crouly</placeName> <lb/>my m<choice><orig>&aover;</orig><reg>an</reg></choice>s kinswom<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>30 y march. 20 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 12 <lb/>1606.</p>
+</div>
+
+<div><pb xml:id="f72v" n="72v"/>
+<p><lb/>Alce pearce of <placeName>Crowly</placeName> now <lb/><rs type="address" xml:id="address1">of yardly</rs> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <lb/>&vVowel;nc<subst><del type="over">k</del><add place="over">le</add></subst> 30 y a mayden <lb/>march. 20 &Thursday; h. 1<subst><del type="over">1</del><add place="over">2</add></subst>. <lb/>1606</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

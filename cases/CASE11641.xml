@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11641">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE11641</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 18r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0018r" to="0018r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jw">
+<persName><forename>John</forename> <surname>Wolhed</surname></persName>
+<sex value="1">M</sex>
+<age value="20">20</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w" evidence="internal">
+<persName><surname evidence="inferred" cert="high">Wolhed</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon" evidence="internal">
+<sex value="2">F</sex>
+</person>
+
+<listRelation><relation name="father" active="#w" passive="#jw"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1598-08-25" n="Friday"/></p>
+<p><time when="18:27:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jw" evidence="internal"/>
+<cb:subject ref="#jw" present="unclear"/>
+<cb:object ref="#anon"/>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#jw"/></cb:topic>
+<cb:topic key="problemCause"><person sameAs="#jw"/></cb:topic>
+<cb:topic key="witchcraft" evidence="inferred" cert="low"><person sameAs="#anon"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="previousConsultation"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-08-19">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-08-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0039.jpg" url="Ashmole-228-0039.jpg" n="18r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn <del type="strikethrough">Willet</del> Wolhed <rs type="address" xml:id="address1">of <lb/>Woulverton</rs> 20 yeres <lb/>old <foreign xml:lang="la">qu&aelig;rit morb<choice><orig>&uover;</orig><reg>um</reg></choice> caus<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>e&iConsonant;us<choice><orig>&qtail;</orig><reg>que</reg></choice> remedi<choice><orig>&uover;</orig><reg>um</reg></choice>.</foreign> August <lb/>25. &FridayN; h. 6. 27. m. <lb/>1598. he tooke <choice><sic>fr</sic><corr type="noText"/></choice> his sicknes <lb/><del type="strikethrough">at s</del> &TuesdayN; 22 of Aug about 6 &past; <lb/>6 <choice><orig>post merid.</orig><reg>pm</reg></choice></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

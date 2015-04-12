@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE5811">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE5811</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="219">MS Ashmole 219, f. 123v</idno>
+&Forman004;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0123v" to="0123v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gg">
+<persName><forename>Grace</forename> <surname type="married">Green</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="sg">
+<persName><forename>Samuel</forename> <surname>Green</surname> <surname type="alternate">Gromble</surname></persName>
+<sex value="1">M</sex>
+<age value="30">30</age>
+</person>
+<person xml:id="w1">
+<persName><roleName>Mr</roleName> <surname>Watts</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w2">
+<persName><surname evidence="inferred">Watts</surname></persName>
+<sex value="1">M</sex>
+<occupation>Ship&rsquo;s captain</occupation>
+</person>
+<org type="ship" xml:id="aff">
+<orgName>The Affection</orgName>
+</org>
+<listRelation>
+<relation name="husband" active="#sg" passive="#gg"/>
+<relation name="father" active="#w1" passive="#w2"/>
+<relation name="captain" active="#w2" passive="#aff"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-08-09" n="Thursday"/></p>
+<p><time when="16:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#gg" evidence="internal"/>
+<cb:subject ref="#gg" present="unclear"/>
+<cb:object ref="#sg"/>
+<cb:topic key="absentPerson"><person sameAs="#sg"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
+<change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
+<change when="2011-04-28">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-05-02">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2013-01-17">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-219-0252.jpg" url="Ashmole-219-0252.jpg" n="123v"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body>
+<div>
+<p><lb/>Grace Grean fo<subst><del type="over">l</del><add place="over">r</add></subst> her <lb/>husband Samuell grene <lb/>alias gromble of 30 yeares <lb/>he went out in <name type="ship">the Affection</name>. <lb/>about 7 monethes Agoe <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> m<hi rend="superscript">r</hi> <lb/>watses sonn being captain therof <lb/>questo 1599 the 9 of August &Thursday; <lb/>&pmfl; at 30 &past; 4 <foreign xml:lang="la">quando venit <choice><sic>ec&flourish;</sic><corr>&amp;c</corr></choice>.</foreign></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>here the wif makes Inquisision <lb/>for her husband absent&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

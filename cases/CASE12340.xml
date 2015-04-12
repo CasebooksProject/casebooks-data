@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12340">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE12340</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2011-07-22">22 July 2011</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="228">MS Ashmole 228, f. 143r</idno>
+&Napier003;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0143r" to="0143r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jp">
+<persName><forename>John</forename> <surname>Parrot</surname></persName>
+<sex value="1">M</sex>
+<age value="34">34</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="f">
+<persName><surname>Farnwell</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+<person xml:id="p">
+<persName><surname evidence="inferred" type="married">Parrot</surname> <surname evidence="inferred" type="maiden" cert="high">Farnwell</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="daughter" active="#p" passive="#f"/><relation name="wife" active="#p" passive="#jp"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-04-28" n="Saturday"/></p>
+<p><time when="07:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jp"/>
+<cb:subject ref="#jp" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#jp"/></cb:topic>
+<cb:topic key="bedridden"><person sameAs="#jp"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2011-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2011-10-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2011-10-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2013-09-19">Shelfmark coding updated by <name>Michael Hawkins</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-228-0287.jpg" url="Ashmole-228-0287.jpg" n="143r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Parret <rs type="address" xml:id="address1">of Castle Troppe</rs> <lb/>34. maried farnells Daughter <lb/>sick 2 or 3 days sick <choice><sic>yeserdy</sic><corr>yesterday</corr></choice> <lb/>&amp; kept his bed &amp; worse this <lb/>last night. Ap. 2<subst><del type="over">7</del><add place="over">8</add></subst>. <choice><orig>die <lb/>&SaturnSymbol;</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>. h. <choice><sic>h.</sic><corr type="noText"/></choice> 7. &antm;. 1599. <lb/>his water somewhat <lb/>to high <choice><sic>Coloued</sic><corr>Coloured</corr></choice> but <lb/>of a yellowish Colour <lb/>1599. 7. 30. <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice>.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

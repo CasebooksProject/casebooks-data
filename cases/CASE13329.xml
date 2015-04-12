@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE13329">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE13329</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-01-26">26 January 2012</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#jyoung">This entry is written upside down.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="182">MS Ashmole 182, f. 49r</idno>
+&Napier002;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0049r" to="0049r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<birth><date when="1559-05-04" n="Thursday" sameAs="#date1"/><time when="23:15:00" sameAs="#time1"/><placeName sameAs="#address1"/></birth>
+<sex value="1">M</sex>
+</person>
+<person xml:id="an">
+<persName><forename>Alexander</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><forename>Agnes</forename> <surname>Birchley</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="son" active="#rnapier" passive="#an #ab"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1597" notAfter="1598" evidence="conjecture" cert="low"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-01-26">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-02-03">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-02-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-182-0101.jpg" url="Ashmole-182-0101.jpg" n="49r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<body><div>
+<p><lb/>Rich Na<choice><orig>&crossedp;</orig><reg>per</reg></choice> <rs type="address" xml:id="address1">devoniensis et Exoniensis</rs>. Alexand <lb/>Na<choice><orig>&crossedp;</orig><reg>per</reg></choice>i et Agnetis Burchley filius natus <lb/><del type="strikethrough">in comitatu Devoni&aelig;</del> <rs type="address" sameAs="#address1">Exoni&jVowel; in comitatu <lb/>Devoni&jVowel;</rs> <rs type="date" xml:id="date1"><choice><orig>a<hi rend="overline">no</hi></orig><reg>anno</reg></choice> <choice><orig>d<hi rend="overline">ni</hi></orig><reg>domini</reg></choice> 1559 <choice><orig>p<hi rend="overline">rio</hi></orig><reg>primo</reg></choice> a<choice><orig><hi rend="overline">n</hi></orig><reg>nn</reg></choice>o regni <lb/>Elisab. Mai&jVowel; 4<hi rend="superscript">to</hi> Ascensionis die &Thursday;</rs> <rs type="time" xml:id="time1">hor. <lb/>p m. 11. 15. 1559</rs>.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

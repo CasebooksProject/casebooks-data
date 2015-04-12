@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE18914">
+<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE18914</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 33r</idno>
+&Napier005;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0033r" to="0033r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eb">
+<persName type="deckname" resp="#rnapier"><forename>Elizabeth</forename> <surname>Bridinger</surname></persName>
+<sex value="2">F</sex>
+<age value="17">17</age>
+</person>
+<person xml:id="b" evidence="internal">
+<persName type="deckname" resp="#rnapier"><surname evidence="inferred" cert="medium">Bridinger</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="husband" active="#b" passive="#eb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-07-14" n="Monday"/></p>
+<p><time when="09:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#eb" evidence="external"/>
+<cb:subject ref="#eb" present="unclear"/>
+<cb:object ref="#b"/>
+<cb:topic key="fertility"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="dieFirst"><person sameAs="#b"/><person sameAs="#eb"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2012-03-29">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2012-04-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<graphic xml:id="Ashmole-404-0069.jpg" url="Ashmole-404-0069.jpg" n="33r"/>
+</facsimile>
+<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<body><div>
+<p><lb/>Elis. Bridinger &IConsonant;uli&jVowel; <lb/>14. of yeres 17. &MondayN; <lb/>9. 45. &antm;. 1600</p>
+<p><lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> shee shall have any children <lb/><foreign xml:lang="la">&vVowel;ter eor<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> prius morietur</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>
