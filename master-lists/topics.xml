@@ -38,20 +38,29 @@
       </item>
       <item xml:id="anxietyAndMelancholy" sortKey="topic-163">
          <seg type="public">anxiety and melancholy</seg> 
-         <desc>Describing people who are melancholy, ‘mopish’, grief-stricken or despairing.</desc>
-         <desc type="editorial">This umbrella topic will continue to be used on the site for now, but should be replaced in the encoding with one of the subtopics <val>despair</val>, <val>fear</val>, <val>grief</val>, <val>melancholy</val> or <val>mopish</val>.</desc>
+         <desc type="public">Describing people who are melancholy, ‘mopish’, grief-stricken or despairing.</desc>
+         <desc type="editorial">This umbrella topic will continue to be used on the site for now, but should not be used in encoding files. In its place one of the following subtopics should be employed: <val>despair</val>, <val>discontentment</val>, <val>fear</val>, <val>grief</val>, <val>heaviness</val>, <val>melancholy</val>, <val>mopish</val>, <val>sadness</val>, <val>sorrow</val>, <val>weeping</val> or, if none of these fits, <val>unidentifiedAnxietyAndMelancholy</val>.</desc>
       </item>
       <item xml:id="despair" corresp="#anxietyAndMelancholy">
          <seg type="editorial">despair</seg>
-         <desc type="editorial">For explicit descriptions of people as despairing or suffering from despair. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+         <desc type="editorial">For explicit descriptions of people as despairing, suffering from despair, or ‘ready to despair’
+. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+      </item>
+      <item xml:id="discontentment" corresp="#anxietyAndMelancholy">
+         <seg type="editorial">discontentment</seg>
+         <desc type="editorial">For explicit descriptions of people as discontent or suffering from discontentment. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
       </item>
       <item xml:id="fear" corresp="#anxietyAndMelancholy">
          <seg type="editorial">fear</seg>
-         <desc type="editorial">For explicit descriptions of people as fearful or suffering fear (as a problem, as opposed to the mention of it incidentally in entries for diseases of the body). For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+         <desc type="editorial">For explicit descriptions of people as fearful, suffering fear, or being afraid (as a problem, as opposed to the mention of it incidentally in entries for diseases of the body). For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself, though the word can appear in English or in Latin (‘timor’).</desc>
       </item>
       <item xml:id="grief" corresp="#anxietyAndMelancholy">
          <seg type="editorial">grief</seg>
          <desc type="editorial">For explicit descriptions of people as grieving or suffering from grief. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+      </item>
+      <item xml:id="heaviness" corresp="#anxietyAndMelancholy">
+         <seg type="editorial">heaviness</seg>
+         <desc type="editorial">For descriptions of people as heavy, heavy-hearted or heavy-minded, or ‘leaden’ (one entry uses the phrase ‘harte leden’). We may decide later that this topic should be further broken down according to what specifically, if anything, is described as heavy.</desc>
       </item>
       <item xml:id="melancholy" corresp="#anxietyAndMelancholy">
          <seg type="editorial">melancholy</seg>
@@ -61,9 +70,25 @@
          <seg type="editorial">mopish</seg>
          <desc type="editorial">For explicit descriptions of people as mopish. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
       </item>
+      <item xml:id="sadness" corresp="#anxietyAndMelancholy">
+         <seg type="editorial">sadness</seg>
+         <desc type="editorial">For explicit descriptions of people as sad, or suffering from sadness. For now, this topic should not be used where the question is discursive/descriptive and/or does not use the word itself; in particular, note that ‘sorrow’ and ‘grief’ have their own topics.</desc>
+      </item>
+      <item xml:id="sleeplessnessPassions" corresp="#anxietyAndMelancholy">
+         <seg type="editorial">sleeplessnessPassions</seg>
+         <desc type="editorial">For references to people being unable to sleep, where the context is otherwise entirely passions-related.</desc>
+      </item>
+      <item xml:id="sorrow" corresp="#anxietyAndMelancholy">
+         <seg type="editorial">sorrow</seg>
+         <desc type="editorial">For explicit descriptions of people as suffering from sorrow. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself. For now references in Latin to ‘dolor’ (when it does not mean physical pain) should be given this topic, though we may need to investigate whether that should be sorrow or grief or some other topic (or if they are the same thing).</desc>
+      </item>
       <item xml:id="unidentifiedAnxietyAndMelancholy" corresp="#anxietyAndMelancholy">
          <seg type="editorial">unidentifiedAnxietyAndMelancholy</seg>
-         <desc type="editorial">This is the category for any entry in which the subject is suffering from an ‘anxiety and melancholy’ problem, but one that isn’t classifiable according to the available categories above (currently: <val>despair</val>, <val>fear</val>, <val>grief</val>, <val>melancholy</val> and <val>mopish</val>). This is where people described as having ‘taken thought’ currently go. To make recategorising these later on it is helpful to record in a comment tag after <gi>cb:topic</gi> what the precise expression used is.</desc>
+         <desc type="editorial">This is the category for any entry in which the subject is suffering from an ‘anxiety and melancholy’ problem, but one that is not classifiable according to the available categories above (currently: <val>despair</val>, <val>fear</val>, <val>grief</val>, <val>melancholy</val> and <val>mopish</val>). This is where people described as having ‘taken thought’ currently go; also those who fret, are sottish, doubtful, suspicious, or who start(le) or take fright in their sleep. Note that ‘uncomfortable’ in this period probably means inconsolable. This category will be monitored and new topics created as appropriate, depending on what turns up. To make recategorising these later on easier it is helpful to record in a comment tag after <gi>cb:topic</gi> what the precise expression used is.</desc>
+      </item>
+      <item xml:id="weeping" corresp="#anxietyAndMelancholy">
+         <seg type="editorial">weeping</seg>
+         <desc type="editorial">For references to or descriptions of people weeping or crying, where the implication is that they are suffering from a problem of the passions (not for when the point is to illustrate the degree of physical pain they are suffering, or to show their level of distress over a physical ailment).</desc>
       </item>
       <item xml:id="passionsDiz" sortKey="topic-171">
          <seg type="public">‘diz’ (passions)</seg> 
