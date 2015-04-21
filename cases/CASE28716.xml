@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE28716">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE28716</title>
@@ -74,7 +74,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#sm"/>
 <cb:subject ref="#sm" present="unclear"/>
-<cb:topic key="afflictedInMind"><person sameAs="#sm"/></cb:topic>
+<cb:topic key="nonDizPassions"><person sameAs="#sm"/></cb:topic>
+<cb:topic key="wits"><person sameAs="#sm"/></cb:topic>
 <cb:topic key="sleeplessnessPassions"><person sameAs="#sm"/></cb:topic>
 <cb:treatment/>
 </cb:consultation>
@@ -86,9 +87,9 @@
 <change when="2013-11-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
-<p><lb/>Sara Musgrave <rs type="address" xml:id="address1">of Bletsoe</rs> <lb/>20 y maryed 2 y. 2 child <lb/>Apr. 19 &Friday; h. 12. 50 p m 1605 <lb/><foreign xml:lang="la">mente <add place="supralinear">valde</add> angit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice>. n <subst><del type="over"><unclear cert="low" reason="del"><hi rend="superscript">c</hi></unclear></del><add place="over">e</add></subst>quit dor<lb/>mire.&slash;</foreign></p>
+<p><lb/>Sara Musgrave <rs type="address" xml:id="address1">of Bletsoe</rs> <lb/>20 y maryed 2 y. 2 child <lb/>Apr. 19 &Friday; h. 12. 50 p m 1605 <lb/><foreign xml:lang="la">mente <add place="supralinear">valde</add> angit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice>. n<subst><del type="over"><unclear cert="low" reason="del"><hi rend="superscript">c</hi></unclear></del><add place="over">e</add></subst>quit dor<lb/>mire.&slash;</foreign></p>
 </div>
 </body>
 </text>

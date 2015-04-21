@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE12389">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE12389</title>
@@ -64,7 +64,8 @@
 <cb:querent ref="#jr" evidence="internal"/>
 <cb:subject ref="#jr" present="yes"/>
 <cb:topic key="nonDizPassions"><person sameAs="#jr"/></cb:topic>
-<cb:topic key="afflictedInMind"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="disquieted"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#jr"/></cb:topic>
 <cb:topic key="devil" evidence="internal"><person sameAs="#jr"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
@@ -79,10 +80,10 @@
 <change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
-<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<facsimile>
 <graphic xml:id="Ashmole-228-0304.jpg" url="Ashmole-228-0304.jpg" n="151v"/>
 </facsimile>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/>&IConsonant;one <del type="strikethrough">Ring</del> <subst><del type="strikethrough">Morten</del> <add place="supralinear">Ringe</add></subst> <rs type="address" xml:id="address1">of <lb/>Cranfeild</rs> Disquieted in <lb/>minde. came her selfe to me <lb/>this 5 of may &SaturdayN; h. 2. <lb/>15. mi. p m. 1599. amis <lb/>ever sinc miklemas. <lb/>36 yeres. <choice><sic>hath buried her</sic><corr type="delText"/></choice> <lb/><del type="strikethrough">first husb. &amp; child</del></p>
 </div>

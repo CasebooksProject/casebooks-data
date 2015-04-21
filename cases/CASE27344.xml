@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE27344">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE27344</title>
@@ -62,7 +62,9 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#al"/>
 <cb:subject ref="#al" present="no"/>
-<cb:topic key="afflictedInMind"><person sameAs="#al"/></cb:topic>
+<cb:topic key="lostSenses"><person sameAs="#al"/></cb:topic>
+<cb:topic key="distempered"><person sameAs="#al"/></cb:topic>
+<cb:topic key="brainPassions"><person sameAs="#al"/></cb:topic>
 
 <cb:info type="event" subtype="previousConsultation"/>
 <cb:treatment/>
@@ -77,10 +79,10 @@
 <change when="2014-05-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding">Alc</supplied>e lel<choice><orig>&aover;</orig><reg>am</reg></choice> <rs type="address" xml:id="address1">of Brixworth</rs>. <lb/><gap reason="binding" extent="2" unit="chars"/> y sept<choice><orig>&eover;</orig><reg>em</reg></choice>b vj. h. 3. 30. p m <lb/><gap reason="binding" extent="1" unit="words" cert="high"/> sent to me agayne may <lb/><supplied reason="binding">24</supplied> &Saturday; hor. 9. 45. &antm;. 1606.</p>
-<p><lb/><gap reason="binding" extent="1" unit="words"/> hole but brayne dist<choice><orig>&eover;</orig><reg>em</reg></choice>p<lb/><gap reason="binding" extent="unclear"/>its &amp; sences gone</p>
+<p><lb/><supplied reason="binding">Alc</supplied>e lel<choice><orig>&aover;</orig><reg>am</reg></choice> <rs type="address" xml:id="address1">of Brixworth</rs>. <lb/><gap reason="binding" extent="2" unit="chars"/> y sept<choice><orig>&eover;</orig><reg>em</reg></choice>b v&jVowel;. h. 3. 30. p m <lb/><gap reason="binding" extent="1" unit="words" cert="high"/> sent to me agayne may <lb/><supplied reason="binding">24</supplied> &Saturday; hor. 9. 45. &antm;. 1606.</p>
+<p><lb/><supplied reason="binding" cert="low">ha</supplied>rt hole but brayne dist<choice><orig>&eover;</orig><reg>em</reg></choice>p<lb/> <supplied reason="binding" cert="low">by f</supplied>its &amp; sences gone</p>
 </div>
 </body>
 </text>

@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29359">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE29359</title>
@@ -62,7 +62,9 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#ah"/>
 <cb:subject ref="#ah" present="unclear"/>
-<cb:topic key="afflictedInMind"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="sicknessPassions" resp="#rnapier"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="sicknessPassions" resp="#rnapier"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#ah"/></cb:topic>
 <cb:topic key="temptedAndSuicidal"><person sameAs="#ah"/></cb:topic>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ah"/></cb:topic>
 <cb:judgment/>
@@ -77,7 +79,7 @@
 <change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/><del type="strikethrough">Alce Hamm</del></p>
 <p><lb/>Alce H<choice><orig>&aover;</orig><reg>am</reg></choice>mont <rs type="address" xml:id="address1">of whad<lb/>don</rs> 23. y. &IConsonant;uli&jVowel;. 2. &Tuesday; <lb/>h. 6. 15 &antm; 1605.<note place="chart"><p><lb/>sick in mynde</p><p><lb/>tempted in mynd <lb/>&amp; pinched about her <lb/>stomacke most when shee calleth on <choice><orig><hi rend="overline">Ihus</hi></orig><reg>Jesus</reg></choice></p></note></p>

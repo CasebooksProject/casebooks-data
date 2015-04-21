@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29862">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE29862</title>
@@ -70,7 +70,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#y" evidence="internal" present="unclear"/>
 <cb:subject ref="#ey" present="no" consent="no"/>
-<cb:topic key="afflictedInMind"><person sameAs="#ey"/></cb:topic>
+<cb:topic key="nonDizPassions"><person sameAs="#ey"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#ey"/></cb:topic>
 <cb:info type="urine"/>
 <cb:judgment/>
 </cb:consultation>
@@ -83,7 +84,7 @@
 <change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/>Edward young <rs type="address" xml:id="address1">of <lb/>Cranford in North<choice><orig>&aover;</orig><reg>am</reg></choice>pton <lb/>sheere</rs> 7 y. nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 4 <lb/>&Monday; hor. 3. 28 p m 1605.</p>
 <p><lb/>not well in his mynd <lb/><add place="supralinear"><rs type="date" xml:id="date1">1598</rs></add> <foreign xml:lang="la">pater sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu. <add place="supralinear">natus <rs type="date" sameAs="#date1">15<subst><del type="over">6</del><add place="over">9</add></subst>8</rs></add> &FridayLatin; <rs type="time" xml:id="time1">h 4. p m</rs> <add place="infralinear"><del type="strikethrough">1605</del> <choice><sic>1558</sic><corr type="noText"/></choice></add></foreign></p>

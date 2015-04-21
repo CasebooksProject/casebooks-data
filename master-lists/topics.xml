@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema/tei_all_topics.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
     <fileDesc>
         <titleStmt>
             <title xml:id="main_title">Topics</title>
@@ -24,17 +24,47 @@
 <change when="2014-02-25">Revised by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2014-08-06">Editorial descriptions transferred from wiki by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2015-03-15">Re-revised by <name sameAs="#jyoung">John Young</name>.</change>
-<change when="2015-03-17">Minor amendments by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2015-04-13">Large topic divided by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2015-04-14">Two large topics divided by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2015-04-15">Large topic divided by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2015-04-17">Large topic divided by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body>
     <div xml:id="select">
    <list sortKey="subtopics10" n="Diseases of the Mind">
       <item xml:id="afflictedInMind" sortKey="topic-162">
          <seg type="public">afflicted in mind</seg> 
-         <desc>Covering terms such as ‘disquieted’, ‘foolish’, ‘troubled in mind’, that denote mental disturbance short of outright insanity.</desc>
-         <desc type="editorial">Our list of terms covered by this so far includes: troubled/disquieted/distempered in mind, troubled/foolish in wits, animo aegrotat, senseless. If the phrase used is particularly unusual or novel it may be worth recording in a comment tag what the precise expression is.</desc>
+         <desc type="public">Covering terms such as ‘disquieted’, ‘foolish’, ‘troubled in mind’, that denote mental disturbance short of outright insanity.</desc>
+         <desc type="editorial">This umbrella topic will continue to be used on the site for now, but should not be used in encoding files. In its place a number of more specific topics have been created. As with physical ailments, the place where the problem lies is now recorded separately from the sort of problem it is. The disorder can be in the <val>mind</val>, <val>wits</val> or <val>senses</val>, and these can be <val>disquieted</val>, <val>distempered</val>, <val>troubled</val>, or ill, afflicted, amiss, not well etc. (in which case <val>nonDizPassions</val> should be used), sick (<val>sicknessPassions</val>) or diseased (<val>dizPassions</val>). There are three further specific categories: <val>foolish</val>, <val>lostSenses</val> and <val>idleHeaded</val>. If none of these fits, <val>unidentifiedPassions</val> should be used.</desc>
+      </item>
+      <item xml:id="mind" corresp="#afflictedInMind">
+         <desc type="editorial">For any question that refers to some problem with the mind. Napier seems to use the word ‘animus’ to mean mind when writing in Latin.</desc>
+      </item>
+      <item xml:id="wits" corresp="#afflictedInMind">
+         <desc type="editorial">For any question that refers to some problem with the wits. Napier seems to use the word ‘mens’ to mean wits when writing in Latin.</desc>
+      </item>
+      <item xml:id="senses" corresp="#afflictedInMind">
+         <desc type="editorial">For any question that refers to some problem with the senses (meaning mental faculties, not sight, hearing, touch, taste and smell). The exception is where the problem is the loss of senses (senselessness), in which case the topic <val>lostSenses</val> should be used instead.</desc>
+      </item>
+      <item xml:id="disquieted" corresp="#afflictedInMind">
+         <desc type="editorial">For references to people as being ‘disquieted’, ‘disquieted in mind’ or whose mind is ‘not quiet’. Where the term ‘mind’ (or, in Latin, ‘animus’) is explicitly used, the topic <val>mind</val> should accompany this one.</desc>
+      </item>
+      <item xml:id="distempered" corresp="#afflictedInMind">
+         <desc type="editorial">For references to people as being ‘distempered’ or ‘out of temper’ in their mind or wits. The topics <val>mind</val> or <val>wits</val> should be combined with this one as necessary.</desc>
+      </item>
+      <item xml:id="troubled" corresp="#afflictedInMind">
+         <desc type="editorial">For references to people being troubled in mind or wits. The topics <val>mind</val> or <val>wits</val> should be combined with this one as necessary.</desc>
+      </item>
+      <item xml:id="foolish" corresp="#afflictedInMind">
+         <desc type="editorial">For explicit references to people as ‘foolish’. Note that ‘foolish talk’ or ‘talking foolishly’ comes under the topic <val>idleTalk</val>.</desc>
+      </item>
+      <item xml:id="lostSenses" corresp="#afflictedInMind">
+         <desc type="editorial">This is for references to people having lost their senses (meaning mental faculties, not sight, hearing etc.), their senses being ‘gone’, being ‘bereaved’ of them, or being ‘senseless’. Where the reference is to a milder problem of the senses, the topic <val>senses</val> should be used instead in combination with <val>nonDizPassions</val>, <val>sicknessPassions</val> or <val>dizPassions</val>.</desc>
+      </item>
+      <item xml:id="idleHeaded" corresp="#afflictedInMind">
+         <desc type="editorial">For references to people as ‘idle headed’. Note that ‘idle talk’ or ‘talking idly’ comes under the topic <val>idleTalk</val>.</desc>
       </item>
       <item xml:id="anxietyAndMelancholy" sortKey="topic-163">
          <seg type="public">anxiety and melancholy</seg> 
@@ -92,8 +122,11 @@
       </item>
       <item xml:id="passionsDiz" sortKey="topic-171">
          <seg type="public">‘diz’ (passions)</seg> 
-         <desc>Entries in which the terms ‘diz’ or ‘disease’ are explicitly used in reference to mental disorder.</desc>
-         <desc type="editorial">Takes <att>resp</att>.</desc>
+         <desc type="public">Entries in which the terms ‘diz’ or ‘disease’ are explicitly used in reference to mental disorder.</desc>
+         <desc type="editorial">This topic should not be used; it will soon be deleted. In its place the topic <val>dizPassions</val> should be used.</desc>
+      </item>
+      <item xml:id="dizPassions" corresp="#passionsDiz">
+         <desc type="editorial">Entries in which the term ‘diz’ or ‘disease’ are explicitly used in reference to mental disorder. Takes <att>resp</att>.</desc>
       </item>
       <item xml:id="fitsPassions" sortKey="topic-175">
          <seg type="public">fits (passions)</seg> 
@@ -102,12 +135,25 @@
       </item>
       <item xml:id="hallucination" sortKey="topic-164">
          <seg type="public">hallucination</seg> 
-         <desc>Auditory or visual hallucinations, often referred to as ‘fancies’, ‘fantasies’ or (in Latin) ‘phantasii’.</desc>
+         <desc type="public">Auditory or visual hallucinations, often referred to as ‘fancies’, ‘fantasies’ or (in Latin) ‘phantasii’.</desc>
+          <desc type="editorial">This topic should not be used, and will soon be removed. In its place, the more specific topic <val>fancies</val>, <val>hearingThings</val> and <val>seeingThings</val> should be employed.</desc>
+      </item>
+      <item xml:id="fancies" corresp="#hallucination">
+      <desc type="editorial">This topic covers references to ‘fancies’ (in Latin ‘fantasiæ, or, more typically, ‘laborat fantasiis variis’). It also covers the description of people as ‘fantastic’. These seem to be more general delusions or hallucinations; references to auditory or visual hallucinations should be given the more specific topics <val>hearingThings</val> and <val>seeingThings</val>.</desc>
+      </item>
+      <item xml:id="hearingThings" corresp="#hallucination">
+      <desc type="editorial">This covers any references to auditory hallucinations; most typically people are described as hearing voices.</desc>
+      </item>
+      <item xml:id="seeingThings" corresp="#hallucination">
+      <desc type="editorial">This covers any references to visual hallucinations, to people who are ‘troubled with ill sights’ or suffer a ‘foolish vision’ (or, in one case to date, ‘black visions’). It also covers any more discursive references to seeing things.</desc>
       </item>
       <item xml:id="headPassions" sortKey="topic-176">
          <seg type="public">head (passions)</seg> 
          <desc type="public">Entries in which the head is explicitly listed as the affected part but the disorder is mental rather than physical. (It is of course possible for the head to be affected in both senses at once, in which case both ‘head’ and ‘head (passions)’ will be listed as topics.)</desc>
          <desc type="editorial">Entries in which the head is explicitly listed as the affected part but the disorder is mental rather than physical. If the head is affected in both senses at once, both <val>head</val> and <val>headPassions</val> should be given as topics.</desc>
+      </item>
+      <item xml:id="brainPassions" corresp="#headPassions">
+         <desc type="editorial">Entries in which the brain is explicitly listed as the affected part and the disorder is mental rather than physical.</desc>
       </item>
       <item xml:id="impairment" sortKey="topic-165">
          <seg type="public">impairment</seg> 
@@ -153,8 +199,11 @@
       <item xml:id="mad" corresp="#lunatic">
           <desc type="editorial">For people explicitly described as ‘mad’ or as suffering from ‘madness’. The Latin term ‘delirium’ (or the expression (‘laborat delirio’) appears to be an equivalent.</desc>
       </item>
-      <item xml:id="outOfWits" corresp="#lunatic">
-          <desc type="editorial">For people explicitly described as out of, bereaved of, or having lost or lost the use of their wits. Those who are merely ‘troubled’ in their wits (or similar) should, however, be given the topic <val>afflictedInMind</val>.</desc>
+      <item xml:id="lostMind" corresp="#lunatic">
+          <desc type="editorial">For people explicitly described as out of their minds. Those who are merely ‘troubled’ or ‘not well’ in their minds (or similar) should, however, be given the topic <val>mind</val> plus an appropriate topic such as <val>troubled</val>, <val>nonDizPassions</val>, etc. Napier seems to use the word ‘animus’ for mind when writing in Latin.</desc>
+      </item>
+      <item xml:id="lostWits" corresp="#lunatic">
+          <desc type="editorial">For people explicitly described as out of, bereaved of, or having lost or lost the use of their wits. Those who are merely ‘troubled’ or ‘not well’ in their wits (or similar) should, however, be given the topic <val>wits</val> plus an appropriate topic such as <val>troubled</val>, <val>nonDizPassions</val>, etc. Napier seems to use the word ‘mens’ for the wits when writing in Latin.</desc>
       </item>
       <item xml:id="raging" corresp="#lunatic">
           <desc type="editorial">For people explicitly described as ‘raging’. The Latin term ‘furiosus/furiosa’ appears to be equivalent.</desc>
@@ -163,20 +212,25 @@
           <desc type="editorial">For people explicitly described as ‘raving’. The Latin term ‘insaniens’ appears to be equivalent.</desc>
       </item>
       <item xml:id="unidentifiedInsane" corresp="#lunatic">
-          <desc type="editorial">This is a catch-all for anyone suffering from full-blown insanity, but whose problem is described using terms that do not fit under the topics <val>crazed</val>, <val>distracted</val>, <val>frantic</val>, <val>mad</val>, <val>outOfWits</val>, <val>raging</val> or <val>raving</val>. This category will be monitored and new topics created as appropriate, depending on what turns up. To make recategorising these later on easier it is helpful to record in a comment tag after <gi>cb:topic</gi> what the precise expression used is.</desc>
+          <desc type="editorial">This is a catch-all for anyone suffering from full-blown insanity, but whose problem is described using terms that do not fit under the topics <val>crazed</val>, <val>distracted</val>, <val>frantic</val>, <val>mad</val>, <val>lostWits</val>, <val>raging</val> or <val>raving</val>. This category will be monitored and new topics created as appropriate, depending on what turns up. To make recategorising these later on easier it is helpful to record in a comment tag after <gi>cb:topic</gi> what the precise expression used is.</desc>
       </item>
       <item xml:id="morbusPassions" sortKey="topic-168">
          <seg type="public">morbus (passions)</seg> 
-         <desc>Diseases of the mind explicitly designated by the Latin term ‘morbus’.</desc>
+         <desc>Diseases of the passions explicitly designated by the Latin term ‘morbus’.</desc>
          <desc type="editorial">Takes <att>resp</att>.</desc>
       </item>
       <item xml:id="nonDizPassions" sortKey="topic-169">
          <seg type="public">non-‘diz’ passions</seg> 
          <desc>Unspecified mental disorders not described as ‘diz’, ‘disease’, ‘morbus’ or ‘sickness’.</desc>
+         <desc type="editorial">This covers a number of different terms such as ‘afflicted’, ‘not well’, ‘amiss’, ‘weakened’ and the like. Where the question specifies that the problem is affecting the mind, the wits or the senses, the appropriate topic(s) (<val>mind</val>, <val>wits</val> and <val>senses</val>) should be supplied along with this one. Where an entry refers to ‘ill thoughts’ this topic should not be used; there ‘ill’ is synonymous with ‘evil’ and so <val>evilThoughts</val> should be recorded instead.</desc>
       </item>
       <item xml:id="passionsReport" sortKey="topic-170">
          <seg type="public">passions report</seg> 
-         <desc>Where the question consists of or includes a report of the effects of previous treatment for mental disorder.</desc>
+         <desc type="public">Where the question consists of or includes a report of the effects of previous treatment for mental disorder.</desc>
+         <desc type="editorial">This topic should no longer be used and will soon be deleted. In its place use <val>reportPassions</val>.</desc>
+      </item>
+      <item xml:id="reportPassions" corresp="#passionsReport">
+         <desc type="editorial">Where the question consists of or includes a report of the effects of previous treatment for mental disorder.</desc>
       </item>
       <item xml:id="mendOrNoPassions" sortKey="topic-218">
          <seg type="public">recovery (passions)</seg> 
@@ -185,7 +239,10 @@
       <item xml:id="sickAtHeart" sortKey="topic-178">
          <seg type="public">sick at heart</seg> 
          <desc type="public">A term used formulaically by Napier to denote what might now be termed ‘depression’.</desc>
-         <desc type="editorial">For the formulaic phrase itself, where the intention is to denote a problem of the passions. In absence of evidence one way or the other it is probably safest to assume that the problem is physical, though a choice of topics can be offered.</desc>
+         <desc type="editorial">This topic should not now be used and will soon be deleted. Where an entry says that someone is ‘sick at heart’ (indicating a problem of the passions rather than a physical ailment) the topics <val>heartPassions</val> and <val>sicknessPassions</val> should be employed instead.</desc>
+      </item>
+      <item xml:id="heartPassions" corresp="#sickAtHeart">
+         <desc type="editorial">For any mention of the heart in the context of a problem of the passions: examples include being ‘sick at heart’ (in which case this topic should be used alongside <val>sicknessPassions</val>) and being ‘heavy in heart’ (in which case this topic should be accompanied by <val>heaviness</val>). In absence of clear evidence as to whether a reference to the heart is referring to the passions or the body, it is probably safest to assume that the problem is physical — though a choice of topics can be offered.</desc>
       </item>
       <item xml:id="sicknessPassions" sortKey="topic-172">
          <seg type="public">sickness (passions)</seg> 
@@ -196,6 +253,9 @@
          <seg type="public">tempted and suicidal</seg> 
          <desc>The term ‘tempted by Satan’ almost always (and often explicitly) means ‘suicidal’, but some patients are described as being tempted to commit other sins such as murder. Thoughts of suicide were generally understood at the time as by definition of Satanic origin.</desc>
          <desc type="editorial">This topic covers any references to someone being ‘tempted’, ‘tempted in mind’, ‘tempted to make her/himself away’, ‘tempted to kill...’ (e.g. spouse, children); also any references to attempts to commit suicide or someone being suicidal</desc>
+      </item>
+      <item xml:id="evilThoughts" corresp="#temptedAndSuicidal">
+         <desc type="editorial">This topic should be used for entries that refer to someone being troubled with ‘evil thoughts’, ‘ill thoughts’, ‘bad cogitations’ or ‘cogitations’ (or ‘cogit’) where context implies that they are bad. If the phrase is ‘ill thoughts’ then <val>nonDizPassions</val> should not be used in addition to this topic; if the full expression is ‘troubled in the mind with ill thoughts’ then the topics <val>troubled</val>, <val>mind</val> and <val>evilThoughts</val> should be supplied.</desc>
       </item>
       <item xml:id="unidentifiedPassions" corresp="#unspecifiedPassions">
          <seg type="editorial">unidentified passions</seg> 
@@ -744,7 +804,7 @@
       <item xml:id="death" sortKey="topic-53">
          <seg type="public">death</seg> 
          <desc>Entries in which the person being asked about is known to be dead. It is seldom clear precisely what the question is in such entries, but in most cases cause of death seems the likeliest possibility.</desc>
-         <desc type="editorial">These are interrogations or diary entries recording the time of someone’s death and/or burial.</desc>
+         <desc type="editorial">These are typically interrogations or diary entries recording the time of someone’s death and/or burial, though we have encountered at least one horary question about the cause of someone’s death.</desc>
       </item>
       <item xml:id="fortune" sortKey="topic-32">
          <seg type="public">fortune</seg> 
@@ -932,7 +992,7 @@
       </item>
       <item xml:id="dizziness" sortKey="topic-197">
          <seg type="public">dizzy and/or faint</seg> 
-         <desc type="editorial">Sometimes literally ‘dizziness’ (or ‘dyssines’ or whatever), often ‘giddiness’, and sometimes ‘light headed’. It’s worth bearing in mind, though, that ‘light headed’ is sometimes a passions problem (see <val>lightheadedPassions</val>), so attention to context is important. Also ‘swimming in his/her head’.</desc>
+         <desc type="editorial">Sometimes literally ‘dizziness’ (or ‘dyssines’ or whatever), often ‘giddiness’, and sometimes ‘light headed’. It is worth bearing in mind, though, that ‘light headed’ is sometimes a passions problem (see <val>lightheadedPassions</val>), so attention to context is important. Also ‘swimming in his/her head’.</desc>
       </item>
       <item xml:id="faintness" corresp="#dizziness">
          <seg type="editorial">faintness</seg>

@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE21968">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE21968</title>
@@ -71,7 +71,8 @@
 <cb:querent ref="#anon2" evidence="internal" present="yes"/>
 <cb:subject ref="#anon1" present="yes" consent="no"/>
 <cb:object ref="#s"/>
-<cb:topic key="afflictedInMind"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#anon1"/></cb:topic>
 <cb:topic key="witchcraft"><person sameAs="#s"/></cb:topic>
 </cb:consultation>
 </settingDesc>
@@ -82,7 +83,7 @@
 <change when="2013-03-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/>a young m<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Bothon in <lb/>Huntington shire</rs> 26 y was <lb/>brought <foreign xml:lang="la">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign> feb <del type="strikethrough">r</del> <lb/>20. &Wednesday; h. 2. 45. p m. 1605. <lb/>strangly tormented by witchraft <lb/>sinc shreve<subst><del type="over"><gap reason="del" extent="3" unit="chars"/></del><add place="over">tue</add></subst>sday Shelton the <lb/>witch in prison<note place="chart">witchraft. <lb/>troubled in mynd</note></p>
 </div>

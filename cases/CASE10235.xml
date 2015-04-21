@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10235">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10235</title>
@@ -69,7 +69,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#uc" evidence="internal"/>
 <cb:subject ref="#uc" present="yes"/>
-<cb:topic key="afflictedInMind"><person sameAs="#uc"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#uc"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#uc"/></cb:topic>
 <cb:topic key="haunted" evidence="internal"><person sameAs="#uc"/></cb:topic>
 <cb:topic key="devil" evidence="internal"><person sameAs="#uc"/></cb:topic>
 <cb:judgment/>
@@ -84,10 +85,10 @@
 <change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
-<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<facsimile>
 <graphic xml:id="Ashmole-202-0059.jpg" url="Ashmole-202-0059.jpg" n="27r"/>
 </facsimile>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/>&VVowel;rsula Coles <rs type="address" xml:id="address1">of Ashon</rs> <lb/>26. y. Apr. 2. &WednesdayN; h. 10 <lb/>&antm; 1600 this day sennet <lb/>at night. <foreign xml:lang="la">c<choice><orig>&uover;</orig><reg>um</reg></choice> consensu</foreign><note place="chart">troubled in minde.</note></p>
 </div>

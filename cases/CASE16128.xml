@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE16128">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE16128</title>
@@ -66,9 +66,11 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#jw"/>
 <cb:subject ref="#jw" present="unclear"/>
-<cb:topic key="afflictedInMind"><person sameAs="#jw"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#jw"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#jw"/></cb:topic>
 <cb:topic key="headPassions"><person sameAs="#jw"/></cb:topic>
-<cb:topic key="hallucination"><person sameAs="#jw"/></cb:topic>
+<cb:topic key="fancies"><person sameAs="#jw"/></cb:topic>
+<cb:topic key="evilThoughts"><person sameAs="#jw"/></cb:topic>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jw"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
@@ -81,7 +83,7 @@
 <change when="2013-03-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/>&IConsonant;ohn wakefild <rs type="address" xml:id="address1">of Tib<lb/>both where m<hi rend="superscript">r</hi> Pots <lb/>dwelleth</rs> &IConsonant;an 27. <lb/>&Friday; hor 2. p m 1604. <lb/>7 yeres maried <lb/>troubled in Hed &amp; <lb/>mynd <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> div<choice><orig>&loopedr;</orig><reg>er</reg></choice>se <lb/>cogitations &amp; fansies</p>
 </div>

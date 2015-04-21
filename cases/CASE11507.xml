@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE11507">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11507</title>
@@ -63,7 +63,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#f"/>
 <cb:subject ref="#f" present="unclear"/>
-<cb:topic key="afflictedInMind"><person sameAs="#f"/></cb:topic>
+<cb:topic key="nonDizPassions"><person sameAs="#f"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#f"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -77,10 +78,10 @@
 <change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
-<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<facsimile>
 <graphic xml:id="Ashmole-202-0426.jpg" url="Ashmole-202-0426.jpg" n="208v"/>
 </facsimile>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> farmar <rs type="address" xml:id="address1">of Burcet</rs> <lb/>67 y. <foreign xml:lang="la"><choice><orig><hi rend="overline">aio</hi></orig><reg>animo</reg></choice> afflict<subst><del type="over">&uscon;</del><add place="over">o</add></subst> misc<unclear reason="hand" cert="low">ui<choice><orig>&uscon;</orig><reg>us</reg></choice></unclear> sermo<choice><orig><hi rend="overline">n</hi></orig><reg>nem</reg></choice></foreign> Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 11 &ThursdayN; h. <lb/>9. &antm;. 1600</p>
 </div>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2015-04-14T12:42:27Z. 
+Schema generated from ODD source 2015-04-21T17:41:15Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -10142,7 +10142,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
           <ref name="text"/>
         </choice>
       </group>
-      <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="cb" uri="http://casebooks"/>
+      <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="cb" uri="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0"/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-language-gap-but-no-text-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:TEI[tei:text//tei:gap][string-length(normalize-space(string-join(tei:text,'')))=0]">
           <let name="languages" value="tei:teiHeader//tei:langUsage/tei:language"/>
@@ -10964,7 +10964,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </attribute>
   </define>
   <define name="consultant">
-    <element name="consultant" ns="http://casebooks">
+    <element name="consultant" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultant) points, by means of the ref attribute, to the person conducting the consultation.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-consultant-consultant-links-constraint">
@@ -10982,7 +10982,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="consultation">
-    <element name="consultation" ns="http://casebooks">
+    <element name="consultation" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultation) contains information about the consultation and the roles of the participants, and takes a mandatory type value stating what sort of consultation it is.</a:documentation>
       <interleave>
         <ref name="practice"/>
@@ -11052,7 +11052,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="cbitem">
-    <element name="item" ns="http://casebooks">
+    <element name="item" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(item) records the presence of explicit information about items brought or sent to the consultation. Note that this does not include inferences, such as taking the presence of a urine description as an indication that urine was brought or sent, or a statement that a question was ‘sent’ as an indication that a letter was involved. It is only used to record the presence of explicit statements such as ‘he sent a letter’ or ‘shee brought her vrine’.</a:documentation>
       <empty/>
       <ref name="att.casebooks.certainty.attributes"/>
@@ -11082,7 +11082,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="judgment">
-    <element name="judgment" ns="http://casebooks">
+    <element name="judgment" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(judgment) records the presence of a judgment in the record.</a:documentation>
       <empty/>
       <ref name="att.casebooks.certainty.attributes"/>
@@ -11090,7 +11090,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="cblocation">
-    <element name="location" ns="http://casebooks">
+    <element name="location" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(location) records, where possible, where the practitioner was at the time of the consultation, either in absolute terms or relative to the querent.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-ref-needs-hash-constraint">
@@ -11139,7 +11139,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="messenger">
-    <element name="messenger" ns="http://casebooks">
+    <element name="messenger" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(messenger) points, where relevant, to the person acting as messenger from querent to practitioner, using the ref value.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-messenger-messenger-links-constraint">
@@ -11157,7 +11157,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="practice">
-    <element name="practice" ns="http://casebooks">
+    <element name="practice" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(practice) records whose practice it is, by means of the name attribute.</a:documentation>
       <empty/>
       <ref name="att.casebooks.certainty.attributes"/>
@@ -11174,7 +11174,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="info">
-    <element name="info" ns="http://casebooks">
+    <element name="info" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(additional information) records the presence of information about events relevant to the case, financial transactions associated with it, the condition of the patient’s urine, or Napier’s reliance on angelic advice in formulating a diagnosis or prognosis.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-angel-needs-subtype-constraint">
@@ -11233,7 +11233,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="object">
-    <element name="object" ns="http://casebooks">
+    <element name="object" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(object) points to any person(s) who is/are not among the principal participant(s) but is/are highly relevant to the case, e.g. prospective spouses or suspected thieves or witches.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-object-object-links-constraint">
@@ -11260,7 +11260,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="querent">
-    <element name="querent" ns="http://casebooks">
+    <element name="querent" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(querent) points to the person(s) asking the question by means of the ref attribute.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-links-constraint">
@@ -11312,7 +11312,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="questionNumber">
-    <element name="questionNumber" ns="http://casebooks">
+    <element name="questionNumber" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(question number) records, using the n value, that a question is explicitly noted (either in the transcribed or the untranscribed part of the entry) as being the querent’s first, second, third etc. question.</a:documentation>
       <empty/>
       <attribute name="n">
@@ -11323,7 +11323,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="recipe">
-    <element name="recipe" ns="http://casebooks">
+    <element name="recipe" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(recipe) records the presence of a medical recipe in the entry.</a:documentation>
       <empty/>
       <ref name="att.casebooks.certainty.attributes"/>
@@ -11331,7 +11331,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="subject">
-    <element name="subject" ns="http://casebooks">
+    <element name="subject" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subject) points, by means of the ref attribute, to the participant about whom or in whose interests the question is being asked.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subject-subject-links-constraint">
@@ -11377,7 +11377,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="topic">
-    <element name="topic" ns="http://casebooks">
+    <element name="topic" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(topic) defines the nature of the question being asked, using any of the terms recorded in the topics master list. Each cb:topic element should normally contain at least one person, personGrp and/or org element, pointing to the person or people being asked about (but see the note on  below). If the nature of the query is not explicitly stated in the transcribed part of the document, an evidence value should also be applied, as explained in more detail in the guidelines. If there are grounds for doubt about the nature of the question, a cert value may also be applied. A single entry may feature any number of topics bar zero.</a:documentation>
       <interleave>
         <zeroOrMore>
@@ -11392,21 +11392,21 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       </interleave>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-key-check-constraint">
         <rule context="cb:topic">
-          <assert xmlns:cb="http://casebooks" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@key = doc(replace(replace(base-uri(.),'file:',''),'casebooks-data/.+$','casebooks-data/master-lists/topics.xml'))//tei:item/@xml:id">ERROR: <name/>@key is not valid</assert>
+          <assert xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@key = doc(replace(replace(base-uri(.),'file:',''),'casebooks-data/.+$','casebooks-data/master-lists/topics.xml'))//tei:item/@xml:id">ERROR: <name/>@key is not valid</assert>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-needs-evidence-constraint">
         <rule context="cb:topic">
-          <report xmlns:cb="http://casebooks" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@key = ('unspecifiedMedical','unspecifiedPassions') and not(@evidence)">ERROR: This topic requires @evidence</report>
+          <report xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@key = ('unspecifiedMedical','unspecifiedPassions') and not(@evidence)">ERROR: This topic requires @evidence</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-needs-person-or-org-constraint">
         <rule context="cb:topic">
-          <report xmlns:cb="http://casebooks" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(child::tei:person|child::tei:org|child::tei:personGrp)=0 and not(@key = 'witchcraft')">ERROR: <name/> requires a person/org inside it</report>
+          <report xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(child::tei:person|child::tei:org|child::tei:personGrp)=0 and not(@key = 'witchcraft')">ERROR: <name/> requires a person/org inside it</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-key-unknown-needs-reason-constraint">
-        <rule xmlns:cb="http://casebooks" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:topic[@key='unknown']">
+        <rule xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:topic[@key='unknown']">
           <report test="not(@reason)">ERROR: cb:topic@key='unknown' needs @reason</report>
         </rule>
       </pattern>
@@ -11450,7 +11450,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
     </element>
   </define>
   <define name="treatment">
-    <element name="treatment" ns="http://casebooks">
+    <element name="treatment" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(treatment) indicates that the entry either records a particular treatment recommended or administered by the practitioner, or includes an explicit statement that no treatment was offered.</a:documentation>
       <empty/>
       <ref name="att.casebooks.certainty.attributes"/>

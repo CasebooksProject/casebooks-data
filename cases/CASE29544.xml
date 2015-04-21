@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE29544">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE29544</title>
@@ -63,7 +63,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#ah"/>
 <cb:subject ref="#ah" present="unclear"/>
-<cb:topic key="afflictedInMind"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="nonDizPassions"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#ah"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -74,7 +75,7 @@
 <change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="en">
+<text xml:lang="en">
 <body><div>
 <p><lb/>Alce Hartly <rs type="address" xml:id="address1">of S<hi rend="superscript">t</hi> <choice><sic>Yedes</sic><corr>Nedes</corr></choice></rs> 43 y <lb/><choice><sic>Ma</sic><corr type="noText"/></choice> Aug 9. &Friday; h. <del type="strikethrough">4</del> 4. 25 p m</p>
 </div>

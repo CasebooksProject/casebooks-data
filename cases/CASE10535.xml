@@ -2,8 +2,8 @@
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xml:id="CASE10535">
-<teiHeader xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10535</title>
@@ -66,7 +66,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="internal"/>
 <cb:subject ref="#anon" present="yes"/>
-<cb:topic key="afflictedInMind"><person sameAs="#anon"/></cb:topic>
+<cb:topic key="nonDizPassions"><person sameAs="#anon"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#anon"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -79,10 +80,10 @@
 <change when="2013-11-08">Facsimile coding added by <name>Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
-<facsimile xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks">
+<facsimile>
 <graphic xml:id="Ashmole-202-0136.jpg" url="Ashmole-202-0136.jpg" n="64v"/>
 </facsimile>
-<text xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:cb="http://casebooks" xml:lang="la">
+<text xml:lang="la">
 <body><div>
 <p><lb/>serv<choice><orig>&uscon;</orig><reg>us</reg></choice> <choice><orig>M<hi rend="superscript">ri</hi></orig><reg>Magistri</reg></choice> Tyringami <lb/>ad me venit consolatio<lb/>nis causa mai&jVowel; 12 <lb/>&MondayN; h. 6 15 &antm; <lb/>1600<note place="chart">afflicted in <lb/>mind</note></p>
 </div>
