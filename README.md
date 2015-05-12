@@ -6,7 +6,7 @@ The data is contained in two directories:
 
 * cases: contains our transcription of the case files.
 
-* master-lists: contains authority files for our topics, relations, occupations and languages. Amongst other things, they define the display versions of each of the tokens - for example, that <cb:topic key="fistula"/> should display as 'hernia, fistula and haemorrhoids'. They are also used in the schematron tests that are used to validate our files.
+* master-lists: contains authority files for our topics, relations, occupations and languages.
 
 For details on our Trancriptions Guidelines and Element Set, please see http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/transcription-guidelines and http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/element-set.
 
