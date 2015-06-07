@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35824</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<notesStmt><note type="editorial" resp="#jyoung">This interrogation appears to be associated with the horary entry <ref type="case" target="CASE35823">CASE35823</ref>.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 53v</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0053v" to="0053v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><roleName>Mr</roleName> <surname>Leate</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="dl" evidence="external">
+<persName><forename>Denise</forename> <surname>Leate</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-05-25" n="Thursday" evidence="external"/></p>
+<p><time when="11:00:00" evidence="external"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#l" evidence="internal" present="no"/>
+<cb:subject ref="#dl" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="external"><person sameAs="#dl"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-10-30">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2014-11-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><del type="strikethrough">D<choice><orig>&eover;</orig><reg>en</reg></choice>net leate <gap reason="binding" extent="unclear"/> <lb/>mai&jVowel; 23</del></p>
+<p><lb/>M<hi rend="superscript">r</hi> leat <unclear cert="low" reason="binding">wrot</unclear> <gap extent="unclear" reason="binding"/> <lb/>May 23 &Tuesday; h. <gap reason="binding" unit="chars" extent="4"/> <lb/>p m 1609.</p> 
+<space dim="vertical" unit="lines" extent="2"/>
+<p><lb/><foreign xml:lang="la">vide mai&jVowel; 23. h. <gap reason="binding" unit="chars" extent="4"/> <lb/>m 1609.</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32544</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 338r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0338r" to="0338r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tk">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Kelly</surname></persName>
+<sex value="1">M</sex>
+<age value="26">26</age>
+<occupation>Man (Servant)</occupation>
+</person>
+<person xml:id="c">
+<persName><roleName>Lady</roleName> <surname>Constable</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="servant" active="#tk" passive="#c"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-01-09" n="Saturday"/></p>
+<p><time when="14:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tk"/>
+<cb:subject ref="#tk" present="unclear"/>
+<cb:topic key="burning"><person sameAs="#tk"/></cb:topic>
+<cb:topic key="fever"><person sameAs="#tk"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="previousConsultation"/>
+<cb:treatment/>
+<cb:info type="financial"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-28">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> <choice><sic>Keld</sic><corr type="delText"/></choice> <add place="supralinear">Thomas kelly</add> my lady Constables <lb/>m<choice><orig>&aover;</orig><reg>an</reg></choice> <add place="supralinear">26 y</add> &IConsonant;an 9 &Saturday; ho. 2. 15 p <lb/>m 1608 <add place="inline">a burning fever&slash;</add></p>
+</div>
+</body>
+</text>
+</TEI>

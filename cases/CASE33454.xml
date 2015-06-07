@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE33454</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4C</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 116v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0116v" to="0116v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wa">
+<persName><roleName>Sir</roleName> <forename>William</forename> <surname>Andrews</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<person xml:id="f">
+<persName><roleName>Mr</roleName> <surname>Freeman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fa">
+<persName><roleName>Sir</roleName> <forename>Francis</forename> <surname evidence="inferred">Andrews</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="servant" active="#anon" passive="#wa"/><relation name="father" active="#wa" passive="#fa"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-05-14" n="Saturday"/></p>
+<p><time when="17:25:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#wa" evidence="internal"/>
+<cb:subject ref="#wa" present="no"/>
+<cb:messenger ref="#anon"/>
+<cb:topic key="journeys"><person sameAs="#wa"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-26">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-03-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>1608 Mai&jVowel; 14 &Saturday; ho 5 <lb/>25 p. m. 1608</p>
+</div>
+&astroChart;
+<div>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> William Andrewes sent <lb/>his man to knowe a good time <lb/>to go to M<hi rend="superscript">r</hi> freeman for <foreign xml:lang="la"><choice><orig>500<hi rend="superscript"><hi rend="overline">li</hi></hi></orig><reg>500 libra</reg></choice></foreign> <lb/>to release his Sonne <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> frauncis <lb/>On Wednesday Mai&jVowel; 18. ho. 6 a <lb/>m. to go forth. &amp; to be there by 8.&slash;</p>
+</div>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

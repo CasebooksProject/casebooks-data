@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35324</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-22">22 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="335">MS Ashmole 335, f. 23r</idno>
+&Napier015;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0023r" to="0023r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ew">
+<persName><roleName>Madam</roleName> <forename>Elizabeth</forename> <surname>Walter</surname></persName>
+<sex value="2">F</sex>
+<age value="28">28</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ww">
+<persName><roleName evidence="inferred">Sir</roleName> <forename>William</forename> <surname evidence="inferred" cert="medium">Walter</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="husband" active="#ww" passive="#ew"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-01-27" n="Friday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ew" evidence="internal"/>
+<cb:subject ref="#ew" present="unclear"/>
+<cb:object ref="#ww"/>
+<cb:topic key="dieFirst"><person sameAs="#ew"/><person sameAs="#ww"/></cb:topic>
+<cb:topic key="witchcraft"/>
+<cb:topic key="fertility"><person sameAs="#ew"/></cb:topic>
+<cb:topic key="fortune"><person sameAs="#ew"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-22">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Mad<choice><orig>&aover;</orig><reg>am</reg></choice> Elis Walter 28 y <rs type="address" xml:id="address1">of <lb/>Winbleton</rs> &IConsonant;an 27 <choice><sic>d</sic><corr type="noText"/></choice> &Friday; h. 5 p m <lb/>1609. <foreign xml:lang="la">movit has quest seq</foreign></p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="la">quis eor<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> of th<choice><orig>&eover;</orig><reg>em</reg></choice> she or her <lb/>husb willi<choice><orig>&aover;</orig><reg>am</reg></choice> <foreign xml:lang="la">diutius vivet. quot <lb/>filios habebit plus &vVowel;tr&flourish; venef. in <lb/>corp cat. aut bo<unclear cert="medium" reason="hand" resp="#jyoung">&uConsonant;</unclear>is</foreign> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> her <lb/>tyme to come more fortunate then her <lb/>tyme past</p>
+</div>
+</body>
+</text>
+</TEI>

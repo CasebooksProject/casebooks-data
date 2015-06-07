@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE33165</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 84r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0084r" to="0084r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t">
+<persName><roleName>Mrs</roleName> <surname>Troughton</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rt">
+<persName><forename>Richard</forename> <surname evidence="inferred" cert="high">Troughton</surname></persName>
+<sex value="1">M</sex>
+<age value="5">5</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="mother" active="#t" passive="#rt"/></listRelation>   
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-03-29" n="Tuesday"/></p>
+<p><time when="12:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#t" evidence="internal" present="unclear"/>
+<cb:subject ref="#rt" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#rt"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-07">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-03-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Troughton <rs type="address" xml:id="address1">of Calverton</rs> <lb/>for her sone Rich. <subst><del type="over">4</del><add place="over">5</add> <add place="supralinear">5.</add></subst> y <lb/>march 29 &Tuesday; h. 12. 45 <lb/><del type="strikethrough">ant</del> <supplied reason="omitted">p</supplied> m 1608</p>
+</div>
+</body>
+</text>
+</TEI>

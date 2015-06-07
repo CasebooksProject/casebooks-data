@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35855</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 58r</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0058r" to="0058r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="re">
+<persName><forename>Richard</forename> <surname>Evans</surname></persName>
+<sex value="1">M</sex>
+<age value="45">45</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1564-06-02"/><time when="22:30:00"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-05-28" n="Sunday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation type="horary">
+<cb:location type="querentVisitsPractitioner"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#re" evidence="internal"/>
+<cb:subject ref="#re" present="yes"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#re"/></cb:topic> 
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-10-31">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2014-11-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Richard Evens <rs type="address" xml:id="address1">of Oxford</rs> 45 y. <lb/><foreign xml:lang="la">natus</foreign> 2 &IConsonant;une trinity sondaye <lb/>h. 10.30 p m 1<subst><del type="over">6</del><add place="over">5</add></subst>64 came to me May 28 &Sunday; h. 1. p <lb/>m. 1609&gt;</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

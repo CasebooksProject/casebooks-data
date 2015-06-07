@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31982</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 264r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0264r" to="0264r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tf">
+<persName><forename>Thomas</forename> <surname>Fosket</surname></persName>
+<sex value="1">M</sex>
+<age value="72">72</age>
+</person>
+<person xml:id="f">
+<persName><surname evidence="inferred" type="married">Fosket</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="wife" active="#f" passive="#tf"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-08-28" n="Friday"/></p>
+<p><time when="09:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#f" evidence="internal" present="unclear"/>
+<cb:subject ref="#tf" present="no" consent="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#tf"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-01">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-02-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><sic>Thomas f</sic><corr type="delText"/></choice></p>
+<p><lb/>Thoms fosket 72 y. Aug 28 <lb/>&Friday; h. 9. 20 &antm;. 1607. <lb/><foreign xml:lang="la">&vVowel;xor <choice><orig>&crossedp;</orig><reg>pro</reg></choice> marito sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

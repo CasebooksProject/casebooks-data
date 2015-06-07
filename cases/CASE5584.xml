@@ -55,6 +55,12 @@
 <person xml:id="anon">
 <sex value="2">F</sex>
 </person>
+<person xml:id="p">
+<persName><surname evidence="inferred" type="maiden" cert="low">Parker</surname></persName>
+<sex value="2">F</sex>
+<birth><date notBefore="1599-04-24" notAfter="1599-06-28" evidence="inferred"/></birth>
+</person>
+<listRelation><relation name="mother" active="#ep" passive="#p"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -65,8 +71,8 @@
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
 <cb:subject ref="#sforman" present="yes"/>
-<cb:object ref="#ep"/>
-<cb:topic key="paternity"><person sameAs="#sforman"/></cb:topic>
+<cb:object ref="#p"/>
+<cb:topic key="paternity"><person sameAs="#sforman"/><person sameAs="#p"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>

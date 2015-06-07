@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE36613</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 168v</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0168v" to="0168v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <surname>Mordaunt</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="em">
+<persName><forename>Elizabeth</forename> <surname>Mordaunt</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex> 
+</person>
+<person xml:id="ig">
+<persName><forename>Isabel</forename> <surname>Goodman</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="mother" active="#m" passive="#em #anon"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-09-30" n="Saturday" evidence="external"/></p>
+<p><time notBefore="14:00:00" notAfter="15:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ig" evidence="internal" present="no"/>
+<cb:subject ref="#anon #em" present="no"/>
+<cb:topic key="requestingTreatment" evidence="internal"><person sameAs="#anon"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-04">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-03-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The lady morda<supplied reason="binding" cert="high">nt</supplied> <lb/>2 playsters for <supplied reason="binding" cert="medium">her</supplied> <lb/>child for <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <gap extent="4" unit="chars" reason="binding"/> <lb/>&amp; to come <gap unit="chars" extent="4" reason="binding"/> <lb/>to her daugh<supplied reason="binding" cert="high">ter</supplied> <lb/>Elis.</p>
+<p>Isable Good m<choice><orig>&aover;</orig><reg>an</reg></choice> wrote in her b<supplied reason="binding" cert="low">ehalfe</supplied></p>
+</div>
+</body>
+</text>
+</TEI>

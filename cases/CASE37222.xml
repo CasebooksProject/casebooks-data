@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37222</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-24">24 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 2r/Q1, f. 1v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="329">MS Ashmole 329, f. 2r, f. 1v</idno>
+&Napier017;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0002r" to="0002r"/>
+<locus from="0001v" to="0001v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mrs</roleName> <surname>Cornwallis</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="bb">
+<persName><forename>Barker</forename> <surname>Brown</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Barber-surgeon</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-11-29" n="Wednesday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c" evidence="internal"/>
+<cb:subject ref="#c" present="unclear"/>
+<cb:object ref="#bb"/>
+<cb:topic key="maritalProspects"><person sameAs="#c"/><person sameAs="#bb"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Corne Wallys <foreign xml:lang="la">qu&aelig;<lb/>rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> potiet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> Barker <lb/>Browne</foreign> a barber sur<lb/>gion <rs type="address" xml:id="address1">of london</rs> nov<choice><orig>&eover;</orig><reg>em</reg></choice>b 29 <lb/>&Wednesday;. h. 10. &antm; 1609</p>
+</div>
+&astroChart;
+<pb xml:id="f1v" n="1v"/>
+</body>
+</text>
+</TEI>

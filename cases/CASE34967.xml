@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34967</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B, 4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 322r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0322r" to="0322r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ee">
+<persName><forename>Elizabeth</forename> <surname>Ellet</surname></persName>
+<sex value="2">F</sex>
+<age value="20">20</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="e">
+<persName><surname evidence="inferred" cert="low">Ellet</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<occupation evidence="inferred">Servant</occupation>
+</person>
+<listRelation>
+<relation name="mother" active="#e" passive="#ee"/>
+</listRelation> 
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-03-24" n="Friday"/></p>
+<p><time when="09:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ee"/>
+<cb:subject ref="#ee" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ee"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><supplied reason="binding" cert="medium">Eli</supplied>s. Ellet <rs type="address" xml:id="address1">of Stonystratford</rs> 20. y. a serv. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her mother. <lb/>march 24 &Friday; h. 9. 50 &antm; 1609.</p>
+</div>
+</body>
+</text>
+</TEI>

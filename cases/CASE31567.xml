@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31567</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<notesStmt><note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE31565">CASE31565</ref>.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 206r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0206r" to="0206r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ik">
+<persName><forename>Isabel</forename> <surname>Kent</surname></persName>
+<sex value="2">F</sex>
+<age value="53">53</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-06-05" n="Friday" evidence="external"/></p>
+<p><time when="09:15:00" evidence="external"/></p>
+<cb:consultation type="decumbiture">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ik"/>
+<cb:subject ref="#ik" present="unclear"/>
+<cb:topic key="fits"><person sameAs="#ik"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-02-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Isb. kent <rs type="address" xml:id="address1">of Padbery</rs> <lb/>53 y <choice><sic>Iun</sic><corr type="delText"/></choice><del type="strikethrough">e <subst><del type="over">5</del><add place="over">4</add></subst> &VenusSymbol;</del> &IConsonant;une <lb/>4. &Thursday; taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a sore <lb/>fit h. 4. p m. 1607</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

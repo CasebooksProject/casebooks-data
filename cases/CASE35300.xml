@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35300</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#rralley">This entry is upside down.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 147r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0147r" to="0147r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="e1">
+<persName><surname>Evington</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="e2">
+<persName><surname evidence="inferred" type="maiden">Evington</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="brother-in-law" active="#e1" passive="#rnapier" evidence="external"/><relation name="daughter" active="#e2" passive="#e1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-02-10" n="Friday"/></p>
+<p><time when="14:38:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#e1" evidence="internal" present="unclear"/>
+<cb:subject ref="#e2" present="no"/>
+<cb:topic key="maritalProspects"><person sameAs="#e2"/></cb:topic>
+<cb:topic key="fortune"><person sameAs="#e2"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">frater Evington<choice><orig>&uscon;</orig><reg>us</reg></choice> qu&aelig;rit</foreign> <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it wilbe a good <lb/>match. &amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> his dau<supplied reason="binding">gh</supplied><lb/>ter will live febr. 10 &Friday; h <lb/>2. 38 p m 1609. <add place="inline">wheather <lb/>good &amp; fortunate</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

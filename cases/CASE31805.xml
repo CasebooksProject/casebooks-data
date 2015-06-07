@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31805</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 236v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0236v" to="0236v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rs">
+<persName><forename evidence="external">Robert</forename> <surname>Sandy</surname> <surname type="alternate" evidence="external">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="brother" mutual="#rs #rnapier"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1607-06-28T09:00:00" notAfter-custom="1607-06-29T09:00:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#rs"/>
+<cb:topic key="visits"><person sameAs="#rnapier"/><person sameAs="#rs"/></cb:topic>
+<cb:topic key="journeys"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-02-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Sandy sent me <lb/>a letter &IConsonant;une 28 &Sunday; h. 9 <lb/>&antm; 1607. to come to <placeName>looton How</placeName></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>I would not goe</p>
+</div>
+</body>
+</text>
+</TEI>

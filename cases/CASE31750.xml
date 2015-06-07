@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31750</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 229v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0229v" to="0229v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="u1">
+<persName><roleName>Mrs</roleName> <surname>Underhill</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="u2">
+<persName><surname evidence="inferred" cert="medium">Underhill</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#u2" passive="#u1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-06-22" n="Monday"/></p>
+<p><time when="12:53:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#u1" evidence="internal" present="no"/>
+<cb:subject ref="#u2" present="no"/>
+<cb:topic key="gonorrhoea"><person sameAs="#u2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-19">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-02-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> &vVowel;nderhill sent <lb/>for her litle boy who ha<supplied reason="binding" cert="low">th</supplied> <lb/>the r<choice><orig>&uover;</orig><reg>un</reg></choice>ning of the re<supplied reason="binding" cert="low">ins</supplied> <lb/>at night <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> weake<supplied reason="binding" cert="low">th</supplied> <lb/>him &IConsonant;une 22 &Monday; h <supplied reason="binding" cert="high">12</supplied> <lb/><del type="strikethrough">45</del> 53 p m 1607</p>
+</div>
+</body>
+</text>
+</TEI>

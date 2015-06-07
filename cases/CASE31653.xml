@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31653</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 216v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0216v" to="0216v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="be">
+<persName><forename>Bennet</forename> <surname>Ewer</surname></persName>
+<sex value="2">F</sex>
+<age value="29">29</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="e1">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="e2">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="e3">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e4">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e5">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e6">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e7">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e8">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e9">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e10">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="e11">
+<persName><surname evidence="inferred" cert="medium">Ewer</surname></persName>
+<sex value="0">U</sex>
+<age value="2">2</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="mother" active="#be" passive="#e1 #e2 #e3 #e4 #e5 #e6 #e7 #e8 #e9 #e10 #e11"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-06-11" n="Thursday"/></p>
+<p><time when="13:38:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#be"/>
+<cb:subject ref="#be" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#be"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-11">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-02-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><sic>Bemet</sic><corr>Bennet</corr></choice> Ewer <rs type="address" xml:id="address1">of Abbots <lb/>langlye</rs> 29. y <choice><sic>mayred</sic><corr>maryed</corr></choice> 11 <choice><sic>y</sic><corr type="noText"/></choice> <lb/>yeres. youngest child 2 y <lb/>&IConsonant;une 11. &Thursday; h. 1. 38. <subst><del type="over">a</del><add place="over">p</add></subst> m <add place="infralinear">hath had a x&jVowel; child</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE36855</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<notesStmt>
+<note type="layout" resp="#jyoung">This entry is interrupted by the beginning of <ref type="case" target="CASE36856">CASE36856</ref>, for Elizabeth Simons, an entry apparently added later which for some reason then proceeds backwards to f. 210v.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 211r</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0211r" to="0211r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><roleName>Mrs</roleName> <surname>Parsons</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-01-10" n="Wednesday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#p"/>
+<cb:subject ref="#p" present="unclear"/>
+<cb:topic key="pregnancy"><person sameAs="#p"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#p"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-03-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-17">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Parson <rs type="address" xml:id="address1">of kempson <lb/>Hardwicke</rs> 30 y <foreign xml:lang="la">nescit <lb/>an sit gravida</foreign>. &IConsonant;an 10 <lb/>&Wednesday; h. 5. p m 1610</p>
+<p><lb/><foreign xml:lang="la">qu&aelig;rit an sit gravida</foreign> <lb/>if not because she is not <lb/>healthfull feareth a worse matter</p>
+</div>
+</body>
+</text>
+</TEI>

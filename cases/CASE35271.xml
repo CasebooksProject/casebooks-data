@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35271</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 116r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0116r" to="0116r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sforman" evidence="external">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jw">
+<persName><forename>Joshua</forename> <surname evidence="external">Walworth</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1585-03-27" n="Saturday"/><time when="07:48:00"/></birth>
+</person>
+<person xml:id="ay">
+<persName><forename>Agnes</forename> <surname>Young</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="son" active="#jw" passive="#ay"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1603-10-08" notAfter="1609-02-16" evidence="inferred" cert="low"/></p>
+
+<cb:consultation type="nativity">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman" evidence="conjecture" present="yes"/>
+<cb:subject ref="#jw" present="unclear"/>
+<cb:topic key="history" evidence="inferred"><person sameAs="#jw"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/>&IConsonant;osua filius Ag <choice><sic>I<unclear reason="hand" cert="medium">omg</unclear></sic><corr type="noText" cert="medium" resp="#rralley"/></choice> <lb/>Yong natus 1585. martii 27 <lb/><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> h 7 48 &antm;</p>
+</div>
+</body>
+</text>
+</TEI>

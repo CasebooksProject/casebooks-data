@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE36867</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 213r</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0213r" to="0213r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="g">
+<persName><roleName>Mr</roleName> <surname>Godstowe</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-01-11" n="Thursday"/></p>
+<p><time when="15:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#g"/>
+<cb:subject ref="#g" present="unclear"/>
+<cb:topic key="residence" cert="medium"><person sameAs="#g"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-03-17">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/><choice><orig>D<hi rend="overline">ns</hi></orig><reg>Dominus</reg></choice> Godst. qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>mag. fortunat<choice><orig>&uscon;</orig><reg>us</reg></choice> in <del type="strikethrough">ant</del> <lb/>septente <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> australi <choice><orig>&crossedp;</orig><reg>par</reg></choice>te. <lb/>&IConsonant;an. 11. &ThursdayLatin; h. 3. 20 p m <lb/>1610.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

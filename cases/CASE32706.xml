@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32706</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 14r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0014r" to="0014r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Dr</roleName> <surname>Ashwort</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName evidence="external" cert="high"><roleName>Lady</roleName> <surname>Constable</surname></persName>
+<sex value="2" evidence="external">F</sex>
+</person>  
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1608-02-03T08:38:00" notAfter-custom="1608-02-05T12:00:00" evidence="inferred"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal" present="yes"/>
+<cb:subject ref="#a" present="unclear"/>
+<cb:object ref="#c"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#a"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-10-28">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-11-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>D Ashwort gave his <lb/>cordiall of Diasc &drachms;&semi;. <lb/>conserv. garyophill. &drachms;&jVowel; &semi;. <lb/>claret wyne. rose <lb/>wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>. a sponefull. &amp; <lb/>strayned it feb. 3. &Wednesday; h. 8. 38. <lb/>p m 1608</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

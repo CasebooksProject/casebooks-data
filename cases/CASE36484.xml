@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE36484</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 151r</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0151r" to="0151r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mn">
+<persName><roleName>Mrs</roleName> <forename>Margaret</forename> <surname>Noone</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="jl">
+<persName><roleName>Mr</roleName> <forename>John</forename> <surname>Langford</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-09-05" n="Tuesday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mn" evidence="internal"/>
+<cb:subject ref="#mn" present="no"/>
+<cb:topic key="report"><person sameAs="#mn"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#mn"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#mn"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#mn"/></cb:topic>
+<cb:topic key="face"><person sameAs="#mn"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#mn"/></cb:topic>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-11-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-02-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Margaret Noone <lb/><rs type="address" xml:id="address1">a londyner</rs> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> came &vVowel;nto <lb/>me <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> M<hi rend="superscript">r</hi> &IConsonant;ohn lanck<lb/>ford sent me word <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> her <lb/>2 clysters wrought but litle <lb/>but <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> her dyet drinke did <lb/>worke well &amp; did her some <lb/>good for her cold stomack. but <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> her flushing in her face <lb/>c<choice><orig>&oover;</orig><reg>on</reg></choice>tinueth still. as also her swel<lb/>ling espec on the right syde of <lb/>her bellye craveth my furth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>helpe. Sept 5. &Tuesday; h. 12. 1609 </p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

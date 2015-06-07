@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37176</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 261r/Q1, f. 262r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 261r, f. 262r</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0261r" to="0261r"/>
+<locus from="0262r" to="0262r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eh">
+<persName><forename>Edward</forename> <surname>Haselwood</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1610-01-25" n="Thursday"/><time when="00:30:00"/><placeName sameAs="#address1"/></birth>
+<death><date when="1610-03-20"/></death>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-03-09" n="Friday" evidence="external"/></p>
+<p><time when="10:20:00" evidence="external"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#eh" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#eh"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-06">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-03-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-27">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><del type="blockStrikethrough">Edward Haselwood <add place="supralinear"><rs type="address" sameAs="#address1">of haversh<choice><orig>&aover;</orig><reg>am</reg></choice></rs></add> borne the <lb/>25 of &IConsonant;anuary &Thursday; h. 12. 30 <lb/>p <unclear cert="low" reason="copy">ma</unclear> <foreign xml:lang="la">in noct<choice><orig>&eover;</orig><reg>em</reg></choice></foreign> 1610</del></p>
+</div>
+&astroChartDeleted;
+
+<div>
+<pb xml:id="f262r" n="262r"/>
+<p><lb/>Edward Haselwood <rs type="address" xml:id="address1">of hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/><foreign xml:lang="la">natus &IConsonant;an 25 &ThursdayLatin; h. 12. 30 <choice><orig>p</orig><reg>post</reg></choice> <lb/>medi<choice><orig>&aover;</orig><reg>am</reg></choice> noct<choice><orig>&eover;</orig><reg>em</reg></choice></foreign>. 1610</p>
+</div>
+&astroChartPartialDeleted;
+
+<div>
+<p><lb/>Edward haselwood <foreign xml:lang="la">natus <rs type="address" sameAs="#address1">Hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> &IConsonant;anuar 25 <lb/>&ThursdayLatin; h. 12. 30 <choice><orig>p</orig><reg>post</reg></choice> medi<choice><orig>&aover;</orig><reg>am</reg></choice> noct<choice><orig>&eover;</orig><reg>em</reg></choice></foreign> 1610.</p>
+</div>
+&astroChart;
+
+</body>
+</text>
+</TEI>

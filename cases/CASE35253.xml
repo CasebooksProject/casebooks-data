@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35253</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 106v</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0106v" to="0106v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ad">
+<persName><forename>Anne</forename> <surname>Dutch</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1609-02-06T10:40:00"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon"/>
+<cb:subject ref="#anon" present="unclear"/>
+<cb:object ref="#ad"/>
+<cb:topic key="employeeChoice"><person sameAs="#ad"/></cb:topic>
+
+<cb:info type="event" subtype="unclear"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/>An <add place="supralinear"><del type="strikethrough">I<unclear reason="del" cert="medium">t</unclear></del> Dutch.</add> <choice><orig>vtr&flourish;</orig><reg>utrum</reg></choice> sit futur serva <lb/>&vVowel;tilis feb. 6 &MondayLatin;. h. 10. 40. <lb/>&antm;. 1609 <add place="supralinear">appar.</add> <add place="marginLeft"><choice><sic>I</sic><corr type="noText"/></choice></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

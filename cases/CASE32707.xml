@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32707</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 14r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0014r" to="0014r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Dr</roleName> <surname>Ashwort</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName evidence="external"><roleName>Lady</roleName> <surname>Constable</surname></persName>
+<sex value="2">F</sex>
+</person>   
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1608-02-03T15:00:00" notAfter-custom="1608-02-05T12:00:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#a #c"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#c"/></cb:topic>
+<cb:topic key="conversation"><person sameAs="#a"/><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-10-28">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-11-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Doctor Ashworte came <lb/>not &vVowel;ntill feb. 3. &Wednesday; <lb/>h. 3. &amp; then felt her <lb/>pulse. feb. 3. &Wednesday; h. 3 p <lb/>m. 160<subst><del type="over">7</del><add place="over">8</add></subst></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>he inquired of <lb/>me many quest <lb/>where her sick<lb/>nes was <foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>in <choice><orig><hi rend="overline">aia</hi></orig><reg>anima</reg></choice>lib<choice><orig>&uscon;</orig><reg>us</reg></choice> nat et <lb/>spir.</foreign> &amp; discoursed <lb/>like a Docter.</p>
+</div>
+</body>
+</text>
+</TEI>

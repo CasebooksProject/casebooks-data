@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35252</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 104v</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0104v" to="0104v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="n">
+<persName><surname evidence="inferred">Napier</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+<occupation>Maid</occupation>
+</person>
+<listRelation><relation name="sister-in-law" active="#n" passive="#rnapier" evidence="external"/><relation name="servant" active="#anon" passive="#n"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-02-16" n="Thursday"/></p>
+<p><time when="11:50:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#n" evidence="internal"/>
+<cb:subject ref="#n" present="unclear"/>
+<cb:object ref="#anon"/>
+<cb:topic key="lossAndTheft"><person sameAs="#anon"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">qu&aelig;rit Soror</foreign> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> her <lb/>mayd afore Christmas feb <lb/>16 &Thursday; h. 11. 50 &antm; 1609 <add place="infralinear"><foreign xml:lang="la">suffurata sit supell<unclear reason="hand" cert="low">ec</unclear>t</foreign></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35259</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 110v/Q1, f. 111r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, ff. 110v-111r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0110v" to="0111r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sp">
+<persName><forename>Susan</forename> <surname>Pallant</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="s">
+<persName><surname>Sandy</surname> <surname type="alternate" evidence="external">Napier</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="sister-in-law" active="#s" passive="#rnapier" evidence="external"/><relation name="servant" active="#sp" passive="#s" notAfter="1609-02-14"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-02-15" n="Wednesday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#sp"/>
+<cb:subject ref="#sp" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#sp"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Susan Pallant <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">3</add></subst>0 y an <lb/>old serv. to my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Sandy <lb/>feb. 15. &Wednesday; h. 9. <del type="strikethrough">15.</del> &antm; <lb/>1609</p>
+</div>
+&astroChart;
+<pb xml:id="f111r" n="111r"/>
+</body>
+</text>
+</TEI>

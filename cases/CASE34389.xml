@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34389</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 244v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0244v" to="0244v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ar">
+<persName><forename>Avis</forename> <surname>Rogers</surname></persName>
+<sex value="2">F</sex>
+<age value="31">31</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="r1">
+<persName><surname evidence="inferred" cert="medium">Rogers</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="r2">
+<persName><surname evidence="inferred" cert="medium">Rogers</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="r3">
+<persName><surname evidence="inferred" cert="medium">Rogers</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="r4">
+<persName><surname evidence="inferred" cert="medium">Rogers</surname></persName>
+<sex value="2">F</sex>
+<age value="1">1</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="m" evidence="internal">
+<persName><roleName>Mother</roleName> <surname>Mellows</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#ar" passive="#r1 #r2 #r3 #r4"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-11-11" n="Friday"/></p>
+<p><time when="11:25:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ar"/>
+<cb:subject ref="#ar" present="unclear"/>
+<cb:object ref="#m"/>
+<cb:topic key="mind"><person sameAs="#ar"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#ar"/></cb:topic>
+<cb:topic key="mopish"><person sameAs="#ar"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#m"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-27">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Avys Rogers <rs type="address" xml:id="address1">Pamsford <lb/>in c<choice><orig>&aover;</orig><reg>am</reg></choice>bridg sheere</rs> 31 y <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 11. &Friday; h. 11. 25 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1608. 4 child &amp; daughters <lb/>all the yongest a yere old.<note place="chart">mynd troubled <lb/>mopish</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

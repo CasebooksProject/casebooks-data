@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35210</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 51r/Q1, f. 50v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 51r, f. 50v</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0051r" to="0051r"/>
+<locus from="0050v" to="0050v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><forename>Margery</forename></persName>
+<sex value="2">F</sex>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="mn">
+<persName><forename evidence="external">Mary</forename> <surname evidence="external">Napier</surname></persName>
+<sex value="2" evidence="external">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-10-11" n="Tuesday"/></p>
+<p><time when="20:25:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mn"/>
+<cb:subject ref="#mn" present="unclear"/>
+<cb:object ref="#m"/>
+<cb:topic key="employeeChoice"><person sameAs="#m"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/>Altera serva venit qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>an &vVowel;tilis Octob. 11 &Tuesday; <lb/>h. 8. 25. p m 1608</p>
+</div>
+&astroChartDeleted;
+<div><pb xml:id="f50v" n="50v"/>
+<p><lb/><add place="pageTop">Margery</add> h. 8. 25. p m 1608</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

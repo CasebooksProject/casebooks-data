@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30449</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 50r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0050r" to="0050r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b1">
+<persName><surname>Blundell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fb">
+<persName><forename evidence="conjecture">Francis</forename> <surname evidence="inferred">Blundell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b2">
+<persName><roleName>Captain</roleName> <surname>Blundell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="father" active="#b1" passive="#fb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-01-12" n="Monday" evidence="inferred"/></p>
+<p><time notBefore="09:20:00" notAfter="12:00:00" evidence="inferred"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#b1 #fb"/>
+<cb:topic key="letters"><person sameAs="#rnapier"/><person sameAs="#fb"/></cb:topic>
+<cb:topic key="conversation" cert="medium"><person sameAs="#b1"/><person sameAs="#fb"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-05-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-05-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/>Pater Blundelli <del type="cancelled"><unclear reason="del" cert="medium">c</unclear></del>voluit <lb/>&vVowel;t filio <choice><orig><choice><sic>sciber&eover;</sic><corr>scriber&eover;</corr></choice></orig><reg>scriberem</reg></choice>scibe<choice><orig>&uover;</orig><reg>um</reg></choice> se velle <lb/>c<choice><orig>&uover;</orig><reg>um</reg></choice> illo de reb<choice><orig>&uscon;</orig><reg>us</reg></choice> c<choice><orig>&oover;</orig><reg>on</reg></choice>ferre <lb/>h. 9. 20 &antm; 1607.</p>
+<p><lb/><foreign xml:lang="en">he reported good newes <lb/>fr<choice><orig>&oover;</orig><reg>om</reg></choice> the Capitayne.</foreign></p>
+<p><lb/><choice><sic>vtr<hi rend="overline">u</hi></sic><corr type="noText"/></choice></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

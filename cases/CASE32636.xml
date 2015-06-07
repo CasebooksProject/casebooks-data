@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32636</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 4v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0004v" to="0004v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Lady</roleName> <surname>Constable</surname></persName>
+<sex value="2">F</sex>
+
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-01-28" n="Thursday"/></p>
+<p><time when="13:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c"/>
+<cb:subject ref="#c" present="unclear"/>
+<cb:item type="urine"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#c"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-09-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-09-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><add place="pageTop">The lady Constable &IConsonant;an 28 &Thursday; h. 1. 45 p m 1608.</add> my lady Constable <gap unit="chars" extent="3" reason="binding"/> <lb/>wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &IConsonant;an 28 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> <supplied reason="binding" cert="high">1.</supplied> <lb/>45. p m 1608.</p>
+</div>
+
+</body>
+</text>
+</TEI>

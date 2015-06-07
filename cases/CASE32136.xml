@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32136</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 281v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0281v" to="0281v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mb">
+<persName><forename>Martha</forename> <surname>Barlowe</surname> <surname evidence="inferred" type="maiden">Hall</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h1">
+<persName><roleName>Mr</roleName> <surname>Hall</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><surname evidence="inferred" cert="medium">Barlowe</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred">Hall</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="daughter" active="#mb" passive="#h1"/><relation name="wife" active="#mb" passive="#b" from-custom="1607-07-06T09:30:00"/><relation name="brother" active="#h2" passive="#mb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-09-21" n="Monday"/></p>
+<p><time when="11:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mb" evidence="internal"/>
+<cb:subject ref="#mb" present="no"/>
+<cb:object ref="#h1 #b"/>
+<cb:topic key="maritalRelations"><person sameAs="#mb"/><person sameAs="#b"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-06">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Martha Barlowe <rs type="address" xml:id="address1">of <lb/>Acton</rs> m<hi rend="superscript">r</hi> Hals daugh<supplied reason="binding">ter</supplied> <lb/>sent to me for my opin<supplied reason="binding" cert="low">ion</supplied> <lb/>sept 21 &Monday; h. 11 30 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1607. wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> she <lb/>shall not live in w<gap reason="binding" unit="chars" extent="5"/> <add place="supralinear">&amp; obteyne fathers good will</add> <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> his love wilbe firm <gap extent="unclear" reason="binding" cert="medium"/> <lb/>maryed &IConsonant;uly 6. h. 9 <lb/>30 &antm; 1607. &Monday;</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>none know of this mariage <lb/>but my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; you <unclear cert="low" reason="binding">not</unclear> <lb/>my fath</p>
+</div>
+</body>
+</text>
+</TEI>

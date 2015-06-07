@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE36381</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 131r</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0131r" to="0131r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="nb">
+<persName><roleName>Mr</roleName> <forename>Nicholas</forename> <surname>Barnsly</surname></persName>
+<sex value="1">M</sex>
+<age value="41">41</age>
+<birth><date when="1568-04-08"/><time when="11:30:00"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-08-15" n="Tuesday"/></p>
+<p><time when="10:30:00" evidence="external" cert="low"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#nb"/>
+<cb:subject ref="#nb" present="unclear"/>
+<cb:topic key="flatus"><person sameAs="#nb"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#nb"/></cb:topic>
+<cb:topic key="head"><person sameAs="#nb"/></cb:topic>
+<cb:topic key="dizziness"><person sameAs="#nb"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#nb"/></cb:topic>
+<cb:topic key="haemorrhoids"><person sameAs="#nb"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-11-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-02-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-02-26">Rechecked by <name sameAs="#jedge">Joanne Edge</name></change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Nicholas <lb/>Barnesley a <choice><orig>&crossedp;</orig><reg>pro</reg></choice>p<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>wise sholatike g<choice><orig>&eover;</orig><reg>en</reg></choice>tle<lb/>m<choice><orig>&aover;</orig><reg>an</reg></choice> last 8 of Apr <lb/>being palme sondaye <lb/>h. 11. 30 &antm; 41 <choice><sic>c<choice><orig>&oover;</orig><reg>om</reg></choice>p<lb/>plete</sic><corr>complete</corr></choice> <foreign xml:lang="la">c<choice><orig>&oover;</orig><reg>om</reg></choice>plex sang corp. <lb/>flatibus stomachi et <lb/>capitis vertig. et ante <lb/>hac tumore venar h&aelig;morod</foreign> <lb/>Aug 15. 1609</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32215</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 291v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0291v" to="0291v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wc">
+<persName><forename>William</forename> <surname>Child</surname></persName>
+<sex value="1">M</sex>
+<age value="21">21</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+</person>
+<person xml:id="c1">
+<persName><surname evidence="inferred">Child</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c2">
+<persName><surname evidence="inferred" type="married">Child</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon3">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="daughter" active="#anon1" passive="#anon2"/><relation name="son" active="#wc" passive="#c1 #c2"/><relation name="wouldBeSweetheart" active="#wc" passive="#anon1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-10-05" n="Monday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon3" evidence="conjecture" cert="medium" present="unclear"/>
+<cb:subject ref="#wc" present="no"/>
+<cb:object ref="#anon1"/>
+<cb:topic key="absentPerson" evidence="conjecture" cert="medium"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="romanticRelations"><person sameAs="#wc"/><person sameAs="#anon1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-13">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Child <rs type="address" xml:id="address1">of <lb/><subst><del type="strikethrough">Wa</del> <add place="supralinear">Abbats</add></subst> langly</rs> 21 y <lb/>Octob. 5 &Monday; h 5 <lb/>p m. 1607.</p>
+<p><lb/><del type="strikethrough">hed</del> mynd set &vVowel;p<lb/>pon a wentch <lb/>c<choice><orig>&oover;</orig><reg>on</reg></choice>trary to his fath<supplied reason="binding"><choice><orig><hi rend="superscript">rs</hi></orig><reg>ers</reg></choice></supplied> <lb/>&amp; mothers mynd &amp; <gap reason="binding" unit="chars" extent="2" cert="medium"/> <lb/>is gone a myle fro<supplied reason="binding" cert="medium">m</supplied> <lb/><subst><del type="over">h</del><add place="over">t</add></subst>hem. on a ny<gap reason="binding" unit="chars" extent="3"/> <lb/>Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> his my<supplied reason="binding" cert="high">nd</supplied> <lb/>is set.</p>
+</div>
+</body>
+</text>
+</TEI>

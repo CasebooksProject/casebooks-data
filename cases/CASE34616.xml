@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34616</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 277v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0277v" to="0277v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Lady</roleName> <surname>Farmer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lady</roleName></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1608-12-25T17:20:00" notAfter-custom="1608-12-26T12:00:00"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#person1" present="no"/>
+<cb:object ref="#f"/>
+<cb:topic key="sickness"><person sameAs="#person1"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-04">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-04-17">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The lady far<supplied reason="binding" cert="low">mer</supplied> <lb/>sent &vVowel;nto me <supplied reason="binding" cert="medium">Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b.</supplied> <lb/>25 on christm<supplied reason="binding">as</supplied> <lb/>day <del type="strikethrough">h</del> &Sunday; h. 5 <supplied reason="binding" cert="medium">20</supplied> <lb/><del type="strikethrough">ant</del> p m 1608 <lb/>that I would g<supplied reason="binding" cert="high">oe</supplied> <lb/>over to my lady <gap reason="binding" unit="words" extent="1" cert="medium"/> <lb/>the next day be<supplied reason="binding" cert="high">cause</supplied> <lb/>she was sicke</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>I excused <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I could not <lb/>come &vVowel;ntill the hol<supplied reason="binding" cert="medium">y</supplied> <lb/>days were ended be<supplied reason="binding" cert="low">cause</supplied> <lb/>I had invited my ne<gap reason="binding" unit="chars" extent="8"/> <lb/>but yet <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I would c<supplied reason="binding" cert="medium">ome</supplied> <lb/>if necessity required</p>
+</div>
+</body>
+</text>
+</TEI>

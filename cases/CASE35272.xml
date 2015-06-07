@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35272</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 116v</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0116v" to="0116v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mw">
+<persName><roleName>Mrs</roleName> <forename>Martha</forename> <surname>Web</surname> <surname type="alternate">Shackelton</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1561-06-23"/><time when="16:28:00"/></birth>
+</person>
+
+<person xml:id="ww">
+<persName><forename evidence="external">William</forename> <surname evidence="external">Web</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jb">
+<persName><forename evidence="external">John</forename> <surname evidence="external">Baker</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="husband" active="#ww" passive="#mw"/><relation name="husband" active="#jb" passive="#mw"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1606-04-20" notAfter="1609-02-16" evidence="external"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman" evidence="conjecture" present="yes"/>
+<cb:subject ref="#mw" present="unclear"/>
+<cb:topic key="history" evidence="conjecture" cert="medium"><person sameAs="#mw"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Martha <add place="supralinear">web</add> Shakelto <add place="supralinear"><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> webbe</add> &IConsonant;uni&jVowel; 23 <lb/>h 4. 28 p m 1561 <add place="interlinear">twice maryed <lb/>hath bur<supplied reason="binding" cert="medium">yed</supplied> <lb/>2 husb</add></p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32307</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 305r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0305r" to="0305r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rd">
+<persName><forename>Reynold</forename> <surname>Davis</surname></persName>
+<sex value="1">M</sex>
+<residence key="databaseNormalizedIDKey" evidence="internal">of Stony stratford</residence>
+</person>
+<person xml:id="d1">
+<persName><surname type="married" evidence="inferred">Davis</surname></persName>
+<sex value="2">F</sex>
+<residence key="databaseNormalizedIDKey" evidence="internal">of Stony stratford</residence>
+</person>
+<person xml:id="eb">
+<persName><forename>Elizabeth</forename> <surname>Brown</surname></persName>
+<sex value="2">F</sex>
+<occupation>Servant</occupation>
+<residence key="databaseNormalizedIDKey" evidence="internal">of Stony stratford</residence>
+
+</person>
+<person xml:id="d2">
+<persName><surname evidence="inferred">Davis</surname></persName>
+<sex value="0">U</sex>
+
+</person>
+
+<person xml:id="d3">
+<persName><surname evidence="inferred">Davis</surname></persName>
+<sex value="0">U</sex>
+
+</person>
+<person xml:id="d4">
+<persName><surname evidence="inferred">Davis</surname></persName>
+<sex value="0">U</sex>
+
+</person>
+<person xml:id="d5">
+<persName><surname evidence="inferred">Davis</surname></persName>
+<sex value="0">U</sex>
+
+</person>
+<person xml:id="d6">
+<persName><surname evidence="inferred">Davis</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="d7">
+<persName><surname evidence="inferred">Davis</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="n" evidence="internal">
+<persName><genName>Old</genName> <surname>Needle</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+<residence key="databaseNormalizedIDKey">of Stony stratford</residence>
+</person>
+<listRelation><relation name="servant" active="#eb" passive="#d1"/><relation name="child" active="#d2 #d3 #d4 #d5 #d6 #d7" passive="#rd #d1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-10-26" n="Monday" xml:id="date1" exclude="#date2"/></p>
+<p><date when="1607-10-27" n="Tuesday" xml:id="date2" exclude="#date1"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#d1"/>
+<cb:subject ref="#d1" present="unclear"/>
+<cb:subject ref="#n" present="no"/>
+<cb:topic key="plague"><person sameAs="#d1"/><person sameAs="#n"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#d1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Raynold Da<subst><del type="over">y</del><add place="over">v</add></subst>yes wife. sick of <lb/>the plaugue octob. 27 &Monday; h 10 <lb/>&antm; 1607. did bery Elis Browne <lb/><supplied reason="binding">he</supplied>r servant 3 wekes before harvest &amp; did <supplied reason="binding" cert="medium">bur</supplied>y that day sennight on child. &amp; 3 <lb/><gap reason="binding" extent="3" unit="chars"/>s aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> a noth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; dyed. &amp; 2 more <lb/><gap reason="binding" extent="1" unit="words"/> &amp; recovered this daye s<choice><orig>&eover;</orig><reg>en</reg></choice>net. And <lb/><gap reason="binding" extent="1" unit="words"/> he<subst><del type="over">l</del><add place="over">r</add></subst> selfe fell sicke about this <lb/><supplied reason="binding" cert="low">day</supplied> senet in the after noone that her <lb/><gap reason="binding" extent="1" unit="words"/> sore did break. she hath bene <lb/><gap reason="binding" extent="1" unit="words"/> prayed for. c<choice><orig>&aover;</orig><reg>an</reg></choice>not sleepe. hath a sore &vVowel;nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> her left share.</p>
+</div>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

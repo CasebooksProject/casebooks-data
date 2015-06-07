@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31915</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 254r/Q4A, f. 254v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 254r-v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0254r" to="0254v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Anne</forename> <surname>Herick</surname></persName>
+<sex value="2">F</sex>
+<age value="16">16</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<person xml:id="es" evidence="internal">
+<persName><forename>Ellen</forename> <surname>Seer</surname></persName>
+<sex value="2">F</sex>
+<residence key="databaseNormalizedIDKey">at Mylton</residence>
+</person>
+<person xml:id="mh" evidence="internal">
+<persName><forename>Marian</forename> <surname>Hobs</surname></persName>
+<sex value="2">F</sex>
+<residence key="databaseNormalizedIDKey">of Colli<gap extent="unclear" reason="binding"/></residence>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-07-31" n="Friday"/></p>
+<p><time when="09:00:00" xml:id="time1" exclude="#time2 #time3"/></p>
+<p><time when="09:30:00" xml:id="time2" exclude="#time1 #time3"/></p>
+<p><time when="10:30:00" xml:id="time3" exclude="#time1 #time2"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="internal" present="unclear"/>
+<cb:subject ref="#ah" present="no" consent="no"/>
+<cb:object ref="#es #mh"/>
+<cb:topic key="wits"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#es"/><person sameAs="#mh"/></cb:topic>
+
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-02-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>An Herick <rs type="address" xml:id="address1">of Collin<lb/>tree</rs>: 16 y &IConsonant;uly 31 <lb/>&Friday;. h. 9. &antm;. 1607</p>
+</div>
+&astroChartPartial;
+<div>
+<pb xml:id="f254v" n="254v"/>
+<p><lb/>An Herick <rs type="address" sameAs="#address1">of Collingtree by <lb/>Mylton hard by Gayston</rs> <lb/>16 y &IConsonant;uly 31. &Friday; h. 9 <add place="supralinear">10 30</add> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1607. <foreign xml:lang="la">sine consensu</foreign><note place="chart">wits &amp; mynd <lb/>troubled.</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

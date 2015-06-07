@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34816</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 305r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0305r" to="0305r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tt">
+<persName><forename>Thomas</forename> <surname>Tealer</surname></persName>
+<sex value="1">M</sex>
+<age value="51">51</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<occupation>Curate</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-02-02" n="Thursday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tt" evidence="internal"/>
+<cb:subject ref="#tt" present="unclear"/>
+<cb:object ref="#anon"/>
+<cb:topic key="morbusGallicus"><person sameAs="#tt"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-11">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Thomas Tealer <rs type="address" xml:id="address1">of Drayton <lb/><choice><orig>&crossedp;</orig><reg>par</reg></choice>sloe</rs> 5<choice><orig><subst><del type="over">0</del><add place="over">i</add></subst></orig><reg>1</reg></choice> y feb 2 &Thursday; h. h. 10 30 <lb/>&antm;. 1609.</p>
+<p><lb/><foreign xml:lang="la">falso accusatus a curato qu&aelig;rit <lb/>an gallico morbo laborat a <lb/>quo se liber<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice>fitet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice>.&slash;</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

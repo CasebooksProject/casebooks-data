@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34084</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 204v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0204v" to="0204v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fs">
+<persName><roleName>Mr</roleName> <forename>Francis</forename> <surname>Sanders</surname></persName>
+<sex value="1">M</sex>
+<age value="28">28</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1580-08-07"/>
+<time when="02:30:00"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-09-13" n="Tuesday"/></p>
+<p><time notBefore="08:00:00" notAfter="11:59:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames #rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#fs"/>
+<cb:subject ref="#fs" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#fs"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-19">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> &ff;rancis Saunders <rs type="address" xml:id="address1">of S<gap extent="6" unit="chars" reason="binding"/></rs> <lb/>28 y. Septemb. 13 &Tuesday; ho. <gap extent="3" unit="chars" reason="binding"/> a. m. 1608 <handShift new="#rnapier"/><add place="infralinear"><foreign xml:lang="la">natus Aug. 7. h. 2. <subst><del type="strikethrough">ant</del> <add place="supralinear">30 &antm;</add></subst> 15<supplied reason="binding" cert="high">80</supplied></foreign></add></p>
+</div>
+</body>
+&astroChart;
+</text>
+</TEI>

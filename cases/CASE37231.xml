@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37231</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-24">24 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 23r/Q1, f. 22v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="329">MS Ashmole 329, f. 23r, f. 22v</idno>
+&Napier017;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0023r" to="0023r"/>
+<locus from="0022v" to="0022v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><roleName>Mrs</roleName> <surname>Leate</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="dl">
+<persName><roleName>Mrs</roleName> <forename>Denise</forename> <surname evidence="inferred" type="maiden">Leate</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="wl">
+<persName><forename>William</forename> <surname>Lovet</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="mother" active="#l" passive="#dl"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-12-02" n="Saturday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#l" evidence="internal" present="unclear"/>
+<cb:subject ref="#dl" present="no" consent="no"/>
+<cb:object ref="#wl"/>
+<cb:topic key="problemCause"><person sameAs="#dl"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#dl"/></cb:topic>
+<cb:topic key="romanticRelations" cert="medium"><person sameAs="#dl"/><person sameAs="#wl"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> leate shewed me <lb/>the water of <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> <lb/>denys. Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 2. <choice><sic><gap extent="1" reason="hand" unit="chars"/></sic><corr type="noText"/></choice> &Saturday; hor <lb/>10 &antm;. 1609 <add place="interlinear">cause of <lb/>her swelling</add> <lb/><add place="supralinear">never had her termes</add> wheather best to stay <lb/>for will: lovet beyond <lb/>the seases</p>
+</div>
+&astroChart;
+<div><pb xml:id="f22v" n="22v"/>
+<p><lb/><foreign xml:lang="la">mater de filia sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

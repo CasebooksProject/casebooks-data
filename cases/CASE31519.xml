@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31519</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 195r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0195r" to="0195r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#unknown-b">Unidentified Hand B</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="unknown-b">
+<persName><roleName>Unidentified B</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h1">
+<persName><roleName>Goodman</roleName> <surname>Hobins</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred">Hobins</surname></persName>
+<sex value="1">M</sex>
+<age value="14">14</age>
+</person>
+<listRelation><relation name="son" active="#h2" passive="#h1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-05-30" n="Saturday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#unknown-b"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h1" evidence="internal" present="unclear"/>
+<cb:subject ref="#h2" present="no"/>
+<cb:topic key="nausea"><person sameAs="#h2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-01-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Goodman Hobbins <rs type="address" xml:id="address1">of Hardmead</rs> <lb/>for his sonne who casteth &vVowel;p all <lb/>he taketh at mouth <add place="supralinear">.y. 14.</add> May. 30. <add place="supralinear">.&Saturday;.</add> hor <lb/>10. A. M. 1607.</p>
+</div>
+</body>
+</text>
+</TEI>

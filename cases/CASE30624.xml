@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30624</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 76v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0076v" to="0076v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<personGrp xml:id="som">
+<sex value="0">U</sex>
+</personGrp>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-02-11" n="Wednesday"/></p>
+<p><time notBefore="08:30:00" notAfter="12:00:00" evidence="inferred"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="weather"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-24">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-09-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M&loopedr;</orig><reg>Memorandum</reg></choice> the 20 of &IConsonant;anuary <lb/>hapned a mighty stormy <lb/>wynd <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> drownd 28 parishes <lb/>in <placeName>S<choice><orig>&oover;</orig><reg>om</reg></choice>mersetsheere</placeName> ha<add place="supralinear">r</add>d by <lb/><placeName>Bristowe</placeName> m<choice><orig>&aover;</orig><reg>an</reg></choice> women &amp; <lb/>child so <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> is <lb/>gotten xx miles <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in <subst><del type="over">d<gap extent="1" unit="chars" reason="del"/></del><add place="over">th</add></subst>e <lb/>lande. churches &amp; townes <lb/>all over flowed.</p>
+<p><lb/><subst><del type="over">S</del><add place="over">t</add></subst>he like hapned in <add place="supralinear">the strond in</add> <placeName>Glocester<lb/>sheere</placeName> <choice><sic>l</sic><corr type="noText"/></choice> in there marshes &amp; elswhere.</p>
+<p><lb/>reported this x&jVowel; of feb by some <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>came thenc <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> had a great <lb/>losse <foreign xml:lang="la">&MoonSymbol; sep a &sextileSymbol; &MarsSymbol; ap &trineSymbol; &VenusSymbol; <lb/><choice><orig>&crossedp;</orig><reg>per</reg></choice> p &sextileSymbol; &SunSymbol;</foreign>.</p>
+<p><lb/>I gave th<choice><orig>&eover;</orig><reg>em</reg></choice> 12<hi rend="superscript">d</hi>.&slash;</p>
+<p><lb/>Also in <placeName>Wales</placeName> in <placeName>Anglesee</placeName>.&slash;</p>
+<p><lb/>this hapned &IConsonant;an 20 &Tuesday; <foreign xml:lang="la">&MoonSymbol; in &PiscesSymbol; <lb/>sep a &sextileSymbol; &SaturnSymbol;. vac ap &conjunctionSymbol; &MarsSymbol; <lb/>&MoonSymbol; <unclear reason="hand" cert="medium">&astroCaudaDraconisSymbol; &CapricornSymbol;</unclear> in <choice><orig>&crossedp;</orig><reg>par</reg></choice>te &vVowel;<choice><orig>&qtail;</orig><reg>que</reg></choice> ad 11. <lb/>&conjunctionSymbol; &SunSymbol; &MercurySymbol; ap.</foreign></p>
+<p><lb/><foreign xml:lang="la">circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> hor<choice><orig>&aover;</orig><reg>am</reg></choice> 3 p m 1607</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

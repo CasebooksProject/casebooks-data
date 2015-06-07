@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32880</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 43r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0043r" to="0043r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="bt">
+<persName><forename>Bridget</forename> <surname>Tomkins</surname></persName>
+<sex value="2">F</sex>
+<age value="63">63</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="mj" evidence="internal">
+<persName><forename>Margaret</forename> <surname>Jinkins</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-02-25" n="Thursday"/></p>
+<p><time when="11:38:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#bt"/>
+<cb:subject ref="#bt" present="unclear"/>
+<cb:object ref="#mj"/>
+<cb:topic key="sleeplessness"><person sameAs="#bt"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#mj"/></cb:topic>
+<cb:topic key="sightlessness"><person sameAs="#bt"/></cb:topic>
+<cb:topic key="hearing"><person sameAs="#bt"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-12-01">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-12-16">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Bridget <del type="strikethrough">N<gap extent="1" reason="del" unit="chars"/></del> <choice><sic>Tom<unclear cert="high" reason="blot">ky</unclear></sic><corr type="delText"/></choice> <lb/><add place="inline">Tom</add>kyns <rs type="address" xml:id="address1">of Newnton</rs> 6<subst><del type="over">0</del><add place="over">3</add></subst> y <lb/>feb. 25. &Thursday; h. 11. <subst><del type="over">2<gap extent="1" unit="chars" reason="del"/></del><add place="over">38</add></subst> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1608</p>
+<p><lb/>could not sleepe but <lb/>by a st<choice><orig>&uover;</orig><reg>um</reg></choice>ble onc or <lb/>twice a weeke not <lb/>these <subst><del type="strikethrough">9</del> <add place="supralinear">11</add></subst> weekes</p>
+<p><lb/>feareth <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> shee is &vVowel;nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>an ill tongue <add place="infralinear">feareth the loosing of her sences <lb/>for lack of slepe&slash;</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

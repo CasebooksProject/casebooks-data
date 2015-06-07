@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE36417</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 137v</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0137v" to="0137v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hc">
+<persName><roleName>Sir</roleName> <forename>Henry</forename> <surname>Carey</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cc">
+<persName><forename>Catherine</forename> <surname evidence="inferred" type="maiden">Carey</surname></persName>
+<sex value="2">F</sex>
+<age value="6" unit="months">half a year</age>
+</person>
+<person xml:id="l">
+<persName><roleName>Lady</roleName> <surname>Longueville</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation>
+<relation name="daughter" active="#cc" passive="#hc"/><relation name="brother" active="#hc" passive="#l"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-08-23" n="Wednesday"/></p>
+<p><time when="08:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#cc" present="unclear"/>
+<cb:topic key="fits" evidence="internal"><person sameAs="#cc"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-11-26">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-02-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Syr Henry Car<unclear cert="low" reason="binding">y</unclear><supplied reason="binding" cert="low">s</supplied> <lb/>daughter <add place="supralinear">Katheron</add> the lady <supplied reason="binding" cert="medium">long</supplied><lb/>filds eldest brother <lb/>halfe a yere old <supplied reason="binding" cert="high">Aug</supplied> <lb/>23. &Wednesday; h. 8 15 <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>n<supplied reason="binding">t m</supplied></orig><reg>am</reg></choice> <lb/>1609 hath had <lb/>fits&slash;.</p>
+</div>
+</body>
+</text>
+</TEI>

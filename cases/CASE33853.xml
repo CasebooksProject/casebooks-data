@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE33853</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 172r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0172r" to="0172r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ed">
+<persName><forename>Edward</forename> <surname>Dean</surname></persName>
+<sex value="1">M</sex>
+<age value="55">55</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ms">
+<persName><forename>Mary</forename> <surname>Sutton</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-02-13" n="Friday"/></p>
+<p><time when="14:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ed"/>
+<cb:subject ref="#ed" present="unclear"/>
+<cb:object ref="#ms"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#ed"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#ms"/></cb:topic>
+
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-13">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-04-07">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">vide</foreign> Edward Deane <lb/><rs type="address" xml:id="address1">of Elstoe</rs> a tall m<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>5<subst><del type="over">0</del><add place="over">5</add></subst> y <del type="strikethrough">Iuly 20</del> about <lb/>halfe a yere since <lb/>lyeth still extreme <lb/>sick feareth least he is bewitched by a bad <lb/>neighb on mary Sutton <lb/>as he susp. killed a <lb/>horse of his or els <lb/>at that tyme had <lb/>dyed</p>
+<p><lb/>Edward Deanes <rs type="address" sameAs="#address1">of Elstoe</rs> <lb/>the former m<choice><orig>&aover;</orig><reg>an</reg></choice> 55 y &IConsonant;uly <lb/>29 &Friday;. h. 2. 20 p m 1608</p>
+</div>
+</body>
+</text>
+</TEI>

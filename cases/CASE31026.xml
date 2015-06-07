@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31026</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<notesStmt><note type="editorial" resp="#rralley">In this entry Napier incorrectly identifies William Chaderton&rsquo;s granddaughter as his daughter.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 134r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0134r" to="0134r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="es">
+<persName><roleName>Sir</roleName> <forename>Edwin</forename> <surname>Sandys</surname></persName>
+<sex value="1">M</sex>
+<death><date when="1608-04-02" precision="low" evidence="internal"/></death>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Burton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wc">
+<persName><forename evidence="external">William</forename> <surname evidence="external">Chaderton</surname></persName>
+<sex value="1">M</sex>
+<occupation>Bishop</occupation>
+<death><date when="1608-04-02" precision="low" evidence="internal"/></death>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="granddaughter" active="#anon1" passive="#wc" evidence="external"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-04-02" n="Thursday"/></p>
+<p><time when="09:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal" present="yes"/>
+<cb:subject ref="#anon1 #anon2" present="no"/>
+<cb:topic key="maritalProspects"><person sameAs="#anon1"/><person sameAs="#anon2"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-09-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-11-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Edwyn Sands cometh <lb/>to <placeName>Bugdon</placeName> to c<choice><orig>&oover;</orig><reg>on</reg></choice>fer about <lb/>a mariag <del type="strikethrough">march 9</del> Apr <lb/>9. &Thursday; <foreign xml:lang="la">&MoonSymbol; sep a &squareSymbol; &SunSymbol; ap <lb/>&squareSymbol; &MercurySymbol; p &squareSymbol; &VenusSymbol;.</foreign> m<hi rend="superscript">r</hi> Burton <lb/>told me of it.</p>
+<cb xml:id="colB" n="b"/>
+<p><lb/><foreign xml:lang="la">Ego mea sponte qu&aelig;ro</foreign> <lb/>Apr 2. &Thursday; h. 9. 45 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1607 <del type="strikethrough">qu</del> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>the bish Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> shall <lb/>have him &amp; how they <lb/>wyll agree togeath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>&amp; live togeath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE33993</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 192v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0192v" to="0192v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Alice</forename> <surname>Harvey</surname></persName>
+<sex value="2">F</sex>
+<age value="27">27</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="low">Harvey</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="mother" active="#anon" passive="#ah"/><relation name="husband" active="#h" passive="#ah"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-08-25" n="Thursday"/></p>
+<p><time when="08:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h" evidence="internal" present="unclear"/>
+<cb:subject ref="#ah" present="no"/>
+<cb:topic key="pregnancy"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="disquieted"><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-20">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-04-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Alice Harvy <rs type="address" xml:id="address1">of North crowly</rs> 27 y <lb/>Aug: 25 &Thursday; ho. 8. 45 a. m. 1608</p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="la">Qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> conjux ejus &vVowel;t<choice><orig>&crossedr;</orig><reg>rum</reg></choice> sit gravida</foreign> <lb/>Troubled in mynde, would fayne go <lb/>home to her owne house, now being <lb/><rs type="address" xml:id="address2">at &ff;ilgrave</rs> <choice><orig><subst><del type="over">as</del><add place="over">w<hi rend="superscript">t</hi></add></subst><hi rend="superscript">h</hi></orig><reg>with</reg></choice> her mother, but <lb/>cannot be quiet in mynde. &slash;</p>
+</div>
+</body>
+</text>
+</TEI>

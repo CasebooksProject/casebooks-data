@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35288</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#rralley">This entry is upside down.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 122r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0122r" to="0122r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="aw">
+<persName><forename>Agnes</forename> <surname>Walthorne</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1571-05-31" n="Thursday"><time when="18:30:00"/></date></birth>
+</person>
+<person xml:id="rw">
+<persName><forename>Roger</forename> <surname evidence="inferred" cert="medium">Walthorne</surname></persName>
+<sex value="1">M</sex>
+<death><date notAfter="1609-02-26" evidence="inferred"/></death>
+</person>
+<person xml:id="w1">
+<persName><surname evidence="inferred" type="maiden" cert="medium">Walthorne</surname></persName>
+<sex value="2">F</sex>
+<death><date notAfter="1609-02-26" evidence="inferred"/></death>
+</person>
+<person xml:id="w2">
+<persName><surname evidence="inferred" cert="medium">Walthorne</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w3">
+<persName><surname evidence="inferred" type="maiden" cert="medium">Walthorne</surname></persName>
+<sex value="2">F</sex>
+<death><date notAfter="1609-02-26" evidence="inferred"/></death>
+</person>
+<person xml:id="w4">
+<persName><surname evidence="inferred" cert="medium">Walthorne</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="mother" active="#aw" passive="#rw #w1 #w2 #w3 #w4"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1608-09-21" notAfter="1609-02-27" evidence="inferred"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#aw"/>
+<cb:subject ref="#aw" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred" cert="medium"><person sameAs="#aw"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Agnys Walthorne <foreign xml:lang="la">nata</foreign> may <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>last &Thursday; h. 6 30. p m 1571. <lb/>3. boyes &amp; 2 wenches 2 gea<lb/>rles dead the eldest <add place="supralinear">of all</add> &amp; Roger <lb/>the youngest boy</p>
+</div>
+</body>
+</text>
+</TEI>

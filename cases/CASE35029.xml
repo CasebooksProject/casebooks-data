@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35029</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 330v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0330v" to="0330v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w1">
+<persName><roleName>Mr</roleName> <surname>Wrennam</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w2">
+<persName><surname evidence="inferred" type="married">Wrennam</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="wife" active="#w2" passive="#w1" from="1607-08-28T10:00:00"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-03-29" n="Wednesday" evidence="inferred"/></p>
+<p><time notBefore="09:30:00" notAfter="12:00:00" evidence="inferred"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#w1"/>
+<cb:subject ref="#w1" present="unclear"/>
+<cb:object ref="#w2"/>
+<cb:topic key="maritalRelations" evidence="conjecture"><person sameAs="#w1"/><person sameAs="#w2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-18">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Wr<choice><orig>&eover;</orig><reg>en</reg></choice>n<choice><orig>&aover;</orig><reg>am</reg></choice> <choice><sic>mayed</sic><corr>maryed</corr></choice> <lb/>August 28 &Friday; h. 10 <choice><orig><supplied reason="binding" cert="medium">ant</supplied> <lb/>m</orig><reg>am</reg></choice> 1607</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

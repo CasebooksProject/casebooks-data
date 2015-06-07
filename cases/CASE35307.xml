@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35307</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#rralley">This entry is upside down.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 163v/Q1, f. 164r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, ff. 163v-164r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0163v" to="0164r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cr">
+<persName><forename>Christian</forename> <surname>Robinson</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1570-05-04" n="Thursday"/><time when="12:30:00"/><placeName sameAs="#address1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1608-09-21" notAfter="1609-02-27" evidence="inferred" cert="medium"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#cr"/>
+<cb:subject ref="#cr" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#cr"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/><choice><sic>Agnys</sic><corr type="delText"/></choice> <del type="strikethrough">Wa<unclear reason="del" cert="low">l</unclear></del></p>
+<p><lb/>Christiana Robinson nata <lb/><rs type="address" xml:id="address1">londini</rs> <choice><sic>p</sic><corr type="noText"/></choice> mai&jVowel; 4 &ThursdayLatin; h. 12. 30 <lb/><choice><sic>p</sic><corr>p m</corr></choice> 1570.</p>
+</div>
+&astroChart;
+<pb xml:id="f164r" n="164r"/>
+</body>
+</text>
+</TEI>

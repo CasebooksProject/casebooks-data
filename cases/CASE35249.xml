@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35249</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 99r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0099r" to="0099r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rn">
+<persName><forename>Robert</forename> <surname evidence="inferred">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<org xml:id="dor" type="ship">
+<orgName>The Dorcas</orgName>
+</org>
+<listRelation><relation name="brother" mutual="#rnapier #rn"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-02-28" n="Tuesday"/></p>
+<p><time when="11:40:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rn" evidence="internal"/>
+<cb:subject ref="#rn" present="unclear"/>
+<cb:object ref="#dor"/>
+<cb:topic key="absentShip"><org sameAs="#dor"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-17">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><del type="strikethrough">&crossedp; ep<gap extent="3" reason="del" unit="chars"/>ps</del></p>
+<p><lb/><choice><sic>&Rx;</sic><corr type="noText"/></choice> <foreign xml:lang="la">frater Robartus <choice><orig>&crossedp;</orig><reg>pro</reg></choice> navi</foreign> <lb/>called Dorcas <foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> peri&jVowel;t</foreign> <lb/>feb 28. &Tuesday; h. 11. 40 &antm; <lb/><choice><sic>1608</sic><corr>1609</corr></choice>.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

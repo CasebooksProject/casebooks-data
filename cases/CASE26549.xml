@@ -52,6 +52,10 @@
 <age value="11">11</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="s" evidence="external">
+<persName><roleName>Goodman</roleName> <surname>Sandon</surname></persName>
+<sex value="1">M</sex>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -60,8 +64,9 @@
 <cb:consultation type="horary">
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#js"/>
-<cb:subject ref="#js" present="unclear"/>
+<cb:location type="querentVisitsPractitioner" evidence="external"/>
+<cb:querent ref="#s" evidence="external" present="yes"/>
+<cb:subject ref="#js" present="no"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#js"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>

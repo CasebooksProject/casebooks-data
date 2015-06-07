@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32666</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 8v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0008v" to="0008v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="as">
+<persName><forename>Agnes</forename> <surname>Stocker</surname></persName>
+<sex value="2">F</sex>
+<age value="27">27</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="k">
+<persName><surname>Kempton</surname></persName>
+<sex value="1">M</sex>
+<death><date notAfter="1607-12-09"/></death>
+<event type="burial"><p>Buried on <time notAfter="12:00:00">the morning</time> of <date when="1607-12-10">10 December 1607</date>.</p></event>
+</person>
+<listRelation><relation name="kinswoman" active="#as" passive="#rnapier"/><relation name="brother-in-law" evidence="external" mutual="#k #rnapier"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-12-10" n="Thursday"/></p>
+<p><time when="18:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#as" evidence="internal"/>
+<cb:subject ref="#as" present="yes"/>
+<cb:location type="practitionerVisitsQuerent" ref="#address1"/>
+<cb:topic key="haemorrhoids"><person sameAs="#as"/></cb:topic>
+<cb:topic key="liveOrDieMedical" evidence="internal"><person sameAs="#as"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-10-15">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-10-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Agnys Stocker <rs type="address" xml:id="address1">of london</rs> my <lb/>Cosen. 27 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 10 &Thursday; <lb/>h. 6. p m. 1607. <add place="infralinear">she sent for me &amp; I went</add><note place="chart"><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>emrods <lb/>big <lb/></note><note place="chart"><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child.</note></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>she sent for me in the morning <lb/>but then I went to my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>kimptons buriall. that forenoone.&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35351</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-22">22 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 53r/Q1, f. 52v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="335">MS Ashmole 335, f. 53r, f. 52v</idno>
+&Napier015;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0053r" to="0053r"/>
+<locus from="0052v" to="0052v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="n">
+<persName><surname evidence="inferred">Napier</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="m">
+<persName><forename>Margaret</forename></persName>
+<sex value="2">F</sex>
+<occupation>Servant</occupation>
+</person>
+<listRelation><relation name="sister-in-law" evidence="external" active="#n" passive="#rnapier"/><relation name="servant" active="#m" passive="#n"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-03-02" n="Thursday"/></p>
+<p><time when="12:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#n" evidence="internal"/>
+<cb:subject ref="#n" present="unclear"/>
+<cb:object ref="#m"/>
+<cb:topic key="character"><person sameAs="#m"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/>qu&aelig;rit soror qualis <lb/>futura sit serva qu<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>recepit margaret &slash; <foreign xml:lang="en">march <lb/><add place="lineBeginning">2.</add> &Thursday; h. 12. 15 p m 1609 <add place="infralinear">a good huswife</add></foreign></p>
+</div>
+&astroChart;
+<pb xml:id="f52v" n="52v"/>
+</body>
+</text>
+</TEI>

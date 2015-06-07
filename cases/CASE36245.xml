@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE36245</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-10-07">07 October 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="203">MS Ashmole 203, f. 110r</idno>
+&Napier016;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0110r" to="0110r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sp">
+<persName><forename>Susan</forename> <surname>Piggot</surname></persName>
+<sex value="2">F</sex>
+<age value="18">18</age>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lord of Kent</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hp">
+<persName><roleName>Mr</roleName> <forename>Henry</forename> <surname>Piggot</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="brother" active="#hp" passive="#sp"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-07-17" n="Monday"/></p>
+<p><time when="19:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#hp" evidence="internal" present="unclear"/>
+<cb:subject ref="#sp" present="no"/>
+<cb:topic key="fear"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="grief"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="discontentment"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#sp"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-11-18">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-02-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Susan Piggot <choice><sic>of</sic><corr type="noText"/></choice> <lb/>belonging to the lord of <lb/>kent 18 y &IConsonant;uly <add place="supralinear">17.</add> &Monday; h. <lb/>7. 20 p m 1609 <add place="infralinear">M<hi rend="superscript">r</hi> Henry piggot her brother <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> sorore</foreign></add><note place="chart">mutch feare &amp; greefe &amp; discontent<lb/>ment</note><note place="chart">mynd mutch troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>discontent.</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

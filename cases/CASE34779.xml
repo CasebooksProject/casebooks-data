@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34779</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 299r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0299r" to="0299r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ws">
+<persName><forename>William</forename> <surname>Smith</surname></persName>
+<sex value="1">M</sex>
+<age value="52">52</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Husbandman</occupation>
+</person>
+<person xml:id="gf">
+<persName><roleName>Sir</roleName> <forename>George</forename> <surname>Farmer</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Lady</roleName> <surname>Farmer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="tenant" active="#ws" passive="#gf"/>
+<relation name="husbandman" active="#ws" passive="#gf"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-01-29" n="Sunday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#f" evidence="internal" present="no"/>
+<cb:subject ref="#ws" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ws"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-10">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Smith <rs type="address" xml:id="address1">of Hulcot</rs> <lb/>tennant &amp; husb. m<choice><orig>&aover;</orig><reg>an</reg></choice> to S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> <lb/>George farmer. 5<subst><del type="over">0</del><add place="over">2</add></subst>. y. <lb/>&IConsonant;an 29. &Sunday; h. 12. 1609 <add place="infralinear">The lady farmer wrote in his behalfe</add></p>
+</div>
+&astroChart;
+&astroChart;
+</body>
+</text>
+</TEI>

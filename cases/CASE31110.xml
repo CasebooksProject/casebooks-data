@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31110</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 144v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0144v" to="0144v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cl">
+<persName><roleName>Mr</roleName> <forename>Charles</forename> <surname>Longueville</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<listRelation><relation name="servant" active="#anon" passive="#cl"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-04-08" n="Thursday"/></p>
+<p><time notBefore="07:45:00" notAfter="07:59:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#anon" evidence="internal" present="yes"/>
+<cb:subject ref="#cl" present="no"/>
+<cb:topic key="report"><person sameAs="#cl"/></cb:topic>
+<cb:topic key="treatment"><person sameAs="#cl"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-09-10">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-11-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Charles longf<supplied reason="binding">ild</supplied> <lb/>tooke his physic<supplied reason="binding" cert="medium">ke</supplied> <lb/>&vVowel;ppon Apr 8 &Wednesday; <lb/>it gave him 3<gap extent="unclear" reason="binding"/> <lb/>&amp; made him very <supplied reason="binding" cert="low">sick</supplied></p>
+<p><lb/><foreign xml:lang="la">&MoonSymbol; sep a &trineSymbol; &VenusSymbol; ap &conjunctionSymbol; &SaturnSymbol;.</foreign></p>
+<p><lb/>his m<choice><orig>&aover;</orig><reg>an</reg></choice> came in the <lb/>morning Apr 9 &Thursday; <supplied reason="binding">to</supplied> <lb/>aske wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it s<supplied reason="binding" cert="low">hould</supplied> <lb/>be stopped. h. 7 <gap extent="6" reason="binding" unit="chars"/></p>
+</div>
+</body>
+</text>
+</TEI>

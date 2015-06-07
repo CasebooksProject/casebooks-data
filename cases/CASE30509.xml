@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30509</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 58v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0058v" to="0058v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s1">
+<persName><roleName>Mrs</roleName> <surname>Smith</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="s2">
+<persName><surname evidence="inferred" cert="medium">Smith</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="husband" active="#s2" passive="#s1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-01-21" n="Wednesday"/></p>
+<p><time when="15:00:00" xml:id="time1" exclude="#time2"/></p>
+<p><time when="14:40:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation type="horary">
+<cb:location type="querentVisitsPractitioner"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s1 #s2" evidence="internal"/>
+<cb:subject ref="#s1 #s2" present="yes"/>
+<cb:topic key="head"><person sameAs="#s1"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#s1"/></cb:topic>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#s2"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-07">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-08-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>m<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Smith ne<unclear reason="hand" cert="low">u</unclear>ti<gap reason="binding" unit="chars" extent="3"/> <lb/>her hed ach &amp; her hus<supplied reason="binding" cert="medium">band</supplied> <lb/>&IConsonant;an. <del type="strikethrough">3</del> 21 &Wednesday; h. 3 <add place="supralinear">2 40.</add> p m 1607 <add place="infralinear">shee &amp; her husb. came to make <gap extent="unclear" reason="binding"/> <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <gap extent="unclear" reason="binding"/></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

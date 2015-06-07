@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32473</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 327r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0327r" to="0327r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><roleName>Dr</roleName> <surname>Shephard</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rs">
+<persName><forename evidence="external">Richard</forename> <surname evidence="external">Shephard</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-12-26" n="Saturday"/></p>
+<p><time when="09:39:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s" evidence="internal" present="no"/>
+<cb:subject ref="#rs" evidence="external" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#rs"/></cb:topic>
+<cb:topic key="ague"><person sameAs="#rs"/></cb:topic>
+<cb:topic key="plague"><person sameAs="#rs"/></cb:topic>
+<cb:topic key="curable"><person sameAs="#rs"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-26">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Doct<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Shephard for <lb/>on <del type="strikethrough">labou</del> sick of a <foreign xml:lang="la">peri<lb/>pleumonia c<choice><orig>&uover;</orig><reg>um</reg></choice> febr malig <lb/>et pestilenti. qu&aelig;rit an <lb/>sit evasurus</foreign> dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 26 &Saturday; hor <lb/>9. 39. &antm;. 1607.</p>
+<p><lb/>at this tyme his lett<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>came to mye <lb/>hande for an <lb/>Answer</p>
+</div>
+</body>
+</text>
+</TEI>

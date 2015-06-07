@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32667</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 8v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0008v" to="0008v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rw">
+<persName><forename>Roger</forename> <surname>Walthorne</surname></persName>
+<sex value="1">M</sex>
+<age value="21" unit="months">a year and three quarters</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date notBefore="1606-01-01" notAfter="1606-01-31"/><time when="20:00:00" precision="medium"/></birth>
+</person>
+<person xml:id="w">
+<persName><surname evidence="inferred" cert="high">Walthorne</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="mother" active="#w" passive="#rw"/></listRelation> 
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-11-24" n="Tuesday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#w" evidence="internal" present="yes"/>
+<cb:subject ref="#rw" present="unclear"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#rw"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-10-15">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-10-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Roger Walthorne <rs type="address" xml:id="address1">of <supplied reason="binding">london</supplied></rs> <lb/>a year &amp; 3 quarters the <gap reason="binding" extent="2" unit="chars"/> <lb/>of &IConsonant;an. wilbe 2 y. on <gap reason="binding" extent="3" unit="chars"/> <lb/>day <del type="strikethrough">betwixt</del> about 8 at n<supplied reason="binding" cert="low">ight</supplied> <lb/>the moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> came for her <gap reason="binding" extent="1" unit="words"/> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b 24. &Tuesday; h. 9. &antm; <lb/>1607</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

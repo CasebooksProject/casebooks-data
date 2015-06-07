@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32721</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 16r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0016r" to="0016r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Mrs</roleName> <surname>Fountain</surname></persName>
+<sex value="2">F</sex>
+<age value="36">36</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="m">
+<persName><roleName>Mrs</roleName> <surname>Midlemore</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Dr</roleName> <surname evidence="external">Ashwort</surname></persName>
+<sex value="1">M</sex>
+<occupation>Doctor</occupation>
+</person>  
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1608-02-05T11:45:00" notAfter-custom="1608-02-06T07:48:00" evidence="inferred"/></p>
+<cb:consultation type="interrogation">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#f" present="unclear"/>
+<cb:object ref="#a"/>
+<cb:topic key="diz" resp="#rnapier"><person sameAs="#f"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#f"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-10-29">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-11-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">M<hi rend="superscript">res</hi></hi></orig><reg>Mrs</reg></choice> fountayne a gentlewom<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/><rs type="address" xml:id="address1">by Alebery</rs> 36 y feb. 4. &Thursday; <lb/>2. p m. 1608 <add place="inline">for her disease <lb/>in the stomacke</add> <add place="marginRight">at this tyme <lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Midle<lb/>more brought <lb/>her water to the D Ash <lb/>who sayde <lb/>she had rot<lb/>ten kidneys</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

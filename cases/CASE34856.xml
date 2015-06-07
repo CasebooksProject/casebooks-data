@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34856</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 309v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0309v" to="0309v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fl">
+<persName><forename>Frances</forename> <surname>Lea</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="jd" evidence="internal">
+<persName><forename>John</forename> <surname>Daniel</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="g" evidence="internal">
+<persName><forename>George</forename></persName>
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<person xml:id="jo" evidence="internal">
+<persName><forename>John</forename> <surname>Orchard</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="servant" active="#fl" passive="#jd" evidence="internal"/><relation name="servant" active="#g" passive="#jo" evidence="internal"/><relation name="wouldBeSweetheart" active="#fl" passive="#g" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-02-20" n="Monday"/></p>
+<p><time when="11:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#fl"/>
+<cb:subject ref="#fl" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#fl"/></cb:topic>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#fl"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-02-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&ff;raunces Lea <rs type="address" xml:id="address1">of whaddon</rs> <lb/>30 y. a maid feb. 20. &Monday; ho <lb/>11. 15 a. m. 1609</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2015-04-21T17:41:15Z. 
+Schema generated from ODD source 2015-06-06T12:40:18Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -6801,18 +6801,26 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-when-is-valid-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@when[not(matches(.,'^\d\d\d\d(-\d\d)*$'))]]">
-          <report test="not(@when castable as xs:date)">ERROR: <name/>@when is not a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@when]">
+          <report test="not(matches(@when,'^\d\d\d\d(-(0[1-9]|1[012])|-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01]))*$'))">ERROR: <name/>@when is not a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
+          <report test="matches(@when,'^\d\d\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])*$') and not(@when castable as xs:date)">ERROR: <name/>@when is not castable as a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-from-to-notAfter-notBefore-are-valid-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[(@from|@to|@notAfter|@notBefore)[not(matches(.,'^\d\d\d\d(-\d\d)*$'))]]">
-          <report test="not((@from|@to|@notAfter|@notBefore)[not(. castable as xs:dateTime)] castable as xs:date)">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore)[not(. castable as xs:date)]/local-name()"/> is not a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[(@from|@to|@notAfter|@notBefore)]">
+          <report test="(@from|@to|@notAfter|@notBefore)[normalize-space()][not(matches(.,'^\d\d\d\d(-(0[1-9]|1[012])|-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01]))*$'))]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore)[not(. castable as xs:date)]/local-name()"/> is not a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
+          <report test="(@from|@to|@notAfter|@notBefore)[normalize-space()][matches(.,'^\d\d\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])*$')][not(. castable as xs:date)]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore)[normalize-space()][matches(.,'^\d\d\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])*$')][not(. castable as xs:date)]/local-name()"/> is not castable as a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-settingDesc-date-year-check-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[ancestor::tei:settingDesc]">
-          <report test="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(replace(.,'^(\d\d\d\d).*$','$1'))&lt; 1596 or number(replace(.,'^(\d\d\d\d).*$','$1'))&gt;1634][not(local-name() = 'notBefore' and . = ('1573-01-12','1575-12-29','1577-07-16','1581-02-02','1585-03-27','1594-03-02','1595-09-30'))]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(replace(.,'^(\d\d\d\d).*$','$1'))&lt; 1596 or number(replace(.,'^(\d\d\d\d).*$','$1'))&gt;1634]/name()"/> is out of range. Expected year values should be 1596-1630</report>
+          <let name="exception_dates" value="('1573-01-12','1575-12-29','1577-07-16','1581-02-02','1585-03-27','1594-03-02','1595-09-30')"/>
+          <report test="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634][not(local-name() = 'notBefore' and . = $exception_dates)]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634]/name()"/> is out of range. Expected year values should be 1596-1630</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-settingDesc-date-year-check-date-needs-datable-attr-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date">
+          <report test="count((@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) = 0">ERROR: <name/> needs a datable attribute</report>
         </rule>
       </pattern>
       <ref name="att.global.attribute.xmlid"/>
@@ -7366,7 +7374,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
   </define>
   <define name="cb">
     <element name="cb">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(column break) marks the beginning of a new column in an entry that occupies two or more columns. It takes the xml:id value "colA", "colB" (etc.) and the n value "a", "b" (etc.). [3.10.3. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(column break) marks the beginning of a new column in an entry that occupies more than one column. It takes the xml:id value "colA" or "colB" and the n value "a" or "b". [3.10.3. ]</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-needs-sameAs-or-xmlid-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:cb[not(@sameAs)]">
@@ -8935,8 +8943,18 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.responsibility.attribute.cert"/>
       <ref name="att.responsibility.attribute.resp"/>
       <ref name="att.source.attribute.source"/>
-      <ref name="att.typed.attributes"/>
       <ref name="att.sortable.attributes"/>
+      <attribute name="type">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">states what type of event it is. Permitted values: "baptism", "burial" or "christening".</a:documentation>
+        <choice>
+          <value>baptism</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          <value>burial</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          <value>christening</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+        </choice>
+      </attribute>
       <empty/>
     </element>
   </define>

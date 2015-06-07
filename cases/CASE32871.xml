@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32871</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 42r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0042r" to="0042r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w1">
+<persName><roleName>Mrs</roleName> <surname>Walthorne</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w2">
+<persName><surname evidence="inferred" cert="medium">Walthorne</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation>
+<relation name="mother" active="#w1" passive="#w2"/>
+</listRelation>        
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1599-11-12" n="Monday"/></p>
+<p><time when="07:45:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#w1" evidence="internal"/>
+<cb:subject ref="#w1" present="unclear"/>
+<cb:topic key="belly"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="hardness"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="back"><person sameAs="#w1"/></cb:topic>
+<cb:topic key="mother"><person sameAs="#w1"/></cb:topic>
+
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-11-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2014-12-06">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Walthorne <rs type="address" xml:id="address1">of london</rs> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 12. &Monday; h. 7. 45 <lb/>&antm; 1599<note place="chart">mother.</note></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>asketh what it is <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> lyeth. <lb/>in her belly &amp; so hard on <lb/>the right syde of her <lb/>it <unclear cert="medium" reason="hand">hangeth</unclear> at her back &amp; so <lb/>go<unclear reason="hand" cert="medium">eth</unclear> fr<choice><orig>&oover;</orig><reg>om</reg></choice> thenc to her syde shee <lb/>feareth it is the moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; tooke <lb/>her sinc her last child. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a cold.</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34127</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3B, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, ff. 210v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0210v" to="0210v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rd">
+<persName><roleName>Sir</roleName> <forename>Robert</forename> <surname>Dormer</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="tw">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Waters</surname></persName>
+<sex value="1">M</sex>
+<age value="55">55</age>
+<occupation>Keeper of the hawks</occupation>
+<death><date when="1608-10-16" evidence="internal"/></death>
+</person>
+<listRelation>
+<relation name="austringer" active="#tw" passive="#rd"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-09-18" n="Sunday"/></p>
+<p><time when="13:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rd" evidence="internal" present="no"/>
+<cb:subject ref="#tw" present="no"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#tw"/></cb:topic>
+<cb:item type="letter"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:info type="urine"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-04-07">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2015-04-11">Revised by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Robart Dormer wrote <supplied reason="binding" cert="high">a</supplied> <lb/>letter to me in the behalfe <lb/>of an old servant of his <lb/>on m<hi rend="superscript">r</hi> Walther kee<choice><orig>&crossedp;</orig><reg>per</reg></choice> of <unclear cert="low" reason="binding">h</unclear><gap extent="2" unit="chars" reason="binding"/> <lb/>h<unclear reason="hand" cert="medium">auk</unclear>es sick this halfeyere <lb/>but hath kept his bed th<supplied reason="binding" cert="high">is</supplied> <lb/>fortnight. Septemb. 18 &Sunday; h. <supplied reason="binding" cert="medium">1. 20</supplied> <lb/><choice><sic>ant m</sic><corr cert="medium">p m</corr></choice> 1608.</p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+<div>
+<p><lb/>Thomas Walter <lb/>55 yeres <space unit="chars" extent="6" dim="horizontal"/> at <rs type="address" xml:id="address1">Syr Robart Dormers</rs></p>
+</div>
+</body>
+</text>
+</TEI>

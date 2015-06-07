@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34424</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 249v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0249v" to="0249v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mw">
+<persName><forename>Martha</forename> <surname>Whyloes</surname></persName>
+<sex value="2">F</sex>
+<age value="29">29</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w">
+<persName><surname evidence="inferred" cert="medium">Whyloes</surname></persName>
+<sex value="0">U</sex>
+<age atLeast="8" atMost="9" unit="months">8-9 months</age>
+</person>
+<person xml:id="mh" evidence="internal">
+<persName><forename>Marian</forename> <surname>Hobs</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#mw" passive="#w"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-11-16" n="Wednesday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mw"/>
+<cb:subject ref="#mw" present="unclear"/>
+<cb:object ref="#mh"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="witchcraft" evidence="conjecture" cert="high"><person sameAs="#mh"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Martha <unclear cert="medium" reason="hand">Wy<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">y</add></subst>loes</unclear> <rs type="address" xml:id="address1">of Mylton Collingtr<unclear reason="binding" cert="medium">ee</unclear></rs> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 16. &Wednesday; h. 11. &antm; <lb/>1608. 29 y. <add place="inline">youngest chi<supplied reason="binding" cert="high">ild</supplied> <lb/>8 or 9 mo<supplied reason="binding">neths</supplied> <lb/>&amp; she <gap extent="1" unit="words" reason="hand"/></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

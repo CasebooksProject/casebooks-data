@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE33323</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 103r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0103r" to="0103r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="aw">
+<persName><forename>Amy</forename> <surname>Woodward</surname></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="f">
+<persName><roleName>Lady</roleName> <surname>Farmer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="servant" active="#aw" passive="#f"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-04-13" n="Wednesday"/></p>
+<p><time when="11:35:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#aw"/>
+<cb:subject ref="#aw" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#aw"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-22">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-03-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><unclear cert="medium" reason="binding">Amy</unclear> Woodward the Lady &ff;arm<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><unclear cert="medium" reason="binding">mai</unclear>d <subst><del type="strikethrough">19</del> <add place="supralinear">24</add></subst> y. Apr: 13. &Wednesday; ho. 11. 35 <lb/><supplied reason="binding">a</supplied> m. 1608</p>
+</div>
+</body>
+</text>
+</TEI>

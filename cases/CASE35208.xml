@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35208</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<notesStmt>
+<note type="layout" resp="#rralley">This entry is upside down.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 41r/Q1, f. 40v/Q1, f. 40r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 41r, f. 40v, f. 40r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0041r" to="0041r"/>
+<locus from="0040v" to="0040v"/>
+<locus from="0040r" to="0040r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eh">
+<persName><forename>Elizabeth</forename> <surname>Hudson</surname></persName>
+<sex value="2">F</sex>
+<age value="37">37</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h1">
+<persName><surname evidence="inferred" cert="medium">Hudson</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" cert="medium">Hudson</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="mother" active="#eh" passive="#h1 #h2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1609-02-16" n="Thursday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#eh"/>
+<cb:subject ref="#eh" present="unclear"/>
+<cb:topic key="pregnancy"><person sameAs="#eh"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis Hudson <rs type="address" xml:id="address1">londin<choice><orig>&eover;</orig><reg>en</reg></choice>sis <lb/>in pater <choice><orig><hi rend="overline">nr</hi></orig><reg>noster</reg></choice> Rowe</rs>. 37 y <add place="marginLeft">hath <lb/>2 children:</add> <lb/>feb. 16. &Thursday; h. 10. 30. &antm; <lb/>1609 <foreign xml:lang="la">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an sit grav<supplied reason="binding" cert="medium">ida</supplied></foreign></p>
+</div>
+&astroChart;
+<pb xml:id="f40v" n="40v"/>
+<pb xml:id="f40r" n="40r"/>
+</body>
+</text>
+</TEI>

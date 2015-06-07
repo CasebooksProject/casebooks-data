@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30458</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 51v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0051v" to="0051v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c1">
+<persName><roleName>Lady</roleName> <surname>Curson</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="jc">
+<persName><roleName>Sir</roleName> <forename>John</forename> <surname evidence="external">Curson</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fc">
+<persName><forename>Frances</forename> <surname>Curson</surname></persName>
+<sex value="2">F</sex>
+<age value="31">31</age>
+</person>
+<person xml:id="c2">
+<persName><surname evidence="inferred" cert="medium">Curson</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="c3">
+<persName><surname evidence="inferred" cert="medium">Curson</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="sister" active="#fc" passive="#jc"/><relation name="mother" active="#fc" passive="#c2 #c3"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-01-13" n="Tuesday"/></p>
+<p><time when="16:20:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c1" evidence="internal" present="unclear"/>
+<cb:subject ref="#fc" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#fc"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-02">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-08-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my ladye Curson f<supplied reason="binding">or</supplied> <lb/><del type="strikethrough">her</del> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> &IConsonant;ohn Syster <supplied reason="binding" cert="low">who</supplied> <lb/>is francis Curson 31 <supplied reason="binding" cert="high">y</supplied> <add place="infralinear">maryed 3 yeres 2 child<supplied reason="binding">ren</supplied></add> <lb/>&IConsonant;anuary 13. &Tuesday; h. 4 2<unclear reason="binding" cert="high">0</unclear> <supplied reason="binding">p m</supplied> <lb/>1607</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

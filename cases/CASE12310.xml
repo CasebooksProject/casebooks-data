@@ -48,10 +48,14 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="s">
-<persName><roleName>Mr</roleName> <surname>Staff</surname></persName>
+<persName><roleName>Mr</roleName> <surname>Stafford</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
 <sex value="1">M</sex>
 <occupation>Husbandman</occupation>
 </person>
+<listRelation><relation name="husbandman" active="#anon" passive="#s"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -60,10 +64,10 @@
 <cb:consultation type="horary">
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#s"/>
-<cb:subject ref="#s" present="unclear"/>
-<cb:topic key="pain"><person sameAs="#s"/></cb:topic>
-<cb:topic key="legs"><person sameAs="#s"/></cb:topic>
+<cb:querent ref="#anon"/>
+<cb:subject ref="#anon" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#anon"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#anon"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>

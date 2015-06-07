@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE34138</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 212r</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0212r" to="0212r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>    
+<person xml:id="jc">
+<persName><forename>Jane</forename> <surname>Cooper</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="rc">
+<persName><forename>Richard</forename> <surname cert="medium" evidence="inferred">Cooper</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#rc" passive="#jc"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-09-21" n="Wednesday"/></p>
+<p><time when="13:15:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jc" evidence="internal" present="no"/>
+<cb:subject ref="#rc" present="no"/>
+<cb:topic key="spots"><person sameAs="#rc"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#rc"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-04-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ane Cooper sent for me. Septemb. <lb/>21 &Wednesday; ho. 1. 15 p. m. 1608</p>
+<p><lb/>Her sonne Richard had broad <lb/>blacke spotts on his legge</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30638</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<notesStmt><note type="blank" resp="#jyoung">This entry breaks off in mid-sentence.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 78v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0078v" to="0078v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jd">
+<persName><forename>John</forename> <surname>Duncombe</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d">
+<persName><roleName evidence="external">Mr</roleName> <surname evidence="external">Duncombe</surname></persName>
+<sex value="1" evidence="external">M</sex>
+</person>
+<listRelation><relation name="son" active="#jd" passive="#d"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-02-13" n="Friday" evidence="external"/></p>
+<p><time when="11:00:00" evidence="external"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#jd"/>
+<cb:subject ref="#jd" present="yes"/>
+<cb:topic key="skin"><person sameAs="#jd"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-24">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-09-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="la">
+<body><div>
+<p><lb/>hoc tempore &IConsonant;oh<choice><orig>&aover;</orig><reg>an</reg></choice>nes D<choice><orig>&uover;</orig><reg>un</reg></choice>c<choice><orig>&oover;</orig><reg>om</reg></choice>b <lb/>filius huc advenit. <foreign xml:lang="en">whose <lb/>heare doth fall awaye.&slash;</foreign></p>
+<p><lb/>vide feb. 6.</p>
+<p><lb/><foreign xml:lang="en">extreme</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

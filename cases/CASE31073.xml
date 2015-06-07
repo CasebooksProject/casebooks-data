@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31073</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 140r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0140r" to="0140r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ds">
+<persName><forename>Dorothy</forename> <surname>Smith</surname></persName>
+<sex value="2">F</sex>
+<age value="17">17</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ff">
+<persName><roleName>Sir</roleName> <forename>Francis</forename> <surname>Fortescue</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<occupation>Schoolmaster</occupation>
+</person>
+<person xml:id="wu">
+<persName><forename>William</forename> <surname>Uvedale</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Servant</occupation>
+</person>
+<listRelation><relation name="schoolmasterEmployee" active="#anon1" passive="#ff"/><relation name="servant" active="#anon2" passive="#wu"/><relation name="romanticPartner" mutual="#ds #anon2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-04-07" n="Tuesday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ds"/>
+<cb:subject ref="#ds" present="unclear"/>
+<cb:object ref="#anon1 #anon2"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ds"/></cb:topic>
+<cb:topic key="maritalProspects"><person sameAs="#ds"/><person sameAs="#anon2"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-09-08">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-11-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Dorothy Smith <rs type="address" xml:id="address1">of mur<lb/>sley</rs>. 17. y. Apr 7. <lb/>&Tuesday; h. 10. &antm;. 1607 <add place="infralinear">she would not have <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> francis foscues <lb/>schoolmast<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> but willi<choice><orig>&aover;</orig><reg>am</reg></choice> &vVowel;&uConsonant;dall his ser<lb/>vant &amp; <lb/>is <choice><sic>mayed</sic><corr>maryed</corr></choice> <lb/>to him.</add><note place="chart">hath taken greefe <lb/>touching on <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>she is not willing <lb/>to have</note></p>
+</div>
+</body>
+</text>
+</TEI>

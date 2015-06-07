@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE35286</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-10">10 July 2014</date>
+</publicationStmt>
+<notesStmt><note type="layout" resp="#rralley">This entry is upside down.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 121r/Q1D, f. 122r/Q2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="338">MS Ashmole 338, f. 121r, f. 122r</idno>
+&Napier014;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0121r" to="0121r"/>
+<locus from="0122r" to="0122r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cr">
+<persName><forename>Christian</forename> <surname>Robinson</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1570-05-04" n="Thursday"/><time when="12:30:00"/></birth>
+<death><date notBefore="1590-05-04" notAfter="1609-02-27"/></death>
+</person>
+<person xml:id="anon1">
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+</person>
+
+<person xml:id="anon3">
+<sex value="1">M</sex>
+<death><date notAfter="1609-02-26"/></death>
+</person>
+<person xml:id="anon4">
+<sex value="1">M</sex>
+<death><date notAfter="1609-02-26"/></death>
+</person>
+<person xml:id="anon5">
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon6">
+<sex value="2">F</sex>
+<death><date notAfter="1609-02-26" evidence="inferred"/></death>
+</person>
+<person xml:id="anon7">
+<sex value="2">F</sex>
+<death><date notAfter="1609-02-26" evidence="inferred"/></death>
+</person>
+<person xml:id="anon8">
+<sex value="2">F</sex>
+<death><date notAfter="1609-02-26" evidence="inferred"/></death>
+</person>
+<person xml:id="anon9">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon10">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon11">
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="husband" active="#anon2" passive="#cr"/><relation name="mother" active="#cr" passive="#anon3 #anon4 #anon5 #anon6 #anon7 #anon8 #anon9 #anon10 #anon11"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1608-09-21" notAfter="1609-02-27" evidence="inferred"/></p>
+<cb:consultation type="nativity">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon1" evidence="inferred" present="unclear"/>
+<cb:subject ref="#cr" present="no"/>
+<cb:topic key="history" evidence="inferred" cert="medium"><person sameAs="#cr"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Chryst Robinson <foreign xml:lang="la">nata</foreign> may 4. &Thursday; <lb/>h. 12. 30 p m. 1570 <add place="supralinear">palsie.</add> <add place="supralinear">melancholy</add> <add place="interlinear">maryed 9 child <lb/>&amp; dyed.</add></p>
+<pb xml:id="f122r" n="122r"/>
+<p><lb/>Chryst Robinson <foreign xml:lang="la">nata</foreign> may <lb/>4 &Thursday; h 12. 30 <choice><sic>p</sic><corr>p m</corr></choice> 1570. fat &amp; <lb/>corpul: &amp; me<add place="supralinear">r</add>y by nature <lb/><subst><del type="over">h</del><add place="over">y</add></subst>et <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> disc<choice><orig>&oover;</orig><reg>on</reg></choice>t<choice><orig>&eover;</orig><reg>en</reg></choice>tm<choice><orig>&eover;</orig><reg>en</reg></choice>t &amp; greef <lb/>taken by her husb. who would <lb/>have her to live in the country <lb/>&amp; she willing to live in <placeName>london</placeName> <lb/>had 9 child 3. boyes &amp; <del type="strikethrough">every</del> <lb/>two dyed &amp; <subst><del type="over">one</del><add place="over">the</add></subst> youngest boy <lb/>liveth had <del type="strikethrough">&amp;</del> now but 4 in <lb/>all doe live. her husb. was <lb/>a widower. had spedy deliv <lb/>alwys. &amp; at lenght dyed in <lb/>child bed.</p>
+</div>
+</body>
+</text>
+</TEI>

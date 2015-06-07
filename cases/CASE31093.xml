@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE31093</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 142v</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0142v" to="0142v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d">
+<persName><roleName>Mrs</roleName> <surname>Dayrell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="md">
+<persName><forename>Mary</forename> <surname>Dayrell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="ad">
+<persName><forename>Anne</forename> <surname>Dayrell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Dr</roleName> <surname>Chane<gap extent="2" reason="binding" unit="chars"/></surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1607-04-08" n="Wednesday"/></p>
+<p><time notBefore="10:40:00" notAfter="10:49:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#d" evidence="internal" present="no"/>
+<cb:subject ref="#md #ad" present="no"/>
+<cb:topic key="diz" resp="#rnapier"><person sameAs="#md"/><person sameAs="#ad"/></cb:topic>
+<cb:topic key="treatment"><person sameAs="#md"/><person sameAs="#ad"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-09-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-11-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Dorle sent to <lb/>know the disease of <lb/><del type="strikethrough">Margery</del> Marye <lb/>&amp; An Dorle Apr <lb/>8. <del type="strikethrough">an</del> &Wednesday; h. 10 4<gap reason="binding" unit="chars" extent="1"/> <lb/>&antm; 1607.</p>
+<p><lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> good t<supplied reason="binding">o</supplied> <lb/>heale <add place="supralinear">&vVowel;p</add> her Is<supplied reason="binding" cert="medium">su</supplied> <lb/>&amp; to take a v<supplied reason="binding" cert="low">omite</supplied> <lb/>or <choice><sic><subst><del type="over">&amp;</del><add place="over">a</add></subst></sic><corr type="noText"/></choice> <add place="supralinear">a</add> purge <lb/>D Chane<gap extent="2" reason="binding" unit="chars"/> <lb/>wylleth her &amp; <gap reason="binding" extent="1" unit="words"/>&vVowel;p her Issu.</p>
+</div>
+</body>
+</text>
+</TEI>

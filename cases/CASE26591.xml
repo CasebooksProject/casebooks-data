@@ -52,12 +52,17 @@
 <age value="41">41</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 <birth><date when="1565-03-04" cert="medium" evidence="internal" precision="medium"/></birth>
-<event type="marriage"><p>Married <date when="1590-10-13" evidence="internal">a fortnight after Michaelmas 15 years ago</date>.</p></event>
+</person>
+<person xml:id="c" evidence="internal">
+<persName><surname evidence="inferred" cert="low">Cockin</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <person xml:id="f" evidence="internal">
 <persName><roleName>Mr</roleName> <surname>Furtho</surname></persName>
 <sex value="1">M</sex>
 </person>
+<listRelation><relation name="wife" active="#ac" passive="#c" from="1590-10-13" evidence="internal"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>

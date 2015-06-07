@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE32077</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="193">MS Ashmole 193, f. 275r</idno>
+&Napier012;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0275r" to="0275r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="2" evidence="external" cert="medium">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="p1">
+<persName><surname>Perry</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+
+</person>
+<person xml:id="p2">
+<persName><surname evidence="inferred" cert="medium">Perry</surname></persName>
+<sex value="0">U</sex>
+<age value="18" unit="months">a year and a half</age>
+</person>
+<listRelation><relation name="child" active="#p2" passive="#p1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1607-09-14T14:00:00" notAfter-custom="1607-09-15T10:50:00" evidence="inferred"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="internal" present="unclear"/>
+<cb:subject ref="#p2" present="unclear"/>
+<cb:topic key="ague"><person sameAs="#p2"/></cb:topic>
+<cb:topic key="scouring"><person sameAs="#p2"/></cb:topic>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/><gap reason="binding" unit="words" extent="1"/> <rs type="address" xml:id="address1">of hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> for a child <add place="supralinear">of</add> Perrys <lb/><supplied reason="binding" cert="low">on</supplied> yere &amp; halfe. an Ague scoureth</p>
+</div>
+</body>
+</text>
+</TEI>

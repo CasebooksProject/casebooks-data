@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE33467</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-01">01 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="229">MS Ashmole 229, f. 117v</idno>
+&Napier013;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0117v" to="0117v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="bb">
+<persName><roleName>Mr</roleName> <forename>Baldwin</forename> <surname>Barnard</surname></persName>
+<sex value="1">M</sex>
+<age value="55">55</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="l">
+<persName><roleName>Mr</roleName> <surname>Lea</surname></persName>
+<sex value="1">M</sex>
+</person>   
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1608-05-19" n="Thursday"/></p>
+<p><time when="09:30:00"/></p>
+<cb:consultation type="horary">
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#l" evidence="internal" present="unclear"/>
+<cb:subject ref="#bb" present="no"/>
+<cb:topic key="requestingTreatment"><person sameAs="#bb"/></cb:topic>
+<cb:topic key="liveOrDieMedical"><person sameAs="#bb"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-01-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-03-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Baldwyn Bernard <rs type="address" xml:id="address1">of <lb/>Abington</rs> 55 y Mai&jVowel; 19 <supplied reason="binding">&Thursday;</supplied> <lb/>ho. 9. <subst><del type="over">15</del><add place="over">30</add></subst> a m. 1608</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>m<hi rend="superscript">r</hi> Lee <foreign xml:lang="la">qu&aelig;rit</foreign> what is good <unclear cert="medium" reason="binding">for</unclear> <gap reason="binding" extent="3" unit="chars"/> <lb/>&amp; <foreign xml:lang="la">&vVowel;t<choice><orig>&crossedr;</orig><reg>rum</reg></choice> evadet</foreign>.</p>
+</div>
+</body>
+</text>
+</TEI>
