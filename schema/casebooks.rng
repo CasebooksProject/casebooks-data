@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2015-08-09T16:27:13Z. 
+Schema generated from ODD source 2015-09-06T19:20:08Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -4274,6 +4274,12 @@ belongs, but this <sch:name/> element has no textual content.</sch:assert>
       </attribute>
     </optional>
   </define>
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.global-xmllang-must-point-to-defined-language-constraint">
+    <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@xml:lang]">
+      <let name="languages" value="ancestor::tei:TEI/tei:teiHeader/tei:profileDesc/tei:langUsage/tei:language/@ident"/>
+      <assert test="@xml:lang = $languages">ERROR: <name/>@xml:lang does not match language@ident in the header</assert>
+    </rule>
+  </pattern>
   <define name="att.handFeatures.attributes">
     <ref name="att.handFeatures.attribute.scribe"/>
     <ref name="att.handFeatures.attribute.scribeRef"/>
@@ -4759,22 +4765,28 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
   <define name="model.emphLike">
     <choice>
       <ref name="foreign"/>
+      <ref name="term"/>
       <ref name="title"/>
     </choice>
   </define>
   <define name="model.emphLike_alternation">
     <choice>
       <ref name="foreign"/>
+      <ref name="term"/>
       <ref name="title"/>
     </choice>
   </define>
   <define name="model.emphLike_sequence">
     <ref name="foreign"/>
+    <ref name="term"/>
     <ref name="title"/>
   </define>
   <define name="model.emphLike_sequenceOptional">
     <optional>
       <ref name="foreign"/>
+    </optional>
+    <optional>
+      <ref name="term"/>
     </optional>
     <optional>
       <ref name="title"/>
@@ -4785,12 +4797,18 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="foreign"/>
     </zeroOrMore>
     <zeroOrMore>
+      <ref name="term"/>
+    </zeroOrMore>
+    <zeroOrMore>
       <ref name="title"/>
     </zeroOrMore>
   </define>
   <define name="model.emphLike_sequenceRepeatable">
     <oneOrMore>
       <ref name="foreign"/>
+    </oneOrMore>
+    <oneOrMore>
+      <ref name="term"/>
     </oneOrMore>
     <oneOrMore>
       <ref name="title"/>
@@ -6165,11 +6183,6 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
     <element name="foreign">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(foreign) marks up text written in a different language from the main language of the document, or from the text immediately surrounding it, using the xml:lang values en, la, el, fr, he (English, Latin, Greek, French, Hebrew). [3.3.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-foreign-xmllang-must-match-lang-ident-constraint">
-        <rule context="tei:foreign">
-          <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@xml:lang = ancestor::tei:TEI//tei:langUsage/tei:language/@ident">ERROR: foreign@xml:lang does not match language@ident in header.</assert>
-        </rule>
-      </pattern>
       <ref name="att.global.attribute.xmlid"/>
       <ref name="att.global.attribute.n"/>
       <ref name="att.global.attribute.rend"/>
@@ -6302,10 +6315,42 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
       <empty/>
     </element>
   </define>
+  <define name="term">
+    <element name="term">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. FURTHER DETAIL TO BE WRITTEN [3.3.4. ]</a:documentation>
+      <ref name="macro.phraseSeq"/>
+      <ref name="att.global.attribute.xmlid"/>
+      <ref name="att.global.attribute.n"/>
+      <ref name="att.global.attribute.xmllang"/>
+      <ref name="att.global.attribute.xmlbase"/>
+      <ref name="att.global.attribute.xmlspace"/>
+      <ref name="att.pointing.attributes"/>
+      <ref name="att.typed.attributes"/>
+      <ref name="att.canonical.attributes"/>
+      <ref name="att.sortable.attributes"/>
+      <optional>
+        <attribute name="targetLang">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the language of the content to be found at the destination referenced by target, using a language tag generated according to BCP 47.</a:documentation>
+          <ref name="data.language"/>
+        </attribute>
+      </optional>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-term-targetLang-targetLang-constraint">
+        <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
+          <sch:assert test="count(@target)">@targetLang can only be used if @target is specified.</sch:assert>
+        </sch:rule>
+      </pattern>
+      <empty/>
+    </element>
+  </define>
   <define name="sic">
     <element name="sic">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Latin for ‘thus’) contains a text string as originally written but which appears to represent a mistake on the part of the author or scribe. [3.4.1. ]</a:documentation>
       <ref name="macro.paraContent"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-sic-sic-not-in-choice-constraint">
+        <rule context="tei:sic">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:choice)">ERROR: <name/> needs to be a child of choice</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.responsibility.attributes"/>
       <empty/>
@@ -6315,6 +6360,11 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
     <element name="corr">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(correction) contains a corrected reading of what is considered to be an erroneous text string in the original. [3.4.1. ]</a:documentation>
       <ref name="macro.paraContent"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-corr-corr-not-in-choice-constraint">
+        <rule context="tei:corr">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:choice)">ERROR: <name/> needs to be a child of choice</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.editLike.attributes"/>
       <optional>
@@ -6340,6 +6390,67 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
           <ref name="choice"/>
         </choice>
       </zeroOrMore>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-mixing-up-children-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice">
+          <report test="tei:abbr and (tei:orig|tei:reg|tei:sic|tei:corr|tei:unclear)">ERROR: <name/> contains invalid mix of children (<value-of select="string-join(*/local-name(),', ')"/>)</report>
+          <report test="tei:expan and (tei:orig|tei:reg|tei:sic|tei:corr|tei:unclear)">ERROR: <name/> contains invalid mix of children (<value-of select="string-join(*/local-name(),', ')"/>)</report>
+          <report test="tei:sic and (tei:orig|tei:reg|tei:unclear)">ERROR: <name/> contains invalid mix of children (<value-of select="string-join(*/local-name(),', ')"/>)</report>
+          <report test="tei:corr and (tei:orig|tei:reg|tei:unclear)">ERROR: <name/> contains invalid mix of children (<value-of select="string-join(*/local-name(),', ')"/>)</report>
+          <report test="tei:orig and tei:unclear">ERROR: <name/> contains invalid mix of children (<value-of select="string-join(*/local-name(),', ')"/>)</report>
+          <report test="tei:reg and tei:unclear">ERROR: <name/> contains invalid mix of children (<value-of select="string-join(*/local-name(),', ')"/>)</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-mixing-up-children-invalid-child-constraint">
+        <rule context="tei:choice">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="*[not(local-name()=('sic','corr','abbr','expan','orig','reg','unclear'))]">ERROR: <value-of select="string-join(*[not(local-name()=('sic','corr','abbr','expan','orig','reg','unclear'))]/local-name(),', ')"/> should not be child of choice</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-ensure-paired-children-elements-are-singletons-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[(tei:sic|tei:corr|tei:abbr|tei:expan|tei:orig|tei:reg)]">
+          <report test="count(tei:abbr)&gt;1">ERROR: <name/> contains too many abbr</report>
+          <report test="count(tei:expan)&gt;1">ERROR: <name/> contains too many expan</report>
+          <report test="count(tei:sic)&gt;1">ERROR: <name/> contains too many sic</report>
+          <report test="count(tei:corr)&gt;1">ERROR: <name/> contains too many corr</report>
+          <report test="count(tei:orig)&gt;1">ERROR: <name/> contains too many orig</report>
+          <report test="count(tei:reg[not(@type)])&gt;1">ERROR: <name/> contains too many reg (not @type)</report>
+          <report test="count(tei:reg[@type='gloss'])&gt;1">ERROR: <name/> contains too many reg/@type='gloss'</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-abbr-needs-expan-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[tei:abbr]">
+          <assert test="tei:expan">ERROR: <name/> with abbr needs expan</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-expan-needs-abbr-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[tei:expan]">
+          <assert test="tei:abbr">ERROR: <name/> with expan needs abbr</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-sic-needs-corr-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[tei:sic]">
+          <assert test="tei:corr">ERROR: <name/> with sic needs corr</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-corr-needs-sic-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[tei:corr]">
+          <assert test="tei:sic">ERROR: <name/> with corr needs sic</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-orig-needs-reg-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[tei:orig]">
+          <assert test="tei:reg">ERROR: <name/> with orig needs reg</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-reg-needs-orig-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[tei:reg]">
+          <assert test="tei:orig">ERROR: <name/> with reg needs orig</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-not-enough-unclear-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:choice[tei:unclear]">
+          <assert test="count(tei:unclear)&gt;1">ERROR: <name/> needs at least two unclear elements</assert>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <empty/>
     </element>
@@ -6348,6 +6459,11 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
     <element name="reg">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(regularisation) contains the regularised form of a text string (as it will appear in the ‘normalised’ view of the transcription), or a gloss (which will be displayed in a mouseover). reg follows orig, which contains the original text string, within a choice element and does not need any attributes unless it functions as a gloss. [3.4.2.  12. ]</a:documentation>
       <ref name="macro.paraContent"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-reg-reg-not-in-choice-constraint">
+        <rule context="tei:reg">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:choice)">ERROR: <name/> needs to be a child of choice</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.editLike.attributes"/>
       <optional>
@@ -6368,6 +6484,11 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
     <element name="orig">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(original form) contains the original form of a text string or symbol for which a regularised version has been provided, and nests together with reg (containing the regularised version) in a choice element. [3.4.2.  12. ]</a:documentation>
       <ref name="macro.paraContent"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-orig-orig-not-in-choice-constraint">
+        <rule context="tei:orig">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:choice)">ERROR: <name/> needs to be a child of choice</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.responsibility.attributes"/>
       <empty/>
@@ -6548,7 +6669,7 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
       <ref name="macro.paraContent"/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-unclear-unclear-needs-content-constraint">
         <rule context="tei:unclear">
-          <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="normalize-space(string-join(descendant::text(),''))!='' or ( normalize-space(string-join(descendant::text(),''))='' and descendant::tei:space)">ERROR: <name/> needs to have some textual content</assert>
+          <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="normalize-space(string-join(descendant::text(),''))!=''">ERROR: <name/> needs to have some textual content</assert>
         </rule>
       </pattern>
       <ref name="att.global.attributes"/>
@@ -6613,6 +6734,16 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
     <element name="name">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name) is used for editors’ names in the TEIHeader, or for names of participants in cases where it is unclear whether the name given is a forename or surname (or, indeed, role name, nickname or anything else). [3.5.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-name-name-in-change-xmlid-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:name[ancestor::tei:change]">
+          <report test="not(@xml:id) and not(@sameAs)">ERROR: <name/> needs @xml:id or @sameAs</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-name-name-in-change-links-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:name[@sameAs][ancestor::tei:change]">
+          <assert test="@sameAs = ancestor::tei:revisionDesc//tei:change//tei:name[@xml:id]/concat('#',@xml:id)">ERROR: <name/>@sameAs does not seem to point to a valid name@xml:id in change.</assert>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
       <ref name="att.datable.attributes"/>
@@ -6823,7 +6954,7 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <report test="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634][not(local-name() = 'notBefore' and . = $exception_dates)]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634]/name()"/> is out of range. Expected year values should be 1596-1630</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-settingDesc-date-year-check-date-needs-datable-attr-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-needs-datable-attr-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date">
           <report test="count((@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) = 0">ERROR: <name/> needs a datable attribute</report>
         </rule>
@@ -6838,7 +6969,16 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
       <ref name="att.global.linking.attribute.copyOf"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.datable.custom.attribute.when-custom"/>
-      <ref name="att.editLike.attributes"/>
+      <ref name="att.dimensions.attribute.unit"/>
+      <ref name="att.dimensions.attribute.quantity"/>
+      <ref name="att.dimensions.attribute.extent"/>
+      <ref name="att.dimensions.attribute.precision"/>
+      <ref name="att.dimensions.attribute.scope"/>
+      <ref name="att.ranging.attribute.atLeast"/>
+      <ref name="att.ranging.attribute.atMost"/>
+      <ref name="att.responsibility.attribute.cert"/>
+      <ref name="att.responsibility.attribute.resp"/>
+      <ref name="att.source.attribute.source"/>
       <ref name="att.typed.attributes"/>
       <optional>
         <attribute name="n">
@@ -6927,6 +7067,27 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <list>
             <oneOrMore>
               <ref name="data.word"/>
+            </oneOrMore>
+          </list>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="evidence">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the nature of the evidence supporting the date value.</a:documentation>
+          <list>
+            <oneOrMore>
+              <choice>
+                <value>extrapolated</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been extrapolated by the editor based on available information.</a:documentation>
+                <value>conjecture</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been made by the editor, cataloguer, or scholar on the basis of their expertise.</a:documentation>
+                <value>external</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is external evidence to support the date.</a:documentation>
+                <value>inferred</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been inferred.</a:documentation>
+                <value>internal</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is internal evidence to support the date.</a:documentation>
+              </choice>
             </oneOrMore>
           </list>
         </attribute>
@@ -7050,6 +7211,11 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
     <element name="abbr">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(abbreviation) contains an abbreviation, and nests together with expan (containing the expanded version) in a choice element. [3.5.5. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-abbr-abbr-not-in-choice-constraint">
+        <rule context="tei:abbr">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:choice)">ERROR: <name/> needs to be a child of choice</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.responsibility.attributes"/>
       <empty/>
@@ -7059,6 +7225,11 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
     <element name="expan">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(expansion) contains an expansion, and nests together with abbr (containing the abbreviated version) in a choice element. [3.5.5. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-expan-expan-not-in-choice-constraint">
+        <rule context="tei:expan">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:choice)">ERROR: <name/> needs to be a child of choice</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.editLike.attributes"/>
       <empty/>
@@ -11202,7 +11373,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-angel-needs-subtype-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@type=('angel')]">
-          <report test="not(@subtype=('Asariel','Michael','Raphael','Uriel','Unspecified'))">ERROR: cb:info@type='angel' needs @subtype with the angel name ('Asariel', 'Michael', 'Raphael', 'Uriel' or 'Unspecified' are presently supported).</report>
+          <report test="not(@subtype=('Asariel','Gabriel','Michael','Raphael','Uriel','Unspecified'))">ERROR: cb:info@type='angel' needs @subtype with the angel name ('Asariel', 'Gabriel', 'Michael', 'Raphael', 'Uriel' or 'Unspecified' are presently supported).</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-event-needs-subtype-constraint">
@@ -11231,7 +11402,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       </attribute>
       <optional>
         <attribute name="subtype">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">applies only where the type value is "event" or "angel". For events, it records whether the event falls into the "previousConsultation" or "subsequentEvent" category, or takes the value "unclear" if it is not apparent whether the event in question is prior or subsequent to the consultation. For angels, it records the angel’s name if known (currently permitted values are "Asariel", "Michael", "Raphael", "Uriel", or "Unspecified" if no name is given).</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">applies only where the type value is "event" or "angel". For events, it records whether the event falls into the "previousConsultation" or "subsequentEvent" category, or takes the value "unclear" if it is not apparent whether the event in question is prior or subsequent to the consultation. For angels, it records the angel’s name if known (currently permitted values are "Asariel", "Gabriel", "Michael", "Raphael", "Uriel", or "Unspecified" if no name is given).</a:documentation>
           <choice>
             <value>previousConsultation</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -11240,6 +11411,8 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             <value>unclear</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates that it is not apparent whether the event is from a previous consultation or subsequent to the consultation.</a:documentation>
             <value>Asariel</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>Gabriel</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>Michael</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -11401,7 +11574,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
   </define>
   <define name="topic">
     <element name="topic" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(topic) defines the nature of the question being asked, using any of the terms recorded in the topics master list. Each cb:topic element should normally contain at least one person, personGrp and/or org element, pointing to the person or people being asked about, whether subject or object (but see the note on  below). If the nature of the query is not explicitly stated in the transcribed part of the document, an evidence value should also be applied, as explained in more detail in the guidelines. If there are grounds for doubt about the nature of the question, a cert value may also be applied. A single entry may feature any number of topics bar zero.</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(topic) defines the nature of the question being asked, using any of the terms recorded in the topics master list. Each cb:topic element must contain at least one person, personGrp and/or org element, pointing to the person or people being asked about, whether subject or object. If the nature of the query is not explicitly stated in the transcribed part of the document, an evidence value should also be applied, as explained in more detail in the guidelines. If there are grounds for doubt about the nature of the question, a cert value may also be applied. A single entry may feature any number of topics bar zero.</a:documentation>
       <interleave>
         <zeroOrMore>
           <ref name="person"/>
@@ -11425,7 +11598,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-needs-person-or-org-constraint">
         <rule context="cb:topic">
-          <report xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(child::tei:person|child::tei:org|child::tei:personGrp)=0 and not(@key = 'witchcraft')">ERROR: <name/> requires a person/org inside it</report>
+          <report xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(child::tei:person|child::tei:org|child::tei:personGrp)=0">ERROR: <name/> requires a person/org/personGrp inside it</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-key-unknown-needs-reason-constraint">
