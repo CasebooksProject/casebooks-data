@@ -8,6 +8,6 @@ The data is contained in two directories:
 
 * master-lists: contains authority files for our topics, relations, occupations and languages.
 
-For details on our Trancriptions Guidelines and Element Set, please see http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/transcription-guidelines and http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/element-set.
+For details on our Transcription Guidelines and Element Set, please see http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/transcription-guidelines and http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/element-set.
 
-Since this project is still underway, this data should be considered a 'work in progress'. In addition to adding new case files, we will also be improving the granularity and accuracy of the data that has already been committed. 
+Since this project is still under way, this data should be considered a 'work in progress'. In addition to adding new case files, we will also be improving the granularity and accuracy of the data that has already been committed. 
