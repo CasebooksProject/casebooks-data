@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2015-09-06T19:20:08Z. 
+Schema generated from ODD source 2016-02-15T11:37:00Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -4180,6 +4180,11 @@ belongs, but this <sch:name/> element has no textual content.</sch:assert>
       </attribute>
     </optional>
   </define>
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.responsibility-att-resp-tei-point-to-xmlid-constraint">
+    <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@resp]">
+      <assert test="@resp = //*/concat('#',@xml:id)">ERROR: <name/>@resp must point to a valid @xml:id</assert>
+    </rule>
+  </pattern>
   <define name="att.editLike.attributes">
     <ref name="att.dimensions.attributes"/>
     <ref name="att.responsibility.attributes"/>
@@ -5694,6 +5699,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="desc"/>
     </choice>
   </define>
+  <define name="model.glossLike">
+    <notAllowed/>
+  </define>
   <define name="model.quoteLike">
     <choice>
       <ref name="quote"/>
@@ -5843,6 +5851,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="publisher"/>
       <ref name="pubPlace"/>
     </choice>
+  </define>
+  <define name="model.catDescPart">
+    <notAllowed/>
   </define>
   <define name="model.addressLike">
     <choice>
@@ -6044,6 +6055,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
   </define>
   <define name="model.encodingDescPart">
     <choice>
+      <ref name="classDecl"/>
       <ref name="variantEncoding"/>
     </choice>
   </define>
@@ -6052,6 +6064,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="particDesc"/>
       <ref name="settingDesc"/>
       <ref name="langUsage"/>
+      <ref name="textClass"/>
       <ref name="handNotes"/>
     </choice>
   </define>
@@ -6400,7 +6413,7 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
           <report test="tei:reg and tei:unclear">ERROR: <name/> contains invalid mix of children (<value-of select="string-join(*/local-name(),', ')"/>)</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-mixing-up-children-invalid-child-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-choice-invalid-child-constraint">
         <rule context="tei:choice">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="*[not(local-name()=('sic','corr','abbr','expan','orig','reg','unclear'))]">ERROR: <value-of select="string-join(*[not(local-name()=('sic','corr','abbr','expan','orig','reg','unclear'))]/local-name(),', ')"/> should not be child of choice</report>
         </rule>
@@ -7077,12 +7090,12 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <list>
             <oneOrMore>
               <choice>
-                <value>extrapolated</value>
-                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been extrapolated by the editor based on available information.</a:documentation>
                 <value>conjecture</value>
-                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been made by the editor, cataloguer, or scholar on the basis of their expertise.</a:documentation>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been conjectured by the editor on the basis of her or his expertise.</a:documentation>
                 <value>external</value>
                 <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is external evidence to support the date.</a:documentation>
+                <value>extrapolated</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been extrapolated by the editor based on an oblique or circumlocutory expression in the source.</a:documentation>
                 <value>inferred</value>
                 <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the date has been inferred.</a:documentation>
                 <value>internal</value>
@@ -7237,8 +7250,35 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
   </define>
   <define name="ref">
     <element name="ref">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6.  16.1. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) supplies a link to another online location. [3.6.  16.1. ]</a:documentation>
       <ref name="macro.paraContent"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-writing-link-to-us-with-domain-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref">
+          <let name="target" value="replace(@target,'^(https*://)*(dev|www).magicandmedicine.hps.cam.ac.uk','')"/>
+          <report test="matches(@target,'(dev|www).magicandmedicine.hps.cam.ac.uk')">ERROR: Links to our site should be entered using their absolute path (ie. <value-of select="if (matches($target,'^/')) then $target else '/using-our-edition/guide-to-reading-the-cases'"/>)</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-target-not-site-self-mailto-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[not(@type) or normalize-space(@type)='']">
+          <assert test="matches(@target,'^(https*://|/|mailto:|#)')">ERROR: ref without @type must point to external site, us or an email address using mailto:</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-pointing-to-case-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')]">
+          <assert test="@type='case'">ERROR: ref pointing to another case must have type="case"</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-case-filenames-in-live-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[rv]-\d(\.xml)*$','i')]">
+          <let name="location" value="replace(replace(base-uri(.),'file:',''),'^.*casebooks-data/([^/]+)/.+$','$1')"/>
+          <report test="$location='04-live'">ERROR: ref pointing to a case file rather than number</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-type-case-must-point-to-case-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[@type='case']">
+          <assert test="matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')">ERROR: ref/@type="case" must point to a valid case number or case filename</assert>
+        </rule>
+      </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-refAtts-constraint">
         <rule context="tei:ref">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
@@ -7247,11 +7287,18 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
         </rule>
       </pattern>
       <ref name="att.global.attributes"/>
-      <ref name="att.pointing.attributes"/>
       <ref name="att.internetMedia.attributes"/>
       <ref name="att.typed.attributes"/>
       <ref name="att.declaring.attributes"/>
       <ref name="att.cReferencing.attributes"/>
+      <attribute name="target">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the destination of the reference by supplying one or more URI References</a:documentation>
+        <list>
+          <oneOrMore>
+            <ref name="data.pointer"/>
+          </oneOrMore>
+        </list>
+      </attribute>
       <empty/>
     </element>
   </define>
@@ -7892,7 +7939,7 @@ Sample values include: 1] positionOnPage</a:documentation>
   </define>
   <define name="formula">
     <element name="formula">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a mathematical or other formula. [14.2. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">is used in Casebooks solely in the extremely rare event of needing to code a vulgar fraction. This should be done following the template below (for one over two). [14.2. ]</a:documentation>
       <ref name="mathml.math"/>
       <ref name="att.global.attributes"/>
       <optional>
@@ -7917,9 +7964,20 @@ Sample values include: 1] positionOnPage</a:documentation>
           <ref name="model.divBottom"/>
         </choice>
       </zeroOrMore>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-figure-ensure-figure-not-in-div-in-case-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:figure[ancestor::tei:div]">
+          <report test="ancestor::tei:TEI/tei:teiHeader//cb:consultation">ERROR: <name/> must not be inside a div in a case file</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.placement.attributes"/>
       <ref name="att.typed.attributes"/>
+      <optional>
+        <attribute name="subtype">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subtype) provides a sub-categorization of the element, if needed</a:documentation>
+          <ref name="data.enumerated"/>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
@@ -8087,6 +8145,79 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <empty/>
     </element>
   </define>
+  <define name="classDecl">
+    <element name="classDecl">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(classification declarations) contains one or more taxonomies defining any classificatory codes used elsewhere in the text. [2.3.7.  2.3. ]</a:documentation>
+      <oneOrMore>
+        <ref name="taxonomy"/>
+      </oneOrMore>
+      <ref name="att.global.attributes"/>
+      <empty/>
+    </element>
+  </define>
+  <define name="taxonomy">
+    <element name="taxonomy">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy. [2.3.7. ]</a:documentation>
+      <choice>
+        <zeroOrMore>
+          <choice>
+            <ref name="model.glossLike"/>
+            <ref name="model.descLike"/>
+          </choice>
+        </zeroOrMore>
+        <oneOrMore>
+          <ref name="category"/>
+        </oneOrMore>
+        <group>
+          <group>
+            <ref name="model.biblLike"/>
+          </group>
+          <zeroOrMore>
+            <ref name="category"/>
+          </zeroOrMore>
+        </group>
+      </choice>
+      <ref name="att.global.attributes"/>
+      <empty/>
+    </element>
+  </define>
+  <define name="category">
+    <element name="category">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [2.3.7. ]</a:documentation>
+      <group>
+        <choice>
+          <oneOrMore>
+            <ref name="catDesc"/>
+          </oneOrMore>
+          <zeroOrMore>
+            <choice>
+              <ref name="model.descLike"/>
+              <ref name="model.glossLike"/>
+            </choice>
+          </zeroOrMore>
+        </choice>
+        <zeroOrMore>
+          <ref name="category"/>
+        </zeroOrMore>
+      </group>
+      <ref name="att.global.attributes"/>
+      <empty/>
+    </element>
+  </define>
+  <define name="catDesc">
+    <element name="catDesc">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category description) describes some category within a taxonomy or text typology, either in the form of a brief prose description or in terms of the situational parameters used by the TEI formal textDesc. [2.3.7. ]</a:documentation>
+      <zeroOrMore>
+        <choice>
+          <text/>
+          <ref name="model.limitedPhrase"/>
+          <ref name="model.catDescPart"/>
+        </choice>
+      </zeroOrMore>
+      <ref name="att.global.attributes"/>
+      <empty/>
+    </element>
+  </define>
   <define name="profileDesc">
     <element name="profileDesc">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(profile description) describes the contents of the file and of its source. [2.4.  2.1.1. ]</a:documentation>
@@ -8165,6 +8296,49 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <data type="nonNegativeInteger">
             <param name="maxInclusive">100</param>
           </data>
+        </attribute>
+      </optional>
+      <empty/>
+    </element>
+  </define>
+  <define name="textClass">
+    <element name="textClass">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text classification) groups information which describes the nature or topic of a text in terms of a standard classification scheme, thesaurus, etc. [2.4.3. ]</a:documentation>
+      <zeroOrMore>
+        <choice>
+          <ref name="catRef"/>
+        </choice>
+      </zeroOrMore>
+      <ref name="att.global.attributes"/>
+      <ref name="att.declarable.attributes"/>
+      <empty/>
+    </element>
+  </define>
+  <define name="catRef">
+    <element name="catRef">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category reference) specifies one or more defined categories within some taxonomy or text typology. [2.4.3. ]</a:documentation>
+      <empty/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-catRef-confirm-consultation-type-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:catRef[@target]">
+          <let name="target_ids" value="tokenize(@target,'\s+')"/>
+          <let name="full_path" value="replace(replace(base-uri(.),'file:',''),'casebooks-data/.+$','casebooks-data/master-lists/consultation-types.xml')"/>
+          <let name="category_ids" value="doc($full_path)//tei:category/concat('#',@xml:id)"/>
+          <assert test="every $id in $target_ids satisfies $id = $category_ids">ERROR: Invalid <name/>@target: <value-of select="$target_ids[not(.=$category_ids)]"/>. Valid values are: <value-of select="$category_ids[not(.='#entry')]"/>.</assert>
+        </rule>
+      </pattern>
+      <ref name="att.global.attributes"/>
+      <attribute name="target">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines the type of document being encoded according to our Types of text.</a:documentation>
+        <list>
+          <oneOrMore>
+            <ref name="data.pointer"/>
+          </oneOrMore>
+        </list>
+      </attribute>
+      <optional>
+        <attribute name="scheme">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the classification scheme within which the set of categories concerned is defined, for example by a taxonomy element, or by some other resource.</a:documentation>
+          <ref name="data.pointer"/>
         </attribute>
       </optional>
       <empty/>
@@ -8778,18 +8952,52 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.datable.attributes"/>
       <ref name="att.editLike.attributes"/>
       <ref name="att.personal.attributes"/>
-      <ref name="att.typed.attributes"/>
+      <optional>
+        <attribute name="type">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">applies only in the (extremely rare) cases of Decknamen (entirely false names either given by a querent or used by a practitioner to conceal the person's identity): this takes the value "deckname".</a:documentation>
+          <choice>
+            <value>deckname</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          </choice>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
   <define name="surname">
     <element name="surname">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(surname) contains a family name, with the optional type values "maiden", "married", "previousMarried", "alternate", "variant", "deckname" or "nickname" (see the Guidelines for advice on exactly when and how to apply these). [13.2.1. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(surname) contains a family name, with the optional type values "alternate", "deckname", "maiden", "maidenAlternate", "maidenVariant", "married", "marriedAlternate", "marriedVariant", "nickname", "variant" (see the Guidelines for advice on exactly when and how to apply these). [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
-      <ref name="att.typed.attributes"/>
+      <optional>
+        <attribute name="type">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">explains the type of surname. Permitted values: "alternate" (the second of two alternative surnames by which a person is referred to, where neither can be given any other type value based on the evidence within that entry), "variant" (the second of two alternative surnames by which a person was known, where neither can be given any other type value based on the evidence within that entry, and where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "maiden" (the surname that a girl or woman inherited from her parents, sometimes still used after marriage), "married" (the surname taken by a woman on marriage to match her husband's), "deckname" (a false surname either given by a querent or used by a practitioner to conceal the person's identity), "nickname" (for the extremely unusual situation in which we know that a surname was informally bestowed rather than being inherited, a married name, or given to conceal the person's identity), "maidenAlternate" (the second of two alternative maiden names by which a girl or woman is referred to), "maidenVariant" (the second of two alternative maiden names by which a girl or woman is referred to, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "marriedAlternate" (the second of two alternative married names), or "marriedVariant" (the second of two alternative married names, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name). Typically in case files only alternate, married and maiden are needed; the others should not be used without clearance from a senior editor.</a:documentation>
+          <choice>
+            <value>alternate</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>deckname</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>maiden</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>maidenAlternate</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>maidenVariant</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>married</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>marriedAlternate</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>marriedVariant</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>nickname</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>variant</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          </choice>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
@@ -8810,7 +9018,21 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
-      <ref name="att.typed.attributes"/>
+      <optional>
+        <attribute name="type">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">explains the type of forename. Permitted values: "alternate" (the second of two alternative forenames by which a person was known), "variant" (the second of two alternative forenames by which a person was known, where the two forenames closely resemble one another but are sufficiently distinct not to be different spellings of the same name) "deckname" (a false forename either given by a querent or used by a practitioner to conceal someone's identity), or "nickname" (for the extremely unusual situation in which we know that a forename was informally bestowed rather than the name with which that person was christened, and was not given to conceal the person's identity). Typically in case files only alternate is needed; the others should not be used without clearance from a senior editor.</a:documentation>
+          <choice>
+            <value>alternate</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>deckname</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>nickname</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>variant</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          </choice>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
@@ -8818,20 +9040,61 @@ Sample values include: 1] text; 2] corpus</a:documentation>
     <element name="genName">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(genName) contains standard formulae used to distinguish between people who otherwise have the same name but are from different generations. [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-genName-genName-type-only-allowed-in-master-lists-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:genName[@type]">
+          <report test="not(contains(document-uri(/),'master-lists'))">ERROR: @type is currently only used in the master name files</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
-      <ref name="att.typed.attributes"/>
+      <optional>
+        <attribute name="type">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+          <choice>
+            <value>additional</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>prefix</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          </choice>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
   <define name="nameLink">
     <element name="nameLink">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name link) covers connecting (usually possessive) prepositions within proper names, such as ‘ap’, ‘van’, ‘de’. There are frequently inconsistencies in the source as to whether or not these should be capitalised, and as to whether or not they should be regarded as part of the surname (van Dyck, Vandyck?). There are also instances of their being mutilated by anglicisation, e.g. ‘Fan Hoeck’. In the material under consideration here, however, these are fairly rare, so the precise rendition can be sorted out on a case-by-case basis. [13.2.1. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name link) covers connecting (usually possessive) prepositions within proper names, such as ‘ap’, ‘van’, ‘de’. There are frequently inconsistencies in the source as to whether or not these should be capitalised, and as to whether or not they should be regarded as part of the surname (van Dyck, Vandyck?). There are also instances of their being mutilated by anglicisation, e.g. ‘Fan Hoeck’. In the material under consideration here, however, these are fairly rare, so the precise rendition can be sorted out on a case-by-case basis. It contains an optional type attribute that is used to indicate the type of nameLink value. [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
-      <ref name="att.typed.attributes"/>
+      <optional>
+        <attribute name="type">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">explains the type of name link, which should match the type of surname that it accompanies. Permitted values: "alternate" (the name link accompanies the second of two alternative surnames by which a person is referred to, where neither can be given any other type value based on the evidence within that entry), "variant" (the name link accompanies the second of two alternative surnames by which a person was known, where neither can be given any other type value based on the evidence within that entry, and where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "maiden" (the name link accompanies a surname that a girl or woman inherited from her parents, sometimes still used after marriage), "married" (the name link accompanies a surname taken by a woman on marriage to match her husband's), "deckname" (the name link accompanies a false surname either given by a querent or used by a practitioner to conceal the person's identity), "nickname" (for the extremely unusual situation in which we know that the surname accompanied by the name link was informally bestowed rather than being inherited, a married name, or given to conceal the person's identity), "maidenAlternate" (the second of two alternative maiden names by which a girl or woman is referred to), "maidenVariant" (the name link accompanies the second of two alternative maiden names by which a girl or woman is referred to, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "marriedAlternate" (the name link accompanies the second of two alternative married names), "marriedVariant" (the name link accompanies the second of two alternative married names, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name). Typically in case files only alternate, married and maiden are needed; the others should not be used without clearance from a senior editor.</a:documentation>
+          <choice>
+            <value>alternate</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>deckname</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>maiden</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>maidenAlternate</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>maidenVariant</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>married</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>marriedAlternate</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>marriedVariant</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>nickname</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>variant</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          </choice>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
@@ -8855,10 +9118,25 @@ Sample values include: 1] text; 2] corpus</a:documentation>
     <element name="roleName">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(role name) covers appellations such as ‘Mr’, ‘Mrs’, ‘Sir’, ‘Goodwife’, or other formulae besides personal names, job titles, or social or familial relations (e.g. ‘Mr Uvedales servant’, ‘Smiths cosen’) used to specify a person’s identity. [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-roleName-roleName-type-only-allowed-in-master-lists-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:roleName[@type]">
+          <report test="not(contains(document-uri(/),'master-lists'))">ERROR: @type is currently only used in the master name files</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
-      <ref name="att.typed.attributes"/>
+      <optional>
+        <attribute name="type">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">is currently only used in the master name files. The only valid values currently allowed are "prefix" or "additional".</a:documentation>
+          <choice>
+            <value>prefix</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>additional</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          </choice>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
@@ -9499,7 +9777,10 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <ref name="model.pLike"/>
         </oneOrMore>
         <zeroOrMore>
-          <ref name="model.personPart"/>
+          <choice>
+            <ref name="model.personPart"/>
+            <ref name="model.global"/>
+          </choice>
         </zeroOrMore>
       </choice>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-personGrp-personGrp-needs-xmlid-constraint">
@@ -10827,11 +11108,11 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(change of hand) marks the point at which the hand of an entry changes (if the transcribed section is written in more than one hand), pointing to the identity of the new hand with the new attribute. [11.3.2.1. ]</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-handShift-handShift-new-must-match-hand-xmlid-or-person-hand-sameas-xmlid-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:handShift[matches(@new,'^#')]">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:handShift[@new]">
           <let name="teiHeader" value="ancestor::tei:TEI/tei:teiHeader"/>
           <let name="hands" value="$teiHeader//tei:handNote"/>
-          <let name="hand_id_vals" value="($hands[@xml:id],$teiHeader//tei:person[@xml:id=$hands/replace(@sameAs,'#','')])/@xml:id"/>
-          <assert test="replace(@new,'#','') = $hand_id_vals">ERROR: handShift@new must match handNote@xml:id (or person/@xml:id if handNote@sameAs).</assert>
+          <let name="hand_id_vals" value="($hands[@xml:id],$teiHeader//tei:person[@xml:id=$hands/replace(@sameAs,'#','')])/concat('#',@xml:id)"/>
+          <assert test="@new = $hand_id_vals">ERROR: handShift@new must match handNote@xml:id (or person/@xml:id if handNote@sameAs).</assert>
         </rule>
       </pattern>
       <ref name="att.global.attributes"/>
@@ -11373,7 +11654,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-angel-needs-subtype-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@type=('angel')]">
-          <report test="not(@subtype=('Asariel','Gabriel','Michael','Raphael','Uriel','Unspecified'))">ERROR: cb:info@type='angel' needs @subtype with the angel name ('Asariel', 'Gabriel', 'Michael', 'Raphael', 'Uriel' or 'Unspecified' are presently supported).</report>
+          <report test="not(@subtype=('Aladiah','Asariel','Gabriel','Michael','Raphael','Uriel','Unspecified'))">ERROR: cb:info@type='angel' needs @subtype with the angel name ('Aladiah','Asariel', 'Gabriel', 'Michael', 'Raphael', 'Uriel' or 'Unspecified' are presently supported).</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-event-needs-subtype-constraint">
@@ -11402,7 +11683,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       </attribute>
       <optional>
         <attribute name="subtype">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">applies only where the type value is "event" or "angel". For events, it records whether the event falls into the "previousConsultation" or "subsequentEvent" category, or takes the value "unclear" if it is not apparent whether the event in question is prior or subsequent to the consultation. For angels, it records the angel’s name if known (currently permitted values are "Asariel", "Gabriel", "Michael", "Raphael", "Uriel", or "Unspecified" if no name is given).</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">applies only where the type value is "event" or "angel". For events, it records whether the event falls into the "previousConsultation" or "subsequentEvent" category, or takes the value "unclear" if it is not apparent whether the event in question is prior or subsequent to the consultation. For angels, it records the angel’s name if known (currently permitted values are "Aladiah", "Asariel", "Gabriel", "Michael", "Raphael", "Uriel", or "Unspecified" if no name is given).</a:documentation>
           <choice>
             <value>previousConsultation</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -11410,6 +11691,8 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>unclear</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates that it is not apparent whether the event is from a previous consultation or subsequent to the consultation.</a:documentation>
+            <value>Aladiah</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>Asariel</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>Gabriel</value>

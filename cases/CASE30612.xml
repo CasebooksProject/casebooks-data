@@ -50,7 +50,8 @@
 <person xml:id="js">
 <persName><forename>John</forename> <surname>Sprage</surname></persName>
 <sex value="1">M</sex>
-<age value="54">54</age>
+<age value="54" xml:id="age1" exclude="#age2">54</age>
+<age value="56" xml:id="age2" exclude="#age1">56</age>
 </person>
 <person xml:id="ch">
 <persName><forename>Clement</forename> <surname>Houghton</surname></persName>
@@ -81,11 +82,16 @@
 <change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-09-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-09-30">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-05">Checked against new images by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="Ashmole-193-0152.jpg" url="Ashmole-193-0152.jpg" n="74v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Spragge <rs type="address" xml:id="address1">of <lb/>Biggyn lodge in <lb/>yardly chace</rs> <lb/>9 of febr. <del type="strikethrough">1606</del> <lb/>&Monday; h. 11. 40 &antm;</p>
+<p><lb/>&IConsonant;ohn Spragge of 56 <supplied reason="binding" cert="medium">y</supplied> <lb/><rs type="address" xml:id="address1">Biggyn lodge in <lb/>yardly chace</rs> <gap extent="1" unit="words" reason="binding"/> <lb/>9 of febr. <del type="strikethrough">1606</del> 160<unclear cert="medium" reason="binding">7</unclear> <lb/>&Monday; h. 11. 40 &antm; 160<subst><del type="strikethrough">6</del> <add place="inline">7</add></subst></p>
 </div>
 <div>
 <cb xml:id="colA" n="a"/>

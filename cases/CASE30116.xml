@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30116</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="219">MS Ashmole 219, f. 111r</idno>
+&Forman004;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0111r" to="0111r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><forename>Anne</forename> <surname>Baker</surname> <surname evidence="inferred" type="married">Forman</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="b1">
+<persName><roleName>Mr</roleName> <surname>Bestow</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b2">
+<persName><surname evidence="inferred" type="married">Bestow</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="rc">
+<persName><forename>Richard</forename> <surname>Cook</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mr</roleName> <surname>Coudwell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="j">
+<persName><forename>John</forename></persName>
+<sex value="1">M</sex>
+<occupation>Boy (Servant)</occupation>
+</person>
+<person xml:id="aw">
+<persName><forename evidence="external">Anne</forename> <surname>Waller</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c1">
+<persName><roleName>Mrs</roleName> <surname>Cuer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<person xml:id="c2">
+<persName><roleName>Mr</roleName> <surname>Cuer</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="g1">
+<persName><roleName>Mr</roleName> <surname>Gudging</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="g2">
+<persName><surname evidence="inferred" type="married">Gudging</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Dominus</roleName> <surname>Fratello</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b3">
+<persName><roleName>Mrs</roleName> <surname>Blague</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="a">
+<persName><roleName>Mrs</roleName> <surname>Appleyerd</surname></persName>
+<sex value="2">F</sex>
+</person>
+
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<occupation>Curate</occupation>
+</person>
+<listRelation><relation name="wife" active="#ab" passive="#sforman" from="1599-07-22T07:00:00"/><relation name="wife" active="#b2" passive="#b1"/><relation name="servant" active="#j" passive="#sforman"/><relation name="servant" active="#anon1" passive="#aw"/><relation name="wife" active="#g2" passive="#g1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1599-07-22T07:00:00" notAfter-custom="1599-07-23T08:00:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:object ref="#ab"/>
+<cb:topic key="maritalRelations"><person sameAs="#sforman"/><person sameAs="#ab"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="Ashmole-219-0227.jpg" url="Ashmole-219-0227.jpg" n="111r"/>
+</facsimile>
+<text xml:lang="en">
+<body>
+<div>
+<p><lb/>1599. <subst><del type="strikethrough"><unclear reason="del" cert="low">ha</unclear><gap reason="del" extent="9" unit="chars"/></del> <add place="supralinear">the</add></subst> <add place="supralinear">22 &IConsonant;uli&jVowel;</add> &Sunday; &anflmfl; <lb/>at 7 at this instante <lb/>tyme I was married to <lb/>An Baker. at <placeName>lambeth</placeName> <lb/>the 22 &IConsonant;uli&jVowel;</p>
+</div>
+&astroChart;
+
+<div>
+<p><lb/>this morninge at 3 of the clocke yt <lb/>began to lighten and thunder and <lb/>did Raine exceadingly tyll half <lb/>an howare after 5. and then yt held <lb/><supplied reason="binding" cert="low">aga</supplied>yn. and I went forth p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently to <lb/><placeName>lambeth</placeName>. to be maried. ther went <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <lb/>me m<hi rend="superscript">r</hi> besto &amp; his wif. Dick coocke <lb/>m<hi rend="superscript">r</hi> coudwell. &amp; my boy &IConsonant;hon. and <lb/>my mother waller m<hi rend="superscript">rs</hi> Cuer and my <lb/>mothers man. m<hi rend="superscript">r</hi> Cuer &amp; m<hi rend="superscript">r</hi> <choice><orig>g<hi rend="overline">udng</hi></orig><reg>guding</reg></choice> <lb/><supplied reason="binding" cert="low">&amp;</supplied> his wif came After. and <foreign xml:lang="la"><choice><orig>d<hi rend="overline">no</hi></orig><reg>domino</reg></choice> <lb/><supplied reason="binding">fr</supplied>atello</foreign> ga&uConsonant;e my wif at church. &amp; <lb/>m<hi rend="superscript">rs</hi> blagu m<hi rend="superscript">rs</hi> applyerd &amp; som of the <lb/>house wente to church <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> &vVowel;s and we <lb/>wer maried &IConsonant;ust at 7 of the cloke <lb/>by the curat of Lambeth. and I <lb/>ga&uConsonant;e them 8&ssquiggle; 2<hi rend="superscript">d</hi>. Among them&slash; <lb/>and we Dined at <rs type="address" xml:id="address1">m<hi rend="superscript">rs</hi> blagues</rs> <lb/>And cam hom betwen on and <lb/>2 &pmfl;.</p>
+</div>
+</body>
+</text>
+</TEI>

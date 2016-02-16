@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30115</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="195">MS Ashmole 195, f. 220r</idno>
+&Forman003;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0220r" to="0220r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1598-12-25T07:50:00" notAfter-custom="1598-12-26T08:15:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:topic key="treatment"><person sameAs="#sforman"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="Ashmole-195-0447.jpg" url="Ashmole-195-0447.jpg" n="220r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>23 Decemb &Saturday; &anmfl; at <lb/><subst><del type="cancelled">6</del> <add place="lineEnd">7</add></subst>. I tok my potion</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

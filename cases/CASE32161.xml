@@ -54,7 +54,11 @@
 <persName><surname type="married" evidence="inferred">Spark</surname></persName>
 <sex value="2">F</sex>
 </person>
-<listRelation><relation name="wife" active="#s2" passive="#s1"/></listRelation>
+<person xml:id="s3">
+<persName><surname evidence="inferred">Spark</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="wife" active="#s2" passive="#s1"/><relation name="son" active="#s3" passive="#s1"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -64,13 +68,14 @@
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s1" evidence="internal" present="yes"/>
-<cb:subject ref="#s2" present="no"/>
-<cb:topic key="lungs"><person sameAs="#s2"/></cb:topic>
-<cb:topic key="cough"><person sameAs="#s2"/></cb:topic>
-<cb:topic key="stomach"><person sameAs="#s2"/></cb:topic>
-<cb:topic key="nonDizDisease"><person sameAs="#s2"/></cb:topic>
-<cb:topic key="belly"><person sameAs="#s2"/></cb:topic>
-<cb:topic key="swelling"><person sameAs="#s2"/></cb:topic>
+<cb:subject ref="#s2 #s3" present="no"/>
+<cb:topic key="lungs"><person sameAs="#s2"/><person sameAs="#s3"/></cb:topic>
+<cb:topic key="cough"><person sameAs="#s2"/><person sameAs="#s3"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#s2"/><person sameAs="#s3"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#s2"/><person sameAs="#s3"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#s2"/><person sameAs="#s3"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#s2"/><person sameAs="#s3"/></cb:topic>
+
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -80,11 +85,16 @@
 <change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-03-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-09-30">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-07">Checked against new images by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="Ashmole-193-0573.jpg" url="Ashmole-193-0573.jpg" n="285r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding" cert="medium">D<hi rend="superscript">r</hi></supplied> Sparke for his wife &amp; <lb/><gap reason="binding" unit="chars" extent="4"/>e sept 24 &Thursday; h. 1<choice><orig><subst><del type="over">2</del><add place="over">i</add></subst></orig><reg>1</reg></choice>. <lb/><supplied reason="binding">16</supplied>07. longes <subst><del type="over">y</del><add place="over">c</add></subst>ough ill <lb/>stomack. belly hoven.</p>
+<p><lb/><supplied reason="binding" cert="medium">D<hi rend="superscript">r</hi></supplied> Sparke for his wife &amp; <lb/>sonne sept 24 &Thursday; h. 1<choice><orig><subst><del type="over">2</del><add place="over">i</add></subst></orig><reg>1</reg></choice>. <lb/><supplied reason="binding">1</supplied>607. longes <subst><del type="over">y</del><add place="over">c</add></subst>ough ill <lb/>stomack. belly hoven.</p>
 </div>
 &astroChart;
 </body>

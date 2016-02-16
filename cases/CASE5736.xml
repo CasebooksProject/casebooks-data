@@ -60,11 +60,13 @@
 <persName><roleName>Mr</roleName> <surname>Woodward</surname></persName>
 <sex value="1">M</sex>
 </person>
-<org xml:id="men">
-<orgName>Mary Holcrafte&rsquo;s brother&rsquo;s men</orgName>
-</org>
+<personGrp xml:id="men">
+
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</personGrp>
 <listRelation>
-<relation name="brother" active="#person1" passive="#mh"/>
+<relation name="brother" active="#person1" passive="#mh"/><relation name="servant" active="#men" passive="#person1"/>
 </listRelation>
 </listPerson>
 </particDesc>
@@ -77,7 +79,7 @@
 <cb:querent ref="#mh"/>
 <cb:subject ref="#mh" present="unclear"/>
 <cb:object ref="#person1 #men #w"/>
-<cb:topic key="controversies"><org sameAs="#men"/><person sameAs="#w"/></cb:topic>
+<cb:topic key="controversies"><personGrp sameAs="#men"/><person sameAs="#w"/></cb:topic>
 <cb:judgment/>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>

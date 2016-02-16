@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE30118</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2010-07-05">05 July 2010</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="226">MS Ashmole 226, f. 33r</idno>
+&Forman002;
+</msIdentifier>
+<msContents>
+<msItem>
+
+<locus from="0033r" to="0033r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ps">
+<persName><forename>Peter</forename> <surname>Sefton</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-03-09" n="Wednesday" evidence="inferred"/></p>
+<p><time notBefore="10:20:00" notAfter="18:45:00" evidence="inferred"/></p>
+<cb:consultation type="diary">
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:object ref="#ps"/>
+<cb:topic key="legalMatters"><person sameAs="#sforman"/><person sameAs="#ps"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="Ashmole-226-0077.jpg" url="Ashmole-226-0077.jpg" n="33r"/>
+</facsimile>
+<text xml:lang="en">
+<body>
+<div>
+<head>arrest</head>
+<p><lb/>Anno 1597 the 9 march &Wednesday; <lb/>&Anmfl; at 20 &past; 10 peter sefton <lb/>Arrested me. And I arested <lb/>him p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently Againe for <lb/>a thousand pound.</p>
+</div>
+&astroChartBlank;
+</body>
+</text>
+</TEI>

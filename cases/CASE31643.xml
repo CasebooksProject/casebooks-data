@@ -49,7 +49,11 @@
 <person xml:id="rs">
 <persName><forename>Richard</forename> <surname>Spicer</surname></persName>
 <sex value="1">M</sex>
+<age value="6">6</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
 </person>
 </listPerson>
 </particDesc>
@@ -59,10 +63,11 @@
 <cb:consultation type="horary">
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#rs"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
 <cb:subject ref="#rs" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#rs"/></cb:topic>
 <cb:judgment/>
+<cb:info type="urine"/>
 <cb:treatment/>
 <cb:info type="financial"/>
 </cb:consultation>
@@ -72,11 +77,16 @@
 <change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-11">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-02-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-09-30">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-06">Checked against new images by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="Ashmole-193-0433.jpg" url="Ashmole-193-0433.jpg" n="215r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding">R</supplied>ich: Spicer <rs type="address" xml:id="address1">of Westning</rs>. <lb/><gap reason="binding" unit="chars" extent="1"/>6 y &IConsonant;une 11. &Thursday; h. 8. 15 <lb/>&antm; 1607.</p>
+<p><lb/>Rich: Spicer <rs type="address" xml:id="address1">of Westning</rs>. <lb/>6 y &IConsonant;une 11. &Thursday; h. 8. 15 <lb/>&antm; 1607.</p>
 </div>
 </body>
 </text>
