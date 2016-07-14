@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,14 +62,15 @@
 <settingDesc>
 <p><date when="1609-08-31" n="Thursday"/></p>
 <p><time when="07:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#anon" evidence="inferred" present="yes"/>
+<cb:item type="urine"/>
 <cb:subject ref="#h" present="no" consent="yes"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#h"/></cb:topic>
 <cb:judgment/>
-<cb:item type="urine"/>
 <cb:info type="urine"/>
 </cb:consultation>
 </settingDesc>
@@ -75,11 +79,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0308.jpg" url="clm0308.jpg" n="144v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Hawkins <rs type="address" xml:id="address1">of <supplied reason="binding" cert="high">london</supplied></rs> <lb/>Aug. 31. <choice><orig><subst><del type="over"><gap extent="1" reason="del" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 7 <supplied reason="binding" cert="medium">15</supplied> <choice><orig><supplied reason="binding" cert="medium">ant</supplied> <lb/>m</orig><reg>am</reg></choice>. 1609 his water <lb/>by his consent.</p>
+<p><lb/>M<hi rend="superscript">r</hi> Hawkins <rs type="address" xml:id="address1">of lond<supplied reason="binding" cert="high">on</supplied></rs> <lb/>Aug. 31. <choice><orig><subst><del type="over"><gap extent="1" reason="del" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 7 <supplied reason="binding" cert="medium">15</supplied> <choice><orig>a<supplied reason="binding" cert="medium">nt</supplied> <lb/>m</orig><reg>am</reg></choice>. 1609 his water brou<supplied reason="binding">ght</supplied> <lb/>by his consent.</p>
 </div>
 &astroChart;
 </body>

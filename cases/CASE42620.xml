@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE42620</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 141v/Q3, f. 142r/Q1, f. 142r/Q4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, ff. 141v-142r</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0141v" to="0142r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mm">
+<persName><roleName>Lady</roleName> <forename>Mary</forename> <surname>Morrison</surname></persName>
+<sex value="2">F</sex>
+<age value="25">25</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h" evidence="internal">
+<persName><roleName>Mrs</roleName> <surname>Honour</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>    
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<occupation>Waiting gentlewoman</occupation>
+</person>
+<listRelation>
+<relation name="servant" active="#h" passive="#mm" evidence="internal"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-11-04" n="Saturday"/></p>
+<p><time when="10:50:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h" evidence="internal" present="no"/>
+<cb:subject ref="#mm" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="requestingTreatment" evidence="internal"><person sameAs="#mm"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-09-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0296.jpg" url="ciz0296.jpg" n="141v"/>
+<graphic xml:id="ciz0297.jpg" url="ciz0297.jpg" n="142r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>My lady <add place="supralinear">marye</add> moryson 25 y <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 4. hor 10. 50 &antm; <lb/>1615 <add place="inline"><rs type="address" xml:id="address1">of Wardon Abby</rs></add></p>
+</div>
+&astroChart;
+<pb xml:id="f142r" n="142r" facs="#ciz0297.jpg"/>
+
+</body>
+</text>
+</TEI>

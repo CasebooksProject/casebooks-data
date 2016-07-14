@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37335</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-31">31 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="334">MS Ashmole 334, f. 6r</idno>
+&Napier019;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0006r" to="0006r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><surname>Stocker</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mr</roleName> <surname>Cutler</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="kinsman" active="#rnapier" passive="#s"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-03-29" n="Thursday"/></p>
+<p><time when="07:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="practitionerVisitsQuerent" ref="#address1"/>
+<cb:querent ref="#s" evidence="internal" present="yes"/>
+<cb:subject ref="#c" present="yes"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#c"/></cb:topic>
+
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:info type="event" subtype="unclear"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-31">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-31">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abh0031.jpg" url="abh0031.jpg" n="6r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my Cosen Stocker intreated me to <lb/>goe to <rs type="address" xml:id="address1" next="#address2">M<hi rend="superscript">r</hi> Cutlers house</rs> to see <lb/>him being extreme sicke &amp; I came <lb/>thith<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <rs type="address" xml:id="address2" prev="#address1">in london</rs> march 29. &Thursday; h. <lb/>7. 40. &antm; 16<choice><orig>i</orig><reg>1</reg></choice>0 &amp; his pulse was good</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

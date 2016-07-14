@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -73,7 +76,7 @@
 <settingDesc>
 <p><date when="1608-08-14" n="Sunday"/></p>
 <p><time when="19:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s1" evidence="internal" present="unclear"/>
@@ -88,15 +91,21 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0051.jpg" url="abi0051.jpg" n="19r"/>
+<graphic xml:id="abi0050.jpg" url="abi0050.jpg" n="18v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>&IConsonant;udith Sta<choice><orig>&crossedp;</orig><reg>per</reg></choice> <rs type="address" xml:id="address1">london</rs> 17 <lb/>y Aug 14 &Sunday; h. 7. 15 <lb/>p m 1608 <foreign xml:lang="la"><add place="interlinear">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>evadet <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice>.</add> <add place="interlinear">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu <lb/>maritus <choice><orig>&crossedp;</orig><reg>pro</reg></choice> &vVowel;xore sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</add></foreign></p>
 </div>
 &astroChart;
 <div>
-<pb xml:id="f18v" n="18v"/>
+<pb xml:id="f18v" n="18v" facs="#abi0050.jpg"/>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> &IConsonant;udith Sta<choice><orig>&crossedp;</orig><reg>per</reg></choice>s <lb/><rs type="address" sameAs="#address1">of london</rs> 17 y Aug <lb/>14. &Sunday; h. 7. 15 p m <lb/>1608.</p>
 </div>
 </body>

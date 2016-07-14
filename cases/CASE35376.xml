@@ -41,6 +41,9 @@
 <language ident="la">Latin</language>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -55,7 +58,7 @@
 <settingDesc>
 <p><date when="1609-03-17" n="Friday"/></p>
 <p><time when="18:39:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="internal"/>
@@ -70,14 +73,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0218.jpg" url="abj0218.jpg" n="100v"/>
+<graphic xml:id="abj0219.jpg" url="abj0219.jpg" n="101r"/>
+</facsimile>
 <text xml:lang="la">
 <body><div>
 <p><lb/>qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> p<choice><orig>&loopedr;</orig><reg>re</reg></choice>stet ire ad <lb/>dom<choice><orig>&uover;</orig><reg>um</reg></choice> oblat<choice><orig>&aover;</orig><reg>am</reg></choice>. <foreign xml:lang="en">march 17 <lb/>&Friday;. h. 6. 39. p m 1609.</foreign></p>
 </div>
 &astroChart;
-<pb xml:id="f101r" n="101r"/>
+<pb xml:id="f101r" n="101r" facs="#abj0219.jpg"/>
 </body>
 </text>
 </TEI>

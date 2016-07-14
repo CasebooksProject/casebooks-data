@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1609-03-11" n="Saturday"/></p>
 <p><time when="09:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#k"/>
@@ -72,15 +75,21 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0157.jpg" url="abj0157.jpg" n="70r"/>
+<graphic xml:id="abj0156.jpg" url="abj0156.jpg" n="69v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Goody Gilpyn <rs type="address" xml:id="address1">of luton</rs> <lb/>48 y march. 11. &Saturday; hor 9. <lb/>&antm;. 1609</p>
 </div>
 &astroChartPartial;
 
-<div><pb xml:id="f69v" n="69v"/>
+<div><pb xml:id="f69v" n="69v" facs="#abj0156.jpg"/>
 <p><lb/>goody Gillpyn 50 y <lb/>march 11. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 9 <add place="infralinear">30.</add> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1609</p>
 </div>
 &astroChart;

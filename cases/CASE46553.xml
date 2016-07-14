@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE46553</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-11">11 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="201">MS Ashmole 201, f. 85v</idno>
+&Napier028;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0085v" to="0085v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="te">
+<persName><forename>Thomas</forename> <surname>Ellis</surname></persName>
+<sex value="1">M</sex>
+<age value="12">12</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1606-01-19" xml:id="date1" exclude="#date2" evidence="extrapolated"/>
+<date when="1607-01-19" xml:id="date2" exclude="#date1" evidence="extrapolated"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-05-05" n="Tuesday"/></p>
+<p><time when="10:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#te"/>
+<cb:subject ref="#te" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#te"/></cb:topic>
+<cb:topic key="ague"><person sameAs="#te"/></cb:topic>
+<cb:topic key="bedridden"><person sameAs="#te"/></cb:topic>
+<cb:topic key="head"><person sameAs="#te"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#te"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#te"/></cb:topic>
+<cb:topic key="purples"><person sameAs="#te"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-01">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckx0194.jpg" url="ckx0194.jpg" n="85v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Thomas Ellys <rs type="address" xml:id="address1">of Hanslop</rs> 12 y <lb/>a fortnight before candlemas <lb/>last may 5 &Tuesday; h. 10. 20 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1618 sick of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> ague satt <lb/>was senet <del type="strikethrough">now</del> &amp; kept his bed <lb/>most <choice><orig>&crossedp;</orig><reg>par</reg></choice>t of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> weeke. hed was <lb/>ill. &amp; belly. &amp; last night the <lb/>purples came out.</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE50422</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 148r/Q4A, f. 148v/Q1A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 148r-v</idno>
+&Napier031;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0148r" to="0148v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mj">
+<persName><roleName>Mr</roleName> <forename>Michael</forename> <surname>Jarman</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>    
+</person>
+<person xml:id="r">
+<persName><roleName>Sir</roleName> <forename>Robert</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Duke of Lennox</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person2">
+<persName><roleName>Archbishop of Canterbury</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person3">
+<persName><roleName>Queen of Bohemia</roleName></persName> 
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="chaplainPastoral" active="#mj" passive="#person1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-03-23" n="Thursday" evidence="inferred"/></p>
+<p><time notBefore="07:00:00" notAfter="08:30:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#mj" present="no"/>
+<cb:topic key="preferment"><person sameAs="#mj"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-01-27">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-27">Rechecked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0313.jpg" url="cmn0313.jpg" n="148r"/>
+<graphic xml:id="cmn0314.jpg" url="cmn0314.jpg" n="148v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> &IConsonant;ermyn of <placeName>Oxford</placeName> <lb/>sent me word <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/>Rob &vVowel;sed him kindly <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice>
+the Dukes grace <lb/>admitted him to be <lb/>his chaplayne &amp; after <lb/>it the Archbishop<del type="strikethrough">s</del> <lb/>intreated him to become <lb/>the Queene of <placeName>Bohemia</placeName>s <lb/>chaplayne <choice><sic>mach</sic><corr>march</corr></choice> 23. <lb/>&Thursday; h. 7. &antm; 1620</p>
+<pb xml:id="f148v" n="148v" facs="#cmn0314.jpg"/>
+<p><lb/><handShift new="#rwallis"/>M<hi rend="superscript">r</hi> Michaell &IConsonant;ermyne <rs type="address" xml:id="address1">of Corpus <lb/><choice><orig>Xti</orig><reg>Christi</reg></choice></rs>: <choice><orig>d. &JupiterSymbol;</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 7. <choice><orig>ant: m</orig><reg>am</reg></choice>: <foreign xml:lang="la">Marti&jVowel;</foreign>. 23. 1620. <lb/>made the Duke of <placeName>Lennox</placeName> his Chaplaine <lb/>&amp; afterward entreated by the Archbyshop of <lb/><placeName>Canterb</placeName>: to be Chaplan to the Queene of <lb/><placeName>Bohemia</placeName></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

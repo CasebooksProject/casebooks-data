@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE45627</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="220">MS Ashmole 220, f. 95v</idno>
+&Napier027;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0095v" to="0095v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rh">
+<persName><forename>Rebecca</forename> <surname>Harley</surname></persName>
+<sex value="2">F</sex>
+<age value="32">32</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="2" evidence="internal">F</sex>
+<occupation>Midwife</occupation>
+</person>
+<person xml:id="h1">
+<persName><surname evidence="inferred" cert="medium">Harley</surname></persName>
+<sex value="0">U</sex>
+<death><date notAfter="1617-09-19"/></death>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" cert="medium">Harley</surname></persName>
+<sex value="0">U</sex>
+<death><date notAfter="1616-12-19"/></death>
+</person>
+<person xml:id="h3">
+<persName><surname evidence="inferred" cert="medium">Harley</surname></persName>
+<sex value="0">U</sex>
+<death><date notAfter="1616-03-19"/></death>
+</person>
+<listRelation><relation name="midwife" active="#anon" passive="#rh"/><relation name="mother" active="#rh" passive="#h1 #h2 #h3"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-10-20" n="Monday"/></p>
+<p><time when="11:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rh"/>
+<cb:subject ref="#rh" present="unclear"/>
+<cb:object ref="#anon"/>
+<cb:topic key="childbirth"><person sameAs="#rh"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-10-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aae0210.jpg" url="aae0210.jpg" n="95v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Rebecca Harley <rs type="address" xml:id="address1">of Clapp<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/>not sick. <del type="strikethrough"><gap reason="del" unit="chars" extent="1"/></del> 32 y octob. 20 &Monday; <lb/>h. 11. 15 &antm; 1617</p>
+<p>hath had 3 child but when <lb/>she cometh to be brought a bed <lb/><del type="strikethrough">the live</del> her labour ceaseth <lb/>&amp; she is so overcome <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> water <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> all her child how lively <lb/>soever dye in the delivery</p>
+<p><lb/>now is <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child neav<choice><orig>&loopedr;</orig><reg>er</reg></choice> more healthy</p>
+<p>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> she were best to leave her old <lb/>mydwife though a paynfull &amp; a laborious <lb/>wom<choice><orig>&aover;</orig><reg>an</reg></choice>. because of her ill lucke</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

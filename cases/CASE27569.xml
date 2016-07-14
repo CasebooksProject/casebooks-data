@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1606-06-16" n="Monday"/></p>
 <p><time when="09:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ar"/>
@@ -72,13 +75,19 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-05-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0378.jpg" url="cmp0378.jpg" n="179v"/>
+<graphic xml:id="cmp0379.jpg" url="cmp0379.jpg" n="180r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Agnys Raunse <rs type="address" xml:id="address1">of <lb/>Newp</rs> 35 y &IConsonant;une <supplied reason="binding">16</supplied> <lb/>&Monday; h. 9. &antm; 1<supplied reason="binding">606</supplied></p>
 </div>
-<div><pb xml:id="f180r" n="180r"/>
+<div><pb xml:id="f180r" n="180r" facs="#cmp0379.jpg"/>
 <p><lb/>Agnys Raunse <lb/><rs type="address" sameAs="#address1">of Newporte</rs></p>
 </div>
 &astroChart;

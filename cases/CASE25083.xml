@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25083</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 76v</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0076v" to="0076v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Blower</surname></persName>
+<sex value="1">M</sex>
+<age value="52">52</age>
+<occupation>Vicar</occupation>
+<death><date notBefore-custom="1610-06-24T18:00:00" notAfter-custom="1610-06-25T11:59:00" evidence="internal"/></death>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-06-24" n="Sunday"/></p>
+<p><time when="07:30:00" xml:id="time1" exclude="#time2"/></p>
+<p><time when="07:50:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b"/>
+<cb:subject ref="#b" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#b"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-16">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-11-26">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-01">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0172.jpg" url="afp0172.jpg" n="76v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Blower vickar of <placeName>Dodington</placeName> <lb/>52 y &IConsonant;une 24. &Sunday; h. 7. 45. p m <lb/>1610.</p>
+
+<p><lb/>M<hi rend="superscript">r</hi> Blower vicar of <placeName>dodington</placeName> <lb/>52 y &IConsonant;une <del type="cancelled">2<gap reason="del" extent="1" unit="chars"/></del> 24. &Sunday; h. 7. 50 <add place="supralinear">30</add> p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0<note place="infralinear"><foreign xml:lang="la">vide</foreign> &IConsonant;une 22.</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

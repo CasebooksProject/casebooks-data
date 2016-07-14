@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -66,7 +69,7 @@
 <settingDesc>
 <p><date when="1606-03-20" n="Thursday"/></p>
 <p><time when="12:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ap"/>
@@ -84,14 +87,20 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-03-19">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-04-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0163.jpg" url="cmp0163.jpg" n="72r"/>
+<graphic xml:id="cmp0164.jpg" url="cmp0164.jpg" n="72v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Alce Pearce of <placeName>Crouly</placeName> <lb/>my m<choice><orig>&aover;</orig><reg>an</reg></choice>s kinswom<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>30 y march. 20 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 12 <lb/>1606.</p>
 </div>
 
-<div><pb xml:id="f72v" n="72v"/>
+<div><pb xml:id="f72v" n="72v" facs="#cmp0164.jpg"/>
 <p><lb/>Alce pearce of <placeName>Crowly</placeName> now <lb/><rs type="address" xml:id="address1">of yardly</rs> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <lb/>&vVowel;nc<subst><del type="over">k</del><add place="over">le</add></subst> 30 y a mayden <lb/>march. 20 &Thursday; h. 1<subst><del type="over">1</del><add place="over">2</add></subst>. <lb/>1606</p>
 </div>
 &astroChart;

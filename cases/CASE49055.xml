@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49055</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 57r</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0057r" to="0057r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ed">
+<persName><forename>Ellen</forename> <surname>Dix</surname></persName>
+<sex value="2">F</sex>
+<age value="37">37</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+
+<person xml:id="id" evidence="internal">
+<persName><forename evidence="external">Isaac</forename> <surname evidence="external">Dix</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1618-04-10" n="Friday"/><time when="14:30:00"/></birth>
+<death><date when="1618-04-19" evidence="inferred"/></death>
+</person>
+<person xml:id="d" evidence="internal">
+<persName><surname evidence="inferred" cert="high" type="maiden">Dix</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1617-03-17" n="Monday" evidence="extrapolated"/><time notBefore="04:26:00" notAfter="06:26:00" precision="low"/></birth>
+<event type="christening"><p>Christened <date evidence="extrapolated" notBefore="1617-03-17" notAfter="1617-03-23">between 17 and 23 March 1617</date></p></event>
+<death><date when="1617-03-23" n="Sunday" evidence="extrapolated"/></death>
+</person>
+<listRelation><relation name="mother" active="#ed" passive="#id #d" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-06-22" n="Tuesday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ed"/>
+<cb:subject ref="#ed" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ed"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-20">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0133.jpg" url="abd0133.jpg" n="57r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Ellen Dickes <rs type="address" xml:id="address1">of Westning</rs>. 37 y &IConsonant;une 22 &Tuesday; h 11. &antm; <lb/>1619.</p>
+</div>
+&astroChart;
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>Ellen Dickes <rs type="address" sameAs="#address1">of Westning</rs> <lb/>37 y &IConsonant;une 22 &Tuesday; h. <lb/>11. &antm;. 1619</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1603-05-20" n="Friday"/></p>
 <p><time when="07:30:00"/></p>
-<cb:consultation type="interrogation">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="internal" present="yes"/>
@@ -72,8 +75,14 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-10-04">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-10-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cjk0079.jpg" url="cjk0079.jpg" n="31r"/>
+<graphic xml:id="cjk0078.jpg" url="cjk0078.jpg" n="30v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Smith <rs type="address" xml:id="address1">of Milton</rs> <lb/>sent me her water <add place="infralinear">according as I wished her</add> <lb/>Mai&jVowel; 20. &Friday; hor. <subst><del type="strikethrough">6. 40</del> <add place="supralinear">7. 30</add></subst> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1603. <foreign xml:lang="la">n<choice><orig>&oover;</orig><reg>on</reg></choice> illa sed ego <lb/>qu&aelig;ro an sit gravida <lb/><choice><sic><gap reason="hand" extent="2" unit="chars"/></sic><corr type="noText"/></choice></foreign></p>
@@ -83,7 +92,7 @@
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Smith <rs type="address" sameAs="#address1">of milton</rs>. <lb/>Mai&jVowel; 20 &Friday; h. 7. 30 &antm; <choice><sic>1604</sic><corr>1603</corr></choice></p>
 </div>
 &astroChart;
-<div><pb xml:id="f30v" n="30v"/>
+<div><pb xml:id="f30v" n="30v" facs="#cjk0078.jpg"/>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Smyth <rs type="address" sameAs="#address1">of Milton</rs> <lb/><foreign xml:lang="la">An sit gravida</foreign></p>
 </div>
 </body>

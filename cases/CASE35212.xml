@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,7 +62,7 @@
 <settingDesc>
 <p><date when="1609-02-20" n="Monday"/></p>
 <p><time when="15:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon1" evidence="internal"/>
@@ -74,14 +77,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-11">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0123.jpg" url="abi0123.jpg" n="55r"/>
+<graphic xml:id="abi0122.jpg" url="abi0122.jpg" n="54v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>A gentlewom<choice><orig>&aover;</orig><reg>an</reg></choice> <foreign xml:lang="la">qu&aelig;rit</foreign> <lb/>feb. 20 &Monday; h. 3. p m 1609 <lb/><foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> she should mary on <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> seemed to affect her</p>
 </div>
 &astroChart;
-<pb xml:id="f54v" n="54v"/>
+<pb xml:id="f54v" n="54v" facs="#abi0122.jpg"/>
 </body>
 </text>
 </TEI>

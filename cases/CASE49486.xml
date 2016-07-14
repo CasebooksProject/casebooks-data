@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49486</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<notesStmt><note resp="#rralley" type="editorial">Goody Barcock&rsquo;s and Sara Wild&rsquo;s role in this consultation is unclear.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 148v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0148v" to="0148v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="js">
+<persName><forename>John</forename> <surname>Scarcroffe</surname></persName>
+<sex value="1">M</sex>
+<age value="50">50</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="s">
+<persName><surname type="married" evidence="inferred">Scarcroffe</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="jb" evidence="internal">
+<persName><forename>Joan</forename> <surname>Brace</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="b1" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Brace</surname></persName>
+<sex value="1">M</sex>
+<occupation>Farmer</occupation>
+</person>
+<person xml:id="rw" evidence="internal">
+<persName><forename>Robert</forename> <surname>Wild</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sw" evidence="internal">
+<persName><forename>Sara</forename> <surname evidence="inferred" type="married">Wild</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="b2" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Barcock</surname></persName>
+<sex value="2">F</sex>
+<residence key="databaseNormalizedIDKey">of yeelden</residence>
+<occupation>Wise woman</occupation>
+</person>
+<listRelation>
+<relation name="wife" active="#s" passive="#js"/>
+<relation name="wife" active="#jb" passive="#b1" evidence="internal"/>
+<relation name="wife" active="#sw" passive="#rw" evidence="internal"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-08-10" n="Tuesday"/></p>
+<p><time when="16:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#js #s"/>
+<cb:subject ref="#js" present="yes"/>
+<cb:subject ref="#s" present="unclear"/>
+<cb:object ref="#jb"/>
+<cb:topic key="lameness"><person sameAs="#s"/></cb:topic>
+<cb:topic key="huckbone"><person sameAs="#s"/></cb:topic>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#js"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#js"/><person sameAs="#jb"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-06">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0316.jpg" url="abd0316.jpg" n="148v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn <choice><sic>Scoc<add place="supralinear">r</add><unclear cert="low" reason="hand">ou</unclear>ft</sic><corr type="delText"/></choice> <add place="supralinear">Scocraft.</add> <rs type="address" xml:id="address1">of <lb/><choice><sic>of</sic><corr type="noText"/></choice> Ravensdon in <lb/>bedfordsheere</rs> 50 y <lb/><del type="strikethrough">Iuly</del> Aug 10 &Tuesday; h. <lb/>4. 40. p m. 1619. <add place="infralinear">was p<choice><orig>&loopedr;</orig><reg>re</reg></choice>sent</add> <add place="infralinear">his wife lame &amp; <lb/>her hucklebone <unclear cert="medium" reason="hand">out.</unclear></add></p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

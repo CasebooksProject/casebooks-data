@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,9 +50,9 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="dl">
-<persName><forename>Dorothy</forename> <surname>Li<gap extent="unclear" reason="binding"/></surname></persName>
+<persName><forename>Dorothy</forename> <surname>Kirckum</surname></persName>
 <sex value="2">F</sex>
-
+<age value="24">24</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 <occupation>Servant</occupation>
 </person>
@@ -57,8 +60,8 @@
 </particDesc>
 <settingDesc>
 <p><date when="1608-04-14" n="Thursday"/></p>
-<p><time notBefore="15:00:00" notAfter="15:59:00"/></p>
-<cb:consultation type="horary">
+<p><time when="15:15:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#dl"/>
@@ -74,11 +77,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-22">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0212.jpg" url="aap0212.jpg" n="104v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Dorothy li<gap extent="3" reason="binding" unit="chars"/> <lb/><rs type="address" xml:id="address1">of hanslop</rs> <gap extent="2" reason="binding" unit="chars"/> <lb/>y a serv <supplied reason="binding">Apr</supplied> <lb/>14 &Thursday; h. 3 <gap reason="binding" extent="2" unit="chars"/> <supplied reason="binding">p</supplied> <lb/>m 1608</p>
+<p><lb/>Dorothy kirck<unclear cert="medium" reason="hand"><choice><orig>&uover;</orig><reg>um</reg></choice></unclear> <lb/><rs type="address" xml:id="address1">of hanslop</rs> 24 <lb/>y a serv. Apr <lb/>14 &Thursday; h. 3. 15 p <lb/>m 1608</p>
 </div>
 </body>
 </text>

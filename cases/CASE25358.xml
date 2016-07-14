@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25358</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 120v</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0120v" to="0120v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="lh">
+<persName><forename>Leonard</forename> <surname>Hall</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="wm" evidence="internal">
+<persName><forename>William</forename> <surname>Martin</surname></persName>
+<sex value="1">M</sex>
+<residence key="databaseNormalizedIDKey">of Eaton</residence>
+</person>
+<person xml:id="h" evidence="internal">
+<persName><surname evidence="inferred" type="maiden" cert="high">Hall</surname> <surname evidence="inferred" type="married">Martin</surname></persName>
+<sex value="2">F</sex>
+<residence key="databaseNormalizedIDKey" evidence="inferred">of Eaton</residence>
+</person>
+<listRelation><relation name="brother-in-law" mutual="#lh #wm" evidence="internal"/><relation name="sister" active="#h" passive="#lh" evidence="internal"/><relation name="wife" active="#h" passive="#wm" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-08-19" n="Sunday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#lh"/>
+<cb:subject ref="#lh" present="unclear"/>
+<cb:object ref="#wm"/>
+<cb:topic key="lossAndTheft" evidence="internal"><person sameAs="#lh"/><person sameAs="#wm"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-21">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-07-07">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0260.jpg" url="afp0260.jpg" n="120v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><subst><del type="strikethrough">Willi&aover; Martyn</del> <add place="supralinear"><choice><sic>leonard Hale</sic><corr type="delText"/></choice></add></subst> <choice><sic>of Eaton. <lb/>by f&aelig;nystratford</sic><corr type="delText"/></choice></p>
+<p><lb/>Leonard Hale <rs type="address" xml:id="address1">of lowton</rs> <lb/>Aug. 19. &Sunday; h. 2. p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

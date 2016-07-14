@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47346</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE47345">CASE47345</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 5r</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0005r" to="0005r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rs">
+<persName><forename>Richard</forename> <surname>Sanders</surname></persName>
+<sex value="1">M</sex>
+<age value="20">20</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-08-22" n="Saturday" evidence="external"/></p>
+<p><time when="14:00:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rs"/>
+<cb:subject ref="#rs" present="unclear"/>
+<cb:topic key="strangeAfflictionPassions"><person sameAs="#rs"/></cb:topic>
+<cb:topic key="laughing"><person sameAs="#rs"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-11-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0017.jpg" url="aau0017.jpg" n="5r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Rich Sanders <rs type="address" xml:id="address1">of <del type="strikethrough">Han</del> <lb/>Shenly</rs> 20 y Aug. 21 <lb/>&Friday; h. 9. 30 p m 1618 <lb/><del type="strikethrough">taken</del> falled into a <lb/>sudden strang laughing <lb/>did nothing but laugh&pluralLoop;</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

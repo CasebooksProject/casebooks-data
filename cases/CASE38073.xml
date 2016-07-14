@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE38073</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 90v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0090v" to="0090v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Alice</forename> <surname>Hills</surname></persName>
+<sex value="2">F</sex>
+<age value="14">14</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Hills</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="ep" evidence="internal">
+<persName><forename>Ellen</forename> <surname>Parrot</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="daughter" active="#ah" passive="#h"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-05-08" n="Wednesday"/></p>
+<p><time when="14:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h" evidence="internal" present="unclear"/>
+<cb:subject ref="#ah" present="no" consent="no"/>
+<cb:object ref="#ep"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#ep"/></cb:topic>
+<cb:judgment/>
+<cb:info type="angel" subtype="Raphael"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-19">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0200.jpg" url="ckk0200.jpg" n="90v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Alce Hils <rs type="address" xml:id="address1">of Thorlye</rs>. 14. y <lb/>May 8 &Wednesday; h. 2. 45 p m 1611 <add place="infralinear"><foreign xml:lang="la">parens sine consensu.</foreign></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

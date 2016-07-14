@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE43690</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-25">25 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="408">MS Ashmole 408, f. 141v</idno>
+&Napier025;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0141v" to="0141v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><roleName>Mr</roleName> <surname>Lane</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="r">
+<persName><roleName>Sir</roleName> <forename>Robert</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Duke</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="g">
+<persName><roleName>Dr</roleName> <surname>G<gap extent="2" unit="chars" reason="binding"/>d<unclear cert="low" reason="hand">nar</unclear></surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1616-07-21T09:15:00" notAfter-custom="1616-07-22T07:25:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#l #r"/>
+<cb:topic key="visits"><person sameAs="#l"/><person sameAs="#r"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-03">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-11-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-05-12">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abo0304.jpg" url="abo0304.jpg" n="141v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> lane went to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/>Robart &IConsonant;uly 20 h. 9. 20 <lb/>&antm; 16<choice><orig>i</orig><reg>1</reg></choice>6</p>
+</div>
+&astroChart;
+<div>
+<p><lb/>the Duke was on <choice><sic>going</sic><corr type="delText"/></choice> <add place="supralinear">De<choice><orig>&crossedp;</orig><reg>par</reg></choice>ting</add> at his <lb/>coming.</p>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob. willed him to come on <lb/>monday &amp; he cam to me <choice><sic>an</sic><corr>on</corr></choice> sonday telling me <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> Doctor <unclear cert="medium" reason="binding">G</unclear><gap extent="unclear" reason="binding" cert="medium"/><lb/>d<gap extent="1" unit="chars" reason="hand"/><unclear cert="low" reason="hand">nar</unclear> <rs type="address" xml:id="address1">of christ church</rs> had the guift <choice><orig><choice><sic>g<unclear cert="low" reason="hand">&aover;</unclear>ted</sic><corr cert="medium">gr&aover;ted</corr></choice></orig><reg cert="medium">granted</reg></choice> of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> king</p>
+</div>
+</body>
+</text>
+</TEI>

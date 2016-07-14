@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1605-04-22" n="Monday"/></p>
 <p><time when="11:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#nf"/>
@@ -72,13 +75,19 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-11-06">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-11-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0128.jpg" url="aag0128.jpg" n="58v"/>
+<graphic xml:id="aag0129.jpg" url="aag0129.jpg" n="59r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Nicholas Phyps <lb/><rs type="address" xml:id="address1">of dollington</rs> 2<subst><del type="over">5</del><add place="over">3</add></subst> y <lb/>a batch. Apr 22 &Monday; <lb/>h. 11. 25 <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> 1605</p>
 </div>
-<pb xml:id="f59r" n="59r"/>
+<pb xml:id="f59r" n="59r" facs="#aag0129.jpg"/>
 </body>
 </text>
 </TEI>

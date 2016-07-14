@@ -40,14 +40,17 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="b">
-<persName><roleName>Goodman</roleName> <surname>Bredicke</surname></persName>
+<person xml:id="g">
+<persName><roleName>Goodman</roleName> <surname>Grimsdicke</surname></persName>
 <sex value="1">M</sex>
 <age value="60">60</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,12 +60,12 @@
 <settingDesc>
 <p><date when="1605-05-04" n="Saturday"/></p>
 <p><time when="08:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#b"/>
-<cb:subject ref="#b" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#b"/></cb:topic>
+<cb:querent ref="#g"/>
+<cb:subject ref="#g" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#g"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 </cb:consultation>
@@ -72,11 +75,15 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-11-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-11-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0169.jpg" url="aag0169.jpg" n="80r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goodm<choice><orig>&aover;</orig><reg>an</reg></choice> Bredicke <rs type="address" xml:id="address1">of <lb/>Paulus<choice><orig>&crossedp;</orig><reg>per</reg></choice>ry</rs> 60 y <del type="strikethrough">Ap</del> <lb/>mai&jVowel; 4 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 8 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1605.</p>
+<p><lb/>Goodm<choice><orig>&aover;</orig><reg>an</reg></choice> <subst><del type="over">B</del><add place="over">G</add></subst>r<unclear cert="low" reason="hand">e</unclear>dicke <rs type="address" xml:id="address1">of <lb/>Paulus<choice><orig>&crossedp;</orig><reg>per</reg></choice>ry</rs> 60 y <del type="strikethrough">Ap</del> <lb/>mai&jVowel; 4 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 8 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1605.</p>
 </div>
 </body>
 </text>

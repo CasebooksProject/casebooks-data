@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49857</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 38v/Q1, f. 171v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, ff. 38v, 171v</idno>
+&Napier031;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0038v" to="0038v"/>
+<locus from="0071v" to="0071v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ld">
+<persName><roleName>Mr</roleName> <forename>Lawrence</forename> <surname>Duterme</surname></persName>
+<sex value="1">M</sex>
+<age value="26">26</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Schoolmaster</occupation>
+<trait type="regionalIdentity"><desc>Frenchman</desc></trait>
+</person>
+<person xml:id="hl">
+<persName><roleName>Sir</roleName> <forename evidence="external" cert="medium">Henry</forename> <surname evidence="external" cert="medium">Longueville</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><surname evidence="inferred" cert="medium">Longueville</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation>
+<relation name="father" active="#hl" passive="#l"/>
+<relation name="schoolmasterEducator" active="#ld" passive="#l"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-04-13" n="Thursday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ld"/>
+<cb:subject ref="#ld" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ld"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-19">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-01-27">CASE49857 (213-f0038v-1) and CASE50559 (213-f0171v-1) merged by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-27">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-01-27">Rechecked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0094.jpg" url="cmn0094.jpg" n="38v"/>
+<graphic xml:id="cmn0360.jpg" url="cmn0360.jpg" n="171v"/>
+<graphic xml:id="cmn0160.jpg" url="cmn0160.jpg" n="71v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Duterme <rs type="address" xml:id="address1">of Woulv<choice><orig>&loopedr;</orig><reg>er</reg></choice>ton</rs> <lb/>Ap. 13 &Thursday; h. 10 30 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1620</p>
+<pb xml:id="f171v" n="171v" facs="#cmn0360.jpg"/>
+<p><lb/>M<hi rend="superscript">r</hi>r Lawrenc Duterme <rs type="address" sameAs="#address1">of <lb/>Woulverton</rs> 26 y Ap. 13 <lb/>&Thursday; h. 10. 30 &antm; <lb/>1620 <add place="infralinear">a frenchm<choice><orig>&aover;</orig><reg>an</reg></choice> scholemaster <lb/>to S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> H. long child</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

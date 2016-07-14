@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,7 +62,7 @@
 <settingDesc>
 <p><date when="1609-11-29" n="Wednesday"/></p>
 <p><time when="16:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner" ref="#place1"/>
@@ -74,14 +77,20 @@
 <change when="2014-07-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abg0051.jpg" url="abg0051.jpg" n="16r"/>
+<graphic xml:id="abg0050.jpg" url="abg0050.jpg" n="15v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>on came <add place="supralinear">to <placeName xml:id="place1">lambeth</placeName>.</add> touching the <lb/>disease of his <add place="supralinear">old</add> fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>being very old. nov<choice><orig>&eover;</orig><reg>em</reg></choice>b <lb/>29. &Wednesday; h. 4. p m 1609</p>
 </div>
 &astroChart;
-<pb xml:id="f15v" n="15v"/>
+<pb xml:id="f15v" n="15v" facs="#abg0050.jpg"/>
 </body>
 </text>
 </TEI>

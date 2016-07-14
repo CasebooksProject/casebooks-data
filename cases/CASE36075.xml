@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,8 +50,9 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="j">
-<persName><surname>Jennings</surname></persName>
-<sex value="2" evidence="internal">F</sex>
+<persName><forename>Anne</forename> <surname>Jennings</surname></persName>
+<age value="47">47</age>
+<sex value="2">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -56,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-06-29" n="Thursday"/></p>
 <p><time when="15:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#j"/>
@@ -71,11 +75,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0190.jpg" url="clm0190.jpg" n="85v"/>
+</facsimile>
 <text xml:lang="en">
-<body><div> 
-<p><lb/><gap extent="3" unit="chars" reason="copy"/> Gennyngs <rs type="address" xml:id="address1">of Stony stratford</rs> <lb/><gap extent="2" unit="chars" reason="copy"/> y &IConsonant;une 29. &Thursday; h. 3. 45 p <lb/>m 1609</p>
+<body><div>
+<p><lb/>An Gennyngs <rs type="address" xml:id="address1">of Stony stratford</rs> <lb/>47 y &IConsonant;une 29. &Thursday; h. 3. 45 <subst><del type="over">a</del><add place="over">p</add></subst> <lb/>m. 1609</p>
 </div>&astroChart;
 </body>
 </text>

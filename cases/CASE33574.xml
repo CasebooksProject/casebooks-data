@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,12 +50,12 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="t1">
-<persName><forename><gap reason="binding" extent="3" unit="chars"/>e</forename> <surname type="married">Taylor</surname></persName>
+<persName><forename>Joan</forename> <surname type="married">Taylor</surname></persName>
 <sex value="2">F</sex>
 <age value="48">48</age>
 </person>
 <person xml:id="t2">
-<persName><surname evidence="external">Taylor</surname></persName>
+<persName><forename>John</forename> <surname evidence="external">Taylor</surname></persName>
 <sex value="1">M</sex>
 </person>
 <listRelation><relation name="wife" active="#t1" passive="#t2"/></listRelation>   
@@ -61,7 +64,7 @@
 <settingDesc>
 <p><date when="1608-06-20" n="Monday"/></p>
 <p><time when="13:40:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#t1"/>
@@ -77,11 +80,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-02">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-25">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0263.jpg" url="aap0263.jpg" n="130r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap reason="binding" extent="3" unit="chars"/>e Tayler <del type="strikethrough">of</del> his wife. 48 y <lb/>&IConsonant;une 2<subst><del type="over">1</del><add place="over">0</add></subst> &Monday; h. 1. 40 p m 1608.</p>
+<p><lb/><supplied reason="binding" cert="medium">&IConsonant;</supplied>one Tayler <del type="strikethrough">of</del> his wife. 48 y <lb/>&IConsonant;une 2<subst><del type="over">1</del><add place="over">0</add></subst> &Monday; h. 1. 40 p m 1608.</p>
 </div>
 </body>
 </text>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE50380</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 143v</idno>
+&Napier031;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0143v" to="0143v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="lh">
+<persName><forename>Lawrence</forename> <surname>Huckerby</surname></persName>
+<sex value="1">M</sex>
+<age value="38">38</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<death>
+<date notBefore="1620-03-15" notAfter="1620-03-31"/>
+</death>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-03-14" n="Tuesday"/></p>
+<p><time when="10:55:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier #rwallis"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#lh"/>
+<cb:subject ref="#lh" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#lh"/></cb:topic>
+<cb:topic key="stitch"><person sameAs="#lh"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#lh"/></cb:topic>
+<cb:topic key="appetite"><person sameAs="#lh"/></cb:topic>
+<cb:topic key="nausea"><person sameAs="#lh"/></cb:topic>
+<cb:topic key="faintness"><person sameAs="#lh"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-13">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-01-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0304.jpg" url="cmn0304.jpg" n="143v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Laurence &IConsonant;uckkerby <rs type="address" xml:id="address1">of Layt<supplied reason="binding" cert="high">on</supplied></rs> <lb/>y. 38. <choice><orig>d. &MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h: 22. 55. <choice><orig>ant. m</orig><reg>am</reg></choice>. <foreign xml:lang="la">Marti&jVowel;</foreign> <supplied reason="binding" cert="high">14</supplied> <lb/>1620. put on a shirte not ayred on <lb/>morninge, &amp; was all that <add place="supralinear">day</add> after it cold &amp; <gap extent="unclear" reason="binding"/> <lb/>&amp; at night had a great payne with an ex<gap extent="unclear" reason="binding"/> <lb/>stick in his ryght side. can take nothing <supplied reason="binding" cert="medium">but li</supplied><lb/>quid matter, &amp; yet hee vomiteth &vVowel;p that <gap extent="unclear" reason="binding"/> <lb/>If hee doth but stirre his sticke taketh <supplied reason="binding" cert="low">him</supplied> <lb/>extreamely. hee is very faynt.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

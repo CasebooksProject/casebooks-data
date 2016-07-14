@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE44636</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3B, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 115r</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0115r" to="0115r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jh">
+<persName><forename>John</forename> <surname>Holmes</surname></persName>
+<sex value="1">M</sex>
+<age value="34">34</age>
+<occupation>Clerk of the kitchen</occupation>
+</person>
+<person xml:id="c">
+<persName><roleName>Sir</roleName> <forename>Charles</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <surname>Morrison</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="clerkOfTheKitchen" active="#jh" passive="#m #c"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-04-07" n="Monday"/></p>
+<p><time when="11:50:00" xml:id="time1" exclude="#time2"/><time when="11:30:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jh"/>
+<cb:subject ref="#jh" present="unclear"/>
+<cb:topic key="aCold"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="head"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#jh"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-30">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-12-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0249.jpg" url="cjp0249.jpg" n="115r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Holmes the lady Morysons <lb/>clarke Ap 7 &Monday; h. 11. 50 &antm; <lb/>1617.</p>
+</div>
+
+<div><cb xml:id="colA" n="a"/>
+<p><lb/>&IConsonant;ohn Holmes clarke of the citchin 3<subst><del type="over">2</del><add place="over">4</add></subst>. y. Ap. 7. &Monday;. h. 11. 30 <lb/>&antm; 1617. serv to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Charles. Ap 1617. hath had an <lb/>ague sinc the 12 of sept<choice><orig>&eover;</orig><reg>em</reg></choice>b. to the first of march. sinc an <lb/><choice><sic>extree</sic><corr>extreme</corr></choice> cold <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> still c<choice><orig>&oover;</orig><reg>on</reg></choice>tinueth <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out remedy. hed &amp; stomack payned <lb/>every morning his belly is swelled. as if it would breake. <choice><sic><gap extent="1" unit="chars" reason="hand"/></sic><corr type="noText"/></choice> he <lb/>tooke physick the 26 of march &amp; therfore <subst><del type="over">d</del><add place="over">b</add></subst>eing very loose desyreth <lb/>no physick.</p>
+</div>
+</body>
+</text>
+</TEI>

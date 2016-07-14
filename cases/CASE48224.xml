@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE48224</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 168r</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0168r" to="0168r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="dp">
+<persName><forename>Dorothy</forename> <surname>Parrot</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="p">
+<persName><surname evidence="inferred" cert="medium" type="maiden">Parrot</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth><date when="1619-02-14"/><time when="04:00:00"/></birth>
+</person>
+<listRelation><relation name="daughter" active="#p" passive="#dp"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1619-02-14T04:00:00" notAfter="1619-05-17" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#dp"/>
+<cb:subject ref="#dp" present="unclear"/>
+<cb:topic key="childbirth"><person sameAs="#dp"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-08">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-12-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0343.jpg" url="aau0343.jpg" n="168r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Dorothy Parrot <rs type="address" xml:id="address1">of Newp</rs> <lb/>30 y feb 14 &Sunday; h. <choice><sic>5</sic><corr type="delText"/></choice> <add place="supralinear">4. 52</add> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1619 <choice><sic><gap extent="1" unit="chars" reason="hand"/></sic><corr type="delText"/></choice> at this <lb/>tyme she was brought <lb/>a bed of a wench <lb/>brought a bed &Sunday; h. 4. <del type="strikethrough">45</del> <lb/>&antm; 1619.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

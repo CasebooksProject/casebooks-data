@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -62,7 +65,7 @@
 <settingDesc>
 <p><date when="1608-07-14" n="Thursday"/></p>
 <p><time when="15:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ag"/>
@@ -78,14 +81,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0069.jpg" url="abi0069.jpg" n="28r"/>
+<graphic xml:id="abi0068.jpg" url="abi0068.jpg" n="27v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>An Gro&uConsonant;e for her husb <lb/><foreign xml:lang="la">qui <add place="supralinear"><choice><sic>abscurrit</sic><corr type="noText"/></choice></add> abscurrit hac <choice><sic>mare</sic><corr cert="high">mane</corr></choice></foreign> <lb/>&IConsonant;uli&jVowel; 14. &Thursday; h. 3 20 p m <lb/>1608</p>
 </div>
 &astroChart;
-<pb xml:id="f27v" n="27v"/>
+<pb xml:id="f27v" n="27v" facs="#abi0068.jpg"/>
 </body>
 </text>
 </TEI>

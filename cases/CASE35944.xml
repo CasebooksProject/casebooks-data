@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,27 +59,31 @@
 </particDesc>
 <settingDesc>
 <p><date when="1609-06-13" n="Tuesday"/></p>
-<p><time notBefore="12:00:00" notAfter="15:20:00"/></p>
-<cb:consultation type="horary">
+<p><time when="15:00:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#k"/>
 <cb:subject ref="#k" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#k"/></cb:topic>
-<cb:judgment/> 
-
+<cb:judgment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
 <revisionDesc>
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-04">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-03-04">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-11-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0156.jpg" url="clm0156.jpg" n="68v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div> 
-<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Knight <rs type="address" xml:id="address1">of <gap unit="chars" extent="4" reason="binding"/></rs> <lb/><choice><sic><gap extent="1" unit="chars" reason="hand"/></sic><corr type="noText"/></choice> 56 y. &IConsonant;une 13 <supplied reason="binding">&Tuesday;</supplied> <gap unit="chars" extent="4" reason="binding"/> <lb/>p m 1609</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Knight <rs type="address" xml:id="address1">of ne<unclear cert="medium" reason="binding">w</unclear><supplied reason="binding" cert="low">p</supplied></rs> <lb/><choice><sic><gap extent="1" unit="chars" reason="hand"/></sic><corr type="noText"/></choice> 56 y. &IConsonant;une 13 <choice><sic><subst><del type="over">&VenusSymbol;</del><add place="over">&MoonSymbol;</add></subst></sic><corr type="delText"/></choice> <add place="supralinear">&Tuesday;</add>. h <supplied reason="binding" cert="low">3</supplied> <lb/>p m 1609</p>
 </div>
 &astroChart;
 </body>

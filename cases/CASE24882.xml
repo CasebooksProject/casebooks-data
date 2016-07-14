@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24882</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 48v</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0048v" to="0048v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Mr</roleName> <surname>Alicock</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<listRelation><relation name="servant" active="#anon" passive="#a"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-05-30" n="Wednesday" evidence="inferred"/></p>
+<p><time notBefore="06:50:00" notAfter="12:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#a"/>
+<cb:topic key="financeAndProperty"><person sameAs="#rnapier"/><person sameAs="#a"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-10">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-10-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-06-29">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0116.jpg" url="afp0116.jpg" n="48v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Allicock being gone came <lb/>backe agayne an<choice><orig>&oover;</orig><reg>on</reg></choice> after to buye <lb/>a guelding but he liked him not <lb/>&amp; so De<choice><orig>&crossedp;</orig><reg>par</reg></choice>ted agayne <add place="inline">may 30</add> <lb/>&Wednesday;. h. 6. 50 &antm; 16<choice><orig>i</orig><reg>1</reg></choice>0 <add place="infralinear">his m<choice><orig>&aover;</orig><reg>an</reg></choice> found me in the fild.</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

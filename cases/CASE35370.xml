@@ -43,6 +43,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,7 +62,7 @@
 </particDesc>
 <settingDesc>
 <p><date notBefore="1609-02-21" notAfter="1634-04-01"/></p>
-<cb:consultation type="nativity">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tm"/>
@@ -74,15 +77,22 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0191.jpg" url="abj0191.jpg" n="87r"/>
+<graphic xml:id="abj0190.jpg" url="abj0190.jpg" n="86v"/>
+<graphic xml:id="abj0192.jpg" url="abj0192.jpg" n="87v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>my Cosen <add place="supralinear">Thomas</add> Marsh the <lb/>elder <foreign xml:lang="la">natus 1566 <lb/>marti&jVowel; 9. h. 8. 30 &antm;. 1566.</foreign></p>
 </div>
 &astroChart;
-<pb xml:id="f86v" n="86v"/>
-<pb xml:id="f87v" n="87v"/>
+<pb xml:id="f86v" n="86v" facs="#abj0190.jpg"/>
+<pb xml:id="f87v" n="87v" facs="#abj0192.jpg"/>
 </body>
 </text>
 </TEI>

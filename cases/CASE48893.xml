@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE48893</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 27v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0027v" to="0027v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Mr</roleName> <surname>Atkins</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jc">
+<persName><forename>John</forename> <surname>Carpenter</surname></persName>
+<sex value="1">M</sex>
+<trait type="regionalIdentity"><desc>Londoner</desc></trait>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="c1">
+<persName><surname evidence="inferred">Carpenter</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c2">
+<persName><surname evidence="inferred">Carpenter</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="servant" active="#jc" passive="#a"/><relation name="son" active="#jc" passive="#c1 #c2"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-06-01" n="Tuesday"/></p>
+<p><time when="09:50:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#a" evidence="internal" present="unclear"/>
+<cb:subject ref="#jc" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jc"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-13">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0074.jpg" url="abd0074.jpg" n="27v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Atkins for <lb/>his servant <lb/>&IConsonant;ohn Car<subst><del type="over"><unclear reason="del" cert="medium">t</unclear><gap reason="del" extent="1" unit="chars"/></del><add place="over">pe</add></subst>nter <lb/>20. y. &IConsonant;une 1 &Tuesday; <lb/>h.. 9: 50. &antm; <supplied reason="binding">1619</supplied> <add place="infralinear">a londiner hated of <supplied reason="binding">his</supplied> <lb/>father &amp; would travell <gap extent="unclear" reason="binding"/></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,7 +54,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="tp">
-<persName><forename>Thomas</forename> <surname>Paxon</surname></persName>
+<persName><forename>Thomas</forename> <surname>Paxton</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
@@ -60,11 +63,11 @@
 <settingDesc>
 <p><date when="1605-09-21" n="Sunday" evidence="external"/></p>
 <p><time when="08:30:00" evidence="external"/></p>
-<cb:consultation type="interrogation">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#hw" evidence="external" present="unclear"/>
-<cb:querent ref="#tp" evidence="inferred" cert="medium"/>
+<cb:querent ref="#tp" evidence="conjecture" cert="medium"/>
 <cb:subject ref="#tp" present="yes"/>
 <cb:topic key="lossAndTheft"><person sameAs="#tp"/></cb:topic>
 </cb:consultation>
@@ -74,14 +77,20 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-02-28">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-04-29">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0415.jpg" url="aag0415.jpg" n="203r"/>
+<graphic xml:id="aag0416.jpg" url="aag0416.jpg" n="203v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>he lost his purse sept 14. &Saturday; <lb/>hor 10 <del type="strikethrough">ant</del> p m 1605.</p>
 </div>
 &astroChartBlank;
-<div><pb xml:id="f203v" n="203v"/>
+<div><pb xml:id="f203v" n="203v" facs="#aag0416.jpg"/>
 <p><lb/>Thomas Paxon <rs type="address" xml:id="address1">of Buckingh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> lost his <lb/>purse sept 14 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor <lb/>10 p m. 1605.</p>
 </div>
 &astroChartBlank;

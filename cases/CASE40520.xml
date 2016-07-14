@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE40520</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-28">28 February 2015</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This entry appears to be a marginal addendum to <ref type="case" target="CASE40519">CASE40519</ref>. It may share that entry&rsquo;s chart.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="409">MS Ashmole 409, f. 190r</idno>
+&Napier021;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0190r" to="0190r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lady</roleName></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="pt">
+<persName><roleName>Sir</roleName> <forename>Peter</forename> <surname evidence="external" cert="medium">Temple</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1612-10-27" n="Tuesday" evidence="conjecture"/></p>
+<p><time when="10:00:00" evidence="conjecture" cert="medium"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#person1" evidence="internal" present="unclear"/>
+<cb:subject ref="#pt" present="no"/>
+<cb:topic key="maritalProspects" evidence="conjecture" cert="medium"><person sameAs="#pt"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-28">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-15">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-07-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abp0405.jpg" url="abp0405.jpg" n="190r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The lady for <choice><orig><subst><del type="over">M</del><add place="over">S</add></subst><hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/>Peter. <foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><sic>eit</sic><corr>erit</corr></choice></foreign></p>
+</div>
+</body>
+</text>
+</TEI>

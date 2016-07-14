@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,14 +60,15 @@
 <person xml:id="s2">
 <persName><surname evidence="inferred" cert="low" type="maiden">Sanders</surname></persName>
 <sex value="2">F</sex>
+<age atLeast="1" atMost="19">10-19</age>
 </person>
-<listRelation><relation name="daughter" active="#s2" passive="#s1"/></listRelation>   
+<listRelation><relation name="daughter" active="#s2" passive="#s1"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-07-04" n="Monday"/></p>
 <p><time notBefore="13:00:00" notAfter="13:38:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#u" evidence="internal" present="unclear"/>
@@ -80,11 +84,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-05">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-31">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0296.jpg" url="aap0296.jpg" n="146v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> &vVowel;nderhill for <gap reason="binding" extent="2" unit="chars"/> <lb/>Sanders daughter <gap reason="binding" extent="2" unit="chars"/> <lb/>y. <del type="strikethrough">tab.</del> &IConsonant;uly 4 &Monday;. h. 1 <gap reason="binding" extent="2" unit="chars" cert="medium"/> <lb/>p m 1608</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> &vVowel;nderhill for on<supplied reason="binding" cert="low">e</supplied> <lb/>Sanders daughter of 1<gap reason="binding" extent="1" unit="chars"/> <lb/>y. <del type="strikethrough">tab.</del> &IConsonant;uly 4 &Monday;. h. 1. <gap reason="binding" extent="2" unit="chars" cert="medium"/> <lb/>p m 1608</p>
 </div>
 </body>
 </text>

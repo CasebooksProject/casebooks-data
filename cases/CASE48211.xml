@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE48211</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 165v</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0165v" to="0165v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tn">
+<persName><forename>Thomas</forename> <surname>Nichols</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="i1">
+<persName><surname>Iremonger</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+<person xml:id="i2">
+<persName><surname evidence="inferred" type="maiden">Iremonger</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="daughter" active="#i2" passive="#i1"/>
+<relation name="wouldBeSweetheart" active="#i2" passive="#tn"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-02-10" n="Wednesday"/></p>
+<p><time when="16:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tn"/>
+<cb:subject ref="#tn" present="yes"/>
+<cb:object ref="#i2"/>
+<cb:topic key="romanticRelations"><person sameAs="#tn"/><person sameAs="#i2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-08">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-12-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-14">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0338.jpg" url="aau0338.jpg" n="165v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Thomas Nicholls <lb/>came to me to te<supplied reason="binding" cert="low">ll</supplied> <lb/>me how he hea<supplied reason="binding" cert="medium">rd</supplied> <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> Iremongers Da<supplied reason="binding" cert="medium">ughter</supplied> <lb/>was likely to die <gap extent="unclear" reason="binding"/> <lb/>love towards hi<supplied reason="binding" cert="high">m</supplied> <lb/>&amp; he came to he<supplied reason="binding" cert="low">ar</supplied> <lb/>my opinion feb <supplied reason="binding" cert="high">10</supplied> <lb/>&Wednesday; h. 4 <add place="supralinear">30</add> p m 1619</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,21 +62,21 @@
 <persName><roleName evidence="external">Sir</roleName> <forename evidence="external">William</forename> <surname evidence="external">Andrews</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="fa">
-<persName><roleName evidence="external">Sir</roleName> <forename evidence="external">Francis</forename> <surname evidence="external">Andrews</surname></persName>
+<person xml:id="ff">
+<persName><roleName evidence="external">Sir</roleName> <forename evidence="external">Francis</forename> <surname evidence="external">Freeman</surname></persName>
 <sex value="1">M</sex>
 </person>
-<listRelation><relation name="father" active="#wa" passive="#fa"/><relation name="servant" active="#anon" passive="#f"/></listRelation>
+<listRelation><relation name="father" active="#f" passive="#ff"/><relation name="servant" active="#anon" passive="#f"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-05-18" n="Wednesday"/></p>
 <p><time notBefore="06:00:00" notAfter="09:15:00" evidence="inferred"/></p>
-<cb:consultation type="diary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#rnapier" present="yes"/>
-<cb:subject ref="#rnapier" present="unclear"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
 <cb:object ref="#anon #wa"/>
 <cb:topic key="journeys"><person sameAs="#anon"/></cb:topic>
 <cb:topic key="financeAndProperty"><person sameAs="#wa"/></cb:topic>
@@ -85,8 +88,12 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0237.jpg" url="aap0237.jpg" n="117r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>M<hi rend="superscript">r</hi> fremans man went may 18. &Wednesday; h. 6 &antm; 1608</p>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1603-09-28" n="Wednesday"/></p>
 <p><time when="09:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ab"/>
@@ -66,6 +69,7 @@
 <cb:topic key="nausea"><person sameAs="#ab"/></cb:topic>
 <cb:topic key="hot"><person sameAs="#ab"/></cb:topic>
 
+<cb:topic key="strangeAffliction"><person sameAs="#ab"/></cb:topic>
 <cb:topic key="stomach"><person sameAs="#ab"/></cb:topic>
 <cb:topic key="burning"><person sameAs="#ab"/></cb:topic>
 <cb:topic key="gnawing"><person sameAs="#ab"/></cb:topic>
@@ -86,15 +90,21 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-10-30">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-11-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cjk0198.jpg" url="cjk0198.jpg" n="89v"/>
+<graphic xml:id="cjk0199.jpg" url="cjk0199.jpg" n="90r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> An Barber <rs type="address" xml:id="address1">of <lb/>Kensworthe</rs> 4<subst><del type="over">6</del><add place="over">5</add></subst> y. sept <lb/>28. &Wednesday; hor 9. 1<subst><del type="over">6</del><add place="over">5</add></subst>. &antm; <lb/>1603.</p>
 <p><lb/>was borne <choice><sic><gap reason="hand" extent="1" unit="chars"/></sic><corr type="noText"/></choice> on <rs type="date" xml:id="date1">a <choice><orig><subst><del type="strikethrough"><unclear cert="low" reason="del">tuds</unclear></del> <add place="supralinear">shroves&oover;daye</add></subst></orig><reg>shrovesondaye</reg></choice></rs> <lb/><rs type="time" xml:id="time1">after noone. an hour <lb/>betwixt 4 &amp; 5</rs>. <add place="infralinear">hath often bene let blood sicknes <lb/>gone this 4 yeres.</add> <add place="marginLeft">extreeme <lb/>hot. casteth &vVowel;p <lb/>sometymes leek <lb/>whit&pluralLoop; of <lb/>egge. <lb/>sometymes <lb/>blacke stuffe.</add></p>
 </div>
 &astroChart;
-<div><pb xml:id="f90r" n="90r"/>
+<div><pb xml:id="f90r" n="90r" facs="#cjk0199.jpg"/>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> An Barber sept <lb/>28 &Wednesday; hor. 9. 15 &antm;. 1603. <lb/>strangly handled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <lb/>stomack burning &amp; gna<lb/>wing &amp; then an intolerable <lb/>paine of her hed for 20 houres <lb/>not well for 40 houre &amp; then <lb/>it c<choice><orig>&oover;</orig><reg>om</reg></choice>meth once in a weeke in <lb/>the wynter. &amp; aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> hath a <lb/>swelling &amp; a gnawing in <lb/>the calf&pluralLoop; of her legs.</p>
 </div>
 <cb xml:id="colB" n="b"/>

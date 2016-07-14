@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE23498</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<notesStmt><note resp="#rralley" type="editorial">This entry shares its chart with <ref target="CASE23496" type="case">CASE23496</ref>, for Mr Thomas Harris.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 17r</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0017r" to="0017r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="j">
+<persName><roleName>Mr</roleName> <surname>Jarman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="th">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Harris</surname></persName>
+<sex value="1">M</sex>
+<residence key="databaseNormalizedIDKey" evidence="external">of Oxford</residence>
+<age value="19" evidence="external">19</age>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1614-06-01" n="Wednesday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#j" evidence="internal"/>
+<cb:subject ref="#j" present="no"/>
+<cb:topic key="dropsy"><person sameAs="#j"/></cb:topic>
+<cb:topic key="consumed"><person sameAs="#j"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#j"/></cb:topic>
+<cb:topic key="wind"><person sameAs="#j"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#j"/></cb:topic>
+<cb:topic key="sleeplessness"><person sameAs="#j"/></cb:topic>
+<cb:topic key="report"><person sameAs="#j"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-08">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-07">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0045.jpg" url="ady0045.jpg" n="17r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> &IConsonant;ermyn of <placeName>Exeter colledg</placeName> <lb/>&amp; M<hi rend="superscript">r</hi> Thomas Harrys 19 y. <lb/><del type="strikethrough">may</del> &IConsonant;une 1. &Wednesday; h. 5. p. m. <lb/>1614. <add place="inline">m<hi rend="superscript">r</hi> &IConsonant;ernyn feareth eyther Dropsy or c<choice><orig>&oover;</orig><reg>on</reg></choice>s<choice><orig>&uover;</orig><reg>um</reg></choice>ption <lb/>mutch troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> wynd &amp; belly somewhat swelled <lb/>c<choice><orig>&aover;</orig><reg>an</reg></choice>not sleepe. his cordiall I first <lb/>sent him did <lb/>him mutch good.&slash;</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1603-06-04" n="Saturday"/></p>
 <p><time when="10:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gt"/>
@@ -72,14 +75,20 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-10-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-10-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cjk0103.jpg" url="cjk0103.jpg" n="43r"/>
+<graphic xml:id="cjk0104.jpg" url="cjk0104.jpg" n="43v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>George Throckmorton <rs type="address" xml:id="address1">of <lb/>Warrington</rs> <choice><orig>i</orig><reg>1</reg></choice>9 y. &IConsonant;une 4. <lb/>&Saturday; hor. 10. 15. &antm;. 1603.</p>
 </div>
 &astroChart;
-<pb xml:id="f43v" n="43v"/>
+<pb xml:id="f43v" n="43v" facs="#cjk0104.jpg"/>
 </body>
 </text>
 </TEI>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE50161</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 104r</idno>
+&Napier031;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0104r" to="0104r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wl">
+<persName><forename>William</forename> <surname>Loe</surname></persName>
+<sex value="1">M</sex>
+<age value="50">50</age>
+<occupation>Man (Servant)</occupation>
+</person>
+<person xml:id="rb">
+<persName><roleName>Sir</roleName> <forename>Robert</forename> <surname>Bannister</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="servant" active="#wl" passive="#rb"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-01-19" n="Wednesday"/></p>
+<p><time when="14:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#wl"/>
+<cb:subject ref="#wl" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#wl"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-01-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0225.jpg" url="cmn0225.jpg" n="104r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice> Loe S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Robart <lb/>Bannysters m<choice><orig>&aover;</orig><reg>an</reg></choice>. 50. y. <lb/><choice><sic>mayed</sic><corr>maryed</corr></choice> &IConsonant;an. 19. &Wednesday; h. 2. <lb/>15. p m 1620</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

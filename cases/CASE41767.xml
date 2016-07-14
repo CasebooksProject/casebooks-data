@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE41767</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 2r</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0002r" to="0002r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ec">
+<persName><forename>Elizabeth</forename> <surname>Chessam</surname></persName>
+<sex value="2">F</sex>
+<age value="32">32</age>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>    
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon3" evidence="internal">
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="mother-in-law" active="#anon1" passive="#ec"/>
+<relation name="brother" active="#anon2" passive="#ec"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-04-25" n="Tuesday"/></p>
+<p><time when="09:30:00" xml:id="time1" exclude="#time2"/></p>
+<p><time when="09:45:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ec"/>
+<cb:subject ref="#ec" present="unclear"/>
+<cb:object ref="#anon3"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ec"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal" cert="medium"><person sameAs="#ec"/><person sameAs="#anon3"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-04-30">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-24">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0015.jpg" url="ciz0015.jpg" n="2r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis Chessam dwelleth <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>her mother in law and <lb/>brother. 32 y Ap. 25 &Tuesday; <lb/>h. 9. 30 <add place="supralinear">45</add> &antm; 16<choice><orig>i</orig><reg>1</reg></choice>5</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

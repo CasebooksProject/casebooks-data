@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE39378</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-28">28 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="409">MS Ashmole 409, f. 22v</idno>
+&Napier021;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0022v" to="0022v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><forename>Cicely</forename></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="tl">
+<persName><forename>Thomas</forename> <surname>Lye</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="l">
+<persName><roleName>Mr</roleName> <surname>Lea</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1612-03-17" n="Tuesday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#l" evidence="internal" present="no"/>
+<cb:subject ref="#c" present="no"/>
+<cb:topic key="requestingTreatment"><person sameAs="#c"/></cb:topic>
+<cb:topic key="mad"><person sameAs="#c"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-28">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-07-16">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-05-12">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abp0062.jpg" url="abp0062.jpg" n="22v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Cicely <rs type="address" xml:id="address1">of Stony strat<lb/>ford</rs> 40 y. marche <lb/>17. &Tuesday; h. 8 &antm; <lb/>1612</p>
+<p><lb/>on Thomas lie <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dwelleth not <gap extent="unclear" reason="binding"/></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>m<hi rend="superscript">r</hi> lea sent for opi<choice><orig>&uover;</orig><reg>um</reg></choice> <gap extent="unclear" reason="binding"/> <lb/>on Thomas lye that dwel<lb/>leth <rs type="address" xml:id="address2">not far fr<choice><orig>&oover;</orig><reg>om</reg></choice>. Ston<supplied reason="binding" cert="medium">y</supplied> <lb/>stratford</rs> hath taken <lb/>in hand to heale <lb/>this mad wom<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>Cicely of Stonystra<supplied reason="binding" cert="low">tford</supplied></p>
+</div>
+</body>
+</text>
+</TEI>

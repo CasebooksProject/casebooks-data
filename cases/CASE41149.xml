@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE41149</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-24">24 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="199">MS Ashmole 199, f. 87r</idno>
+&Napier022;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0087r" to="0087r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jf">
+<persName><forename>Joan</forename> <surname type="married">Freeman</surname></persName>
+<sex value="2">F</sex>
+<age value="25">25</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation notAfter="1612-10-24" precision="low">Servant</occupation>
+
+</person>
+<person xml:id="f">
+<persName><surname evidence="inferred" cert="medium">Freeman</surname></persName>
+<sex value="1">M</sex>
+<age value="80">80</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="wife" active="#jf" passive="#f" from="1612-10-24" precision="low"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1613-04-10" n="Saturday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jf"/>
+<cb:subject ref="#jf" present="unclear"/>
+<cb:topic key="nonDizDisease"><person sameAs="#jf"/></cb:topic>
+<cb:topic key="rising"><person sameAs="#jf"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#jf"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-03-31">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-06-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjv0197.jpg" url="cjv0197.jpg" n="87r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;one &ff;rem<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Bot Claydon</rs>. <lb/>25 y Ap 10 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 11. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1613.</p>
+<p><lb/>a servant <choice><sic>mayed</sic><corr>maryed</corr></choice> her <lb/><choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> of 80 y hath not <lb/>her health &amp; is troubled <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a rising in her <lb/>stomack</p>
+<p><lb/>almost halfe a yere <lb/><choice><sic>mayed</sic><corr>maryed</corr></choice>.</p>
+</div>
+</body>
+</text>
+</TEI>

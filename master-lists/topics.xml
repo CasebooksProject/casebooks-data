@@ -36,7 +36,6 @@
 <body>
     <div xml:id="select">
    <list sortKey="subtopics10" n="Diseases of the Mind">
-
       <item xml:id="mind" sortKey="topic-162">
          <seg type="public">afflicted in mind</seg>
          <desc type="public">Covering terms such as ‘disquieted’, ‘foolish’, ‘troubled in mind’, that denote mental disturbance short of outright insanity.</desc>
@@ -127,7 +126,6 @@
          <desc>Mental disturbances explicitly described as ‘fits’.</desc>
          <desc type="editorial">Where the problem is physical, the topic <val>fits</val> should be used.</desc>
       </item>
-
       <item xml:id="fancies" sortKey="topic-164">
       <seg type="public">hallucination</seg>
          <desc type="public">Auditory or visual hallucinations, often referred to as ‘fancies’, ‘fantasies’ or (in Latin) ‘phantasii’.</desc>
@@ -147,17 +145,19 @@
       <item xml:id="brainPassions" corresp="#headPassions">
          <desc type="editorial">Entries in which the brain is explicitly listed as the affected part and the disorder is mental rather than physical.</desc>
       </item>
-
       <item xml:id="idleTalk" sortKey="topic-165">
          <seg type="public">impairment</seg>
          <desc type="public">Loss of understanding, memory, speech or bodily control through non-physical causes.</desc>
-         <desc type="editorial">References to talking idly, fondly or foolishly; talking too much or too little; descriptions of people talking to themselves. (We may later decide to separate these out).</desc>
+         <desc type="editorial">References to talking idly, fondly or foolishly; talking too much or too little; descriptions of people talking to themselves. (We may later decide to separate these out.)</desc>
       </item>
       <item xml:id="incomprehension" corresp="#idleTalk">
          <desc type="editorial">References to people who ‘cannot understand’, or to similar problems of comprehension/understanding.</desc>
       </item>
       <item xml:id="incontinencePassions" corresp="#idleTalk">
          <desc type="editorial">Descriptions of or references to people who are incontinent, where the problem is one of the passions.</desc>
+      </item>
+      <item xml:id="laughing" corresp="#idleTalk">
+         <desc type="editorial">Descriptions of or references to people laughing as a sign that they have a problem of the passions. The implication is presumably that they are laughing compulsively, inappropriately, or for no apparent reason.</desc>
       </item>
       <item xml:id="memoryLoss" corresp="#idleTalk">
          <desc type="editorial">Descriptions of or references to people who have lost their memories or are forgetful.</desc>
@@ -234,6 +234,11 @@
          <desc>Mental disorder explictly described as ‘sickness’.</desc>
          <desc type="editorial">Takes <att>resp</att>.</desc>
       </item>
+      <item xml:id="strangeAfflictionPassions" sortKey="topic-223">
+         <seg type="public">strange affliction (passions)</seg> 
+         <desc>Mental disorders whose nature is described as ‘strange’; patients in these cases are most often described as ‘strangely taken’ or ‘strangely handled’. The strangeness of an illness was sometimes taken as an indication that it was the result of witchcraft.</desc>
+         <desc type="editorial">The key word (or notion) is ‘strange’: any entry in which the question refers to someone being ‘strangely taken’, ‘strangely handled’, ‘vexed in a strange manner’, ‘strangely griped’, or uses any similar label. This topic should not be used for entries in which the expression is used in the judgment or event information.</desc>
+      </item>
       <item xml:id="temptedAndSuicidal" sortKey="topic-167">
          <seg type="public">tempted and suicidal</seg> 
          <desc>The term ‘tempted by Satan’ almost always (and often explicitly) means ‘suicidal’, but some patients are described as being tempted to commit other sins such as murder. Thoughts of suicide were generally understood at the time as by definition of Satanic origin.</desc>
@@ -292,6 +297,7 @@
       <item xml:id="medicalCounsel" sortKey="topic-10">
          <seg type="public">medical counsel</seg> 
          <desc>Entries in which the querent is recorded as having asked for advice or counsel of a medical nature.</desc>
+         <desc type="editorial">Note that this is for entries in which Napier explicitly records a statement such as ‘X sent for my counsell’, and where the word ‘counsel’ (or a synonym) is explicitly used. This is not intended as a catch-all topic for all medical questions; questions about the advisability or timing of particular treatment, for instance, should be given the topic <val>treatment</val>, and questions that are clearly medical but difficult to categorise should be given the topic <val>unidentifiedMedical</val>.</desc>
       </item>
       <item xml:id="mendOrPair" sortKey="topic-52">
          <seg type="public">mend or pair</seg> 
@@ -326,6 +332,9 @@
          <desc>Where someone explicitly requests treatment, either in general or of a particular nature.</desc>
          <desc type="editorial">Note that where one person requests treatment for another, the <gi>person</gi> element in <gi>cb:topic</gi> should point to the person <hi rend="italic">for</hi> whom treatment is being requested, not the person requesting it.</desc>
       </item>
+      <item xml:id="requestingSigil" corresp="#requestingTreatment">
+         <desc type="editorial">Where someone explicitly requests a sigil.</desc>
+      </item>
       <item xml:id="sickness" sortKey="topic-22">
          <seg type="public">sickness</seg> 
          <desc>Entries in which the terms ‘sickness’, ‘sick’, ‘sickly’, ‘sickened’ etc. are used.</desc>
@@ -345,6 +354,11 @@
          <seg type="public">‘state of [his/her] disease’</seg> 
          <desc>Questions about the progress of an explicitly medical problem or its cure.</desc>
          <desc type="editorial">This takes <att>resp</att>.</desc>
+      </item>
+      <item xml:id="strangeAffliction" sortKey="topic-222">
+         <seg type="public">strange affliction</seg> 
+         <desc>Questions about problems whose nature is described as ‘strange’; patients in these cases are most often described as ‘strangely taken’ or ‘strangely handled’. The strangeness of an illness was sometimes taken as an indication that it was the result of witchcraft.</desc>
+         <desc type="editorial">The key word (or notion) is ‘strange’: any entry in which the question refers to someone being ‘strangely taken’, ‘strangely handled’, ‘vexed in a strange manner’, ‘strangely griped’, or uses any similar label. This topic should not be used for entries in which the expression is used in the judgment or event information.</desc>
       </item>
       <item xml:id="trauma" sortKey="topic-23">
          <seg type="public">trauma</seg> 
@@ -384,7 +398,7 @@
       <item xml:id="emotions" sortKey="topic-7">
          <seg type="public">emotions</seg> 
          <desc type="public">Diary entries in which Napier records his own (often quite extreme) mood swings, accompanied by a star-chart. Where his elation or distress is explicitly ascribed to a religious experience or the failure of one to occur, these are categorised as ‘religious experience’ (q.v.), but records of his emotional state without any such explanation are placed under this heading.</desc>
-         <desc type="editorial">Diary entries (entries tagged <tag>cb:consultation type="diary"</tag>) in which Napier records his own (often quite extreme) mood swings, accompanied by a star-chart. Where his elation or distress is explicitly ascribed to a religious experience or the failure of one to occur, these are categorised as <val>religiousExperience</val>, but records of his emotional state without any such explanation should be recorded as <val>emotions</val>.</desc>
+         <desc type="editorial">Diary entries (entries tagged <tag>catRef target="#diary"/</tag>) in which Napier records his own (often quite extreme) mood swings, accompanied by a star-chart. Where his elation or distress is explicitly ascribed to a religious experience or the failure of one to occur, these are categorised as <val>religiousExperience</val>, but records of his emotional state without any such explanation should be recorded as <val>emotions</val>.</desc>
       </item>
       <item xml:id="fertility" sortKey="topic-8">
          <seg type="public">fertility</seg> 
@@ -416,7 +430,7 @@
       </item>
       <item xml:id="apoplexy" sortKey="topic-90">
          <seg type="public">apoplexy</seg> 
-         <desc>Stroke, or other sudden loss of sensation and motion.</desc>
+         <desc type="public">Stroke, or other sudden loss of sensation and motion.</desc>
          <desc type="editorial">Sometimes appears as ‘apoplexia’.</desc>
       </item>
       <item xml:id="cataract" sortKey="topic-91">
@@ -577,13 +591,13 @@
       </item>
       <item xml:id="sigils" sortKey="topic-72">
          <seg type="public">sigils</seg> 
-         <desc type="public">As with the ‘alchemy’ category, these questions are all put by Forman. They concern his progress or prospective progress in the creation of ‘laminæ’ or ‘sigils’: rings, bracelets and the like marked with magical signs and produced under highly specified conditions. These objects were used to conjure or repel spirits, influence future events, or draw astral properties into the body.</desc>
-         <desc type="editorial">As with <val>alchemy</val>, the questions in this category to date have all been put by Forman. They concern his progress in the creation of ‘laminæ’ or ‘sigils’: rings, bracelets and the like marked with magical signs and produced under highly specified conditions.</desc>
+         <desc type="public">These questions concern the creation of ‘laminæ’ or ‘sigils’: rings, bracelets and the like marked with magical signs and produced under highly specified conditions. These objects were used to conjure or repel spirits, influence future events, or draw astral properties into the body.</desc>
+         <desc type="editorial">Questions concerning the creation of ‘laminæ’ or ‘sigils’: rings, bracelets and the like marked with magical signs and produced under highly specified conditions. They are usually either interrogations about sigils that already have been made or elections about sigils that have yet to be made.</desc>
       </item>
       <item xml:id="witchcraft" sortKey="topic-86">
          <seg type="public">witchcraft</seg> 
          <desc>Supposedly preternatural attack or manipulation by a known or unknown person or agency. Unexplained conditions such as epilepsy, and unexplained events such as sleepwalking or the sudden death of animals, were frequently believed or at least suspected to be the effects of witchcraft or demonic possession.</desc>
-         <desc type="editorial">This topic can occasionally be used based on an explicit question in the question section; more commonly it is supplied (with <att>evidence</att>) based on remarks in the judgment. Sometimes the words ‘witch’ and ‘witchcraft’ are used, sometimes the reference is more oblique: ‘strangely handled’, for instance, or ‘strangely sick’. Occasionally the only clue is that the names of suspected witches are included near or in amongst the judgment. As usual, the degree of confidence with which the topic is supplied should be recorded using <att>cert</att>. Most often in Napier the judgment includes the expression ‘metuit veneficium’ or a shortened form thereof. Any references to possession are to be given this topic for now, then we can revisit and check later on. The person believed to be a victim of witchcraft should be <gi>cb:subject</gi>, and the suspected witch should be <gi>cb:object</gi>. Both victim and suspect should be included as <gi>person</gi>s (or, in rare cases, <gi>personGrp</gi>s) within <gi>cb:topic</gi>. Sometimes witchcraft is suspected in general terms, and there is no mention of an individual believed to be responsible; if that is the case, the victim alone goes into <gi>cb:topic</gi>. Conversely, on rare occasions there is a question about a suspected witch (typically in a <val>clearingName</val> entry) where no victim is specified; in that case, the witch alone goes into <gi>cb:topic</gi>. We do not expect to see instances in which a question about witchcraft is raised without either a victim or a suspect, so <gi>cb:topic</gi> should never be empty. Note that while possession comes under this heading, <val>haunting</val> is a separate topic.</desc>
+         <desc type="editorial">This topic can occasionally be used based on an explicit question in the question section; more commonly it is supplied (with <att>evidence</att>) based on remarks in the judgment. Sometimes the words ‘witch’ and ‘witchcraft’ are used, sometimes the reference is to someone being ‘beworded’ or ‘under an ill tongue’. Occasionally the only clue is that the names of suspected witches are included near or in amongst the judgment. As usual, the degree of confidence with which the topic is supplied should be recorded using <att>cert</att>. Most often in Napier the judgment includes the expression ‘metuit veneficium’ or a shortened form thereof. Any references to possession are to be given this topic for now, then we can revisit and check later on. The person believed to be a victim of witchcraft should be <gi>cb:subject</gi>, and the suspected witch should be <gi>cb:object</gi>. Both victim and suspect should be included as <gi>person</gi>s (or, in rare cases, <gi>personGrp</gi>s) within <gi>cb:topic</gi>. Sometimes witchcraft is suspected in general terms, and there is no mention of an individual believed to be responsible; if that is the case, the victim alone goes into <gi>cb:topic</gi>. Conversely, on rare occasions there is a question about a suspected witch (typically in a <val>clearingName</val> entry) where no victim is specified; in that case, the witch alone goes into <gi>cb:topic</gi>. We do not expect to see instances in which a question about witchcraft is raised without either a victim or a suspect, so <gi>cb:topic</gi> should never be empty. Note that while possession comes under this heading, <val>haunting</val> is a separate topic, and also note that for references to people who are ‘strangely handled’, ‘strangely sick’, ‘taken in strange manner’ etc. we have the topics <val>strangeAffliction</val> and <val>strangeAfflictionPassions</val>.</desc>
       </item>
    </list>
    <list sortKey="subtopics8" n="Parts of the Body">
@@ -856,7 +870,7 @@
       </item>
       <item xml:id="secretEnemies" sortKey="topic-70">
          <seg type="public">secret enemies</seg> 
-         <desc>Questions about whether the querent has secret enemies lying in wait for him or her. In some cases the enemies in question are not in fact very ‘secret’, being explicitly named in the consultation, but the term has been adopted since it is one that Forman uses himself in his <ref target="/on-astrological-medicine/guides-to-astrology">astrological guides</ref>.</desc>
+         <desc>Questions about whether the querent has secret enemies lying in wait for him or her. In some cases the enemies in question are not in fact very ‘secret’, being explicitly named in the consultation, but the term has been adopted since it is one that Forman uses himself in his <ref target="/view/text/normalised/TEXT5#para4382">Astrologicalle Judgmentes</ref> (where he spells it ‘secrete enimies’).</desc>
          <desc type="editorial">The person whose secret enemies are under discussion goes into the topic; on the few occasions when some candidate secret enemies are proposed, they can also be included.</desc>
       </item>
       <item xml:id="send" sortKey="topic-71">
@@ -1066,6 +1080,10 @@
       <item xml:id="fits" sortKey="topic-200">
          <seg type="public">fits</seg> 
          <desc type="editorial">For explicit references to ‘fits’ in the sense of a physical problem suffered by someone (for instance someone with epilepsy), though if the entry refers only to ‘epilepsia’, ‘morbus caducus’ or some similar term without mentioning fits, then only the topic <val>fallingSickness</val> should be used. This is not for the use of the word ‘fits’ meaning intermittent, as in ‘it cometh by fits’, and for references to ‘fits’ where the problem is clearly passions-related, <val>fitsPassions</val> should be used instead.</desc>
+      </item>
+      <item xml:id="convulsions" corresp="#fits">
+         <seg type="editorial">convulsions</seg>
+         <desc type="editorial">For explicit references to ‘convulsions’; if the entry refers only to ‘epilepsia’, ‘morbus caducus’ or uses some similar term without mentioning convulsions, then only the topic <val>fallingSickness</val> should be used. Where the word ‘fits’ is used in this sense, the topic <val>fits</val> should be employed instead.</desc>
       </item>
       <item xml:id="gnawing" sortKey="topic-201">
          <seg type="public">gripings, gnawings and stitches</seg> 

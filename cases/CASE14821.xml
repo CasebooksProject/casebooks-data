@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="af">
-<persName><roleName>Mrs</roleName> <forename>Anne</forename> <surname>Foster</surname></persName>
+<persName><roleName>Mrs</roleName> <forename>Anne</forename> <surname>Forster</surname></persName>
 <sex value="2">F</sex>
 <age value="26">26</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1603-04-15" n="Friday"/></p>
 <p><time when="11:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#af"/>
@@ -77,8 +80,12 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-10-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-11-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clp0105.jpg" url="clp0105.jpg" n="52r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>M<hi rend="superscript">rs</hi> Anne &ff;oster <rs type="address" xml:id="address1">of Hanslop</rs> <lb/>26 y <subst><del type="over"><unclear cert="low" reason="del">m</unclear></del><add place="over">A</add></subst>pr. 15 &Friday; ho. 11 a <lb/>m. 1603. maried 3 week&pluralLoop; <lb/>before Christmas. <add place="inline">a white <lb/>thickish water.</add></p>

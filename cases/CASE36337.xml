@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,13 +60,13 @@
 <settingDesc>
 <p><date when="1609-08-06" n="Sunday"/></p>
 <p><time when="10:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#h"/>
 <cb:subject ref="#h" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#h"/></cb:topic>
-<cb:judgment/>
+<cb:topic key="pain"><person sameAs="#h"/></cb:topic>
+<cb:topic key="eyes"><person sameAs="#h"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -71,11 +74,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-24">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0268.jpg" url="clm0268.jpg" n="124v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> H<choice><orig>&aover;</orig><reg>am</reg></choice>mon <rs type="address" xml:id="address1">of <lb/>Gothurst</rs>. 30 y <lb/>Aug 6. &Sunday; h. <supplied reason="binding" cert="medium">10</supplied> <lb/>&antm; 1609</p>
+<p><lb/>M<hi rend="superscript">r</hi> H<choice><orig>&aover;</orig><reg>am</reg></choice>mon <rs type="address" xml:id="address1">of <lb/>Gothurst</rs>. 30 y <lb/>Aug 6. &Sunday; h. 10 <lb/>&antm;. 1609<note place="chart">extreme payne. <lb/>right eye eye<lb/>lid.</note></p>
 </div>
 &astroChart;
 </body>

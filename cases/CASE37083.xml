@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="js">
-<persName><forename>Jonas</forename> <surname>Smith</surname></persName>
+<persName><forename>Joan</forename> <surname>Smith</surname></persName>
 <sex value="1">M</sex>
 <age value="36">36</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -56,8 +59,8 @@
 </particDesc>
 <settingDesc>
 <p><date when="1610-02-21" n="Wednesday"/></p>
-<p><time notBefore="12:20:00" notAfter="23:20:00"/></p>
-<cb:consultation type="horary">
+<p><time when="13:20:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#js"/>
@@ -70,11 +73,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-31">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0513.jpg" url="clm0513.jpg" n="247r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><unclear reason="copy" cert="medium">&IConsonant;onas</unclear> Smith <add place="supralinear"><rs type="address" xml:id="address1">of Eversoyle</rs></add> <subst><del type="over">2</del><add place="over">3</add></subst>6 y febr 21. &Wednesday; h. <lb/><gap extent="1" unit="chars" reason="damage"/> 20 p m 1610.</p>
+<p><lb/>&IConsonant;on<unclear cert="high" reason="blot">e</unclear> Smith <add place="supralinear"><rs type="address" xml:id="address1">of Eversoyle</rs></add> <subst><del type="over">2</del><add place="over">3</add></subst>6 y febr 21. &Wednesday; h. <lb/>1. 20 p m 1610.</p>
 <p><lb/>would cast &amp; c<choice><orig>&aover;</orig><reg>an</reg></choice>not</p>
 </div>
 </body>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1606-06-16" n="Monday"/></p>
 <p><time when="10:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mh"/>
@@ -73,14 +76,20 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-05-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0380.jpg" url="cmp0380.jpg" n="180v"/>
+<graphic xml:id="cmp0381.jpg" url="cmp0381.jpg" n="181r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Mary Hollywell <lb/><rs type="address" xml:id="address1">of Horton</rs> 26 y &IConsonant;<supplied reason="binding">une</supplied> <lb/>16 &Monday; h. 10. 30 &antm; <lb/>1606 maryed a <supplied reason="binding" cert="medium">yere</supplied> <lb/>&amp; halfe. <add place="infralinear">left brest sore</add></p>
 </div>
 &astroChart;
-<pb xml:id="f181r" n="181r"/>
+<pb xml:id="f181r" n="181r" facs="#cmp0381.jpg"/>
 </body>
 </text>
 </TEI>

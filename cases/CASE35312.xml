@@ -43,6 +43,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -63,7 +66,7 @@
 <settingDesc>
 <p><date when="1609-02-21" n="Tuesday"/></p>
 <p><time when="20:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#sforman" evidence="internal" present="unclear"/>
@@ -78,18 +81,25 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-22">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0022.jpg" url="abj0022.jpg" n="3v"/>
+<graphic xml:id="abj0024.jpg" url="abj0024.jpg" n="4v"/>
+<graphic xml:id="abj0083.jpg" url="abj0083.jpg" n="33r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>feb 21 &Tuesday; h 8 p m 1609</p>
 </div>
 
-<div><pb xml:id="f4v" n="4v"/>
+<div><pb xml:id="f4v" n="4v" facs="#abj0024.jpg"/>
 <p><lb/>D. f <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice>filio</foreign> put to at 8 <lb/>p m.</p>
 </div>
 &astroChart;
-<pb xml:id="f33r" n="33r"/>
+<pb xml:id="f33r" n="33r" facs="#abj0083.jpg"/>
 </body>
 </text>
 </TEI>

@@ -14,7 +14,7 @@
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">4</bibl>
+<bibl type="positionOnPage">4, 2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,13 +63,14 @@
 <settingDesc>
 <p><date when="1609-11-17" n="Friday"/></p>
 <p><time when="09:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="conjecture" cert="high" present="unclear"/>
 <cb:subject ref="#fc" present="no"/>
 <cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#fc"/></cb:topic>
 <cb:judgment/>
+<cb:treatment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -74,13 +78,19 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-09">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0401.jpg" url="clm0401.jpg" n="191r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Francis Ch<choice><orig>&aover;</orig><reg>am</reg></choice><lb/>bers <rs type="address" xml:id="address1">of Bl<choice><orig>&uover;</orig><reg>un</reg></choice>n<choice><orig>&aover;</orig><reg>am</reg></choice></rs>. 27. <lb/>y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 17. &Friday;. h. 9. <lb/>25. &antm; 1609 </p>
 </div>
 &astroChart;
+<cb xml:id="colA" n="a"/>
 </body>
 </text>
 </TEI>

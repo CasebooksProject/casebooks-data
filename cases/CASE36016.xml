@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -52,23 +55,34 @@
 <age value="15">15</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<person xml:id="b">
-<persName><roleName evidence="external">Goody</roleName> <surname evidence="external">Barnwell</surname></persName>
+<person xml:id="m" evidence="internal">
+<persName><roleName evidence="external">Goody</roleName> <surname>Morgan</surname></persName>
 <sex value="2">F</sex>
 </person>
-<listRelation><relation name="daughter" active="#jm" passive="#b" cert="medium"/></listRelation>
+<person xml:id="aw" evidence="internal">
+<persName><forename>Agnes</forename> <surname><unclear cert="low" reason="binding">W</unclear><gap extent="unclear" reason="binding"/></surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="ew" evidence="internal">
+<persName><forename>Ellen</forename> <surname>Wa<unclear cert="medium" reason="binding">r</unclear><gap extent="unclear" reason="binding"/></surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="daughter" active="#jm" passive="#m" cert="medium"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-06-22" n="Thursday"/></p>
 <p><time when="07:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jm" evidence="internal" present="unclear"/>
 <cb:subject ref="#jm" present="unclear"/>
+<cb:object ref="#aw #ew"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jm"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#jm"/><person sameAs="#aw"/><person sameAs="#ew"/></cb:topic>
 <cb:judgment/>
+<cb:treatment/>
 <cb:info type="financial"/>
 </cb:consultation>
 </settingDesc>
@@ -77,11 +91,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-06">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-09">Checked against original by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0174.jpg" url="clm0174.jpg" n="77v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;one Morgan <rs type="address" xml:id="address1">of Goldingt<supplied reason="binding" cert="high">on</supplied></rs> <lb/>a nother of her daughter<supplied reason="binding">s</supplied> <lb/>not maryed. 15 y &IConsonant;une <lb/>22. &Thursday; h. 7. 30 &antm; <lb/>1609</p>
+<p><lb/>&IConsonant;one Morgan <rs type="address" xml:id="address1">of Goldington</rs> <lb/>a nother of her daughters <lb/>not maryed. 15 y &IConsonant;une <lb/>22. &Thursday; h. 7. 30 &antm; <lb/>1609</p>
 </div>
 &astroChart;
 <cb xml:id="colA" n="a"/>

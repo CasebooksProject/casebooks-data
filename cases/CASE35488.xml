@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,22 +54,29 @@
 <sex value="2">F</sex>
 <residence key="databaseNormalizedIDKey" sameAs="#address1"/>
 </person>
+<person xml:id="c">
+<persName><surname evidence="inferred" cert="medium">Colman</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth><date when="1609-04-23" n="Sunday"/><time when="03:45:00"/></birth>
+</person>
+
 <person xml:id="b">
-<persName><surname>Bird</surname></persName>
-<sex value="2" evidence="conjecture" cert="high">F</sex>
+<persName><roleName>Goody</roleName> <surname>Bird</surname></persName>
+<sex value="2">F</sex>
 <occupation>Midwife</occupation>
 </person>
-<listRelation><relation name="midwife" active="#b" passive="#ec"/></listRelation>
+<listRelation><relation name="mother" active="#ec" passive="#c"/><relation name="midwife" active="#b" passive="#ec"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1609-04-23" n="Sunday"/></p>
-<p><time when="15:45:00"/></p>
-<cb:consultation type="horary">
+<p><date when="1609-04-23" n="Sunday" evidence="internal"/></p>
+<p><time when="18:00:00" evidence="internal"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
-<cb:querent ref="#b" evidence="internal" cert="medium" present="yes"/>
+<cb:querent ref="#b" evidence="internal" present="yes"/>
 <cb:subject ref="#ec" present="no"/>
 <cb:topic key="childbirth"><person sameAs="#ec"/></cb:topic>
 <cb:judgment/>
@@ -78,11 +88,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-10-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0042.jpg" url="clm0042.jpg" n="11v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis. Colm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of <lb/>this towne</rs> br<supplied reason="binding" cert="high">ought</supplied> <lb/>a bed a litle afte<supplied reason="binding">r</supplied> <lb/>breake of daye. <supplied reason="binding" cert="high">Apr</supplied> <lb/>23. &Sunday; h. 3. 45 <choice><orig>ant <supplied reason="binding" cert="high">m</supplied></orig><reg>am</reg></choice> <lb/>1609 her mydwife <lb/>Byrd came to me f<supplied reason="binding" cert="low">or</supplied> <lb/>to <choice><orig>&crossedp;</orig><reg>pro</reg></choice>cure her after<gap reason="binding" unit="chars" extent="5"/></p>
+<p><lb/>Elis. Colm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of <lb/>this towne</rs> brough<supplied reason="binding" cert="high">t</supplied> <lb/>a bed a litle a fore <lb/>breake of daye. <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">A</add></subst>pr <lb/>23. &Sunday; h. 3. 45. &antm; <lb/>1609 her mydwife good<supplied reason="binding" cert="low">y</supplied> <lb/>Byrd came to me for <lb/>to <choice><orig>&crossedp;</orig><reg>pro</reg></choice>cure her aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> throw<supplied reason="binding" cert="low">e</supplied></p>
 </div>
 &astroChart;
 </body>

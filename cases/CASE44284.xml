@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE44284</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 61v</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0061v" to="0061v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ho">
+<persName><roleName>Mr</roleName> <forename>Henry</forename> <surname>Ogle</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="o1">
+<persName><surname type="married" evidence="inferred">Ogle</surname></persName>
+<sex value="2">F</sex>
+<age value="25">25</age>
+</person>
+
+<person xml:id="o2">
+<persName><surname evidence="inferred" cert="medium">Ogle</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="o3">
+<persName><surname evidence="inferred" cert="medium">Ogle</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="o4">
+<persName><surname evidence="inferred" cert="medium">Ogle</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="o5">
+<persName><surname evidence="inferred" cert="medium">Ogle</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="o6">
+<persName><surname evidence="inferred" cert="medium">Ogle</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="wife" active="#o1" passive="#ho" from="1612-01-30" precision="low"/><relation name="mother" active="#o1" passive="#o2 #o3 #o4 #o5 #o6"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-01-30" n="Thursday"/></p>
+<p><time when="13:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ho" evidence="internal" present="unclear"/>
+<cb:subject ref="#o1" present="no"/>
+<cb:topic key="heart"><person sameAs="#o1"/></cb:topic>
+<cb:topic key="trembling"><person sameAs="#o1"/></cb:topic>
+<cb:topic key="lightheadedPassions"><person sameAs="#o1"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-07">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-11-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-18">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0142.jpg" url="cjp0142.jpg" n="61v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Henry Ogle for his <lb/>wife 25 y &IConsonant;an 30 &Thursday; <lb/>h. 1. 40 p m 16<choice><orig>i</orig><reg>1</reg></choice>7</p>
+<p><lb/><choice><sic>mayed</sic><corr>maryed</corr></choice> 5 y. &amp; hath 5 chil<lb/>dren</p>
+<p><lb/>troubled at her hart <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a <lb/>tr<choice><orig>&eover;</orig><reg>em</reg></choice>bling or shaking &amp; then <lb/>her head wilbe very gydy <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> many vayne &amp; idle thoug<supplied reason="binding" cert="medium">hts</supplied> <lb/>tooke her &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> discontent</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

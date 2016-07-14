@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="g">
-<persName><forename><gap reason="binding" extent="2" unit="chars"/>y</forename> <surname>Goodridge</surname></persName>
+<persName><forename>Mary</forename> <surname>Goodridge</surname></persName>
 <sex value="1">M</sex>
 <age value="4">4</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -60,7 +63,7 @@
 <settingDesc>
 <p><date when="1608-06-23" n="Thursday"/></p>
 <p><time when="14:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="yes"/>
@@ -75,11 +78,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-03">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-05">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0271.jpg" url="aap0271.jpg" n="134r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap reason="binding" extent="3" unit="chars"/>y Go<subst><del type="over"><unclear cert="low" reason="del">h</unclear></del><add place="over">d</add></subst>eridg <rs type="address" xml:id="address1">of lathbery</rs> <lb/><gap reason="binding" extent="2" unit="chars"/> 4 y last St Androw <lb/>days before at night &IConsonant;une <lb/>23. &Thursday;. h. <del type="cancelled">2.</del> 2. 15 p m 1608 <add place="infralinear">the child in p<choice><orig>&loopedr;</orig><reg>re</reg></choice>senc</add></p>
+<p><lb/><supplied reason="binding" cert="medium">M</supplied>ary Go<subst><del type="over"><unclear cert="low" reason="del">h</unclear></del><add place="over">d</add></subst>eridg <rs type="address" xml:id="address1">of lathbery</rs> <lb/><gap reason="binding" extent="2" unit="chars"/> <subst><del type="over">5</del><add place="over">4</add></subst> y last St Androw <lb/>days before at night &IConsonant;une <lb/>23. &Thursday;. h. <del type="cancelled">2.</del> 2. 15 p m 1608 <add place="infralinear">the child in p<choice><orig>&loopedr;</orig><reg>re</reg></choice>senc</add></p>
 </div>
 &astroChart;
 </body>

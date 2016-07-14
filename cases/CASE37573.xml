@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37573</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 18v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0018v" to="0018v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ep1">
+<persName><roleName>Mr</roleName> <forename>Edmond</forename> <surname>Piggot</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ep2">
+<persName><roleName>Mrs</roleName> <forename>Elizabeth</forename> <surname>Piggot</surname></persName>
+<sex value="2">F</sex>
+<age value="22">22</age>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-02-17" n="Sunday"/></p>
+<p><time when="14:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ep1" present="unclear" evidence="internal"/>
+<cb:subject ref="#ep2" present="no" consent="no"/>
+<cb:topic key="lightheadedPassions"><person sameAs="#ep2"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:info type="financial"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-27">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0056.jpg" url="ckk0056.jpg" n="18v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> <add place="supralinear">Edmund</add> Piggot for <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Elisabeth <lb/>Piggot. 22 y febr. 17 &Sunday; h. 2. <lb/>30. p m 1611 <add place="inline"><foreign xml:lang="la">sine consensu &vVowel;ti arbitror.</foreign></add><note place="chart">light headed</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

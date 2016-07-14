@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="p">
-<persName><roleName>Mr</roleName> <surname cert="medium">Preston</surname></persName>
+<persName><roleName>Mr</roleName> <surname>Preston</surname></persName>
 <sex value="1">M</sex>
 <age value="45">45</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1610-02-26" n="Monday"/></p>
 <p><time when="14:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#p"/>
@@ -72,11 +75,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0520.jpg" url="clm0520.jpg" n="250v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> preston <rs type="address" xml:id="address1">of Turvey</rs> <lb/>45 feb 26 &Monday; h. 2. 3<unclear reason="binding" cert="medium">0</unclear> <lb/>p m 1610</p>
+<p><lb/>M<hi rend="superscript">r</hi> preston <rs type="address" xml:id="address1">of Turvey</rs> <lb/>45. feb 26 &Monday; h. 2. 30 <lb/>p m 16<choice><orig>i</orig><reg>1</reg></choice>0</p>
 </div>
 </body>
 </text>

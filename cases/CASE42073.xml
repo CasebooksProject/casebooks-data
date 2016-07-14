@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE42073</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 53r</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0053r" to="0053r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eb">
+<persName><forename>Elizabeth</forename> <surname>Brewer</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="b1">
+<persName><surname evidence="inferred" cert="medium">Brewer</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="b2">
+<persName><surname evidence="inferred" cert="low">Brewer</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="ah" evidence="internal">
+<persName><forename>Amy</forename> <surname>Horne</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="h" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Horne</surname></persName>
+<sex value="1">M</sex>
+<occupation>Shepherd</occupation>
+</person>
+<listRelation><relation name="wife" active="#eb" passive="#b1"/><relation name="mother" active="#eb" passive="#b2"/><relation name="wife" active="#ah" passive="#h" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-06-29" n="Thursday"/></p>
+<p><time when="09:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#eb"/>
+<cb:subject ref="#eb" present="unclear"/>
+<cb:object ref="#ah"/>
+<cb:topic key="mopish"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#eb"/><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-14">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-28">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0119.jpg" url="ciz0119.jpg" n="53r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis: Bruer <rs type="address" xml:id="address1">of Harrold</rs> 40 y <lb/>&IConsonant;une 29. &Thursday; h. 9. 45. &antm; <lb/>16<choice><orig>i</orig><reg>1</reg></choice>5 <add place="marginRight">hath bene a good creatur &amp; loving <lb/>to her husb. &amp; child <lb/>careth not <lb/>for <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> world <lb/>&amp; thinketh <lb/>every on eateth <lb/>to mutch &amp; spendeth</add><note place="chart"><add place="supralinear">troubled in <lb/>mynd</add> mopish &amp; careth not <lb/>for her husb <lb/>&amp; child</note></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

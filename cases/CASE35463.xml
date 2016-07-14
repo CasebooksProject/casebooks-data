@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -52,16 +55,17 @@
 <age value="17">17</age>
 <residence key="databaseNormalizedIDKey" sameAs="#address1"/>
 </person>
-<person xml:id="anon">
-<sex value="0">U</sex>
+<person xml:id="w">
+<persName><surname>Wethered</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
 </person>
-<listRelation><relation name="kinswoman" active="#ah" passive="#anon"/></listRelation>
+<listRelation><relation name="kinswoman" active="#ah" passive="#w"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-04-22" n="Saturday"/></p>
 <p><time when="08:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ah"/>
@@ -77,11 +81,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-10-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0036.jpg" url="clm0036.jpg" n="8v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>An Hues <rs type="address" xml:id="address1">of th<supplied reason="binding">is</supplied> <lb/>towne</rs> kin to M<gap extent="unclear" reason="binding"/><lb/>hed 17 y Apr. 2<supplied reason="binding" cert="high">2 h</supplied> <lb/>8 &antm;. 1609.  </p>
+<p><lb/>An Hues <rs type="address" xml:id="address1">of this <lb/>towne</rs> kin to weather<lb/>hed 17 y Apr. 22 h <lb/>8 &antm;. 1609.  </p>
 </div>
 &astroChart;
 </body>

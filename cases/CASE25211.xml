@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25211</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE25210">CASE25210</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 96r/Q1, f. 95v/Q2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 96r, f. 95v</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0096r" to="0096r"/>
+<locus from="0095v" to="0095v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jh">
+<persName><forename>John</forename> <surname>Hoddell</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when-custom="1608-02-28T01:00:00" cert="medium" xml:id="date1" exclude="#date2 #date3"/><date when-custom="1608-02-28T13:00:00" cert="low" xml:id="date2" exclude="#date1 #date3"/><date when-custom="1608-02-29T01:00:00" cert="low" xml:id="date3" exclude="#date1 #date2"/></birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-07-15" n="Sunday" evidence="external"/></p>
+<p><time when="12:30:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="yes"/>
+<cb:subject ref="#jh" present="yes"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jh"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-17">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-12-01">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-03">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0211.jpg" url="afp0211.jpg" n="96r"/>
+<graphic xml:id="afp0210.jpg" url="afp0210.jpg" n="95v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Hoddle <rs type="address" xml:id="address1">of Olny</rs> <del type="strikethrough">2 y</del> <lb/><foreign xml:lang="la">natus</foreign> feb 28. &Sunday; h 13: p m <lb/>1608</p>
+</div>
+&astroChartPartialDeleted;
+<div><pb xml:id="f95v" n="95v" facs="#Ashmole-239-0192.jpg"/>
+<p><lb/>borne 28 feb. &IConsonant;ohn hodle <rs type="address" sameAs="#address1">of <lb/>olny</rs>. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&SunSymbol;</add></subst></orig><reg type="gloss">Sunday</reg></choice> h. <del type="strikethrough">12. 2</del> 13. <lb/>p m 1608.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

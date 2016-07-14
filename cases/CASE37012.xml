@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,6 +52,7 @@
 <person xml:id="tk">
 <persName><forename>Thomas</forename> <surname>Knight</surname></persName>
 <sex value="1">M</sex>
+<age value="19">19</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -56,7 +60,7 @@
 <settingDesc>
 <p><date when="1610-02-07" n="Wednesday"/></p>
 <p><time when="08:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tk"/>
@@ -71,11 +75,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-30">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0491.jpg" url="clm0491.jpg" n="236r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding" cert="high">Th</supplied>omas knight <rs type="address" xml:id="address1">of Sherington</rs> <lb/><gap extent="2" unit="chars" reason="binding"/> y feb. 7 &Wednesday; h. 8 &antm; 1610</p>
+<p><lb/><supplied reason="binding" cert="high">T</supplied>homas knight <rs type="address" xml:id="address1">of Sherington</rs> <lb/>19 y feb. 7 &Wednesday; h. 8 &antm; 1610</p>
 </div>
 </body>
 </text>

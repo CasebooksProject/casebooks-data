@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -51,12 +54,21 @@
 <sex value="2">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="t" evidence="internal">
+<persName><surname evidence="inferred" cert="low">Thorne</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="rf" evidence="internal">
+<persName><forename>Robert</forename> <surname>Freebody</surname></persName>
+<sex value="1">M</sex>
+<residence key="databaseNormalizedIDKey">Newp</residence>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-09-27" n="Tuesday"/></p>
 <p><time when="07:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#at"/>
@@ -71,8 +83,12 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0431.jpg" url="aap0431.jpg" n="214r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Alice Thorne <rs type="address" xml:id="address1">of Linford</rs> <lb/>Septemb: 27 &Tuesday; ho. 7. 45 a m. 1608</p>

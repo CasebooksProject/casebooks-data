@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE41649</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-24">24 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="199">MS Ashmole 199, f. 174r</idno>
+&Napier022;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0174r" to="0174r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rg">
+<persName><forename>Richard</forename> <surname>Glenister</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1597-05-13" n="Friday"/><time when="07:30:00"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1613-07-16T10:30:00" notAfter-custom="1613-07-16T11:30:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rg"/>
+<cb:subject ref="#rg" present="unclear"/>
+<cb:topic key="fallingSickness"><person sameAs="#rg"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-04-24">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-07-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjv0371.jpg" url="cjv0371.jpg" n="174r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Rich Glenyster <foreign xml:lang="la">natus</foreign> may <subst><del type="strikethrough">28</del> <add place="supralinear"><del type="strikethrough">15</del></add></subst> <add place="supralinear">13.</add> <add place="supralinear"><choice><sic>13.</sic><corr type="noText"/></choice></add> <lb/>&Friday;. h. <del type="strikethrough">6.</del> 7. 30. <choice><orig><choice><sic>ant</sic><corr>ant m</corr></choice></orig><reg>am</reg></choice> <subst><del type="strikethrough">159<subst><del type="over">6</del><add place="over">7</add></subst></del> <add place="infralinear">1597.</add></subst> <add place="infralinear"><foreign xml:lang="la">paulo post con&iConsonant;unction<choice><orig>&eover;</orig><reg>em</reg></choice>.</foreign></add><note place="chart">sub&iConsonant;ect to <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> falling <lb/>sicknes.</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

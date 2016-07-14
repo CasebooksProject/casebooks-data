@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-12-26" n="Tuesday"/></p>
 <p><time when="08:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#t"/>
@@ -74,15 +77,22 @@
 <change when="2014-12-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-03-17">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0426.jpg" url="clm0426.jpg" n="202v"/>
+<graphic xml:id="clm0427.jpg" url="clm0427.jpg" n="203r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goody Tayl<supplied reason="binding" cert="high">er</supplied> <lb/><rs type="address" xml:id="address1">of Hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <gap reason="binding" unit="chars" extent="4"/> <lb/>Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 26. &Tuesday; <supplied reason="binding" cert="medium">hor</supplied> <lb/>8. 30 &antm; 16<supplied reason="binding">09</supplied></p>
+<p><lb/>Goody Tayler <lb/><rs type="address" xml:id="address1">of hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> 40 y <lb/>Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 26. &Tuesday; h <lb/>8. 30 &antm; 1609</p>
 </div>
 &astroChartBlank;
 <div>
-<pb xml:id="f203r" n="203r"/>
+<pb xml:id="f203r" n="203r" facs="#clm0427.jpg"/>
 <p><lb/>Goody Tayler <rs type="address" sameAs="#address1">of Haversh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/>40 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 26 &Tuesday; h. 8. 30 <lb/>&antm; 1609</p>
 </div>
 &astroChartPartial;

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -64,7 +67,7 @@
 <settingDesc>
 <p><date when="1603-11-15" n="Tuesday"/></p>
 <p><time when="12:38:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#fw"/>
@@ -80,14 +83,20 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-11-06">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-11-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cjk0224.jpg" url="cjk0224.jpg" n="102v"/>
+<graphic xml:id="cjk0225.jpg" url="cjk0225.jpg" n="103r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>&ff;raincis Wodle <rs type="address" xml:id="address1">of <lb/>filgrave</rs> 24 y a serv<choice><orig>&aover;</orig><reg>an</reg></choice>t <lb/>novemb. 15 &Tuesday; hor. 12 <lb/>38 p m 1603.</p>
 </div>
 
-<div><pb xml:id="f103r" n="103r"/>
+<div><pb xml:id="f103r" n="103r" facs="#cjk0225.jpg"/>
 <p><lb/>&ff;rauncis Wodle <rs type="address" sameAs="#address1">of filgrave</rs> <lb/>24 y servant to M<hi rend="superscript">r</hi> Norrwood <lb/>novemb. 15 &Tuesday; hor. 12. 38. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1603.</p>
 </div>
 &astroChart;

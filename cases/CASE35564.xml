@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -50,24 +53,24 @@
 <persName><surname>Simons</surname></persName>
 <sex value="1">M</sex>
 <age value="50">50</age>
-<occupation>Boy (Servant)</occupation>
+<occupation>Bailiff</occupation>
 </person>
 <person xml:id="t">
-<persName><roleName>Mr</roleName> <surname>Throckmorton</surname>
-</persName>
+<persName><roleName>Mr</roleName> <surname>Throckmorton</surname></persName>
 <sex value="1">M</sex>
 </person>
-<listRelation><relation name="servant" active="#s" passive="#t"/></listRelation>
+<listRelation><relation name="bailiff" active="#s" passive="#t"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-05-03" n="Wednesday"/></p>
-<cb:consultation type="horary">
+<p><time when="09:39:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s"/>
 <cb:subject ref="#s" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#s"/></cb:topic>
+<cb:topic key="aCold"><person sameAs="#s"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -76,11 +79,17 @@
 <revisionDesc>
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2014-10-31">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0062.jpg" url="clm0062.jpg" n="21v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Throckmortons b<unclear reason="binding" cert="low">oy</unclear> <lb/>Symons <add place="supralinear">50 y</add> may 3 &Wednesday; <gap reason="binding" unit="chars" extent="3"/> <lb/>39 &antm; 1609 <lb/>a great cold.</p> 
+<p><lb/>M<hi rend="superscript">r</hi> Throckmortons baylie <lb/>Symons <add place="supralinear">50 y</add> may 3. &Wednesday;. h. 9 <lb/><subst><del type="over">25</del><add place="over">39</add></subst> &antm; 1609 <lb/>a great cold.</p>
 </div>
 </body>
 </text>

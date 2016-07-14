@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="ia">
-<persName><forename>Isa<unclear reason="hand" cert="low">r&aelig;b</unclear>ll</forename> <surname>Ardes</surname></persName>
+<persName><forename cert="low">Israel</forename> <surname>Ardes</surname></persName>
 <sex value="1">M</sex>
 <age value="55">55</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1606-06-30" n="Monday"/></p>
 <p><time when="14:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ia"/>
@@ -74,11 +77,16 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-05-29">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-08">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0421.jpg" url="cmp0421.jpg" n="201r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Isa<unclear reason="hand" cert="low">r&aelig;b</unclear>ll Ardes <rs type="address" xml:id="address1">of <lb/>Potters Perry</rs>. 55 y <lb/>&IConsonant;une 30 &Monday; h. 2. 45 <lb/>p m 1606.</p>
+<p><lb/><del type="strikethrough"><unclear cert="low" reason="del">M</unclear></del> Isar<subst><del type="over">e<unclear cert="medium" reason="del">b</unclear></del><add place="over">a<unclear cert="medium" reason="over">e</unclear></add></subst>ll Ardes <rs type="address" xml:id="address1">of <lb/>Potters Perry</rs>. 55 y <lb/>&IConsonant;une 30 &Monday; h. 2. 45 <lb/>p m 1606.</p>
 </div>
 &astroChart;
 <cb xml:id="colB" n="b"/>

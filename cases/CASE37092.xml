@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,7 +52,7 @@
 <person xml:id="hw">
 <persName><forename>Henry</forename> <surname>Windmill</surname></persName>
 <sex value="1">M</sex>
-<age value="36" cert="medium">36</age>
+<age value="36">36</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1610-02-23" n="Friday"/></p>
 <p><time when="09:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#hw"/>
@@ -73,11 +76,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0514.jpg" url="clm0514.jpg" n="247v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Henry Windmill <rs type="address" xml:id="address1"><supplied reason="binding" cert="high">of</supplied> <lb/>this towne</rs> 3<unclear reason="copy" cert="medium">6</unclear> <supplied reason="binding" cert="high">y feb</supplied> <lb/>23. &Friday; h. 9. 25 <choice><orig><supplied reason="binding">ant</supplied> <lb/>m</orig><reg>am</reg></choice> 1610</p>
+<p><lb/>Henry Windmill <rs type="address" xml:id="address1">of <lb/>this towne</rs> 36 y feb <lb/>23. &Friday; h. 9. 25 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 16<choice><orig>i</orig><reg>1</reg></choice>0</p>
 </div>
 </body>
 </text>

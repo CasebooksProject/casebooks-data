@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="t">
-<persName><genName>Old</genName> <roleName>Mrs</roleName> <surname>T<gap extent="unclear" reason="binding"/></surname></persName>
+<persName><genName>Old</genName> <roleName>Mrs</roleName> <surname>Thomson</surname></persName>
 <sex value="2">F</sex>
 <age value="21">21</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-04-04" n="Monday"/></p>
 <p><time when="15:38:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#t"/>
@@ -65,7 +68,6 @@
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#t"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
-
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -73,11 +75,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-13">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-24">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0186.jpg" url="aap0186.jpg" n="91v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>old <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> T<gap reason="binding" extent="unclear"/> <lb/><rs type="address" xml:id="address1">of husb: Cro<supplied reason="binding" cert="medium">wley</supplied></rs> <lb/>21. y. Ap 4 <supplied reason="binding" cert="high">&Monday;</supplied> <lb/>h. 3. 3<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">8</add></subst> p m <lb/>1608.</p>
+<p><lb/>old <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Toms<supplied reason="binding" cert="medium">on</supplied> <lb/><rs type="address" xml:id="address1">of husb: Crowl<supplied reason="binding" cert="medium">ey</supplied></rs> <lb/>21. y. Ap 4. &Monday; <lb/>h. 3. 3<subst><del type="over">0</del><add place="over">8</add></subst> p m <lb/>1608.</p>
 </div>
 </body>
 </text>

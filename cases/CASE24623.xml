@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24623</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 19v</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0019v" to="0019v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cm">
+<persName><forename>Cast</forename> <surname>Massocke</surname></persName>
+<sex value="0">U</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-05-01" n="Tuesday"/></p>
+<p><time when="11:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#cm"/>
+<cb:subject ref="#cm" present="unclear"/>
+<cb:topic key="nonDizDisease"><person sameAs="#cm"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-05">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-09-17">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-06-23">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0058.jpg" url="afp0058.jpg" n="19v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Cas<unclear reason="hand" cert="medium">t</unclear> massocke <rs type="address" xml:id="address1">of Woullyson</rs> <lb/>40 y may 1. &Tuesday; h. 11. 15 <lb/>&antm; 16<choice><orig>i</orig><reg>1</reg></choice>0. <add place="inline">not well this <lb/>quarter of this <lb/>yere.&slash;</add></p>
+</div>
+</body>
+</text>
+</TEI>

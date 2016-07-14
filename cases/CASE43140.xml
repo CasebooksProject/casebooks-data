@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE43140</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-25">25 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="408">MS Ashmole 408, f. 51r</idno>
+&Napier025;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0051r" to="0051r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eg">
+<persName><forename>Edward</forename> <surname>Gardner</surname></persName>
+<sex value="1">M</sex>
+<age value="70">70</age>
+</person>
+<person xml:id="n">
+<persName><roleName>Mr</roleName> <surname>Nichols</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>   
+<listRelation><relation name="colleague" mutual="#eg #n" cert="medium"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1616-04-06" n="Saturday"/></p>
+<p><time when="07:25:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#n" evidence="internal" present="unclear"/>
+<cb:subject ref="#eg" present="no"/>
+<cb:topic key="scurvy"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="dropsy"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="thighs"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="appetite"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="shortWinded"><person sameAs="#eg"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-11">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-10-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abo0121.jpg" url="abo0121.jpg" n="51r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Nichols <rs type="address" xml:id="address1">of Wing</rs> for <lb/>on of his fellowes <add place="supralinear">Edward<del type="strikethrough">s</del> Gardiner</add> growen <lb/>into <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> scurvy &amp; dropsye <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> before a yere sinc was <lb/>recovered only by scurvygras <lb/>now growen swelled his <lb/>legs thighes &amp; belly are very <lb/>mutch swelled his appetite <lb/>de<unclear cert="medium" reason="hand">&iConsonant;</unclear>ected &amp; 70 y c<choice><orig>&aover;</orig><reg>an</reg></choice> take no <lb/>purge fat corp &amp; well colou<lb/>red Ap 6 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 7. 25 &antm; <lb/>16<choice><orig>i</orig><reg>1</reg></choice>6. <add place="inline">breath short</add></p>
+</div>
+</body>
+</text>
+</TEI>

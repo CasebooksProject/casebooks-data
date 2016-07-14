@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1606-10-22" n="Wednesday"/></p>
 <p><time when="13:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#cr"/>
@@ -73,13 +76,19 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-06-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0619.jpg" url="cmp0619.jpg" n="299r"/>
+<graphic xml:id="cmp0620.jpg" url="cmp0620.jpg" n="299v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><supplied reason="binding" cert="medium">Cle</supplied>ment Read <rs type="address" xml:id="address1">of kempson</rs> 34 y Octob. <lb/><supplied reason="binding">22</supplied> &Wednesday; h. 1. p m 1606</p>
 </div>
-<div><pb xml:id="f299v" n="299v"/> 
+<div><pb xml:id="f299v" n="299v" facs="#cmp0620.jpg"/> 
 <p><lb/>Clem<choice><orig>&eover;</orig><reg>en</reg></choice>t Rhead <gap extent="unclear" reason="damage"/> <lb/>34 y Octob 2<supplied reason="damage" cert="medium">2 &Wednesday; hor 1 p m</supplied> <lb/>1606</p>
 </div>
 &astroChart;

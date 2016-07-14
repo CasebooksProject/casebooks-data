@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,7 +54,7 @@
 <sex value="1">M</sex>
 <age value="50">50</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<occupation>Servant</occupation>
+<occupation>Bailiff</occupation>
 </person>
 <person xml:id="fc">
 <persName><roleName>Sir</roleName> <forename>Francis</forename> <surname>Curson</surname></persName>
@@ -63,21 +66,21 @@
 <sex value="1">M</sex>
 </person>
 <listRelation>
-<relation name="servant" active="#jm" passive="#fc"/>
+<relation name="bailiff" active="#jm" passive="#fc"/>
 </listRelation>    
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-03-14" n="Monday"/></p>
 <p><time when="14:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jc" evidence="internal" present="no"/>
 <cb:subject ref="#jm" present="no"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jm"/></cb:topic>
 <cb:judgment/>
-<cb:treatment/>
+
 <cb:info type="urine"/>
 </cb:consultation>
 </settingDesc>
@@ -86,11 +89,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-30">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-01-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0138.jpg" url="aap0138.jpg" n="67v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Mathew <rs type="address" xml:id="address1">of Wa<supplied reason="binding" cert="medium">ter</supplied> <lb/>Perry</rs> 50 y <add place="supralinear"><choice><sic>mayed</sic><corr>maryed</corr></choice> his l<gap extent="4" reason="binding" unit="chars"/></add> a servant <lb/>to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> francis Curson <supplied reason="binding" cert="high">march</supplied> <lb/>14. &Monday; h. 2. 20 p m 1608</p>
+<p><lb/>&IConsonant;ohn Mathew <rs type="address" xml:id="address1">of Water <lb/>Perry</rs> 50 y <add place="supralinear"><choice><sic>mayed</sic><corr>maryed</corr></choice></add> a servant <lb/>to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> francis Curson <add place="supralinear">his baylie</add> march <lb/>14. &Monday; h. 2. 20 p m 160<subst><del type="over">7</del><add place="over">8</add></subst></p>
 </div>
 &astroChart;
 </body>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE44610</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 111r</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0111r" to="0111r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="aj">
+<persName><roleName>Mrs</roleName> <forename>Alice</forename> <surname>Jennings</surname> <surname evidence="inferred" type="maiden">Spencer</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rs">
+<persName><roleName>Sir</roleName> <forename>Richard</forename> <surname>Spencer</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="dj">
+<persName><forename>Dorothy</forename> <surname type="maiden">Jennings</surname></persName>
+<sex value="2">F</sex>
+<age value="6" unit="months">half a year</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation>
+<relation name="daughter" active="#aj" passive="#rs"/>
+<relation name="daughter" active="#dj" passive="#aj"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-04-03" n="Thursday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#aj" evidence="internal" present="no"/>
+<cb:subject ref="#dj" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="unidentifiedMedical"><person sameAs="#dj"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-29">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-12-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0241.jpg" url="cjp0241.jpg" n="111r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Alice <choice><orig>I&eover;mings</orig><reg>Jemmings</reg></choice> <rs type="address" xml:id="address1">of <lb/>Offley</rs>. <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rich Spencers <lb/>Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> for her child. of <lb/>halfe a yere old <subst><del type="over"><unclear cert="low" reason="del">o</unclear></del><add place="over">D</add></subst><add place="supralinear">o</add>rothy <lb/>&IConsonant;ennings Ap 3. &Thursday; h. 10 <lb/>&antm;. 1617</p>
+<p><lb/>I receaved a letter</p>
+<p><lb/>1 first pe<unclear reason="hand" cert="low">r</unclear>ydays left behind</p>
+<p><lb/>2 how the pouder is to be <lb/>&vVowel;sed</p>
+<p><lb/>3 wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Dragon water <lb/>be to be &vVowel;sed</p>
+<p><lb/>4 the cap <del type="strikethrough">&amp; w</del> of pa<choice><orig>&crossedp;</orig><reg>per</reg></choice> <lb/>&amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it may <lb/>be left of.</p>
+<p><lb/>5 to send her oliban&flourish; <lb/>&unciae;i&jVowel; sterny &unciae;&semis;. <add place="infralinear">starteth in her sleepe</add></p>
+</div>
+
+<div>
+<p><lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> to forbeare the sucke. <lb/>suckes well sleepes well is <lb/>sol<unclear cert="low" reason="hand">u</unclear><unclear cert="low" reason="blot">s</unclear></p>
+</div>
+</body>
+</text>
+</TEI>

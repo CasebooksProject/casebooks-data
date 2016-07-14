@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1609-02-25" n="Saturday"/></p>
 <p><time when="11:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l" evidence="internal"/>
@@ -71,14 +74,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0356.jpg" url="abi0356.jpg" n="171v"/>
+<graphic xml:id="abi0357.jpg" url="abi0357.jpg" n="172r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig><hi rend="overline">mres</hi></orig><reg>Mrs</reg></choice> Luce <foreign xml:lang="la"><subst><del type="strikethrough">nata</del> <add place="supralinear">qu&aelig;rit &vVowel;t fortunata</add></subst></foreign> may 10 <lb/>&Tuesday; h. 8. 30 &antm;. 28 full <lb/>now moveth quest: <foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> fort <lb/>erit</foreign>. feb. 25. &Saturday; hor 11 20 <lb/>&antm;. 1609.</p>
 </div>
 &astroChart;
-<pb xml:id="f172r" n="172r"/>
+<pb xml:id="f172r" n="172r" facs="#abi0357.jpg"/>
 </body>
 </text>
 </TEI>

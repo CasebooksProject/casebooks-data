@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE44758</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 135r</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0135r" to="0135r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rs">
+<persName><forename>Richard</forename> <surname>Shorland</surname></persName>
+<sex value="1">M</sex>
+<age value="26">26</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1591-02-28" n="Sunday" xml:id="date1" exclude="#date2"/>
+<date when="1592-03-20" n="Sunday" xml:id="date2" exclude="#date1"/>
+<time notBefore="09:00:00" notAfter="11:00:00"/>
+</birth>
+</person>
+<person xml:id="s">
+<persName><surname evidence="inferred" cert="medium">Shorland</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="father" active="#s" passive="#rs"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-04-23" n="Wednesday"/></p>
+<p><time when="13:39:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#s" evidence="internal" present="yes"/>
+<cb:subject ref="#rs" present="no" consent="no"/>
+<cb:topic key="distracted"><person sameAs="#rs"/></cb:topic>
+<cb:topic key="brainPassions"><person sameAs="#rs"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-03">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-12-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0289.jpg" url="cjp0289.jpg" n="135r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Rich. <del type="strikethrough">Sherm&aover;</del> Shorland <lb/><rs type="address" xml:id="address1">of floure by <choice><sic><gap reason="hand" extent="1" unit="chars"/></sic><corr type="delText"/></choice> Hayford</rs> 26 y <lb/>the 2 sonday in lent last betwixt <lb/>9 &amp; eleaven in the morning <lb/>his father came for him Ap 23. <lb/>&Wednesday;. h. 1. 39 p m. 1617 <add place="infralinear"><foreign xml:lang="la">pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice></foreign> filio sine <lb/>consensu.</add><note place="chart">distracted in <lb/>his brayne</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

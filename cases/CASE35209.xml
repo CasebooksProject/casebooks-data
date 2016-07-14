@@ -43,6 +43,9 @@
 <langUsage>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -63,7 +66,7 @@
 <settingDesc>
 <p><date when="1608-10-11" n="Tuesday"/></p>
 <p><time when="17:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mn"/>
@@ -79,22 +82,31 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-22">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0111.jpg" url="abi0111.jpg" n="49r"/>
+<graphic xml:id="abi0110.jpg" url="abi0110.jpg" n="48v"/>
+<graphic xml:id="abi0113.jpg" url="abi0113.jpg" n="50r"/>
+<graphic xml:id="abi0112.jpg" url="abi0112.jpg" n="49v"/>
+</facsimile>
 <text xml:lang="la">
 <body><div>
 <p><lb/><add place="lineBeginning">&vVowel;tr&flourish;</add> &IConsonant;ane sit serv. &vVowel;tilis <lb/>Octob. 11. &TuesdayLatin; h. 5. 20. <lb/>p m. 1608.</p>
 </div>
 &astroChartPartial;
-<div><pb xml:id="f48v" n="48v"/>
+<div><pb xml:id="f48v" n="48v" facs="#abi0110.jpg"/>
 <p><lb/><del type="strikethrough">Iane</del> qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an &IConsonant;ane <lb/>serva sit &vVowel;tilis Octob <lb/>11. &TuesdayLatin; h. 5. 20 &antm; <lb/>1608</p>
 </div>
 &astroChartPartial;
-<div><pb xml:id="f50r" n="50r"/>
+<div><pb xml:id="f50r" n="50r" facs="#abi0113.jpg"/>
 <p><lb/>Qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an &IConsonant;ane sit serva <lb/>&vVowel;tilis Octob. 11 &TuesdayLatin; h. 5. <lb/>25. p m 1608.</p>
 </div>
 &astroChart;
-<pb xml:id="f49v" n="49v"/>
+<pb xml:id="f49v" n="49v" facs="#abi0112.jpg"/>
 </body>
 </text>
 </TEI>

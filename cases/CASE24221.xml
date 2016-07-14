@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24221</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<notesStmt><note resp="#rralley" type="editorial">The inital paragraph of this entry is abandoned.</note></notesStmt><sourceDesc>
+<bibl type="positionOnPage">1B, 3, 1C</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 145r</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0145r" to="0145r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t">
+<persName><forename>Thomas</forename></persName>
+<sex value="1">M</sex>
+<occupation>Carter</occupation>
+</person>
+<person xml:id="d">
+<persName><roleName>Lady</roleName> <surname>Dormer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="carter" active="#t" passive="#d"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-01-08" n="Sunday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#d" evidence="internal" present="unclear"/>
+<cb:subject ref="#t" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#t"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-29">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-04-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0301.jpg" url="ady0301.jpg" n="145r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Thomas my <choice><sic>lady</sic><corr type="noText"/></choice> young <lb/>lady Dormers</p>
+<cb xml:id="colB" n="b"/>
+<p><lb/>My lady Dormer for <lb/>her <choice><sic>Cater</sic><corr>Carter</corr></choice> &IConsonant;an. 8. &Sunday; <lb/>h. 5. p m 1614. 1615. <lb/>likely to dye yesterdaye</p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

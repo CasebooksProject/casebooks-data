@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -54,16 +57,19 @@
 <persName><roleName>Lady</roleName> <surname>Mordaunt</surname></persName>
 <sex value="2">F</sex>
 </person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
 <listRelation><relation name="son" active="#hm" passive="#m"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-04-12" n="Wednesday"/></p>
 <p><time when="11:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#hm"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
 <cb:subject ref="#hm" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#hm"/></cb:topic>
 <cb:judgment/>
@@ -76,8 +82,12 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0323.jpg" url="abj0323.jpg" n="153r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Henry <choice><sic>Mor<unclear reason="blot" cert="medium">dan</unclear>t</sic><corr type="delText"/></choice> <add place="supralinear">Mordant the ladie Mordants <lb/>sonne</add> Ap 12 <lb/>&Wednesday;. h. 11. &antm; 1609.<note place="infralinear">Mordant.</note></p>

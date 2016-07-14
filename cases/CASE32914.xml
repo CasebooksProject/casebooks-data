@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -50,7 +53,7 @@
 <person xml:id="wb">
 <persName><forename>William</forename> <surname>Bedford</surname></persName>
 <sex value="1">M</sex>
-<age value="26" cert="low">26</age>
+<age value="24">24</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1608-02-29" n="Monday"/></p>
 <p><time when="12:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wb"/>
@@ -72,11 +75,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-08">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2014-12-16">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0100.jpg" url="aap0100.jpg" n="47v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><foreign xml:lang="la">Gul: Bedford</foreign> <unclear cert="low" reason="copy">26</unclear> <supplied reason="binding" cert="low">y</supplied> <lb/><rs type="address" xml:id="address1">of Hayford</rs> feb <supplied reason="binding">29</supplied> <lb/>h. 12. 30 p m 1608</p>
+<p><lb/><foreign xml:lang="la">Gul: Bedford</foreign> 24 y <lb/><rs type="address" xml:id="address1">of Hayford</rs> feb. 29. &Monday; <lb/>h. 12. 30 p m 1608</p>
 </div>
 &astroChart;
 </body>

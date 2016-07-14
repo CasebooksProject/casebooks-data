@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1603-03-29" n="Tuesday" evidence="inferred"/></p>
 <p><time notBefore="10:00:00" notAfter="12:30:00" evidence="inferred"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ib"/>
@@ -73,13 +76,19 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-10-01">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-10-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cjk0045.jpg" url="cjk0045.jpg" n="14r"/>
+<graphic xml:id="cjk0044.jpg" url="cjk0044.jpg" n="13v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>&Mres; Isabella <lb/>Brocket 30 y <lb/>for her stomack <lb/>&amp; pimpels in face <lb/>&amp; chin <choice><orig>&crossedp;</orig><reg>pro</reg></choice>ceeding <lb/>of o<unclear cert="high" reason="hand">bstru</unclear>ctions.</p>
 </div>
-<pb xml:id="f13v" n="13v"/>
+<pb xml:id="f13v" n="13v" facs="#cjk0044.jpg"/>
 </body>
 </text>
 </TEI>

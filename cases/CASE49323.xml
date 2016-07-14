@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49323</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 117r</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0117r" to="0117r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><forename>Anne</forename> <surname>Benson</surname></persName>
+<sex value="2">F</sex>
+<age value="4">4</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1615-09-21" n="Thursday" xml:id="date1" exclude="#date2 #date3 #date4" evidence="conjecture"/>
+<date when="1615-09-22" n="Friday" xml:id="date2" exclude="#date1 #date3 #date4" evidence="conjecture"/>
+<date when="1614-09-23" n="Friday" xml:id="date3" exclude="#date2 #date4 #date1" evidence="conjecture"/>
+<date when="1614-09-21" n="Wednesday" xml:id="date4" exclude="#date1 #date2 #date3" evidence="conjecture"/>
+<time when="19:00:00" precision="medium"/>
+</birth>
+</person>
+<person xml:id="b1">
+<persName><surname evidence="inferred" cert="high">Benson</surname></persName>
+<sex value="0">U</sex>
+<age value="4">4</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth>
+<date when="1615-09-21" n="Thursday" xml:id="date5" exclude="#date6 #date7 #date8" evidence="conjecture"/>
+<date when="1615-09-22" n="Friday" xml:id="date6" exclude="#date5 #date7 #date8" evidence="conjecture"/>
+<date when="1614-09-23" n="Friday" xml:id="date7" exclude="#date5 #date6 #date8" evidence="conjecture"/>
+<date when="1614-09-21" n="Wednesday" xml:id="date8" exclude="#date5 #date6 #date7" evidence="conjecture"/>
+<time when="19:00:00" precision="medium" evidence="inferred"/>
+</birth>
+</person>
+<person xml:id="b2">
+<persName><surname evidence="inferred" cert="high">Benson</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation>
+<relation name="mother" active="#b2" passive="#ab #b1"/>
+<relation name="twin" mutual="#b1 #ab"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-07-24" n="Saturday"/></p>
+<p><time when="09:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#b2" evidence="internal" present="yes"/>
+<cb:subject ref="#ab" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ab"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-03">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0253.jpg" url="abd0253.jpg" n="117r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>An Benson <rs type="address" xml:id="address1">of Clyften</rs> <lb/>4. y last S<hi rend="superscript">t</hi> mathew <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> <lb/>was on a fryday in the <lb/>evening. about seaven &amp; then <lb/>had 2 twyns. the mother came <lb/>for the child &IConsonant;uly 24 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor <lb/>9. 30 &antm; 1619</p>
+</div>
+&astroChart;
+
+</body>
+</text>
+</TEI>

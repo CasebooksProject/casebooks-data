@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -66,7 +69,7 @@
 <settingDesc>
 <p><date when="1606-03-26" n="Wednesday"/></p>
 <p><time when="11:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rn"/>
@@ -84,13 +87,19 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-03-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-04-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0183.jpg" url="cmp0183.jpg" n="82r"/>
+<graphic xml:id="cmp0184.jpg" url="cmp0184.jpg" n="82v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Robart Neale <lb/><rs type="address" xml:id="address1">of Groundon</rs>. 17 <lb/>y. march 26. <lb/>&Wednesday; h. 11. 20 &antm; <lb/>1606. <add place="infralinear">pale coloured.</add> light headed <lb/>ever since fryday was <lb/>fortnight.</p>
 </div>
-<div><pb xml:id="f82v" n="82v"/>
+<div><pb xml:id="f82v" n="82v" facs="#cmp0184.jpg"/>
 <p><lb/>Robart Neale <rs type="address" sameAs="#address1">of <lb/>Grounden</rs> 17 y march <lb/>26. <del type="strikethrough">h.</del> &Wednesday; hor 11. 20 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1606</p>
 </div>
 &astroChart;

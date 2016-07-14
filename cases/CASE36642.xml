@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,6 +52,7 @@
 <person xml:id="tb">
 <persName><forename>Thomas</forename> <surname>Baker</surname></persName>
 <sex value="1">M</sex>
+<age value="18" evidence="internal">18</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="gb">
@@ -61,7 +65,7 @@
 <settingDesc>
 <p><date when="1609-10-05" n="Thursday"/></p>
 <p><time when="07:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tb"/>
@@ -76,12 +80,19 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0364.jpg" url="clm0364.jpg" n="172v"/>
+<graphic xml:id="clm0365.jpg" url="clm0365.jpg" n="173r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas Baker <lb/><rs type="address" xml:id="address1">of Cranfild</rs> his broth<supplied reason="binding" cert="high">er</supplied> <lb/>18 y &Thursday; h. 7 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> <lb/>1609</p>
-<pb xml:id="f173r" n="173r"/>
+<p><lb/>Thomas Baker <lb/><rs type="address" xml:id="address1">of Cranfild</rs> his <choice><sic>brothr</sic><corr>brother</corr></choice> <lb/>18 y &Thursday; h. 7 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> <lb/>1609</p>
+<pb xml:id="f173r" n="173r" facs="#clm0365.jpg"/>
 <p><lb/>Thomas Baker <rs type="address" sameAs="#address1">of Cranfild</rs> <lb/>18 y Octob 5 &Thursday; h. 7 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1609</p>
 </div>
 </body>

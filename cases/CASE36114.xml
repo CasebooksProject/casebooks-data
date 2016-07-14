@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -50,17 +53,21 @@
 <persName><roleName>Mr</roleName> <surname>Barlowe</surname></persName>
 <sex value="1">M</sex>
 </person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="friend" mutual="#b #anon"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-07-03" n="Monday"/></p>
 <p><time when="14:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#b" evidence="internal"/>
-<cb:subject ref="#b" present="no"/>
-<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#b"/></cb:topic>
+<cb:querent ref="#b" evidence="internal" present="no"/>
+<cb:subject ref="#anon" present="yes"/>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#anon"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -68,11 +75,15 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-13">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0199.jpg" url="clm0199.jpg" n="90r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding" cert="high">M</supplied><hi rend="superscript">r</hi> Barloe sent me his <lb/><gap extent="4" unit="chars" reason="binding"/> &IConsonant;uly 3. &Monday; h. 2. p m <lb/><supplied reason="binding" cert="high">1</supplied>609. who would not stay <lb/><supplied reason="binding">bu</supplied>t went to <placeName>Oxford</placeName>.&slash;</p>
+<p><lb/>M<hi rend="superscript">r</hi> Barloe sent me his <lb/><unclear cert="medium" reason="binding">fr</unclear>ind &IConsonant;uly 3. &Monday; h. 2. p m <lb/>1609. who would not stay <lb/>but went to <placeName>Oxford</placeName>.&slash;</p>
 </div>
 </body>
 </text>

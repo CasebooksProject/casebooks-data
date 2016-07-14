@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37610</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 23v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0023v" to="0023v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wc">
+<persName><forename>Walter</forename> <surname>Cheese</surname></persName>
+<sex value="1">M</sex>
+<age value="20">20 weeks</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1610-10-07" n="Sunday"/><time notBefore="17:00:00" notAfter="18:00:00"/></birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-02-25" n="Monday"/></p>
+<p><time when="16:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="no"/>
+<cb:subject ref="#wc" present="no"/>
+<cb:item type="letter" cert="medium"/>
+<cb:topic key="fits"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="trembling"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="hands"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="head"><person sameAs="#wc"/></cb:topic>
+<cb:topic key="griping"><person sameAs="#wc"/></cb:topic>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-28">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0066.jpg" url="ckk0066.jpg" n="23v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Water Cheese <rs type="address" xml:id="address1">of Stony stratford</rs> <lb/>borne the last night being &Sunday; <del type="strikethrough">about</del> <lb/>betwixt 5 &amp; six 20 weekes sinc. <lb/>her disease &amp; first fit tooke it feb <lb/>21 &Thursday; h 4. p m 1611. it did <lb/>shake <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the hands &amp; <choice><sic>wryteth</sic><corr>wrytheth</corr></choice> <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>mouth &amp; hed &amp; clutcheth the hands <lb/>&amp; grypeth. &amp; falleth. the first daye <lb/>2 fits. yesterday &amp; this day <choice><sic>may</sic><corr>many</corr></choice> fits.</p>
+<p><lb/>water good.</p>
+<p><lb/><subst><del type="over"><unclear cert="medium" reason="del">sen</unclear></del><add place="over"><unclear cert="medium" reason="over">wro</unclear></add></subst>te to me febr. 25 <lb/>&Monday; h. 4. 15. p m 1611.</p>
+</div>
+</body>
+</text>
+</TEI>

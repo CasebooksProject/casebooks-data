@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE42693</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 156r</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0156r" to="0156r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tb" evidence="internal">
+<persName><forename>Thomas</forename> <surname>Blea</surname></persName>
+<sex value="1">M</sex>
+<event type="burial"><p>Buried <date notBefore="1615-11-11" notAfter="1615-12-08">between 11 November and 8 December 1615</date>.</p></event>
+</person>
+<person xml:id="rs" evidence="internal">
+<persName><forename>Robert</forename> <surname>Smith</surname></persName>
+<sex value="1">M</sex>
+<event type="burial"><p>Buried <date notBefore="1615-11-11" notAfter="1615-12-08">between 11 November and 8 December 1615</date>.</p></event>
+</person>
+<person xml:id="a" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Ashby</surname></persName>
+<sex value="2">F</sex>
+<residence key="databaseNormalizedIDKey">in the lane</residence>
+<event type="burial"><p>Buried <date notBefore="1615-11-11" notAfter="1615-12-08">between 11 November and 8 December 1615</date>.</p></event>
+</person>
+<person xml:id="jn" evidence="internal">
+<persName><forename>Joan</forename> <surname>Nichols</surname></persName>
+<sex value="2">F</sex>
+<event type="burial"><p>Buried <date notBefore="1615-11-11" notAfter="1615-12-08">between 11 November and 8 December 1615</date>.</p></event>
+</person>
+<person xml:id="h" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Harrison</surname></persName>
+<sex value="2">F</sex>
+<event type="burial"><p>Buried <date notBefore="1615-11-11" notAfter="1615-12-08">between 11 November and 8 December 1615</date>.</p></event>
+</person>
+<person xml:id="b" evidence="internal">
+<persName><genName>Old</genName> <roleName>Goody</roleName> <surname>Bird</surname></persName>
+<sex value="2">F</sex>
+<event type="burial"><p>Buried <date notBefore="1615-11-11" notAfter="1615-12-08">between 11 November and 8 December 1615</date>.</p></event>
+</person>
+<person xml:id="wr" evidence="internal">
+<persName><forename>Walter</forename> <surname>Roberts</surname></persName>
+<sex value="1">M</sex>
+<event type="burial"><p>Buried <date notAfter="1615-12-08">by 9 December 1615</date>.</p></event>
+</person>
+<person xml:id="c" evidence="internal">
+<persName><genName>Old</genName> <surname>Cowly</surname></persName>
+<sex value="1" cert="medium" evidence="conjecture">M</sex>
+<event type="burial"><p>Buried <date notAfter="1615-12-08">by 9 December 1615</date>.</p></event></person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-12-09" n="Saturday" evidence="inferred"/></p>
+<p><time notBefore="09:00:00" notAfter="10:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#tb #rs #a #jn #h #b #wr #c" evidence="internal"/>
+<cb:topic key="death" evidence="internal"><person sameAs="#tb"/><person sameAs="#rs"/><person sameAs="#a"/><person sameAs="#jn"/><person sameAs="#h"/><person sameAs="#b"/><person sameAs="#wr"/><person sameAs="#c"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-09-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0325.jpg" url="ciz0325.jpg" n="156r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&conjunctionSymbol; &SunSymbol; &MoonSymbol; nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 10. &Friday; h. 11. 15 p <lb/>m. 1615</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -64,7 +67,7 @@
 <settingDesc>
 <p><date when="1605-02-20" n="Wednesday"/></p>
 <p><time when="14:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -73,6 +76,7 @@
 <cb:object ref="#s"/>
 <cb:topic key="troubled"><person sameAs="#anon1"/></cb:topic>
 <cb:topic key="mind"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="strangeAffliction"><person sameAs="#anon1"/></cb:topic>
 <cb:topic key="witchcraft"><person sameAs="#anon1"/><person sameAs="#s"/></cb:topic>
 </cb:consultation>
 </settingDesc>
@@ -81,8 +85,12 @@
 <change when="2012-11-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-02-27">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2013-03-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="acb0465.jpg" url="acb0465.jpg" n="223r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>a young m<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Bothon in <lb/>Huntington shire</rs> 26 y was <lb/>brought <foreign xml:lang="la">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign> feb <del type="strikethrough">r</del> <lb/>20. &Wednesday; h. 2. 45. p m. 1605. <lb/>strangly tormented by witchraft <lb/>sinc shreve<subst><del type="over"><gap reason="del" extent="3" unit="chars"/></del><add place="over">tue</add></subst>sday Shelton the <lb/>witch in prison<note place="chart">witchraft. <lb/>troubled in mynd</note></p>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1604-01-24" n="Tuesday"/></p>
 <p><time when="11:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tf"/>
@@ -74,14 +77,20 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-01-24">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-03-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clp0380.jpg" url="clp0380.jpg" n="188v"/>
+<graphic xml:id="clp0381.jpg" url="clp0381.jpg" n="189r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Thomas foster <rs type="address" xml:id="address1">of Bedford</rs> <lb/>30 y. &IConsonant;an 24. <del type="strikethrough">y</del> &Tuesday; <lb/>hor 11. &antm; 1604 <lb/>maried 5 yeres.</p>
 </div>
 &astroChart;
-<pb xml:id="f189r" n="189r"/>
+<pb xml:id="f189r" n="189r" facs="#clp0381.jpg"/>
 </body>
 </text>
 </TEI>

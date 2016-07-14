@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -62,7 +65,7 @@
 <settingDesc>
 <p><date when="1608-05-28" n="Saturday"/></p>
 <p><time when="10:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rf"/>
@@ -78,14 +81,20 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0240.jpg" url="aap0240.jpg" n="118v"/>
+<graphic xml:id="aap0241.jpg" url="aap0241.jpg" n="119r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><handShift new="#gjames"/>Roger fuller <rs type="address" xml:id="address1">of Bradwell</rs> <lb/>50 y. Mai&jVowel; 28 &Saturday; ho. 10. 45 <lb/>a. m. 1608</p>
 </div>
 
-<div><pb xml:id="f119r" n="119r"/>
+<div><pb xml:id="f119r" n="119r" facs="#aap0241.jpg"/>
 <p><lb/><handShift new="#rnapier"/>m<hi rend="superscript">r</hi> fuller <rs type="address" sameAs="#address1">of Brod<lb/>well</rs> 50 y <lb/>may 28. h. 10. 45 <lb/>&antm;. 1608</p>
 </div>
 &astroChart;

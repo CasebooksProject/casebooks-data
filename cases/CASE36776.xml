@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,6 +52,7 @@
 <person xml:id="wc">
 <persName><forename>William</forename> <surname>Collins</surname></persName>
 <sex value="1">M</sex>
+<age value="25">25</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 <occupation>Servant</occupation>
 </person>
@@ -64,8 +68,8 @@
 </particDesc>
 <settingDesc>
 <p><date when="1609-12-13" n="Wednesday"/></p>
-<p><time notBefore="10:20:00" notAfter="10:29:00"/></p>
-<cb:consultation type="horary">
+<p><time when="10:20:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wc"/>
@@ -80,11 +84,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-10">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0414.jpg" url="clm0414.jpg" n="197v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Collyngs <rs type="address" xml:id="address1">of <lb/>great Brickhill</rs> serv <lb/>to M<hi rend="superscript">r</hi> &IConsonant;akem<choice><orig>&aover;</orig><reg>an</reg></choice><gap extent="2" unit="chars" reason="binding"/> <lb/>dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 13 &Wednesday; h 10. 2<gap extent="1" unit="chars" reason="binding"/> <lb/>&antm; 1609</p>
+<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Collyngs <rs type="address" xml:id="address1">of <lb/>great Brickhill</rs> <choice><orig><choice><sic>servat</sic><corr>serv&aover;t</corr></choice></orig><reg>servant</reg></choice> <lb/>to M<hi rend="superscript">r</hi> &IConsonant;akem<choice><orig>&aover;</orig><reg>an</reg></choice>. 25 y <lb/>dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 13 &Wednesday; h 10. 20 <lb/>&antm;. 1609</p>
 </div>
 &astroChart;
 </body>

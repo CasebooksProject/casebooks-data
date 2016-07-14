@@ -40,27 +40,37 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="anon">
+<person xml:id="anon1">
 <sex value="1">M</sex>
 <occupation>Soldier</occupation>
 </person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon3">
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="son" active="#anon2 #anon3" passive="#anon1"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1610-02-22" n="Thursday"/></p>
 <p><time when="11:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon"/>
-<cb:subject ref="#anon" present="unclear"/>
-<cb:topic key="bloodyFlux" evidence="internal"><person sameAs="#anon"/></cb:topic>
+<cb:querent ref="#anon1" evidence="internal" present="unclear"/>
+<cb:subject ref="#anon2 #anon3" present="no"/>
+<cb:topic key="bloodyFlux" evidence="internal"><person sameAs="#anon2"/><person sameAs="#anon3"/></cb:topic>
 <cb:treatment/>
 </cb:consultation>
 </settingDesc>
@@ -69,11 +79,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0514.jpg" url="clm0514.jpg" n="247v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>A souldier for his <gap reason="binding" unit="chars" extent="4"/><lb/><unclear cert="low" reason="hand">sens</unclear> <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> came o<supplied reason="binding">ut</supplied> <lb/>of <placeName>Erland</placeName> troubled <supplied reason="binding" cert="medium"><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice></supplied> the bloody flux feb <supplied cert="high" reason="binding">22</supplied> <lb/>&Thursday; h. 11. 30 &antm; <supplied reason="binding" cert="high">1610</supplied></p>
+<p><lb/>A souldier for his two <lb/>sons <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> came out <lb/>of <placeName>Erland</placeName> troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the bloody flux feb 2<supplied cert="high" reason="binding">2</supplied> <lb/>&Thursday; h. 11. 30 &antm; 161<supplied reason="binding" cert="high">0</supplied></p>
 </div>
 </body>
 </text>

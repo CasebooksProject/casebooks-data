@@ -39,7 +39,11 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,18 +55,20 @@
 <sex value="1">M</sex>
 <age value="70">70</age>
 <residence key="databaseNormalizedIDKey" sameAs="#address1"/>
+<birth><date notBefore="1542-01-01" notAfter="1542-12-31"/></birth>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-05-04" n="Thursday"/></p>
 <p><time when="16:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#r"/>
 <cb:subject ref="#r" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#r"/></cb:topic>
+<cb:judgment/>
 <cb:info type="urine"/>
 </cb:consultation>
 </settingDesc>
@@ -71,11 +77,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-21">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-04">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0068.jpg" url="clm0068.jpg" n="24v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Richardson <rs type="address" xml:id="address1"><supplied reason="binding" cert="high">of </supplied><lb/>Turvey</rs> 70 y m<supplied reason="binding" cert="high">ay</supplied> <lb/>4 <choice><sic>C</sic><corr type="noText"/></choice> &Thursday; h. 4. <unclear reason="binding" cert="medium">p</unclear><lb/>1609.</p>
+<p><lb/>M<hi rend="superscript">r</hi> Richardson <rs type="address" xml:id="address1">of <lb/>Turvey</rs> 70 y may <lb/>4 <choice><sic><unclear reason="hand" cert="low">C</unclear></sic><corr type="noText"/></choice> &Thursday; h. 4. p<lb/>1609. <foreign xml:lang="la">nat<choice><orig>&uscon;</orig><reg>us</reg></choice> 1542.</foreign></p>
 </div>
 </body>
 </text>

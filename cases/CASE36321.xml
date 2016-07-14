@@ -40,14 +40,17 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="jw">
-<persName><forename>Joan</forename> <surname>Wynton</surname></persName>
+<person xml:id="jm">
+<persName><forename>Joan</forename> <surname>Mynton</surname></persName>
 <sex value="2">F</sex>
 <age value="19">19</age>
 <birth>
@@ -61,13 +64,13 @@
 <settingDesc>
 <p><date when="1609-08-04" n="Friday"/></p>
 <p><time when="13:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
-<cb:querent ref="#jw" evidence="internal"/>
-<cb:subject ref="#jw" present="yes"/>
-<cb:topic key="medicalCounsel"><person sameAs="#jw"/></cb:topic>
+<cb:querent ref="#jm" evidence="internal"/>
+<cb:subject ref="#jm" present="yes"/>
+<cb:topic key="medicalCounsel"><person sameAs="#jm"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -76,11 +79,15 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-21">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0263.jpg" url="clm0263.jpg" n="122r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;one Wynton <rs type="address" xml:id="address1">of Buc<lb/>kingh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> 19 y borne on St. <lb/>lawrenc eve <add place="supralinear">Aug 9. 1590</add> 5. 30 <lb/>p m 19 y sinc. came now for counsell Aug 4. &Friday; h. 1. <lb/>20 p m 1609. borne in August</p>
+<p><lb/>&IConsonant;one Mynton <rs type="address" xml:id="address1">of Buc<lb/>kingh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> 19 y borne on St. <lb/>lawrenc eve <add place="supralinear">Aug 9. 1590</add> 5. 30 <lb/>p m 19 y sinc. came now for counsell Aug 4. &Friday; h. 1. <lb/>20 p m 1609. borne in August</p>
 </div>
 </body>
 </text>

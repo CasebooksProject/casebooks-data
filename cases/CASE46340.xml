@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE46340</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-11">11 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="201">MS Ashmole 201, f. 50r</idno>
+&Napier028;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0050r" to="0050r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ef">
+<persName><roleName>Mr</roleName> <forename>Edward</forename> <surname>Furtho</surname></persName>
+<sex value="1">M</sex>
+<age value="21">21</age>
+<birth>
+<date when="1596-09-28" xml:id="date1" exclude="#date2"/>
+<date when="1597-09-28" xml:id="date2" exclude="#date1"/>
+<time when="18:00:00" precision="medium"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-04-03" n="Friday"/></p>
+<p><time when="15:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ef" evidence="internal"/>
+<cb:subject ref="#ef" present="yes"/>
+<cb:topic key="pain"><person sameAs="#ef"/></cb:topic>
+<cb:topic key="arms"><person sameAs="#ef"/></cb:topic>
+<cb:topic key="shoulders"><person sameAs="#ef"/></cb:topic>
+<cb:topic key="finger"><person sameAs="#ef"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#ef"/></cb:topic>
+
+<cb:location type="querentVisitsPractitioner"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-20">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckx0119.jpg" url="ckx0119.jpg" n="50r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Edward furthoe 21 y. <lb/>last milkemas. eve about six <lb/>at night. came Ap 3. &Friday;. <lb/>h. 3: p m 1618 payne on <lb/>his armes <choice><sic>s</sic><corr type="noText"/></choice> ever sinc <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">C</add></subst>hristmas <lb/>last r<choice><orig>&uover;</orig><reg>un</reg></choice>ning &vVowel;p &amp; downe fr<choice><orig>&oover;</orig><reg>om</reg></choice> <lb/>his should &vVowel;nto his armes &amp; fyngers &amp; legs.</p>
+</div>
+</body>
+</text>
+</TEI>

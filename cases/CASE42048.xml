@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE42048</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 48r</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0048r" to="0048r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h">
+<persName><roleName>Mr</roleName> <surname>Hawkins</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1615-06-23T15:30:00" notAfter-custom="1616-02-19T10:15:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="animalDeathAndDisease"><person sameAs="#rnapier"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-27">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-10-15">Checked by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0109.jpg" url="ciz0109.jpg" n="48r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Hawkins <rs type="address" xml:id="address1">of London</rs> sent <lb/>me a parret <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> I receaved <lb/>&IConsonant;une 22. <foreign xml:lang="la">&MoonSymbol; <add place="supralinear">sep a &sextileSymbol; &JupiterSymbol;</add> vac ap &squareSymbol; &SunSymbol; <lb/>p &sextileSymbol; &VenusSymbol; p &squareSymbol; &MercurySymbol;. <lb/>&trineSymbol; &JupiterSymbol; &MercurySymbol; ap.</foreign> that would not speake <lb/>it seemeth he was hurt <lb/>in his head or throate. <lb/>It th<choice><orig>&uover;</orig><reg>un</reg></choice>dered &amp; rayned this day in <lb/>the after noone &IConsonant;une 23. <foreign xml:lang="la">&MoonSymbol; sep a <del type="strikethrough">&sextileSymbol; &JupiterSymbol; ap &squareSymbol;</del> &SunSymbol;</foreign> for it was halfe an houre after 3 when it rayned <lb/>this parret took a surfit <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>ca<unclear cert="medium" reason="hand">rri</unclear>dg &amp; died a month after</p>
+</div>
+
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE39794</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-28">28 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 79r/Q3B, f. 79v/Q1A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="409">MS Ashmole 409, f. 79r-v</idno>
+&Napier021;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0079r" to="0079v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="t1">
+<persName><roleName>Lady</roleName> <surname>Tyrringham</surname></persName>
+<sex value="2">F</sex>
+<age value="63">63</age>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="t2">
+<persName><surname evidence="inferred" type="maiden" cert="medium">Tyrringham</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="daughter" active="#t2" passive="#t1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1612-05-01" n="Friday"/></p>
+<p><time when="09:30:00" xml:id="time1" exclude="#time2"/></p>
+<p><time when="09:39:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner" ref="#address1"/>
+<cb:querent ref="#t1"/>
+<cb:subject ref="#t1" present="yes"/>
+<cb:topic key="stoneColic"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="faintness"><person sameAs="#t1"/></cb:topic>
+<cb:treatment/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-28">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-07-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abp0175.jpg" url="abp0175.jpg" n="79r"/>
+<graphic xml:id="abp0176.jpg" url="abp0176.jpg" n="79v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The lady Tyrringh<choice><orig>&aover;</orig><reg>am</reg></choice> came <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her eldest daughter <lb/><del type="strikethrough">A</del>may 1. to <rs type="address" xml:id="address1">my house</rs> <lb/>&Friday;. h. 9. 30 &antm; <lb/>1612.</p>
+<p><lb/><choice><sic>fo</sic><corr type="noText"/></choice> for her stone <lb/>cholick faynt<lb/>nes.</p>
+</div>
+
+<div>
+<pb xml:id="f79v" n="79v"/>
+<p><lb/>The lady Tyrringh<choice><orig>&aover;</orig><reg>am</reg></choice> <rs type="address" xml:id="address2">of Tyrringh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> 63 y may 1. &Friday; <lb/>h 9. 39. &antm;. 1612.</p>
+</div>
+</body>
+</text>
+</TEI>

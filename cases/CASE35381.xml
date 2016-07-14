@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1609-04-01" n="Saturday"/></p>
 <p><time when="15:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -73,14 +76,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0231.jpg" url="abj0231.jpg" n="107r"/>
+<graphic xml:id="abj0230.jpg" url="abj0230.jpg" n="106v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Margaret Steaphens <lb/><rs type="address" xml:id="address1">of Peterley</rs>. 20 y came <lb/>her selfe Apr 1. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 3. <lb/>30 p m 1609</p>
 </div>
 &astroChart;
-<pb xml:id="f106v" n="106v"/>
+<pb xml:id="f106v" n="106v" facs="#abj0230.jpg"/>
 </body>
 </text>
 </TEI>

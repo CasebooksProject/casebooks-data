@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -50,6 +53,7 @@
 <person xml:id="jb">
 <persName><forename>John</forename> <surname>Bird</surname></persName>
 <sex value="1">M</sex>
+<age value="70">70</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -57,7 +61,7 @@
 <settingDesc>
 <p><date when="1609-08-28" n="Monday"/></p>
 <p><time when="13:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jb"/>
@@ -70,12 +74,17 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-26">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0300.jpg" url="clm0300.jpg" n="140v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Byrd <rs type="address" xml:id="address1">of Whittlewood</rs> <lb/>Aug. 28. &Monday; ho. 1. 45 p. m. <supplied reason="binding" cert="medium">1609</supplied> <lb/><foreign xml:lang="la">vide Aug: 23.</foreign></p>
-<p><lb/>His purge wrought not at <supplied reason="binding" cert="high">all.</supplied></p>
+<p><lb/>&IConsonant;ohn Byrd <rs type="address" xml:id="address1">of whittlewood</rs> 70 y <lb/>Aug: 28. &Monday; ho. 1. 45 p. m. 1609 <lb/><foreign xml:lang="la">vide Aug: 23.</foreign></p>
+<p><lb/>His purge wrought not at all <del type="strikethrough"><gap reason="del" extent="1" unit="chars"/></del></p>
 </div>
 </body>
 </text>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47842</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 90v</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0090v" to="0090v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jn">
+<persName><roleName>Sir</roleName> <forename>John</forename> <surname>Needam</surname></persName>
+<sex value="1">M</sex>
+<death>
+<date notBefore-custom="1618-11-14T18:00:00" notAfter-custom="1618-11-15T06:00:00"/>
+</death>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-11-15" n="Sunday"/></p>
+<p><time when="08:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#jn" present="no"/>
+<cb:topic key="liveOrDieMedical"><person sameAs="#jn"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-11-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0188.jpg" url="aau0188.jpg" n="90v"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<p><lb/>&VVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <foreign xml:lang="en">S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> &IConsonant;ohn <lb/>Need<choice><orig>&aover;</orig><reg>am</reg></choice></foreign> m<supplied reason="binding" cert="high">orietur</supplied> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b 15 &SundayLatin; h <supplied reason="binding" cert="medium">8. 40</supplied> <lb/>&antm; 1618 <add place="infralinear"><foreign xml:lang="en">he died yesterday <lb/>night</foreign></add> </p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+
+</body>
+</text>
+</TEI>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE23776</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 65v</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0065v" to="0065v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1614-08-05" n="Friday" evidence="conjecture" cert="medium"/></p>
+<p><time notBefore="05:20:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="emotions"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-13">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0142.jpg" url="ady0142.jpg" n="65v"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<p><lb/>R Na<choice><orig>&crossedp;</orig><reg>per</reg></choice>. Aug 5 <lb/>&FridayLatin; h. 5. 20 &antm; <lb/>1614 <choice><orig>&crossedp;</orig><reg>per</reg></choice>cul int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> or<choice><orig>&aover;</orig><reg>an</reg></choice>d</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

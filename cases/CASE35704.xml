@@ -21,12 +21,12 @@
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="203">MS Ashmole 203, f. 39v</idno>
+<idno n="203">MS Ashmole 203, f. 39r</idno>
 &Napier016;
 </msIdentifier>
 <msContents>
 <msItem>
-<locus from="0039v" to="0039v"/>
+<locus from="0039r" to="0039r"/>
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,9 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="ws">
-<persName>
-<roleName>Sir</roleName> <forename>William</forename> <surname>Samuell</surname>
-</persName>
+<persName><roleName>Sir</roleName> <forename>William</forename> <surname>Samuell</surname></persName>
 <sex value="1">M</sex>
 <age value="50">50</age>
 <residence key="databaseNormalizedIDKey" sameAs="#address1"/>
@@ -59,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-05-12" n="Friday"/></p>
 <p><time when="11:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ws"/>
@@ -74,8 +75,12 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-24">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0097.jpg" url="clm0097.jpg" n="39r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Samuell his <lb/>water <rs type="address" xml:id="address1">of &VVowel;pton</rs> 50 y <lb/>may 12. <add place="supralinear">&Friday;</add> h. 11. &antm; <lb/>1609</p>

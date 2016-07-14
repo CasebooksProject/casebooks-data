@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,14 +59,13 @@
 <settingDesc>
 <p><date when="1609-09-02" n="Saturday"/></p>
 <p><time when="09:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:questionNumber n="2"/>
 <cb:querent ref="#s"/>
 <cb:subject ref="#s" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#s"/></cb:topic>
-<cb:judgment/>
+<cb:topic key="fever"><person sameAs="#s"/></cb:topic>
 <cb:treatment/>
 </cb:consultation>
 </settingDesc>
@@ -72,11 +74,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0311.jpg" url="clm0311.jpg" n="146r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Shackbolt <rs type="address" xml:id="address1">of Roxon</rs>. <lb/><unclear cert="low" reason="hand">2</unclear> tyme Sept<choice><orig>&eover;</orig><reg>em</reg></choice>b 2. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 9 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1609.</p>
+<p><lb/>M<hi rend="superscript">r</hi> Shackbolt <rs type="address" xml:id="address1">of Roxon</rs>. <lb/>2 tyme Sept<choice><orig>&eover;</orig><reg>em</reg></choice>b 2. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 9 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1609.<note place="chart">a burning feaver</note></p>
 </div>
 &astroChart;
 </body>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,13 +63,14 @@
 <settingDesc>
 <p><date when="1609-09-03" n="Sunday"/></p>
 <p><time when="13:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#c" evidence="internal"/>
 <cb:subject ref="#c #s" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#c"/></cb:topic>
+<cb:topic key="requestingTreatment" evidence="internal"><person sameAs="#c"/></cb:topic>
 <cb:topic key="colic"><person sameAs="#s"/></cb:topic>
+<cb:topic key="windColic"><person sameAs="#s"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 <cb:treatment/>
@@ -77,8 +81,13 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0315.jpg" url="clm0315.jpg" n="148r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>The lady Curson for <lb/>her selfe. &amp; for another <lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the cholick <lb/>in sutch extremity as <lb/>they thought he would <lb/>dye of it. Sept 3 h. 1. <lb/>20 p m 1609</p>
@@ -86,7 +95,7 @@
 </div>
 &astroChart;
 <div>
-<p><lb/>This m<choice><orig>&aover;</orig><reg>an</reg></choice> the lady Curson <lb/>sendeth for is <add place="supralinear"><unclear cert="low" reason="hand">&IConsonant;ohn</unclear></add> 6<subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">3</add></subst> sept 3 <lb/>&Sunday; h. 1. 20 p m 1609</p>
+<p><lb/>This m<choice><orig>&aover;</orig><reg>an</reg></choice> the lady Curson <lb/>sendeth for is <add place="supralinear">&IConsonant;ohn</add> 6<subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">3</add></subst> sept 3 <lb/>&Sunday; h. 1. 20 p m 1609 <lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the wynd cholick</p>
 </div>
 </body>
 </text>

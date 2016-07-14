@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47038</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-11">11 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="201">MS Ashmole 201, f. 172r</idno>
+&Napier028;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0172r" to="0172r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ww">
+<persName><forename>William</forename> <surname>Whitton</surname></persName>
+<sex value="1">M</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Carrier</occupation>
+</person>
+<person xml:id="d">
+<persName><roleName>Mr</roleName> <surname>Duncombe</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="carrier" active="#ww" passive="#d"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-07-08" n="Wednesday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ww"/>
+<cb:subject ref="#ww" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#ww"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:info type="urine"/>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-22">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-29">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckx0369.jpg" url="ckx0369.jpg" n="172r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Will: Whitton <rs type="address" xml:id="address1">of <del type="strikethrough">G</del> <choice><sic>yadly</sic><corr>yardly</corr></choice> Gubbyn</rs> <choice><sic>cayer</sic><corr>caryer</corr></choice> <lb/>to M<hi rend="superscript">r</hi> Dunc<choice><orig>&oover;</orig><reg>om</reg></choice>be <rs type="address" xml:id="address2">of Grafton</rs> 30 y &IConsonant;uly <lb/>8. &Wednesday; h. 10 &antm; 1618. <add place="infralinear"><supplied reason="binding" cert="medium">ex</supplied><unclear reason="binding" cert="medium">treme</unclear> sick</add></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1608-03-16" n="Wednesday"/></p>
 <p><time when="10:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ek"/>
@@ -76,14 +79,20 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-30">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-01-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0140.jpg" url="aap0140.jpg" n="68v"/>
+<graphic xml:id="aap0141.jpg" url="aap0141.jpg" n="69r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Elis Kylpyn <rs type="address" xml:id="address1">of Hardmead</rs> <lb/>turne ever the next leafe forward. <lb/>hed extremly payned c<choice><orig>&aover;</orig><reg>an</reg></choice> take no <lb/>rest for it.</p>
 </div>
 
-<div><pb xml:id="f69r" n="69r"/>
+<div><pb xml:id="f69r" n="69r" facs="#aap0141.jpg"/>
 <p><lb/>Elis Kilpyn <rs type="address" sameAs="#address1">of Hardmead</rs>. 20 y maryed <lb/>a yere &amp; a quart<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>. march. 16 &Wednesday; h. 10 <lb/>&antm; 1608.</p>
 </div>
 &astroChart;

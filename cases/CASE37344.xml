@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37344</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-31">31 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 13r/Q1, f. 12v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="334">MS Ashmole 334, f. 13r, f. 12v</idno>
+&Napier019;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0013r" to="0013r"/>
+<locus from="0012v" to="0012v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="th">
+<persName><forename>Thomas</forename> <surname>Harrison</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1608-10-13" n="Thursday"/><time when="11:20:00"/></birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1610-04-02" notAfter="1610-04-05" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#th" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#th"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-31">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-31">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abh0045.jpg" url="abh0045.jpg" n="13r"/>
+<graphic xml:id="abh0044.jpg" url="abh0044.jpg" n="12v"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<p><lb/>Thomas Harrison natus Octob <lb/>13. &ThursdayLatin; h. <subst><del type="strikethrough">1<subst><del type="over">1</del><add place="over">2</add></subst>.</del> <add place="supralinear">12. 15</add></subst> 1608.</p>
+</div>
+&astroChartDeleted;
+<div><pb xml:id="f12v" n="12v" facs="#abh0044.jpg"/>
+<p><lb/>Thomas Harryson <rs type="address" xml:id="address1">lond</rs>. natus octob <lb/>13. &ThursdayLatin; h. 11: 20 &antm; 16<subst><del type="over">i0</del><add place="over">08</add></subst>. vere <lb/>1608.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

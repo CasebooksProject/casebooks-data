@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,17 +52,21 @@
 <person xml:id="ww">
 <persName><forename>William</forename> <surname>Walker</surname></persName>
 <sex value="1">M</sex>
+<age value="4">4</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-11-15" n="Tuesday"/></p>
 <p><time when="10:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#ww"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
 <cb:subject ref="#ww" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ww"/></cb:topic>
 <cb:judgment/>
@@ -71,11 +78,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-09">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0499.jpg" url="aap0499.jpg" n="248r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding">W</supplied>ylli<choice><orig>&aover;</orig><reg>am</reg></choice> Walker <rs type="address" xml:id="address1">of Haddingstone</rs> <lb/><gap extent="1" unit="chars" reason="binding" cert="medium"/>4 y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 15 <choice><sic>y</sic><corr type="noText"/></choice> &Tuesday; h. 10. 15 <lb/>&antm; 1608.</p>
+<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Walker <rs type="address" xml:id="address1">of Haddingstone</rs> <lb/>4 y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 15 <choice><sic>y</sic><corr type="noText"/></choice> &Tuesday; h. 10. 15 <lb/>&antm; 1608.</p>
 </div>
 </body>
 </text>

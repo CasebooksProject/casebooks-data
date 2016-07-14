@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -64,7 +67,7 @@
 <settingDesc>
 <p><date when="1603-12-31" n="Saturday"/></p>
 <p><time when="12:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#dd"/>
@@ -80,13 +83,19 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-01-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-03-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clp0355.jpg" url="clp0355.jpg" n="176r"/>
+<graphic xml:id="clp0356.jpg" url="clp0356.jpg" n="176v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Dorothy Dun <rs type="address" xml:id="address1">of Shenly</rs> <lb/>30 y maried Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 31. <lb/><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 12. 1603:</p>
 <p><lb/><rs type="date" xml:id="date1">5 yeres sinc</rs> a child <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> dyed <lb/>never any synce.</p>
-<pb xml:id="f176v" n="176v"/>
+<pb xml:id="f176v" n="176v" facs="#clp0356.jpg"/>
 <p><lb/>Dorothy Du<choice><orig>&nover;</orig><reg>nn</reg></choice>e <rs type="address" sameAs="#address1">of Shenly</rs> <lb/>30. Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b 31. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 12 <lb/>1603.</p>
 <p><lb/>had a child <rs type="date" sameAs="#date1">5 yeres <lb/>sinc</rs> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dyed never sinc <lb/>any child.</p>
 </div>

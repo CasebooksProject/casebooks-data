@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -61,7 +64,7 @@
 <settingDesc>
 <p><date when="1608-10-12" n="Wednesday"/></p>
 <p><time when="09:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mn"/>
@@ -77,14 +80,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-11">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0131.jpg" url="abi0131.jpg" n="59r"/>
+<graphic xml:id="abi0130.jpg" url="abi0130.jpg" n="58v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> bon<choice><orig>&uover;</orig><reg>um</reg></choice> sit retinere <lb/>Elisab. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice></foreign> now at <placeName>luton</placeName> Octob. 12. &Wednesday; h. 9. <del type="cancelled">20</del> <lb/>&antm; 1608 <add place="infralinear"><gap reason="binding" extent="1" unit="words"/> take this Elis to be her needlewom<choice><orig>&aover;</orig><reg>an</reg></choice>. <add place="supralinear">or to take anoth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</add></add></p>
 </div>
 &astroChart;
-<pb xml:id="f58v" n="58v"/>
+<pb xml:id="f58v" n="58v" facs="#abi0130.jpg"/>
 </body>
 </text>
 </TEI>

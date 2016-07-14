@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-02-21" n="Tuesday"/></p>
 <p><time when="17:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#r"/>
@@ -71,14 +74,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-22">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0021.jpg" url="abj0021.jpg" n="3r"/>
+<graphic xml:id="abj0020.jpg" url="abj0020.jpg" n="2v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>M<hi rend="superscript">r</hi> Randall <rs type="address" xml:id="address1">of london</rs> <lb/>febr 21. &Tuesday; h. 5. p m. 1609.</p>
 </div>
 &astroChart;
-<pb xml:id="f2v" n="2v"/>
+<pb xml:id="f2v" n="2v" facs="#abj0020.jpg"/>
 </body>
 </text>
 </TEI>

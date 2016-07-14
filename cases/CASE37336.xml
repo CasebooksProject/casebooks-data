@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37336</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-31">31 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="334">MS Ashmole 334, f. 6v</idno>
+&Napier019;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0006v" to="0006v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <surname>Mordaunt</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c">
+<persName><roleName evidence="external">Lord</roleName> <surname evidence="external">Compton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="brother" active="#c" passive="#m"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1610-03-26T09:15:00" notAfter="1634-04-01"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="unclear"/>
+<cb:topic key="emotions"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-31">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-07-31">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abh0032.jpg" url="abh0032.jpg" n="6v"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<p><lb/>R N marti&jVowel; 26 &MondayLatin; h. 9. 15. &antm; <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0 quasi extasi <add place="supralinear">c<choice><orig>&uover;</orig><reg>um</reg></choice> lachrimis</add> corrept<choice><orig>&uscon;</orig><reg>us</reg></choice> c<choice><orig>&oover;</orig><reg>on</reg></choice>stan<lb/>t<choice><orig><hi rend="overline">isse</hi></orig><reg>issime</reg></choice> p<choice><orig>&loopedr;</orig><reg>re</reg></choice>dicebat <choice><orig>D<hi rend="overline">n&aelig;</hi></orig><reg>Domin&aelig;</reg></choice> Mord frat val<unclear reason="faded" cert="medium">e</unclear><lb/>tud: recuperation<choice><orig>&eover;</orig><reg>em</reg></choice> deus <choice><orig><hi rend="overline">nri</hi></orig><reg>nostri</reg></choice> miserat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>et <choice><orig>&crossedp;</orig><reg>per</reg></choice>cat nobis misellis</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

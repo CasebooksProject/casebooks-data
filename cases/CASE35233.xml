@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,7 +62,7 @@
 <settingDesc>
 <p><date when="1609-02-23" n="Thursday"/></p>
 <p><time when="08:40:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon1" evidence="internal" present="unclear"/>
@@ -74,14 +77,21 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-22">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0176.jpg" url="abi0176.jpg" n="81v"/>
+<graphic xml:id="abi0177.jpg" url="abi0177.jpg" n="82r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>the daught for her father <lb/><foreign xml:lang="la">abs<choice><orig>&qtail;</orig><reg>que</reg></choice> c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> vivet <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> moriet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign> &amp; what misfort<gap extent="unclear" reason="binding"/> <lb/>sub&iConsonant;ect &vVowel;nto febr. 23. &Thursday; h 8 <lb/><subst><del type="over">3</del><add place="over">4</add></subst>0 &antm;. 1609</p>
 </div>
 &astroChart;
-<pb xml:id="f82r" n="82r"/>
+<pb xml:id="f82r" n="82r" facs="#abi0177.jpg"/>
 </body>
 </text>
 </TEI>

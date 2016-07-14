@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE38907</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 194v/Q4, f. 195r/Q1, f. 195r/Q4A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, ff. 194v-195r</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0194v" to="0195r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ag">
+<persName><forename>Anne</forename> <surname>Gale</surname></persName>
+<sex value="2">F</sex>
+<age value="27">27</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="s" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Stevenson</surname></persName>
+<sex value="2">F</sex>
+<occupation>Midwife</occupation>
+</person>
+<person xml:id="ew" evidence="internal">
+<persName><forename>Ellen</forename> <surname>Warner</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="dc" evidence="internal">
+<persName><forename>Dorothy</forename> <surname>Cataline</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="g" evidence="internal">
+<persName><surname evidence="inferred">Gale</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="m1" evidence="internal">
+<persName><genName>Old</genName> <roleName>Goody</roleName> <surname>Morgan</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="m2" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Morgan</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="m3" evidence="internal">
+<persName><surname evidence="inferred" type="maiden">Morgan</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="tm" evidence="internal">
+<persName><forename>Thomas</forename> <surname>Morgan</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="im" evidence="internal">
+<persName><forename>Isabel</forename> <surname>Man</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="m4" evidence="internal">
+<persName><roleName>Widow</roleName> <surname>Man</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="husband" active="#g" passive="#ag" evidence="internal"/><relation name="sister" active="#dc" passive="#g" evidence="internal"/><relation name="son" active="#tm" passive="#m3" evidence="internal"/><relation name="daughter" active="#m3" passive="#m2" evidence="internal"/><relation name="daughter" active="#im" passive="#m4" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-11-25" n="Monday"/></p>
+<p><time when="10:48:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ag"/>
+<cb:subject ref="#ag" present="unclear"/>
+<cb:object ref="#s #dc #im #m4"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ag"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#s"/><person sameAs="#dc"/><person sameAs="#im"/><person sameAs="#m4"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="angel" subtype="Unspecified"/>
+<cb:info type="angel" subtype="Raphael"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-17">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-12-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-15">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0408.jpg" url="ckk0408.jpg" n="194v"/>
+<graphic xml:id="ckk0409.jpg" url="ckk0409.jpg" n="195r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>An Gale <rs type="address" xml:id="address1">of Goldingt<supplied reason="binding">on</supplied></rs> <lb/>27 y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 25. &Monday; <lb/>h. 10. 30 &antm; 1611</p>
+</div>
+
+<div>
+<pb xml:id="f195r" n="195r" facs="#ckk0409.jpg"/>
+<p><lb/>An Gale <rs type="address" sameAs="#address1">of Goldington</rs> <lb/>27. y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 25 &Monday; h. 10 <choice><sic>10</sic><corr type="noText"/></choice> <lb/>48 &antm;. 1611.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

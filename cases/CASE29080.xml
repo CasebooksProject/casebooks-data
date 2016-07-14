@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -47,13 +50,13 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="as">
-<persName><forename>Anne</forename> <surname>Some</surname></persName>
+<persName><forename>Anne</forename> <surname>Somes</surname></persName>
 <sex value="2">F</sex>
 <age value="21">21</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="s" evidence="internal">
-<persName><surname evidence="inferred" cert="medium">Some</surname></persName>
+<persName><surname evidence="inferred" cert="medium">Somes</surname></persName>
 <sex value="0">U</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 <birth><date when="1605-02-12" precision="medium" evidence="internal"/></birth>
@@ -64,7 +67,7 @@
 <settingDesc>
 <p><date when="1605-05-21" n="Tuesday"/></p>
 <p><time when="12:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#as"/>
@@ -78,8 +81,12 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-12-04">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-02-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0226.jpg" url="aag0226.jpg" n="108v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Anne Some <rs type="address" xml:id="address1">of Chicheley</rs> 21 y <lb/>May 21 &Tuesday; ho. 12 20 p. m. 1605</p>

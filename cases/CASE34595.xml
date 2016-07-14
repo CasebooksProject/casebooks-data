@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="jj">
-<persName><forename>Joan</forename> <surname>Jakeman</surname></persName>
+<persName><forename>Jane</forename> <surname>Jakeman</surname></persName>
 <sex value="2">F</sex>
 <age value="30">30</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -65,7 +68,7 @@
 <settingDesc>
 <p><date when="1608-12-20" n="Tuesday"/></p>
 <p><time when="11:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jj"/>
@@ -82,11 +85,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-22">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0553.jpg" url="aap0553.jpg" n="275r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><unclear reason="binding" cert="high">&IConsonant;o</unclear>ne &IConsonant;ackm<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Lillingstone</rs> <lb/><unclear reason="binding" cert="low">30</unclear> y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 20 &Tuesday; h. 11. 20 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1608 <rs type="address" xml:id="address2">at her broth<choice><orig>&loopedr;</orig><reg>er</reg></choice> Salisberys <lb/>house</rs>.</p>
+<p><lb/>&IConsonant;ane &IConsonant;ackm<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of lillingstone</rs> <lb/>30 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 20 &Tuesday; h. 11. 20 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1608 <rs type="address" xml:id="address2">at her broth<choice><orig>&loopedr;</orig><reg>er</reg></choice> Salisberys <lb/>house</rs>.</p>
 </div>
 </body>
 </text>

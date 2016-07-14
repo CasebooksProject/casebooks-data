@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE46083</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="220">MS Ashmole 220, f. 185r</idno>
+&Napier027;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0185r" to="0185r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tp">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Peniston</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lord Chief Justice</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p1" evidence="internal">
+<persName><roleName>Lady</roleName> <surname evidence="inferred">Peniston</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="p2" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Peniston</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="wife" active="#p1" passive="#tp" evidence="internal"/>
+<relation name="sister" active="#p2" passive="#tp" evidence="internal"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-02-21" n="Saturday"/></p>
+<p><time when="17:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tp" evidence="internal"/>
+<cb:subject ref="#tp" present="unclear"/>
+<cb:subject ref="#p2 #p1" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#tp"/><person sameAs="#p1"/><person sameAs="#p2"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-04">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-11-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aae0389.jpg" url="aae0389.jpg" n="185r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Thomas Peny <lb/>stone at <placeName>Aldergate street</placeName> <lb/>over agaynst my Lord <lb/>cheefe &IConsonant;ustice feb. 21 <lb/>h. 5. 20 p. m. 1618</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

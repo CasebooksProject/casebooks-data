@@ -46,6 +46,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -72,7 +75,7 @@
 <settingDesc>
 <p><date when="1609-02-16" n="Thursday"/></p>
 <p><time when="10:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#eh"/>
@@ -88,15 +91,22 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0095.jpg" url="abi0095.jpg" n="41r"/>
+<graphic xml:id="abi0094.jpg" url="abi0094.jpg" n="40v"/>
+<graphic xml:id="abi0093.jpg" url="abi0093.jpg" n="40r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Elis Hudson <rs type="address" xml:id="address1">londin<choice><orig>&eover;</orig><reg>en</reg></choice>sis <lb/>in pater <choice><orig><hi rend="overline">nr</hi></orig><reg>noster</reg></choice> Rowe</rs>. 37 y <add place="marginLeft">hath <lb/>2 children:</add> <lb/>feb. 16. &Thursday; h. 10. 30. &antm; <lb/>1609 <foreign xml:lang="la">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an sit grav<supplied reason="binding" cert="medium">ida</supplied></foreign></p>
 </div>
 &astroChart;
-<pb xml:id="f40v" n="40v"/>
-<pb xml:id="f40r" n="40r"/>
+<pb xml:id="f40v" n="40v" facs="#abi0094.jpg"/>
+<pb xml:id="f40r" n="40r" facs="#abi0093.jpg"/>
 </body>
 </text>
 </TEI>

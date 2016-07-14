@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE43990</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 9r</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0009r" to="0009r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ak">
+<persName><forename>Anne</forename> <surname>Kempton</surname></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+</person>
+<listRelation><relation name="kinswoman" active="#ak" passive="#rnapier"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1616-10-24" n="Thursday"/></p>
+<p><time when="11:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ak"/>
+<cb:subject ref="#ak" present="unclear"/>
+<cb:topic key="head"><person sameAs="#ak"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#ak"/></cb:topic>
+<cb:topic key="face"><person sameAs="#ak"/></cb:topic>
+<cb:topic key="spots"><person sameAs="#ak"/></cb:topic>
+<cb:topic key="costive"><person sameAs="#ak"/></cb:topic>
+<cb:topic key="requestingTreatment"><person sameAs="#ak"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-11-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0037.jpg" url="cjp0037.jpg" n="9r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my Cosen An kimpton Octob <lb/>24. <choice><orig><choice><sic>vmayed</sic><corr>vnmaryed</corr></choice></orig><reg>unmaryed</reg></choice> octob 24. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> <lb/>h. <subst><del type="strikethrough">10 30</del> <add place="supralinear">11. 45.</add></subst> &antm;. 16<choice><orig>i</orig><reg>1</reg></choice>6. <lb/>hed ill face <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> out blood <lb/>sinc she was let blood <lb/>face full of black spots <add place="infralinear">costive</add> <lb/>desyreth to have a wa<lb/>ter <choice><sic>mudificative</sic><corr>mundicative</corr></choice> to <lb/>make her looke young</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE45641</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="220">MS Ashmole 220, f. 98r</idno>
+&Napier027;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0098r" to="0098r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="et">
+<persName><forename>Ellen</forename> <surname>Triploe</surname></persName>
+<sex value="2">F</sex>
+<age value="48">48</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="t1">
+<persName><surname evidence="inferred" cert="medium">Triploe</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="t2">
+<persName><surname evidence="inferred" cert="medium">Triploe</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="husband" active="#t1" passive="#et"/>
+<relation name="son" active="#t2" passive="#et"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-10-21" n="Tuesday"/></p>
+<p><time when="15:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#t1" evidence="internal" present="unclear"/>
+<cb:subject ref="#et" present="no" consent="no"/>
+<cb:topic key="idleTalk"><person sameAs="#et"/></cb:topic>
+<cb:topic key="sleeplessness"><person sameAs="#et"/></cb:topic>
+<cb:topic key="distracted"><person sameAs="#et"/></cb:topic>
+<cb:topic key="grief"><person sameAs="#et"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-10-28">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aae0215.jpg" url="aae0215.jpg" n="98r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Ellen Triploe <rs type="address" xml:id="address1">of <lb/>litle Paxon</rs> 48 y <lb/>octob. 21. &Tuesday; h. 3. 40 p <lb/>m 1617</p>
+<p><lb/>starteth &amp; skryketh &amp; <lb/>sayth sometymes <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she <lb/>shalbe drowned &amp; <lb/>somet<choice><orig>&yover;</orig><reg>ym</reg></choice>es burned <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>many idle speaches <lb/>ill 4 days by fits. <lb/>slept neaver a whit <lb/>last night.</p>
+<p><lb/>is distracted pulleth &amp; snatcheth</p>
+<p><lb/><foreign xml:lang="la">vide Octob 11.</foreign></p>
+<p><lb/>tooke greefe <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> her <lb/>son did mary <lb/>agaynst her will <lb/>yet she gave her <lb/>consent mutch <lb/>aga<choice><orig>&yover;</orig><reg>yn</reg></choice>st her will <lb/>wished <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she might <lb/>see him buryed. <lb/>husb. <foreign xml:lang="la">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

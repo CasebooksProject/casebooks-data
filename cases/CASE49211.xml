@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49211</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 91v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0091v" to="0091v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="lr">
+<persName><forename>Lambert</forename> <surname>Robinson</surname></persName>
+<sex value="1">M</sex>
+<age value="65">65</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1550-07-25" n="Friday" xml:id="date1" exclude="#date2 #date3" evidence="conjecture" cert="low"/>
+<date when="1555-07-26" n="Friday" xml:id="date2" exclude="#date1 #date3" evidence="conjecture" cert="low"/>
+<date when="1556-07-24" n="Friday" xml:id="date3" exclude="#date1 #date2" evidence="conjecture" cert="low"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1619-07-11T09:45:00" notAfter-custom="1619-07-11T13:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#lr"/>
+<cb:subject ref="#lr" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#lr"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0202.jpg" url="abd0202.jpg" n="91v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>lambart Robynson. <rs type="address" xml:id="address1">of Olny</rs> <lb/>65. y. &IConsonant;uly <gap reason="binding" extent="unclear"/> <lb/>on S<hi rend="superscript">t</hi> &IConsonant;ames <lb/>day being fryday <lb/>called <unclear reason="hand" cert="low">r<choice><orig>&uover;</orig><reg>un</reg></choice>ning</unclear> <gap reason="binding" extent="unclear"/></p>
+</div>
+</body>
+</text>
+</TEI>

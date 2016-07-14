@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -50,6 +53,7 @@
 <person xml:id="f">
 <persName><roleName>Mr</roleName> <surname>Farrington</surname></persName>
 <sex value="1">M</sex>
+<age value="40">40</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -57,7 +61,7 @@
 <settingDesc>
 <p><date when="1606-10-07" n="Tuesday"/></p>
 <p><time when="09:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#f"/>
@@ -71,11 +75,16 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-06-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-28">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0583.jpg" url="cmp0583.jpg" n="281r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> farringdon <rs type="address" xml:id="address1">of <lb/><gap reason="binding" extent="3" unit="chars"/>ing</rs> <foreign xml:lang="la">s<subst><del type="over">t</del><add place="over">c</add></subst>hol: et <unclear reason="hand" cert="low">genes<choice><orig>&uscon;</orig><reg>us</reg></choice></unclear></foreign> <lb/><gap reason="binding" extent="3" unit="chars"/> Octob. 7. <choice><orig><subst><del type="over">h</del><add place="over">&MarsSymbol;</add></subst></orig><reg type="gloss">Tuesday</reg></choice> h. 9 <lb/>25. &antm;. 1606.</p>
+<p><lb/>M<hi rend="superscript">r</hi> farringdon <rs type="address" xml:id="address1">of <lb/>Wing</rs> <foreign xml:lang="la">s<subst><del type="over">t</del><add place="over">c</add></subst>hol: et <unclear reason="hand" cert="low">genes<choice><orig>&uscon;</orig><reg>us</reg></choice></unclear></foreign> <lb/>40 Octob. 7. <choice><orig><subst><del type="over">h</del><add place="over">&MarsSymbol;</add></subst></orig><reg type="gloss">Tuesday</reg></choice> h. 9 <lb/>25. &antm;. 1606.</p>
 </div>
 &astroChart;
 </body>

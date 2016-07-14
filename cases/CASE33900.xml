@@ -43,6 +43,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -61,7 +64,7 @@
 <settingDesc>
 <p><date when="1608-08-08" n="Monday" evidence="external"/></p>
 <p><time when="14:20:00" evidence="external"/></p>
-<cb:consultation type="nativity">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#d"/>
@@ -75,12 +78,18 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-17">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-04-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0361.jpg" url="aap0361.jpg" n="179r"/>
+<graphic xml:id="aap0362.jpg" url="aap0362.jpg" n="179v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><foreign xml:lang="la">nata marti&jVowel;</foreign> <del type="strikethrough">12</del> 7. &Tuesday; about mydnight 1535. <lb/>no fault in her body but only greefe</p>
-<pb xml:id="f179v" n="179v"/>
+<pb xml:id="f179v" n="179v" facs="#aap0362.jpg"/>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> dod <rs type="address" xml:id="address1">of Shitling<supplied reason="binding">ton</supplied></rs> <lb/><del type="strikethrough">ton 35 y Au</del> <foreign xml:lang="la">nata <lb/>marti&jVowel;</foreign> 7. &Tuesday;. h. 12. <subst><del type="strikethrough">16</del> <add place="supralinear">at mid<supplied reason="binding">night</supplied></add></subst> <lb/><del type="strikethrough">1535</del> 1535 <add place="inline">mynd <lb/>gree<subst><del type="over">f</del><add place="over">v</add></subst>ed</add></p>
 </div>
 &astroChartBlank;

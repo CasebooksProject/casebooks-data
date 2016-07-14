@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE44588</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 108r</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0108r" to="0108r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="j1">
+<persName><roleName>Mrs</roleName> <surname>Jennings</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="j2">
+<persName><surname evidence="inferred" cert="high" type="maiden">Jennings</surname></persName>
+<sex value="2" evidence="internal">F</sex>
+<age value="6" unit="months">half a year</age>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="mother" active="#j1" passive="#j2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-04-01" n="Tuesday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#j2" present="unclear"/>
+<cb:topic key="cough"><person sameAs="#j2"/></cb:topic>
+<cb:topic key="swooning"><person sameAs="#j2"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-29">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-12-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0235.jpg" url="cjp0235.jpg" n="108r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="superscript">r<hi rend="overline">es</hi></hi></orig><reg>Mrs</reg></choice> Genings <lb/>litle infant of <lb/>halfe a yere old <lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <choice><sic>a</sic><corr type="delText"/></choice> <lb/>an <choice><sic>extme</sic><corr>extreme</corr></choice> cough <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> maketh the <lb/>child to swound <lb/>many t<choice><orig><hi rend="overline">y</hi></orig><reg>ym</reg></choice>es in a <lb/>day <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> it seemd <lb/>dead for on houre <lb/>Ap. 1. &Tuesday; h. 5 <lb/>p m 1617.</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -61,7 +64,7 @@
 <settingDesc>
 <p><date when="1608-06-20" n="Monday"/></p>
 <p><time when="15:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ar"/>
@@ -78,14 +81,20 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-02">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0264.jpg" url="aap0264.jpg" n="130v"/>
+<graphic xml:id="aap0265.jpg" url="aap0265.jpg" n="131r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Abigayle Ruthal<supplied reason="binding">l</supplied> <lb/><rs type="address" xml:id="address1">of wybostune beyond <lb/>bedford</rs>. 30 y &IConsonant;une 20 <lb/>h. 3. p m. 1608</p>
 </div>
 &astroChart;
-<pb xml:id="f131r" n="131r"/>
+<pb xml:id="f131r" n="131r" facs="#aap0265.jpg"/>
 </body>
 </text>
 </TEI>

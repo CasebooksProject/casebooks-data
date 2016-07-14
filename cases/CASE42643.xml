@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE42643</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 146v</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0146v" to="0146v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ar">
+<persName><forename>Agnes</forename> <surname>Roberts</surname></persName>
+<sex value="2">F</sex>
+<age value="20">20</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="d1" evidence="internal">
+<persName><surname>Day</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d2" evidence="internal">
+<persName><surname evidence="inferred" type="married">Day</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="wife" active="#d2" passive="#d1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-11-11" n="Saturday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ar"/>
+<cb:subject ref="#ar" present="unclear"/>
+<cb:object ref="#d2"/>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#ar"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#ar"/><person sameAs="#d2"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-09-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0306.jpg" url="ciz0306.jpg" n="146v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Agnys Robart&pluralLoop; <rs type="address" xml:id="address1">of laundon</rs>. 20 y. <lb/>maryed a weeke <add place="supralinear">tuesday last maryed</add> nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 11. <choice><sic><subst><del type="over"><unclear reason="del" cert="high">&JupiterSymbol;</unclear></del><add place="over"><unclear reason="over" cert="high">&SaturnSymbol;</unclear></add></subst></sic><corr type="delText"/></choice> <lb/><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 10 &antm;. 1615</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

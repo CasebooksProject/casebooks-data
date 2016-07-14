@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,12 +63,13 @@
 <settingDesc>
 <p><date when="1609-02-18" n="Saturday" evidence="external"/></p>
 <p><time when="10:45:00" evidence="external"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#eo" evidence="internal" present="unclear"/>
-<cb:subject ref="#anon" present="no"/>
-<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#anon"/></cb:topic>
+<cb:querent ref="#eo" evidence="internal"/>
+<cb:subject ref="#eo" present="unclear"/>
+<cb:object ref="#anon"/>
+<cb:topic key="maritalProspects"><person sameAs="#eo"/><person sameAs="#anon"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -73,11 +77,16 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-18">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0314.jpg" url="abi0314.jpg" n="150v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>at this tyme E Osb. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> muliere <lb/>qu<gap extent="12" unit="chars" reason="copy"/></foreign></p>
+<p><lb/>at this tyme E Osb. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> muliere <lb/>an obtinebit</foreign></p>
 </div>
 </body>
 </text>

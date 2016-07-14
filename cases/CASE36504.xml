@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,17 +60,20 @@
 <settingDesc>
 <p><date when="1609-09-08" n="Friday"/></p>
 <p><time when="10:38:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner" evidence="internal"/>
 <cb:querent ref="#s" evidence="internal"/>
 <cb:subject ref="#s" present="yes"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#s"/></cb:topic>
-<cb:judgment/>
+<cb:item type="urine"/>
+<cb:topic key="dizziness"><person sameAs="#s"/></cb:topic>
+<cb:topic key="head"><person sameAs="#s"/></cb:topic>
+<cb:topic key="back"><person sameAs="#s"/></cb:topic>
+<cb:topic key="bones"><person sameAs="#s"/></cb:topic>
 <cb:treatment/>
+<cb:judgment/>
 <cb:info type="urine"/>
-<cb:item type="urine" evidence="internal"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -75,11 +81,17 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0326.jpg" url="clm0326.jpg" n="153v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goodm<choice><orig>&aover;</orig><reg>an</reg></choice> Smarte <lb/><rs type="address" xml:id="address1">of Stony stratfo<supplied reason="binding" cert="high">rd</supplied></rs> <lb/><subst><del type="strikethrough"><subst><del type="over">28</del><add place="over">37</add></subst></del> <add place="supralinear">27</add></subst> y Sept<choice><orig>&eover;</orig><reg>em</reg></choice>b. 8 <supplied reason="binding" cert="medium">&Friday;</supplied> <lb/>h. 10. 38 &antm; <lb/>1609</p>
+<p><lb/>Goodm<choice><orig>&aover;</orig><reg>an</reg></choice> Smart <lb/><rs type="address" xml:id="address1">of Stony stratford</rs> <lb/><subst><del type="strikethrough"><subst><del type="over">30</del><add place="over">27</add></subst></del> <add place="supralinear">27</add></subst> y Sept<choice><orig>&eover;</orig><reg>em</reg></choice>b. 8 &Friday; <lb/>h. 10. 38 &antm; <lb/>1609.</p>
+<p><lb/>hed light <lb/>sight dazeled <lb/>backe bones. <lb/>brought an Aguish <lb/>water.&slash;</p>
 </div>
 </body>
 </text>

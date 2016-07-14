@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-02-09" n="Thursday"/></p>
 <p><time when="10:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m"/>
@@ -70,14 +73,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0266.jpg" url="abi0266.jpg" n="126v"/>
+<graphic xml:id="abi0267.jpg" url="abi0267.jpg" n="127r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><foreign xml:lang="la">Qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> sit <add place="supralinear">faust<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice></add></foreign> ominous <lb/>the conceite of a bargayne <lb/><del type="strikethrough">h. <gap reason="del" extent="1" unit="chars"/></del> feb. 9. &Thursday; h. 10. 30 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1609. m<hi rend="superscript">r</hi> Marsh.</p>
 </div>
 &astroChartDeleted;
-<pb xml:id="f127r" n="127r"/>
+<pb xml:id="f127r" n="127r" facs="#abi0267.jpg"/>
 </body>
 </text>
 </TEI>

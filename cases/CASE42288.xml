@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE42288</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 86v</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0086v" to="0086v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ts">
+<persName><forename>Thomas</forename> <surname>Smarte</surname></persName>
+<sex value="1">M</sex>
+<age value="40">40</age>
+<occupation>Attendant</occupation>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lord Ruthin</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="servant" active="#ts" passive="#person1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-08-25" n="Friday" evidence="inferred"/></p>
+<p><time notBefore="08:30:00" notAfter="09:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ts"/>
+<cb:subject ref="#ts" present="unclear"/>
+<cb:topic key="newAgue"><person sameAs="#ts"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-09-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0186.jpg" url="ciz0186.jpg" n="86v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Thomas Sma<add place="supralinear">r</add>t att<supplied reason="binding" cert="medium">en</supplied><lb/>dant to my l. Ru<supplied reason="binding" cert="medium">then</supplied> <lb/><del type="strikethrough">15</del> <choice><sic>y</sic><corr type="delText"/></choice> <add place="lineBeginning">40 y</add> new ag<supplied reason="binding" cert="medium">ue</supplied></p>
+</div>
+</body>
+</text>
+</TEI>

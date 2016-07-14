@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE46570</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-11">11 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="201">MS Ashmole 201, f. 88r</idno>
+&Napier028;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0088r" to="0088r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rn">
+<persName><forename>Robert</forename> <surname>Nichols</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="n">
+<persName><surname type="married" evidence="inferred">Nichols</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="wife" active="#n" passive="#rn"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-05-07" n="Thursday"/></p>
+<p><time when="06:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#n"/>
+<cb:subject ref="#n" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#n"/></cb:topic>
+<cb:topic key="newAgue"><person sameAs="#n"/></cb:topic>
+<cb:topic key="back"><person sameAs="#n"/></cb:topic>
+<cb:topic key="bones"><person sameAs="#n"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-01">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckx0199.jpg" url="ckx0199.jpg" n="88r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Rob. Nichols his wife sick <lb/>of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> new ague may 7 <lb/>&Thursday; h. 6. 15 &antm; 1618 <lb/>in her back &amp; bone.</p>
+<p><lb/>was churched on satt last.</p>
+</div>
+</body>
+</text>
+</TEI>

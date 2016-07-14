@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE38591</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE38590">CASE38590</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 152r</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0152r" to="0152r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="aj">
+<persName><roleName>Mrs</roleName> <forename>Anne</forename> <surname>Johnson</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1589-03-01" n="Saturday"/><time when="18:00:00"/><placeName sameAs="#place1"/></birth>
+</person>
+<person xml:id="p" evidence="internal">
+<persName><surname>Palmer</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-08-26" n="Monday" evidence="external"/></p>
+<p><time when="15:25:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#aj"/>
+<cb:subject ref="#aj" present="unclear"/>
+<cb:topic key="maritalProspects" evidence="internal" cert="medium"><person sameAs="#aj"/></cb:topic>
+<cb:judgment/>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-08">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-02-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0323.jpg" url="ckk0323.jpg" n="152r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> An &IConsonant;ounson <lb/><foreign xml:lang="la">nata 1 marti&jVowel; &SaturdayLatin;. <lb/>hor 6. p m. 1589.</foreign> <lb/>borne at <placeName xml:id="place1">london</placeName></p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24231</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 147r</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0147r" to="0147r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="et">
+<persName><forename>Elizabeth</forename> <surname>Taylor</surname></persName>
+<sex value="2">F</sex>
+<age value="47">47</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ah">
+<persName><forename>Agnes</forename> <surname>Hammond</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-01-14" n="Saturday"/></p>
+<p><time when="10:25:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#et"/>
+<cb:subject ref="#et" present="unclear"/>
+<cb:object ref="#ah"/>
+<cb:topic key="limbs"><person sameAs="#et"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#et"/></cb:topic>
+<cb:topic key="arms"><person sameAs="#et"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#et"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#et"/><person sameAs="#ah"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-30">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-04-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0305.jpg" url="ady0305.jpg" n="147r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis Tayler <rs type="address" xml:id="address1">of Marson</rs> 47 y <lb/>&IConsonant;an 14. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 10. 25 &antm; <lb/>1615.</p>
+<p><lb/>payned in her lyms <lb/>ever sinc the sonday before <lb/>Christmas. left arme &amp; left leg <lb/>&amp; hath no &vVowel;se of it. <choice><sic>in her</sic><corr type="noText"/></choice></p>
+</div>
+<cb xml:id="colB" n="b"/>
+&astroChart;
+<div>
+<p><lb/>susp. Agnys Hamon</p>
+</div>
+</body>
+</text>
+</TEI>

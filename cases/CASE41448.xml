@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE41448</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-24">24 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="199">MS Ashmole 199, f. 137v</idno>
+&Napier022;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0137v" to="0137v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jh">
+<persName><forename>Joan</forename> <surname>Harris</surname></persName>
+<sex value="2">F</sex>
+<age value="27">27</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rs">
+<persName><forename>Robert</forename> <surname>Smith</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><surname type="married" evidence="inferred">Smith</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="wife" active="#s" passive="#rs"/>
+<relation name="sister" mutual="#jh #s"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1613-05-30" n="Sunday"/></p>
+<p><time when="07:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jh"/>
+<cb:subject ref="#jh" present="unclear"/>
+<cb:topic key="back"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="chest"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="griping"><person sameAs="#jh"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-04-16">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-06-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjv0298.jpg" url="cjv0298.jpg" n="137v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;one Harrys <rs type="address" xml:id="address1">of this towne</rs> <lb/>Robart <add place="supralinear">Smyths</add> wifes sister 2<subst><del type="over">6</del><add place="over">7</add></subst> y <lb/>may 30. &Sunday; h. 7. 45. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1613. <add place="inline">back left syde chest <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a great <lb/>gryping</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

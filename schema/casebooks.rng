@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2016-02-15T11:37:00Z. 
+Schema generated from ODD source 2016-06-02T15:05:05Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -4770,28 +4770,22 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
   <define name="model.emphLike">
     <choice>
       <ref name="foreign"/>
-      <ref name="term"/>
       <ref name="title"/>
     </choice>
   </define>
   <define name="model.emphLike_alternation">
     <choice>
       <ref name="foreign"/>
-      <ref name="term"/>
       <ref name="title"/>
     </choice>
   </define>
   <define name="model.emphLike_sequence">
     <ref name="foreign"/>
-    <ref name="term"/>
     <ref name="title"/>
   </define>
   <define name="model.emphLike_sequenceOptional">
     <optional>
       <ref name="foreign"/>
-    </optional>
-    <optional>
-      <ref name="term"/>
     </optional>
     <optional>
       <ref name="title"/>
@@ -4802,18 +4796,12 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="foreign"/>
     </zeroOrMore>
     <zeroOrMore>
-      <ref name="term"/>
-    </zeroOrMore>
-    <zeroOrMore>
       <ref name="title"/>
     </zeroOrMore>
   </define>
   <define name="model.emphLike_sequenceRepeatable">
     <oneOrMore>
       <ref name="foreign"/>
-    </oneOrMore>
-    <oneOrMore>
-      <ref name="term"/>
     </oneOrMore>
     <oneOrMore>
       <ref name="title"/>
@@ -6055,7 +6043,6 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
   </define>
   <define name="model.encodingDescPart">
     <choice>
-      <ref name="classDecl"/>
       <ref name="variantEncoding"/>
     </choice>
   </define>
@@ -6325,33 +6312,6 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
       <ref name="att.global.attributes"/>
       <ref name="att.translatable.attributes"/>
       <ref name="att.typed.attributes"/>
-      <empty/>
-    </element>
-  </define>
-  <define name="term">
-    <element name="term">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. FURTHER DETAIL TO BE WRITTEN [3.3.4. ]</a:documentation>
-      <ref name="macro.phraseSeq"/>
-      <ref name="att.global.attribute.xmlid"/>
-      <ref name="att.global.attribute.n"/>
-      <ref name="att.global.attribute.xmllang"/>
-      <ref name="att.global.attribute.xmlbase"/>
-      <ref name="att.global.attribute.xmlspace"/>
-      <ref name="att.pointing.attributes"/>
-      <ref name="att.typed.attributes"/>
-      <ref name="att.canonical.attributes"/>
-      <ref name="att.sortable.attributes"/>
-      <optional>
-        <attribute name="targetLang">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the language of the content to be found at the destination referenced by target, using a language tag generated according to BCP 47.</a:documentation>
-          <ref name="data.language"/>
-        </attribute>
-      </optional>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-term-targetLang-targetLang-constraint">
-        <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
-          <sch:assert test="count(@target)">@targetLang can only be used if @target is specified.</sch:assert>
-        </sch:rule>
-      </pattern>
       <empty/>
     </element>
   </define>
@@ -6963,8 +6923,8 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-settingDesc-date-year-check-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[ancestor::tei:settingDesc]">
-          <let name="exception_dates" value="('1573-01-12','1575-12-29','1577-07-16','1581-02-02','1585-03-27','1594-03-02','1595-09-30')"/>
-          <report test="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634][not(local-name() = 'notBefore' and . = $exception_dates)]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634]/name()"/> is out of range. Expected year values should be 1596-1630</report>
+          <let name="exception_dates" value="('1573-01-12','1575-12-29','1577-07-16','1581-02-02','1585-03-27','1594-03-02','1595-09-30','1635-10-13')"/>
+          <report test="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[not(.=$exception_dates)][number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1634]/name()"/> is out of range. Expected year values should be 1596-1634</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-needs-datable-attr-constraint">
@@ -7256,6 +7216,11 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref">
           <let name="target" value="replace(@target,'^(https*://)*(dev|www).magicandmedicine.hps.cam.ac.uk','')"/>
           <report test="matches(@target,'(dev|www).magicandmedicine.hps.cam.ac.uk')">ERROR: Links to our site should be entered using their absolute path (ie. <value-of select="if (matches($target,'^/')) then $target else '/using-our-edition/guide-to-reading-the-cases'"/>)</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-writing-link-to-xmlid-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^#')]">
+          <assert test="replace(@target,'^#','') = //@xml:id">ERROR: ref/@target points to nonexistant xml:id value on the page (<value-of select="@target"/>)</assert>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-target-not-site-self-mailto-constraint">
@@ -8145,42 +8110,6 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <empty/>
     </element>
   </define>
-  <define name="classDecl">
-    <element name="classDecl">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(classification declarations) contains one or more taxonomies defining any classificatory codes used elsewhere in the text. [2.3.7.  2.3. ]</a:documentation>
-      <oneOrMore>
-        <ref name="taxonomy"/>
-      </oneOrMore>
-      <ref name="att.global.attributes"/>
-      <empty/>
-    </element>
-  </define>
-  <define name="taxonomy">
-    <element name="taxonomy">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy. [2.3.7. ]</a:documentation>
-      <choice>
-        <zeroOrMore>
-          <choice>
-            <ref name="model.glossLike"/>
-            <ref name="model.descLike"/>
-          </choice>
-        </zeroOrMore>
-        <oneOrMore>
-          <ref name="category"/>
-        </oneOrMore>
-        <group>
-          <group>
-            <ref name="model.biblLike"/>
-          </group>
-          <zeroOrMore>
-            <ref name="category"/>
-          </zeroOrMore>
-        </group>
-      </choice>
-      <ref name="att.global.attributes"/>
-      <empty/>
-    </element>
-  </define>
   <define name="category">
     <element name="category">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [2.3.7. ]</a:documentation>
@@ -8303,22 +8232,43 @@ Sample values include: 1] text; 2] corpus</a:documentation>
   </define>
   <define name="textClass">
     <element name="textClass">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text classification) groups information which describes the nature or topic of a text in terms of a standard classification scheme, thesaurus, etc. [2.4.3. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text classification) serves, for Casebooks purposes, solely as a container for a single catRef specifying the type of text in question. [2.4.3. ]</a:documentation>
       <zeroOrMore>
         <choice>
           <ref name="catRef"/>
         </choice>
       </zeroOrMore>
-      <ref name="att.global.attributes"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-textClass-confirm-consultation-type-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:textClass">
+          <assert test="count(tei:catRef)le 1">ERROR: A case file can only have one catRef.</assert>
+        </rule>
+      </pattern>
+      <ref name="att.global.attribute.xmlid"/>
+      <ref name="att.global.attribute.n"/>
+      <ref name="att.global.attribute.xmllang"/>
+      <ref name="att.global.attribute.rend"/>
+      <ref name="att.global.attribute.xmlspace"/>
+      <ref name="att.global.linking.attribute.corresp"/>
+      <ref name="att.global.linking.attribute.synch"/>
+      <ref name="att.global.linking.attribute.sameAs"/>
+      <ref name="att.global.linking.attribute.copyOf"/>
+      <ref name="att.global.linking.attribute.next"/>
+      <ref name="att.global.linking.attribute.prev"/>
+      <ref name="att.global.linking.attribute.exclude"/>
+      <ref name="att.global.facs.attribute.facs"/>
       <ref name="att.declarable.attributes"/>
+      <attribute name="xml:base">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a base URI reference with which applications can resolve relative URI references into absolute URI references.</a:documentation>
+        <value>../master-lists/consultation-types.xml</value>
+      </attribute>
       <empty/>
     </element>
   </define>
   <define name="catRef">
     <element name="catRef">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category reference) specifies one or more defined categories within some taxonomy or text typology. [2.4.3. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category reference) points, by means of its target value, at the category of text in question. [2.4.3. ]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-catRef-confirm-consultation-type-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-catRef-single-catref-only-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:catRef[@target]">
           <let name="target_ids" value="tokenize(@target,'\s+')"/>
           <let name="full_path" value="replace(replace(base-uri(.),'file:',''),'casebooks-data/.+$','casebooks-data/master-lists/consultation-types.xml')"/>
@@ -8326,12 +8276,32 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <assert test="every $id in $target_ids satisfies $id = $category_ids">ERROR: Invalid <name/>@target: <value-of select="$target_ids[not(.=$category_ids)]"/>. Valid values are: <value-of select="$category_ids[not(.='#entry')]"/>.</assert>
         </rule>
       </pattern>
+      <ref name="att.responsibility.attributes"/>
       <ref name="att.global.attributes"/>
       <attribute name="target">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines the type of document being encoded according to our Types of text.</a:documentation>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines the type of document being encoded using one of the categories explained in Types of text. Permitted values: "#caseNotes", "#decumbiture", "#diary", "#election", "#horary", "#interrogation", "#nativity", "#practice", "#revolutions".</a:documentation>
         <list>
           <oneOrMore>
-            <ref name="data.pointer"/>
+            <choice>
+              <value>#caseNotes</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#decumbiture</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#diary</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#election</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#horary</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogation</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#nativity</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#practice</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#revolutions</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
           </oneOrMore>
         </list>
       </attribute>
@@ -8545,13 +8515,13 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <attribute name="from">
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the starting point of the location in a normalized form, typically a page number.</a:documentation>
         <data type="string">
-          <param name="pattern">\d{4,4}[AB]*[rv]*</param>
+          <param name="pattern">\d{4,4}[ABC]*[rv]*</param>
         </data>
       </attribute>
       <attribute name="to">
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the end-point of the location in a normalized form, typically as a page number.</a:documentation>
         <data type="string">
-          <param name="pattern">\d{4,4}[AB]*[rv]*</param>
+          <param name="pattern">\d{4,4}[ABC]*[rv]*</param>
         </data>
       </attribute>
       <empty/>
@@ -9267,23 +9237,13 @@ Sample values include: 1] text; 2] corpus</a:documentation>
         <attribute name="unit">
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the unit in which the age is being measured. Permitted values: "seconds", "minutes", "hours", "days", "weeks", "fortnights", "months", "years", "decades", "centuries".</a:documentation>
           <choice>
-            <value>seconds</value>
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <value>minutes</value>
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>days</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>weeks</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <value>fortnights</value>
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>months</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>years</value>
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <value>decades</value>
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <value>centuries</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
           </choice>
         </attribute>
@@ -9926,6 +9886,11 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@active,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@active,'\s+'))">ERROR: <name/>@active value(s) (<value-of select="string-join(for $x in tokenize(@active,'\s+') return if (not($x = ancestor::tei:TEI//tei:listPerson//(tei:person|tei:org|tei:personGrp)/concat('#',@xml:id))) then $x else (),' ')"/>) does not point to listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-link-mutual-constraint">
+        <rule context="tei:relation">
+          <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@mutual,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@mutual,'\s+'))">ERROR: <name/>@mutual value(s) (<value-of select="string-join(for $x in tokenize(@mutual,'\s+') return if (not($x = ancestor::tei:TEI//tei:listPerson//(tei:person|tei:org|tei:personGrp)/concat('#',@xml:id))) then $x else (),' ')"/>) does not point to listPerson//person, org or personGrp</assert>
+        </rule>
+      </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-active-sex-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:relation">
           <let name="relation_elm" value="."/>
@@ -9933,6 +9898,15 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <let name="relations" value="doc(replace(replace(base-uri(.),'file:',''),'casebooks-data/.+$','casebooks-data/master-lists/relations.xml'))//tei:entry"/>
           <let name="bodies" value="//tei:listPerson//(tei:person|tei:personGrp)"/>
           <assert test="every $x in $bodies[concat('#',@xml:id)=$active] satisfies $x/lower-case(tei:sex[1])= $relations//tei:form[@n=$relation_elm/@name]//replace(tei:gen,'^n$','u')">ERROR: The sex of <name/>@active (<value-of select="for $x in $bodies[concat('#',@xml:id)=$active] return if ($x/lower-case(tei:sex[1]) != $relations//tei:form[@n=$relation_elm/@name]//tei:gen) then $x/concat('#',@xml:id) else ()"/>) is wrong for relation@name</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-mutual-sex-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:relation">
+          <let name="relation_elm" value="."/>
+          <let name="mutual" value="$relation_elm/tokenize(@mutual,'\s+')"/>
+          <let name="relations" value="doc(replace(replace(base-uri(.),'file:',''),'casebooks-data/.+$','casebooks-data/master-lists/relations.xml'))//tei:entry"/>
+          <let name="bodies" value="//tei:listPerson//(tei:person|tei:personGrp)"/>
+          <assert test="every $x in $bodies[concat('#',@xml:id)=$mutual] satisfies $x/lower-case(tei:sex[1])= $relations//tei:form[@n=$relation_elm/@name]//replace(tei:gen,'^n$','u')">ERROR: The sex of <name/>@mutual (<value-of select="for $x in $bodies[concat('#',@xml:id)=$mutual] return if ($x/lower-case(tei:sex[1]) != $relations//tei:form[@n=$relation_elm/@name]//tei:gen) then $x/concat('#',@xml:id) else ()"/>) is wrong for relation@name</assert>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-reforkeyorname-constraint">
@@ -11438,6 +11412,14 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       </list>
     </attribute>
   </define>
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.participants-present-must-be-same-constraint">
+    <rule xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@present]">
+      <let name="refs" value="tokenize(@ref,'\s+')"/>
+      <let name="present_vals" value="distinct-values(//cb:*[local-name()=('querent','subject','object')][tokenize(@ref,'\s+')=$refs]/@present)"/>
+      <assert test="count($present_vals)=1">ERROR: Multiple @present values (<value-of select="string-join($present_vals,', ')"/>) on <value-of select="string-join(//cb:*[local-name()=('querent','subject','object')][tokenize(@ref,'\s+')=$refs]/concat('cb:',local-name()),', ')"/> for <value-of select="$refs"/>
+         </assert>
+    </rule>
+  </pattern>
   <define name="consultant">
     <element name="consultant" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultant) points, by means of the ref attribute, to the person conducting the consultation.</a:documentation>
@@ -11458,7 +11440,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
   </define>
   <define name="consultation">
     <element name="consultation" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultation) contains information about the consultation and the roles of the participants, and takes a mandatory type value stating what sort of consultation it is.</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultation) contains information about the consultation and the roles of the participants.</a:documentation>
       <interleave>
         <ref name="practice"/>
         <optional>
@@ -11499,31 +11481,6 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
           <ref name="recipe"/>
         </optional>
       </interleave>
-      <ref name="att.casebooks.certainty.attributes"/>
-      <attribute name="type">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">states what kind of consultation it is.</a:documentation>
-        <choice>
-          <value>caseNotes</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>decumbiture</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>diary</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>election</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>horary</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>interrogation</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>nativity</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>practice</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>revolutions</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-        </choice>
-      </attribute>
-      <empty/>
     </element>
   </define>
   <define name="cbitem">
@@ -11766,6 +11723,19 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
           <report test="not(every $token in $querent_tokens satisfies $token = $subject_tokens)">ERROR: <name/>@present needed where any token in @ref is not subject</report>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-inferred-logic-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[@evidence='inferred'][count(tokenize(@ref,'\s+'))=1]">
+          <let name="querent_tokens" value="tokenize(@ref,'\s+')"/>
+          <let name="subject_tokens" value="ancestor::cb:consultation//cb:subject/tokenize(@ref,'\s+')"/>
+          <let name="querent_person_elems" value="//tei:listPerson/(tei:person|tei:personGrp)[concat('#',@xml:id) = $querent_tokens]"/>
+          <report test="$querent_person_elems[tei:persName] or $querent_tokens = $subject_tokens">ERROR: If <name/>@evidence='inferred' the querent must be anonymous and not a subject</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-inferred-ref-count-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[@evidence='inferred']">
+          <assert test="count(tokenize(@ref,'\s+'))=1">ERROR: <name/>/@ref must contain a single token if @evidence='inferred'</assert>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.participants.attribute.reason"/>
       <ref name="att.casebooks.participants.attribute.present"/>
       <ref name="att.casebooks.participants.attribute.ref"/>
@@ -11887,6 +11857,14 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-key-unknown-needs-reason-constraint">
         <rule xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:topic[@key='unknown']">
           <report test="not(@reason)">ERROR: cb:topic@key='unknown' needs @reason</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-ensure-person-sameAs-only-occurs-once-in-topic-constraint">
+        <rule xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:topic[tei:person|tei:org|tei:personGrp]">
+          <let name="tokens" value="(tei:person|tei:org|tei:personGrp)/tokenize(@sameAs,'\s+')"/>
+          <let name="repeated_tokens" value="$tokens[index-of($tokens,.)[2]]"/>
+          <report test="$repeated_tokens">ERROR: @sameAs values (<value-of select="$repeated_tokens"/>) repeated in <value-of select="distinct-values(*[tokenize(@sameAs,'\s+') = $repeated_tokens]/local-name())"/>
+               </report>
         </rule>
       </pattern>
       <ref name="att.casebooks.certainty.attributes"/>

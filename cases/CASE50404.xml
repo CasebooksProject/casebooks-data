@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE50404</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 146r</idno>
+&Napier031;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0146r" to="0146r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Agnes</forename> <surname>Haines</surname></persName>
+<sex value="2">F</sex>
+<age value="27">27</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-03-21" n="Tuesday"/></p>
+<p><time when="09:10:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rwallis"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ah"/>
+<cb:subject ref="#ah" present="unclear"/>
+<cb:topic key="scouring"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#ah"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-01-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0309.jpg" url="cmn0309.jpg" n="146r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Agnes Haynes <rs type="address" xml:id="address1">of <subst><del type="over"><gap reason="del" unit="chars" extent="3"/></del><add place="over">sta</add></subst>pton</rs> <lb/>y. 27. <choice><orig>d. &MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 9. 10. <choice><orig>ant. <lb/>m</orig><reg>am</reg></choice> <foreign xml:lang="la">Marti&jVowel;</foreign>. 21. 1620. is very <lb/><gap reason="binding" unit="chars" extent="unclear"/> <unclear cert="low" reason="binding">chill</unclear> &amp; <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">sc</add></subst>oureth</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

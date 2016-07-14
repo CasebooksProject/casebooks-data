@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24066</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 115r/Q3, f. 115v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 115r-v</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0115r" to="0115v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ff">
+<persName><roleName>Mr</roleName> <forename>Francis</forename> <surname>Farren</surname> <surname type="variant" evidence="inferred">Farrar</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="mf">
+<persName><roleName>Mrs</roleName> <forename>Martha</forename> <surname type="married">Farren</surname> <surname type="marriedVariant">Farrar</surname></persName>
+<sex value="2">F</sex>
+<age value="60">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="wife" active="#mf" passive="#ff"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1614-03-01" n="Tuesday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ff" evidence="internal" present="no"/>
+<cb:subject ref="#mf" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#mf"/></cb:topic>
+<cb:judgment/>
+<cb:info type="financial"/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-24">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-04-08">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-17">Checked and combined with CASE24067 by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0241.jpg" url="ady0241.jpg" n="115r"/>
+<graphic xml:id="ady0242.jpg" url="ady0242.jpg" n="115v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> francis farren for <lb/>his wife <del type="strikethrough">oc</del> nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 1. <lb/>&Tuesday; h. <del type="strikethrough">8</del> 7. 45. &antm; <lb/>1614</p>
+</div>
+&astroChartPartial;
+<div><pb xml:id="f115v" n="115v"/>
+<p><lb/>Old <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> <del type="strikethrough">francis</del> Martha farrer <lb/>60 y <del type="strikethrough">O</del> nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 1. &Tuesday; h. <del type="strikethrough">7. 50</del> 8 <lb/>&antm; 1614. <add place="inline"><rs type="address" xml:id="address1">of Bydn<choice><orig>&aover;</orig><reg>am</reg></choice></rs></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

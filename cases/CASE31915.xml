@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -73,7 +76,7 @@
 <p><time when="09:00:00" xml:id="time1" exclude="#time2 #time3"/></p>
 <p><time when="09:30:00" xml:id="time2" exclude="#time1 #time3"/></p>
 <p><time when="10:30:00" xml:id="time3" exclude="#time1 #time2"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="internal" present="unclear"/>
@@ -94,12 +97,13 @@
 <change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-30">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-02-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2015-09-30">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic xml:id="Ashmole-193-0511.jpg" url="Ashmole-193-0511.jpg" n="254r"/>
-<graphic xml:id="Ashmole-193-0512.jpg" url="Ashmole-193-0512.jpg" n="254v"/>
+<graphic xml:id="bqo0511.jpg" url="bqo0511.jpg" n="254r"/>
+<graphic xml:id="bqo0512.jpg" url="bqo0512.jpg" n="254v"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
@@ -107,7 +111,7 @@
 </div>
 &astroChartPartial;
 <div>
-<pb xml:id="f254v" n="254v"/>
+<pb xml:id="f254v" n="254v" facs="#bqo0512.jpg"/>
 <p><lb/>An Herick <rs type="address" sameAs="#address1">of Collingtree by <lb/>Mylton hard by Gayston</rs> <lb/>16 y &IConsonant;uly 31. &Friday; h. 9 <add place="supralinear">10 30</add> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1607. <foreign xml:lang="la">sine consensu</foreign><note place="chart">wits &amp; mynd <lb/>troubled.</note></p>
 </div>
 &astroChart;

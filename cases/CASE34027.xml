@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-09-01" n="Thursday"/></p>
 <p><time when="11:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wr"/>
@@ -76,12 +79,18 @@
 <revisionDesc>
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0396.jpg" url="aap0396.jpg" n="196v"/>
+<graphic xml:id="aap0397.jpg" url="aap0397.jpg" n="197r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice> Rogers <rs type="address" xml:id="address1">of Soulberye</rs> <lb/>Sept<choice><orig>&eover;</orig><reg>em</reg></choice>b 1. &Thursday; h. 11. <add place="supralinear"><choice><sic>11.</sic><corr type="noText"/></choice></add> &antm; 1608</p>
-<pb xml:id="f197r" n="197r"/>
+<pb xml:id="f197r" n="197r" facs="#aap0397.jpg"/>
 
 <p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Rogars <rs type="address" sameAs="#address1">of Soulberye</rs> <lb/>30 y <del type="strikethrough">A</del> Sept. 1. &Thursday; h. 11. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1608. hed &amp; eys ill &amp; dyme <lb/>as if he had the staggers.</p>
 </div>

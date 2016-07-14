@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25429</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 131r</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0131r" to="0131r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rl">
+<persName><forename>Robert</forename> <surname>Lea</surname></persName>
+<sex value="1">M</sex>
+<age value="35">35</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-10-05" n="Friday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rl"/>
+<cb:subject ref="#rl" present="unclear"/>
+<cb:topic key="melancholy"><person sameAs="#rl"/></cb:topic>
+<cb:topic key="sadness"><person sameAs="#rl"/></cb:topic>
+<cb:topic key="heaviness"><person sameAs="#rl"/></cb:topic>
+<cb:topic key="mopish"><person sameAs="#rl"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#rl"/></cb:topic>
+<cb:treatment/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-23">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-12-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-08">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0281.jpg" url="afp0281.jpg" n="131r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Robart lea <rs type="address" xml:id="address1">of Whaddon</rs> <lb/><subst><del type="over">2<gap reason="del" extent="1" unit="chars"/></del><add place="over">35</add></subst>. y. a child of 3 yeres <lb/>Octob. 5 &Friday; h. 11. &antm; <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0.</p>
+<p><lb/>of a melancholy c<choice><orig>&oover;</orig><reg>on</reg></choice>stit <lb/>sad heavy l<choice><orig>&uover;</orig><reg>um</reg></choice>pish <lb/>stomack loveth no c<choice><orig>&oover;</orig><reg>om</reg></choice><lb/>pany&slash;<note place="chart">mopish.</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

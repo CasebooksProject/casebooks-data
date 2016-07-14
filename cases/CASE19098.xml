@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,7 +62,7 @@
 <settingDesc>
 <p><date when="1601-03-31" n="Tuesday"/></p>
 <p><time when="10:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#hs"/>
@@ -75,12 +78,13 @@
 <change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-04-18">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-04-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2013-11-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic xml:id="Ashmole-404-0133.jpg" url="Ashmole-404-0133.jpg" n="65r"/>
-<graphic xml:id="Ashmole-404-0132.jpg" url="Ashmole-404-0132.jpg" n="64v"/>
+<graphic xml:id="afw0147.jpg" url="afw0147.jpg" n="65r"/>
+<graphic xml:id="afw0146.jpg" url="afw0146.jpg" n="64v"/>
 </facsimile>
 <text xml:lang="en">
 <body>
@@ -88,11 +92,11 @@
 <p><lb/>Henry Savadge <rs type="address" xml:id="address1">of Woott<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice></rs> <lb/>25 y. Marti&jVowel; <subst><del type="over">2</del><add place="over">3</add></subst><choice><orig>i</orig><reg>1</reg></choice> &TuesdayN; <lb/>hor. 10. 45. &antm;. 160<choice><orig>i</orig><reg>1</reg></choice>. <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> &aelig;gylope</foreign></p>
 </div>
 &astroChartBlank;
-<div><pb xml:id="f64v" n="64v"/>
+<div><pb xml:id="f64v" n="64v" facs="#Ashmole-404-0132.jpg"/>
 <p><lb/><del type="strikethrough">mar</del> for an &aelig;gylops <lb/>in his eye corner. or <lb/>rath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &vVowel;nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> the eye <lb/>corner. Marti&jVowel; 3<choice><orig>i</orig><reg>1</reg></choice> <choice><orig>die <lb/>&MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> hor. 10. 45. &antm; 160<supplied reason="binding">1</supplied></p>
 </div>
 &astroChart;
-<pb xml:id="f65r" n="65r"/>
+<pb xml:id="f65r" n="65r" facs="#Ashmole-404-0133.jpg"/>
 </body>
 </text>
 </TEI>

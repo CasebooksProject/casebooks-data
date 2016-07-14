@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE50387</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 144v</idno>
+&Napier031;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0144v" to="0144v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mw">
+<persName><forename>Mary</forename> <surname>Wast</surname></persName>
+<sex value="2">F</sex>
+<age atLeast="20" atMost="29">20-29</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-03-16" n="Thursday"/></p>
+<p><time when="10:10:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rwallis"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mw"/>
+<cb:subject ref="#mw" present="unclear"/>
+<cb:topic key="fallingSickness"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="menstruation"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="head"><person sameAs="#mw"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-01-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-28">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0306.jpg" url="cmn0306.jpg" n="144v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Mary Wast <rs type="address" xml:id="address1">of <subst><del type="strikethrough">Kettering</del> <add place="supralinear">Broughton</add></subst></rs> y. 2<gap extent="1" unit="chars" reason="binding"/> <lb/><choice><orig>d. &JupiterSymbol;</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h: 10. 10. <choice><orig>ant: m</orig><reg/></choice>: Marti&jVowel; 16. <lb/>1620. <foreign xml:lang="la">Epilepsia</foreign>. fell ii&jVowel; tymes. <lb/>hath them not well. feeleth a <unclear cert="low" reason="hand">sie</unclear><gap extent="2" unit="chars" reason="hand"/><gap extent="unclear" reason="binding"/> <lb/>in h<subst><del type="over"><unclear cert="low" reason="del">is</unclear></del><add place="over">er</add></subst> heade, &amp; the<supplied reason="binding" cert="low">n</supplied> <lb/>falleth</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

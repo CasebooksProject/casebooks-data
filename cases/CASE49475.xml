@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49475</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 146v/Q4, f. 147r/Q1A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, ff. 146v-147r</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0146v" to="0147r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ae">
+<persName><forename>Alice</forename> <surname>Emes</surname></persName>
+<sex value="2">F</sex>
+<age value="50">50</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-08-09" n="Monday"/></p>
+<p><time when="11:30:00" xml:id="time1" exclude="#time2"/>
+<time when="11:45:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ae"/>
+<cb:subject ref="#ae" present="unclear"/>
+<cb:topic key="legs"><person sameAs="#ae"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#ae"/></cb:topic>
+<cb:topic key="pricking"><person sameAs="#ae"/></cb:topic>
+<cb:topic key="face"><person sameAs="#ae"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-06">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-24">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0312.jpg" url="abd0312.jpg" n="146v"/>
+<graphic xml:id="abd0313.jpg" url="abd0313.jpg" n="147r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Alce Emes <rs type="address" xml:id="address1">of <lb/>Dunstable Houghton</rs> <lb/>50. y Aug. 9 &Monday; <lb/>h 11. 30 &antm; <lb/>1619 <add place="inline">10 weekes p<gap reason="binding" extent="unclear"/> <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <del type="strikethrough">a <gap reason="del" extent="1" unit="chars"/></del> the right leg swelled <lb/>&amp; pricked. face blasted.</add></p>
+</div>
+&astroChart;
+
+<div><pb xml:id="f147r" n="147r" facs="#abd0313.jpg"/>
+<p><lb/>Alce Eemes <rs type="address" sameAs="#address1">of Dunstable</rs> Aug. 9 <lb/>&Monday;. h. 11 45 &antm; 1619</p>
+</div>
+</body>
+</text>
+</TEI>

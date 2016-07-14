@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE41827</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 12r</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0012r" to="0012r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w1">
+<persName><roleName>Lady</roleName> <surname>Wade</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="w2">
+<persName><surname evidence="inferred" type="maiden" cert="medium">Wade</surname></persName>
+<sex value="2">F</sex>
+<age value="15">15</age>    
+</person>
+<listRelation>
+<relation name="daughter" active="#w2" passive="#w1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-05-10" n="Wednesday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#w1" evidence="internal" present="no"/>
+<cb:subject ref="#w2" present="no" consent="no"/>
+<cb:topic key="mopish"><person sameAs="#w2"/></cb:topic>
+<cb:topic key="requestingTreatment"><person sameAs="#w2"/></cb:topic>
+<cb:topic key="mendOrNo"><person sameAs="#w2"/></cb:topic>
+<cb:info type="angel" subtype="Raphael"/>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0035.jpg" url="ciz0035.jpg" n="12r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The lady Wade for her <lb/>mopish daughter 15 y <lb/>sent to me to send <lb/>her physick &amp; my <lb/>opinion weath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> ev<choice><orig>&loopedr;</orig><reg>er</reg></choice> <lb/>to be cured. may <lb/>10. &Wednesday; h. 9. &antm; 16<choice><orig>i</orig><reg>1</reg></choice>5 <lb/><foreign xml:lang="la">mater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filia sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu.</foreign></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+&astroChart;
+
+</body>
+</text>
+</TEI>

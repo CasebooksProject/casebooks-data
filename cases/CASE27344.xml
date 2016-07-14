@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -52,15 +55,21 @@
 
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="l">
+<persName><surname evidence="inferred" cert="medium">Lelam</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="husband" active="#l" passive="#al"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1606-05-24" n="Saturday"/></p>
 <p><time when="09:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#al"/>
+<cb:querent ref="#l" evidence="internal" present="no"/>
 <cb:subject ref="#al" present="no"/>
 <cb:topic key="lostSenses"><person sameAs="#al"/></cb:topic>
 <cb:topic key="distempered"><person sameAs="#al"/></cb:topic>
@@ -77,12 +86,17 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-04-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-05-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-31">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0299.jpg" url="cmp0299.jpg" n="140r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding">Alc</supplied>e lel<choice><orig>&aover;</orig><reg>am</reg></choice> <rs type="address" xml:id="address1">of Brixworth</rs>. <lb/><gap reason="binding" extent="2" unit="chars"/> y sept<choice><orig>&eover;</orig><reg>em</reg></choice>b v&jVowel;. h. 3. 30. p m <lb/><gap reason="binding" extent="1" unit="words" cert="high"/> sent to me agayne may <lb/><supplied reason="binding">24</supplied> &Saturday; hor. 9. 45. &antm;. 1606.</p>
-<p><lb/><supplied reason="binding" cert="low">ha</supplied>rt hole but brayne dist<choice><orig>&eover;</orig><reg>em</reg></choice>p<lb/> <supplied reason="binding" cert="low">by f</supplied>its &amp; sences gone</p>
+<p><lb/><supplied reason="binding">Alc</supplied>e lel<choice><orig>&aover;</orig><reg>am</reg></choice> <rs type="address" xml:id="address1">of Brixworth</rs>. <lb/><gap reason="binding" extent="2" unit="chars"/> y sept<choice><orig>&eover;</orig><reg>em</reg></choice>b v&jVowel;. h. 3. 30. p m <lb/><supplied reason="binding" cert="low">hu</supplied>sb sent to me agayne may <lb/><supplied reason="binding">2</supplied>4 &Saturday; hor. 9. 45. &antm;. 1606.</p>
+<p><lb/><supplied reason="binding" cert="low">h</supplied>art hole but brayne dist<choice><orig>&eover;</orig><reg>em</reg></choice>p <lb/><supplied reason="binding" cert="low">by f</supplied>its &amp; sences gone</p>
 </div>
 </body>
 </text>

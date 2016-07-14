@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE41788</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 5v</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0005v" to="0005v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="st">
+<persName><roleName>Mrs</roleName> <forename>Susan</forename> <surname>Tarry</surname></persName>
+<sex value="2">F</sex>
+<age value="35">35</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-04-30" n="Sunday"/></p>
+<p><time when="15:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#st"/>
+<cb:subject ref="#st" present="unclear"/>
+<cb:topic key="pregnancy"><person sameAs="#st"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-04-30">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0022.jpg" url="ciz0022.jpg" n="5v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><del type="erased">M<hi rend="overline">res</hi> Susan Tarry of <lb/>Sleppon beyond Drayton</del></p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Susan Tarry <rs type="address" xml:id="address1">of <lb/>Slepp<choice><orig>&aover;</orig><reg>am</reg></choice> beyond Drayton</rs> 35. y. <lb/>Ap. 30 &Sunday; h. 3. 15. p m 1615</p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="la">qu&aelig;rit quo &vVowel;s<choice><orig>&qtail;</orig><reg>que</reg></choice> <lb/>gestabit &vVowel;ter<choice><orig>&uover;</orig><reg>um</reg></choice></foreign></p>
+</div>
+</body>
+</text>
+</TEI>

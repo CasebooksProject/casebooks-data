@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE45326</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="220">MS Ashmole 220, f. 41v</idno>
+&Napier027;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0041v" to="0041v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sm">
+<persName><forename>Sara</forename> <surname>Musgrave</surname></persName>
+<sex value="2">F</sex>
+<age value="33">33</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="m1">
+<persName><surname evidence="inferred" cert="medium">Musgrave</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="m2">
+<persName><surname evidence="inferred" cert="medium">Musgrave</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="m3">
+<persName><surname evidence="inferred" cert="medium">Musgrave</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="m4">
+<persName><surname evidence="inferred" cert="medium">Musgrave</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="m5">
+<persName><surname evidence="inferred" cert="medium">Musgrave</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="m6">
+<persName><surname evidence="inferred" cert="medium">Musgrave</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="m7">
+<persName><surname evidence="inferred" cert="medium">Musgrave</surname></persName>
+<sex value="0">U</sex>
+<age value="1">1</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth><date when="1616-06-17"/></birth>
+</person>
+<listRelation><relation name="mother" active="#sm" passive="#m1 #m2 #m3 #m4 #m5 #m6 #m7"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-07-23" n="Wednesday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#sm"/>
+<cb:subject ref="#sm" present="unclear"/>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#sm"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-22">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-10-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aae0102.jpg" url="aae0102.jpg" n="41v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Sara Musgrave <add place="supralinear"><rs type="address" xml:id="address1">of Blet<unclear reason="hand" cert="medium">cso</unclear> <lb/><add place="infralinear">in Bony end</add></rs></add> <lb/> 33. y. &IConsonant;uly <add place="supralinear">23</add> <choice><orig><choice><sic>2<subst><del type="over">0</del><add place="over">&MercurySymbol;</add></subst></sic><corr>&MercurySymbol;</corr></choice></orig><reg type="gloss">Wednesday</reg></choice>. <del type="cancelled">&MarsSymbol;</del> <lb/>h 3. 30 p m 1617 <lb/>7 child youngest a <lb/>yere old. <lb/>borne last &IConsonant;une on S<hi rend="superscript">t</hi> Botuphes <lb/>Day 33</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

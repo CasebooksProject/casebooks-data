@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -52,8 +55,8 @@
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="p">
-<persName><surname>Peters</surname></persName>
-<sex value="0">U</sex>
+<persName><roleName>Lord</roleName> <surname>Peters</surname></persName>
+<sex value="1">M</sex>
 </person>
 <listRelation>
 <relation name="son" active="#jp" passive="#p"/>
@@ -63,7 +66,7 @@
 <settingDesc>
 <p><date when="1609-09-17" n="Sunday"/></p>
 <p><time when="06:36:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jp"/>
@@ -76,11 +79,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-01">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0340.jpg" url="clm0340.jpg" n="160v"/>
+</facsimile>
 <text xml:lang="en">
-<body><div> 
-<p><lb/>&IConsonant;ohn Peter the <gap reason="binding" extent="4" unit="chars"/> <lb/>Peters sone <rs type="address" xml:id="address1">at <gap extent="4" unit="chars" reason="binding"/><lb/>don</rs> sick Sept 17 <lb/>&Sunday; h. 6. 36 &antm; <lb/>1609</p>
+<body><div>
+<p><lb/>&IConsonant;ohn Peter the lord <lb/>Peters sone <rs type="address" xml:id="address1">at san<lb/>den</rs> sick Sept<choice><orig>&eover;</orig><reg>em</reg></choice>b. 17 <lb/>&Sunday; h. 6. 36 &antm; <lb/>1609</p>
 </div>
 &astroChart;
 </body>

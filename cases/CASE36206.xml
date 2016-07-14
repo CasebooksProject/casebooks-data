@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-07-12" n="Wednesday"/></p>
 <p><time when="07:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wh"/>
@@ -73,8 +76,14 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0226.jpg" url="clm0226.jpg" n="103v"/>
+<graphic xml:id="clm0227.jpg" url="clm0227.jpg" n="104r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div> 
 <p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice> Harryot <rs type="address" xml:id="address1">of Eaton <lb/>a mile from St yedes</rs> <lb/>42 y &IConsonant;uly 12. &Wednesday; h. 7. <lb/>20. &antm; 1609</p>
@@ -82,8 +91,8 @@
 &astroChart;
 
 <div>
-<pb xml:id="f104r" n="104r"/>
-<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Harryot <rs type="address" sameAs="#address1">of Eaton <lb/>hard by St yedes</rs>. 42 y <lb/>&IConsonant;uly. 12. &Wednesday; h. 7. 30 <choice><orig>ant</orig><reg>a</reg></choice><lb/> m 1609</p>
+<pb xml:id="f104r" n="104r" facs="#clm0227.jpg"/>
+<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Harryot <rs type="address" sameAs="#address1">of Eaton <lb/>hard by St yedes</rs>. 42 y <lb/>&IConsonant;uly. 12. &Wednesday; h. 7. 30 <choice><orig>ant</orig><reg>a</reg></choice> <lb/>m 1609</p>
 </div>
 </body>
 </text>

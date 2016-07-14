@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,13 +54,14 @@
 <sex value="1">M</sex>
 <age value="40">40</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<death><date when="1609-07-09" n="Sunday" evidence="internal"/><time notAfter="11:59:00" evidence="internal"/></death>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-07-08" n="Saturday"/></p>
 <p><time when="08:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rt"/>
@@ -73,17 +77,23 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-14">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-12-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0212.jpg" url="clm0212.jpg" n="96v"/>
+<graphic xml:id="clm0213.jpg" url="clm0213.jpg" n="97r"/>
+</facsimile>
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Robart Top<supplied reason="binding">pe</supplied> <rs type="address" xml:id="address1"><supplied reason="binding">of Bed</supplied><lb/>ford</rs> 40 y <supplied reason="binding" cert="high">&IConsonant;uly</supplied> <lb/>8 &Saturday; hor. 
-<supplied reason="binding" cert="medium">8 &antm;</supplied> <lb/>1609</p>
+<p><lb/>Robart Topp <rs type="address" xml:id="address1">of B<supplied reason="binding">ed</supplied><lb/>ford</rs> 40 y &IConsonant;uly <lb/>8 &Saturday; hor. 8 &antm; <lb/>1609</p>
 </div>
 &astroChart;
 <div>
-<pb xml:id="f97r" n="97r"/>
+<pb xml:id="f97r" n="97r" facs="#clm0213.jpg"/>
 <p><lb/>Robart Toppe <rs type="address" sameAs="#address1">of Bedford</rs> <lb/>40 y &IConsonant;uly 8. &Saturday; hor. 8 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1609.</p>
 </div>
 </body>

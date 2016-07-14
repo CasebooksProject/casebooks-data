@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25405</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 127r/Q2, f. 127v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 127r-v</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0127r" to="0127v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <surname>Mordaunt</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="hm">
+<persName><forename>Henry</forename> <surname evidence="inferred">Mordaunt</surname></persName>
+<sex value="1">M</sex>
+<death evidence="internal"><date when="1610-10-01"/><time when="17:50:00"/></death>
+</person>
+<person xml:id="c" evidence="internal">
+<persName><roleName>Lord</roleName> <surname>Compton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="mother" active="#m" passive="#hm"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-09-23" n="Sunday"/></p>
+<p><time when="15:35:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#m" evidence="internal" present="unclear"/>
+<cb:subject ref="#hm" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#hm"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-22">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-12-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-07">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0273.jpg" url="afp0273.jpg" n="127r"/>
+<graphic xml:id="afp0274.jpg" url="afp0274.jpg" n="127v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The lady mordant <lb/>for her <add place="supralinear">own</add> child Henry. <lb/>Sept<choice><orig>&eover;</orig><reg>em</reg></choice>b. 23 &Sunday; h. 3. 30 <lb/>p m 16<choice><orig>i</orig><reg>1</reg></choice>0. taken sodenly <lb/>last night. about 10.</p>
+<pb xml:id="f127v" n="127v"/>
+<p><lb/><del type="strikethrough">M<hi rend="superscript">r</hi></del> The lady mordant <rs type="address" xml:id="address1">of Turvy</rs> <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio Henrico</foreign> <lb/>Sept 23. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&SunSymbol;</add></subst></orig><reg type="gloss">Sunday</reg></choice> h. 3. 35 p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0.</p>
+</div>
+&astroChartBlank;
+</body>
+</text>
+</TEI>

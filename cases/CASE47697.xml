@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47697</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 62v</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0062v" to="0062v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cc">
+<persName><forename>Cicely</forename> <surname>Coppingford</surname></persName>
+<sex value="2">F</sex>
+<age value="42">42</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1576-02-03" n="Friday" xml:id="date1" exclude="#date2"/>
+<date when="1577-02-08" n="Friday" xml:id="date2" exclude="#date1"/>
+<time when="17:00:00" precision="medium"/>
+</birth>
+</person>
+<person xml:id="c1">
+<persName><surname evidence="inferred">Coppingford</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="c2">
+<persName><genName>Old</genName> <roleName>Goody</roleName> <surname>Coppingford</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c3">
+<persName><surname evidence="inferred">Coppingford</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation>
+<relation name="husband" active="#c1" passive="#cc"/>
+<relation name="mother-in-law" active="#c2" passive="#c1"/>
+<relation name="mother" active="#cc" passive="#c3"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-10-17" n="Saturday" evidence="inferred"/></p>
+<p><time notBefore="14:30:00" notAfter="15:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#cc"/>
+<cb:subject ref="#cc" present="unclear"/>
+<cb:object ref="#c2"/>
+<cb:topic key="childbirth"><person sameAs="#cc"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#cc"/><person sameAs="#c2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-11-19">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0132.jpg" url="aau0132.jpg" n="62v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><supplied reason="damage" cert="high">C</supplied>icely Coppingford <rs type="address" xml:id="address1">of Hanslop</rs> <lb/>borne fryday after candl<choice><orig>&eover;</orig><reg>em</reg></choice>as <lb/>about 5 in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> after noone 42 <lb/>y last candlemas lost 8 child <lb/>&amp; neav<choice><orig>&loopedr;</orig><reg>er</reg></choice> came to byrth but <lb/>on child. her <del type="strikethrough">mothers</del> <lb/><choice><sic>her</sic><corr type="noText"/></choice> husb mother in lawe <lb/>old goody Coppingferd susp <lb/>to beword her&slash; <lb/>the first of all did thrive</p>
+</div>
+&astroChartBlank;
+</body>
+</text>
+</TEI>

@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -63,7 +66,7 @@
 <settingDesc>
 <p><date when="1605-04-08" n="Monday"/></p>
 <p><time when="07:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -71,6 +74,7 @@
 <cb:subject ref="#hf" present="yes"/>
 <cb:item type="urine"/>
 <cb:topic key="nonDizDisease"><person sameAs="#hf"/></cb:topic>
+<cb:topic key="strangeAffliction"><person sameAs="#hf"/></cb:topic>
 <cb:topic key="witchcraft"><person sameAs="#hf"/></cb:topic>
 <cb:topic key="head"><person sameAs="#hf"/></cb:topic>
 <cb:topic key="heart"><person sameAs="#hf"/></cb:topic>
@@ -85,8 +89,12 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-10-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-11-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0067.jpg" url="aag0067.jpg" n="28r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Henry &ff;ish<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 40 y <lb/>my man will. &vVowel;nckle <lb/>Apr 8. <choice><orig><subst><del type="over"><unclear cert="medium" reason="del">h</unclear></del><add place="over">&MoonSymbol;</add></subst></orig><reg type="gloss">Monday</reg></choice> hor. 7. 30 <lb/>&antm;. 1605. brought <lb/>again his water. <lb/>being not well. <add place="inline"><foreign xml:lang="la">metuit vene<lb/>fici<choice><orig>&uover;</orig><reg>um</reg></choice></foreign></add><note place="chart">str<choice><orig>&aover;</orig><reg>an</reg></choice>gly handled <lb/>hed harte backe. <lb/>a cold temples <lb/>gydy headed</note></p>

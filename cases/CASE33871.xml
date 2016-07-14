@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,13 +62,13 @@
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
-<listRelation><relation name="servant" active="#ro" passive="#tp"/></listRelation>    
+<listRelation><relation name="servant" active="#ro" passive="#tp"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-08-02" n="Tuesday"/></p>
 <p><time when="10:38:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ro" evidence="internal" cert="medium"/>
@@ -79,11 +82,15 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-16">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-04-07">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0353.jpg" url="aap0353.jpg" n="175r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Rich. Owen <rs type="address" xml:id="address1">of <choice><sic>B</sic><corr type="delText"/></choice> Bechamp<lb/>ton</rs> 15 y <choice><sic>I</sic><corr type="delText"/></choice> Aug. 2. &Tuesday; h. 10. <lb/>38 &antm;. 1608. <add place="inline"><add place="infralinear"><foreign xml:lang="la">qu&aelig;rit</foreign></add> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Thomas <lb/> Piggets boye.</add></p>
+<p><lb/>Rich. Owen <rs type="address" xml:id="address1">of <choice><sic>B</sic><corr type="delText"/></choice> Bechamp<lb/>ton</rs> 15 y <choice><sic>I</sic><corr type="delText"/></choice> Aug. 2. &Tuesday; h. 10. <lb/>38 &antm;. 1608. <add place="inline"><add place="infralinear"><foreign xml:lang="la">qu&aelig;rit</foreign></add> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Thomas <lb/>Piggets boye.</add></p>
 </div>
 </body>
 </text>

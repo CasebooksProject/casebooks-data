@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -66,14 +69,19 @@
 <settingDesc>
 <p><date when="1609-11-10" n="Friday"/></p>
 <p><time when="15:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
 <cb:subject ref="#gc" present="no"/>
 <cb:topic key="stomach"><person sameAs="#gc"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#gc"/></cb:topic>
+<cb:topic key="rising"><person sameAs="#gc"/></cb:topic>
+<cb:topic key="readyToStopWind"><person sameAs="#gc"/></cb:topic>
 <cb:info type="financial"/>
 <cb:judgment/>
+<cb:treatment/>
+<cb:info type="urine"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -81,11 +89,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-09">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0392.jpg" url="clm0392.jpg" n="186v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Grace Coles <lb/><rs type="address" xml:id="address1">of Hanslop</rs>. 21 y <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 10 &Friday; h. 3 <lb/>p m 1609 <add place="supralinear">stomack ill <lb/>hath a gr<unclear cert="low" reason="binding">eat</unclear> <lb/>res<gap extent="5" unit="chars" reason="copy"/></add> <lb/>maryed <del type="strikethrough">bu</del> the 30 <lb/>of March last</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Grace Coles <lb/><rs type="address" xml:id="address1">of Hanslop</rs>. 21 y <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 10 &Friday; h. 3 <lb/>p m 1609 <add place="interlinear">stomack ill <lb/>hath a great <lb/>rising &vVowel;p <gap extent="unclear" reason="binding"/> <lb/>ready to stop her <lb/>wynd</add> <lb/>maryed <del type="strikethrough">la</del> the 30 <lb/>of March last</p>
 </div>
 &astroChart;
 </body>

@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1610-03-06" n="Tuesday"/></p>
 <p><time when="10:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mw"/>
@@ -73,15 +76,22 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0530.jpg" url="clm0530.jpg" n="255v"/>
+<graphic xml:id="clm0531.jpg" url="clm0531.jpg" n="256r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Marye Walter <rs type="address" xml:id="address1">of Bow br<supplied reason="binding" cert="medium">ickell</supplied></rs> <lb/>34 y march 6 &Tuesday; h. 10. 20 <supplied reason="binding" cert="high">&antm; 1610</supplied></p>
+<p><lb/>Marye Walter <rs type="address" xml:id="address1">of Bow brick<supplied reason="binding" cert="medium">ell</supplied></rs> <lb/>34 y march 6 &Tuesday; h. 10. 20 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 16<choice><orig>i</orig><reg>1</reg></choice>0.</p>
 </div>
 
 <div>
-<pb xml:id="f256r" n="256r"/>
+<pb xml:id="f256r" n="256r" facs="#clm0531.jpg"/>
 <p><lb/>Mary Walter <rs type="address" sameAs="#address1">of <lb/><choice><sic>of</sic><corr type="noText"/></choice> Bowbrickhill</rs>. <lb/>34 y. march. 6 &Tuesday; <lb/>h. 10. 20 &antm; 1610</p>
 </div>
 &astroChart;

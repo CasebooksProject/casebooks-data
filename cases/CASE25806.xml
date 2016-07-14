@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25806</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 184v/Q4, f. 185r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 184v, f. 185r</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0184v" to="0185r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f1">
+<persName><roleName>Goody</roleName> <surname>Foulkes</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="f2">
+<persName><surname evidence="inferred" type="maiden" cert="medium">Foulkes</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="daughter" active="#f2" passive="#f1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-01-11" n="Friday"/></p>
+<p><time when="15:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#f1" evidence="internal" present="unclear"/>
+<cb:subject ref="#f2" present="no"/>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#f2"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-30">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-01-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-21">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0388.jpg" url="afp0388.jpg" n="184v"/>
+<graphic xml:id="afp0389.jpg" url="afp0389.jpg" n="185r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Goody foukes <rs type="address" xml:id="address1">of new<lb/>port</rs> for her daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><rs type="address" xml:id="address2">of Cosgrave</rs> &IConsonant;an <choice><sic>1<subst><del type="over">0</del><add place="over">i</add></subst></sic><corr type="delText"/></choice> <add place="supralinear">11</add> &Friday; <lb/>h. 3. 38 p m. 161<choice><orig><subst><del type="over">0</del><add place="over">i</add></subst></orig><reg>1</reg></choice></p>
+</div>
+&astroChartPartial;
+<pb xml:id="f185r" n="185r"/>
+<div>
+<p><lb/><supplied reason="damage" cert="low">Goody</supplied> <supplied reason="damage" cert="medium">foukes daught</supplied>er <rs type="address" sameAs="#address2">of Cosgrave</rs> <lb/><supplied reason="damage">&IConsonant;an 11 &Friday;</supplied> h. 3. <del type="strikethrough">38</del> 40 p <lb/><supplied reason="damage">m 1611</supplied></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

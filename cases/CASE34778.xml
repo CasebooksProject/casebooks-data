@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -61,10 +64,10 @@
 <settingDesc>
 <p><date when="1609-01-28" n="Saturday"/></p>
 <p><time when="14:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#f" evidence="inferred" present="no"/>
+<cb:querent ref="#f" evidence="conjecture" present="no"/>
 <cb:subject ref="#person1" present="no"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#person1"/></cb:topic>
 <cb:info type="urine"/>
@@ -78,8 +81,12 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-10">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0601.jpg" url="aap0601.jpg" n="299r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>The lady zancher <rs type="address" xml:id="address1">of <lb/>north<choice><orig>&aover;</orig><reg>am</reg></choice>pton</rs>. 19 y. &IConsonant;an 28 <lb/>&Saturday;. hor. 2. p m 1609</p>

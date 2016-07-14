@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="jm">
-<persName><forename>Joan</forename> <surname>Myl<gap extent="2" unit="chars" reason="binding"/></surname></persName>
+<persName><forename>Joan</forename> <surname>Milling</surname></persName>
 <sex value="2">F</sex>
 <age value="26">26</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-03-29" n="Tuesday"/></p>
 <p><time when="12:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jm"/>
@@ -65,7 +68,7 @@
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jm"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
-
+<cb:info type="financial"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -73,11 +76,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-07">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0170.jpg" url="aap0170.jpg" n="83v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;one Myl<gap reason="binding" extent="2" unit="chars"/> <lb/><rs type="address" xml:id="address1">of l<subst><del type="over"><gap reason="binding" extent="1" unit="chars"/></del><add place="over">i</add></subst>tle brickh<supplied reason="binding">ill</supplied></rs> <lb/>26 y march <lb/>29. &Tuesday; h. 1<supplied reason="binding" cert="high">2</supplied> <lb/>25 pm 1608</p>
+<p><lb/>&IConsonant;one Myllon <lb/><rs type="address" xml:id="address1">of <subst><del type="over">br</del><add place="over">li</add></subst>tle brickhill</rs> <lb/>26 y march <lb/>29. &Tuesday; h. 12 <lb/>25 pm 1608</p>
 </div>
 </body>
 </text>

@@ -42,6 +42,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -63,7 +66,7 @@
 <settingDesc>
 <p><date when="1608-11-13" n="Sunday"/></p>
 <p><time when="09:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier #gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jb"/>
@@ -78,12 +81,18 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0495.jpg" url="aap0495.jpg" n="246r"/>
+<graphic xml:id="aap0494.jpg" url="aap0494.jpg" n="245v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><handShift new="#gjames"/>&IConsonant;ohn Bradshow <rs type="address" xml:id="address1">of Milton malsworth</rs> <lb/>38 y Novemb: 13. &Sunday; ho. 9. 30 a. m. 1608</p>
-<pb xml:id="f245v" n="245v"/>
+<pb xml:id="f245v" n="245v" facs="#aap0494.jpg"/>
 <p><lb/><handShift new="#rnapier"/>&IConsonant;ohn Bradshow <rs type="address" sameAs="#address1">of Milton</rs> nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 13. h 9. 30 <lb/>&antm;. 1608</p>
 </div>
 &astroChart;

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37450</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-07-31">31 July 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="334">MS Ashmole 334, f. 163v</idno>
+&Napier019;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0163v" to="0163v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h1">
+<persName><roleName>Mr</roleName> <surname>Hanson</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" cert="medium">Hanson</surname></persName>
+<sex value="0">U</sex>
+<age value="9" unit="weeks">9 weeks</age>
+<death><date notBefore-custom="1611-04-16T18:00:00" notAfter-custom="1611-04-17T06:00:00"/></death>
+</person>
+<listRelation><relation name="father" active="#h1" passive="#h2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-04-16" n="Tuesday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h1" evidence="internal" present="unclear"/>
+<cb:subject ref="#h2" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#h2"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-07-31">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2014-08-12">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2014-08-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abh0348.jpg" url="abh0348.jpg" n="163v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>m<hi rend="superscript">r</hi> Hanson for his litle child <lb/>9 weekes old Apr. 16. &Tuesday; <lb/>h. 8 &antm; 1611.</p>
+</div>
+</body>
+</text>
+</TEI>

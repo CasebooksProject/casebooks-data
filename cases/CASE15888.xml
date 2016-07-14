@@ -42,6 +42,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -63,7 +66,7 @@
 <settingDesc>
 <p><date when="1603-11-17" n="Thursday"/></p>
 <p><time when="13:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#hw"/>
@@ -79,15 +82,21 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-01-16">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-03-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clp0326.jpg" url="clp0326.jpg" n="161v"/>
+<graphic xml:id="clp0327.jpg" url="clp0327.jpg" n="162r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><handShift new="#rnapier"/>Henry Wyndmill <lb/><rs type="address" xml:id="address1">of lowton</rs>. 40 y <lb/>novemb 17 &Thursday; hor <lb/>1. 45 p m 1603.<handShift new="#gjames"/></p>
 </div>
-<pb xml:id="f162r" n="162r"/>
+<pb xml:id="f162r" n="162r" facs="#clp0327.jpg"/>
 &geoChartPreliminary;
-<pb xml:id="f161v" n="161v"/>
+<pb xml:id="f161v" n="161v" facs="#clp0326.jpg"/>
 &geoChart;
 </body>
 </text>

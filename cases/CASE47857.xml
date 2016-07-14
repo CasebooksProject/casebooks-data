@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47857</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 93v</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0093v" to="0093v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="k">
+<persName><roleName>Goody</roleName> <surname>Kent</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<death evidence="internal">
+<date notBefore="1619-01-01" notAfter="1619-01-31"/>    
+</death>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<death><date notAfter="1618-11-18"/></death>
+</person>
+<listRelation><relation name="father" active="#anon" passive="#k"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-11-19" n="Thursday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#k"/>
+<cb:subject ref="#k" present="yes"/>
+<cb:topic key="requestingTreatment"><person sameAs="#k"/></cb:topic>
+<cb:topic key="sleeplessness"><person sameAs="#k"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#k"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#k"/></cb:topic>
+<cb:topic key="temptedAndSuicidal"><person sameAs="#k"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
+
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-26">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-11-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0194.jpg" url="aau0194.jpg" n="93v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Goody Kent <rs type="address" xml:id="address1">of Padbery</rs> <lb/>craved something to make her <lb/>sleepe mutch troubled in mynd <lb/>&amp; feareth <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she shall kill her <lb/>selfe as her father did drowne <lb/>him selfe. nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 19 &Thursday; h 9 <lb/>&antm; 1618 was here <choice><orig>p&loopedr;</orig><reg>pre</reg></choice>sent</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

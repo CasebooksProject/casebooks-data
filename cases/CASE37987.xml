@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37987</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 78v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0078v" to="0078v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <surname>Mordaunt</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="n1">
+<persName><roleName>Mrs</roleName> <surname>Norwood</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="n2">
+<persName><surname evidence="inferred" cert="medium" type="maiden">Norwood</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1611-04-27" xml:id="date1" exclude="#date2"/><date when="1611-04-20" xml:id="date2" exclude="#date1"/><time when="04:00:00" xml:id="time1" exclude="#time2"/><time when="16:00:00" xml:id="time2" exclude="#time1"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-04-28" n="Sunday"/></p>
+<p><time when="07:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#m" evidence="internal" present="no"/>
+<cb:subject ref="#n1" present="no"/>
+<cb:topic key="ague"><person sameAs="#n1"/></cb:topic>
+<cb:topic key="jaundice"><person sameAs="#n1"/></cb:topic>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-14">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0176.jpg" url="ckk0176.jpg" n="78v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my lady Mordant sent <lb/>&vVowel;nto me <subst><del type="strikethrough">for</del> <add place="supralinear">to know</add></subst> what <lb/>was good for a green <lb/>wom<choice><orig>&aover;</orig><reg>an</reg></choice> newly delivered <lb/>who is troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a burning Ague <lb/>&amp; also the &IConsonant;aundis. Apr <lb/>28 &Sunday; h. 7. 30 &antm; <lb/>1611 <add place="infralinear">It was for <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Norwood</add><note place="chart">she was brought a bed <lb/>of a wench <lb/>on satterday before <lb/>about 4 of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> clo<supplied reason="binding" cert="medium">cke</supplied></note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -61,9 +64,9 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1610-03-09" n="Friday" evidence="external"/></p>
-<p><time when="10:20:00" evidence="external"/></p>
-<cb:consultation type="nativity">
+<p><date when="1610-03-09" n="Friday" evidence="inferred"/></p>
+<p><time notBefore="08:20:00" notAfter="14:00:00" evidence="inferred"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
@@ -80,16 +83,23 @@
 <change when="2015-01-06">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-03-27">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0541.jpg" url="clm0541.jpg" n="261r"/>
+<graphic xml:id="clm0543.jpg" url="clm0543.jpg" n="262r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><del type="blockStrikethrough">Edward Haselwood <add place="supralinear"><rs type="address" sameAs="#address1">of haversh<choice><orig>&aover;</orig><reg>am</reg></choice></rs></add> borne the <lb/>25 of &IConsonant;anuary &Thursday; h. 12. 30 <lb/>p <unclear cert="low" reason="copy">ma</unclear> <foreign xml:lang="la">in noct<choice><orig>&eover;</orig><reg>em</reg></choice></foreign> 1610</del></p>
+<p><lb/><del type="blockStrikethrough">Edward Haselwood <add place="supralinear"><rs type="address" sameAs="#address1">of haversh<choice><orig>&aover;</orig><reg>am</reg></choice></rs></add> borne the <lb/>25 of &IConsonant;anuary &Thursday; h. 12. 30 <lb/>p me <foreign xml:lang="la">i<choice><orig>&aover;</orig><reg>am</reg></choice> noct<choice><orig>&eover;</orig><reg>em</reg></choice></foreign> 1610</del></p>
 </div>
 &astroChartDeleted;
 
 <div>
-<pb xml:id="f262r" n="262r"/>
+<pb xml:id="f262r" n="262r" facs="#clm0543.jpg"/>
 <p><lb/>Edward Haselwood <rs type="address" xml:id="address1">of hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/><foreign xml:lang="la">natus &IConsonant;an 25 &ThursdayLatin; h. 12. 30 <choice><orig>p</orig><reg>post</reg></choice> <lb/>medi<choice><orig>&aover;</orig><reg>am</reg></choice> noct<choice><orig>&eover;</orig><reg>em</reg></choice></foreign>. 1610</p>
 </div>
 &astroChartPartialDeleted;

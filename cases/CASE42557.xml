@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE42557</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-24">24 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="196">MS Ashmole 196, f. 130v</idno>
+&Napier024;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0130v" to="0130v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jh">
+<persName><forename>Judith</forename> <surname>Hawes</surname></persName>
+<sex value="2">F</sex>
+<age value="11">11</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Hawes</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation>
+<relation name="daughter" active="#jh" passive="#h"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-10-18" n="Tuesday"/></p>
+<p><time when="11:25:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#jh" present="no"/>
+<cb:topic key="report"><person sameAs="#jh"/></cb:topic>
+<cb:info type="urine"/>
+<cb:treatment/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-29">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-09-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciz0274.jpg" url="ciz0274.jpg" n="130v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;udith Hawes <rs type="address" xml:id="address1">of Bedford</rs> <lb/>11 y a weeke before christmas. <lb/><add place="lineBeginning">tale &amp;</add> comly wench &amp; is p<choice><orig>&loopedr;</orig><reg>re</reg></choice>ty well mended <lb/>of her ague. &amp; now walketh <del type="strikethrough">&amp; is</del> <lb/>there <del type="strikethrough">owne</del> only child. octob. 18 &Tuesday; h. 11. 25 &antm; <add place="infralinear"><choice><sic>1615.</sic><corr type="noText"/></choice></add> <lb/>1615.</p>
+</div>
+</body>
+</text>
+</TEI>

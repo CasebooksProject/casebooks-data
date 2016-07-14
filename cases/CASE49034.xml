@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49034</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 53r</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0053r" to="0053r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tc">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname cert="medium">Cotton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cn">
+<persName><roleName>Mrs</roleName> <forename>Christian</forename> <surname>N</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-06-18" n="Friday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tc"/>
+<cb:subject ref="#tc" present="unclear"/>
+<cb:object ref="#cn"/>
+<cb:topic key="maritalProspects" cert="medium"><person sameAs="#tc"/><person sameAs="#cn"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-19">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0125.jpg" url="abd0125.jpg" n="53r"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<p><lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> futur<choice><orig>&uover;</orig><reg>um</reg></choice> sit <lb/><choice><orig><choice><sic>congr&uover;</sic><corr>congru&uover;</corr></choice></orig><reg>congruum</reg></choice> <choice><sic>intr</sic><corr>inter</corr></choice> <lb/>D Th. Cott<unclear cert="medium" reason="hand">on</unclear> <lb/>&amp; <choice><orig>dn<hi rend="overline">a</hi></orig><reg>domina</reg></choice> Christ <lb/>N <foreign xml:lang="en">&IConsonant;une 18. &Friday; <lb/>h. 3. 30 p m 1619</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

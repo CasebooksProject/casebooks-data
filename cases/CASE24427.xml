@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24427</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 180v</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0180v" to="0180v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><roleName>Goody</roleName> <surname>Shortread</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="am">
+<persName><forename>Anne</forename> <surname>Matthews</surname></persName>
+<sex value="2">F</sex>
+<age value="28">28</age>
+</person>
+<listRelation><relation name="daughter" active="#am" passive="#s"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-04-18" n="Tuesday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s" evidence="internal" present="unclear"/>
+<cb:subject ref="#am" present="no"/>
+<cb:topic key="menstruation"><person sameAs="#am"/></cb:topic>
+<cb:topic key="back"><person sameAs="#am"/></cb:topic>
+<cb:topic key="pregnancy" evidence="internal"><person sameAs="#am"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-06-06">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-04-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0376.jpg" url="ady0376.jpg" n="180v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Goody Shortread <rs type="address" xml:id="address1">of Newp</rs> <lb/>for her daughter <add place="pageTop">An Mathewe</add> so weake 28 y <lb/><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">a</add></subst>borteth termes a bad back <lb/>Ap 18 &Tuesday; h. <del type="strikethrough">3. 40</del> p m <lb/>1615 5. p m. 1615 <add place="infralinear">hath misc of 2 &amp; the <lb/><subst><del type="over">2</del><add place="over">3</add></subst> <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> was betwixt was come to <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> bearing &amp; dyed <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/><choice><sic>stong</sic><corr>strong</corr></choice> labour as <lb/>is thought. <lb/>others think <lb/>it <del type="strikethrough">never</del> <lb/>was still <lb/>borne as the <lb/>rest.</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

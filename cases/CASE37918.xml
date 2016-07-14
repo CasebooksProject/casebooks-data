@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37918</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 68v/Q4, f. 69v/Q2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 68v, f. 69v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0068v" to="0068v"/>
+<locus from="0069v" to="0069v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ec">
+<persName><forename>Edward</forename> <surname>Child</surname></persName>
+<sex value="1">M</sex>
+<age value="2">2</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1609-03-13"/><time notBefore="22:00:00" notAfter="23:00:00"/></birth>
+</person>
+<person xml:id="c">
+<persName><surname evidence="inferred">Child</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="father" active="#c" passive="#ec"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-04-25" n="Thursday"/></p>
+<p><time when="08:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c" evidence="internal" present="unclear"/>
+<cb:subject ref="#ec" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#ec"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="angel" subtype="Unspecified"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-12">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-14">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0156.jpg" url="ckk0156.jpg" n="68v"/>
+<graphic xml:id="ckk0158.jpg" url="ckk0158.jpg" n="69v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Edward Child <lb/><rs type="address" xml:id="address1">of Silsoe</rs> <del type="strikethrough">borne</del> <lb/>2 yers &amp; a mone<supplied reason="binding" cert="medium">th</supplied><lb/>on mandy thursd<supplied reason="binding" cert="high">ay</supplied> <lb/>last borne <choice><sic>betwxt</sic><corr>betwixt</corr></choice> <lb/>ten &amp; a x&jVowel; at <lb/>night. <foreign xml:lang="la">pater <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio</foreign> Ap 25 <lb/>&Thursday; h. 8. <subst><del type="strikethrough">58</del> <add place="supralinear">40</add></subst> &antm; <lb/>1611.</p>
+</div>
+<div><pb xml:id="f69v" n="69v" facs="#ckk0158.jpg"/>
+<p><lb/>Edw. Child 2 y. Ap 25 &Thursday; <lb/>h. 8. 4<subst><del type="over">0</del><add place="over">5</add></subst> &antm;. 1611 <lb/><foreign xml:lang="la">pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice>filio</foreign></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

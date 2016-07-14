@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,19 +52,20 @@
 <person xml:id="es">
 <persName><forename>Elizabeth</forename> <surname>Sansome</surname></persName>
 <sex value="2">F</sex>
-
+<age value="40">40</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-03-08" n="Tuesday"/></p>
-<p><time notBefore="08:00:00" notAfter="08:50:00"/></p>
-<cb:consultation type="horary">
+<p><time when="08:30:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#es"/>
 <cb:subject ref="#es" present="unclear"/>
+<cb:topic key="sides"><person sameAs="#es"/></cb:topic>
 <cb:topic key="colic"><person sameAs="#es"/></cb:topic>
 <cb:treatment/>
 <cb:info type="financial"/>
@@ -72,11 +76,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-15">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2014-12-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0118.jpg" url="aap0118.jpg" n="56v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis: Saunsom <rs type="address" xml:id="address1">of <lb/>Stony stratford</rs> 4<gap extent="1" reason="binding" unit="chars" cert="medium"/> <supplied reason="binding" cert="high">y</supplied> <lb/>march. 8 &Tuesday; h. 8 <gap reason="binding" extent="2" unit="chars"/> <lb/>&antm; 1608. <gap reason="binding" extent="2" unit="chars"/> <lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <lb/>cholicke <gap reason="binding" extent="2" unit="chars"/> <add place="infralinear">extremity</add></p>
+<p><lb/>Elis: Saunsom <rs type="address" xml:id="address1">of <lb/>Stony stratford</rs> <subst><del type="over">3</del><add place="over">4</add></subst>0 y <lb/>march. 8 &Tuesday; h. 8. 30 <lb/>&antm; 1608. left syde <lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <lb/>cholicke. <add place="inline">in gret <lb/>extremity</add></p>
 </div>
 </body>
 </text>

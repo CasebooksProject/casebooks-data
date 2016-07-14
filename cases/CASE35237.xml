@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,13 +61,13 @@
 <person xml:id="anon">
 <sex value="1">M</sex>
 </person>
-<listRelation><relation name="sister" mutual="#c #sforman"/><relation name="betrothed" active="#anon" passive="#c"/></listRelation>
+<listRelation><relation name="sister" active="#c" passive="#sforman"/><relation name="betrothed" active="#anon" passive="#c"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-02-20" n="Monday"/></p>
 <p><time when="13:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#c" evidence="internal"/>
@@ -82,14 +85,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0184.jpg" url="abi0184.jpg" n="85v"/>
+<graphic xml:id="abi0185.jpg" url="abi0185.jpg" n="86r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Cornewallys sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>to D. for. <foreign xml:lang="la">qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>marito potietur</foreign> feb. 20. &Monday; <lb/>h. <subst><del type="strikethrough">2</del> <add place="supralinear">1. 25</add></subst> p m 1609</p>
 </div>
 &astroChart;
-<pb xml:id="f86r" n="86r"/>
+<pb xml:id="f86r" n="86r" facs="#abi0185.jpg"/>
 </body>
 </text>
 </TEI>

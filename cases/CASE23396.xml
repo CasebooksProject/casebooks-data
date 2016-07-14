@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE23396</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 1r</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0001r" to="0001r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tl">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Longueville</surname></persName>
+<sex value="1">M</sex>
+<age value="9" unit="months">three quarters</age>
+<birth>
+<date when="1613-08-10" evidence="extrapolated" precision="high"/>
+
+</birth>
+</person>
+<person xml:id="hl">
+<persName><genName>Young</genName> <roleName>Sir</roleName> <forename>Henry</forename>
+<surname evidence="inferred">Longueville</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><surname evidence="inferred">Longueville</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="son" active="#tl" passive="#hl" cert="high"/>
+<relation name="mother" active="#l" passive="#tl"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1614-05-20" n="Friday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#l" evidence="internal" present="no"/>
+<cb:subject ref="#tl" present="no" consent="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#tl"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-06">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0013.jpg" url="ady0013.jpg" n="1r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>m<hi rend="overline">r</hi>. Thomas long<supplied reason="damage" cert="medium">fild</supplied> <lb/>yong S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Henrys <gap extent="1" unit="words" reason="damage"/> the <lb/>6 child. 3 quarters old. borne <lb/>the tuesday 7 weekes before <lb/>miklemas last. in the morning <lb/><del type="strikethrough">about</del> betwixt the breake of day <lb/>&amp; sonne rising sent may <lb/>20. &Friday; h. 10 &antm; 1614.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

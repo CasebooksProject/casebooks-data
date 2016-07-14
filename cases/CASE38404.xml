@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE38404</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 129v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0129v" to="0129v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rt">
+<persName><forename>Robert</forename> <surname>Toppe</surname></persName>
+<sex value="1">M</sex>
+<age value="24">24</age>
+<occupation>Butler</occupation>
+</person>
+<person xml:id="c">
+<persName><roleName>Mrs</roleName> <surname>Chester</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="butler" active="#rt" passive="#c"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-07-10" n="Wednesday"/></p>
+<p><time when="17:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rt"/>
+<cb:subject ref="#rt" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#rt"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-31">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-29">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0278.jpg" url="ckk0278.jpg" n="129v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Robart Toppe butler <lb/>to <choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Chester <lb/>24 y &IConsonant;uly 10 &Wednesday; h <choice><sic>3</sic><corr type="delText"/></choice> <lb/>5. 20 p m 1611</p>
+</div>
+</body>
+</text>
+</TEI>

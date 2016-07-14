@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE48646</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 356r</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0356r" to="0356r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="dd">
+<persName><forename>David</forename> <surname>Deery</surname></persName>
+<sex value="1">M</sex>
+<age value="17">17</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w">
+<persName><roleName>Mr</roleName> <surname>Warner</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="servant" active="#dd" passive="#w" notAfter="1618-05-06"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-05-06" n="Thursday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#dd" evidence="internal"/>
+<cb:subject ref="#dd" present="no"/>
+<cb:topic key="lameness"><person sameAs="#dd"/></cb:topic>
+<cb:topic key="feet"><person sameAs="#dd"/></cb:topic>
+<cb:topic key="ankles"><person sameAs="#dd"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#dd"/></cb:topic>
+<cb:topic key="pricking"><person sameAs="#dd"/></cb:topic>
+<cb:topic key="shooting"><person sameAs="#dd"/></cb:topic>
+<cb:topic key="report"><person sameAs="#dd"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-12-30">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0519.jpg" url="aau0519.jpg" n="356r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Davy Deery <rs type="address" xml:id="address1">of <lb/>Bydn<choice><orig>&aover;</orig><reg>am</reg></choice></rs> 17. y. <lb/><del type="strikethrough">may</del> St Davyes <lb/>day in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> mor<lb/>ning sent to me <lb/>for his lamenes <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> last miklemas <lb/>was so lame <del type="strikethrough">&thorn;<hi rend="superscript">t</hi></del> <lb/><del type="strikethrough">n</del> in all his body <lb/>&amp; lims &amp; could not <lb/>styr. &amp; on warner <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> wh<choice><orig>&oover;</orig><reg>om</reg></choice> he Dwelled. <lb/>the yere before &amp; now <lb/>he had <choice><orig>&crossedp;</orig><reg>pro</reg></choice>mised to dwell <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him yet Anoth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> gote him <lb/>thenc &amp; his former <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> War<lb/>ner sayd he had bene as <lb/>good he had dwelt <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him <lb/>&amp; then grew lame &amp; would <lb/>not styr in or fr<choice><orig>&oover;</orig><reg>om</reg></choice> his bed. <lb/>came to me monday was <lb/>3 weekes or a month for <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>had a purge &amp; then he <lb/>mended more &amp; more &amp; <lb/>now is fallen into <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> bottome <lb/>of his feete this senet &amp; ankles <lb/>&amp; is very sore. pricketh &amp; shooteth <lb/>standing nothing to be sene may <lb/>6 <choice><sic><gap extent="1" unit="chars" reason="hand"/></sic><corr type="noText"/></choice> &Thursday; h. 10 30 &antm; 1619</p>
+</div>
+</body>
+</text>
+</TEI>

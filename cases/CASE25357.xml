@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25357</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<notesStmt><note type="editorial" resp="#rralley">This decumbiture is associated with the horary entry <ref type="case" target="CASE25356">CASE25356</ref>; its date and time are taken from that entry.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 120r</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0120r" to="0120r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sc">
+<persName><forename>Sara</forename> <surname>Cox</surname></persName>
+<sex value="2">F</sex>
+<age value="20">20</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-08-19" n="Sunday" evidence="external"/></p>
+<p><time when="13:00:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#sc"/>
+<cb:subject ref="#sc" present="unclear"/>
+<cb:topic key="swooning"><person sameAs="#sc"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#sc"/></cb:topic>
+<cb:topic key="speechless"><person sameAs="#sc"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#sc"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-21">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-12-05">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-07">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0259.jpg" url="afp0259.jpg" n="120r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Sara Cox <rs type="address" xml:id="address1">of North<lb/>h<choice><orig>&aover;</orig><reg>am</reg></choice>pton</rs>. 20 y Aug. 1<subst><del type="over">9</del><add place="over">8</add></subst> <lb/><subst><del type="cancelled">&SunSymbol;</del> <add place="supralinear"><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice></add></subst> h. <del type="strikethrough">10</del> <choice><sic>30</sic><corr type="delText"/></choice> <add place="supralinear">11. 30</add>. p m 1610 <lb/>sodenly stroken &amp; fell <lb/>in a swound. &amp; was <lb/>taken in her right <lb/>syde, nor could speak <lb/>ever after it. <unclear cert="low" reason="hand">wri</unclear>th <lb/>her mouth. was very <lb/>mery before <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">th</add></subst>is took <lb/>her.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

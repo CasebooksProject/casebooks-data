@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,9 +50,9 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="t">
-<persName><surname>Taylor</surname></persName>
+<persName><forename>John</forename> <surname>Taylor</surname></persName>
 <sex value="1">M</sex>
-
+<age value="60">60</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-06-20" n="Monday"/></p>
 <p><time when="13:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#t"/>
@@ -75,11 +78,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-02">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-25">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0263.jpg" url="aap0263.jpg" n="130r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap reason="binding" extent="1" unit="words"/> Tayler <rs type="address" xml:id="address1">of layton parish</rs> <lb/><unclear cert="low" reason="binding">60</unclear> y &IConsonant;une. 21. &Monday; <choice><sic>21</sic><corr>20</corr></choice>. &Monday;. h. 1. 30. <lb/>p m 1608. ache in his <lb/>hips &amp; thighes &amp; c<choice><orig>&aover;</orig><reg>an</reg></choice>not goe <lb/><unclear cert="low" reason="binding">for</unclear> it his howse <lb/>was burned &amp; his <lb/>horses. going to have his horses <lb/>tooke this lamenes.</p>
+<p><lb/><supplied reason="binding" cert="high">&IConsonant;o</supplied>hn Tayler <rs type="address" xml:id="address1">of layton parish</rs> <lb/><unclear cert="low" reason="binding">6</unclear>0 y &IConsonant;une. 21. &Monday; <choice><sic>21</sic><corr>20</corr></choice>. &Monday;. h. 1. 30. <lb/>p m 1608. ache in his <lb/>hips &amp; thighes &amp; c<choice><orig>&aover;</orig><reg>an</reg></choice>not goe <lb/>for it his howse <lb/>was burned &amp; his <lb/>horses. going to have his horses <lb/>tooke this lamenes.</p>
 </div>
 &astroChart;
 </body>

@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -53,13 +56,13 @@
 <age value="46">46</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<listRelation><relation name="neighbour" mutual="#r #rnapier"/></listRelation>
+<listRelation><relation name="neighbour" mutual="#jr #rnapier"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1607-09-21" n="Monday"/></p>
 <p><time when="08:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jr"/>
@@ -75,19 +78,20 @@
 <change when="2014-03-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-07">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-03-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2015-09-30">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic xml:id="Ashmole-193-0564.jpg" url="Ashmole-193-0564.jpg" n="280v"/>
-<graphic xml:id="Ashmole-193-0567.jpg" url="Ashmole-193-0567.jpg" n="282r"/>
+<graphic xml:id="bqo0564.jpg" url="bqo0564.jpg" n="280v"/>
+<graphic xml:id="bqo0567.jpg" url="bqo0567.jpg" n="282r"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>neighb. Rufhed <add place="supralinear"><rs type="address" xml:id="address1">of this towne</rs></add> 46 y <lb/>Sept 21 &Monday; h. 8. 40 <choice><sic>p</sic><corr type="noText"/></choice> <lb/>&antm; 1607</p>
 </div>
-<div><pb xml:id="f282r" n="282r"/>
-<p><lb/>&IConsonant;ohn Rufhed <rs type="address" sameAs="#address1">of our <lb/>towne</rs> sept 21. &Monday; h. <lb/>8 30 &antm;. 1607.</p>
+<div><pb xml:id="f282r" n="282r" facs="#bqo0567.jpg"/>
+<p><lb/>&IConsonant;ohn Rufhed <rs type="address" sameAs="#address1">of our <lb/>towne</rs> sept 21. <choice><orig><subst><del type="over"><unclear cert="medium" reason="del">&MarsSymbol;</unclear></del><add place="over">&MoonSymbol;</add></subst></orig><reg type="gloss">Monday</reg></choice> h. <lb/><subst><del type="over"><unclear cert="medium" reason="del">7</unclear></del><add place="over">8</add></subst> <subst><del type="over">2</del><add place="over">3</add></subst>0 &antm;. 1607.</p>
 </div>
 </body>
 </text>

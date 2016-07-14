@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE23924</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 91v</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0091v" to="0091v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rd">
+<persName><roleName>Mr</roleName> <forename>Robert</forename> <surname>D&rsquo;Oyly</surname></persName>
+<sex value="1">M</sex>
+<age value="47">47</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="d">
+<persName><surname evidence="inferred" cert="high">D&rsquo;Oyly</surname> <roleName>High Sheriff</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="father" active="#d" passive="#rd"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1614-09-12" n="Monday"/></p>
+<p><time when="06:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rd"/>
+<cb:subject ref="#rd" present="unclear"/>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#rd"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-21">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-27">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0194.jpg" url="ady0194.jpg" n="91v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Robart D<subst><del type="over">a</del><add place="over">o</add></subst>ylie <rs type="address" xml:id="address1">of Adder<lb/>bery</rs> 47 y. Sept 12. &Monday; h. <lb/>6. &antm; 1614. <add place="infralinear">his father was high sheriffe <lb/>a gentlem<choice><orig>&aover;</orig><reg>an</reg></choice> hath two m<choice><orig>&aover;</orig><reg>an</reg></choice>ners</add></p>
+</div>
+&astroChart;
+
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>M<hi rend="superscript">r</hi> Robart Doylie <lb/><rs type="address" sameAs="#address1">of Adderburye</rs> 47 y.</p>
+</div>
+</body>
+</text>
+</TEI>

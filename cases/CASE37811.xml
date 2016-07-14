@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37811</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 53r</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0053r" to="0053r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wf">
+<persName><forename>William</forename> <surname>Freeman</surname></persName>
+<sex value="1">M</sex>
+<age value="44">44</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="mf">
+<persName><forename>Maud</forename> <surname>Freeman</surname></persName>
+<sex value="2">F</sex>
+<age value="60">60</age>
+</person>
+<person xml:id="lf">
+<persName><forename>Lettice</forename> <surname>Freeman</surname></persName>
+<sex value="2">F</sex>
+<age value="11">11</age>
+</person>
+<person xml:id="lb">
+<persName><forename>Laura</forename> <surname>Burte</surname></persName>
+<sex value="2">F</sex>
+<age value="7">7</age>
+</person>
+<person xml:id="sb">
+<persName><forename>Susan</forename> <surname>Burte</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+<age value="16">16</age>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="eb">
+<persName><forename>Elizabeth</forename> <surname>Burte</surname></persName>
+<sex value="2">F</sex>
+<age value="35">35</age>
+</person>
+<listRelation><relation name="servant" active="#anon" passive="#sb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-04-04" n="Thursday"/></p>
+<p><time when="11:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#wf #mf #lf #anon #eb"/>
+<cb:subject ref="#wf #mf #lf #lb #anon #eb" present="unclear"/>
+<cb:topic key="plague"><person sameAs="#wf"/><person sameAs="#mf"/><person sameAs="#lf"/><person sameAs="#lb"/></cb:topic>
+<cb:topic key="plague" evidence="conjecture" cert="high"><person sameAs="#anon"/><person sameAs="#eb"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-04">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0125.jpg" url="ckk0125.jpg" n="53r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>wi<hi rend="overline">llm</hi></orig><reg>william</reg></choice> &ff;reeman <rs type="address" xml:id="address1">of S<hi rend="superscript">t</hi> eedes</rs> <lb/>44 y Apr: 4 <choice><orig><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> ho 11. 15 a m <lb/>1611.</p>
+<p><lb/><foreign xml:lang="la">Ad pr&aelig;caution<choice><orig>&eover;</orig><reg>em</reg></choice> pestis</foreign></p>
+<p><lb/>Mould &ff;reeman 60 y. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> eod<choice><orig>&eover;</orig><reg>em</reg></choice></foreign></p>
+<p><lb/>Lettice freeman 11 y <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> eod<choice><orig>&eover;</orig><reg>em</reg></choice></foreign></p>
+<p><lb/>Lowre Byrt 7 y. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> eod<choice><orig>&eover;</orig><reg>em</reg></choice></foreign></p>
+<p><lb/>Susan Byrt&pluralLoop; maid 16. y.</p>
+<p><lb/>Elsabeth Byrt 35 y.</p>
+</div>
+</body>
+</text>
+</TEI>

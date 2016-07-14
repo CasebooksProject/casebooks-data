@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25586</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<notesStmt><note type="editorial" resp="#rralley">This decumbiture is associated with the horary entry <ref type="case" target="CASE25585">CASE25585</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 150v</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0150v" to="0150v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><roleName evidence="external">Mrs</roleName> <surname evidence="external">Palmer</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-11-06" n="Tuesday" evidence="external"/></p>
+<p><time when="11:45:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#p"/>
+<cb:subject ref="#p" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#p"/></cb:topic>
+<cb:topic key="griping"><person sameAs="#p"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#p"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#p"/></cb:topic>
+<cb:topic key="nausea"><person sameAs="#p"/></cb:topic>
+<cb:topic key="fits"><person sameAs="#p"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-25">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-12-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-10">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0320.jpg" url="afp0320.jpg" n="150v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><del type="strikethrough">ye</del> hath bene sick by <lb/>fits. but yesterdaye <lb/>about 3 of the clock in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>after noone taken &amp; tor<lb/>mented &amp; gryped in her <lb/>stomack &amp; belly &amp; Doth. <lb/>cast in the extremitye of her <lb/>fit &amp; otherwise.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

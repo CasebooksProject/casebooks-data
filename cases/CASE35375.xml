@@ -41,6 +41,9 @@
 <language ident="la">Latin</language>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,7 +59,7 @@
 <settingDesc>
 <p><date when="1609-03-17" n="Friday"/></p>
 <p><time when="14:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="internal"/>
@@ -70,14 +73,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0216.jpg" url="abj0216.jpg" n="99v"/>
+<graphic xml:id="abj0217.jpg" url="abj0217.jpg" n="100r"/>
+</facsimile>
 <text xml:lang="la">
 <body><div>
 <p><lb/>Cognat<choice><orig>&uscon;</orig><reg>us</reg></choice> qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>iter sit <choice><orig>&crossedp;</orig><reg>pro</reg></choice>sper<choice><orig>&uover;</orig><reg>um</reg></choice>. <foreign xml:lang="en">march <lb/>17. &Friday; h 2. p m 1609. <add place="infralinear">to <placeName>france</placeName>.</add></foreign></p>
 </div>
 &astroChart;
-<pb xml:id="f100r" n="100r"/>
+<pb xml:id="f100r" n="100r" facs="#abj0217.jpg"/>
 </body>
 </text>
 </TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,13 +50,14 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="td">
-<persName><forename>Thomas</forename> <surname cert="medium">Deerman</surname></persName>
+<persName><forename>Thomas</forename> <surname>Deerman</surname></persName>
 <sex value="1">M</sex>
+<age value="24">24</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 <occupation>Cook</occupation>
 </person>
 <person xml:id="t">
-<persName><roleName>Mrs</roleName> <surname cert="medium">Thomson</surname></persName>
+<persName><roleName>Mrs</roleName> <surname>Thomson</surname></persName>
 <sex value="2">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
@@ -63,7 +67,7 @@
 <settingDesc>
 <p><date when="1608-03-02" n="Wednesday"/></p>
 <p><time when="10:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#td"/>
@@ -71,7 +75,7 @@
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#td"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
-
+<cb:info type="financial"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -79,11 +83,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-09">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2014-12-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0104.jpg" url="aap0104.jpg" n="49v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas Deerem<gap extent="unclear" reason="binding"/> <lb/><rs type="address" xml:id="address1">of husb. Crowly</rs> <lb/>Cooke to <choice><orig>m<hi rend="overline">es</hi></orig><reg>Mrs</reg></choice> T<gap reason="binding" extent="3" unit="chars"/><lb/>son. 24 y march <lb/>2. &Wednesday; h. 10. 45 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1608</p>
+<p><lb/>Thomas Deerem<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/><rs type="address" xml:id="address1">of husb. Crowlye</rs> <lb/>Cooke to <choice><orig>m<hi rend="overline">es</hi></orig><reg>Mrs</reg></choice> Tom<lb/>son. 24 y march <lb/>2. &Wednesday; h. 10. 45 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1608</p>
 </div>
 &astroChart;
 </body>

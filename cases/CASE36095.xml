@@ -21,12 +21,12 @@
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="203">MS Ashmole 203, f. 88r</idno>
+<idno n="203">MS Ashmole 203, f. 87v</idno>
 &Napier016;
 </msIdentifier>
 <msContents>
 <msItem>
-<locus from="0088r" to="0088r"/>
+<locus from="0087v" to="0087v"/>
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
@@ -39,7 +39,11 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,23 +55,25 @@
 <sex value="1">M</sex>
 <age value="8">8</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<birth><date notBefore-custom="1600-09-29T18:00:00" notAfter-custom="1600-09-30T06:00:00"/></birth>
+<birth><date when="1600-09-29"/><time when="21:00:00" precision="medium"/></birth>
 </person>
-<person xml:id="anon">
-<sex value="0">U</sex>
+<person xml:id="b">
+<persName><surname evidence="inferred" cert="high">Baughy</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
+<listRelation><relation name="father" active="#b" passive="#wb"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-07-01" n="Saturday"/></p>
 <p><time when="15:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
-<cb:subject ref="#wb" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#wb"/></cb:topic>
-<cb:judgment/>
+<cb:querent ref="#b" evidence="internal" present="yes"/>
+<cb:subject ref="#wb" present="no" consent="no"/>
+<cb:topic key="bloodyUrine"><person sameAs="#wb"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -75,11 +81,17 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0194.jpg" url="clm0194.jpg" n="87v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice>Baughy <add place="supralinear"><rs type="address" xml:id="address1">of Stonystr<supplied reason="binding" cert="high">atford</supplied></rs></add> <lb/>9 y &IConsonant;uly 1 h. 3. 45 <lb/>p m 1609 <add place="infralinear">next miklemas day about night</add></p>
+<p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice> Baughy <add place="supralinear"><rs type="address" xml:id="address1">of Stonystratford</rs></add> <lb/>9 y &IConsonant;uly 1 h. 3. 45 <lb/>p m 1609 <add place="infralinear">next miklemas daye <add place="infralinear">&MondayN;.</add> about 9 at night</add></p>
+<p><lb/><choice><sic>maketh</sic><corr type="noText"/></choice> <lb/>maketh bloodye <lb/>water. <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">n</add></subst>ow &amp; then <add place="infralinear"><foreign xml:lang="la">pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></add><note place="chart">pissing of <lb/>blood.&slash;</note></p>
 </div>
 &astroChart;
 </body>

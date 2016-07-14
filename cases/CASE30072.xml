@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,7 +63,7 @@
 <settingDesc>
 <p><date when="1605-12-14" n="Saturday"/></p>
 <p><time when="11:50:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="conjecture" cert="high" present="unclear"/>
@@ -74,14 +77,20 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-03-21">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-04-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0515.jpg" url="aag0515.jpg" n="253r"/>
+<graphic xml:id="aag0516.jpg" url="aag0516.jpg" n="253v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Parnell Grace <rs type="address" xml:id="address1">of <lb/>Trinford</rs> Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 14. &Saturday;. 11. 50 <lb/>&antm; 1605.</p>
 </div>
 &astroChartPartial;
-<pb xml:id="f253r" n="253r"/>
+<pb xml:id="f253r" n="253r" facs="#aag0515.jpg"/>
 <div>
 <p><lb/>Parnell Grace <rs type="address" sameAs="#address1">of <lb/>Trinford</rs> 30 y dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 14 <lb/><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 11. 50 &antm; 1605.<note place="chart">tempted.</note></p>
 </div>

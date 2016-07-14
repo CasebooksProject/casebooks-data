@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE43377</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-25">25 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="408">MS Ashmole 408, f. 88v</idno>
+&Napier025;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0088v" to="0088v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hh">
+<persName><roleName>Mr</roleName> <forename>Henry</forename> <surname>Hans<gap reason="binding" extent="2" unit="chars"/></surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d">
+<persName><roleName>Lady</roleName> <surname>Dormer</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1616-05-13" n="Monday"/></p>
+<p><time when="11:20:00" cert="low"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#d" evidence="internal"/>
+<cb:subject ref="#d" present="no"/>
+<cb:messenger ref="#hh"/>
+<cb:topic key="requestingTreatment" evidence="internal"><person sameAs="#d"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-18">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-10-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-05-05">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abo0196.jpg" url="abo0196.jpg" n="88v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Henry Hans<gap reason="binding" extent="2" unit="chars"/> <lb/>came to me for a <lb/><choice><sic>lettr</sic><corr>letter</corr></choice> to my lady <lb/>Dormer ma<supplied reason="binding">y</supplied> <lb/>13. &Monday; h. 11 20 <choice><orig><supplied reason="binding" cert="low">ant</supplied> <lb/>m</orig><reg>am</reg></choice> 16<choice><orig>i</orig><reg>1</reg></choice>6</p>
+</div>
+</body>
+</text>
+</TEI>

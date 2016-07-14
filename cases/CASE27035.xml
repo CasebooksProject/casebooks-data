@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -55,10 +58,10 @@
 <settingDesc>
 <p><date when="1606-03-31" n="Monday"/></p>
 <p><time when="08:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#as" evidence="inferred"/>
+<cb:querent ref="#as"/>
 <cb:subject ref="#as" present="no"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#as"/></cb:topic>
 <cb:judgment/>
@@ -72,8 +75,12 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-03-26">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-04-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0196.jpg" url="cmp0196.jpg" n="88v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Arthur Savadge <lb/>to come to him sick <lb/>come fr<choice><orig>&oover;</orig><reg>om</reg></choice> <placeName>london</placeName>. march 31 <lb/>&Monday; h. 8 &antm;. 1606.</p>

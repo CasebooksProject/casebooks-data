@@ -42,6 +42,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 </particDesc>
 <settingDesc>
 <p><date notBefore="1608-09-21" notAfter="1609-02-27" evidence="inferred" cert="medium"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l"/>
@@ -71,14 +74,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0355.jpg" url="abi0355.jpg" n="171r"/>
+<graphic xml:id="abi0354.jpg" url="abi0354.jpg" n="170v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>my Cosen luce borne may <lb/>10. &Tuesday; h. 8. 30 &antm; <lb/>1580.</p>
 </div>
 &astroChart;
-<pb xml:id="f170v" n="170v"/>
+<pb xml:id="f170v" n="170v" facs="#abi0354.jpg"/>
 </body>
 </text>
 </TEI>

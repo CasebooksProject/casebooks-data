@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49331</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 118v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0118v" to="0118v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hc">
+<persName><forename>Henry</forename> <surname>Cuddington</surname></persName>
+<sex value="1">M</sex>
+<age value="12">12</age>
+</person>
+<person xml:id="af">
+<persName><forename>Anne</forename> <surname>Foster</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="r1">
+<persName><surname>Rookes</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="r2">
+<persName><surname evidence="inferred" type="married">Rookes</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="wife" active="#r2" passive="#r1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1619-07-26T07:00:00" notAfter-custom="1619-07-26T09:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#hc"/>
+<cb:subject ref="#hc" present="unclear"/>
+<cb:object ref="#af #r2"/>
+<cb:topic key="paralysis"><person sameAs="#hc"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#hc"/></cb:topic>
+<cb:topic key="weak"><person sameAs="#hc"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#hc"/><person sameAs="#af"/><person sameAs="#r2"/></cb:topic>
+
+<cb:info type="angel" subtype="Unspecified"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-03">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-22">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0256.jpg" url="abd0256.jpg" n="118v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Henry Cuddington 12 y &IConsonant;uly <lb/>paralitycall <add place="marginLeft"><choice><sic><foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice></foreign>
+wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></sic><corr type="noText"/></choice></add> It was on <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> left syde &amp; now in <lb/><choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> right syde weake &amp; c<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/><choice><sic>scace</sic><corr>scarce</corr></choice> speake. An foster <lb/>Rookes wife <rs type="address" xml:id="address1">of Calv<choice><orig>&loopedr;</orig><reg>er</reg></choice>ton</rs> a h<gap reason="binding" extent="unclear"/> <lb/>r<choice><orig>&uover;</orig><reg>un</reg></choice>ning pulling fr<choice><orig>&oover;</orig><reg>om</reg></choice> the feete <lb/>&vVowel;p to her head a great longe <lb/>tyme.&slash;. <choice><sic>An</sic><corr type="noText"/></choice></p>
+</div>
+</body>
+</text>
+</TEI>

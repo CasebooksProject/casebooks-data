@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE43991</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 9r/Q4, f. 12v/Q4A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 9r, f. 12v</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0009r" to="0009r"/>
+<locus from="0012v" to="0012v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wd">
+<persName><roleName>Sir</roleName> <forename>William</forename> <surname>Dormer</surname></persName>
+<sex value="1">M</sex>
+<age value="30" evidence="internal">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1586-05-22" n="Sunday" xml:id="date1" exclude="#date2" evidence="internal"/><date when="1587-06-04" n="Sunday" xml:id="date2" exclude="#date1" evidence="internal"/><time notBefore="10:00:00" notAfter="11:00:00" evidence="internal"/></birth>
+</person>
+<person xml:id="d" evidence="external">
+<persName><roleName>Lady</roleName> <surname type="married">Dormer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="husband" active="#wd" passive="#d" evidence="external"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1616-10-14" n="Monday"/></p>
+<p><time when="09:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="practitionerVisitsQuerent"/>
+<cb:querent ref="#d" evidence="external" present="yes"/>
+<cb:subject ref="#wd" present="yes"/>
+<cb:topic key="unidentifiedMedical"><person sameAs="#wd"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-11-18">Checked and two entries merged by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-12-01">Checked by <name sameAs="#ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-03-08">Images and folio numbers checked against entries by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0037.jpg" url="cjp0037.jpg" n="9r"/>
+<graphic xml:id="cjp0044.jpg" url="cjp0044.jpg" n="12v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>I went to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Wil<lb/>li<choice><orig>&aover;</orig><reg>am</reg></choice> Dormers to <rs type="address" xml:id="address1">Wing</rs> <lb/>Octob 14 &Monday; h. <subst><del type="over">8</del><add place="over">9</add></subst> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 16<choice><orig>i</orig><reg>1</reg></choice>6</p>
+</div>
+
+<div><pb xml:id="f12v" n="12v" facs="#cjp0044.jpg"/>
+<p><lb/>I wente <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Will <gap reason="binding" extent="1" unit="words" cert="low"/> <lb/>to give him physick oc<supplied reason="binding" cert="medium">tob</supplied> <lb/>14. &Monday; h. 9. &antm;. 161<supplied reason="binding">6</supplied></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

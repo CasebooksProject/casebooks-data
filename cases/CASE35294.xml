@@ -45,6 +45,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -62,7 +65,7 @@
 </particDesc>
 <settingDesc>
 <p><date notBefore="1608-09-21" notAfter="1609-02-27" evidence="inferred"/></p>
-<cb:consultation type="nativity">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s"/>
@@ -76,15 +79,22 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0270.jpg" url="abi0270.jpg" n="128v"/>
+<graphic xml:id="abi0271.jpg" url="abi0271.jpg" n="129r"/>
+<graphic xml:id="abi0269.jpg" url="abi0269.jpg" n="128r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><foreign xml:lang="la">Soror Sandy <add place="supralinear">Robinson</add> nata</foreign> <add place="supralinear"><rs type="address" xml:id="address1">at london</rs></add> feb. 2. <lb/>&Wednesday; h. 6. 30 p m <choice><sic>157<subst><del type="over">4</del><add place="over">5</add></subst></sic><corr type="delText"/></choice> <lb/>1575. <add place="supralinear">now 34.</add> <add place="inline">maryed at 19 yeres. <lb/>feb. 20. &Sunday;</add></p>
 </div>
 &astroChart;
-<pb xml:id="f129r" n="129r"/>
-<pb xml:id="f128r" n="128r"/>
+<pb xml:id="f129r" n="129r" facs="#abi0271.jpg"/>
+<pb xml:id="f128r" n="128r" facs="#abi0269.jpg"/>
 </body>
 </text>
 </TEI>

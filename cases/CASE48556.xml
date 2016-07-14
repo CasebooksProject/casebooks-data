@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE48556</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 338v/Q3, f. 338v/Q2, f. 339r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, ff. 338v-339r</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0338v" to="0339r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tn">
+<persName><forename>Temperance</forename> <surname>Negoose</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-04-27" n="Tuesday"/></p>
+<p><time when="09:39:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tn"/>
+<cb:subject ref="#tn" present="unclear"/>
+<cb:topic key="faintness"><person sameAs="#tn"/></cb:topic>
+<cb:topic key="weak"><person sameAs="#tn"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#tn"/></cb:topic>
+<cb:topic key="griping"><person sameAs="#tn"/></cb:topic>
+<cb:topic key="despair"><person sameAs="#tn"/></cb:topic>
+<cb:topic key="temptedAndSuicidal"><person sameAs="#tn"/></cb:topic>
+<cb:judgment/>
+<cb:info type="event" subtype="previousConsultation"/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-07">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-12-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0484.jpg" url="aau0484.jpg" n="338v"/>
+<graphic xml:id="aau0485.jpg" url="aau0485.jpg" n="339r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Temperanc <lb/>Negous <add place="supralinear"><rs type="address" xml:id="address1">of Dunton in <lb/>Bedfordsheere</rs></add> 30 y Ap <lb/>27 &Tuesday; h. 9. 3<supplied reason="binding" cert="medium">8</supplied> <lb/>&antm; 1619</p>
+<p>thursd next a m<supplied reason="binding" cert="medium">oneth</supplied> <lb/>brought a bed <lb/>&amp; is full of mela<supplied reason="binding" cert="medium">nch</supplied> <lb/>despayring &amp; off<supplied reason="binding" cert="medium">ering</supplied> <lb/>to drown her <lb/>selfe was so a y<supplied cert="medium" reason="binding">ere</supplied> <lb/>sinc &amp; mended <supplied reason="binding" cert="high"><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice></supplied> <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I sent her <lb/>gods name be p<supplied reason="binding" cert="medium">raysed</supplied> <lb/>for it</p>
+<p>faynt &amp; weake</p>
+<p>c<choice><orig>&oover;</orig><reg>om</reg></choice>pl of her belly <supplied reason="binding" cert="low">&amp; a</supplied> <lb/>gryping</p>
+<p>Doubteth of gods g<supplied reason="binding" cert="high">race</supplied></p>
+<cb xml:id="colA" n="a"/>
+</div>
+&astroChart;
+
+<div>
+<pb xml:id="f339r" n="339r" facs="#aau0485.jpg"/>
+<p>Temperanc Negous <rs type="address" sameAs="#address1">of Dunton <lb/>by Bedford</rs> 30 y Ap 27 &Tuesday; h. 9. <lb/>39 &antm; 1619</p>
+
+</div>
+</body>
+</text>
+</TEI>

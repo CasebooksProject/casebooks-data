@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,13 +54,14 @@
 <sex value="1">M</sex>
 <age value="17">17</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1592-12-05" n="Tuesday" evidence="extrapolated"/><time when="23:59:59" precision="medium" evidence="internal"/></birth>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1610-02-24" n="Saturday"/></p>
 <p><time when="10:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ep"/>
@@ -72,8 +76,13 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0517.jpg" url="clm0517.jpg" n="249r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Edward Parkins <lb/><rs type="address" xml:id="address1">of Bletchley</rs> 17 y febr <lb/>24. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 10. 30 &antm; <lb/>1610.</p>

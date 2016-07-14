@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="a1">
-<persName><surname>Aborn</surname></persName>
+<persName><forename>Joan</forename> <surname>Aborn</surname></persName>
 <sex value="2">F</sex>
 <age value="28">28</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -55,7 +58,7 @@
 <person xml:id="a2">
 <persName><surname evidence="inferred" cert="medium">Aborn</surname></persName>
 <sex value="0">U</sex>
-<age value="6" unit="months">6 months</age>
+<age value="6" unit="months" precision="medium">about 6 months</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <listRelation><relation name="mother" active="#a1" passive="#a2"/></listRelation>
@@ -64,7 +67,7 @@
 <settingDesc>
 <p><date when="1609-06-19" n="Monday"/></p>
 <p><time when="10:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#a1"/>
@@ -79,11 +82,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-04">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0169.jpg" url="clm0169.jpg" n="75r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap unit="chars" extent="3" reason="binding"/> Aborne <rs type="address" xml:id="address1">of <del type="strikethrough">Rise</del> Chelson <lb/><supplied reason="binding" cert="high">&amp;</supplied> Caucot</rs> 28 y <del type="strikethrough">v</del> maryed a <lb/><supplied reason="binding">twe</supplied>lfemoneth. sucketh a child. <lb/><supplied reason="binding" cert="medium">abo</supplied>ut six moneths old. &IConsonant;une 19 &Monday; <lb/><supplied reason="binding" cert="high">h.</supplied> 10. 45. &antm; 1609 <lb/><del type="strikethrough">not</del> well in body but <lb/>not in mynd.&slash;</p>
+<p><lb/><supplied reason="binding" cert="medium">&IConsonant;o</supplied>ne Aborne <rs type="address" xml:id="address1">of <del type="strikethrough">Rise</del> Chelson <lb/>&amp; Caucot</rs> 28 y <del type="strikethrough">v</del> maryed a <lb/><supplied reason="binding">t</supplied>welfemoneth. sucketh a child. <lb/>about six moneths old. &IConsonant;une 19 &Monday; <lb/>h. 10. 45. &antm; 1609 <lb/><del type="strikethrough">not</del> well in body but <lb/>not in mynd.&slash;</p>
 </div>
 </body>
 </text>

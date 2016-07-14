@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,10 +60,10 @@
 <settingDesc>
 <p><date when="1609-05-30" n="Tuesday"/></p>
 <p><time when="06:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#w"/>
+<cb:querent ref="#w" evidence="internal"/>
 <cb:subject ref="#w" present="unclear"/>
 <cb:item type="urine"/>
 <cb:topic key="pregnancy"><person sameAs="#w"/></cb:topic>
@@ -74,11 +77,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-31">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-04">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0140.jpg" url="clm0140.jpg" n="60v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>my Cosen Writ<supplied reason="binding" cert="high">e</supplied> <lb/>her wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <foreign xml:lang="la">at qu<supplied reason="binding" cert="medium">&aelig;rit</supplied> <lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> gravida</foreign> m<supplied reason="binding" cert="medium">ay 30</supplied> <lb/>&Tuesday; h. 6. 45. p <supplied reason="binding" cert="high">m 1609</supplied></p>
+<p><lb/>my Cosen Write <gap extent="1" unit="words" reason="binding"/> <lb/>her wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <foreign xml:lang="la">et qu&aelig;r<supplied reason="binding" cert="medium">it</supplied> <lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> gravida</foreign> mai&jVowel; <supplied reason="binding" cert="medium">30</supplied> <lb/>&Tuesday; h. 6. 4<subst><del type="over"><unclear cert="low" reason="del">0</unclear></del><add place="over">5</add></subst>. <subst><del type="over">a</del><add place="over">p</add></subst> m  1<supplied reason="binding" cert="high">609</supplied></p>
 </div>
 &astroChart;
 </body>

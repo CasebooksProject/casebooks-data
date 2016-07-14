@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,21 +52,18 @@
 <person xml:id="ic">
 <persName><forename>Isabel</forename> <surname>Cook</surname></persName>
 <sex value="2">F</sex>
-<age value="8">8</age>
+<age value="18">18</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-</person>
-<person xml:id="anon">
-<sex value="0">U</sex>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1605-03-05" n="Tuesday"/></p>
 <p><time when="12:50:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:querent ref="#ic"/>
 <cb:subject ref="#ic" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ic"/></cb:topic>
 <cb:judgment/>
@@ -76,11 +76,15 @@
 <change when="2013-02-28">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2013-03-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-09-30">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="acb0481.jpg" url="acb0481.jpg" n="231r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Isbell <del type="strikethrough">of</del> Cooke <rs type="address" xml:id="address1">of lowten</rs> <lb/>8 y. Marti&jVowel; 5. &Tuesday; h. 12. <lb/>50 p m. 1605</p>
+<p><lb/>Isbell <del type="strikethrough">of</del> Cooke <rs type="address" xml:id="address1">of lowten</rs> <lb/>18 y. Marti&jVowel; 5. &Tuesday; h. 12. <lb/>50 p m. 1605</p>
 </div>
 </body>
 </text>

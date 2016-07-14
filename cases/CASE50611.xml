@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE50611</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="221">MS Ashmole 221, f. 133v</idno>
+&Napier006;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0133v" to="0133v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#gjames">Gerence James</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="gjames">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Mrs</roleName> <surname>Bird</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1602-07-12" n="Monday"/></p>
+<p><time notBefore="12:20:00" notAfter="16:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#gjames"/>
+<cb:practice name="napier"/>
+<cb:location type="practitionerVisitsQuerent"/>
+<cb:querent ref="#b" evidence="internal"/>
+<cb:subject ref="#b" present="yes"/>
+<cb:topic key="report"><person sameAs="#b"/></cb:topic>
+<cb:topic key="sickness" resp="#gjames"><person sameAs="#b"/></cb:topic>
+<cb:topic key="hot"><person sameAs="#b"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#b"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#b"/></cb:topic>
+<cb:topic key="yellowJaundice"><person sameAs="#b"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-10">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-11-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acs0285.jpg" url="acs0285.jpg" n="133v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;uli&jVowel; 12. &Monday; ho: 12. 20. p. m. I went <lb/>to see m<hi rend="superscript">rs</hi> Byrd and Came there ho. <gap reason="binding" extent="1" unit="chars"/> <lb/>her phisicke that she tooke yesterday gave her 17 stooles. she is sicke still <lb/>very hott a payne at her right side <lb/>feareth the yellow&IConsonant;aundise.</p>
+</div>
+</body>
+</text>
+</TEI>

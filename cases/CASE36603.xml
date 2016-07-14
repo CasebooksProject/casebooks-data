@@ -26,7 +26,7 @@
 </msIdentifier>
 <msContents>
 <msItem>
-<locus from="0168r" to="0168r"/>
+<locus from="0167v" to="0167v"/>
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,15 +59,16 @@
 </particDesc>
 <settingDesc>
 <p><date when="1609-09-29" n="Friday"/></p>
-
-<cb:consultation type="horary">
+<p><time notBefore="12:30:00" notAfter="23:30:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ai"/>
 <cb:subject ref="#ai" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ai"/></cb:topic>
 <cb:info type="urine"/> 
-
+<cb:judgment/>
+<cb:treatment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -72,11 +76,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-04">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0354.jpg" url="clm0354.jpg" n="167v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>An Iremonger <rs type="address" xml:id="address1">of <gap extent="4" unit="chars" reason="binding"/></rs> <lb/>32 y Sept 29 <gap extent="4" unit="chars" reason="binding"/> <lb/>30 p m 1609</p>
+<p><lb/>An Iremonger <rs type="address" xml:id="address1">of R<gap extent="4" unit="chars" reason="binding"/></rs> <lb/>32 y Sept 29 &Friday; h <gap extent="2" unit="chars" reason="binding"/> <lb/>30 p m 1609</p>
 </div>
 </body>
 </text>

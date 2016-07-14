@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="g">
-<persName><forename><gap extent="unclear" reason="binding"/>e</forename> <surname>Goodman</surname></persName>
+<persName><forename>Anne</forename> <surname>Goodman</surname></persName>
 <sex value="2">F</sex>
 
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-04-20" n="Wednesday"/></p>
 <p><time when="09:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#g"/>
@@ -72,11 +75,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-22">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0223.jpg" url="aap0223.jpg" n="110r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap reason="binding" extent="3" unit="chars"/>e Goodman <rs type="address" xml:id="address1">of Woofton</rs> <lb/><gap reason="binding" extent="2" unit="chars"/> y. Aprill 20 &Wednesday; ho. 9. a m. <lb/>1608</p>
+<p><lb/><supplied reason="binding" cert="medium">A</supplied>nne Goodman <rs type="address" xml:id="address1">of Woofton</rs> <lb/><gap reason="binding" extent="2" unit="chars"/> y. Aprill 20 &Wednesday; ho. 9. a m. <lb/>1608</p>
 </div>
 &astroChart;
 </body>

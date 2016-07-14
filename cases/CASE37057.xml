@@ -43,6 +43,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -62,12 +65,12 @@
 <settingDesc>
 <p><date when="1610-02-17" n="Saturday" evidence="external"/></p>
 <p><time when="12:38:00" evidence="external"/></p>
-<cb:consultation type="decumbiture">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#v" evidence="external" present="unclear"/>
 <cb:subject ref="#b" present="no" consent="no"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#b"/></cb:topic>
+<cb:topic key="unidentifiedMedical"><person sameAs="#b"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -76,12 +79,18 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-31">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0505.jpg" url="clm0505.jpg" n="243r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Baska<add place="supralinear">r</add>vyll taken sodainly <lb/><supplied reason="binding" cert="high">De</supplied>c<choice><orig>&eover;</orig><reg>em</reg></choice>b 30 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 7 p m 1609. <add place="infralinear"><supplied reason="binding" cert="high">Dec</supplied><choice><orig>&eover;</orig><reg>em</reg></choice>b <space unit="chars" extent="3" dim="horizontal"/> in a cold day.</add></p>
-</div>&astroChart;
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Baska<add place="supralinear">r</add>vyll taken sodainly <lb/>dec<choice><orig>&eover;</orig><reg>em</reg></choice>b 30 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 7 p m 1609. <add place="infralinear">in a cold day.</add></p>
+</div>
+&astroChart;
 </body>
 </text>
 </TEI>

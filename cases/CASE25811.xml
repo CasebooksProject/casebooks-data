@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25811</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 185r</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0185r" to="0185r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ag">
+<persName><forename>Anne</forename> <surname>Gale</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="dc">
+<persName><forename>Dorothy</forename> <surname>Cataline</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="ew">
+<persName><forename>Eleanor</forename> <surname>Warner</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="jc">
+<persName><forename>Joan</forename> <surname>Chamberlain</surname></persName>
+<sex value="2">F</sex>
+</person>
+
+<person xml:id="c">
+<persName><surname>Chamberlain</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="eg">
+<persName><forename>Edward</forename> <surname>Gale</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="mother" active="#ag" passive="#eg"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-01-12" n="Saturday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ag"/>
+<cb:subject ref="#ag #eg" present="no"/>
+<cb:object ref="#dc #ew #jc #c"/>
+<cb:topic key="noMilk"><person sameAs="#ag"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#eg"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#ag"/><person sameAs="#eg"/><person sameAs="#dc"/><person sameAs="#ew"/><person sameAs="#jc"/><person sameAs="#c"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-01">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-01-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-21">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0389.jpg" url="afp0389.jpg" n="185r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>An Gale <rs type="address" xml:id="address1">of Goldington</rs> <lb/>now brought a bed &amp; her <lb/>milk is gone &amp; dryed &vVowel;p sodenly <lb/>&amp; her child ill. suspecteth ill <lb/>peop. &IConsonant;an 12. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&SaturnSymbol;</add></subst></orig><reg type="gloss">Saturday</reg></choice> hor. 10. 30 <lb/>&antm; <choice><sic>16</sic><corr type="delText"/></choice><del type="strikethrough">12.</del> 1611.</p>
+<p><lb/>Dorothy Katlyn. Elinor Warner <lb/>&IConsonant;one Ch<choice><orig>&aover;</orig><reg>am</reg></choice>berlyn. 2 of <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> name.&slash;</p>
+<p><lb/>Edward Gale.&slash;</p>
+</div>
+</body>
+</text>
+</TEI>

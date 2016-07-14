@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,8 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="mc">
-<persName><forename>Mary</forename> <surname>Crowly</surname>
-</persName>
+<persName><forename>Mary</forename> <surname>Crowly</surname></persName>
 <sex value="2">F</sex>
 <age value="20">20</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -58,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-06-15" n="Thursday"/></p>
 <p><time when="10:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mc"/>
@@ -67,7 +69,6 @@
 <cb:judgment/> 
 <cb:info type="urine"/> 
 <cb:treatment/>
-
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -75,11 +76,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-04">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-04">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0160.jpg" url="clm0160.jpg" n="70v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Mary Crawly <rs type="address" xml:id="address1">of <lb/>Offly</rs>. 20 y &IConsonant;une <lb/>15 &Thursday; h. 10. 20 &antm; <lb/>1609 </p>
+<p><lb/>Mary Crawly <rs type="address" xml:id="address1">of <lb/>Offly</rs>. 20 y &IConsonant;une <lb/>15 &Thursday; h. 10. 20 &antm; <lb/>1609</p>
 </div>
 &astroChart;
 </body>

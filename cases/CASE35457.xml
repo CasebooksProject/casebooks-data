@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,11 +59,11 @@
 <settingDesc>
 <p><date when="1609-04-21" n="Friday"/></p>
 <p><time notBefore="11:20:00" notAfter="11:29:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#d"/>
-<cb:subject ref="#d" present="unclear"/>
+<cb:querent ref="#d" evidence="internal"/>
+<cb:subject ref="#d" present="no"/>
 <cb:topic key="unknown" reason="notGiven"><person sameAs="#d"/></cb:topic>
 </cb:consultation>
 </settingDesc>
@@ -69,11 +72,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-10-17">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0034.jpg" url="clm0034.jpg" n="7v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The lady <lb/>Dormer <rs type="address" xml:id="address1">of <lb/>Wing</rs> Apr <lb/>2<choice><orig>i</orig><reg>1</reg></choice> &Friday; h. 11. 2<gap reason="binding" unit="chars" extent="1"/> <lb/>&antm; 1609</p>
+<p><lb/>The lady <lb/>Dormer <rs type="address" xml:id="address1">of <lb/>Wing</rs> Apr <lb/>2<choice><orig>i</orig><reg>1</reg></choice> &Friday; h. 11. 25 <lb/>&antm; 1609 <add place="marginRight">sent for <lb/>me to come <lb/>to her <lb/>to <rs type="address" sameAs="#address1">winge</rs> <lb/>Apr 2<supplied reason="binding" cert="medium">4</supplied> <lb/>a monday <lb/>next.</add></p>
 </div>
 &astroChart;
 </body>

@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1609-03-19" n="Sunday"/></p>
 <p><time when="12:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ja"/>
@@ -72,14 +75,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0225.jpg" url="abj0225.jpg" n="104r"/>
+<graphic xml:id="abj0224.jpg" url="abj0224.jpg" n="103v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>&IConsonant;ohn Androwes <rs type="address" xml:id="address1">of Aldnom <lb/><choice><sic>Adn&uover;</sic><corr type="noText"/></choice></rs> 30 y march 19. &Sunday; <lb/>h. <del type="strikethrough">11.</del> 12. 1609 at noone</p>
 </div>
 &astroChart;
-<pb xml:id="f103v" n="103v"/>
+<pb xml:id="f103v" n="103v" facs="#abj0224.jpg"/>
 </body>
 </text>
 </TEI>

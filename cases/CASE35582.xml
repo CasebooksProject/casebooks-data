@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -55,7 +58,7 @@
 <settingDesc>
 <p><date when="1609-05-04" n="Thursday"/></p>
 <p><time when="11:38:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mt"/>
@@ -71,14 +74,21 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-21">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-04">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0066.jpg" url="clm0066.jpg" n="23v"/>
+<graphic xml:id="clm0067.jpg" url="clm0067.jpg" n="24r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Mich. Troughton <lb/>May. 4 &Thursday;h. 11. 3<unclear reason="binding" cert="high">8</unclear> <lb/><choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> 1609</p>
+<p><lb/>M<hi rend="superscript">r</hi> Mich. Troughton <lb/>May. 4 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 11. 38 <lb/><choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> 1609</p>
 </div>
 &astroChart;
-<pb xml:id="f24r" n="24r"/>
+<pb xml:id="f24r" n="24r" facs="#clm0067.jpg"/>
 </body>
 </text>
 </TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,12 +60,12 @@
 <settingDesc>
 <p><date when="1609-07-10" n="Monday"/></p>
 <p><time when="07:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ec"/>
 <cb:subject ref="#ec" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ec"/></cb:topic>
+<cb:topic key="chest"><person sameAs="#ec"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 <cb:treatment/>
@@ -73,12 +76,17 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-12-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0218.jpg" url="clm0218.jpg" n="99v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><del type="strikethrough">Rich S</del></p>
-<p><lb/>Edward Shad <rs type="address" xml:id="address1">of <lb/>Woofton of the Gre<supplied reason="binding" cert="high">ne</supplied></rs> <lb/>40 y &IConsonant;uly 10 &Monday; <lb/>h. 7. &antm; 1609</p>
+<p><lb/>Edward Shad <rs type="address" xml:id="address1">of <lb/>Woofton of the Greene</rs> <lb/>40 y &IConsonant;uly 10 &Monday; <lb/>h. 7. &antm; 1609 <add place="infralinear">chest.</add></p>
 </div>
 &astroChart;
 </body>

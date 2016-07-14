@@ -42,6 +42,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -66,7 +69,7 @@
 <settingDesc>
 <p><date when="1609-12-02" n="Saturday"/></p>
 <p><time when="10:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l" evidence="internal" present="unclear"/>
@@ -82,14 +85,20 @@
 <change when="2014-07-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abg0065.jpg" url="abg0065.jpg" n="23r"/>
+<graphic xml:id="abg0064.jpg" url="abg0064.jpg" n="22v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> leate shewed me <lb/>the water of <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> <lb/>denys. Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 2. <choice><sic><gap extent="1" reason="hand" unit="chars"/></sic><corr type="noText"/></choice> &Saturday; hor <lb/>10 &antm;. 1609 <add place="interlinear">cause of <lb/>her swelling</add> <lb/><add place="supralinear">never had her termes</add> wheather best to stay <lb/>for will: lovet beyond <lb/>the seases</p>
 </div>
 &astroChart;
-<div><pb xml:id="f22v" n="22v"/>
+<div><pb xml:id="f22v" n="22v" facs="#abg0064.jpg"/>
 <p><lb/><foreign xml:lang="la">mater de filia sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></p>
 </div>
 </body>

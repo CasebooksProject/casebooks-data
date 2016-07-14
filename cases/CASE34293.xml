@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,7 +63,7 @@
 </person>
 <listRelation>
 <relation name="brother-in-law" mutual="#e #rnapier" evidence="external"/>
-<relation name="kinswoman_kinsman" mutual="#rnapier #h1"/>
+<relation name="kinsman" active="#rnapier" passive="#h1"/>
 <relation name="daughter" active="#h2" passive="#h1"/>
 </listRelation>
 </listPerson>
@@ -68,7 +71,7 @@
 <settingDesc>
 <p><date when="1608-10-29" n="Saturday"/></p>
 <p><time when="09:50:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#e" evidence="internal" present="no"/>
@@ -82,11 +85,15 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-26">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0465.jpg" url="aap0465.jpg" n="231r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><add place="supralinear">broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Evington sent a <unclear cert="low" reason="copy">letter</unclear></add> Question wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> my Cosen <lb/>Harrysons daughter be <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child Octob. 29 &Saturday; hor <lb/>9. 50 &antm; 1608 </p>
+<p><lb/><add place="supralinear">broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Evington sent a letter <lb/>at this tyme</add> Question wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> my Cosen <lb/>Harrysons Daughter <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">b</add></subst>e <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child.: Octob. 29 &Saturday; hor <lb/>9. 50 &antm; 1608</p>
 </div>
 &astroChart;
 </body>

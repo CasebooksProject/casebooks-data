@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25415</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, f. 129r</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0129r" to="0129r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sm">
+<persName><roleName>Mrs</roleName> <forename>Susan</forename> <surname>Maunde</surname></persName>
+<sex value="2">F</sex>
+<age value="48">48</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<death><date notAfter="1610-10-02"/></death>
+</person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+<age atLeast="16">at least 16</age>
+</person>
+<person xml:id="anon3">
+<sex value="0">U</sex>
+<age atLeast="16">at least 16</age>
+</person>
+<person xml:id="anon4">
+<sex value="0">U</sex>
+<age atLeast="16">at least 16</age>
+</person>
+<person xml:id="anon5">
+<sex value="0">U</sex>
+<age value="16">16</age>
+</person>
+<person xml:id="m">
+<persName><surname evidence="inferred" cert="medium">Maunde</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="o" evidence="internal">
+<persName><roleName>Mr</roleName> <nameLink>van</nameLink> <surname>Otten</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="wife" active="#sm" passive="#anon1" notAfter="1610-10-02"/><relation name="wife" active="#sm" passive="#m"/><relation name="child" active="#anon2 #anon3 #anon4 #anon5" passive="#anon1 #sm"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-10-04" n="Thursday"/></p>
+<p><time when="15:25:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#sm"/>
+<cb:subject ref="#sm" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#sm"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-22">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-12-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-07-08">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0277.jpg" url="afp0277.jpg" n="129r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Sus<choice><orig>&aover;</orig><reg>an</reg></choice> Maunde <lb/><rs type="address" xml:id="address1">of Cowly</rs> 48 y Octob: 4. <lb/>&Thursday;. h. 3. 25. p m 16<choice><orig>i</orig><reg>1</reg></choice>0 <add place="infralinear">was a widow <choice><sic>mayed</sic><corr>maryed</corr></choice> no child by <lb/>this. but 4 by the other. youngest 16 y.</add></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

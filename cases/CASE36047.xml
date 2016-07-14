@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,7 +63,7 @@
 <settingDesc>
 <p><date when="1609-06-25" n="Sunday"/></p>
 <p><time when="17:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="yes"/>
@@ -68,6 +71,7 @@
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ek"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/> 
+<cb:info type="financial"/>
 
 </cb:consultation>
 </settingDesc>
@@ -76,11 +80,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-11">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0182.jpg" url="clm0182.jpg" n="81v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis. Kent <rs type="address" xml:id="address1">of this towne</rs> <lb/>the Carpenters daught<supplied reason="binding" cert="high">er</supplied> <lb/>2 y &IConsonant;une 25 &Sunday; <supplied reason="binding" cert="medium">hor</supplied> <lb/>5. 25. p m 1609 <add place="infralinear">child in <choice><orig>p&loopedr;</orig><reg>pre</reg></choice>senc</add></p>
+<p><lb/>Elis. kent <rs type="address" xml:id="address1">of this towne</rs> <lb/>the Carpenters Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>2. y &IConsonant;une 25. &Sunday; h <lb/>5. <subst><del type="over">1</del><add place="over">2</add></subst>5. p m 1609 <add place="infralinear">child in <choice><orig>p&loopedr;</orig><reg>pre</reg></choice>senc</add></p>
 </div>
 &astroChart;
 </body>

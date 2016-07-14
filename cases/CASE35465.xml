@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,13 +52,15 @@
 <person xml:id="ih">
 <persName><forename>Isabel</forename> <surname>Howe</surname></persName>
 <sex value="2">F</sex>
+<age value="21">21</age>
 <residence key="databaseNormalizedIDKey" sameAs="#address1"/>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-04-22" n="Saturday"/></p>
-<cb:consultation type="horary">
+<p><time when="10:20:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ih"/>
@@ -70,11 +75,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-10-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0036.jpg" url="clm0036.jpg" n="8v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Isbell How <rs type="address" xml:id="address1">of <lb/>Emmerton</rs> 21 <supplied reason="binding" cert="high">y</supplied> <lb/>Apr. 22 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> h<supplied reason="binding">or</supplied> <gap reason="binding" unit="chars" extent="1"/> <lb/>20 &antm; 1609.</p>
+<p><lb/>Isbell How <rs type="address" xml:id="address1">of <lb/>Emmerton</rs> 21 y <lb/>Apr. 22 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 10 <lb/>20 &antm; 1609.</p>
 </div>
 </body>
 </text>

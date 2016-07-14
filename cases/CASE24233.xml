@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24233</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 147v</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0147v" to="0147v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="dw">
+<persName><roleName>Mrs</roleName> <forename>Dorothy</forename> <surname>Watts</surname></persName>
+<sex value="2">F</sex>
+<age value="25">25</age>
+</person>
+<person xml:id="p">
+<persName><roleName>Lady</roleName> <surname>Piggot</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation>
+<relation name="sister" mutual="#dw #p"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1615-01-15" n="Sunday"/></p>
+<p><time when="09:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#dw"/>
+<cb:subject ref="#dw" present="unclear"/>
+<cb:topic key="looseness"><person sameAs="#dw"/></cb:topic>
+<cb:topic key="griping"><person sameAs="#dw"/></cb:topic>
+<cb:topic key="belly"><person sameAs="#dw"/></cb:topic>
+<cb:info type="angel" subtype="Raphael"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-06-04">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-04-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0306.jpg" url="ady0306.jpg" n="147v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Dorothy Wats <subst><del type="over"><unclear cert="low" reason="del">of</unclear></del><add place="over">s</add></subst>yster <lb/>to the lady Piggot <choice><sic><unclear cert="low" reason="hand">now</unclear><hi rend="superscript">th</hi></sic><corr cert="low">now <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice></corr></choice> <lb/>th<choice><orig>&eover;</orig><reg>em</reg></choice> <rs type="address" xml:id="address1">at Olny</rs> <del type="strikethrough">Ia</del> 25 y <lb/>&IConsonant;an. 15. &Sunday; h. 9. 15 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1615. <add place="marginRight"><choice><sic>s</sic><corr type="noText"/></choice> she is quick <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child</add> <add place="infralinear">is very loose bodyed</add><note place="chart">very loose bodyed <lb/>six days &amp; gryped in <lb/>her belly</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

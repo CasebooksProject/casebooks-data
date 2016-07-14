@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -63,13 +66,13 @@
 <settingDesc>
 <p><date when="1609-06-28" n="Wednesday"/></p>
 <p><time when="14:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="practitionerVisitsQuerent"/>
-<cb:querent ref="#c" evidence="inferred" present="yes"/>
+<cb:querent ref="#c" evidence="conjecture" present="yes"/>
 <cb:subject ref="#anon" present="yes"/>
-<cb:topic key="sleepiness" cert="medium"><person sameAs="#anon"/></cb:topic>
+<cb:topic key="sleepiness"><person sameAs="#anon"/></cb:topic>
 <cb:treatment/>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
@@ -79,11 +82,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0196.jpg" url="clm0196.jpg" n="88v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>I went to my lady <lb/>Curson &amp; she brought <lb/>&vVowel;nto me a mayd of <lb/>hers very <unclear reason="hand" cert="medium">sleeplye</unclear>. <del type="strikethrough">&MercurySymbol;</del> &IConsonant;une <lb/>28 &Wednesday; h. 2. 20 p m 1609</p>
+<p><lb/>I went to my lady <lb/>Curson &amp; she brought <lb/>&vVowel;nto me a mayd of <lb/>hers very sleep<subst><del type="over"><unclear cert="low" reason="del">l</unclear></del><add place="over">y</add></subst>e <del type="strikethrough">&MercurySymbol;</del> &IConsonant;une <lb/>28 &Wednesday; h. 2. 20 p m 1609</p>
 </div>
 &astroChart;
 </body>

@@ -40,14 +40,17 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="pp">
-<persName><roleName>Mr</roleName> <forename>Peter</forename> <surname>Porter</surname></persName>
+<person xml:id="p">
+<persName><roleName>Mr</roleName> <surname>Porter</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
@@ -56,12 +59,12 @@
 <settingDesc>
 <p><date when="1610-01-23" n="Tuesday"/></p>
 <p><time when="10:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#pp"/>
-<cb:subject ref="#pp" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#pp"/></cb:topic>
+<cb:querent ref="#p"/>
+<cb:subject ref="#p" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#p"/></cb:topic>
 <cb:info type="event" subtype="previousConsultation"/>
 <cb:judgment/>
 <cb:treatment/>
@@ -72,11 +75,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0465.jpg" url="clm0465.jpg" n="222r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> <unclear reason="damage" cert="medium">Peter</unclear> <lb/>Porter <rs type="address" xml:id="address1">of <lb/>Weston</rs>. &IConsonant;an 23 <lb/>&Tuesday; h. 10 &antm; <lb/>1610.</p>
+<p><lb/>M<hi rend="superscript">r</hi> <choice><sic>Por</sic><corr type="delText"/></choice> <lb/>Porter <rs type="address" xml:id="address1">of <lb/>Weston</rs>. &IConsonant;an 23 <lb/>&Tuesday; h. 10 &antm; <lb/>1610.</p>
 </div>
 </body>
 </text>

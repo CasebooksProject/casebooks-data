@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-06-27" n="Monday"/></p>
 <p><time when="17:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mb"/>
@@ -75,14 +78,20 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-03">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0281.jpg" url="aap0281.jpg" n="139r"/>
+<graphic xml:id="aap0282.jpg" url="aap0282.jpg" n="139v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Mary Beuskyn <lb/><rs type="address" xml:id="address1">of Godington in Ox<lb/>ford sheere</rs>. 33 y. &IConsonant;une <lb/>27. <del type="strikethrough">&IConsonant;une</del> <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&MoonSymbol;</add></subst></orig><reg type="gloss">Monday</reg></choice> h. 5. p m <lb/>1608.</p>
 </div>
 &astroChart;
-<div><pb xml:id="f139v" n="139v"/>
+<div><pb xml:id="f139v" n="139v" facs="#aap0282.jpg"/>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Beaskyn <add place="supralinear"><rs type="address" sameAs="#address1">of Goddyngton</rs>.</add> &IConsonant;une 27 <lb/>&Monday; h. 5. p m 1608.</p>
 </div>
 </body>

@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,7 +62,7 @@
 <settingDesc>
 <p><date when="1609-03-16" n="Thursday"/></p>
 <p><time when="13:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m" evidence="internal"/>
@@ -72,14 +75,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0212.jpg" url="abj0212.jpg" n="97v"/>
+<graphic xml:id="abj0213.jpg" url="abj0213.jpg" n="98r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><foreign xml:lang="la">qu&aelig;rit Cog. de m<unclear reason="binding" cert="medium">or</unclear><supplied reason="binding" cert="low">bo</supplied></foreign> <lb/>march 16. &Thursday; h. 1. 30 <lb/>p m 1609. <rs type="address" xml:id="address1">of Darkes</rs> <add place="marginLeft">Cosen marsh.</add></p>
 </div>
 &astroChart;
-<pb xml:id="f98r" n="98r"/>
+<pb xml:id="f98r" n="98r" facs="#abj0213.jpg"/>
 </body>
 </text>
 </TEI>

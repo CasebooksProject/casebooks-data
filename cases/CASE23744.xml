@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE23744</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 59r</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0059r" to="0059r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d">
+<persName><surname>Draper</surname></persName>
+<sex value="1">M</sex>
+<occupation>Man (Servant)</occupation>
+</person>
+<person xml:id="ff">
+<persName><roleName>Sir</roleName> <forename>Francis</forename> <surname>Fortescue</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="servant" active="#d" passive="#ff"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1614-07-30" n="Saturday"/></p>
+<p><time when="07:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#d"/>
+<cb:subject ref="#d" present="unclear"/>
+<cb:topic key="maritalProspects"><person sameAs="#d"/></cb:topic>
+<cb:judgment/>
+<cb:info type="angel" subtype="Raphael"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-12">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-19">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0129.jpg" url="ady0129.jpg" n="59r"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<p><lb/><del type="strikethrough">Qu&aeacute;rit<hi rend="superscript">r</hi> vtr&uover; erit</del> <lb/>Qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> Ducet &vVowel;x. <lb/>et erit fortunat<choice><orig>&uscon;</orig><reg>us</reg>
+</choice> in mat <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> non <foreign xml:lang="en">&IConsonant;uly. 30 <choice><orig><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 7. <lb/>45. &antm; 1614 <add place="infralinear"><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice></add> &ff;r. fortis. m<choice><orig>&aover;</orig><reg>an</reg></choice>&slash; Dra<choice><orig>&crossedp;</orig><reg>per</reg></choice></foreign></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47992</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-04">04 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3, 2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="230">MS Ashmole 230, f. 120r</idno>
+&Napier029;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0120r" to="0120r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jm">
+<persName><forename>John</forename> <surname>Monson</surname></persName>
+<sex value="1">M</sex>
+<age value="19">19</age>
+</person>
+<person xml:id="m">
+<persName><roleName>Sir</roleName> <surname>Monson</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>    
+</person>
+<person xml:id="wb">
+<persName><roleName>Mr</roleName> <forename>William</forename> <surname>Bouth</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="kinsman" mutual="#jm #m"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-12-23" n="Wednesday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jm" evidence="internal"/>
+<cb:querent ref="#wb" evidence="internal" present="no"/>
+<cb:subject ref="#jm" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jm"/></cb:topic>
+<cb:treatment/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-04">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-31">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-11-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aau0247.jpg" url="aau0247.jpg" n="120r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohn Mounson <lb/><choice><sic>of son to</sic><corr type="noText"/></choice> an <lb/>hayre to S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> <lb/><space unit="chars" extent="4" dim="horizontal"/> Monson <rs type="address" xml:id="address1">of <lb/>London</rs> sent his <lb/>letter Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>23. &Wednesday; h. 1. p m <lb/>1618 <add place="inline">19 y.</add></p>
+<p><lb/>&amp; M<hi rend="superscript">r</hi> Will: Bouth <lb/>a lett<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> in his behalfe <lb/>at the same tyme <lb/>of very purpose</p>
+</div>
+&astroChart;
+
+<cb xml:id="colA" n="a"/>
+
+</body>
+</text>
+</TEI>

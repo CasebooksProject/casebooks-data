@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1608-10-12" n="Wednesday"/></p>
 <p><time when="14:25:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon2"/>
@@ -73,14 +76,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-11">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0133.jpg" url="abi0133.jpg" n="60r"/>
+<graphic xml:id="abi0132.jpg" url="abi0132.jpg" n="59v"/>
+</facsimile>
 <text xml:lang="la">
 <body><div>
 <p><lb/>qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> de altera &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>erit serv. &vVowel;tilis Octob. <lb/>12 <del type="strikethrough">&MarsSymbol;</del> &Wednesday; h. <del type="strikethrough">9.</del> 2. 25 p m <lb/>1608</p>
 </div>
 &astroChart;
-<pb xml:id="f59v" n="59v"/>
+<pb xml:id="f59v" n="59v" facs="#abi0132.jpg"/>
 </body>
 </text>
 </TEI>

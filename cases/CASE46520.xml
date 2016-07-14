@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE46520</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-11">11 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3A</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="201">MS Ashmole 201, f. 79v</idno>
+&Napier028;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0079v" to="0079v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p1">
+<persName><roleName>Mrs</roleName> <surname type="married">Pedder</surname> <genName>the younger</genName></persName>
+<sex value="2">F</sex>
+<age value="33">33</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="p2">
+<persName><roleName>Mr</roleName> <surname>Pedder</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="anon" evidence="internal">
+<sex value="2">F</sex>
+</person>
+<person xml:id="p3" evidence="internal">
+<persName><surname evidence="inferred" cert="high">Pedder</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p4" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Pedder</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="husband" active="#p2" passive="#p1" evidence="internal"/><relation name="son" active="#p2" passive="#p3 #p4" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-04-30" n="Thursday"/></p>
+<p><time when="11:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#p1" evidence="internal"/>
+<cb:subject ref="#p1 #p2" present="unclear"/>
+<cb:object ref="#anon"/>
+<cb:item type="urine" cert="low"/>
+<cb:topic key="requestingTreatment" evidence="internal"><person sameAs="#p1"/><person sameAs="#p2"/></cb:topic>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#p2"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#p2"/><person sameAs="#anon"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-08-28">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-09">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckx0182.jpg" url="ckx0182.jpg" n="79v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Podder <add place="supralinear">the younger</add> <rs type="address" xml:id="address1">of Potters <lb/>Perry</rs> 3<subst><del type="over">0</del><add place="over">3</add></subst> y Ap 30 &Thursday; h 11. <lb/>30 <choice><orig><choice><sic>p m</sic><corr>ant m</corr></choice></orig><reg/></choice> 1618.</p>
+</div>
+<div>
+<cb xml:id="colB" n="b"/>
+<p><lb/>&amp; M<hi rend="superscript">r</hi> Pedders w<unclear cert="low" reason="hand">at<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></unclear> Ap 30 &Thursday; h.</p>
+</div>
+</body>
+</text>
+</TEI>

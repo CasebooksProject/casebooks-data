@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49610</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 174r</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0174r" to="0174r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ea">
+<persName><forename>Elizabeth</forename> <surname>Ashwell</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="a">
+<persName><surname evidence="inferred" cert="low">Ashwell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#a" passive="#ea"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-09-04" n="Saturday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#a" evidence="internal" present="unclear"/>
+<cb:subject ref="#ea" present="no"/>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#ea"/></cb:topic>
+<cb:info type="event" subtype="previousConsultation"/>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-12">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0365.jpg" url="abd0365.jpg" n="174r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elisab. Ashwell <rs type="address" xml:id="address1" next="#address2">of l<choice><orig>&aover;</orig><reg>am</reg></choice>p<subst><del type="over">a</del><add place="over">o</add></subst>rt</rs> <lb/>30 y <choice><sic>feb</sic><corr>sept</corr></choice>. 4. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 3. 30 p <lb/>m 1619. <add place="inline"><rs type="address" xml:id="address2" prev="#address1">beyond north<choice><orig>&aover;</orig><reg>am</reg></choice>pton</rs>. <lb/><choice><orig><choice><sic>vnmayed</sic><corr>vnmaryed</corr></choice></orig><reg>unmaryed</reg></choice></add></p>
+</div>
+&astroChart;
+<div>
+<p><lb/><foreign xml:lang="la">mater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filia</foreign></p>
+</div>
+</body>
+</text>
+</TEI>

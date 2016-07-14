@@ -13,7 +13,6 @@
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
-
 <sourceDesc>
 <bibl type="positionOnPage">4</bibl>
 <msDesc>
@@ -41,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,12 +61,12 @@
 </particDesc>
 <settingDesc>
 <p><date when="1608-03-23" n="Wednesday"/></p>
-
-<cb:consultation type="horary">
+<p><time when="08:00:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
-<cb:subject ref="#tg" present="unclear"/>
+<cb:querent ref="#anon" evidence="inferred" present="no"/>
+<cb:subject ref="#tg" present="no"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#tg"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
@@ -75,11 +77,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-02">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-01-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0156.jpg" url="aap0156.jpg" n="76v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas Goddard <gap reason="binding" extent="3" unit="chars"/> <lb/>2 y march 23 &Wednesday; h <gap reason="binding" extent="2" unit="chars"/> <lb/>&antm; 16<gap extent="2" unit="chars" reason="binding"/></p>
+<p><lb/>Thomas Goddard <choice><sic><unclear cert="low" reason="hand">&MercurySymbol;</unclear></sic><corr type="noText" cert="medium"/></choice> sent <lb/>2 y march. 23 &Wednesday; h <subst><del type="over">5</del><add place="over">6</add></subst>. <del type="strikethrough">45</del> <lb/>&antm; 1608.</p>
 </div>
 </body>
 </text>

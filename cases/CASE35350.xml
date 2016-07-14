@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,7 +63,7 @@
 </particDesc>
 <settingDesc>
 <p><date notBefore-custom="1609-03-03T19:45:00" notAfter="1634-04-01"/></p>
-<cb:consultation type="interrogation">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture"/>
@@ -75,14 +78,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0121.jpg" url="abj0121.jpg" n="52r"/>
+<graphic xml:id="abj0120.jpg" url="abj0120.jpg" n="51v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Elis Hill came heath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>to my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> March 3. <lb/>&Friday;. h. <del type="strikethrough">8. ant</del> 7. 45. p <lb/>m 1609</p>
 </div>
 &astroChart;
-<pb xml:id="f51v" n="51v"/>
+<pb xml:id="f51v" n="51v" facs="#abj0120.jpg"/>
 </body>
 </text>
 </TEI>

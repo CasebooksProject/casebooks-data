@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE41510</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-24">24 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="199">MS Ashmole 199, f. 148r</idno>
+&Napier022;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0148r" to="0148r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="et">
+<persName><forename>Elizabeth</forename> <surname>Turlen</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1563-10-02"/></birth>
+</person>
+<person xml:id="ar" evidence="internal">
+<persName><forename>Alice</forename> <surname>Rogers</surname></persName>
+<sex value="2">F</sex>
+</person>    
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1613-06-10" n="Thursday"/></p>
+<p><time when="16:38:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#et"/>
+<cb:subject ref="#et" present="yes"/>
+<cb:object ref="#ar"/>
+<cb:topic key="face"><person sameAs="#et"/></cb:topic>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#et"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#et"/><person sameAs="#ar"/></cb:topic>
+<cb:judgment/>
+
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:info type="angel" subtype="Raphael"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-04-20">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjv0319.jpg" url="cjv0319.jpg" n="148r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis Turland borne <lb/>octob. 2. in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 5 yere <lb/>of her raigne was <lb/>here in p<choice><orig>&loopedr;</orig><reg>re</reg></choice>senc &IConsonant;une <lb/>10. &Thursday; h. 4. 38 p m <lb/>1613. <add place="infralinear">face blasted.</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

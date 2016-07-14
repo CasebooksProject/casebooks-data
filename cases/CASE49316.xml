@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49316</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2B, 3A, 4</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 116r</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0116r" to="0116r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hc">
+<persName><forename>Henry</forename> <surname>Cuddington</surname></persName>
+<sex value="1">M</sex>
+<age value="12">12</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1607-03-27" n="Friday" xml:id="date1" exclude="#date2" evidence="extrapolated"/><date when="1608-03-18" n="Friday" xml:id="date2" exclude="#date1" evidence="extrapolated"/><time notBefore="06:00:00" notAfter="07:00:00" evidence="internal"/></birth>
+</person>
+<person xml:id="h">
+<persName><roleName>Mrs</roleName> <surname>Hipwell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="af" evidence="internal">
+<persName><forename>Anne</forename> <surname>Foster</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-07-24" n="Saturday"/></p>
+<p><time when="11:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="internal" present="no"/>
+<cb:subject ref="#hc" present="no"/>
+<cb:object ref="#af"/>
+<cb:topic key="paralysis"><person sameAs="#hc"/></cb:topic>
+<cb:topic key="palsy"><person sameAs="#hc"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#hc"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#af"/><person sameAs="#hc"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-03">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-22">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0251.jpg" url="abd0251.jpg" n="116r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><unclear cert="medium" reason="binding">H</unclear>enry Cuddington 11 y <rs type="address" xml:id="address1">of Stony stratford</rs> <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Hipwels <lb/><supplied reason="binding">p</supplied>oor alms boy <lb/>&IConsonant;uly 24 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 11. 30 &antm; 1619<note place="chart">paralysis</note></p>
+</div>
+&astroChart;
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>Henry <choice><sic>Cud</sic><corr type="delText"/></choice> Cuddington <lb/><rs type="address" sameAs="#address1">of Stonystratford</rs> borne <lb/>the fryday before palme <lb/>sonday betwixt 6 &amp; 7 in <lb/>the morning 12 yers <lb/>since on sent for <lb/>h<subst><del type="over">er</del><add place="over">y</add></subst>m &IConsonant;uly 24 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <lb/>hor. 11 30 &antm; <lb/>1619</p>
+<p><lb/>the palsy on <lb/>the right syde</p>
+</div>
+</body>
+</text>
+</TEI>

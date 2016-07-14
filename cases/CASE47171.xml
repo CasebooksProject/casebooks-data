@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47171</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-11">11 August 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 199r/Q3, f. 199v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="201">MS Ashmole 201, f. 199r-v</idno>
+&Napier028;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0199r" to="0199v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="em">
+<persName><forename>Elizabeth</forename> <surname>Myldner</surname></persName>
+<sex value="2">F</sex>
+<age value="28" xml:id="age1" exclude="#age2">28</age>
+<age value="26" xml:id="age2" exclude="#age1">26</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="m" evidence="internal">
+<persName><surname evidence="inferred" cert="high">Myldner</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth evidence="internal">
+<date notBefore="1618-02-15" notAfter="1618-02-17" precision="medium"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-07-27" n="Monday"/></p>
+<p><time when="10:40:00" xml:id="time1" exclude="#time2"/></p>
+<p><time when="11:00:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#em"/>
+<cb:subject ref="#em" present="yes"/>
+<cb:topic key="nausea"><person sameAs="#em"/></cb:topic>
+<cb:topic key="stoneColic"><person sameAs="#em"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#em"/></cb:topic>
+<cb:topic key="chest"><person sameAs="#em"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#em"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-28">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-03-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-02-29">Checked by <name sameAs="#ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckx0423.jpg" url="ckx0423.jpg" n="199r"/>
+<graphic xml:id="ckx0424.jpg" url="ckx0424.jpg" n="199v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis Myldner <rs type="address" xml:id="address1">of <lb/>Eaton in Bletchly <lb/>parish</rs>. <subst><del type="over">1</del><add place="over">2</add></subst>8 y. &IConsonant;uly <lb/>27 &Monday; h. 10. 40 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1618. <add place="inline">Doth cast <lb/>mutch stone cholick <lb/>stomack &amp; chest. <lb/>was in p<choice><orig>&loopedr;</orig><reg>re</reg></choice>senc <lb/>very sicke</add></p>
+</div>
+&astroChart;
+<div>
+<pb xml:id="f199v" n="199v" facs="#ckx0424.jpg"/>
+<p><lb/>Elis myldner <rs type="address" sameAs="#address1">of <del type="strikethrough">Stonys</del> Eaton <lb/>by Bletchley</rs> 26 y &IConsonant;uly 27 <lb/>&Monday; h. 11 &antm; 1618.</p>
+</div>
+</body>
+</text>
+</TEI>

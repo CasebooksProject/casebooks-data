@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49108</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 72r/Q1, f. 72r/Q3, f. 72v/Q1, f. 72v/Q3, f. 73r/Q1, f. 73v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, ff. 72r-73v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0072r" to="0073v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wm">
+<persName><forename>William</forename> <surname>Monson</surname></persName>
+<sex value="1">M</sex>
+<birth>
+<date when="1599-02-02" n="Friday"/>
+<time when="00:00:00"/>
+<placeName sameAs="#place1"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1619-06-29T09:00:00" notAfter-custom="1619-06-29T10:45:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#wm"/>
+<cb:subject ref="#wm" present="unclear"/>
+<cb:topic key="fortune" evidence="internal"><person sameAs="#wm"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-21">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0163.jpg" url="abd0163.jpg" n="72r"/>
+<graphic xml:id="abd0164.jpg" url="abd0164.jpg" n="72v"/>
+<graphic xml:id="abd0165.jpg" url="abd0165.jpg" n="73r"/>
+<graphic xml:id="abd0166.jpg" url="abd0166.jpg" n="73v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">Gulielmus Manson nat<choice><orig>&uscon;</orig><reg>us</reg></choice> <placeName xml:id="place1">londini</placeName></foreign> feb. 2. being fryday h. 0. 0. <lb/>in the morning. 1599</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+<pb xml:id="f72v" n="72v" facs="#abd0164.jpg"/>
+<pb xml:id="f73r" n="73r" facs="#abd0165.jpg"/>
+<pb xml:id="f73v" n="73v" facs="#abd0166.jpg"/>
+</body>
+</text>
+</TEI>

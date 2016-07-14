@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,8 +50,9 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="w">
-<persName><surname>Wentworth</surname></persName>
+<persName><roleName>Mrs</roleName> <surname>Wentworth</surname></persName>
 <sex value="2">F</sex>
+<age value="40">40</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -56,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-07-06" n="Thursday"/></p>
 <p><time when="08:40:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#w"/>
@@ -72,11 +76,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-13">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-12-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0205.jpg" url="clm0205.jpg" n="93r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap extent="2" unit="chars" reason="binding"/><unclear cert="low" reason="binding">es</unclear> Wyntworte <rs type="address" xml:id="address1">of Maldone</rs> <lb/><gap extent="2" unit="chars" reason="binding"/> y &IConsonant;uly. 6. &Thursday; h. 8. 40. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1609.</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Wayntworte <rs type="address" xml:id="address1">of Maldone</rs> <lb/>40 y &IConsonant;uly. 6. &Thursday; h. 8. 40. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1609.</p>
 </div>
 </body>
 </text>

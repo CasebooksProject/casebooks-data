@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE23627</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-29">29 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="237">MS Ashmole 237, f. 36v</idno>
+&Napier023;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0036v" to="0036v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a1">
+<persName><roleName>Mrs</roleName> <surname>Allen</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+
+<person xml:id="a2">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a3">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a4">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a5">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a6">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a7">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a8">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a9">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a10">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a11">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a12">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="a13">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+<death><date notAfter="1614-06-26"/></death>
+</person>
+<person xml:id="a14">
+<persName><surname evidence="inferred" cert="medium">Allen</surname></persName>
+<sex value="0">U</sex>
+<death><date notAfter="1614-06-26"/></death>
+</person>
+<listRelation><relation name="mother" active="#a1" passive="#a2 #a3 #a4 #a5 #a6 #a7 #a8 #a9 #a10 #a11 #a12 #a13 #a14"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1614-06-27" n="Monday"/></p>
+<p><time when="16:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#a1"/>
+<cb:subject ref="#a1" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#a1"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-29">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-05-10">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-03-11">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-08-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ady0084.jpg" url="ady0084.jpg" n="36v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>m<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Allyn <rs type="address" xml:id="address1">of whaddon</rs> 40 y. <lb/>&IConsonant;une. 27. &Monday; h. 4. p m. 1614. <add place="infralinear">very big &amp; &vVowel;nwildy. shortw<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>ded stopt 16 weekes <lb/>hath had 13 <lb/>children. a <lb/>eleaven. living</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

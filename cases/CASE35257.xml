@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -64,7 +67,7 @@
 <settingDesc>
 <p><date when="1609-02-14" n="Tuesday"/></p>
 <p><time when="09:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#p1"/>
@@ -78,14 +81,20 @@
 <change when="2014-07-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-18">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abi0231.jpg" url="abi0231.jpg" n="109r"/>
+<graphic xml:id="abi0230.jpg" url="abi0230.jpg" n="108v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><add place="supralinear">the Apoth wife.</add> <choice><orig>mres</orig><reg>Mrs</reg></choice> <choice><sic>Park</sic><corr type="delText"/></choice> <add place="supralinear">Parker</add> feb. <subst><del type="cancelled">15</del> <add place="supralinear">1<subst><del type="over">3</del><add place="over">4</add></subst></add></subst> &Tuesday; h <lb/>9. 30. &antm;. 1609 <add place="lineEnd"><placeName>lond</placeName> Apothe<lb/>car.</add></p>
 </div>
 &astroChart;
-<pb xml:id="f108v" n="108v"/>
+<pb xml:id="f108v" n="108v" facs="#abi0230.jpg"/>
 </body>
 </text>
 </TEI>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49390</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<notesStmt><note resp="#ymartin" type="editorial">This nativity is associated with the horary entry <ref type="case" target="CASE49389">CASE49389</ref>.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 128v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0128v" to="0128v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ae">
+<persName><forename>Agnes</forename> <surname>Evans</surname></persName>
+<sex value="2">F</sex>
+<birth>
+<date when="1617-05-30" n="Friday" xml:id="date1" exclude="#date2"/>
+<date when="1617-05-29" n="Thursday" xml:id="date2" exclude="#date1"/>
+<time when="23:00:00"/>
+</birth>
+</person>
+<person xml:id="e1">
+<persName><surname evidence="inferred" cert="high">Evans</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+<occupation>Pedlar</occupation>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="daughter" active="#ae" passive="#e1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-07-30" n="Friday" evidence="external"/></p>
+<p><time when="10:25:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#ae" present="unclear"/>
+<cb:topic key="pining"><person sameAs="#ae"/></cb:topic>
+<cb:topic key="wasting"><person sameAs="#ae"/></cb:topic>
+<cb:info type="angel" subtype="Unspecified"/>
+<cb:info type="event" subtype="subsequentEvent" cert="medium"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-04">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0276.jpg" url="abd0276.jpg" n="128v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Agnys Evens <choice><sic>of</sic><corr type="noText"/></choice> <lb/>the pedlers child <lb/><foreign xml:lang="la">nata <choice><sic>30</sic><corr type="noText"/></choice> mai&jVowel; 30</foreign> <lb/>&Thursday; h. 11. p m 1617<note place="chart">pyned &amp; <lb/>wasted</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1603-06-01" n="Wednesday"/></p>
 <p><time when="11:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ak"/>
@@ -73,14 +76,20 @@
 <change when="2012-09-12">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-10-08">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-10-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cjk0099.jpg" url="cjk0099.jpg" n="41r"/>
+<graphic xml:id="cjk0100.jpg" url="cjk0100.jpg" n="41v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>An Kemshed <rs type="address" xml:id="address1">of Br<choice><orig>&oover;</orig><reg>om</reg></choice>mam</rs> 16 y. <lb/>&IConsonant;une 1. &Wednesday; hor 11. 20. &antm;. 1603.<note place="chart">sciatica</note></p>
 </div>
 &astroChart;
-<div><pb xml:id="f41v" n="41v"/>
+<div><pb xml:id="f41v" n="41v" facs="#cjk0100.jpg"/>
 <p><lb/>An Kempshed <rs type="address" sameAs="#address1">of Br<choice><orig>&oover;</orig><reg>om</reg></choice>m<choice><orig>&aover;</orig><reg>am</reg></choice></rs> 16 y <lb/>&IConsonant;une 1. &Wednesday; hor. 11. 20. &antm; <lb/>1603. a sciatick <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> maketh <lb/>her goe very ill.</p>
 </div>
 </body>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -53,8 +56,8 @@
 <occupation>Servant</occupation>
 </person>
 <person xml:id="u">
-<persName><roleName>Mr</roleName> <surname>Uvedale</surname></persName>
-<sex value="1">M</sex>
+<persName><roleName>Mrs</roleName> <surname>Uvedale</surname></persName>
+<sex value="2">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <listRelation>
@@ -65,7 +68,7 @@
 <settingDesc>
 <p><date when="1609-07-22" n="Saturday"/></p>
 <p><time when="16:20:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#am"/>
@@ -81,11 +84,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-19">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0250.jpg" url="clm0250.jpg" n="115v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Alce Mullen <rs type="address" xml:id="address1">of th<supplied reason="binding" cert="high">is</supplied><lb/> towne</rs> serv. to Mr <lb/><subst><del type="strikethrough">Blundle</del> <add place="supralinear">&vVowel;&uConsonant;edale</add></subst> &IConsonant;uly 22. <supplied reason="binding" cert="high"><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice></supplied> <lb/>hor 4. 20 p m <supplied reason="binding" cert="high">1609</supplied><note place="chart">light headed <lb/>&amp; mad.</note></p>
+<p><lb/>Alce Mullen <rs type="address" xml:id="address1">of this <lb/>towne</rs> serv. to <choice><sic>Mres</sic><corr>Mrs</corr></choice> <lb/><subst><del type="strikethrough">Blundle</del> <add place="supralinear">&vVowel;&uConsonant;edale</add></subst> &IConsonant;uly 22. &Saturday; <lb/>hor 4. 20 p m 1609<note place="chart">light headed <lb/>&amp; mad.</note></p>
 </div>
 &astroChart;
 </body>

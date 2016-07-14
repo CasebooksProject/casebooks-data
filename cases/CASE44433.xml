@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE44433</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 83v/Q2, f. 84r/Q2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, ff. 83v-84r</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0083v" to="0084r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="es">
+<persName><forename>Elizabeth</forename> <surname>Smith</surname></persName>
+<sex value="2">F</sex>
+<age value="17">17</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation to="1617-02-14" evidence="internal">Servant</occupation>
+</person>
+<person xml:id="mg" evidence="internal">
+<persName><forename>Mary</forename> <surname>Green</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-03-13" n="Thursday"/></p>
+<p><time when="17:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#es"/>
+<cb:subject ref="#es" present="unclear"/>
+<cb:object ref="#mg"/>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#es"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#mg"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-12-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-16">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0186.jpg" url="cjp0186.jpg" n="83v"/>
+<graphic xml:id="cjp0187.jpg" url="cjp0187.jpg" n="84r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis. Smyth <rs type="address" xml:id="address1">of Ivingoe parish</rs> 17 y <lb/>march 13. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h 5. 30 p m 1617</p>
+</div>
+
+<div><pb xml:id="f84r" n="84r" facs="#cjp0187.jpg"/>
+<p><lb/>Elis. Smyth <rs type="address" sameAs="#address1">of Ivingoe parish</rs> 17 y. <lb/>march 13 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 5. <subst><del type="over">25</del><add place="over">30</add></subst> p m 1617.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

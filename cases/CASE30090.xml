@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <p><date when="1605-12-20" n="Friday"/></p>
 <p><time when="11:30:00" xml:id="time1" exclude="#time2"/></p>
 <p><time when="11:45:00" xml:id="time2" exclude="#time1"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s" evidence="internal"/>
@@ -72,8 +75,12 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-03-24">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-04-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0523.jpg" url="aag0523.jpg" n="257r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Sandye <lb/><foreign xml:lang="la">qu&aelig;rit quo t<choice><orig>&eover;</orig><reg>em</reg></choice>pore <lb/><choice><orig>&crossedp;</orig><reg>par</reg></choice>turet</foreign> Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 20 <lb/>&Friday; h. 11. <subst><del type="over"><gap extent="1" reason="del" unit="chars"/></del><add place="over">3</add></subst>0 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1605 11. 45. <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>per</reg></choice> <choice><orig>l<hi rend="overline">ras</hi></orig><reg>litteras</reg></choice>.</foreign></p>

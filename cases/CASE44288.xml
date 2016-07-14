@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE44288</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="198">MS Ashmole 198, f. 62v</idno>
+&Napier026;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0062v" to="0062v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="es">
+<persName><roleName>Mrs</roleName> <forename>Ellen</forename> <surname>Spencer</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="s">
+<persName><surname type="maiden" evidence="inferred" cert="medium">Spencer</surname></persName>
+<sex value="2">F</sex>
+<age value="18">18</age>
+</person>
+<listRelation><relation name="daughter" active="#s" passive="#es"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-02-05" n="Wednesday"/></p>
+<p><time when="09:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s"/>
+<cb:subject ref="#s" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#s"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-07">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-11-30">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjp0144.jpg" url="cjp0144.jpg" n="62v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Ellen Spencer daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>18 y feb <subst><del type="strikethrough"><subst><del type="over">3</del><add place="over">5</add></subst></del> <add place="supralinear">5</add></subst> <choice><orig><subst><del type="over">h</del><add place="over">&MercurySymbol;</add></subst></orig><reg type="gloss">Wednesday</reg></choice> hor. <subst><del type="strikethrough">1<unclear reason="del" cert="low">0</unclear></del> <add place="supralinear">9</add></subst> <add place="supralinear">20</add> &antm; 16<choice><orig>i</orig><reg>1</reg></choice>7</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

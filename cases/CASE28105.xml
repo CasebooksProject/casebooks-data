@@ -40,14 +40,17 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
 <persName><forename>Gerence</forename> <surname>James</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="ja">
-<persName><forename>Joan</forename> <surname>Ashpole</surname></persName>
+<person xml:id="sa">
+<persName><forename>Sara</forename> <surname>Ashpole</surname></persName>
 <sex value="2">F</sex>
 <age value="12">12</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,12 +60,12 @@
 <settingDesc>
 <p><date when="1606-09-09" n="Tuesday"/></p>
 <p><time when="15:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#ja"/>
-<cb:subject ref="#ja" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ja"/></cb:topic>
+<cb:querent ref="#sa"/>
+<cb:subject ref="#sa" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#sa"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -72,11 +75,16 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-06-11">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-19">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-08">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0561.jpg" url="cmp0561.jpg" n="270r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><unclear reason="copy" cert="medium">&IConsonant;one</unclear> Ashpole <rs type="address" xml:id="address1">of Newport</rs> 12 y. <lb/>Septem. 9. &Tuesday; ho. 3. 30. p. m. 1606.</p>
+<p><lb/>Sara Ashpole <rs type="address" xml:id="address1">of Newport</rs> 12 y. <lb/>Septem. 9. &Tuesday; ho. 3. 30. p. m. 1606.</p>
 </div>
 &astroChart;
 </body>

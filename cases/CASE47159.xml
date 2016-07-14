@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE47159</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-08-11">11 August 2015</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE47158">CASE47158</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="201">MS Ashmole 201, f. 197r</idno>
+&Napier028;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0197r" to="0197r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jh">
+<persName><forename>Joan</forename> <surname>Hall</surname></persName>
+<sex value="2">F</sex>
+<age value="66">66</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="eh">
+<persName><forename>Ellen</forename> <surname>Hollan</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1618-07-24" n="Friday" evidence="external"/></p>
+<p><time when="15:20:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jh"/>
+<cb:subject ref="#jh" present="unclear"/>
+<cb:object ref="#eh"/>
+<cb:topic key="feet"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="back"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="cannotSwallow"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="nauseaPhlegm"><person sameAs="#jh"/></cb:topic>
+<cb:topic key="witchcraft" evidence="inferred"><person sameAs="#eh"/><person sameAs="#jh"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-08-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-25">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-03-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckx0419.jpg" url="ckx0419.jpg" n="197r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;one Hall <rs type="address" xml:id="address1">of waresly</rs> <lb/>66 y &IConsonant;uly <choice><sic>24 &VenusSymbol;</sic><corr type="delText"/></choice> <add place="supralinear">13. &Monday;</add> <choice><sic>h. 3. <lb/>2<subst><del type="over">5</del><add place="over">0</add></subst> p m 1618.</sic><corr type="delText"/></choice> <add place="infralinear">&IConsonant;uly 13 &Monday; h. 7 p m 1618</add></p>
+<p><lb/><foreign xml:lang="la">subito correpta pedib<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/>tergo et stomacko.</foreign> c<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>not swallow any thing <lb/>by reason <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the flegme <lb/>coming &vVowel;p troubleth her <lb/>excedingly<note place="marginLeft"><p>Ellen Hollan <lb/>a widowe.</p><p><lb/><del type="strikethrough">Alce</del></p></note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

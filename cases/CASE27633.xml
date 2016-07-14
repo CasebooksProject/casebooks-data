@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,7 +54,7 @@
 <sex value="2">F</sex>
 </person>
 <person xml:id="b2">
-<persName><surname evidence="inferred" cert="medium">Blundell</surname></persName>
+<persName><surname evidence="inferred" cert="medium" type="maiden">Blundell</surname></persName>
 <sex value="2">F</sex>
 <birth><date notBefore-custom="1606-06-22T20:00:00" notAfter-custom="1606-06-23T12:00:00" evidence="inferred"/></birth>
 </person>
@@ -61,7 +64,7 @@
 <settingDesc>
 <p><date when="1606-06-23" n="Monday" evidence="inferred"/></p>
 <p><time notBefore="07:00:00" notAfter="08:36:00" evidence="inferred"/></p>
-<cb:consultation type="diary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
@@ -74,12 +77,18 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-05-28">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0402.jpg" url="cmp0402.jpg" n="191v"/>
+<graphic xml:id="cmp0403.jpg" url="cmp0403.jpg" n="192r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>younge <choice><orig><hi rend="overline">mres</hi></orig><reg>Mrs</reg></choice> Blundle <lb/>brought a bed &IConsonant;une. <subst><del type="strikethrough">23.</del> <add place="supralinear">22</add></subst> <lb/>&Sunday;. h. 8 p m 1606.</p>
-<pb xml:id="f192r" n="192r"/>
+<pb xml:id="f192r" n="192r" facs="#cmp0403.jpg"/>
 <p><lb/>young <choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Blundle <lb/>brought a bed <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a wench <lb/>&IConsonant;une 22. &Sunday; h. 8 p m. 1606</p>
 </div>
 &astroChart;

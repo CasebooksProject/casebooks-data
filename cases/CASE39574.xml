@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE39574</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-28">28 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="409">MS Ashmole 409, f. 48v</idno>
+&Napier021;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0048v" to="0048v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eb">
+<persName><forename>Elizabeth</forename> <surname>Baldwin</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="js">
+<persName><forename>John</forename> <surname>Seer</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="brother" active="#js" passive="#eb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1612-04-07" n="Tuesday"/></p>
+<p><time notBefore="12:39:00" notAfter="13:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#eb"/>
+<cb:subject ref="#eb" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#eb"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-28">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-05-11">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-07-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abp0114.jpg" url="abp0114.jpg" n="48v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis. Baldwyn<gap extent="1" unit="chars" reason="binding" cert="medium"/> <lb/><rs type="address" xml:id="address1">of Chaffe &amp; S<hi rend="superscript">t</hi> P<supplied reason="binding" cert="high">eters</supplied> <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in 15 miles <supplied reason="binding" cert="high">of</supplied> <lb/>London</rs>. of ma<gap reason="binding" unit="chars" extent="3"/> <lb/>her brothers house <lb/>&IConsonant;ohn Seer. <del type="strikethrough">Ap</del> <gap reason="binding" unit="chars" extent="2"/> <lb/>y Ap 7 &Tuesday; h<supplied reason="binding" cert="high">or</supplied> <gap reason="binding" unit="chars" extent="2"/> <lb/>p m 1612</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE40604</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-28">28 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1, 3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="409">MS Ashmole 409, f. 205v</idno>
+&Napier021;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0205v" to="0205v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jt">
+<persName><forename>John</forename> <surname>Temple</surname></persName>
+<sex value="1">M</sex>
+<age value="14">14</age>
+<birth><date when="1598-01-28" xml:id="date1" exclude="#date2"/><date when="1599-01-28" xml:id="date2" exclude="#date1"/><time when="12:30:00"/></birth>
+</person>
+<person xml:id="t" evidence="internal">
+<persName><surname evidence="inferred" type="married">Temple</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="wife" active="#t" passive="#jt" from="1610-06-24" evidence="internal"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1612-11-17T09:15:00" notAfter-custom="1612-11-18T09:25:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jt"/>
+<cb:subject ref="#jt" present="unclear"/>
+<cb:object ref="#t"/>
+<cb:topic key="fortune" evidence="internal"><person sameAs="#jt"/></cb:topic>
+<cb:topic key="maritalRelations" evidence="internal"><person sameAs="#jt"/><person sameAs="#t"/></cb:topic>
+<cb:info type="angel" subtype="Unspecified"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-28">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-17">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2015-07-31">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abp0436.jpg" url="abp0436.jpg" n="205v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>&IConsonant;ohan. Temple <foreign xml:lang="la">natus</foreign> at <lb/><placeName xml:id="place1">the Stowe in Buckingh<choice><orig>&aover;</orig><reg>am</reg></choice><lb/>sheere</placeName> &IConsonant;an. 28: h 12. 30 <lb/>p m. 1598 for he shalbe <lb/>15 next candlemas Eve</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

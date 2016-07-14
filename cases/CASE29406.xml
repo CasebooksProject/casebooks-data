@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -59,7 +62,7 @@
 <p><date when="1605-07-15" n="Monday"/></p>
 <p><time when="12:50:00" xml:id="time1" exclude="#time2"/></p>
 <p><time when="13:30:00" xml:id="time2" exclude="#time1"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mi"/>
@@ -76,15 +79,21 @@
 <change when="2014-02-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-02-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aag0304.jpg" url="aag0304.jpg" n="147v"/>
+<graphic xml:id="aag0305.jpg" url="aag0305.jpg" n="148r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Mary Isaac <rs type="address" xml:id="address1">of fensom</rs> 10 y <lb/>&IConsonant;uly. 15. &Monday; hor. 12 50 <add place="supralinear">1. 30</add>. p m <lb/>1605. in <choice><orig>p&loopedr;</orig><reg>pre</reg></choice>senc</p>
 </div>
 &astroChart;
 <cb xml:id="colA" n="a"/>
-<pb xml:id="f148r" n="148r"/>
+<pb xml:id="f148r" n="148r" facs="#aag0305.jpg"/>
 </body>
 </text>
 </TEI>

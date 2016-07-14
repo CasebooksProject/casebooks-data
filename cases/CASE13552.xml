@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,7 +59,7 @@
 <settingDesc>
 <p><date when="1598-07-11" n="Tuesday"/></p>
 <p><time when="12:09:00"/></p>
-<cb:consultation type="interrogation">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
@@ -77,30 +80,31 @@
 <change when="2012-03-01">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-03-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2013-07-06">Merged with CASE13553 by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2013-11-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic xml:id="Ashmole-182-0442.jpg" url="Ashmole-182-0442.jpg" n="219v"/>
-<graphic xml:id="Ashmole-182-0443.jpg" url="Ashmole-182-0443.jpg" n="220r"/>
-<graphic xml:id="Ashmole-182-0444.jpg" url="Ashmole-182-0444.jpg" n="220v"/>
-<graphic xml:id="Ashmole-182-0445.jpg" url="Ashmole-182-0445.jpg" n="221r"/>
+<graphic xml:id="acm0428.jpg" url="acm0428.jpg" n="219v"/>
+<graphic xml:id="acm0429.jpg" url="acm0429.jpg" n="220r"/>
+<graphic xml:id="acm0430.jpg" url="acm0430.jpg" n="220v"/>
+<graphic xml:id="acm0431.jpg" url="acm0431.jpg" n="221r"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Thom. Rive sent to me to come &vVowel;p to <lb/>him 1598. &IConsonant;uly 11 &TuesdayN;. h. 12. 45.</p>
 </div>
 &astroChartPartial;
-<div><pb xml:id="f220r" n="220r"/>
+<div><pb xml:id="f220r" n="220r" facs="#Ashmole-182-0443.jpg"/>
 <p><lb/><add place="inline">Thomas Rive</add> 1598 <foreign xml:lang="la"><add place="inline">&IConsonant;uli&jVowel; 11. &TuesdayN; <choice><sic>h 12</sic><corr type="noText"/></choice></add> <lb/>h. 12. 9. mi. <del type="strikethrough">p merid.</del> in ipsa merid <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice> Tho. Rive</foreign>. he is payned all over <lb/>head harte chest he is very drye.</p>
 </div>
 &astroChart;
-<div><pb xml:id="f220v" n="220v"/>
+<div><pb xml:id="f220v" n="220v" facs="#Ashmole-182-0444.jpg"/>
 <p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> Th. Rive &vVowel;tr<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> vivet <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice>.</foreign></p>
 </div>
 &geoChartPreliminary;
 &geoChart;
-<pb xml:id="f221r" n="221r"/>
+<pb xml:id="f221r" n="221r" facs="#Ashmole-182-0445.jpg"/>
 </body>
 </text>
 </TEI>

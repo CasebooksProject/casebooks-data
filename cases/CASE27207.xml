@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="l">
-<persName> <surname>Lucas</surname></persName>
+<persName><forename>Richard</forename> <surname>Lucas</surname></persName>
 <sex value="1">M</sex>
 <age value="50">50</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1606-04-21" n="Monday"/></p>
 <p><time when="11:12:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l"/>
@@ -71,11 +74,16 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-04-09">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-05-19">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-08">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0255.jpg" url="cmp0255.jpg" n="118r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap reason="binding" extent="3" unit="chars"/>h lucas <rs type="address" xml:id="address1">of Bucking<lb/><supplied reason="binding">ha</supplied>m</rs> 50 y Apr 21 &Monday; <lb/><supplied reason="binding" cert="medium">h.</supplied> 11. <add place="supralinear">12.</add> &antm;. 1606</p>
+<p><lb/><supplied reason="binding">R</supplied>ich lucas <rs type="address" xml:id="address1">of Bucking<lb/><supplied reason="binding">h</supplied>am</rs> 50 y Apr 21 &Monday; <lb/><supplied reason="binding" cert="medium">h</supplied>. 11. <add place="supralinear">12.</add> &antm;. 1606</p>
 </div>
 </body>
 </text>

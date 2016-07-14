@@ -13,7 +13,6 @@
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
-
 <sourceDesc>
 <bibl type="positionOnPage">3B</bibl>
 <msDesc>
@@ -41,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -50,7 +52,7 @@
 <person xml:id="d">
 <persName><forename>William</forename> <surname>Deerman</surname></persName>
 <sex value="1">M</sex>
-<age value="26" cert="medium">26</age>
+<age value="25">25</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -58,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-02-29" n="Monday"/></p>
 <p><time when="12:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#d"/>
@@ -66,6 +68,7 @@
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#d"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
+<cb:info type="financial"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -73,11 +76,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-08">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2014-12-16">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0100.jpg" url="aap0100.jpg" n="47v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> deerem<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of <lb/>Tyddington</rs> <unclear cert="medium" reason="copy">26</unclear> y <lb/>a batchelor feb <supplied reason="binding">29</supplied> <lb/>&Monday; h. 12 1608</p>
+<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> deerem<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of <lb/>Tyddington</rs> 25. y. <lb/>a batchelor feb 29 <lb/>&Monday; h. 12 1608</p>
 </div>
 </body>
 </text>

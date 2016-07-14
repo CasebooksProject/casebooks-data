@@ -40,23 +40,31 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
+<person xml:id="j">
+<persName><forename>J</forename></persName>
+<sex value="1" evidence="external">M</sex>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-03-19" n="Saturday" evidence="inferred"/></p>
 <p><time notBefore="10:00:00" notAfter="10:28:00" evidence="inferred"/></p>
-<cb:consultation type="diary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#rnapier"/></cb:topic>
+<cb:object ref="#j"/>
+<cb:topic key="punishment" cert="low"><person sameAs="#rnapier"/><person sameAs="#j"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -64,11 +72,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-31">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-01-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-22">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0149.jpg" url="aap0149.jpg" n="73r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><unclear cert="low" reason="hand">t<hi rend="superscript">i</hi></unclear>. &IConsonant; cr. <add place="supralinear">&Monday;</add> &IConsonant;uly 25 h 2 p <lb/>m 1603.</p>
+<p><lb/>K. &IConsonant; cr. <add place="supralinear">&Monday;</add> &IConsonant;uly 25 h 2 p <lb/>m 1603.</p>
 </div>
 &astroChart;
 </body>

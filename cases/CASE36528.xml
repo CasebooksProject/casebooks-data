@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -54,26 +57,31 @@
 <person xml:id="an">
 <persName><forename>Alice</forename> <surname>Nichols</surname></persName>
 <sex value="2">F</sex>
+<age value="17">17</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<person xml:id="anon">
+<person xml:id="as" evidence="internal">
+<persName><forename>Alice</forename> <surname>Sm<gap extent="unclear" reason="binding"/></surname></persName>
 <sex value="2">F</sex>
+<death><date notBefore="1603-09-14" notAfter="1609-09-13" precision="low"/></death>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-09-14" n="Thursday"/></p>
-<p><time when="17:00:00"/></p>
-<cb:consultation type="horary">
+<p><time when="17:00:00" evidence="internal"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#an"/>
 <cb:subject ref="#an" present="unclear"/>
+<cb:object ref="#as"/>
 <cb:topic key="back"><person sameAs="#an"/></cb:topic>
 <cb:topic key="arms"><person sameAs="#an"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#an"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#an"/><person sameAs="#as"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
+<cb:info type="financial"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -81,12 +89,17 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-25">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-02-26">Checked by <name xml:id="jedge">Joanne Edge</name></change>
+<change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0334.jpg" url="clm0334.jpg" n="157v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/>Alice Nichols <rs type="address" xml:id="address1">of Ecton</rs>  <lb/>Septemb. 14 &Thursday; ho.</p>
-<p>backe &amp; arme. breath <gap extent="1" unit="words" reason="binding"/><handShift new="#rnapier"/></p>
+<p><lb/><handShift new="#gjames"/>Alice Nichols <rs type="address" xml:id="address1">of Ecton</rs> 17 y <lb/>Septemb. 14 &Thursday; ho.</p>
+<p><lb/><handShift new="#rnapier"/>backe &amp; arme. boath armes</p>
 </div>
 &astroChart;
 </body>

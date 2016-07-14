@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,8 +50,9 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="e">
-<persName><surname>Egerton</surname></persName>
-<sex value="0">U</sex>
+<persName><forename>John</forename> <surname>Egerton</surname></persName>
+<sex value="1">M</sex>
+
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -56,7 +60,7 @@
 <settingDesc>
 <p><date when="1608-10-19" n="Wednesday"/></p>
 <p><time when="10:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#e"/>
@@ -71,11 +75,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-22">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-22">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0445.jpg" url="aap0445.jpg" n="221r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap extent="4" unit="chars" reason="binding"/> Edgerton <rs type="address" xml:id="address1">of Woulverton</rs> <lb/><gap extent="2" unit="chars" reason="binding"/> y. octob 19 &Wednesday;. h. 10. 45. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1608</p>
+<p><lb/>&IConsonant;ohn Edgerton <rs type="address" xml:id="address1">of Woulverton</rs> <lb/><gap extent="1" unit="chars" reason="binding"/>2 y. octob 19 &Wednesday;. h. 10. 45. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1608</p>
 </div>
 </body>
 </text>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE38842</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This interrogation is associated with the horary entry <ref type="case" target="CASE38843">CASE38843</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 184r</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0184r" to="0184r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jf">
+<persName><forename>John</forename> <surname>Frost</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><roleName>Mr</roleName> <surname>Stokes</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-11-03" n="Sunday" evidence="external"/></p>
+<p><time when="13:00:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:subject ref="#s" present="unclear"/>
+<cb:object ref="#jf"/>
+<cb:topic key="lossAndTheft"><person sameAs="#rnapier"/><person sameAs="#s"/><person sameAs="#jf"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-09-16">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-02-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0387.jpg" url="ckk0387.jpg" n="184r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &IConsonant;ohn frost stole my <lb/>horse the 23 of octob. at <lb/>night as is supposed but <lb/>at what hou<add place="supralinear">r</add>e no m<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>knoweth hath stollen the horse <lb/>of M<hi rend="superscript">r</hi> Stoakes</p>
+<p><lb/>who stolle it. of what <lb/>yeres &amp; trade where <lb/>he liveth &amp; what he hath done <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it &amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> to be <lb/>recovered</p>
+
+<p><lb/>M<hi rend="superscript">r</hi> Stoakes returned home to my <lb/>house <del type="cancelled">nov&eover;b 4 &MoonSymbol; h</del> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 2. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 4. <lb/>p m 1611.</p>
+</div>
+</body>
+</text>
+</TEI>

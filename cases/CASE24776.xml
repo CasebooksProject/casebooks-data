@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE24776</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-04-03">03 April 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 36v/Q4, f. 36v/Q2B, f. 37r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="239">MS Ashmole 239, ff. 36v-37r</idno>
+&Napier018;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0036v" to="0037r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s1">
+<persName><roleName>Mrs</roleName> <surname>Say</surname></persName>
+<sex value="2">F</sex>
+<age value="38">38</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="gc">
+<persName><forename>George</forename> <surname>Cheseldye</surname></persName>
+<sex value="1">M</sex>
+<age value="22">22</age>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ss">
+<persName><forename>Susan</forename> <surname type="maiden">Say</surname></persName>
+<sex value="2">F</sex>
+<age value="6">6</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="s2">
+<persName><roleName>Mr</roleName> <surname>Say</surname></persName>
+<sex value="1">M</sex>
+
+</person>
+<person xml:id="a">
+<persName><forename>Alice</forename></persName>
+<sex value="2">F</sex>
+<age value="24">24</age>
+<occupation>Maid</occupation>
+</person>
+<listRelation><relation name="daughter" active="#ss" passive="#s1"/><relation name="servant" active="#a" passive="#s2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1610-05-16" n="Wednesday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s1 #s2 #ss #gc #a"/>
+<cb:subject ref="#s1 #s2 #ss #gc #a" present="unclear"/>
+<cb:topic key="plague"><person sameAs="#s1"/><person sameAs="#s2"/><person sameAs="#ss"/><person sameAs="#gc"/><person sameAs="#a"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#s1"/><person sameAs="#s2"/><person sameAs="#ss"/><person sameAs="#gc"/><person sameAs="#a"/></cb:topic>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-04-03">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-04-09">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2014-09-22">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-06-24">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afp0092.jpg" url="afp0092.jpg" n="36v"/>
+<graphic xml:id="afp0093.jpg" url="afp0093.jpg" n="37r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Say <rs type="address" xml:id="address1">of Dod<lb/>dington by Wellingbo<lb/>rough</rs>. 38 y may 16 <lb/>&Wednesday; h. 1. p m 16<choice><orig>i</orig><reg>1</reg></choice>0.</p>
+<p><lb/>water good</p>
+<p><lb/>George Cheseldye <lb/>22 y a batch. <rs type="address" xml:id="address2">of dod<lb/>dington by welborough</rs> <lb/>may 16 &Wednesday;. h. 1. p m <lb/>1610</p>
+<p><lb/>water good</p>
+<cb n="a" xml:id="colA"/>
+<p><lb/>Sus<choice><orig>&aover;</orig><reg>an</reg></choice>na Say <add place="supralinear"><rs type="address" sameAs="#address1">of dodington</rs></add> her daughter. <lb/>6 y may. 16. &Wednesday;. h. &jVowel;. p m 16<choice><orig>i</orig><reg>1</reg></choice>0 <lb/>this wench was <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a litle wench <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dyed.&slash; <add place="inline">water good</add></p>
+<p><lb/>Alce m<hi rend="superscript">r</hi> Says mayd 24 y all these feare the plauge <lb/>&amp; sicknes having bene <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> sutch as dyed</p>
+<pb xml:id="f37r" n="37r" facs="#Ashmole-239-0075.jpg"/>
+<p><lb/><choice><orig>m<hi rend="overline">es</hi></orig><reg>Mrs</reg></choice> Say <rs type="address" sameAs="#address1">of dod<del type="strikethrough">ford</del><add place="lineEnd">dington</add> <lb/>by wellingborough</rs> 38 y <lb/>may 16 &Wednesday; h. 1. p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -50,13 +53,20 @@
 <persName><forename>Joan</forename></persName>
 <sex value="2">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Servant</occupation>
 </person>
+<person xml:id="r">
+<persName><surname>Russwel</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="kinsman" active="#rnapier" passive="#r"/><relation name="servant" active="#j" passive="#r"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1607-11-17" n="Tuesday"/></p>
+<p><date when="1607-11-13" n="Friday"/></p>
 <p><time when="09:29:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#j"/>
@@ -71,11 +81,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2010-10-10">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2014-10-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0018.jpg" url="aap0018.jpg" n="6v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;one <gap reason="binding" extent="5" unit="chars"/> <lb/><unclear reason="binding" cert="medium">Ruffw</unclear><gap extent="unclear" reason="binding"/> <lb/><rs type="address" xml:id="address1">of lon<supplied reason="binding" cert="high">don</supplied></rs> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b <gap reason="binding" extent="5" unit="chars"/> <lb/>9 29 <gap reason="binding" extent="5" unit="chars"/></p>
+<p><lb/>&IConsonant;one my Cosen <lb/>Russwels <choice><orig><choice><sic>servat</sic><corr>serv&aover;t</corr></choice></orig><reg>servant</reg></choice> <lb/><rs type="address" xml:id="address1">of london</rs> 20 <supplied reason="binding" cert="low">y</supplied> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 13. &Friday; h <lb/>9 29 &antm; 1607</p>
 </div>
 &astroChart;
 </body>

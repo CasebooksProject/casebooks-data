@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -60,11 +63,11 @@
 <settingDesc>
 <p><date when="1609-05-01" n="Monday"/></p>
 <p><time when="15:16:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
-<cb:subject ref="#jc" present="unclear"/>
+<cb:querent ref="#anon" evidence="inferred" present="yes"/>
+<cb:subject ref="#jc" present="yes"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jc"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
@@ -76,11 +79,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-10-28">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0058.jpg" url="clm0058.jpg" n="19v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> &IConsonant;udith <add place="supralinear"><unclear reason="copy" cert="low">Chester</unclear></add> <rs type="address" xml:id="address1">of <lb/>Chichelye</rs> 6 y <lb/>fortnight <add place="supralinear">the <gap extent="1" unit="words" reason="copy"/></add> after <unclear cert="medium" reason="binding">all</unclear> <lb/>halloutyde may <supplied reason="binding">1 &Monday;</supplied> <lb/>h. 3. 16 p m 1609</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> &IConsonant;udith <add place="supralinear">Chester</add> <rs type="address" xml:id="address1">of <lb/>Chichelye</rs> 6 y a <lb/>fortnight <add place="supralinear">the tuesdaye</add> aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> al<lb/>Halloutyde may 1. &Monday; <lb/>h. 3. 15 p m 1609 <add place="infralinear">child in <choice><sic>in</sic><corr type="noText"/></choice> p<choice><orig>&loopedr;</orig><reg>re</reg></choice>senc</add></p>
 </div>&astroChart;
 </body>
 </text>

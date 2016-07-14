@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -58,7 +61,7 @@
 <settingDesc>
 <p><date when="1609-04-19" n="Wednesday"/></p>
 <p><time when="18:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#eb"/>
@@ -74,15 +77,21 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-14">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-10-17">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0031.jpg" url="clm0031.jpg" n="6r"/>
+<graphic xml:id="clm0030.jpg" url="clm0030.jpg" n="5v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Elis. Burton <rs type="address" xml:id="address1">of Quinton</rs> 23 y <lb/>Apr 19 &Wednesday; h. 6. <del type="strikethrough">30</del> p m <lb/>1609 </p>
 </div>
 <div>
-<pb xml:id="f5v" n="5v"/>
-<p><lb/>Elisabeth Burton <rs type="address" sameAs="#address1">of quinton</rs> <supplied reason="binding" cert="high">23 y</supplied> <lb/>Apr 19 &Wednesday; h. 6. p m 1609</p>
+<pb xml:id="f5v" n="5v" facs="#clm0030.jpg"/>
+<p><lb/>Elisabeth Burton <rs type="address" sameAs="#address1">of Quinton</rs> 23 y <lb/>Apr 19 &Wednesday; h. 6. p m 1609</p>
 </div>
 &astroChart;
 </body>

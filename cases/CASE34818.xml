@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="jt">
-<persName><forename>Joan</forename> <surname>Tealer</surname></persName>
+<persName><forename>Joan</forename> <surname>Taylor</surname></persName>
 <sex value="2">F</sex>
 <age value="42">42</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-02-02" n="Thursday"/></p>
 <p><time when="10:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jt"/>
@@ -73,8 +76,12 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-02-11">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0613.jpg" url="aap0613.jpg" n="305r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>&IConsonant;one Tealer <rs type="address" xml:id="address1">of Drayton <lb/>Parsloe</rs> 42 y feb. 2 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> <lb/>h. 10. 15. &antm; 1609.</p>

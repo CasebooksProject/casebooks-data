@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37649</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">4, 2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 28v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0028v" to="0028v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ar">
+<persName><forename>Agnes</forename> <surname>Rider</surname></persName>
+<sex value="2">F</sex>
+<age value="2">2</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="r">
+<persName><surname evidence="inferred" cert="low">Rider</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="mother" active="#r" passive="#ar"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-03-05" n="Tuesday"/></p>
+<p><time when="16:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#r" evidence="internal" present="no"/>
+<cb:subject ref="#ar" present="no" consent="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ar"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-29">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-14">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0076.jpg" url="ckk0076.jpg" n="28v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Agnys Rider <rs type="address" xml:id="address1">of Newp</rs>. 2 <lb/>y. <subst><del type="over">m</del><add place="over">tu</add></subst>esday <del type="strikethrough"><unclear cert="medium" reason="del">s</unclear></del> 15 weekes aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>Christmas <add place="supralinear">h. 10. p m</add> at night s<unclear reason="hand" cert="low">en</unclear>t for this <lb/>march 5 &Tuesday;. h. <subst><del type="over">11</del><add place="over">4</add></subst> p m <lb/>1611. <foreign xml:lang="la">mater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filia sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></p>
+</div>
+&astroChart;
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

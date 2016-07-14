@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,7 +59,7 @@
 </particDesc>
 <settingDesc>
 <p><date notBefore="1609-02-21" notAfter="1634-04-01" cert="medium"/></p>
-<cb:consultation type="nativity">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tm"/>
@@ -70,14 +73,20 @@
 <change when="2014-07-22">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-07-23">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-08-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="abj0187.jpg" url="abj0187.jpg" n="85r"/>
+<graphic xml:id="abj0186.jpg" url="abj0186.jpg" n="84v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Thomas marsh borne <lb/>the 6. of Sept<choice><orig>&eover;</orig><reg>em</reg></choice>ber 1593. <lb/>&Thursday;. h 6 p m. at <placeName xml:id="place1">W<unclear reason="hand" cert="low">ar</unclear>eslye</placeName> <add place="infralinear">the younger.</add></p>
 </div>
 &astroChart;
-<pb xml:id="f84v" n="84v"/>
+<pb xml:id="f84v" n="84v" facs="#abj0186.jpg"/>
 </body>
 </text>
 </TEI>

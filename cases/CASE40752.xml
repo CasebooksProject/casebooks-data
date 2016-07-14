@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE40752</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-02-24">24 February 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="199">MS Ashmole 199, f. 18r</idno>
+&Napier022;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0018r" to="0018r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t1">
+<persName><roleName>Lady</roleName> <surname>Temple</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="t2">
+<persName><surname evidence="inferred">Temple</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="at">
+<persName><roleName>Sir</roleName> <forename>Arthur</forename> <surname evidence="external">Throckmorton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t3">
+<persName><surname type="maiden" evidence="inferred">Throckmorton</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="son" active="#t2" passive="#t1"/><relation name="daughter" active="#t3" passive="#at"/></listRelation>    
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1613-01-08" n="Friday"/></p>
+<p><time when="15:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#t1" evidence="internal" present="unclear"/>
+<cb:subject ref="#t2" present="no" consent="no"/>
+<cb:object ref="#t3"/>
+<cb:topic key="maritalProspects"><person sameAs="#t2"/><person sameAs="#t3"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-02-24">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-03-02">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-06-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cjv0055.jpg" url="cjv0055.jpg" n="18r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The lady Temple <rs type="address" xml:id="address1">of <lb/>Stanton</rs> <foreign xml:lang="la">qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> <lb/>my l. T s shall obtayne <lb/>her. S Arth T Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>&IConsonant;an. 8. &Friday; h. 3. <subst><del type="over">15</del><add place="over">20</add></subst> <subst><del type="over">a</del><add place="over">p</add></subst> m <lb/>1613. <add place="inline"><foreign xml:lang="la">sine cons:</foreign></add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

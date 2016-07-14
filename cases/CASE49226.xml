@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49226</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<notesStmt><note resp="#ymartin" type="editorial">This nativity is associated with the horary entry <ref type="case" target="CASE49225">CASE49225</ref>.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 95r/Q1, f. 95r/Q3, f. 95v/Q1, f. 95v/Q3, f. 96r/Q1, f. 96r/Q3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 95r</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0095r" to="0096r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="aa">
+<persName><roleName>Mr</roleName> <forename>Adolph</forename> <surname>Andrews</surname></persName>
+<sex value="1">M</sex>
+<birth>
+<date when="1594-07-02" n="Tuesday"/>
+<time when="07:00:00"/>
+<placeName sameAs="#place1"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-07-07" n="Wednesday" evidence="external"/></p>
+<p><time when="15:30:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#aa"/>
+<cb:subject ref="#aa" present="unclear"/>
+<cb:topic key="fortune" evidence="inferred"><person sameAs="#aa"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-28">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0209.jpg" url="abd0209.jpg" n="95r"/>
+<graphic xml:id="abd0210.jpg" url="abd0210.jpg" n="95v"/>
+<graphic xml:id="abd0211.jpg" url="abd0211.jpg" n="96r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>m<hi rend="superscript">r</hi> Adolph. Androwes <foreign xml:lang="la">natus</foreign> in <placeName xml:id="place1">Kent</placeName> <lb/>&IConsonant;uli&jVowel; 2. &Tuesday; h. 7. &antm;. <del type="strikethrough">16</del> 1594.</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+<pb xml:id="f95v" n="95v" facs="#abd0210.jpg"/>
+<div><pb xml:id="f96r" n="96r" facs="#abd0211.jpg"/>
+<p><lb/>M<hi rend="superscript">r</hi> Adolph Androwes <foreign xml:lang="la">natus</foreign> <lb/>in <placeName sameAs="#place1">Kent</placeName> <choice><sic>Iuly 2</sic><corr type="delText"/></choice> <add place="supralinear"><choice><sic>Iulij</sic><corr type="delText"/></choice></add> <add place="infralinear">&IConsonant;uli&jVowel; 2.</add> &Tuesday; h 7 <lb/>&antm; <choice><sic>1594.</sic><corr type="delText"/></choice> <add place="inline">1594.</add></p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

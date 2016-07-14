@@ -41,6 +41,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -51,8 +54,8 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="u">
-<persName><surname>Uvedale</surname></persName>
+<person xml:id="wu">
+<persName><forename>William</forename> <surname>Uvedale</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
@@ -61,13 +64,13 @@
 <settingDesc>
 <p><date when="1608-04-23" n="Saturday"/></p>
 <p><time when="16:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#u"/>
-<cb:subject ref="#u" present="unclear"/>
-<cb:topic key="tinnitus"><person sameAs="#u"/></cb:topic>
-<cb:topic key="deafness"><person sameAs="#u"/></cb:topic>
+<cb:querent ref="#wu"/>
+<cb:subject ref="#wu" present="unclear"/>
+<cb:topic key="tinnitus"><person sameAs="#wu"/></cb:topic>
+<cb:topic key="deafness"><person sameAs="#wu"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -75,12 +78,17 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-25">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-15">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0225.jpg" url="aap0225.jpg" n="111r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/><gap reason="binding" extent="1" unit="words"/> &VVowel;&uConsonant;edale <rs type="address" xml:id="address1">of this towne</rs> <lb/><supplied reason="binding">Apr</supplied> 23 &Saturday; ho. 4. 15 p. m. 1608</p>
-<p><lb/><supplied reason="binding" cert="low">n</supplied>oise &amp; singing in his head <lb/>and defenes &slash;</p>
+<p><lb/><handShift new="#gjames"/><choice><orig><supplied reason="binding">W</supplied>ill&mover;</orig><reg>William</reg></choice> &VVowel;&uConsonant;edale <rs type="address" xml:id="address1">of this towne</rs> <lb/><supplied reason="binding">Ap</supplied>ril: 23 &Saturday; ho. 4. 15 p. m. 1608</p>
+<p><lb/>A noise &amp; singing in his head <lb/>and defenes.&slash;</p>
 <cb xml:id="colB" n="b"/>
 <p><lb/><handShift new="#rnapier"/>Apr 23. &Saturday; 4. <lb/>15. p m. 1608.</p>
 </div>

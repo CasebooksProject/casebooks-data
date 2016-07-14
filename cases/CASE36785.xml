@@ -40,28 +40,40 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="d">
-<persName><roleName>Goody</roleName> <surname>Dobs</surname></persName>
+<person xml:id="ed">
+<persName><roleName>Goody</roleName> <forename>Elizabeth</forename> <surname>Dobs</surname></persName>
 <sex value="2">F</sex>
+<age value="34">34</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="d">
+<persName><surname evidence="inferred" cert="medium">Dobs</surname></persName>
+<sex value="0">U</sex>
+<age value="14" unit="weeks">14 weeks</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="mother" active="#ed" passive="#d"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-12-15" n="Friday"/></p>
-<p><time when="13:20:00"/></p>
-<cb:consultation type="horary">
+<p><time when="13:15:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#d"/>
-<cb:subject ref="#d" present="unclear"/>
-<cb:topic key="pregnancy" cert="low" evidence="inferred"><person sameAs="#d"/></cb:topic>
+<cb:querent ref="#ed"/>
+<cb:subject ref="#ed" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ed"/></cb:topic>
+<cb:topic key="pregnancy" cert="low" evidence="inferred"><person sameAs="#ed"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -71,13 +83,21 @@
 <change when="2015-03-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-03-17">Checked by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-03-20">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2016-03-11">Checked against new image and combined with CASE36786 by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0418.jpg" url="clm0418.jpg" n="198Av"/>
+</facsimile>
 <text xml:lang="en">
-<body><div> 
-<p><lb/>Goody Dobs <rs type="address" xml:id="address1">of Newp</rs> dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 15 &Friday; h. <supplied reason="binding" cert="low">1. 15 p m</supplied></p>
+<body><div>
+<p><lb/>Goody Dobs <rs type="address" xml:id="address1">of Newp</rs> dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 15 &Friday; h. 1. <supplied reason="binding" cert="low">15</supplied> <lb/>p m 1609.</p>
 </div>
 &astroChart;
+<div> 
+<p><lb/>Elis. Dobs <rs type="address" sameAs="#address1">of Newporte</rs> <lb/>34. y. Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 15 <del type="strikethrough">&VenusSymbol;</del> &Friday; h. 1. 15 <lb/>p. m. 1609</p>
+</div>
 </body>
 </text>
 </TEI>

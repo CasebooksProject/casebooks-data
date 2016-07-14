@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE37542</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE37543">CASE37543</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 13r/Q4B, f. 13v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, f. 13r-v</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0013r" to="0013v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><forename>Abigail</forename> <surname>Brown</surname> <surname evidence="inferred" type="maiden">Boughton</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1583-11-27" n="Wednesday"/><time when="09:00:00"/></birth>
+</person>
+<person xml:id="tb">
+<persName><forename>Thomas</forename> <surname>Boughton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="daughter" active="#ab" passive="#tb"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1611-02-11" n="Monday" evidence="external"/></p>
+<p><time when="10:00:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ab" evidence="external"/>
+<cb:subject ref="#ab" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="external"><person sameAs="#ab"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-07-24">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-01-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0045.jpg" url="ckk0045.jpg" n="13r"/>
+<graphic xml:id="ckk0046.jpg" url="ckk0046.jpg" n="13v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Abigayle Browne <rs type="address" xml:id="address1">of Paulus Perry</rs>. 27 y the weddensday before St Androw. 1584.</p>
+<pb xml:id="f13v" n="13v" facs="#ckk0046.jpg"/>
+<p><lb/><del type="strikethrough">Elis B</del></p>
+<p><lb/>Abigayle Browne the Daughter <lb/>of Thomas Boughton. <foreign xml:lang="la"><choice><sic><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">n</add></subst>at<subst><del type="over">&uscon;</del><add place="over">a</add></subst></sic><corr type="delText"/></choice> <lb/>nata</foreign> <del type="strikethrough">1584</del> <del type="strikethrough">158<subst><del type="over">3</del><add place="over">4</add></subst></del> 1583 <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 27. <choice><sic><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">&MercurySymbol;</add></subst></sic><corr type="delText"/></choice> &Wednesday; h 8 &antm; <lb/><del type="cancelled">1611</del> borne in <placeName sameAs="#address1">Paulusperry</placeName></p>
+</div>
+&astroChartPartial;
+<div>
+<p><lb/>Abig. Browne <foreign xml:lang="la">nata</foreign> <choice><sic><unclear cert="low" reason="hand">f</unclear></sic><corr type="noText"/></choice> <lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b 27. &Wednesday; h. 9. &antm; <lb/><del type="strikethrough">16.</del> <del type="cancelled">16<unclear cert="low" reason="del">11</unclear></del> 1583.</p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

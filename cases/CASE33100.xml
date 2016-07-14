@@ -13,7 +13,7 @@
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
-<sourceDesc>
+<notesStmt><note resp="#rralley" type="editorial">Mr Lyall&rsquo;s role in this consultation is unclear.</note></notesStmt><sourceDesc>
 <bibl type="positionOnPage">3</bibl>
 <msDesc>
 <msIdentifier>
@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -48,27 +51,25 @@
 </person>
 <person xml:id="b">
 <persName><surname>Beale</surname></persName>
-<sex value="0">U</sex>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
 <age value="23">23</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-
 </person>
 <person xml:id="l">
-<persName><roleName>Mr</roleName> <surname>Li<gap extent="unclear" reason="binding"/></surname></persName>
+<persName><roleName>Mr</roleName> <surname>Lyall</surname></persName>
 <sex value="1">M</sex>
-
 </person>   
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-03-21" n="Monday"/></p>
 <p><time when="10:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b"/>
 <cb:subject ref="#b" present="unclear"/>
-<cb:topic key="sickness"><person sameAs="#b"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#b"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 <cb:treatment/>
@@ -80,11 +81,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-02">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-01-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0152.jpg" url="aap0152.jpg" n="74v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Bele <add place="supralinear">M<hi rend="superscript">r</hi> Li<gap extent="unclear" reason="binding"/></add> <rs type="address" xml:id="address1">of Wescot <lb/>in Buckingh<choice><orig>&aover;</orig><reg>am</reg></choice><lb/>sheere</rs> 23 y march <lb/>21. &Monday; h. 10. 45 &antm; <lb/>1608. long sicke.</p>
+<p><lb/>Bele <rs type="address" xml:id="address1">of Wescot <lb/>in Buckingh<choice><orig>&aover;</orig><reg>am</reg></choice><lb/>sheere</rs> 23 y march <lb/>21. &Monday; h. 10. 45 &antm; <lb/>1608. long sicke. <add place="pageTop">M<hi rend="superscript">r</hi> Liall</add></p>
 </div>
 &astroChart;
 </body>

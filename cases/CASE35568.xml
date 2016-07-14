@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -52,12 +55,19 @@
 <age value="24">24</age>
 <residence key="databaseNormalizedIDKey" sameAs="#address1"/>
 </person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Hobs</surname></persName>
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth><date when="1609-03-07"/></birth>
+</person>
+<listRelation><relation name="mother" active="#sh" passive="#h"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-05-03" n="Wednesday"/></p>
 <p><time when="14:28:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#sh"/>
@@ -72,11 +82,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-10-31">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0063.jpg" url="clm0063.jpg" n="22r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding">S</supplied>ara Hobs <rs type="address" xml:id="address1">of Everton</rs> 24 y may 3 &Wednesday; <lb/>h. 2. 28 p m 1609 casteth at night <lb/>brought a bed yest. 8 weekes.</p>
+<p><lb/>Sara Hobs <rs type="address" xml:id="address1">of Everton</rs> 24 y may 3 &Wednesday; <lb/>h. 2. 28 p m 1609 casteth at night <lb/>brought a bed yest. 8 weekes.</p>
 </div>
 </body>
 </text>

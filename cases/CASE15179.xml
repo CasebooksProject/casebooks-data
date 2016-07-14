@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +60,7 @@
 <settingDesc>
 <p><date when="1603-06-20" n="Monday"/></p>
 <p><time when="08:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#af"/>
@@ -74,13 +77,19 @@
 <change when="2012-11-19">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-11-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clp0183.jpg" url="clp0183.jpg" n="91r"/>
+<graphic xml:id="clp0184.jpg" url="clp0184.jpg" n="91v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Agnys fish <rs type="address" xml:id="address1">of bowbrickle</rs> <lb/>38 y &IConsonant;une 20 &Monday; hor <lb/>8. 40 &antm; 1603.</p>
 </div>
-<div><pb xml:id="f91v" n="91v"/>
+<div><pb xml:id="f91v" n="91v" facs="#clp0184.jpg"/>
 <p><lb/>Agys fish <rs type="address" sameAs="#address1">of bowe <lb/>brickle</rs> 38 y &IConsonant;une <lb/>20. &Monday; hor. 8 4<subst><del type="over">0</del><add place="over">5</add></subst>. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1603.</p>
 </div>
 &astroChart;

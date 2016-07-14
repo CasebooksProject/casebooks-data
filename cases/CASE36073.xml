@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -55,8 +58,8 @@
 </particDesc>
 <settingDesc>
 <p><date when="1609-06-29" n="Thursday" evidence="inferred"/></p>
-<p><time notBefore="09:00:00" notAfter="15:45:00" evidence="inferred"/></p>
-<cb:consultation type="horary">
+<p><time when="09:36:00" evidence="internal"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m" evidence="internal"/>
@@ -64,6 +67,7 @@
 <cb:item type="urine"/>
 <cb:topic key="menstruation"><person sameAs="#m"/></cb:topic>
 <cb:topic key="pregnancy"><person sameAs="#m"/></cb:topic>
+<cb:info type="urine"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -71,11 +75,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0189.jpg" url="clm0189.jpg" n="85r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The Lady Mordant sent her <lb/>water &amp; was very ill last night <lb/>&amp; had hir terme in abundance <lb/>&vVowel;ppon monday last. the 26 of &IConsonant;une <lb/>&MoonSymbol; in &VirgoSymbol; &amp; then &conjunctionSymbol; &MarsSymbol; &VenusSymbol; 5 days <lb/><del type="strikethrough">after <gap reason="del" unit="chars" extent="2"/>ya wh</del> they stay a while &amp; <lb/>after 5 days come in great abundance. <lb/><foreign xml:lang="la">qu&aelig;rit an sit</foreign> quicke</p>
+<p><lb/>The Lady Mordant sent her <lb/>water &amp; was very ill last night <lb/>&amp; had hir terme in abundance <lb/>&vVowel;ppon monday last. the 26 of &IConsonant;une <lb/>&MoonSymbol; in &VirgoSymbol; &amp; then &conjunctionSymbol; &MarsSymbol; &VenusSymbol; 5 days <lb/><del type="strikethrough">after they a <unclear cert="low" reason="hand">vs</unclear></del> they stay a while &amp; <lb/>aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 5 days come in great abundance. <lb/><foreign xml:lang="la">qu&aelig;rit an sit</foreign> quicke</p>
 </div>
 &astroChart;
 </body>

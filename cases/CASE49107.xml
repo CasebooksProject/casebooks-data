@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49107</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 67v/Q1, f. 67v/Q3, f. 68r/Q1, f. 68r/Q3, f. 68v/Q1, f. 69r/Q1, f. 69v/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, ff. 67v-69v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0067v" to="0069v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jm">
+<persName><forename>John</forename> <surname>Monson</surname></persName>
+<sex value="1">M</sex>
+<birth>
+<date when="1597-09-10" n="Saturday"/>
+<time when="23:59:59"/>
+<placeName sameAs="#place1"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1619-06-29T09:00:00" notAfter-custom="1619-06-29T10:45:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jm"/>
+<cb:subject ref="#jm" present="unclear"/>
+<cb:topic key="fortune" evidence="internal"><person sameAs="#jm"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-21">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0154.jpg" url="abd0154.jpg" n="67v"/>
+<graphic xml:id="abd0155.jpg" url="abd0155.jpg" n="68r"/>
+<graphic xml:id="abd0156.jpg" url="abd0156.jpg" n="68v"/>
+<graphic xml:id="abd0157.jpg" url="abd0157.jpg" n="69r"/>
+<graphic xml:id="abd0158.jpg" url="abd0158.jpg" n="69v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">&IConsonant;oh<choice><orig>&aover;</orig><reg>an</reg></choice>nes mounson natus <lb/><placeName xml:id="place1">Bugbrooke in comitatu north<choice><orig>&aover;</orig><reg>am</reg></choice>p</placeName></foreign> <lb/>sept 10 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> hor <del type="strikethrough">11.</del> 12 at myd<lb/>night 1597.</p>
+</div>
+&astroChart;
+<cb xml:id="colB" n="b"/>
+<pb xml:id="f68r" n="68r" facs="#abd0155.jpg"/>
+<pb xml:id="f68v" n="68v" facs="#abd0156.jpg"/>
+<pb xml:id="f69r" n="69r" facs="#abd0157.jpg"/>
+<pb xml:id="f69v" n="69v" facs="#abd0158.jpg"/>
+</body>
+</text>
+</TEI>

@@ -14,18 +14,19 @@
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1B</bibl>
+<bibl type="positionOnPage">f. 222v/Q4B, f. 223v/Q1B</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="203">MS Ashmole 203, f. 223v</idno>
+<idno n="203">MS Ashmole 203, f. 222v, f. 223v</idno>
 &Napier016;
 </msIdentifier>
 <msContents>
 <msItem>
+<locus from="0222v" to="0222v"/>
 <locus from="0223v" to="0223v"/>
 <title sameAs="#main_title"/>
 </msItem>
@@ -39,7 +40,11 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -57,7 +62,7 @@
 <settingDesc>
 <p><date when="1610-01-24" n="Wednesday"/></p>
 <p><time when="11:30:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gd"/>
@@ -72,11 +77,23 @@
 <revisionDesc>
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-23">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0466.jpg" url="clm0466.jpg" n="222v"/>
+<graphic xml:id="clm0468.jpg" url="clm0468.jpg" n="223v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Guy Donklye <rs type="address" xml:id="address1">of mylton <lb/>malsworth</rs> 57 y &IConsonant;an 24 &Wednesday; <lb/>h. 11 30 &antm; 1610</p>
+<p><lb/>&IConsonant;an 24. &Wednesday; h. 11. 30 &antm; 1610 <lb/>Guy dunkley <rs type="address" xml:id="address1">of Milton</rs> <unclear cert="low" reason="binding">60 y</unclear></p>
+</div>
+<div>
+<p><lb/>see overleafe <foreign xml:lang="la">et feb 21.</foreign></p>
+<pb xml:id="f223v" n="223v" facs="#clm0468.jpg"/>
+<p><lb/>Guy Donklye <rs type="address" sameAs="#address1">of mylton <lb/>malsworth</rs> 57 y &IConsonant;an 24 &Wednesday; <lb/>h. 11 30 &antm; 1610</p>
 </div>
 </body>
 </text>

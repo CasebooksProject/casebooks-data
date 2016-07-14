@@ -40,7 +40,11 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="sforman">
@@ -53,18 +57,23 @@
 <age value="24">24</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="ja">
+<persName><forename>John</forename> <surname>Allen</surname></persName>
+<sex value="1">M</sex>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1599-11-02" n="Friday"/></p>
 <p><time when="18:10:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#mg"/>
 <cb:subject ref="#mg" present="unclear"/>
-<cb:topic key="unknown" reason="deleted"><person sameAs="#mg" resp="#mhawkins"/></cb:topic>
-
+<cb:object ref="#ja"/>
+<cb:topic key="maritalProspects"><person sameAs="#mg"/><person sameAs="#ja"/></cb:topic>
+<cb:judgment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -73,17 +82,18 @@
 <change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
 <change when="2011-05-11">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2011-05-12">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2013-01-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-08">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic xml:id="Ashmole-219-0378.jpg" url="Ashmole-219-0378.jpg" n="186r"/>
+<graphic xml:id="acn0397.jpg" url="acn0397.jpg" n="186r"/>
 </facsimile>
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Margaret Griffen <lb/>of <rs type="address" xml:id="address1">bassing&pluralLoop;</rs> <del type="redactedCancelled"><unclear reason="del" cert="medium"><rs type="address" sameAs="#address1">halle</rs></unclear> <gap reason="del" unit="words" extent="11"/></del> <del type="redactedCancelled"><gap reason="del" unit="chars" extent="8"/></del> &slash; at <lb/>10 &past; 6 &Friday; the 2 of novemb <lb/>of 24 yers</p>
+<p><lb/>Margaret Griffen <lb/>of <rs type="address" xml:id="address1" next="#address2">bassing&pluralLoop;</rs> <del type="redactedCancelled"><rs type="address" xml:id="address2" prev="#address1">halle</rs> <foreign xml:lang="la">&vVowel;trum <lb/>&IConsonant;hon Allon vult e<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>conducere necnon&slash;</foreign></del> at <lb/>10 &past; 6 &Friday; the 2 of novemb <lb/>of 24 yers</p>
 </div>
 &astroChart;
 </body>

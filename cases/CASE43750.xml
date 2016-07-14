@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE43750</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-25">25 April 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 149r/Q2, f. 148v/Q3B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="408">MS Ashmole 408, f. 149r, f. 148v</idno>
+&Napier025;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0149r" to="0149r"/>
+<locus from="0148v" to="0148v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lord Wentworth</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><roleName>Lady</roleName> <surname>St John</surname></persName>
+<sex value="2">F</sex>
+</person>   
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1616-08-09" n="Friday"/></p>
+<p><time when="09:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="practitionerVisitsQuerent"/>
+<cb:querent ref="#person1" evidence="internal" present="yes"/>
+<cb:subject ref="#s" present="yes"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#s"/></cb:topic>
+<cb:judgment/>
+<cb:info type="angel" subtype="Raphael"/>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-05">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-11-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abo0323.jpg" url="abo0323.jpg" n="149r"/>
+<graphic xml:id="abo0322.jpg" url="abo0322.jpg" n="148v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my lady S<hi rend="superscript">t</hi> &IConsonant;ohn sent <lb/>her coach but I could <lb/>not goe to her Aug 8. <lb/><foreign xml:lang="la">&MoonSymbol; in &ScorpioSymbol; &MoonSymbol; sep a &sextileSymbol; &SunSymbol; <lb/>ap &trineSymbol; &MarsSymbol; p &oppositionSymbol; &SaturnSymbol;.</foreign></p>
+<p><lb/>Aug 9 &Friday; my lord Wentworth <lb/>sent me to him &amp; I came to <add place="inline">her</add> <lb/>h. 9. <subst><del type="over">2</del><add place="over">3</add></subst>0 &antm; 16<choice><orig>i</orig><reg>1</reg></choice>6</p>
+</div>
+&astroChart;
+<pb xml:id="f148v" n="148v"/>
+</body>
+</text>
+</TEI>

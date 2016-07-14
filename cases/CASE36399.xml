@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,22 +52,40 @@
 <person xml:id="jr">
 <persName><forename>John</forename> <surname>Reade</surname></persName>
 <sex value="1">M</sex>
-<age value="85">85</age>
+<age value="85" xml:id="age1" exclude="#age2">85</age>
+<age value="80" xml:id="age2" exclude="#age1">80</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="tb" evidence="internal">
+<persName><forename>Thomas</forename> <surname>Brown</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="g" evidence="internal">
+<persName><roleName>Mother</roleName> <surname>Geddings</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="b" evidence="internal">
+<persName><surname evidence="inferred" type="married">Brown</surname> <surname evidence="inferred" type="maiden" cert="low">Geddings</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="husband" active="#tb" passive="#b" evidence="internal"/><relation name="mother" active="#g" passive="#b" evidence="internal"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1609-08-19" n="Saturday"/></p>
 <p><time when="13:15:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jr"/>
 <cb:subject ref="#jr" present="unclear"/>
+<cb:object ref="#tb"/>
 <cb:topic key="troubled"><person sameAs="#jr"/></cb:topic>
 <cb:topic key="mind"><person sameAs="#jr"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal" cert="medium"><person sameAs="#tb"/></cb:topic>
+
 <cb:judgment/>
+<cb:treatment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -72,14 +93,21 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-24">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0288.jpg" url="clm0288.jpg" n="134v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Rhead <rs type="address" xml:id="address1">of <lb/>Woodall</rs> <lb/>80 y Aug. 19 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor <supplied reason="binding">1</supplied> <lb/>15. p m 1609.<note place="chart">mutch troubled <lb/>in mynd</note></p>
+<p><lb/>&IConsonant;ohn Rhead <rs type="address" xml:id="address1">of <lb/>Woodall</rs> 85 y <lb/>Aug 19 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 1 <lb/>15. p m 1609.<note place="chart">mutch troubled <lb/>in mynd</note></p>
 </div>
 &astroChart;
-<cb xml:id="colA" n="a"/>
+<div><cb xml:id="colA" n="a"/>
+<p><lb/>&IConsonant;ohn Rhead <rs type="address" sameAs="#address1">of <lb/>litle Wood<subst><del type="over">w</del><add place="over">a</add></subst>ll</rs> <lb/>80 y Aug. 19 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <lb/>hor 1. 15 p m 1609.</p>
+</div>
 </body>
 </text>
 </TEI>

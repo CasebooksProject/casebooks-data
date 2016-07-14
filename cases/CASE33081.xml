@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -64,12 +67,13 @@
 <settingDesc>
 <p><date when="1608-03-18" n="Friday"/></p>
 <p><time when="12:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wt" present="unclear" evidence="internal"/>
 <cb:subject ref="#t" present="no" consent="no"/>
 <cb:topic key="pining"><person sameAs="#t"/></cb:topic>
+<cb:topic key="laughing"><person sameAs="#t"/></cb:topic>
 <cb:topic key="nonDizDisease"><person sameAs="#t"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
@@ -79,8 +83,12 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-12-31">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-01-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0147.jpg" url="aap0147.jpg" n="72r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice> Thorpe his child <lb/><rs type="address" xml:id="address1">of Bl<choice><orig>&uover;</orig><reg>un</reg></choice>n<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <del type="strikethrough">a yere</del> 2 <lb/>yeres old <del type="cancelled">thre</del> the next <lb/>thre week&pluralLoop; before whits<choice><orig>&uover;</orig><reg>un</reg></choice>tyde <lb/><subst><del type="over"><gap extent="1" reason="del" unit="chars"/></del><add place="over">O</add></subst>n sonday halfe an houre. <lb/>before son rising marti <lb/>18 &Friday; h. 12. 1608 <foreign xml:lang="la">qu&aelig;rit <lb/>pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio sine <choice><sic>s</sic><corr type="noText"/></choice> c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu.</foreign> <lb/>pyneth will laugh &amp; then <lb/>ill ready to dye &slash;</p>

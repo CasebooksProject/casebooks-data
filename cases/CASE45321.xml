@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE45321</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-06-07">07 June 2015</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE45324">CASE45324</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 40v/Q2, f. 41r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="220">MS Ashmole 220, ff. 40v-41r</idno>
+&Napier027;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0040v" to="0041r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ei">
+<persName><forename>Elizabeth</forename> <surname>Ingold</surname></persName>
+<sex value="2">F</sex>
+<age value="50">50</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1617-07-22" n="Tuesday" evidence="external"/></p>
+<p><time when="17:00:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ei"/>
+<cb:subject ref="#ei" present="unclear"/>
+<cb:topic key="back"><person sameAs="#ei"/></cb:topic>
+<cb:topic key="swooning"><person sameAs="#ei"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#ei"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-06-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-18">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2015-10-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aae0100.jpg" url="aae0100.jpg" n="40v"/>
+<graphic xml:id="aae0101.jpg" url="aae0101.jpg" n="41r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elis. Ingold <rs type="address" xml:id="address1">of yardly Hastings</rs> 50 y <lb/>&IConsonant;une 26 &Monday; h. 5. 30 &antm; 1615</p>
+<p>sodenly taken in her back &amp; fell downe dead <lb/>going into <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> yard to milke a cowe</p>
+</div>
+&astroChart;
+<div>
+<pb xml:id="f41r" n="41r" facs="#aae0101.jpg"/>
+<p><lb/>Elis Ingold was taken in her <lb/>shins the Monday before <lb/>S<hi rend="superscript">t</hi> Peeters day in her <lb/>back &amp; fell downe dead. <lb/>was 2 years &IConsonant;une 26. &Monday; <choice><orig><choice><sic>in m</sic><corr>ant m</corr></choice></orig><reg>am</reg></choice> 1615 <lb/>about son rising a litle before sun rising</p>
+<p><lb/>no child this 12 y</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49377</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">2A, 4, 2B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 126v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0126v" to="0126v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><roleName>Mrs</roleName> <surname>Panton</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="a">
+<persName><forename>Alice</forename></persName>
+<sex value="2">F</sex>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="h" evidence="internal">
+<persName><surname>Hopkins</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="servant" active="#a" passive="#rnapier" notAfter="1619-07-28"/><relation name="servant" active="#a" passive="#p"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-07-29" n="Thursday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#p" evidence="internal"/>
+<cb:subject ref="#p" present="no"/>
+<cb:item type="urine"/>
+<cb:messenger ref="#a"/>
+<cb:item type="letter" evidence="internal"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#p"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-04">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0272.jpg" url="abd0272.jpg" n="126v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my mayden Alce returned <lb/>from <placeName>london</placeName> &amp; brought <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>her her <choice><orig><hi rend="overline">mres</hi></orig><reg>mistresses</reg></choice> <subst><del type="over">h</del><add place="over">w</add></subst>ater &IConsonant;ul<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">y</add></subst> 29 <lb/>&Thursday; h. 3. 30 p m 16<choice><orig>i</orig><reg>1</reg></choice>9.</p>
+<cb xml:id="colB" n="b"/>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Panton <lb/><rs type="address" xml:id="address1">of Highgate</rs>. 40 y <lb/>&IConsonant;uly 29 &Thursday; h. 3. 30 <lb/>p m 1619 <add place="infralinear">she sent her water</add></p>
+</div>
+&astroChart;
+
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

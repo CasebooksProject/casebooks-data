@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE50329</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1B</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 138r</idno>
+&Napier031;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0138r" to="0138r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ac">
+<persName><roleName>Mrs</roleName> <forename>Anne</forename> <surname>Cromwell</surname></persName>
+<sex value="2">F</sex>
+<age value="44">44</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<death>
+<date when="1620-03-01" n="Wednesday" evidence="internal"/>
+</death>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-02-28" n="Monday"/></p>
+<p><time when="06:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rwallis"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ac"/>
+<cb:subject ref="#ac" present="unclear"/>
+<cb:topic key="nausea"><person sameAs="#ac"/></cb:topic>
+<cb:topic key="looseness"><person sameAs="#ac"/></cb:topic>
+<cb:topic key="nonDizDisease"><person sameAs="#ac"/></cb:topic>
+<cb:topic key="bedridden"><person sameAs="#ac"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-01-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0293.jpg" url="cmn0293.jpg" n="138r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="superscript">ris</hi></orig><reg>Mrs</reg></choice> Anne Cromwell <rs type="address" xml:id="address1">of symp<lb type="hyphenated"/>son</rs>. y. <subst><del type="over">5</del><add place="over">4</add></subst>4. <choice><orig>d. &MoonSymbol;</orig><reg>die Lun&aelig;</reg><reg type="gloss">Monday</reg></choice> h: 6. 30. <choice><orig>ant: m</orig><reg>am</reg></choice>: <lb/>&ff;eb: 28. 1620. vomiteth much: all <lb/>things seeme bitter &vVowel;nto her. hath beene <lb/><unclear cert="medium" reason="copy">verie</unclear> soluble lately. sleepeth <unclear cert="high" reason="hand">verie</unclear> &vVowel;n<lb type="hyphenated"/>quietly. ill a fortnight. keepeth <note place="chart">her bed almost all<lb type="hyphenated"/>togeither now <lb/>for 4 or 5 dayes</note></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

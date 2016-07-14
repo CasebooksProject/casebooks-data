@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -72,7 +75,7 @@
 <settingDesc>
 <p><date when="1606-10-07" n="Tuesday"/></p>
 <p><time when="13:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#d" evidence="conjecture" present="unclear" cert="medium"/>
@@ -87,13 +90,19 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-06-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0583.jpg" url="cmp0583.jpg" n="281r"/>
+<graphic xml:id="cmp0584.jpg" url="cmp0584.jpg" n="281v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig><hi rend="overline"><supplied reason="binding">M</supplied>res</hi></orig><reg>Mrs</reg></choice> Hurlestone <del type="strikethrough">Octo</del> <rs type="address" xml:id="address1">of <supplied reason="binding">W</supplied>ing</rs> <del type="strikethrough">Octo</del> 29 y Octob. 7 <lb/><supplied reason="binding">&Tuesday;</supplied> h. 1. p m. 1606.</p>
 </div>
-<div><pb xml:id="f281r" n="281r"/>
+<div><pb xml:id="f281r" n="281r" facs="#cmp0583.jpg"/>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Hurlestone <rs type="address" sameAs="#address1">of <lb/>Win</rs> <foreign xml:lang="la">filia militis Robert <lb/>Dormer</foreign>. 29 y. Octob. 7. <lb/>&Tuesday; h. 1. p m 1606. <add place="infralinear"><foreign xml:lang="la">c<choice><orig>&uover;</orig><reg>um</reg></choice> c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign></add> <add place="infralinear">mutch greefe <lb/>touching her husband</add><note place="chart">melancholick</note></p>
 </div>
 &astroChart;</body>

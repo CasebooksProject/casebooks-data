@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,13 +50,13 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="af">
-<persName><roleName>Mrs</roleName> <forename>Anne</forename> <surname type="married">Foster</surname></persName>
+<persName><roleName>Mrs</roleName> <forename>Anne</forename> <surname type="married">Forster</surname></persName>
 <sex value="2">F</sex>
 <age value="25">25</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="lf">
-<persName><roleName>Mr</roleName> <forename>Lawrence</forename> <surname>Foster</surname></persName>
+<persName><roleName>Mr</roleName> <forename>Lawrence</forename> <surname>Forster</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
@@ -63,7 +66,7 @@
 <settingDesc>
 <p><date when="1606-07-25" n="Friday"/></p>
 <p><time when="07:28:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#af"/>
@@ -79,8 +82,12 @@
 <change when="2013-11-11">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-06-04">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-06-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="cmp0471.jpg" url="cmp0471.jpg" n="226r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> <add place="supralinear">An</add> &ff;oster M<hi rend="superscript">r</hi> <lb/>lawrenc fost<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s wife <lb/>25 y <add place="supralinear"><rs type="address" xml:id="address1">of Hanslop</rs></add> &IConsonant;uly. 25. &Friday; h. 7 <lb/>2<subst><del type="over"><unclear reason="del" cert="low">5</unclear></del><add place="over">8</add></subst>. &antm;. 1606 <add place="infralinear">well coloured</add></p>

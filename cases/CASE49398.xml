@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE49398</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-02">02 October 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="235">MS Ashmole 235, f. 130v</idno>
+&Napier030;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0130v" to="0130v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tt">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Temple</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t">
+<persName><surname evidence="inferred" type="married">Temple</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="w" evidence="internal">
+<persName><surname>Westly</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="wife" active="#t" passive="#tt"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1619-07-31" n="Saturday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#t" evidence="internal" present="no"/>
+<cb:subject ref="#tt" present="no" consent="no"/>
+<cb:object ref="#w"/>
+<cb:item type="urine"/>
+<cb:topic key="morbusPassions" resp="#rnapier"><person sameAs="#tt"/></cb:topic>
+<cb:topic key="problemCause"><person sameAs="#tt"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal" cert="low"><person sameAs="#tt"/><person sameAs="#w"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-02">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-11-04">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-02-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abd0280.jpg" url="abd0280.jpg" n="130v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">Qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> qu&aelig; causa morbi <choice><orig>D<hi rend="overline">ni</hi></orig><reg>Domini</reg></choice> <lb/>militis <choice><orig>Baron<subst><del type="over">e</del><add place="over">ij</add></subst>s</orig><reg>Baroniis</reg></choice></foreign> Th Temple <lb/>&IConsonant;uly 31. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. <del type="strikethrough">2.</del> 11 &antm; <lb/>1619 <add place="inline"><foreign xml:lang="la">&vVowel;xor <choice><orig>&crossedp;</orig><reg>pro</reg></choice> marito <lb/>sine consensu</foreign></add></p>
+</div>
+&astroChart;
+<div>
+<p><lb/>sent his water.</p>
+</div>
+</body>
+</text>
+</TEI>

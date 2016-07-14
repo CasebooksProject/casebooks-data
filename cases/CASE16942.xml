@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="rs">
-<persName><roleName>Mr</roleName> <forename>Robert</forename> <surname>Shilton</surname></persName>
+<persName><roleName>Mr</roleName> <forename>Robert</forename> <surname>Shelton</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address2" key="databaseNormalizedIDKey"/>
 </person>
@@ -62,7 +65,7 @@
 <settingDesc>
 <p><date when="1602-05-17" n="Monday"/></p>
 <p><time when="16:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rs #a"/>
@@ -78,12 +81,13 @@
 <change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2012-03-29">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-04-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2013-11-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic xml:id="Ashmole-221-0097.jpg" url="Ashmole-221-0097.jpg" n="47r"/>
-<graphic xml:id="Ashmole-221-0098.jpg" url="Ashmole-221-0098.jpg" n="47v"/>
+<graphic xml:id="acs0111.jpg" url="acs0111.jpg" n="47r"/>
+<graphic xml:id="acs0112.jpg" url="acs0112.jpg" n="47v"/>
 </facsimile>
 <text xml:lang="en">
 <body>
@@ -94,7 +98,7 @@
 <div><cb xml:id="colA" n="a"/>
 <p><lb/>M<hi rend="superscript">r</hi> Robart Shilton</p>
 </div>
-<div><pb xml:id="f47v" n="47v"/>
+<div><pb xml:id="f47v" n="47v" facs="#Ashmole-221-0098.jpg"/>
 <p><lb/>Robart Shilton <rs type="address" xml:id="address2">of Alderton</rs> <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> m<hi rend="superscript">r</hi> Alicok</p>
 </div>
 </body>

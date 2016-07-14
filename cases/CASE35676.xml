@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -49,6 +52,7 @@
 <person xml:id="tw">
 <persName><forename>Thomas</forename> <surname>West</surname></persName>
 <sex value="1">M</sex>
+<age value="24">24</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
@@ -56,7 +60,7 @@
 <settingDesc>
 <p><date when="1609-05-10" n="Wednesday"/></p>
 <p><time when="13:39:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tw"/>
@@ -71,11 +75,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-10-24">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-04">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0090.jpg" url="clm0090.jpg" n="35v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas West <rs type="address" xml:id="address1">of <add place="supralinear">Toceter</add></rs> <gap reason="binding" unit="chars" extent="2"/> <lb/>y a batch. may <supplied reason="binding" cert="high">10 &Wednesday;</supplied><lb/> h. 1. 39. p m 1609 <add place="infralinear">had a <unclear reason="copy" cert="medium">bruse</unclear></add> <gap extent="2" unit="words" reason="copy"/></p>
+<p><lb/>Thomas West <rs type="address" xml:id="address1">of <add place="supralinear">Toceter</add></rs> of 24 <lb/>y a batch. may 10 &Wednesday; <lb/>h. 1. 39. p m 1609 <add place="infralinear">had a b<add place="supralinear">r</add>use <choice><sic>om</sic><corr>on</corr></choice> the <gap extent="1" unit="words" reason="binding" cert="low"/></add></p>
 </div>
 &astroChartBlank;
 </body>

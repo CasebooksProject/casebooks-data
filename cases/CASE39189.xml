@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE39189</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 236v/Q2B, f. 237r/Q1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="200">MS Ashmole 200, ff. 236v-237r</idno>
+&Napier020;
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0236v" to="0237r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ew">
+<persName><forename>Emery</forename> <surname>Wright</surname></persName>
+<sex value="2" evidence="internal">F</sex>
+<age value="32">32</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Hosier</occupation>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1612-02-13" n="Thursday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ew"/>
+<cb:subject ref="#ew" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ew"/></cb:topic>
+<cb:topic key="pregnancy"><person sameAs="#ew"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="angel" subtype="Raphael"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-06">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-02-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ckk0492.jpg" url="ckk0492.jpg" n="236v"/>
+<graphic xml:id="ckk0493.jpg" url="ckk0493.jpg" n="237r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><del type="strikethrough">Rich: Troughton</del></p>
+<p><lb/>Emry Write <rs type="address" xml:id="address1">of Stonystratford</rs> <del type="cancelled"><unclear cert="medium" reason="del"><subst><del type="over">4</del><add place="over">3</add></subst></unclear></del> 34 y feb. 13. &Thursday; <lb/>h. 12. p m 1612.</p>
+</div>
+
+<div>
+<pb xml:id="f237r" n="237r" facs="#ckk0493.jpg"/>
+<p><lb/>Emry <choice><sic>W<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">ri</add></subst>te</sic><corr type="delText"/></choice> <add place="supralinear">Write</add> <rs type="address" sameAs="#address1">of Stony stratford</rs> <lb/>32 y feb. 13. &Thursday; h. 12. 1612. <lb/><foreign xml:lang="la">qu&aelig;rit an sit gravida</foreign> <add place="marginRight">a knitter of <lb/>woollen <lb/>stockens.</add></p>
+</div>
+&astroChart;
+</body>
+</text>
+</TEI>

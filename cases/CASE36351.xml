@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -47,7 +50,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="eb">
-<persName><forename>Elizabeth</forename> <surname>Bozard</surname></persName>
+<persName><forename>Elizabeth</forename> <surname>Bosworth</surname></persName>
 <sex value="2">F</sex>
 <age value="16">16</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -66,7 +69,7 @@
 <settingDesc>
 <p><date when="1609-08-09" n="Wednesday"/></p>
 <p><time when="12:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#eb"/>
@@ -81,8 +84,12 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-24">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-02-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0272.jpg" url="clm0272.jpg" n="126v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
 <p><lb/><subst><del type="cancelled"><unclear cert="medium" reason="del">hy</unclear></del> <add place="supralinear">Elisabeth</add></subst> B<subst><del type="over">re</del><add place="over">o</add></subst>s<choice><sic>worth</sic><corr type="delText"/></choice><add place="supralinear">zarde</add> <rs type="address" xml:id="address1">of marson</rs> <lb/><subst><del type="cancelled">s b<gap extent="2" reason="del" unit="chars"/>y <unclear cert="medium" reason="del">the</unclear></del> <add place="supralinear">servant</add></subst> to S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Thomas Snagge <lb/>16 y Aug. 9. &Wednesday; h. 12. 1609</p>

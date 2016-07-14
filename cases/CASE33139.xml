@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -51,14 +54,15 @@
 <persName><roleName>Mrs</roleName> <surname>Lea</surname></persName>
 <sex value="2">F</sex>
 <age value="33">33</age>
-<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" notAfter="1608-03-26"/>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-03-28" n="Sunday"/></p>
-<p><time notBefore="11:00:00" notAfter="11:29:59"/></p>
-<cb:consultation type="horary">
+<p><time when="11:00:00"/></p>
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l"/>
@@ -72,11 +76,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-05">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-01-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-12">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0164.jpg" url="aap0164.jpg" n="80v"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Lea <rs type="address" xml:id="address1">of <gap reason="binding" extent="5" unit="chars"/> <lb/>now Thorpe</rs> 33 y <lb/><choice><sic>mach</sic><corr>march</corr></choice> 28. &Sunday; h. <gap reason="binding" extent="2" unit="chars"/> <lb/>&antm; 1608</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Lea <rs type="address" xml:id="address1">of Coublington</rs> <lb/>now <rs type="address" xml:id="address2">Thorpe</rs> 33 y <lb/><choice><sic>mach</sic><corr>march</corr></choice> 28. &Sunday; h. 11 <lb/>&antm; 1608</p>
 <p><lb/><foreign xml:lang="la">qu&aelig;rit an sit <lb/>gravida</foreign> <add place="supralinear">termes not this six weekes</add></p>
 </div>
 </body>

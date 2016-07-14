@@ -41,6 +41,9 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -54,6 +57,7 @@
 <person xml:id="l2">
 <persName><surname evidence="inferred">Leate</surname></persName>
 <sex value="1">M</sex>
+<age value="50">50</age>
 </person>
 <person xml:id="dl" evidence="internal">
 <persName><forename>Denise</forename> <surname evidence="external">Leate</surname></persName>
@@ -71,7 +75,7 @@
 <settingDesc>
 <p><date when="1609-07-04" n="Tuesday"/></p>
 <p><time when="11:00:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l1" evidence="internal" present="unclear"/>
@@ -89,11 +93,16 @@
 <change when="2014-10-07">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-11-13">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-12-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-03-10">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="clm0201.jpg" url="clm0201.jpg" n="91r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Leate <foreign xml:lang="la">pro <subst><del type="cancelled">coniunge</del> <add place="supralinear">marito</add></subst></foreign> <lb/><gap extent="2" unit="chars" reason="binding"/>o &IConsonant;uly. 4. &Tuesday; h. 11</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Leate <foreign xml:lang="la">pro <subst><del type="cancelled">coniunge</del> <add place="supralinear">marito</add></subst></foreign> <lb/>50 &IConsonant;uly. 4. &Tuesday; h. 11</p>
 </div>
 &astroChart;
 </body>

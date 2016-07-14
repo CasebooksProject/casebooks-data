@@ -40,6 +40,9 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../05-master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -47,8 +50,8 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="sw">
-<persName><forename>Susan</forename> <surname>Whithead</surname></persName>
-<sex value="2">F</sex>
+<persName><forename>John</forename> <surname>Whithead</surname></persName>
+<sex value="1">M</sex>
 <age value="24">24</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 <occupation>Servant</occupation>
@@ -64,7 +67,7 @@
 <settingDesc>
 <p><date when="1608-04-17" n="Sunday"/></p>
 <p><time when="17:45:00"/></p>
-<cb:consultation type="horary">
+<cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#sw"/>
@@ -78,11 +81,16 @@
 <change when="2014-07-01">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2015-01-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-03-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-03-22">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
+<facsimile>
+<graphic xml:id="aap0221.jpg" url="aap0221.jpg" n="109r"/>
+</facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><unclear cert="medium" reason="binding">Susan</unclear> Whitehead <rs type="address" xml:id="address1">of Draighton</rs> <lb/><supplied reason="binding" cert="medium">serv.</supplied> to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> &ff;rauncis Cheiny 24 y <lb/><supplied reason="binding">Apr</supplied> 17 &Sunday; ho. 5. 45 p. m. 1608</p>
+<p><lb/><supplied reason="binding" cert="medium">&IConsonant;</supplied>ohn Whitehead <rs type="address" xml:id="address1">of Draighton</rs> <lb/><supplied reason="binding" cert="medium">ser</supplied>v: to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> &ff;rauncis Cheiny 24 y <lb/><supplied reason="binding">Apr</supplied> 17 &Sunday; ho. 5. 45 p. m. 1608</p>
 </div>
 </body>
 </text>
