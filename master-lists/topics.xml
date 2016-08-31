@@ -65,7 +65,6 @@
       <item xml:id="idleHeaded" corresp="#mind">
          <desc type="editorial">For references to people as ‘idle headed’. Note that ‘idle talk’ or ‘talking idly’ comes under the topic <val>idleTalk</val>.</desc>
       </item>
-      
       <item xml:id="despair" sortKey="topic-163">
          <seg type="public">anxiety and melancholy</seg>
          <desc type="public">Describing people who are melancholy, ‘mopish’, grief-stricken or despairing.</desc>
@@ -223,7 +222,6 @@
          <seg type="public">recovery (passions)</seg> 
          <desc>Whether or not someone will recover from a disorder explicitly described as being of a mental nature.</desc>
       </item>
-
       <item xml:id="heartPassions" sortKey="topic-178">
          <seg type="public">sick at heart</seg> 
          <desc type="public">A term used formulaically by Napier to denote what might now be termed ‘depression’.</desc>
@@ -268,6 +266,11 @@
          <desc>Confined to bed through illness.</desc>
          <desc type="editorial">Napier’s usual phrase for this is that X ‘keepeth his/her bed’, though there are variations. Sometimes it is the only clue in the question that the consultation is medical.</desc>
       </item>
+      <item xml:id="childbirthMedical" sortKey="topic-226">
+         <seg type="public">childbirth (medical)</seg> 
+         <desc>Questions about medical problems suffered by women during the course of childbirth.</desc>
+         <desc type="editorial">This is to be distinguished from the non-medical topic <val>childbirth</val>, which is for questions about a future childbirth.</desc>
+      </item>
       <item xml:id="problemCause" sortKey="topic-65">
          <seg type="public">cause of the problem</seg> 
          <desc>Cases where the querent has explicitly asked what has caused a medical disorder, as opposed to what to do about it.</desc>
@@ -279,10 +282,6 @@
       <item xml:id="cured" sortKey="topic-19">
          <seg type="public">cured</seg> 
          <desc>Whether or not the patient has fully recovered from or been cured of a given ailment.</desc>
-      </item>
-      <item xml:id="curedOrNo" corresp="#cured">
-         <seg type="editorial">curedOrNo</seg>
-         <desc type="editorial">This topic should not be used; the correct topic is <val>cured</val>. This topic will soon be removed.</desc>
       </item>
 <item xml:id="diz" sortKey="topic-25">
          <seg type="public">disease</seg> 
@@ -297,7 +296,7 @@
       <item xml:id="medicalCounsel" sortKey="topic-10">
          <seg type="public">medical counsel</seg> 
          <desc>Entries in which the querent is recorded as having asked for advice or counsel of a medical nature.</desc>
-         <desc type="editorial">Note that this is for entries in which Napier explicitly records a statement such as ‘X sent for my counsell’, and where the word ‘counsel’ (or a synonym) is explicitly used. This is not intended as a catch-all topic for all medical questions; questions about the advisability or timing of particular treatment, for instance, should be given the topic <val>treatment</val>, and questions that are clearly medical but difficult to categorise should be given the topic <val>unidentifiedMedical</val>.</desc>
+         <desc type="editorial">Note that this is for entries in which Napier explicitly records a statement such as ‘X sent for my counsell’, and where the word ‘counsel’ (or a synonym) is explicitly used. This is not intended as a catch-all topic for all medical questions; questions about the advisability or timing of particular treatment, for instance, should be given the topic <val>treatment</val>, and questions that are clearly medical but difficult to categorise should be given the topic <val>unidentifiedMedical</val>. Entries that use the word ‘counsel’ or a synonym but which are non-medical in nature, or not demonstrably medical, should be given the topic <val>counsel</val> instead.</desc>
       </item>
       <item xml:id="mendOrPair" sortKey="topic-52">
          <seg type="public">mend or pair</seg> 
@@ -322,6 +321,9 @@
       <item xml:id="mendOrNo" sortKey="topic-51">
          <seg type="public">recovery (‘mend or no’)</seg> 
          <desc>Whether or not someone will recover from their ailment, not necessarily as a result of medical intervention. This is a distinct (though not always very clearly distinct) category from ‘life or death’ in that it is possible to carry an illness to the grave but to die of something else.</desc>
+      </item>
+      <item xml:id="practitioner" corresp="#treatment">
+         <desc type="editorial">Questions about the advisability of undertaking treatment with a particular practitioner.</desc>
       </item>
       <item xml:id="report" sortKey="topic-17">
          <seg type="public">report</seg> 
@@ -392,8 +394,8 @@
       </item>
       <item xml:id="childbirth" sortKey="topic-13">
          <seg type="public">childbirth</seg> 
-         <desc>Questions about the outcome of a pregnancy or the sex of an unborn child.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks made in the judgment. It is worth being careful of the difference between this topic and <val>pregnancy</val>, which is chiefly for questions about whether someone is pregnant.</desc>
+         <desc>Questions about the outcome of a pregnancy.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks made in the judgment. It is worth being careful of the difference between this topic and <val>pregnancy</val>, which is chiefly for questions about whether someone is pregnant. If question is about childbirth and is medical (for instance, concerning a medical problem being suffered by a woman in the process of giving birth) then the medical topic <val>childbirthMedical</val> should be used instead.</desc>
       </item>
       <item xml:id="emotions" sortKey="topic-7">
          <seg type="public">emotions</seg> 
@@ -830,6 +832,11 @@
          <seg type="public">gifts</seg> 
          <desc>Entries peculiar to Napier in which an astrological chart is accompanied solely by a report of someone’s having given him a present. It is far from clear exactly what he was trying to establish.</desc>
       </item>
+      <item xml:id="girlOrBoy" sortKey="topic-227">
+         <seg type="public">girl or boy</seg> 
+         <desc>Questions about the sex of an unborn child</desc>
+         <desc type="editorial">This topic can be inferred based on untranscribed material (judgment and event information); if it is, <att>evidence</att> should be supplied.</desc>
+      </item>
       <item xml:id="lifeExpectancy" sortKey="topic-45">
          <seg type="public">how long someone will live</seg> 
          <desc type="public">Distinct from ‘life or death’ questions in that the person in question is not expected to die imminently.</desc>
@@ -1106,7 +1113,8 @@
          <desc type="editorial">To be used when precisely this phrase is employed in a question.</desc>
       </item>
       <item xml:id="hairLoss" sortKey="topic-221">
-         <seg type="public">hair loss</seg> 
+         <seg type="public">hair loss</seg>
+         <desc type="editorial">Note that ‘pilling’ of hair means hair loss.</desc>
       </item>
       <item xml:id="deafness" sortKey="topic-196">
          <seg type="public">hearing problems</seg>
@@ -1135,6 +1143,10 @@
       <item xml:id="hiccups" sortKey="topic-203">
          <seg type="public">hiccups</seg> 
          <desc type="editorial">This appears in entries as ‘hickets’ or the rather wonderful ‘hitchcocks’.</desc>
+      </item>
+      <item xml:id="impotence" sortKey="topic-225">
+         <seg type="public">impotence</seg>
+         <desc type="editorial">The expression ‘impotentia coeundi’ has been encountered so far</desc>
       </item>
       <item xml:id="itch" sortKey="topic-204">
          <seg type="public">itch</seg> 
@@ -1257,6 +1269,10 @@
       </item>
       <item xml:id="cough" corresp="#catarrh">
          <seg type="editorial">cough</seg>
+         
+      </item>
+      <item xml:id="hoarseness" corresp="#catarrh">
+         <seg type="editorial">hoarseness</seg>
          
       </item>
       <item xml:id="phthisis" corresp="#catarrh">
@@ -1396,6 +1412,11 @@
          <seg type="public">condition</seg> 
          <desc>Questions about someone’s present or future prosperity and/or social standing.</desc>
          <desc type="editorial">This is specifically employed for entries in which the term ‘state’ is used (in a non-medical sense), and takes <att>resp</att>.</desc>
+      </item>
+      <item xml:id="counsel" sortKey="topic-224">
+         <seg type="public">counsel</seg> 
+         <desc>Entries in which the querent is recorded as having asked for advice or counsel of a non-medical nature.</desc>
+         <desc type="editorial">Note that this is for non-medical entries in which Napier explicitly records a statement such as ‘X sent for my counsell’, and where the word ‘counsel’ (or a synonym) is explicitly used. This is not intended as a catch-all topic for all non-medical questions questions; non-medical questions that are difficult to categorise should be given the closest available topic, or <val>unknown</val>, and a TODO comment tag added recording the problem. An entry that uses the word ‘counsel’ or a synonym should be given this topic unless there is evidence that the question was medical, in which case <val>medicalCounsel</val> should be used instead.</desc>
       </item>
       <item xml:id="currentAffairs" sortKey="topic-20">
          <seg type="public">current affairs</seg> 

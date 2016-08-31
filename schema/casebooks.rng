@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2016-06-02T15:05:05Z. 
+Schema generated from ODD source 2016-08-31T10:03:31Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -7229,19 +7229,19 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-pointing-to-case-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')]">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[A-E]*[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')]">
           <assert test="@type='case'">ERROR: ref pointing to another case must have type="case"</assert>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-case-filenames-in-live-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[rv]-\d(\.xml)*$','i')]">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[A-E]*[rv]-\d(\.xml)*$','i')]">
           <let name="location" value="replace(replace(base-uri(.),'file:',''),'^.*casebooks-data/([^/]+)/.+$','$1')"/>
           <report test="$location='04-live'">ERROR: ref pointing to a case file rather than number</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-type-case-must-point-to-case-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[@type='case']">
-          <assert test="matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')">ERROR: ref/@type="case" must point to a valid case number or case filename</assert>
+          <assert test="matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[A-E]*[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')">ERROR: ref/@type="case" must point to a valid case number or case filename</assert>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-refAtts-constraint">
