@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2016-08-31T10:03:31Z. 
+Schema generated from ODD source 2016-10-26T11:53:56Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -7628,6 +7628,12 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
     <element name="title">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the title of the electronic document. [3.11.2.2.  2.2.1.  2.2.5. ]</a:documentation>
       <ref name="macro.paraContent"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-title-titleStmt-title-check-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:title[parent::tei:titleStmt][matches(document-uri(/),'/04-live/')]">
+          <let name="documentID" value="/tei:TEI/@xml:id"/>
+          <assert test=".=$documentID">ERROR: <name/> doesn't match TEI/@xml:id</assert>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.canonical.attributes"/>
       <optional>
@@ -7690,6 +7696,11 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
           <ref name="model.global"/>
         </choice>
       </zeroOrMore>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-bibl-asterisk-in-bibl-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:bibl">
+          <report test="descendant::text()[contains(.,'*')]">ERROR: <name/> contains an asterisk</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.declarable.attributes"/>
       <ref name="att.sortable.attributes"/>
@@ -8936,15 +8947,17 @@ Sample values include: 1] text; 2] corpus</a:documentation>
   </define>
   <define name="surname">
     <element name="surname">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(surname) contains a family name, with the optional type values "alternate", "deckname", "maiden", "maidenAlternate", "maidenVariant", "married", "marriedAlternate", "marriedVariant", "nickname", "variant" (see the Guidelines for advice on exactly when and how to apply these). [13.2.1. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(surname) contains a family name, with the optional type values "adopted", "alternate", "deckname", "maiden", "maidenAlternate", "maidenVariant", "married", "marriedAlternate", "marriedVariant", "nickname", "variant" (see the Guidelines for advice on exactly when and how to apply these). [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
       <optional>
         <attribute name="type">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">explains the type of surname. Permitted values: "alternate" (the second of two alternative surnames by which a person is referred to, where neither can be given any other type value based on the evidence within that entry), "variant" (the second of two alternative surnames by which a person was known, where neither can be given any other type value based on the evidence within that entry, and where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "maiden" (the surname that a girl or woman inherited from her parents, sometimes still used after marriage), "married" (the surname taken by a woman on marriage to match her husband's), "deckname" (a false surname either given by a querent or used by a practitioner to conceal the person's identity), "nickname" (for the extremely unusual situation in which we know that a surname was informally bestowed rather than being inherited, a married name, or given to conceal the person's identity), "maidenAlternate" (the second of two alternative maiden names by which a girl or woman is referred to), "maidenVariant" (the second of two alternative maiden names by which a girl or woman is referred to, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "marriedAlternate" (the second of two alternative married names), or "marriedVariant" (the second of two alternative married names, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name). Typically in case files only alternate, married and maiden are needed; the others should not be used without clearance from a senior editor.</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">explains the type of surname. Permitted values: "adopted", "alternate" (the second of two alternative surnames by which a person is referred to, where neither can be given any other type value based on the evidence within that entry), "variant" (the second of two alternative surnames by which a person was known, where neither can be given any other type value based on the evidence within that entry, and where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "maiden" (the surname that a girl or woman inherited from her parents, sometimes still used after marriage), "married" (the surname taken by a woman on marriage to match her husband's), "deckname" (a false surname either given by a querent or used by a practitioner to conceal the person's identity), "nickname" (for the extremely unusual situation in which we know that a surname was informally bestowed rather than being inherited, a married name, or given to conceal the person's identity), "maidenAlternate" (the second of two alternative maiden names by which a girl or woman is referred to), "maidenVariant" (the second of two alternative maiden names by which a girl or woman is referred to, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name), "marriedAlternate" (the second of two alternative married names), or "marriedVariant" (the second of two alternative married names, where the two surnames closely resemble one another but are sufficiently distinct not to be different spellings of the same name). Typically in case files only alternate, married and maiden are needed; the others should not be used without clearance from a senior editor.</a:documentation>
           <choice>
+            <value>adopted</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>alternate</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>deckname</value>
@@ -9235,7 +9248,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.datable.attributes"/>
       <optional>
         <attribute name="unit">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the unit in which the age is being measured. Permitted values: "seconds", "minutes", "hours", "days", "weeks", "fortnights", "months", "years", "decades", "centuries".</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the unit in which the age is being measured. Permitted values: "days", "weeks", "months", "years".</a:documentation>
           <choice>
             <value>days</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -10592,6 +10605,13 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
         </choice>
       </group>
       <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="cb" uri="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-filename-check-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="/tei:TEI[matches(document-uri(/),'/04-live/')]">
+          <let name="documentID" value="@xml:id"/>
+          <assert test="matches($documentID,'^CASE\d+$')">ERROR: Problem with <name/>/@xml:id</assert>
+          <assert test="tokenize(document-uri(/),'/')[last()]=concat($documentID,'.xml')">ERROR: Invalid filename or filename doesn't match TEI/@xml:id</assert>
+        </rule>
+      </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-language-gap-but-no-text-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:TEI[tei:text//tei:gap][string-length(normalize-space(string-join(tei:text,'')))=0]">
           <let name="languages" value="tei:teiHeader//tei:langUsage/tei:language"/>
@@ -11422,7 +11442,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
   </pattern>
   <define name="consultant">
     <element name="consultant" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultant) points, by means of the ref attribute, to the person conducting the consultation.</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultant) points, by means of the ref attribute, to the xml:id value of the person conducting the consultation.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-consultant-consultant-links-constraint">
         <rule context="cb:consultant">
@@ -11802,11 +11822,13 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       <ref name="att.casebooks.linking.attributes"/>
       <optional>
         <attribute name="consent">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates that there is an explicit statement that the consultation took place either with or without the subject’s (or subjects’) consent. Permitted values: yes, no.</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates that there is an explicit statement that the consultation took place either with or without the subject’s (or subjects’) consent. Permitted values: yes, no and explicitlyUnclear.</a:documentation>
           <choice>
             <value>yes</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>no</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <value>explicitlyUnclear</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
           </choice>
         </attribute>
