@@ -14,7 +14,7 @@
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -33,17 +33,27 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<encodingDesc>
+&wholeEntry;
+</encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#gjames">Gerence James</handNote>
-
+<handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1603-11-04"><name sameAs="#gjames">Gerence James</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2" notBefore="1603-11-05"><name sameAs="#rnapier">Richard Napier</name> added the cross-reference.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -65,12 +75,11 @@
 <p><date when="1603-11-04" n="Friday"/></p>
 <p><time when="16:00:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier #gjames"/>
+<cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jh"/>
 <cb:subject ref="#jh" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="external"><person sameAs="#jh"/></cb:topic>
-
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -79,6 +88,9 @@
 <change when="2012-11-05">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-11-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-19">Cross-reference added to transcription by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-16">Creation of text documented by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,7 +98,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Halfhead <rs type="address" xml:id="address1">of swallowfield</rs> <lb/>Novemb. 4 &Friday; ho 4 p m. 1603</p>
+<p><lb/>&IConsonant;ohn Halfhead <rs type="address" xml:id="address1">of swallowfield</rs> <lb/>Novemb. 4 &Friday; ho 4 p m. 1603<note place="marginLeft"><handShift new="#rnapier"/><foreign xml:lang="la">vid</foreign> Octob <lb/>17. &Monday; hor <lb/>2. 45 p m <lb/>1603.
+</note></p>
 </div>
 &astroChart;
 </body>

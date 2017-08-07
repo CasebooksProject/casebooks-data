@@ -14,7 +14,7 @@
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,17 +40,23 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#interrogation"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationMissedQuestion"/>
 </textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<person xml:id="anon">
+<person xml:id="m">
+<persName><surname evidence="external" cert="medium">Mitton</surname></persName>
 <sex value="1">M</sex>
+</person>
+<person xml:id="rm" evidence="external">
+<persName><forename>Rose</forename> <surname>Mitton</surname></persName>
+<sex value="2">F</sex>
 </person>
 </listPerson>
 </particDesc>
@@ -60,10 +66,10 @@
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#rnapier"/>
-<cb:subject ref="#rnapier" present="yes"/>
-<cb:object ref="#anon"/>
-<cb:topic key="visits"><person sameAs="#anon"/><person sameAs="#rnapier"/></cb:topic>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#rm" present="unclear"/>
+<cb:object ref="#m"/>
+<cb:topic key="unspecifiedMedical" evidence="external"><person sameAs="#rm"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -73,6 +79,7 @@
 <change when="2012-06-27">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-01-15">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -80,7 +87,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>this man came first <lb/>to my howse &IConsonant;uly 7 <lb/>&Wednesday; hor. 1. 15. p m. 1602 <lb/>at this tyme I was not <lb/>at home</p>
+<p><lb/>this man came first <lb/>to <rs type="address" xml:id="address1">my howse</rs> &IConsonant;uly 7 <lb/>&Wednesday; hor. 1. 15. p m. 1602 <lb/>at this tyme I was not <lb/>at home</p>
 </div>
 &astroChart;
 </body>

@@ -14,7 +14,7 @@
 <date when="2015-02-28">28 February 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">2</bibl>
+<bibl type="positionOnPage">bL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,7 +41,7 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -59,6 +59,10 @@
 <person xml:id="anon">
 <sex value="2">F</sex>
 </person>
+<person xml:id="p" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Parkins</surname></persName>
+<sex value="2">F</sex>
+</person>
 <listRelation><relation name="mother" active="#anon" passive="#cs"/></listRelation>
 </listPerson>
 </particDesc>
@@ -70,9 +74,11 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="internal" present="unclear"/>
 <cb:subject ref="#cs" present="no" consent="no"/>
+<cb:object ref="#p"/>
 <cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#cs"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#cs"/><person sameAs="#p"/></cb:topic>
 <cb:judgment/>
-<cb:treatment/>
+<cb:treatment type="sigil"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -81,6 +87,8 @@
 <change when="2015-05-25">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-07-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-01-18">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

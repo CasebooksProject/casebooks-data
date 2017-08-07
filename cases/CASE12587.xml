@@ -15,7 +15,7 @@
 </publicationStmt>
 <notesStmt><note type="layout" resp="#jyoung">This entry is a note added to the previous entry.</note></notesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">2A, 4</bibl>
+<bibl type="positionOnPage">bL-1, bR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,7 +41,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -71,6 +71,7 @@
 <cb:topic key="heart"><person sameAs="#mp"/></cb:topic>
 <cb:topic key="feebleness"><person sameAs="#mp"/></cb:topic>
 <cb:topic key="belly"><person sameAs="#mp"/></cb:topic>
+<cb:topic key="report"><person sameAs="#mp"/></cb:topic>
 <cb:info type="urine"/>
 <cb:treatment/>
 <cb:info type="event" subtype="previousConsultation"/>
@@ -84,6 +85,8 @@
 <change when="2011-12-07">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,7 +94,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>at this time Mary Pen <rs type="address" xml:id="address1">of Straford</rs> sent me her <lb/>water. <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> was full of motes &amp; scales &amp; had gravell <lb/>in the bottome. her former phisick I gave her wrought <lb/>&vVowel;pward. hath a great gydines <del type="strikethrough">at</del> in her heade hart feeble <lb/>bellye.</p>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>at this time Mary Pen <rs type="address" xml:id="address1">of Straford</rs> sent me her <lb/>water.<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> was full of motes &amp; scales &amp; had gravell <lb/>in the bottome.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/>her former phisick I gave her wrought <lb/>&vVowel;pward. hath a great gydines <del type="strikethrough">at</del> in her heade hart feeble <lb/>bellye.</p><anchor xml:id="questionEnd2"/>
 </div>
 </body>
 </text>

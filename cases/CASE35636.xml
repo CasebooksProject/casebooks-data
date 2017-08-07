@@ -14,7 +14,7 @@
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">4A</bibl>
+<bibl type="positionOnPage">bR-1</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -68,8 +68,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#h" evidence="internal" present="no"/>
 <cb:subject ref="#dh" present="no"/>
-<cb:topic key="ague" evidence="internal"><person sameAs="#dh"/></cb:topic>
-<cb:topic key="cough" evidence="internal"><person sameAs="#dh"/></cb:topic>
+<cb:topic key="ague"><person sameAs="#dh"/></cb:topic>
+<cb:topic key="cough"><person sameAs="#dh"/></cb:topic>
 <cb:topic key="thirst"><person sameAs="#dh"/></cb:topic>
 <cb:topic key="report"><person sameAs="#dh"/></cb:topic>
 <cb:info type="financial"/>
@@ -81,6 +81,8 @@
 <change when="2014-10-23">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2014-11-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-08">Milestones added by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,8 +90,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The lady Haselrig <lb/>sent me An Angle <lb/>may 8 &Monday; h. 10 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1609</p>
-<p><lb/>&amp; signified that M<hi rend="superscript">r</hi> <lb/>Donnald is thirsty <lb/>&amp; still hath a grudging <lb/>of his ague but well <lb/>amended gods name be <lb/>praysed for it. hath sinc <lb/>a drye cough.</p> 
+<milestone unit="financialInfo" spanTo="#financialInfoEnd"/>
+<p><lb/>The lady Haselrig <lb/>sent me An Angle<anchor xml:id="financialInfoEnd"/> <milestone unit="question" spanTo="#questionEnd"/><lb/>may 8 &Monday; h. 10 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1609</p>
+<p><lb/>&amp; signified that M<hi rend="superscript">r</hi> <lb/>Donnald is thirsty <lb/>&amp; still hath a grudging <lb/>of his ague but well <lb/>amended gods name be <lb/>praysed for it. hath sinc <lb/>a drye cough.</p> <anchor xml:id="questionEnd"/>
 </div>
 </body>
 </text>

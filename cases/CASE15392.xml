@@ -14,7 +14,7 @@
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1B, 2B</bibl>
+<bibl type="positionOnPage">uL-2, bL-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,9 +41,15 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1603-07-28"><name sameAs="#gjames">Gerence James</name> held the consultation and wrote the question, judgment and treatment.</change>
+<change xml:id="stage2" notBefore="1603-08-07"><name sameAs="#rnapier">Richard Napier</name> repeated the question and judgment, added to the judgment, and drew up a figure.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -66,7 +72,8 @@
 <p><date when="1603-07-28" n="Thursday"/></p>
 <p><time when="15:30:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#gjames #rnapier"/>
+<cb:consultant ref="#gjames"/>
+<cb:astrologer ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tc"/>
 <cb:subject ref="#tc" present="unclear"/>
@@ -82,6 +89,8 @@
 <change when="2013-03-06">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2013-07-06">Merged with CASE15394 by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-16">Creation of text documented by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,11 +98,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/>Thomas Cheshire the pedler <lb/>34 y. &IConsonant;uly 28 &Thursday; ho. 3. <lb/>30 p. m. 1603</p>
+<p change="#stage1"><lb/><handShift new="#gjames"/>Thomas Cheshire the pedler <lb/>34 y. &IConsonant;uly 28 &Thursday; ho. 3. <lb/>30 p. m. 1603</p>
 </div>
 
 <div>
-<p><lb/><handShift new="#rnapier"/>Thomas Cheshire the pedler <add place="lineEnd">&IConsonant;uly 28</add> <lb/>&Thursday; h 3. 30 p m 1603</p>
+<p change="#stage2"><lb/><handShift new="#rnapier"/>Thomas Cheshire the pedler <add place="lineEnd">&IConsonant;uly 28</add> <lb/>&Thursday; h 3. 30 p m 1603</p>
 </div>
 &astroChart;
 

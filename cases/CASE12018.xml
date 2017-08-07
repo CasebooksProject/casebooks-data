@@ -14,7 +14,7 @@
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">4, 2</bibl>
+<bibl type="positionOnPage">bR, bL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -67,6 +67,7 @@
 <cb:subject ref="#k" present="unclear"/>
 <cb:topic key="sickness" resp="#rnapier"><person sameAs="#k"/></cb:topic>
 <cb:topic key="bedridden"><person sameAs="#k"/></cb:topic>
+<cb:topic key="idleTalk"><person sameAs="#k"/></cb:topic>
 <cb:info type="urine"/>
 <cb:judgment/>
 <cb:treatment/>
@@ -80,6 +81,8 @@
 <change when="2011-10-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,7 +90,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goody Kittre <rs type="address" xml:id="address1">of Broughton</rs> 27 <lb/>sick this fortnight brought a <lb/>bed on Christide a white <lb/>thick puddle water the 3 of <lb/>Marche. &SaturdayN; h. 9. 55. 1599 <lb/>red &amp; yellow water. <lb/>talketh idlely. <choice><sic>as</sic><corr type="noText"/></choice></p>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>Goody Kittre <rs type="address" xml:id="address1">of Broughton</rs> 27 <lb/>sick this fortnight brought a <lb/>bed on Christide<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd1"/>a white <lb/>thick puddle water<anchor xml:id="urineInfoEnd1"/> <milestone unit="question" spanTo="#questionEnd2"/>the 3 of <lb/>Marche. &SaturdayN; h. 9. 55. 1599<anchor xml:id="questionEnd2"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd2"/><lb/>red &amp; yellow water.<anchor xml:id="urineInfoEnd2"/> <milestone unit="question" spanTo="#questionEnd3"/><lb/>talketh idlely. <choice><sic>as</sic><corr type="noText"/></choice></p><anchor xml:id="questionEnd3"/>
 </div>
 &astroChart;
 <cb xml:id="colA" n="a"/>

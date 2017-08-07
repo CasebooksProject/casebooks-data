@@ -14,7 +14,7 @@
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -42,9 +42,15 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1608-10-18"><name sameAs="#gjames">Gerence James</name> held the consultation, wrote the question and judgment and drew the figure.</change>
+<change xml:id="stage2"><name sameAs="#rnapier">Richard Napier</name> added to the question.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -70,7 +76,7 @@
 <p><date when="1608-10-18" n="Tuesday"/></p>
 <p><time when="12:15:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#gjames #rnapier"/>
+<cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="yes"/>
 <cb:subject ref="#rw" present="yes"/>
@@ -84,6 +90,8 @@
 <change when="2015-01-22">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-17">Creation of text documented by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/>Richard Woodward <rs type="address" xml:id="address1">of yardly <lb/>gubbin</rs> 6. y. Octob. 18 &Tuesday; ho. 0. 15 <lb/>p. m. 1608 <handShift new="#rnapier"/><foreign xml:lang="la"><del type="strikethrough">c&uover;</del> in p<choice><orig>&loopedr;</orig><reg>re</reg></choice>sentia</foreign></p>
+<p change="#stage1"><lb/><handShift new="#gjames"/>Richard Woodward <rs type="address" xml:id="address1">of yardly <lb/>gubbin</rs> 6. y. Octob. 18 &Tuesday; ho. 0. 15 <lb/>p. m. 1608 <add place="inline" hand="#rnapier" change="#stage2"><foreign xml:lang="la"><del type="strikethrough">c&uover;</del> in p<choice><orig>&loopedr;</orig><reg>re</reg></choice>sentia</foreign></add></p>
 </div>
 &astroChart;
 </body>

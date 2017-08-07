@@ -14,7 +14,7 @@
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,8 +40,8 @@
 <langUsage>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#interrogation"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationAstronomical"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -49,9 +49,9 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="anon">
+<personGrp xml:id="anon">
 <sex value="0">U</sex>
-</person>
+</personGrp>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -60,9 +60,10 @@
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon"/>
-<cb:subject ref="#anon" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#anon"/></cb:topic>
+<cb:querent ref="#rnapier" evidence="conjecture"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#anon"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><personGrp sameAs="#anon"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -72,6 +73,7 @@
 <change when="2012-07-03">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-07-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

@@ -14,7 +14,7 @@
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">4</bibl>
+<bibl type="positionOnPage">bR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -34,6 +34,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<encodingDesc>
+&wholeEntry;
+</encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -41,8 +44,8 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#caseNotes"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationTreatment"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -57,15 +60,12 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1598-04-21" n="Friday"/></p>
-<p><time when="05:30:00"/></p>
+<p><date notBefore-custom="1598-04-21T14:05:00" notAfter-custom="1598-04-22T08:30:00" evidence="inferred"/></p>
 <cb:consultation>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
-<cb:querent ref="#sforman"/>
-<cb:subject ref="#sforman" present="yes"/>
-<cb:object ref="#c"/>
-
+<cb:querent ref="#sforman" evidence="conjecture" present="yes"/>
+<cb:subject ref="#c" present="unclear"/>
 <cb:topic key="treatment"><person sameAs="#c"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
@@ -77,8 +77,10 @@
 <change when="2010-11-04">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2011-01-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2011-02-16">Coding upgraded by <name sameAs="#rralley">Robert Ralley</name>.</change>
- <change when="2011-07-12">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2011-07-12">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,12 +88,16 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/>the 21 of Aprill &Friday; &Anmfl; <lb/>at 30 &past; 5.</p>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>the 21 of Aprill &Friday; &Anmfl; <lb/>at 30 &past; 5.</p>
 </div>
 &astroChart;
 <div>
- <p><lb/>at this tym m<hi rend="superscript">r</hi> culpa<choice><orig>&crossedp;</orig><reg>per</reg></choice> tok <lb/>hys vomit <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> wrote alto<lb/>gether <choice><sic>doward&pluralLoop;</sic><corr>downward&pluralLoop;</corr></choice> &amp; not &vVowel;p<lb/>ward&pluralLoop; at all. <add place="lineEnd"><unclear reason="hand" cert="medium" resp="#rralley">stu<choice><orig>&mover;</orig><reg>mm</reg></choice>i</unclear> gr 5</add></p>
+<p><lb/>at this tym m<hi rend="superscript">r</hi> culpa<choice><orig>&crossedp;</orig><reg>per</reg></choice> tok <lb/>hys vomit <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> wrote alto<lb/>gether <choice><sic>doward&pluralLoop;</sic><corr>downward&pluralLoop;</corr></choice> &amp; not &vVowel;p<lb/>ward&pluralLoop; at all. <add place="lineEnd"><unclear reason="hand" cert="medium" resp="#rralley">stu<choice><orig>&mover;</orig><reg>mm</reg></choice>i</unclear> gr 5</add></p>
+<anchor xml:id="questionEnd"/>
+<milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/>
 <p><lb/>On Sundai morn<choice><orig>&iover;</orig><reg>in</reg></choice>g folowin<supplied reason="binding">g</supplied> <lb/>being the 23. Aprill he toke the <lb/>sam dos of stibi<choice><orig>&uover;</orig><reg>um</reg></choice> again for a <lb/>vomit And yt wrot D<choice><orig><hi rend="overline">owa</hi></orig><reg>ownwa</reg></choice>rd&pluralLoop; <lb/>Again altogether and not <lb/>&vVowel;pward at all &amp; yt brought <lb/>moch veri ill &amp; stinking mater <lb/>from him</p>
+<anchor xml:id="subsequentEventInfoEnd"/>
 </div>
 </body>
 </text>

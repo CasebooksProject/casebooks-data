@@ -14,7 +14,7 @@
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1, 3A</bibl>
+<bibl type="positionOnPage">uL, uR-1</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,9 +41,16 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1602-11-26"><name sameAs="#rnapier">Richard Napier</name> and <name sameAs="#gjames">Gerence James</name> held the consultation and wrote the question, judgment, treatment and recipe.</change>
+<change xml:id="stage2" notBefore="1602-11-27"><name sameAs="#rnapier">Richard Napier</name> wrote down information about subsequent events.</change>
+<change xml:id="stage3"><name sameAs="#gjames">Gerence James</name> amended the information about subsequent events.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -93,6 +100,8 @@
 <change when="2012-08-03">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-08-31">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-17">Creation of text documented by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,9 +109,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#rnapier"/>Richard Gray <rs type="address" xml:id="address1">of Tocetour</rs> for his dead Palsy. my lady <lb/>&ff;armers servant once.</p>
-<p><lb/><handShift new="#gjames"/>Novemb. 26. &Friday; ho. 3. 45 p m. &JupiterLord;</p>
-<p><lb/><handShift new="#rnapier"/>came for my lady farmers <lb/>childe <lb/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> dyed. <lb/><handShift new="#gjames"/><rs type="date" xml:id="date1">the next <lb/>morowe</rs></p>
+<p change="#stage1"><lb/><handShift new="#rnapier"/>Richard Gray <rs type="address" xml:id="address1">of Tocetour</rs> for his dead Palsy. my lady <lb/>&ff;armers servant once.</p>
+<p change="#stage1"><lb/><handShift new="#gjames"/>Novemb. 26. &Friday; ho. 3. 45 p m. &JupiterLord;</p>
+<p change="#stage2"><lb/><handShift new="#rnapier"/>came for my lady farmers <lb/>childe <lb/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> dyed. <add place="infralinear" change="#stage3"><handShift new="#gjames"/><rs type="date" xml:id="date1">the next <lb/>morowe</rs></add></p>
 </div>
 &astroChart;
 <cb xml:id="colB" n="b"/>

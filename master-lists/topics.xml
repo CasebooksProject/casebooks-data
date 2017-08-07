@@ -36,6 +36,11 @@
 <body>
     <div xml:id="select">
    <list sortKey="subtopics10" n="Diseases of the Mind">
+      <item xml:id="aegritudoPassions" sortKey="topic-234">
+         <seg type="public">aegritudo (passions)</seg> 
+         <desc>Entries in which the practitioner uses the term ‘ægritudo’ (sickness or grief) or a cognate term to describe a problem of the passions.</desc>
+          <desc type="editorial">The terms to look out for are: ægritudo/egritudo (n: sickness, grief, affliction, melancholy); æger/eger (adj: sick, ill, unwell); ægreo/egreo, ægroto/egroto (vb: to be sick, ill, unwell); ægrotus/egrotus (adj: sick, ill, diseased). This takes <att>resp</att>.</desc>
+      </item>
       <item xml:id="mind" sortKey="topic-162">
          <seg type="public">afflicted in mind</seg>
          <desc type="public">Covering terms such as ‘disquieted’, ‘foolish’, ‘troubled in mind’, that denote mental disturbance short of outright insanity.</desc>
@@ -51,6 +56,9 @@
          <desc type="editorial">For references to people as being ‘disquieted’, ‘disquieted in mind’ or whose mind is ‘not quiet’. Where the term ‘mind’ (or, in Latin, ‘animus’) is explicitly used, the topic <val>mind</val> should accompany this one.</desc>
       </item>
       <item xml:id="distempered" corresp="#mind">
+         <desc type="editorial">This topic should not be used; <val>distemperedPassions</val> should be used instead for passions topics, or <val>distemperedMedical</val> for instances where the term is used in the contex of a physical problem.</desc>
+      </item>
+      <item xml:id="distemperedPassions" corresp="#mind">
          <desc type="editorial">For references to people as being ‘distempered’ or ‘out of temper’ in their mind or wits. The topics <val>mind</val> or <val>wits</val> should be combined with this one as necessary.</desc>
       </item>
       <item xml:id="troubled" corresp="#mind">
@@ -60,65 +68,109 @@
          <desc type="editorial">For explicit references to people as ‘foolish’. Note that ‘foolish talk’ or ‘talking foolishly’ comes under the topic <val>idleTalk</val>.</desc>
       </item>
       <item xml:id="lostSenses" corresp="#mind">
-         <desc type="editorial">This is for references to people having lost their senses (meaning mental faculties, not sight, hearing etc.), their senses being ‘gone’, being ‘bereaved’ of them, or being ‘senseless’. Where the reference is to a milder problem of the senses, the topic <val>senses</val> should be used instead in combination with <val>nonDizPassions</val>, <val>sicknessPassions</val> or <val>dizPassions</val>.</desc>
+         <desc type="editorial">This is for references to people having lost their senses (meaning mental faculties, not sight, hearing etc.), their senses being ‘gone’, being ‘bereaved’ of them, or being ‘senseless’. Where the reference is to a milder problem of the senses, the topic <val>senses</val> should be used instead in combination with <val>afflictedPassions</val>, <val>amissPassions</val>, <val>diseasePassions</val>, <val>illnessPassions</val>, <val>notWellPassions</val>, <val>sicknessPassions</val> or failing these, <val>unidentifiedPassions</val>.</desc>
       </item>
       <item xml:id="idleHeaded" corresp="#mind">
          <desc type="editorial">For references to people as ‘idle headed’. Note that ‘idle talk’ or ‘talking idly’ comes under the topic <val>idleTalk</val>.</desc>
       </item>
-      <item xml:id="despair" sortKey="topic-163">
-         <seg type="public">anxiety and melancholy</seg>
-         <desc type="public">Describing people who are melancholy, ‘mopish’, grief-stricken or despairing.</desc>
-         <desc type="editorial">For explicit descriptions of people as despairing, suffering from despair, or ‘ready to despair’
-. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+      <item xml:id="weakPassions" corresp="#mind">
+         <desc type="editorial">For references to people as ‘weak in mind’ or ‘weakened in the wits’ or suffering ‘weakness in the head’ (where the implication is of a passions problem). The topics <val>mind</val>, <val>wits</val>, <val>headPassions</val> etc. should be added as appropriate.</desc>
       </item>
-      <item xml:id="discontentment" corresp="#despair">
+      <item xml:id="afflictedPassions" sortKey="topic-233">
+         <seg type="public">afflicted (passions)</seg> 
+         <desc>Entries in which the practitioner explicitly records someone as being ‘afflicted’, where the problem is one of the passions.</desc>
+          <desc type="editorial">The Latin ‘afflictus’ is sometimes used; this topic should be employed for that too. This takes <att>resp</att>.</desc>
+      </item>
+      <item xml:id="amissPassions" sortKey="topic-232">
+         <seg type="public">amiss (passions)</seg> 
+         <desc>Entries in which the practitioner explicitly records someone as being ‘amiss’, where the problem is one of the passions.</desc>
+          <desc type="editorial">This takes <att>resp</att>.</desc>
+      </item>
+      <item xml:id="badDreams" sortKey="#topic-163">
+         <seg type="public">anxiety and melancholy</seg>
+         <seg type="editorial">badDreams</seg>
+         <desc type="public">Describing people who are melancholy, ‘mopish’, grief-stricken or despairing.</desc>
+         <desc type="editorial">For references to people who are suffering from bad dreams or are troubled with dreams; not for questions about the possible prophetic import of dreams, for which the topic <val>dreams</val> should be used instead.</desc>
+      </item>
+      <item xml:id="despair" corresp="#badDreams">
+         <desc type="editorial">For explicit descriptions of people as despairing, suffering from despair, or ‘ready to despair’. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+      </item>
+      <item xml:id="discontentment" corresp="#badDreams">
          <seg type="editorial">discontentment</seg>
          <desc type="editorial">For explicit descriptions of people as discontent or suffering from discontentment. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
       </item>
-      <item xml:id="fear" corresp="#despair">
+      <item xml:id="fear" corresp="#badDreams">
          <seg type="editorial">fear</seg>
-         <desc type="editorial">For explicit descriptions of people as fearful, suffering fear, or being afraid (as a problem, as opposed to the mention of it incidentally in entries for diseases of the body). For now, this topic should not be used where the question is discursive/descriptive and does not use the words listed above, though they can appear in English or in Latin (fear appears as ‘timor’).</desc>
+         <desc type="editorial">For explicit descriptions of people as fearful, suffering fear, or being afraid (as a problem, as opposed to the mention of it incidentally in entries for diseases of the body). Sometimes the expression used is ‘fearful and doubtful’; in this context the word ‘doubtful’ meant the same thing as ‘fearful’ and the topic <val>fear</val> covers both. For now, this topic should not be used where the question is discursive/descriptive and does not use the words listed above, though they can appear in English or in Latin (fear appears as ‘timor’).</desc>
       </item>
-      <item xml:id="grief" corresp="#despair">
+      <item xml:id="fretting" corresp="#badDreams">
+         <seg type="editorial">fretting</seg>
+         <desc type="editorial">For explicit descriptions of people as fretting. For now, this topic should not be used where the question is discursive/descriptive and does not use a form of the word ‘fret’.</desc>
+      </item>
+      <item xml:id="frighted" corresp="#badDreams">
+         <seg type="editorial">frighted</seg>
+         <desc type="editorial">For explicit descriptions of people as frighted. For now, this topic should not be used where the question is discursive/descriptive and does not use a form of the word ‘frighted’.</desc>
+      </item>
+      <item xml:id="grief" corresp="#badDreams">
          <seg type="editorial">grief</seg>
-         <desc type="editorial">For explicit descriptions of people as grieving or suffering from grief. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+         <desc type="editorial">This topic should not be used; instead <val>griefPassions</val> should be used for passions topics, or <val>griefMedical</val> for use of the word ‘grief’ to indicate a physical problem or discomfort.</desc>
       </item>
-      <item xml:id="heaviness" corresp="#despair">
+      <item xml:id="griefPassions" corresp="#badDreams">
+         <seg type="editorial">grief (passions)</seg>
+         <desc type="editorial">For explicit descriptions of people as grieving or suffering from grief. Note, however, that Napier seems to have asked querents (and possibly messengers) about any recent griefs suffered by his patients, which he presumably thought caused or contributed to their medical problems; this topic should not be supplied in those instances but should be reserved for entries in which the grief is clearly the problem about which the querent is consulting. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+      </item>
+      <item xml:id="heaviness" corresp="#badDreams">
          <seg type="editorial">heaviness</seg>
          <desc type="editorial">For descriptions of people as heavy, heavy-hearted or heavy-minded, or ‘leaden’ (one entry uses the phrase ‘harte leden’), where the implication is clearly not physical weight. We may decide later that this topic should be further broken down according to what specifically, if anything, is described as heavy.</desc>
       </item>
-      <item xml:id="melancholy" corresp="#despair">
+      <item xml:id="melancholy" corresp="#badDreams">
          <seg type="editorial">melancholy</seg>
          <desc type="editorial">For explicit descriptions of people as melancholy, or suffering from melancholy or melancholia (this can occur in Greek); not for references to the humour melancholy as the cause of physical ailments. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
       </item>
-      <item xml:id="mopish" corresp="#despair">
+      <item xml:id="mopish" corresp="#badDreams">
          <seg type="editorial">mopish</seg>
          <desc type="editorial">For explicit descriptions of people as mopish. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
       </item>
-      <item xml:id="sadness" corresp="#despair">
+      <item xml:id="religiousDoubts" corresp="#badDreams">
+         <seg type="editorial">religiousDoubts</seg>
+         <desc type="editorial">For entries in which subjects are described as believing that God is angry with them, or has forsaken them, or does not exist; that prayers will do little good; etc.</desc>
+      </item>
+      <item xml:id="sadness" corresp="#badDreams">
          <seg type="editorial">sadness</seg>
          <desc type="editorial">For explicit descriptions of people as sad, or suffering from sadness. For now, this topic should not be used where the question is discursive/descriptive and/or does not use the word itself; in particular, note that ‘sorrow’ and ‘grief’ have their own topics.</desc>
       </item>
-      <item xml:id="sleeplessnessPassions" corresp="#despair">
+      <item xml:id="sleeplessnessPassions" corresp="#badDreams">
          <seg type="editorial">sleeplessnessPassions</seg>
          <desc type="editorial">For references to people being unable to sleep, where the context is otherwise entirely passions-related.</desc>
       </item>
-      <item xml:id="sorrow" corresp="#despair">
+      <item xml:id="sorrow" corresp="#badDreams">
          <seg type="editorial">sorrow</seg>
          <desc type="editorial">For explicit descriptions of people as suffering from sorrow. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself. For now references in Latin to ‘dolor’ (when it does not mean physical pain) should be given this topic, though we may need to investigate whether that should be sorrow or grief or some other topic (or if they are the same thing).</desc>
       </item>
-      <item xml:id="unidentifiedAnxietyAndMelancholy" corresp="#despair">
-         <seg type="editorial">unidentifiedAnxietyAndMelancholy</seg>
-         <desc type="editorial">This is the category for any entry in which the subject is suffering from an ‘anxiety and melancholy’ problem, but one that is not classifiable according to the available categories above (currently: <val>despair</val>, <val>discontentment</val>, <val>fear</val>, <val>grief</val>, <val>heaviness</val>, <val>melancholy</val> and <val>mopish</val>, <val>sadness</val>, <val>sleeplessnessPassions</val> and <val>sorrow</val>). This is where people described as having ‘taken thought’ currently go; also those who fret, are sottish, doubtful, suspicious, or who start(le) or take fright in their sleep. Note that ‘uncomfortable’ in this period probably means inconsolable. This category will be monitored and new topics created as appropriate, depending on what turns up. To make recategorising these later on easier it is helpful to record in a comment tag after <gi>cb:topic</gi> what the precise expression used is.</desc>
+      <item xml:id="sottish" corresp="#badDreams">
+         <seg type="editorial">sottish</seg>
+         <desc type="editorial">For explicit descriptions of people as sottish. For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
       </item>
-      <item xml:id="weeping" corresp="#despair">
+      <item xml:id="uncomfortable" corresp="#badDreams">
+         <seg type="editorial">uncomfortable</seg>
+         <desc type="editorial">For explicit descriptions of people as ‘uncomfortable’ (the word here meaning inconsolable). For now, this topic should not be used where the question is discursive/descriptive and does not use the word itself.</desc>
+      </item>
+      <item xml:id="unidentifiedAnxietyAndMelancholy" corresp="#badDreams">
+         <seg type="editorial">unidentifiedAnxietyAndMelancholy</seg>
+         <desc type="editorial">This is the category for any entry in which the subject is suffering from an ‘anxiety and melancholy’ problem, but one that is not classifiable according to the available categories above (currently: <val>despair</val>, <val>discontentment</val>, <val>fear</val>, <val>grief</val>, <val>heaviness</val>, <val>melancholy</val>, <val>mopish</val>, <val>sadness</val>, <val>sleeplessnessPassions</val> and <val>sorrow</val>). This is where people described as having ‘taken thought’ currently go; also those who fret, are sottish, doubtful, suspicious, or who start(le) or take fright in their sleep. Note that ‘uncomfortable’ in this period probably means inconsolable. This category will be monitored and new topics created as appropriate, depending on what turns up. To make recategorising these later on easier it is helpful to record in a comment tag after <gi>cb:topic</gi> what the precise expression used is.</desc>
+      </item>
+      <item xml:id="weeping" corresp="#badDreams">
          <seg type="editorial">weeping</seg>
          <desc type="editorial">For references to or descriptions of people weeping or crying, where the implication is that they are suffering from a problem of the passions (not for when the point is to illustrate the degree of physical pain they are suffering, or to show their level of distress over a physical ailment).</desc>
       </item>
-      <item xml:id="dizPassions" sortKey="topic-171">
-         <seg type="public">‘diz’ (passions)</seg>
-         <desc>Entries in which the terms ‘diz’ or ‘disease’ are explicitly used in reference to mental disorder.</desc>
+      <item xml:id="diseasePassions" sortKey="topic-171">
+         <seg type="public">disease (passions)</seg>
+         <desc>Entries in which the term ‘disease’ (sometimes abbreviated to ‘diz’) is explicitly used in reference to mental disorder.</desc>
          <desc type="editorial">Takes <att>resp</att>.</desc>
+      </item>
+      <item xml:id="dizPassions" corresp="#diseasePassions">
+         <seg type="editorial">dizPassions</seg>
+         <desc type="editorial">This topic should not be used and will soon be deleted. Where an entry refers to someone’s ‘disease’ and means a problem of the passions then the topic <val>diseasePassions</val> should be used instead.</desc>
       </item>
       <item xml:id="fitsPassions" sortKey="topic-175">
          <seg type="public">fits (passions)</seg> 
@@ -190,10 +242,10 @@
           <desc type="editorial">For people explicitly described as ‘mad’ or as suffering from ‘madness’. The Latin term ‘delirium’ (or the expression (‘laborat delirio’) appears to be an equivalent.</desc>
       </item>
       <item xml:id="lostMind" corresp="#lunatic">
-          <desc type="editorial">For people explicitly described as out of their minds. Those who are merely ‘troubled’ or ‘not well’ in their minds (or similar) should, however, be given the topic <val>mind</val> plus an appropriate topic such as <val>troubled</val>, <val>nonDizPassions</val>, etc. Napier seems to use the word ‘animus’ for mind when writing in Latin.</desc>
+          <desc type="editorial">For people explicitly described as out of their minds. Those who are merely ‘troubled’ or ‘not well’ in their minds (or similar) should, however, be given the topic <val>mind</val> plus an appropriate topic such as <val>troubled</val>, <val>illnessPassions</val>, <val>amissPassions</val>, <val>sicknessPassions</val> etc., or failing these, <val>unidentifiedPassions</val>. Napier seems to use the word ‘animus’ for mind when writing in Latin.</desc>
       </item>
       <item xml:id="lostWits" corresp="#lunatic">
-          <desc type="editorial">For people explicitly described as out of, bereaved of, or having lost or lost the use of their wits. Those who are merely ‘troubled’ or ‘not well’ in their wits (or similar) should, however, be given the topic <val>wits</val> plus an appropriate topic such as <val>troubled</val>, <val>nonDizPassions</val>, etc. Napier seems to use the word ‘mens’ for the wits when writing in Latin.</desc>
+          <desc type="editorial">For people explicitly described as out of, bereaved of, or having lost or lost the use of their wits. Those who are merely ‘troubled’ or ‘not well’ in their wits (or similar) should, however, be given the topic <val>wits</val> plus an appropriate topic such as <val>troubled</val>, <val>illnessPassions</val>, <val>amissPassions</val>, <val>sicknessPassions</val> etc., or failing these, <val>unidentifiedPassions</val>. Napier seems to use the word ‘mens’ for the wits when writing in Latin.</desc>
       </item>
       <item xml:id="raging" corresp="#lunatic">
           <desc type="editorial">For people explicitly described as ‘raging’. The Latin term ‘furiosus/furiosa’ appears to be equivalent.</desc>
@@ -201,8 +253,11 @@
       <item xml:id="raving" corresp="#lunatic">
           <desc type="editorial">For people explicitly described as ‘raving’. The Latin term ‘insaniens’ appears to be equivalent.</desc>
       </item>
-      <item xml:id="unidentifiedInsane" corresp="#lunatic">
-          <desc type="editorial">This is a catch-all for anyone suffering from full-blown insanity, but whose problem is described using terms that do not fit under the topics <val>crazed</val>, <val>distracted</val>, <val>frantic</val>, <val>mad</val>, <val>lostWits</val>, <val>raging</val> or <val>raving</val>. This category will be monitored and new topics created as appropriate, depending on what turns up. To make recategorising these later on easier it is helpful to record in a comment tag after <gi>cb:topic</gi> what the precise expression used is.</desc>
+
+      <item xml:id="illnessPassions" sortKey="topic-230">
+         <seg type="public">illness (passions)</seg> 
+         <desc>Problems of the passions explicitly designated by the term ‘illness’ or a description of the sufferer as ‘ill’.</desc>
+         <desc type="editorial">This takes <att>resp</att>. Where the condition suffered is physical, the topic <val>illness</val> should be used instead. Where an entry refers to ‘ill thoughts’ this topic should not be used; there ‘ill’ is synonymous with ‘evil’ and so <val>evilThoughts</val> should be recorded instead.</desc>
       </item>
       <item xml:id="morbusPassions" sortKey="topic-168">
          <seg type="public">morbus (passions)</seg> 
@@ -211,8 +266,12 @@
       </item>
       <item xml:id="nonDizPassions" sortKey="topic-169">
          <seg type="public">non-‘diz’ passions</seg> 
-         <desc>Unspecified mental disorders not described as ‘diz’, ‘disease’, ‘morbus’ or ‘sickness’.</desc>
-         <desc type="editorial">This covers a number of different terms such as ‘afflicted’, ‘not well’, ‘amiss’, ‘weakened’ and the like. Where the question specifies that the problem is affecting the mind, the wits or the senses, the appropriate topic(s) (<val>mind</val>, <val>wits</val> and <val>senses</val>) should be supplied along with this one. Where an entry refers to ‘ill thoughts’ this topic should not be used; there ‘ill’ is synonymous with ‘evil’ and so <val>evilThoughts</val> should be recorded instead.</desc>
+         <desc type="public">Unspecified mental disorders not described as ‘diz’, ‘disease’, ‘morbus’ or ‘sickness’.</desc>
+         <desc type="editorial">This topic should not be used. It has been replaced by the more specific topics <val>afflictedPassions</val>, <val>amissPassions</val>, <val>illnessPassions</val> and <val>notWellPassions</val>. If a topic exists for the specific term used in the entry then that topic should be employed instead; if none exists then <val>unidentifiedPassions</val> should be used. This topic will be removed after the next site update.</desc>
+      </item>
+      <item xml:id="notWellPassions" sortKey="topic-238">
+         <seg type="public">not well (passions)</seg> 
+         <desc>Entries in which the patient is described as ‘not well’ or ‘never well’, and is suffering from a problem of the passions.</desc>
       </item>
       <item xml:id="reportPassions" sortKey="topic-170">
          <seg type="public">report (passions)</seg> 
@@ -243,11 +302,11 @@
          <desc type="editorial">This topic covers any references to someone being ‘tempted’, ‘tempted in mind’, ‘tempted to make her/himself away’, ‘tempted to kill...’ (e.g. spouse, children); also any references to attempts to commit suicide or someone being suicidal</desc>
       </item>
       <item xml:id="evilThoughts" corresp="#temptedAndSuicidal">
-         <desc type="editorial">This topic should be used for entries that refer to someone being troubled with ‘evil thoughts’, ‘ill thoughts’, ‘bad cogitations’ or ‘cogitations’ (or ‘cogit’) where context implies that they are bad. If the phrase is ‘ill thoughts’ then <val>nonDizPassions</val> should not be used in addition to this topic; if the full expression is ‘troubled in the mind with ill thoughts’ then the topics <val>troubled</val>, <val>mind</val> and <val>evilThoughts</val> should be supplied.</desc>
+         <desc type="editorial">This topic should be used for entries that refer to someone being troubled with ‘evil thoughts’, ‘ill thoughts’, ‘bad cogitations’ or ‘cogitations’ (or ‘cogit’) where context implies that they are bad. If the phrase is ‘ill thoughts’ then <val>illnessPassions</val> should not be used in addition to this topic; if the full expression is ‘troubled in the mind with ill thoughts’ then the topics <val>troubled</val>, <val>mind</val> and <val>evilThoughts</val> should be supplied.</desc>
       </item>
       <item xml:id="unidentifiedPassions" corresp="#unspecifiedPassions">
          <seg type="editorial">unidentifiedPassions</seg> 
-         <desc type="editorial">Questions that clearly relate to a mental issue but are couched in terms that defy more precise definition.</desc>
+         <desc type="editorial">Questions that clearly relate to a mental issue but are couched in terms that defy more precise definition. This topic is for questions that are either incomprehensible (though clearly relating to the passions) or cannot reasonably be placed into one of our existing topics. It currently includes expressions such as ‘confused’, ‘perplexed’ and ‘suddenly taken’, each of which has appeared once to date.</desc>
       </item>
       <item xml:id="unspecifiedPassions" sortKey="topic-173">
          <seg type="public">unspecified passions</seg>
@@ -257,9 +316,24 @@
       
 </list>
    <list sortKey="subtopics2" n="General Medical">
+      <item xml:id="aegritudo" sortKey="topic-235">
+         <seg type="public">aegritudo</seg> 
+         <desc>Entries in which the practitioner uses the term ‘ægritudo’ (sickness or grief) or a cognate term to describe a physical ailment.</desc>
+          <desc type="editorial">The terms to look out for are: ægritudo/egritudo (n: sickness, grief, affliction, melancholy); æger/eger (adj: sick, ill, unwell); ægreo/egreo, ægroto/egroto (vb: to be sick, ill, unwell); ægrotus/egrotus (adj: sick, ill, diseased). This takes <att>resp</att>.</desc>
+      </item>
       <item xml:id="alteration" sortKey="topic-5">
          <seg type="public">alteration</seg> 
          <desc>Formulaic term for enquiries about an ‘alteration’ in the patient’s condition.</desc>
+      </item>
+      <item xml:id="afflicted" sortKey="topic-233">
+         <seg type="public">afflicted</seg> 
+         <desc>Entries in which the practitioner explicitly records someone as being ‘afflicted’.</desc>
+          <desc type="editorial">The Latin ‘afflictus’ is sometimes used and should be given this topic. This takes <att>resp</att>.</desc>
+      </item>
+      <item xml:id="amiss" sortKey="topic-231">
+         <seg type="public">amiss</seg> 
+         <desc>Entries in which the practitioner explicitly records someone as being ‘amiss’.</desc>
+          <desc type="editorial">This takes <att>resp</att>.</desc>
       </item>
       <item xml:id="bedridden" sortKey="topic-9">
          <seg type="public">bedridden</seg> 
@@ -283,15 +357,39 @@
          <seg type="public">cured</seg> 
          <desc>Whether or not the patient has fully recovered from or been cured of a given ailment.</desc>
       </item>
-<item xml:id="diz" sortKey="topic-25">
+      <item xml:id="disease" sortKey="topic-25">
          <seg type="public">disease</seg> 
          <desc>Entries in which the practitioner explicitly records the issue as ‘disease’ (normally abbreviated by Forman as ‘diz’). The term covers a much wider range of ailments than ‘disease’ in the modern sense, including (for instance) toothache or a bad back. The vast majority of Forman’s medical entries fall into this category, suggesting that medical questions not so designated belonged to a different category in his mind. Napier uses this category much less frequently and tends to be more specific about the nature of medical problems.</desc>
           <desc type="editorial">This takes <att>resp</att>.</desc>
       </item>
+      <item xml:id="diz" corresp="#disease">
+         <seg type="editorial">diz</seg> 
+          <desc type="editorial">This topic should not be used and will soon be deleted. For references to ‘disease’ in entries the topic <val>disease</val> (or <val>diseasePassions</val> as appropriate) should be used instead.</desc>
+      </item>
+      <item xml:id="distemperedMedical" sortKey="topic-239">
+         <seg type="public">distempered</seg> 
+         <desc>Entries in which the practitioner explicitly records that a person is ‘distempered’ or ‘out of temper’.</desc>
+         <desc type="editorial">This also covers references in Latin such as ‘intemperamentum corporis’ or ‘distemperatio’. If the problem is of the passions, the topic <val>distemperedPassions</val> should be used instead.</desc>
+      </item>
+      <item xml:id="griefMedical" sortKey="topic-240">
+         <seg type="public">grief</seg>
+         <desc>Entries in which the practitioner uses the term ‘grief’ to describe a physical ailment.</desc> 
+         <desc type="editorial">If the problem is of the passions the topic <val>griefPassions</val> should be used instead, though see under that topic for an important caveat.</desc>
+      </item>
+      <item xml:id="illness" sortKey="topic-229">
+         <seg type="public">illness</seg> 
+         <desc>Entries in which the practitioner explicitly records that a person is ‘ill’.</desc>
+         <desc type="editorial">This takes <att>resp</att>. Where the condition suffered is one of the passions, the topic <val>illnessPassions</val> should be used instead. Where an entry refers to someone as being ‘ill handled’, the sense of ‘ill’ is different and the topic given should be <val>unidentifiedMedical</val> instead.</desc>
+      </item>
+      <item xml:id="infirmity" sortKey="topic-236">
+         <seg type="public">infirmity</seg> 
+         <desc>Entries in which the practitioner explicitly records the issue as ‘infirmity’ or ‘infirmitas’.</desc>
+         <desc type="editorial">This takes <att>resp</att>.</desc>
+      </item>
       <item xml:id="liveOrDieMedical" sortKey="topic-89">
          <seg type="public">life or death (medical)</seg> 
          <desc>Whether or not the person being asked about is at death’s door.</desc>
-         <desc type="editorial">This is for life or death questions specifically in a medical context. The topic should be specified only where the question is recorded explicitly in the entry, but that can be in the judgment as well as in the question section (within the judgment, questions are often indicated by beginning ‘Quærit...'’). The topic can be recorded in either case; where the question occurred in the judgment (or among the untranscribed material more generally) it should be given an <att>evidence</att> value of <val>internal</val>.</desc>
+         <desc type="editorial">This is for life or death questions specifically in a medical context. (If a similar question is asked outside of a medical context then the topic <val>liveOrDie</val> should be used instead.) The topic should be specified only where the question is recorded explicitly in the entry, but that can be in the judgment as well as in the question section (within the judgment, questions are often indicated by beginning ‘Quærit...'’). The topic can be recorded in either case; where the question occurs in the judgment (or among the untranscribed material more generally) it should be given an <att>evidence</att> value of <val>internal</val>.</desc>
       </item>
       <item xml:id="medicalCounsel" sortKey="topic-10">
          <seg type="public">medical counsel</seg> 
@@ -310,8 +408,12 @@
       </item>
       <item xml:id="nonDizDisease" sortKey="topic-56">
          <seg type="public">non-‘diz’ disease</seg> 
-         <desc>Unspecified ailments not categorised in the record as ‘disease’, ‘morbus’ or ‘sickness’, e.g. ‘illness’.</desc>
-         <desc type="editorial">If a general term such as ‘illness’ is used we should employ this topic, even if the situation is one in which we would not normally today apply it - such as accidents (<val>trauma</val>). This topic is also to be used when one of these words appears in combination with a body part: ‘complayneth of her heart’ should have only the topic <val>heart</val>, but ‘heart ill’ should be given the topics <val>heart</val> and <att>nonDizDisease</att>. It is helpful to record what term was used in a comment tag beside the topic.</desc>
+         <desc type="public">Unspecified ailments not categorised in the record as ‘disease’, ‘illness’, ‘morbus’ or ‘sickness’.</desc>
+         <desc type="editorial">This topic should not be used and will soon be removed. It is being replaced by specific topics such as <val>aegritudo</val>, <val>afflicted</val>, <val>amiss</val>, <val>illness</val>, <val>infirmity</val> and <val>notWell</val>; in the absence of a specific topic for the term used in the question, <val>unidentifiedMedical</val> should be employed.</desc>
+      </item>
+      <item xml:id="notWell" sortKey="topic-237">
+         <seg type="public">not well</seg> 
+         <desc>Entries in which the patient is described as ‘not well’ or ‘never well’.</desc>
       </item>
       <item xml:id="recipe" sortKey="topic-14">
          <seg type="public">recipe</seg> 
@@ -331,8 +433,8 @@
       </item>
       <item xml:id="requestingTreatment" sortKey="topic-21">
          <seg type="public">requesting treatment</seg> 
-         <desc>Where someone explicitly requests treatment, either in general or of a particular nature.</desc>
-         <desc type="editorial">Note that where one person requests treatment for another, the <gi>person</gi> element in <gi>cb:topic</gi> should point to the person <hi rend="italic">for</hi> whom treatment is being requested, not the person requesting it.</desc>
+         <desc>Where someone explicitly requests treatment other than sigils, either in general or of a particular nature.</desc>
+         <desc type="editorial">Note that where one person requests treatment for another, the <gi>person</gi> element in <gi>cb:topic</gi> should point to the person <hi rend="italic">for</hi> whom treatment is being requested, not the person requesting it. Where sigils are sought, the topic <val>requestingSigils</val> should be used instead.</desc>
       </item>
       <item xml:id="requestingSigil" corresp="#requestingTreatment">
          <desc type="editorial">Where someone explicitly requests a sigil.</desc>
@@ -352,10 +454,14 @@
          <desc>Another of Forman’s formulaic terms. Definition not entirely clear, but seems to refer to someone’s general physical wellbeing.</desc>
          <desc type="editorial">This takes <att>resp</att>.</desc>
       </item>
-      <item xml:id="stateDiz" sortKey="topic-76">
+      <item xml:id="stateDisease" sortKey="topic-76">
          <seg type="public">‘state of [his/her] disease’</seg> 
          <desc>Questions about the progress of an explicitly medical problem or its cure.</desc>
          <desc type="editorial">This takes <att>resp</att>.</desc>
+      </item>
+      <item xml:id="stateDiz" corresp="#stateDisease">
+         <seg type="editorial">stateDiz</seg>
+         <desc type="editorial">This topic should not be used and will soon be deleted. Where an entry includes a question about the state of someone’s disease then the topic <val>stateDisease</val> should be used.</desc>
       </item>
       <item xml:id="strangeAffliction" sortKey="topic-222">
          <seg type="public">strange affliction</seg> 
@@ -369,11 +475,12 @@
       </item>
       <item xml:id="treatment" sortKey="topic-81">
          <seg type="public">treatment</seg> 
-         <desc>Questions posed (usually by the practitioner) about how and/or when a patient should be treated.</desc>
+         <desc>Questions posed (usually by the practitioner) about how and/or when a patient should be treated; also interrogations put by the practitioner concerning treatments he has already administered.</desc>
       </item>
       <item xml:id="unidentifiedMedical" sortKey="topic-27">
          <seg type="public">unidentified medical</seg> 
          <desc>Questions that are clearly medical in nature but couched in terms that defy more precise definition.</desc>
+         <desc type="editorial">This topic is for questions that are either incomprehensible (though clearly medical) or cannot reasonably be placed into one of our existing topics. It includes general terms for illness such as ‘querysh’ (queerish), ‘wamblie’, ‘ailed’, and ‘impediments’, each of which has appeared once to date. It also includes non-specific, non-descriptive ‘problem’ terms such as ‘vexed’ (as in ‘vexed with wind colic’) or ‘tormented’ (as in ‘tormented with a cough’) where they appear alone and without further detail from which to supply specific topics. It is helpful to record in a comment tag beside <gi>cb:topic</gi> the expression or term that <val>unidentifiedMedical</val> is standing for.</desc>
       </item>
       <item xml:id="unspecifiedMedical" sortKey="topic-50">
          <seg type="public">unspecified medical</seg> 
@@ -383,7 +490,7 @@
       <item xml:id="bloodletting" sortKey="topic-29">
          <seg type="public">whether to be let blood</seg> 
          <desc>Questions posed (in some cases by the practitioner) about the advisability of bloodletting as a treatment.</desc>
-          <desc type="editorial">The topic should be specified only where the question is recorded explicitly in the entry, but that can be in the judgment as well as in the question section (within the judgment, questions are often indicated by beginning ‘Quærit...’). The topic can be recorded in either case; where the question occurred in the judgment (or among the untranscribed material more generally) it should be given an <att>evidence</att> value of <val>internal</val>.</desc>
+          <desc type="editorial">The topic should be specified only where the question is recorded explicitly in the entry, but that can be in the judgment as well as in the question section (within the judgment, questions are often indicated by beginning ‘Quærit...’). The topic can be recorded in either case; where the question occurs in the judgment (or among the untranscribed material more generally) it should be given an <att>evidence</att> value of <val>internal</val>.</desc>
       </item>
    </list>
    <list sortKey="subtopics5" n="Health and Wellbeing">
@@ -395,7 +502,7 @@
       <item xml:id="childbirth" sortKey="topic-13">
          <seg type="public">childbirth</seg> 
          <desc>Questions about the outcome of a pregnancy.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks made in the judgment. It is worth being careful of the difference between this topic and <val>pregnancy</val>, which is chiefly for questions about whether someone is pregnant. If question is about childbirth and is medical (for instance, concerning a medical problem being suffered by a woman in the process of giving birth) then the medical topic <val>childbirthMedical</val> should be used instead.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks made in the judgment. It is worth being careful of the difference between this topic and <val>pregnancy</val>, which is chiefly for questions about whether someone is pregnant. If a question is about childbirth and is medical (for instance, concerning a medical problem being suffered by a woman in the process of giving birth) then the medical topic <val>childbirthMedical</val> should be used instead.</desc>
       </item>
       <item xml:id="emotions" sortKey="topic-7">
          <seg type="public">emotions</seg> 
@@ -409,14 +516,14 @@
       </item>
       <item xml:id="liveOrDie" sortKey="topic-46">
          <seg type="public">life or death</seg> 
-         <desc>Normally associated with a medical question, but sometimes relating to someone whose imminent death through non-medical causes (e.g. shipwreck or murder) is considered a possibility.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks made in the judgment.</desc>
+         <desc type="public">Normally associated with a medical question, but sometimes relating to someone whose imminent death through non-medical causes (e.g. shipwreck or murder) is considered a possibility.</desc>
+         <desc type="editorial">This topic covers questions relating to someone whose imminent death through non-medical causes (e.g. shipwreck or murder) is considered a possibility. If there is evidence that the question is medical then it should be given the topic <val>liveOrDieMedical</val> instead. This topic can be inferred on the basis of remarks made in the judgment.</desc>
       </item>
       
 <item xml:id="pregnancy" sortKey="topic-63">
          <seg type="public">pregnancy</seg> 
          <desc>Whether or not the person in question is pregnant.</desc>
-         <desc type="editorial">This does not include the question of whether she ever can or will become pregnant, which is classed under <val>fertility</val>, nor questions about the outcome of the pregnancy (such as the sex of the child), which is <val>childbirth</val>. This topic can be inferred on the basis of comments in the untranscribed portion of the entry (judgment and ‘future event information’), though it should be borne in mind that Napier was preoccupied with his female patients’ reproduction even where this was plainly not the problem at issue, so remarks such as ‘credo esse gravidam’ or ‘she was with child’ should not be taken as cast-iron proof that the querent asked about pregnancy.</desc>
+         <desc type="editorial">This does not include: the question of whether she ever can or will become pregnant, which is classed under <val>fertility</val>; questions about the outcome of the pregnancy, which is <val>childbirth</val>; medical questions about an imminent birth, which is <val>chilbirthMedical</val>; or questions about the sex of the unborn child, which is <val>girlOrBoy</val>. This topic can be inferred on the basis of comments in the untranscribed portion of the entry (judgment and ‘future event information’), though it should be borne in mind that Napier was preoccupied with his female patients’ reproduction even where this was plainly not the problem at issue, so remarks such as ‘credo esse gravidam’ or ‘she was with child’ should not be taken as cast-iron proof that the querent asked about pregnancy.</desc>
       </item>
    </list>
    <list sortKey="subtopics1" n="Named Illnesses">
@@ -509,7 +616,7 @@
       <item xml:id="newAgue" sortKey="topic-104">
          <seg type="public">new ague</seg> 
          <desc>Napier’s term (he usually calls it ‘the new ague’) for an epidemic that appears to have broken out in Buckinghamshire in late 1598. It is unclear precisely what it was.</desc>
-         <desc type="editorial">This is variously specified as ‘the new ague’, ‘the new disease’ and ‘the new sickness’; it should be given this topic and not <val>ague</val>, <val>diz</val> or <val>nonDizDisease</val>, unless one of those terms is specified separately - as in ‘disease ... the new disease’, or ‘ague ... the new sickness’.</desc>
+         <desc type="editorial">This is variously specified as ‘the new ague’, ‘the new disease’ and ‘the new sickness’; it should be given this topic and not <val>ague</val>, <val>disease</val> or <val>sickness</val>, unless one of those terms is specified separately — as in ‘disease ... the new disease’, or ‘ague ... the new sickness’.</desc>
       </item>
       <item xml:id="plague" sortKey="topic-105">
          <seg type="public">plague</seg> 
@@ -552,6 +659,10 @@
          <seg type="editorial">stoneColic</seg>
          
       </item>
+      <item xml:id="strain" sortKey="topic-242">
+         <seg type="public">strain</seg>
+         <desc type="editorial">For references to people who suffer strains or who overstrain themselves.</desc>
+      </item>
       <item xml:id="strangury" corresp="#stone">
          <seg type="editorial">strangury</seg>
          <desc type="editorial">Sometimes referred to by Napier as ‘strangullion’.</desc>
@@ -573,22 +684,23 @@
    <list sortKey="subtopics3" n="Occult">
       <item xml:id="alchemy" sortKey="topic-3">
          <seg type="public">alchemy</seg> 
-         <desc>These questions are all put by Forman and concern his progress in the art of transmutation or propitious times for alchemical undertakings. Though Napier took an interest in chemical medicine, he explicitly disavowed any prowess or ambition in the field of transmutational alchemy.</desc>
+         <desc>Forman posed a number of astrological questions concerning his own progress in the art of transmutation or propitious times for alchemical undertakings. Napier does not appear to have attempted transmutation himself but did very occasionally respond to similar questions put by his clients, or ask his own questions about the veracity of other people’s claims to alchemical prowess.</desc>
       </item>
       
-<item xml:id="devil" sortKey="topic-35">
+      <item xml:id="devil" sortKey="topic-35">
          <seg type="public">devil</seg> 
          <desc type="public">Questions in which people are described as being involved with or speaking of Satan. This is distinct from people being tempted by Satan (to commit suicide or some other sin), which comes under ‘tempted and suicidal’ in the Diseases of the Mind category.</desc>
          <desc type="editorial">Questions in which people are described as being involved with or speaking of Satan. This is distinct from people being tempted by Satan (to commit suicide or some other sin), which should be given the topic <val>temptedAndSuicidal</val>. This topic can be inferred based on remarks in the judgment (if it is, <att>evidence</att> should be supplied).</desc>
       </item>
       <item xml:id="dreams" sortKey="topic-26">
          <seg type="public">dreams</seg> 
-         <desc>Questions explicitly noted as having been inspired by a (prophetic) dream. In Forman’s case, such dreams are usually his own, but he sometimes took clients’ dreams into account when assessing their cases. This is not a category Napier uses.</desc>
+         <desc>Questions explicitly noted as having been inspired by a (prophetic) dream. In Forman’s case, such dreams are usually his own, but he sometimes took clients’ dreams into account when assessing their cases. This is a category Napier uses only very rarely.</desc>
+         <desc type="editorial">This topic does not cover entries in which people are described as suffering from dreams, or having bad dreams; in those instances the topic <val>badDreams</val> should be used instead.</desc>
       </item>
       <item xml:id="fairyPinched" sortKey="topic-36">
          <seg type="public">fairy pinched</seg> 
          <desc>Normally but not exclusively of children: suffering unexplained superficial injuries imputed to the influence of malign spirits. The term ‘fairy blasted’ is sometimes also used.</desc>
-         <desc type="editorial">This topic can be inferred based on remarks in the judgment (if it is, <att>evidence</att> should be supplied).</desc>
+         <desc type="editorial">This topic can be inferred based on remarks in the judgment (if it is, <att>evidence</att> should be supplied). If a question is referring simply to someone experiencing the sensation of being ‘pinched’, however, the topic <val>pinched</val> should be used instead.</desc>
       </item>
       <item xml:id="haunted" sortKey="topic-39">
          <seg type="public">haunted</seg> 
@@ -659,6 +771,10 @@
       </item>
       <item xml:id="finger" sortKey="topic-128">
          <seg type="public">fingers</seg> 
+         <desc type="editorial">The topic <val>finger</val> (singular) should not be used and will soon be deleted; instead the topic <val>fingers</val> (plural) should be used.</desc>
+      </item>
+      <item xml:id="fingers" corresp="#finger">
+         <seg type="editorial">fingers</seg> 
       </item>
       <item xml:id="flesh" sortKey="topic-158">
          <seg type="public">flesh</seg> 
@@ -677,7 +793,7 @@
       </item>
       <item xml:id="hands" sortKey="topic-133">
          <seg type="public">hands</seg> 
-         <desc type="editorial">To be used where the hands are referred to explicitly, or for the term ‘chiragra’, which indicates a pain in the hand (the topic <val>pain</val> should also be used).</desc>
+         <desc type="editorial">To be used where the hands are referred to explicitly, or for the term ‘chiragra’, which indicates a pain in the hand (in that instance the topic <val>pain</val> should also be used).</desc>
       </item>
       <item xml:id="head" sortKey="topic-134">
          <seg type="public">head</seg> 
@@ -749,10 +865,7 @@
         <seg type="public">spleen</seg>
          <desc type="editorial">The term ‘milt’ is sometimes used; it means the same thing as ‘spleen’.</desc>
       </item>
-      <item xml:id="milt" corresp="#spleen">
-        <seg type="editorial">milt</seg>
-         <desc type="editorial">This topic has been replaced by <val>spleen</val> and should no longer be used.</desc>
-      </item>
+
       <item xml:id="belly" sortKey="topic-119">
          <seg type="public">stomach and belly</seg> 
          <desc type="editorial">Specifically for entries in which the term ‘belly’ is used (<val>stomach</val> is a separate topic).</desc>
@@ -789,6 +902,11 @@
          <desc>Questions about the whereabouts and/or wellbeing of people absent from the querent for whatever reason.</desc>
          <desc type="editorial">This topic can if necessary be inferred on the basis of remarks in the judgment: typical judgments for <val>absentPerson</val> entries give suggested whereabouts for the missing party or a time when he or she is likely to return. Unless there is a strong reason to encode things differently, the absent person should be made the object (with the person asking being both querent and subject), and only the absent person should be included as a child of <gi>cb:topic</gi>.  The person enquired about should be made <gi>cb:object</gi>, with the client as both <gi>cb:querent</gi> and <gi>cb:subject</gi>.</desc>
       </item>
+      <item xml:id="absentShip" sortKey="topic-2">
+         <seg type="public">absent ship</seg> 
+         <desc>A few consultations (usually by ship owners) concern the welfare or whereabouts of a ship as such, rather than any of the people on board it.</desc>
+         <desc type="editorial">The ship is listed in <gi>listPerson</gi> as <tag>org type="ship"</tag>, and treated in the encoding just as an absent person would be - typically by being made object and being included (as an <gi>org</gi>) within <gi>cb:topic</gi>. This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied. The ship enquired about should be made <gi>cb:object</gi>, with the client as both <gi>cb:querent</gi> and <gi>cb:subject</gi>.</desc>
+      </item>
       <item xml:id="character" sortKey="topic-42">
          <seg type="public">character</seg> 
          <desc>Entries in which the point at issue is someone’s character or personal qualities.</desc>
@@ -797,12 +915,17 @@
       <item xml:id="employeeChoice" sortKey="topic-28">
          <seg type="public">choice of employee</seg> 
          <desc>Which of two or more applicants to employ, or whether or not to employ a given applicant.</desc>
-         <desc type="editorial">The person or persons under consideration as employee are included within the topic, but not the prospective employer. This topic can be inferred based on remarks made in the judgment or event information (if it is, <att>evidence</att> should be supplied).</desc>
+         <desc type="editorial">The person or persons under consideration as employee are included within the topic (all coded as <gi>cb:object</gi>), but not the prospective employer (who should be <gi>cb:subject</gi>). This topic can be inferred based on remarks made in the judgment or event information (if it is, <att>evidence</att> should be supplied).</desc>
       </item>
       <item xml:id="clearingName" sortKey="topic-43">
          <seg type="public">clearing name</seg> 
          <desc>These questions are all put by Napier, and are his attempts to ascertain whether or not a given person is guilty of some crime of which he or she has been accused but professes him or herself innocent.</desc>
          <desc type="editorial">Often the person in question comes to Napier specifically to say that he or she is not guilty, in which case the entry is likely an interrogation. The person whose innocence or guilt is at issue should be the object in the consultation, not the subject; the person ascertaining their guilt or innocence (often Napier himself) should be both querent and subject.</desc>
+      </item>
+      <item xml:id="nonMedicalState" sortKey="topic-87">
+         <seg type="public">condition</seg> 
+         <desc>Questions about someone’s present or future prosperity and/or social standing.</desc>
+         <desc type="editorial">This is specifically employed for entries in which the term ‘state’ is used (in a non-medical sense), and takes <att>resp</att>.</desc>
       </item>
       <item xml:id="controversies" sortKey="topic-15">
          <seg type="public">controversies</seg> 
@@ -813,10 +936,25 @@
          <desc>Questions about whether and/or when it would be propitious to discuss a topic with someone.</desc>
          <desc type="editorial">This topic can be inferred based on remarks made in the judgment or event information (if it is, <att>evidence</att> should be supplied).</desc>
       </item>
+      <item xml:id="counsel" sortKey="topic-224">
+         <seg type="public">counsel</seg> 
+         <desc>Entries in which the querent is recorded as having asked for advice or counsel of a non-medical nature.</desc>
+         <desc type="editorial">Note that this is for non-medical entries in which Napier explicitly records a statement such as ‘X sent for my counsell’, and where the word ‘counsel’ (or a synonym) is explicitly used. This is not intended as a catch-all topic for all non-medical questions questions; non-medical questions that are difficult to categorise should be given the closest available topic, or <val>unknown</val>, and a TODO comment tag added recording the problem. An entry that uses the word ‘counsel’ or a synonym should be given this topic unless there is evidence that the question was medical, in which case <val>medicalCounsel</val> should be used instead.</desc>
+      </item>
       <item xml:id="death" sortKey="topic-53">
          <seg type="public">death</seg> 
          <desc>Entries in which the person being asked about is known to be dead. It is seldom clear precisely what the question is in such entries, but in most cases cause of death seems the likeliest possibility.</desc>
          <desc type="editorial">These are typically interrogations or diary entries recording the time of someone’s death and/or burial, though we have encountered at least one horary question about the cause of someone’s death.</desc>
+      </item>
+      <item xml:id="animalDeathAndDisease" sortKey="topic-6">
+         <seg type="public">death and/or disease of animals</seg> 
+         <desc>These are usually questions about the cause of the problem (witchcraft or foul play?) rather than requests for the animal(s) to be treated.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
+      <item xml:id="financeAndProperty" sortKey="topic-31">
+         <seg type="public">finance and property</seg> 
+         <desc>Financial matters generally, including debts, wills, or the buying and selling of houses.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
       </item>
       <item xml:id="fortune" sortKey="topic-32">
          <seg type="public">fortune</seg> 
@@ -851,14 +989,29 @@
          <desc>Whether and/or when it would be advisable to embark on a journey, or whether a proposed journey will be successful or profitable.</desc>
          <desc type="editorial">This topic can be inferred based on untranscribed material (judgment and event information); if it is, <att>evidence</att> should be supplied.</desc>
       </item>
+      <item xml:id="legalMatters" sortKey="topic-41">
+         <seg type="public">legal matters</seg> 
+         <desc>Questions concerning lawsuits or mentioning the actual or prospective intervention of legal authorities.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
       <item xml:id="letters" sortKey="topic-44">
          <seg type="public">letters</seg> 
          <desc>Whether and/or when it would be advisable to write or send a letter, on whatever subject.</desc>
          <desc type="editorial">Also for diary entries about receiving, reading or sending letters, in which the content of those letters is unstated or opaque.</desc>
       </item>
+      <item xml:id="lossAndTheft" sortKey="topic-47">
+         <seg type="public">loss and theft</seg> 
+         <desc>Questions about the location of missing possessions and the likelihood of their recovery, or the identity and whereabouts of thieves.</desc>
+         <desc type="editorial">The person who has lost the item goes inside <gi>cb:topic</gi> - usually the entry’s subject - and if the suspected parties are specified, they (as objects) go in too. This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
       <item xml:id="mindReading" sortKey="topic-59">
          <seg type="public">mind reading</seg> 
          <desc>Another category peculiar to the early days of Napier’s practice, in which he appears to have tested his astrological skills by reading the stars to divine what someone (occasionally himself) was thinking about at a given moment.</desc>
+      </item>
+      <item xml:id="occupation" sortKey="topic-58">
+         <seg type="public">occupation</seg> 
+         <desc>Should the client remain in or change his or her current employment?</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
       </item>
       <item xml:id="paternity" sortKey="topic-60">
          <seg type="public">paternity</seg> 
@@ -869,15 +1022,40 @@
          <desc>Past events in the personal life of the individual being asked about.</desc>
          <desc type="editorial">On occasion a question explicitly addresses a person’s history, but sometimes this topic is inferred in nativities for people who are already dead (since their fortune is clearly not at issue). Where the topic has been inferred, on these grounds or on the basis of remarks made in the judgment, <att>evidence</att> should be supplied.</desc>
       </item>
+      <item xml:id="preaching" sortKey="topic-217">
+         <seg type="public">preaching</seg> 
+         <desc>Questions relating to a priest’s duties.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
+      <item xml:id="preferment" sortKey="topic-62">
+         <seg type="public">preferment</seg> 
+         <desc>Gaining an advantage of some sort from an authority figure. This covers promotion, job offers, intervention in legal cases, and favours of any kind.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
       <item copyOf="#pregnancy"/>
+      <item xml:id="prison" sortKey="topic-64">
+         <seg type="public">prison</seg> 
+         <desc>Questions about the likelihood of someone’s being sent to, or released from, prison.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
+      <item xml:id="punishment" sortKey="topic-220">
+         <seg type="public">punishment</seg> 
+         <desc>Diary notes recording episodes in which Napier punishes a servant.</desc>
+         <desc type="editorial">Written out in full, a typical entry would read (along with the time and date) ‘Iacobus flagellatus’ or something similar, but typically this is abbreviated to ‘Iac flag’, ‘I fl.’, or ‘I f’ and even ‘f I’, which are almost completely unintelligible to the uninitiated. In one or two places Napier himself takes responsibility (‘R N I fl.’ or similar). We have also encountered ‘Iac punitus sev.’ (punished severely), ‘Cast I’ (from ‘castigo’, chastise), and one diary note in which a Greek term also meaning chastise was used (‘παιδευθεις I’). The person in question should be added to <gi>listPerson</gi>, with the forename J if that is all that appears in the entry, or James if the entry has ‘Iac’ (or more). We have not yet established for certain whether the person in question is called Jacob or James (which is rendered Iacobus in Latin), but for now, consistency will help at the name-list editing stage.</desc>
+      </item>
       <item xml:id="religiousExperience" sortKey="topic-57">
          <seg type="public">religious experience</seg> 
          <desc>Napier regularly made cryptic and often emotionally intense notes, almost invariably in Latin, about having experienced divine grace at particular moments - or, conversely, about not having experienced it at particular moments when he had hoped or expected to. Many of these records are accompanied by star-charts, but what he hoped to learn from them remains decidedly opaque.</desc>
           <desc type="editorial">The typical formula runs ‘R. N. bene devotiss. affectus’. These are diary entries, so if there is no chart they should be added to the relevant Untranscribed Napier page instead.</desc>
       </item>
+      <item xml:id="residence" sortKey="topic-66">
+         <seg type="public">residence</seg> 
+         <desc>Whether or not someone should, or will have to, move house.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
       <item xml:id="rumours" sortKey="topic-69">
          <seg type="public">rumours</seg> 
-         <desc>Questions about whether or not a given rumour (usually involving the querent’s partner or associate) is true.</desc>
+         <desc>Questions about whether or not a given rumour (usually involving the querent’s partner or associate) is true, or reports that a given rumour has been confirmed or refuted</desc>
       </item>
       <item xml:id="secretEnemies" sortKey="topic-70">
          <seg type="public">secret enemies</seg> 
@@ -892,6 +1070,11 @@
          <seg type="public">theology</seg> 
          <desc>Diary entries in which Napier records having debated points of theology with acquaintances, where these are accompanied by a star-chart.</desc>
       </item>
+      <item xml:id="treasure" sortKey="topic-80">
+         <seg type="public">treasure</seg> 
+         <desc>Questions about the existence and/or whereabouts of hidden treasure.</desc>
+         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
+      </item>
       <item xml:id="trust" sortKey="topic-82">
          <seg type="public">trust</seg> 
          <desc>Whether or not a given person is to be trusted, either in general or some particular matter.</desc>
@@ -899,6 +1082,11 @@
       <item xml:id="turba" sortKey="topic-83">
          <seg type="public">turba</seg> 
          <desc>Forman’s idiosyncratic Latin term for impending trouble of a non-medical nature.</desc>
+      </item>
+      <item xml:id="unfortunatePlaces" sortKey="topic-241">
+         <seg type="public">unfortunate places</seg> 
+         <desc>Whether a particular location is unlucky or unhealthy for the patient.</desc>
+         <desc type="editorial">Where a particular problem is mentioned as being associated with the place, such as a sort of illness or a problem with money or fertility, the relevant topic(s) for that problem should be supplied too.</desc>
       </item>
       <item xml:id="visits" sortKey="topic-85">
          <seg type="public">visits</seg> 
@@ -978,8 +1166,13 @@
          <desc type="editorial">Note that someone who is hot and cold by turns should be given the topic <val>hotAndCold</val>.</desc>
       </item>
       <item xml:id="speechless" sortKey="topic-213">
-         <seg type="public">cannot speak</seg> 
+         <seg type="public">speech problems</seg> 
          <desc type="editorial">Though where the implication is that the problem is with the mind, the passions topic <val>speechlessPassions</val> should be used.</desc>
+         <desc type="public">Anything from faltering speech to an inability to speak.</desc>
+      </item>
+      <item xml:id="speechProblem" corresp="#speechless">
+         <seg type="editorial">speechProblem</seg>
+         <desc type="editorial">This is for problems with speech that are not ascribed to the mind and that fall short of outright speechlessness: faltering in one’s speech, for instance. Where the problem pertains to the passions, <val>idleTalk</val> is more likely to be appropriate.</desc>
       </item>
       <item xml:id="costive" sortKey="topic-195">
          <seg type="public">constipation</seg> 
@@ -1074,11 +1267,15 @@
       </item>
       <item xml:id="fever" corresp="#cold">
          <seg type="editorial">fever</seg>
-         
+         <desc type="editorial">For references to fever except where it is a malignant fever (see <val>malignantFever</val> below), which seems to be a distinct problem and has been given its own topic.</desc>
       </item>
       <item xml:id="hotAndCold" corresp="#cold">
          <seg type="editorial">hotAndCold</seg>
          <desc type="editorial">For people who are hot and cold by turns.</desc>
+      </item>
+      <item xml:id="malignantFever" corresp="#cold">
+         <seg type="editorial">malignantFever</seg>
+         <desc type="editorial">For explicit references in the question to malignant fever, in whatever language or abbreviated form: ‘malig. fever’, ‘febris malig.’, ‘feb malig’, etc.</desc>
       </item>
       <item xml:id="shivering" corresp="#cold">
          <seg type="editorial">shivering</seg>
@@ -1106,7 +1303,7 @@
       </item>
       <item xml:id="pinched" corresp="#gnawing">
          <seg type="editorial">pinched</seg>
-         <desc type="editorial">Specifically for explicit references to the sensation of being ‘pinched’.</desc>
+         <desc type="editorial">Specifically for explicit references to the sensation of being ‘pinched’. Where the reference is to someone being ‘fairy-pinched’ (a situation characterised by the appearance of unexplained marks on the body) the topic <val>fairyPinched</val> should be used instead.</desc>
       </item>
       <item xml:id="stitch" corresp="#gnawing">
          <seg type="editorial">stitch</seg>
@@ -1150,7 +1347,7 @@
       </item>
       <item xml:id="impotence" sortKey="topic-225">
          <seg type="public">impotence</seg>
-         <desc type="editorial">The expressions ‘impotentia coeundi’ and ‘impotens sine erectione’ and a reference in English to someone who ‘wanteth virility &amp; erection’ have all been encountered so far</desc>
+         <desc type="editorial">The expressions ‘impotentia coeundi’, ‘impotens sine erectione’ and ‘non sentit erectionem virgæ’, and a reference in English to someone who ‘wanteth virility &amp; erection’, have all been encountered so far</desc>
       </item>
       <item xml:id="itch" sortKey="topic-204">
          <seg type="public">itch</seg> 
@@ -1168,7 +1365,7 @@
       </item>
       <item xml:id="lameness" corresp="#cannotStand">
          <seg type="editorial">lameness</seg>
-         <desc type="editorial">This is disability of a limb through injury or defect; it can affect parts other than the legs, so if the part of the body is specified in the question it should always be included as a topic. If someone is ‘lame in his legs’ he should be given the topics <val>lameness</val> and <val>legs</val>.</desc>
+         <desc type="editorial">This is disability of a limb through injury or defect; it can affect parts other than the legs, so if the part of the body is specified in the question it should always be included as a topic. If someone is ‘lame in his legs’ he should be given the topics <val>lameness</val> and <val>legs</val>. Note that this topic should only be recorded when the word ‘lame’ is actually present in the question; if an entry simply specifies that someone cannot use a particular part of the body then the topic <val>noUseOfPart</val> should be used instead.</desc>
       </item>
       <item xml:id="noUseOfPart" corresp="#cannotStand">
          <seg type="editorial">noUseOfPart</seg>
@@ -1249,7 +1446,12 @@
          
       </item>
       <item xml:id="noMilk" sortKey="topic-207">
-         <seg type="public">non-lactation</seg> 
+         <seg type="public">breastfeeding and non-lactation</seg> 
+
+      </item>
+      <item xml:id="suckling" corresp="#noMilk">
+         <seg type="editorial">suckling</seg>
+         <desc type="editorial">Questions around the feeding of a baby, such as whether it is advisable for a mother, or a particular nurse, to suckle the child, or whether an illness is as a result of that feeding. Napier typically uses the terms ‘suckle’ or ‘suck’.</desc>
       </item>
       <item xml:id="pacing" sortKey="topic-208">
          <seg type="public">pacing</seg> 
@@ -1407,79 +1609,9 @@
       </item>
    </list>
    <list sortKey="subtopics9" n="Worldly Affairs">
-      <item xml:id="absentShip" sortKey="topic-2">
-         <seg type="public">absent ship</seg> 
-         <desc>A few consultations (usually by ship owners) concern the welfare or whereabouts of a ship as such, rather than any of the people on board it.</desc>
-         <desc type="editorial">The ship is listed in <gi>listPerson</gi> as <tag>org type="ship"</tag>, and treated in the encoding just as an absent person would be - typically by being made object and being included (as an <gi>org</gi>) within <gi>cb:topic</gi>. This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied. The ship enquired about should be made <gi>cb:object</gi>, with the client as both <gi>cb:querent</gi> and <gi>cb:subject</gi>.</desc>
-      </item>
-      <item xml:id="nonMedicalState" sortKey="topic-87">
-         <seg type="public">condition</seg> 
-         <desc>Questions about someone’s present or future prosperity and/or social standing.</desc>
-         <desc type="editorial">This is specifically employed for entries in which the term ‘state’ is used (in a non-medical sense), and takes <att>resp</att>.</desc>
-      </item>
-      <item xml:id="counsel" sortKey="topic-224">
-         <seg type="public">counsel</seg> 
-         <desc>Entries in which the querent is recorded as having asked for advice or counsel of a non-medical nature.</desc>
-         <desc type="editorial">Note that this is for non-medical entries in which Napier explicitly records a statement such as ‘X sent for my counsell’, and where the word ‘counsel’ (or a synonym) is explicitly used. This is not intended as a catch-all topic for all non-medical questions questions; non-medical questions that are difficult to categorise should be given the closest available topic, or <val>unknown</val>, and a TODO comment tag added recording the problem. An entry that uses the word ‘counsel’ or a synonym should be given this topic unless there is evidence that the question was medical, in which case <val>medicalCounsel</val> should be used instead.</desc>
-      </item>
       <item xml:id="currentAffairs" sortKey="topic-20">
          <seg type="public">current affairs</seg> 
          <desc>Questions put (normally by the practitioner himself) about contemporary events, e.g. whether Spain is likely to invade England this year.</desc>
-      </item>
-      <item xml:id="animalDeathAndDisease" sortKey="topic-6">
-         <seg type="public">death and/or disease of animals</seg> 
-         <desc>These are usually questions about the cause of the problem (witchcraft or foul play?) rather than requests for the animal(s) to be treated.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="financeAndProperty" sortKey="topic-31">
-         <seg type="public">finance and property</seg> 
-         <desc>Financial matters generally, including debts, wills, or the buying and selling of houses.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="legalMatters" sortKey="topic-41">
-         <seg type="public">legal matters</seg> 
-         <desc>Questions concerning lawsuits or mentioning the actual or prospective intervention of legal authorities.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="lossAndTheft" sortKey="topic-47">
-         <seg type="public">loss and theft</seg> 
-         <desc>Questions about the location of missing possessions and the likelihood of their recovery, or the identity and whereabouts of thieves.</desc>
-         <desc type="editorial">The person who has lost the item goes inside <gi>cb:topic</gi> - usually the entry’s subject - and if the suspected parties are specified, they (as objects) go in too. This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="occupation" sortKey="topic-58">
-         <seg type="public">occupation</seg> 
-         <desc>Should the client remain in or change his or her current employment?</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="preaching" sortKey="topic-217">
-         <seg type="public">preaching</seg> 
-         <desc>Questions relating to a priest’s duties.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="preferment" sortKey="topic-62">
-         <seg type="public">preferment</seg> 
-         <desc>Gaining an advantage of some sort from an authority figure. This covers promotion, job offers, intervention in legal cases, and favours of any kind.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="prison" sortKey="topic-64">
-         <seg type="public">prison</seg> 
-         <desc>Questions about the likelihood of someone’s being sent to, or released from, prison.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="punishment" sortKey="topic-220">
-         <seg type="public">punishment</seg> 
-         <desc>Diary notes recording episodes in which Napier punishes a servant.</desc>
-         <desc type="editorial">Written out in full, a typical entry would read (along with the time and date) ‘Iacobus flagellatus’ or something similar, but typically this is abbreviated to ‘Iac flag’, ‘I fl.’, or ‘I f’ and even ‘f I’, which are almost completely unintelligible to the uninitiated. In one or two places Napier himself takes responsibility (‘R N I fl.’ or similar). We have also encountered ‘Iac punitus sev.’ (punished severely), ‘Cast I’ (from ‘castigo’, chastise), and one diary note in which a Greek term also meaning chastise was used (‘παιδευθεις I’). The person in question should be added to <gi>listPerson</gi>, with the forename J if that is all that appears in the entry, or James if the entry has ‘Iac’ (or more). We have not yet established for certain whether the person in question is called Jacob or James (which is rendered Iacobus in Latin), but for now, consistency will help at the name-list editing stage.</desc>
-      </item>
-      <item xml:id="residence" sortKey="topic-66">
-         <seg type="public">residence</seg> 
-         <desc>Whether or not someone should, or will have to, move house.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
-      </item>
-      <item xml:id="treasure" sortKey="topic-80">
-         <seg type="public">treasure</seg> 
-         <desc>Questions about the existence and/or whereabouts of hidden treasure.</desc>
-         <desc type="editorial">This topic can be inferred on the basis of remarks in the untranscribed portion of the entry (judgment and event information); if it is, an appropriate <val>evidence</val> value should be supplied.</desc>
       </item>
       <item xml:id="weather" sortKey="topic-67">
          <seg type="public">weather</seg> 

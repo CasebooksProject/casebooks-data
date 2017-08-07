@@ -14,7 +14,7 @@
 <date when="2015-08-04">04 August 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,9 +40,15 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1618-09-18"><name sameAs="#rwallis">Robert Wallis</name> carried out the original consultation.</change>
+<change xml:id="stage2" notBefore="1606-03-01"><name sameAs="#rnapier">Richard Napier</name> wrote down the entry.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -64,11 +70,12 @@
 <p><time when="09:30:00"/></p>
 <cb:consultation>
 <cb:consultant ref="#rwallis"/>
+<cb:astrologer ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#person1"/>
 <cb:subject ref="#person1" present="no"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#person1"/></cb:topic>
-
+<cb:info type="divination" subtype="dice"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -78,6 +85,8 @@
 <change when="2015-11-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-17">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

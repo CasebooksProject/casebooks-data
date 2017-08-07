@@ -14,7 +14,7 @@
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,9 +41,15 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#practice"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1599-02-12"><name sameAs="#sforman">Simon Forman</name> took the consultation and drew up the original entry.</change>
+<change xml:id="stage2" notBefore="1601-01-19" notAfter="1601-01-20"><name sameAs="#rnapier">Richard Napier</name> wrote out his own version of the entry, with a new judgment.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -61,9 +67,11 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore-custom="1601-01-19T13:00:00" notAfter-custom="1601-01-20T11:25:00" evidence="inferred"/></p>
+<p><date when="1599-02-12" n="Monday"/></p>
+<p><time when="09:15:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier #sforman"/>
+<cb:consultant ref="#sforman"/>
+<cb:astrologer ref="#sforman #rnapier"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#mj"/>
 <cb:subject ref="#mj" present="unclear"/>
@@ -79,6 +87,8 @@
 <change when="2012-03-23">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-04-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

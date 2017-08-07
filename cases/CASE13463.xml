@@ -14,7 +14,7 @@
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uS</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#election"/>
 </textClass>
 <particDesc>
@@ -61,6 +61,7 @@
 <cb:subject ref="#rnapier" present="yes"/>
 <cb:topic key="whetherToPractise"><person sameAs="#rnapier" resp="#mhawkins"/></cb:topic>
 <cb:info type="event" subtype="previousConsultation"/>
+<cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -71,6 +72,8 @@
 <change when="2013-09-06">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -78,7 +81,8 @@
 </facsimile>
 <text xml:lang="la">
 <body><div>
-<p><lb/>Qu&aelig;ro 1598 febr: 1. &WednesdayN; <lb/>hor 8. quod <del type="strikethrough">Asc</del> sign<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> ascendat <lb/>et an &vVowel;tile sit medicin<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> sumere <lb/>sumpsi circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 9. <del type="strikethrough">49</del> 45. mi a. m</p>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Qu&aelig;ro 1598 febr: 1. &WednesdayN; <lb/>hor 8. quod <del type="strikethrough">Asc</del> sign<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> ascendat <lb/>et an &vVowel;tile sit medicin<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> sumere<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><lb/>sumpsi circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 9. <del type="strikethrough">49</del> 45. mi a. m</p><anchor xml:id="subsequentEventInfoEnd"/>
 </div>
 &astroChart;
 </body>

@@ -14,7 +14,7 @@
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -62,7 +62,10 @@
 <org xml:id="uox">
 <orgName>University of Oxford</orgName>
 </org>
-<listRelation><relation name="servant" active="#anon" passive="#nl"/><relation name="proctor" active="#nl" passive="#uox" notAfter="1603-05-17"/></listRelation>
+<org xml:id="cco">
+<orgName>Christ Church, Oxford</orgName>
+</org>
+<listRelation><relation name="servant" active="#anon" passive="#nl"/><relation name="proctor" active="#nl" passive="#uox" notAfter="1603-05-17"/><relation name="collegeMember" active="#nl" passive="#cco"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -76,7 +79,7 @@
 <cb:messenger ref="#anon"/>
 <cb:item type="letter"/>
 <cb:topic key="sickness" resp="#rnapier"><person sameAs="#nl"/></cb:topic>
-<cb:topic key="nonDizDisease"><person sameAs="#nl"/></cb:topic>
+<cb:topic key="unidentifiedMedical"><person sameAs="#nl"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -85,6 +88,7 @@
 <change when="2012-10-04">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2012-10-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

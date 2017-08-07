@@ -14,7 +14,7 @@
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">2, 4B</bibl>
+<bibl type="positionOnPage">bL, bR-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -33,6 +33,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<encodingDesc>
+&wholeEntry;
+</encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#gjames">Gerence James</handNote>
@@ -41,9 +44,15 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1608-01-21"><name sameAs="#gjames">Gerence James</name> held the consultation and wrote the question and judgment.</change>
+<change xml:id="stage2"><name sameAs="#rnapier">Richard Napier</name> added to the question, wrote a description of the urine and drew a figure.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -64,13 +73,14 @@
 <p><date when="1608-01-21" n="Thursday"/></p>
 <p><time when="10:45:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier #gjames"/>
+<cb:consultant ref="#gjames"/>
+<cb:astrologer ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#f" evidence="internal"/>
 <cb:subject ref="#f" present="no"/>
 <cb:item type="urine"/>
-<cb:topic key="treatment" evidence="internal"><person sameAs="#f"/></cb:topic>
-<cb:topic key="liveOrDieMedical" evidence="internal" cert="medium"><person sameAs="#f"/></cb:topic>
+<cb:topic key="treatment"><person sameAs="#f"/></cb:topic>
+<cb:topic key="liveOrDieMedical" cert="medium"><person sameAs="#f"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 </cb:consultation>
@@ -81,6 +91,8 @@
 <change when="2015-01-29">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2015-03-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-17">Creation of text documented by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,13 +100,18 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/>My Lady &ff;armo<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> sent her &vVowel;rine <lb/>&IConsonant;an: 21 &Thursday; ho. 10. 45 a m. 1608</p>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p change="#stage1"><lb/><handShift new="#gjames"/>My Lady &ff;armo<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> sent her &vVowel;rine <lb/>&IConsonant;an: 21 &Thursday; ho. 10. 45 a m. 1608</p><anchor xml:id="questionEnd1"/>
+<milestone unit="judgment" spanTo="#judgmentEnd1"/><p change="#stage1"><lb/>A payne in her left kidney.</p><anchor xml:id="judgmentEnd1"/>
+<milestone unit="urineInfo" spanTo="#urineInfoEnd"/><p change="#stage2"><lb/><handShift new="#rnapier"/>&vVowel;rine hath fat sw<choice><orig><hi rend="overline">y</hi></orig><reg>ym</reg></choice>ming in the <lb/>top.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/>feareth a c<choice><orig>&oover;</orig><reg>on</reg></choice>s<choice><orig>&uover;</orig><reg>um</reg></choice>ption be<lb/>cause shee waxeth leane not <lb/>sick would have my opinion <lb/>but I was not at home <lb/>asketh wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> asses milke be not go<unclear cert="medium" reason="faded">od&slash;</unclear></p>
 </div>
-
 <div><cb xml:id="colB" n="b"/>
-<p><lb/><handShift new="#rnapier"/>lady farmer h 10. 45 <lb/>&IConsonant;an. 21 &Thursday; ho 10 45 &antm; <lb/>1608</p>
+<p change="#stage2"><lb/>lady farmer h 10. 45 <lb/>&IConsonant;an. 21 &Thursday; ho 10 45 &antm; <lb/>1608</p>
 </div>
 &astroChart;
+<div>
+<p change="#stage2"><lb/>she would know wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>she may not stay to the <lb/>springe</p><anchor xml:id="questionEnd2"/>
+</div>
 </body>
 </text>
 </TEI>

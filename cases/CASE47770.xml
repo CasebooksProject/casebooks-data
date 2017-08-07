@@ -14,7 +14,7 @@
 <date when="2015-08-04">04 August 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,7 +41,7 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -58,6 +58,9 @@
 <persName><surname evidence="inferred" type="married">Bouth</surname></persName>
 <sex value="2">F</sex>
 </person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
 <listRelation>
 <relation name="wife" active="#b2" passive="#b1"/>
 </listRelation>
@@ -69,10 +72,11 @@
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#b1"/>
-<cb:subject ref="#b1" present="unclear"/>
-<cb:subject ref="#b2" present="no"/>
-<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#b1"/></cb:topic>
+<cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#b1 #b2" present="no"/>
+<cb:object ref="#b2"/>
+<cb:topic key="troubled"><person sameAs="#b1"/></cb:topic>
+<cb:topic key="headPassions"><person sameAs="#b1"/></cb:topic>
 <cb:topic key="childbirth"><person sameAs="#b2"/></cb:topic>
 
 </cb:consultation>
@@ -83,6 +87,7 @@
 <change when="2015-08-21">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-11-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,7 +95,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Bouth <unclear cert="low" reason="hand">hering</unclear> <lb/><unclear cert="low" reason="hand">oft</unclear> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> his wife <lb/>no <unclear cert="low" reason="hand">mistation</unclear> in <lb/>her court took<del type="strikethrough">ed</del> it <lb/>impatiently &amp; was <lb/>troubled in his hed <lb/>&amp; could not rest <lb/>well <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> night <lb/>Octob 29 &Thursday; h. <lb/>5. <del type="strikethrough">30</del> 20 p m <lb/>1618. <lb/><foreign xml:lang="la">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> de eius <lb/>&vVowel;xore quando <lb/>deo volente parituit</foreign></p>
+<p><lb/>M<hi rend="superscript">r</hi> Bouth <unclear cert="low" reason="hand">hering</unclear> <lb/><choice><sic>of</sic><corr type="noText"/></choice> <choice><orig><subst><del type="over">h</del><add place="over">y</add></subst><hi rend="superscript">t</hi></orig><reg>that</reg></choice> his wife <lb/>is mistaken in <lb/>her c<unclear cert="low" reason="hand">ere</unclear>t took<del type="strikethrough">ed</del> it <lb/>impatiently &amp; was <lb/>troubled in his hed <lb/>&amp; could not rest <lb/>well <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> night <lb/>Octob 29 &Thursday; h. <lb/>5. <del type="strikethrough">30</del> 20 p m <lb/>1618. <lb/><foreign xml:lang="la">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> de eius <lb/>&vVowel;xore quando <lb/>deo volente parturit</foreign></p>
 </div>
 &astroChart;
 </body>

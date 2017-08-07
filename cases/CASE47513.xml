@@ -14,7 +14,7 @@
 <date when="2015-08-04">04 August 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">2B, 4B</bibl>
+<bibl type="positionOnPage">bL-2, bR-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -56,16 +56,15 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1618-09-22" n="Tuesday"/></p>
-<p><time notBefore="21:20:00"/></p>
+<p><date notBefore-custom="1618-09-22T21:20:00" notAfter-custom="1618-09-23T17:20:00" evidence="inferred"/></p>
+
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="practitionerVisitsQuerent"/>
 <cb:querent ref="#b"/>
-<cb:subject ref="#b" present="unclear"/>
-<cb:topic key="sicknessPassions" evidence="external" resp="#rnapier"><person sameAs="#b"/></cb:topic>
-<cb:judgment/>
+<cb:subject ref="#b" present="yes"/>
+<cb:topic key="sicknessPassions" resp="#rnapier"><person sameAs="#b"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
 </settingDesc>
@@ -75,6 +74,8 @@
 <change when="2015-08-11">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-11-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-11-28">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -82,7 +83,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><del type="strikethrough">I returned home to</del> I went fr<choice><orig>&oover;</orig><reg>om</reg></choice> <placeName>luton Hoe</placeName> to <gap extent="1" unit="words" reason="binding"/> <lb/>being intreated &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> sept 22 <supplied reason="binding">h 9</supplied> <lb/>20 p m 1618 to see M<hi rend="superscript">r</hi> Bouth who was <lb/>sick</p>
+<p><lb/><del type="strikethrough">I returned home to</del> I went fr<choice><orig>&oover;</orig><reg>om</reg></choice> <placeName>luton Hoe</placeName> to l<unclear cert="medium" reason="hand">ei</unclear>g<gap extent="5" unit="chars" reason="binding"/> <lb/>being intreated &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> sept 22 h 20 <subst><del type="over">an</del><add place="over">p</add></subst> m 1618 to see M<hi rend="superscript">r</hi> Bouth who was extre<supplied reason="binding" cert="medium">me</supplied> <lb/>sick</p>
 </div>
 &astroChart;
 <cb xml:id="colB" n="b"/>

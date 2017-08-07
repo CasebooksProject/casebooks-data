@@ -14,7 +14,7 @@
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3B</bibl>
+<bibl type="positionOnPage">uR-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,7 +41,7 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -84,6 +84,8 @@
 <change when="2013-03-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2014-01-14">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,12 +93,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
+<milestone unit="question" spanTo="#questionEnd1"/>
 <p><lb/>Richard Atterbury <rs type="address" xml:id="address1">of Haversham</rs> <lb/>90 y. March. 26 &Tuesday; ho. 6. 45 a m</p>
-<p><lb/>A great cough hath troubled him <lb/>ever since sonday was sevennight <lb/>a high coloured water</p>
+<p><lb/>A great cough hath troubled him <lb/>ever since sonday was sevennight<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/><lb/>a high coloured water</p><anchor xml:id="urineInfoEnd"/>
 </div>
 &astroChart;
 <div>
-<p><lb/><foreign xml:lang="la">qu&aelig;rit filius e&jVowel;us &vVowel;t<choice><orig>&crossedr;</orig><reg>rum</reg></choice> evadet</foreign></p>
+<milestone unit="question" spanTo="#questionEnd2"/>
+<p><lb/><foreign xml:lang="la">qu&aelig;rit filius e&jVowel;us &vVowel;t<choice><orig>&crossedr;</orig><reg>rum</reg></choice> evadet</foreign></p><anchor xml:id="questionEnd2"/>
 </div>
 </body>
 </text>

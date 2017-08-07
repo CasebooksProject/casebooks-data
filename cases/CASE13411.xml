@@ -14,7 +14,7 @@
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uS</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,9 +41,15 @@
 <language ident="la">Latin</language>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1598-01-21"><name sameAs="#rnapier">Richard Napier</name> held the consultation and wrote down the entry.</change>
+<change xml:id="stage2" notBefore="1598-01-22"><name sameAs="#rnapier">Richard Napier</name> added information about the patient&rsquo;s death.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -81,6 +87,8 @@
 <change when="2012-02-22">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-03-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,7 +96,8 @@
 </facsimile>
 <text xml:lang="la">
 <body><div>
-<p><lb/>Rich Phylip <choice><orig>&crossedp;</orig><reg>pro</reg></choice> &vVowel;xore <del type="strikethrough">qua</del> qu&aelig;rit <lb/>morb<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>: <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> potius velit &vVowel;t ad <choice><sic><unclear cert="low" reason="hand">vx</unclear></sic><corr type="noText"/></choice> &vVowel;xor<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice> eius venir<choice><orig>&eover;</orig><reg>em</reg></choice>. 1598. &IConsonant;an. <lb/>die 21 &SaturdayN;. h 8<hi rend="superscript">a</hi>. 15. mi. <foreign xml:lang="en">shee <lb/>died the <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">n</add></subst>ext day being <rs type="date" xml:id="date1">22 of &IConsonant;an.</rs> <lb/><rs type="time" xml:id="time1">about 8 of <choice><orig>ant merid</orig><reg>am</reg></choice></rs>.</foreign></p>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Rich Phylip <choice><orig>&crossedp;</orig><reg>pro</reg></choice> &vVowel;xore <del type="strikethrough">qua</del> qu&aelig;rit <lb/>morb<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>: <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> potius velit &vVowel;t ad <choice><sic><unclear cert="low" reason="hand">vx</unclear></sic><corr type="noText"/></choice> &vVowel;xor<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice> eius venir<choice><orig>&eover;</orig><reg>em</reg></choice>. 1598. &IConsonant;an. <lb/>die 21 &SaturdayN;. h 8<hi rend="superscript">a</hi>. 15. mi.<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><foreign xml:lang="en">shee <lb/>died the <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">n</add></subst>ext day being <rs type="date" xml:id="date1">22 of &IConsonant;an.</rs> <lb/><rs type="time" xml:id="time1">about 8 of <choice><orig>ant merid</orig><reg>am</reg></choice></rs>.</foreign></p><anchor xml:id="subsequentEventInfoEnd"/>
 </div>
 &astroChart;
 </body>

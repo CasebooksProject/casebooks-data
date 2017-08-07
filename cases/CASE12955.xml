@@ -14,7 +14,7 @@
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,8 +40,8 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#interrogation"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationTreatment"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -54,9 +54,11 @@
 <sex value="1">M</sex>
 <death><date notBefore="1600-01-01" notAfter="1600-01-02" cert="medium" sameAs="#date1"/></death>
 </person>
-<org xml:id="suo">
-<orgName>The surgeons in Oxford</orgName>
-</org>
+<personGrp xml:id="suo">
+<sex value="1" cert="medium" evidence="conjecture">M</sex>
+<occupation>Surgeon</occupation>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</personGrp>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -68,7 +70,7 @@
 <cb:subject ref="#rnapier" present="yes"/>
 <cb:object ref="#tl #suo"/>
 <cb:topic key="mad"><person sameAs="#tl"/></cb:topic>
-<cb:topic key="treatment"><org sameAs="#suo"/><person sameAs="#tl"/></cb:topic>
+<cb:topic key="treatment"><personGrp sameAs="#suo"/><person sameAs="#tl"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -79,6 +81,7 @@
 <change when="2013-09-05">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,7 +89,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The surgions in <placeName>Oxford</placeName> <lb/>began to cut M<hi rend="superscript">r</hi> Thomas <lb/>Longfilds head &amp; afterward <lb/>seered his scull &amp; after<lb/>ward Did Drill his skull <lb/>that is poure &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> his <lb/>skull some corrosives that <lb/>so they <choice><sic>may</sic><corr type="noText"/></choice> <subst><del type="over">g</del><add place="over">m</add></subst>might get <lb/>out a bladder <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> they <lb/>thought caused his mad<lb/>nes. <del type="strikethrough">but he</del> <choice><sic>the</sic><corr>they</corr></choice> beg<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>to cut his head the 5 <lb/>of Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. &WednesdayN; h p m <lb/>3. 30. mi. 1599. but <lb/>he dyed <rs type="date" xml:id="date1">the weddensday <lb/>moneth after or the <lb/>tuesday</rs></p>
+<p><lb/>The surgions <rs type="address" xml:id="address1">in Oxford</rs> <lb/>began to cut M<hi rend="superscript">r</hi> Thomas <lb/>Longfilds head &amp; afterward <lb/>seered his scull &amp; after<lb/>ward Did Drill his skull <lb/>that is poure &vVowel;pp<choice><orig>&oover;</orig><reg>on</reg></choice> his <lb/>skull some corrosives that <lb/>so they <choice><sic>may</sic><corr type="noText"/></choice> <subst><del type="over">g</del><add place="over">m</add></subst>ight get <lb/>out a bladder <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> they <lb/>thought caused his mad<lb/>nes. <del type="strikethrough">but he</del> <choice><sic>the</sic><corr>they</corr></choice> beg<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>to cut his head the 5 <lb/>of Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. &WednesdayN; h p m <lb/>3. 30. mi. 1599. but <lb/>he dyed <rs type="date" xml:id="date1">the weddensday <lb/>moneth after or the <lb/>tuesday</rs></p>
 </div>
 &astroChart;
 </body>

@@ -14,7 +14,7 @@
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -42,7 +42,7 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -67,7 +67,10 @@
 <sex value="1">M</sex>
 <occupation>Shipmaster</occupation>
 </person>
-<listRelation><relation name="wife" active="#ed" passive="#d1"/></listRelation>
+<org xml:id="ind" type="ship">
+<orgName>The Indian of London</orgName>
+</org>
+<listRelation><relation name="wife" active="#ed" passive="#d1"/><relation name="shipmaster" active="#d2" passive="#ind"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -91,6 +94,8 @@
 <change when="2011-03-22">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2011-06-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-04-25">Coding of ships updated by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,7 +103,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elizab. Death <rs type="address" xml:id="address1">of <lb/>Smithfild bards</rs> a gros<lb/>cers wif <foreign xml:lang="la">fecit <choice><sic>inquision<choice><orig>&eover;</orig><reg>em</reg></choice></sic><corr>inquisision<choice><orig>&eover;</orig><reg>em</reg></choice></corr></choice></foreign> <lb/>1601. the x&jVowel; of aprill to know <lb/>wher <name type="ship">the Indian of <placeName>London</placeName></name><note place="pageTop"><del type="strikethrough">Rich</del> <del type="cancelled"><unclear reason="del" cert="low" resp="#rralley">du<gap reason="del" extent="3" unit="chars"/></unclear></del> dawes <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice></note> <lb/>shall tak any price or noe &amp; <lb/>howe he shall sped a 15 &past; 11. &Saturday;.</p>
+<p><lb/>Elizab. Death <rs type="address" xml:id="address1">of <lb/>Smithfild bards</rs> a gros<lb/>cers wif <foreign xml:lang="la">fecit <choice><sic>inquision<choice><orig>&eover;</orig><reg>em</reg></choice></sic><corr>inquisision<choice><orig>&eover;</orig><reg>em</reg></choice></corr></choice></foreign> <lb/>1601. the x&jVowel; of aprill to know <lb/>wher the Indian of <placeName>London</placeName><note place="pageTop"><del type="strikethrough">Rich</del> <del type="cancelled"><unclear reason="del" cert="low" resp="#rralley">du<gap reason="del" extent="3" unit="chars"/></unclear></del> dawes <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice></note> <lb/>shall tak any price or noe &amp; <lb/>howe he shall sped a 15 &past; 11. &Saturday;.</p>
 </div>
 &astroChart;
 </body>

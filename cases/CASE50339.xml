@@ -14,7 +14,7 @@
 <date when="2015-10-10">10 October 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -36,17 +36,29 @@
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rwallis">Robert Wallis</handNote>
+
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1620-02-29"><name sameAs="#rwallis">Robert Wallis</name> held the consultation, wrote the question and drew the figure.</change>
+<change xml:id="stage2" notBefore="1620-03-01"><name sameAs="#rnapier">Richard Napier</name> added treatment.</change>
+<change xml:id="stage3"><name sameAs="#rnapier">Richard Napier</name> added information about subsequent events.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rwallis">
 <persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="g">
@@ -62,6 +74,7 @@
 <p><time when="09:40:00"/></p>
 <cb:consultation>
 <cb:consultant ref="#rwallis"/>
+<cb:astrologer ref="#rwallis #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#g"/>
 <cb:subject ref="#g" present="unclear"/>
@@ -82,6 +95,7 @@
 <change when="2015-11-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-01-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

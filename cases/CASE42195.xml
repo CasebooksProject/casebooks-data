@@ -14,7 +14,7 @@
 <date when="2015-04-24">24 April 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,8 +40,8 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#interrogation"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationAstronomical"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -49,6 +49,9 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
+<personGrp xml:id="anon" evidence="internal">
+<sex value="0">U</sex>
+</personGrp>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -58,7 +61,8 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="unknown" reason="notGiven"><person sameAs="#rnapier"/></cb:topic>
+<cb:object ref="#anon"/>
+<cb:topic key="unspecifiedMedical" evidence="internal" cert="medium"><personGrp sameAs="#anon"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -68,6 +72,7 @@
 <change when="2015-05-18">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-09-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

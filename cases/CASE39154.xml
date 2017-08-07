@@ -14,7 +14,7 @@
 <date when="2015-01-09">09 January 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1B</bibl>
+<bibl type="positionOnPage">uL-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,13 +40,23 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1612-02-05"><name sameAs="#gjames">Gerence James</name> carried out the original consultation and wrote out the question, judgment and treatment.</change>
+<change xml:id="stage2" notBefore="1612-02-06"><name sameAs="#rnapier">Richard Napier</name> added a note about consulting an angel.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
 <persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="du">
@@ -68,6 +78,7 @@
 <p><time when="14:15:00"/></p>
 <cb:consultation>
 <cb:consultant ref="#gjames"/>
+<cb:astrologer ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#du"/>
 <cb:subject ref="#du" present="unclear"/>
@@ -83,6 +94,8 @@
 <change when="2015-10-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-02-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

@@ -14,7 +14,7 @@
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,13 +40,23 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1605-05-22"><name sameAs="#gjames">Gerence James</name> carried out the original consultation and wrote out an entry.</change>
+<change xml:id="stage2" when="1605-07-17"><name sameAs="#rnapier">Richard Napier</name> reproduced the entry with his own judgment.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gjames" evidence="external">
+<persName><forename>Gerence</forename> <surname>James</surname></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="wm">
@@ -61,7 +71,8 @@
 <p><date when="1605-05-22" n="Wednesday"/></p>
 <p><time when="12:10:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier"/>
+<cb:consultant ref="#gjames" evidence="external"/>
+<cb:astrologer ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wm"/>
 <cb:subject ref="#wm" present="unclear"/>
@@ -75,6 +86,8 @@
 <change when="2014-02-11">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-02-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-03">Coding revised to allow for successive stages of composition by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

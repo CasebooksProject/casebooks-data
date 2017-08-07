@@ -14,7 +14,7 @@
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">2B</bibl>
+<bibl type="positionOnPage">bS</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -33,6 +33,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<encodingDesc>
+&wholeEntry;
+</encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -40,8 +43,8 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationTreatment"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -57,12 +60,12 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1599-03-24" n="Saturday"/></p>
-<p><time when="09:15:00"/></p>
+<p><date when="1599-03-24" n="Saturday" cert="medium" evidence="conjecture"/></p>
+<p><time notBefore="09:15:00" evidence="inferred"/></p>
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#ww"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
 <cb:subject ref="#ww" present="unclear"/>
 <cb:topic key="burning"><person sameAs="#ww"/></cb:topic>
 <cb:treatment/>
@@ -76,14 +79,16 @@
 <change when="2011-10-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-</revisionDesc>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-15">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change></revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="afs0221.jpg" url="afs0221.jpg" n="105r"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Itm&flourish; I gave Will: Wotten <rs type="address" xml:id="address1">of Tyringh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/>for his former phisick helpe him of his burning &amp; to make water <lb/>but gave him never a stoole I gave him 24 of Marti&jVowel; <choice><orig>die <lb/>&SaturnSymbol;</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> hor 9. 15. 9 dr of the elect of roses a dra of m<choice><orig>&aover;</orig><reg>an</reg></choice>na an onc <lb/>of rubarbe 2 ounc of the comon decoct 6 g of sc &amp; 6 of sc<gap reason="blot" extent="2" unit="chars"/> <lb/>&vVowel;npayd.</p>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Itm&flourish; I gave Will: Wotten <rs type="address" xml:id="address1">of Tyringh<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/>for his former phisick helpe him of his burning &amp; to make water <lb/>but gave him never a stoole. I gave him 24 of Marti&jVowel; <choice><orig>die <lb/>&SaturnSymbol;</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> hor 9. 15.<anchor xml:id="questionEnd"/> <milestone unit="treatment" spanTo="#treatmentEnd"/>9 dr of the elect of roses a dra of m<choice><orig>&aover;</orig><reg>an</reg></choice>na an onc <lb/>of rubarbe 2 ounc of the comon decoct 6 g of sc &amp; 6 of sc<gap reason="blot" extent="2" unit="chars"/><anchor xml:id="treatmentEnd"/> <milestone unit="financialInfo" spanTo="#financialInfoEnd"/><lb/>&vVowel;npayd.</p><anchor xml:id="financialInfoEnd"/>
 </div>
 </body>
 </text>

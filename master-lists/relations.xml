@@ -452,11 +452,12 @@
         <re type="inverse" corresp="#mother-in-law_father-in-law"/>
       </entry>
 
-      <entry xml:id="ecclesiasticalSubordinate">
+      <entry xml:id="ecclesiasticalSubordinate" type="editors">
         <form n="ecclesiasticalSubordinate">
           <orth>ecclesiastical subordinate</orth>
           <gen>m</gen>
           <number>singular</number>
+          <desc type="editorial">This is the relationship between an ecclesiastic and his superior (another ecclesiastic) within the Church hierarchy. It should be used where it is not possible to supply a more specific value (these are <val>chaplainRank</val>, <val>curateRank</val>, <val>vicarRank</val> and <val>registrar</val>).</desc>
         </form>
         <form n="ecclesiasticalSubordinate">
           <orth>ecclesiastical subordinate</orth>
@@ -1666,6 +1667,7 @@
           <orth>purser</orth>
           <gen>m</gen>
           <number>singular</number>
+          <desc type="editorial">On the main site this has been used for a ship’s purser; in that sense it has been replaced by the <att>name</att> value <val>shipsPurser</val> below, which should be used instead.</desc>
         </form>
         <form n="purser">
           <orth>purser</orth>
@@ -1674,6 +1676,29 @@
         </form>
         <form n="purser">
           <orth>purser</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+        
+        <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+        <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+        <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+        <re type="inverse" corresp="#ship"/>
+      </entry>
+
+      <entry xml:id="shipsPurser" type="editors">
+        <form n="shipsPurser">
+          <orth>ship’s purser</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+        <form n="shipsPurser">
+          <orth>ship’s purser</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+        <form n="shipsPurser">
+          <orth>ship’s purser</orth>
           <gen>n</gen>
           <number>singular</number>
         </form>
@@ -1955,6 +1980,7 @@
           <orth>proctor</orth>
           <gen>m</gen>
           <number>singular</number>
+          <desc type="editorial">The relationship between an organisation or institution’s proctor and that organisation or institution (encoded as an <gi>org</gi>)</desc>
         </form>
         <form n="proctor">
           <orth>proctor</orth>
@@ -2282,6 +2308,29 @@
       <re type="inverse" corresp="#betrothed"/>
    </entry>
 
+   <entry xml:id="bishopSuperior">
+      <form n="bishopSuperior">
+         <orth>bishop</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="bishopSuperior">
+         <orth>bishop</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="bishopSuperior">
+         <orth>bishop</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#ecclesiasticalSubordinate"/>
+   </entry>
+
    <entry xml:id="butcher" type="editors">
       <form n="butcher">
          <orth>butcher</orth>
@@ -2310,6 +2359,7 @@
          <orth>butler</orth>
           <gen>m</gen>
           <number>singular</number>
+         <desc type="editorial">Note that this is for the relationship between a butler and the master or mistress of a household; for butlers who work in a college <val>collegeButler</val> should be used instead. If an entry specifies that someone is a butler to another kind of <gi>org</gi>, the senior editors should be consulted.</desc>
         </form>
       <form n="butler">
          <orth>butler</orth>
@@ -2364,6 +2414,29 @@
         </form>
       <form n="carter">
          <orth>carter</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#mistress_master"/>
+   </entry>
+
+   <entry xml:id="caterer" type="editors">
+      <form n="caterer">
+         <orth>caterer</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="caterer">
+         <orth>caterer</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="caterer">
+         <orth>caterer</orth>
           <gen>n</gen>
           <number>singular</number>
         </form>
@@ -2430,6 +2503,41 @@
        <number>plural</number>
      </form>
       <re type="inverse" corresp="#employer"/>
+   </entry>
+
+   <entry xml:id="cheeseMan" type="editors">
+      <form n="cheeseMan">
+         <orth>cheese man</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="cheeseWoman">
+         <orth>cheese woman</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="cheeseWoman_cheeseMman">
+         <orth>cheese woman/cheese man</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form>
+       <orth>cheese men</orth>
+       <gen>m</gen>
+       <number>plural</number>
+     </form>
+     <form>
+       <orth>cheese women</orth>
+       <gen>f</gen>
+       <number>plural</number>
+     </form>
+     <form>
+       <orth>cheese women/cheese men</orth>
+       <gen>n</gen>
+       <number>plural</number>
+     </form>
+      <re type="inverse" corresp="#customer"/>
    </entry>
 
    <entry xml:id="clerk" type="editors">
@@ -2546,6 +2654,219 @@
       <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
       <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
       <re type="inverse" corresp="#colleague"/>
+   </entry>
+
+   <entry xml:id="college">
+      <form n="college">
+         <orth>college</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="college">
+         <orth>college</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="college">
+         <orth>college</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#collegeMember"/>
+   </entry>
+
+   <entry xml:id="collegeButler" type="editors">
+      <form n="collegeButler">
+         <orth>butler</orth>
+          <gen>m</gen>
+          <number>singular</number>
+          <desc type="editorial">This is specifically for butlers who work for a college, though it is possible that it will eventually need to be expanded to cover <gi>org</gi>s more generally. If someone is described as being the butler for some organisation other than a college, the senior editors should be consulted.</desc>
+        </form>
+      <form n="collegeButler">
+         <orth>butler</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeButler">
+         <orth>butler</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#collegeEmployer"/>
+   </entry>
+
+   <entry xml:id="collegeEmployer">
+      <form n="collegeEmployer">
+         <orth>employer</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeEmployer">
+         <orth>employer</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeEmployer">
+         <orth>employer</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#collegeEmployer"/>
+   </entry>
+
+   <entry xml:id="collegeFellow" type="editors">
+      <form n="collegeFellow">
+         <orth>fellow</orth>
+          <gen>m</gen>
+          <number>singular</number>
+         <desc>The relationship between a fellow of a university college and the college (encoded as an <gi>org</gi>)</desc>
+        </form>
+      <form n="collegeFellow">
+         <orth>fellow</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeFellow">
+         <orth>fellow</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#college"/>
+   </entry>
+
+   <entry xml:id="collegeHead" type="editors">
+      <form n="collegeHead">
+         <orth>head</orth>
+          <gen>m</gen>
+          <number>singular</number>
+         <desc>The relationship between the head of a university college, whether described as a ‘warden’, a ‘master’ or a ‘president’, and the college of which he is head (encoded as an <gi>org</gi>)</desc>
+        </form>
+      <form n="collegeHead">
+         <orth>head</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeHead">
+         <orth>head</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#college"/>
+   </entry>
+
+   <entry xml:id="collegeMember" type="editors">
+      <form n="collegeMember">
+         <orth>member</orth>
+          <gen>m</gen>
+          <number>singular</number>
+         <desc type="editorial">This is the relationship between a member of a university college and the college (encoded as an <gi>org</gi>). It covers people described as scholars of a particular college, or who are simply described as being ‘of’ a college, where that is clearly an institutional affiliation rather than just an address. (Note that if someone is described as a ‘fellow’ of a college then <val>collegeFellow</val> should be used instead, if the description is ‘student’ then <val>collegeStudent</val>, and if someone is a ‘warden’ or ‘master’ of a college then <val>collegeHead</val> should be used.) In many cases, a statement that someone is ‘of X college’ is giving both their instituational affiliation and their address, but there are other instances in which someone described as a member of the college does not seem to live there. There are also entries for servants or employees at colleges or people who would not otherwise have been considered members (including to date one woman); those people should be given the college as a <gi>residence</gi> but not this relation. As a rule of thumb, a man whose title is given as ‘Mr’ (or something of higher status) and who is described as ‘of’ a college is probably a member; a man who is not given a title or whose title is given as ‘Goodman’ is probably not a member, though it is worth checking other entries to see how he is described elsewhere. Ultimately most decisions will involve editorial judgment, comparing the entry in question with previously edited cases and using online lists and databases, in particular <ref target="http://www.british-history.ac.uk/alumni-oxon/1500-1714">Alumni Oxonienses</ref> for Oxford and <ref target="http://venn.lib.cam.ac.uk/Documents/acad/2016/search-2016.html">ACAD</ref> for Cambridge.</desc>
+        </form>
+      <form n="collegeMember">
+         <orth>member</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeMember">
+         <orth>member</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#college"/>
+   </entry>
+
+   <entry xml:id="collegeServant">
+      <form n="collegeServant">
+         <orth>servant</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeServant">
+         <orth>servant</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeServant">
+         <orth>servant</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#collegeEmployer"/>
+   </entry>
+
+   <entry xml:id="collegeStudent">
+      <form n="collegeStudent">
+         <orth>student</orth>
+          <gen>m</gen>
+          <number>singular</number>
+         <desc type="editorial">The relationship between a student at (or ‘of’) a particular university college, and the college (encoded as an <gi>org</gi>). Where the relationship specified is not explicitly ‘student’ (or a Latin equivalent), <val>collegeMember</val> or <val>collegeFellow</val> (or <val>collegeHead</val>) should be used instead.</desc>
+        </form>
+      <form n="collegeStudent">
+         <orth>student</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="collegeStudent">
+         <orth>student</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#college"/>
+   </entry>
+
+   <entry xml:id="commissarySubordinate">
+      <form n="commissarySubordinate">
+         <orth>commissary</orth>
+          <gen>m</gen>
+          <number>singular</number>
+         <desc type="editorial">The relationship between a commissary and the bishop for whom that commissary works</desc>
+        </form>
+      <form n="commissarySubordinate">
+         <orth>commissary</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="commissarySubordinate">
+         <orth>commissary</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#bishopSuperior"/>
    </entry>
 
    <entry xml:id="cookmaid" type="editors">
@@ -2852,6 +3173,53 @@
       <re type="inverse" corresp="#employer"/>
    </entry>
 
+   <entry xml:id="employeeSubordinate" type="editors">
+      <form n="employeeSubordinate">
+         <orth>fellow employee (subordinate)</orth>
+          <gen>m</gen>
+          <number>singular</number>
+          <desc type="editorial">The relationship between an employee and another employee who is senior to him or her; often the term used is that person X is ‘under’ person Y.</desc>
+        </form>
+      <form n="employeeSubordinate">
+         <orth>fellow employee (subordinate)</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="employeeSubordinate">
+         <orth>fellow employee (subordinate)</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#employeeSuperior"/>
+   </entry>
+
+   <entry xml:id="employeeSuperior">
+      <form n="employeeSuperior">
+         <orth>fellow employee (superior)</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="employeeSuperior">
+         <orth>fellow employee (superior)</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="employeeSuperior">
+         <orth>fellow employee (superior)</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#employeeSubordinate"/>
+   </entry>
+
    <entry xml:id="falconer" type="editors">
       <form n="falconer">
          <orth>falconer</orth>
@@ -3048,6 +3416,29 @@
       <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
       <re type="inverse" corresp="#ward"/>
    </entry>
+
+      <entry xml:id="half-sibling" type="editors">
+        <form n="half-brother">
+          <orth>half-brother</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+        <form n="half-sister">
+          <orth>half-sister</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+        <form n="half-sibling">
+          <orth>half-sibling</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+        
+        <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+        <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+        <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+        <re type="inverse" corresp="#half-sibling"/>
+      </entry>
 
    <entry xml:id="horsekeeper" type="editors">
       <form n="horsekeeper">
@@ -3282,6 +3673,30 @@
       <re type="inverse" corresp="#mistress_master"/>
    </entry>
 
+      <entry xml:id="keeperSuperior">
+        <form n="keeperSuperior">
+          <orth>keeper</orth>
+          <gen>m</gen>
+          <number>singular</number>
+
+        </form>
+        <form n="keeperSuperior">
+          <orth>keeper</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+        <form n="keeperSuperior">
+          <orth>keeper</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+        
+        <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+        <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+        <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+        <re type="inverse" corresp="#under-keeperSubordinate"/>
+      </entry>
+
    <entry xml:id="kitchenBoy" type="editors">
       <form n="kitchenBoy">
          <orth>kitchen boy</orth>
@@ -3479,6 +3894,29 @@
       <re type="inverse" corresp="#employer"/>
    </entry>
 
+   <entry xml:id="messenger" type="editors">
+      <form n="messenger">
+         <orth>messenger</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="messenger">
+         <orth>messenger</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="messenger">
+         <orth>messenger</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#mistress_master"/>
+   </entry>
+
       <entry xml:id="militaryCaptain" type="editors">
         <form n="militaryCaptain">
           <orth>captain</orth>
@@ -3641,6 +4079,99 @@
      <re type="inverse" corresp="#mistress_master"/>
    </entry>
 
+   <entry xml:id="page" type="editors">
+     <form n="page">
+         <orth>page</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+     <form n="page">
+       <orth>page</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+     <form n="page">
+       <orth>page</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+     <re type="inverse" corresp="#mistress_master"/>
+   </entry>
+
+   <entry xml:id="pewterer" type="editors">
+     <form n="pewterer">
+         <orth>pewterer</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+     <form n="pewterer">
+       <orth>pewterer</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+     <form n="pewterer">
+       <orth>pewterer</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+     <re type="inverse" corresp="#customer"/>
+   </entry>
+
+   <entry xml:id="priest" type="editors">
+     <form n="priest">
+         <orth>priest</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+     <form n="priest">
+       <orth>priest</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+     <form n="priest">
+       <orth>priest</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+     <re type="inverse" corresp="#pastoralCharge"/>
+   </entry>
+
+   <entry xml:id="registrar" type="editors">
+     <form n="registrar">
+         <orth>registrar</orth>
+          <gen>m</gen>
+          <number>singular</number>
+          <desc type="editorial">The relationship between a registrar (typically spelled ‘register’ and the bishop for whom he works.</desc>
+        </form>
+     <form n="registrar">
+       <orth>registrar</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+     <form n="registrar">
+       <orth>registrar</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+     <re type="inverse" corresp="#bishopSuperior"/>
+   </entry>
+
    <entry xml:id="sheriffSuperior">
       <form n="sheriffSuperior">
          <orth>sheriff</orth>
@@ -3710,6 +4241,29 @@
       <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
       <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
       <re type="inverse" corresp="#mistress_master"/>
+   </entry>
+
+   <entry xml:id="parishioner">
+      <form n="parishioner">
+         <orth>parishioner</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="parishioner">
+         <orth>parishioner</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="parishioner">
+         <orth>parishioner</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#minister"/>
    </entry>
 
 
@@ -3795,6 +4349,28 @@
       <re type="inverse" corresp="#mistress_master"/>
    </entry>
 
+   <entry xml:id="ploughman" type="editors">
+     <form n="ploughman">
+       <orth>ploughman</orth>
+       <gen>m</gen>
+       <number>singular</number>
+     </form>
+     <form n="ploughman">
+       <orth>ploughman</orth>
+       <gen>f</gen>
+       <number>singular</number>
+     </form>
+     <form n="ploughman">
+       <orth>ploughman</orth>
+       <gen>n</gen>
+       <number>singular</number>
+     </form>
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#mistress_master"/>
+   </entry>
+
    <entry xml:id="pupil">
       <form n="pupil">
          <orth>pupil</orth>
@@ -3816,6 +4392,29 @@
       <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
       <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
       <re type="inverse" corresp="#tutor"/>
+   </entry>
+
+   <entry xml:id="purse-bearer">
+      <form n="purse-bearer">
+         <orth>purse-bearer</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="purse-bearer">
+         <orth>purse-bearer</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="purse-bearer">
+         <orth>purse-bearer</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#mistress_master"/>
    </entry>
 
    <entry xml:id="receiverGeneral" type="editors">
@@ -3851,6 +4450,52 @@
             <number>plural</number>
           </form>
       <re type="inverse" corresp="#mistress_master"/>
+   </entry>
+
+   <entry xml:id="rectorPastoral" type="editors">
+      <form n="rectorPastoral">
+         <orth>rector</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="rectorPastoral">
+         <orth>rector</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="rectorPastoral">
+         <orth>rector</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#parishioner"/>
+   </entry>
+
+   <entry xml:id="rectorRank" type="editors">
+      <form n="rectorRank">
+         <orth>rector</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="rectorRank">
+         <orth>rector</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="rectorRank">
+         <orth>rector</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+      <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+      <re type="inverse" corresp="#parishioner"/>
    </entry>
 
    <entry xml:id="retainer" type="editors">
@@ -4368,29 +5013,7 @@
      <re type="inverse" corresp="#mistress_master"/>
    </entry>
 
-   <entry xml:id="underButler" type="editors">
-      <form n="underButler">
-         <orth>under-butler</orth>
-          <gen>m</gen>
-          <number>singular</number>
-          <desc type="editorial">This should not be used. It is a duplicate of <val>under-butler</val> and will be removed after the site’s next update.</desc>
-        </form>
-      <form n="underButler">
-         <orth>under-butler</orth>
-          <gen>f</gen>
-          <number>singular</number>
-        </form>
-      <form n="underButler">
-         <orth>under-butler</orth>
-          <gen>n</gen>
-          <number>singular</number>
-        </form>
-     
-     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
-     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
-     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
-     <re type="inverse" corresp="#mistress_master"/>
-   </entry>
+
 
    <entry xml:id="underCook" type="editors">
       <form n="underCook">
@@ -4413,6 +5036,30 @@
      <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
      <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
      <re type="inverse" corresp="#mistress_master"/>
+   </entry>
+
+   <entry xml:id="under-keeperSubordinate" type="editors">
+      <form n="under-keeperSubordinate">
+         <orth>under-keeper</orth>
+          <gen>m</gen>
+          <number>singular</number>
+          <desc type="editorial">This is the relationship between an under-keeper and the keeper for whom he works.</desc>
+        </form>
+      <form n="under-keeperSubordinate">
+         <orth>under-keeperSubordinate</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="under-keeperSubordinate">
+         <orth>under-keeperSubordinate</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+     <re type="inverse" corresp="#keeperSuperior"/>
    </entry>
 
    <entry xml:id="under-sheriffSubordinate" type="editors">
@@ -4439,6 +5086,53 @@
      <re type="inverse" corresp="#sheriffSuperior"/>
    </entry>
 
+   <entry xml:id="university">
+      <form n="university">
+         <orth>university</orth>
+          <gen>m</gen>
+          <number>singular</number>
+        </form>
+      <form n="university">
+         <orth>university</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="university">
+         <orth>university</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+     <re type="inverse" corresp="#universityMember"/>
+   </entry>
+
+   <entry xml:id="universityMember" type="editors">
+      <form n="universityMember">
+         <orth>university member</orth>
+          <gen>m</gen>
+          <number>singular</number>
+         <desc type="editorial">The relationship between a member of a university and the university (encoded as an <gi>org</gi>). It is specifically for people who are described as students or scholars of the university rather than one of its colleges, or who are simply ‘of’ Oxford or Cambridge, where that is clearly an institutional affiliation rather than just an address. (For people who are linked to colleges, see <val>collegeMember</val> and similar.)</desc>
+        </form>
+      <form n="universityMember">
+         <orth>university member</orth>
+          <gen>f</gen>
+          <number>singular</number>
+        </form>
+      <form n="universityMember">
+         <orth>university member</orth>
+          <gen>n</gen>
+          <number>singular</number>
+        </form>
+     
+     <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
+     <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
+     <re type="inverse" corresp="#university"/>
+   </entry>
+
    <entry xml:id="usher" type="editors">
       <form n="usher">
          <orth>usher</orth>
@@ -4462,7 +5156,6 @@
      <re type="inverse" corresp="#employer"/>
    </entry>
 
-
    <entry xml:id="vicarPastoral" type="editors">
      <form n="vicarPastoral">
          <orth>vicar</orth>
@@ -4483,7 +5176,7 @@
       <form><orth extent="suffix">s</orth><gen>m</gen><number>plural</number></form>
       <form><orth extent="suffix">s</orth><gen>f</gen><number>plural</number></form>
       <form><orth extent="suffix">s</orth><gen>n</gen><number>plural</number></form>
-     <re type="inverse" corresp="#pastoralCharge"/>
+     <re type="inverse" corresp="#parishioner"/>
    </entry>
 
    <entry xml:id="vicarRank" type="editors">
@@ -4491,6 +5184,7 @@
          <orth>vicar</orth>
           <gen>m</gen>
           <number>singular</number>
+         <desc type="editorial">Vicar qua ecclesiastical inferior.</desc>
         </form>
      <form n="vicarRank">
          <orth>vicar</orth>

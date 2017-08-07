@@ -14,7 +14,7 @@
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">4</bibl>
+<bibl type="positionOnPage">bR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,8 +40,8 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationMissedQuestion"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -64,13 +64,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1609-01-16" n="Monday"/></p>
-<p><time when="07:00:00"/></p>
+<p><date when="1609-01-16" n="Monday" evidence="inferred"/></p>
+<p><time notBefore="07:00:00" notAfter="10:38:00" evidence="inferred"/></p>
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#f" evidence="internal" present="no"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
 <cb:subject ref="#s #gf" present="no"/>
+<cb:object ref="#f"/>
 <cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#s"/><person sameAs="#gf"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 <cb:treatment/>
@@ -84,6 +85,7 @@
 <change when="2015-02-06">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

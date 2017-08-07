@@ -14,7 +14,7 @@
 <date when="2015-08-11">11 August 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -65,7 +65,10 @@
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 <occupation>Scholar</occupation>
 </person>
-<listRelation><relation name="father" active="#p1" passive="#p2 #sp"/></listRelation>
+<org xml:id="uox">
+<orgName>University of Oxford</orgName>
+</org>
+<listRelation><relation name="father" active="#p1" passive="#p2 #sp"/><relation name="universityMember" active="#sp" passive="#uox"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -89,6 +92,7 @@
 <change when="2015-09-16">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-02-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,7 +100,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Pot for his 2 <lb/>children <rs type="address" xml:id="address1">of Chalgrave <lb/>Sans Pots</rs> 19. y. &IConsonant;une <lb/>20 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 5. 30 &antm; <lb/>1618 <add place="inline">a scholler of <placeName>Oxford</placeName></add></p>
+<p><lb/>M<hi rend="superscript">r</hi> Pot for his 2 <lb/>children <rs type="address" xml:id="address1">of Chalgrave</rs> <lb/>Sans Pots 19. y. &IConsonant;une <lb/>20 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 5. 30 &antm; <lb/>1618 <add place="inline">a scholler of <placeName>Oxford</placeName></add></p>
 </div>
 &astroChart;
 </body>

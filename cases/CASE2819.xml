@@ -14,7 +14,7 @@
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,7 +41,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -62,12 +62,15 @@
 <death><date when="1597-09-29" precision="low" evidence="internal" cert="high" xml:id="date1" exclude="#date2"/><date when="1598-09-29" precision="low" evidence="internal" cert="low" xml:id="date2" exclude="#date1"/> <placeName>in spaine</placeName></death>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
- <person xml:id="b">
-  <persName><roleName>Mr</roleName> <surname>Bense</surname></persName>
-  <sex value="1">M</sex>
- </person>
- <listRelation>
-<relation name="wife" active="#s" passive="#ps"/>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Bense</surname></persName>
+<sex value="1">M</sex>
+</person>
+<org xml:id="grh" type="ship">
+<orgName>The Greyhound</orgName>
+</org>
+<listRelation>
+<relation name="wife" active="#s" passive="#ps"/><relation name="owner" active="#b" passive="#grh"/>
 </listRelation>
 </listPerson>
 </particDesc>
@@ -84,9 +87,7 @@
 <cb:info type="event" subtype="previousConsultation"/>
 <cb:info type="event" subtype="subsequentEvent"/>
 <cb:info type="financial"/>
-
 </cb:consultation>
-
 </settingDesc>
 </profileDesc>
 <revisionDesc>
@@ -95,6 +96,8 @@
 <change when="2011-02-21">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2011-02-21">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-04-25">Coding of ships updated by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -103,7 +106,7 @@
 <text xml:lang="en">
 <body>
 <div>
- <p><lb/>Phillip Sammon <lb/>of 30 yers <choice><sic>159</sic><corr>1597</corr></choice> <rs type="address" xml:id="address1">of ratlif</rs> <lb/>he went in a m<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>chant ship <lb/>called <name type="ship">the greihound</name> m<hi rend="superscript">r</hi> benses <lb/>ship of <placeName>allborow in Suffolk</placeName> <lb/>S<hi rend="superscript">t</hi> ste&uConsonant;ens dai last. the 2<subst><del type="over">0</del><add place="over"><choice><orig>i</orig><reg>1</reg></choice></add></subst> of <lb/>novemb. &Monday; &anflmfl; at 10. <lb/>the <lb/>wif <lb/>for the <lb/>husban <lb/>what <lb/>is <choice><sic>bcom</sic><corr>becom</corr></choice> <lb/>of him <lb/>they went <lb/>to <placeName>the ca<lb/>naris</placeName> <lb/>&amp; ther they <lb/>tok a <lb/>price &amp; <lb/>Sammon <lb/>was put <lb/>into the <lb/>price.</p>
+<p><lb/>Phillip Sammon <lb/>of 30 yers <choice><sic>159</sic><corr>1597</corr></choice> <rs type="address" xml:id="address1">of ratlif</rs> <lb/>he went in a m<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>chant ship <lb/>called the greihound m<hi rend="superscript">r</hi> benses <lb/>ship of <placeName>allborow in Suffolk</placeName> <lb/>S<hi rend="superscript">t</hi> ste&uConsonant;ens dai last. the 2<subst><del type="over">0</del><add place="over"><choice><orig>i</orig><reg>1</reg></choice></add></subst> of <lb/>novemb. &Monday; &anflmfl; at 10. <lb/>the <lb/>wif <lb/>for the <lb/>husban <lb/>what <lb/>is <choice><sic>bcom</sic><corr>becom</corr></choice> <lb/>of him <lb/>they went <lb/>to <placeName>the ca<lb/>naris</placeName> <lb/>&amp; ther they <lb/>tok a <lb/>price &amp; <lb/>Sammon <lb/>was put <lb/>into the <lb/>price.</p>
 </div>
 &astroChart;
 </body>

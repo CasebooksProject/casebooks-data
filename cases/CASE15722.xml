@@ -14,7 +14,7 @@
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3A, 1B</bibl>
+<bibl type="positionOnPage">uR-1, uL-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,9 +41,15 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1603-10-14"><name sameAs="#gjames">Gerence James</name> held the consultation and wrote out the question and treatment.</change>
+<change xml:id="stage2" notBefore="1603-10-22"><name sameAs="#rnapier">Richard Napier</name> wrote the consultation details out again briefly and added judgment.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -65,7 +71,8 @@
 <p><date when="1603-10-14" n="Friday"/></p>
 <p><time when="09:00:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#gjames #rnapier"/>
+<cb:consultant ref="#gjames"/>
+<cb:astrologer ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#au" evidence="internal"/>
 <cb:subject ref="#au" present="no"/>
@@ -73,7 +80,7 @@
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#au"/></cb:topic>
 <cb:info type="urine"/>
 <cb:treatment/>
-<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -82,6 +89,9 @@
 <change when="2013-01-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-03-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-16">Creation of text documented by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,11 +99,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/>Anne &VVowel;nderhill <rs type="address" xml:id="address1">of Willing</rs> Octob <lb/>14 &Friday; ho 9 a m. 1603.</p>
-<p><lb/>she sent her water being thicke</p>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p change="#stage1"><lb/><handShift new="#gjames"/>Anne &VVowel;nderhill <rs type="address" xml:id="address1">of Willing</rs> Octob <lb/>14 &Friday; ho 9 a m. 1603.</p>
+<p change="#stage1"><lb/>she sent her water<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/>being thicke</p><anchor xml:id="urineInfoEnd"/>
 </div>
 <div><cb xml:id="colA" n="a"/>
-<p><lb/><handShift new="#rnapier"/>An &vVowel;nderhill oct 14. h. 9.</p>
+<milestone unit="question" spanTo="#questionEnd2"/>
+<p change="#stage2"><lb/><handShift new="#rnapier"/>An &vVowel;nderhill oct 14. h. 9.</p><anchor xml:id="questionEnd2"/>
 </div>
 &astroChart;
 </body>

@@ -14,7 +14,7 @@
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -63,12 +63,16 @@
 <persName><surname evidence="inferred" type="married">Warren</surname></persName>
 <sex value="2">F</sex>
 </person>
+<person xml:id="a">
+<persName><surname evidence="inferred" type="married">Atkins</surname></persName>
+<sex value="2">F</sex>
+</person>
 <personGrp xml:id="anon" evidence="internal">
 <sex value="1">M</sex>
 <occupation>Doctor</occupation>
 </personGrp>
 <listRelation>
-<relation name="wife" active="#w" passive="#jw"/>
+<relation name="wife" active="#w" passive="#jw"/><relation name="sister" mutual="#a #w"/><relation name="wife" active="#a" passive="#ja"/>
 </listRelation>    
 </listPerson>
 </particDesc>
@@ -93,6 +97,8 @@
 <change when="2014-10-13">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2014-10-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-20">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,7 +106,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Atkins <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <gap reason="binding" extent="1" unit="words"/> <lb/>&IConsonant;ohn warrens wif<supplied reason="binding" cert="high">e</supplied> <lb/>40 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 3. &Thursday; <gap reason="binding" extent="1" unit="chars"/> <lb/>25. &antm; 1607 <lb/><rs type="address" xml:id="address1">of london</rs></p>
+<p><lb/>&IConsonant;ohn Atkins <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> marye<supplied reason="binding" cert="high">d</supplied> <lb/>&IConsonant;ohn warrens wifes sis<supplied reason="binding" cert="medium">ter</supplied> <lb/>40 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 3. &Thursday; h. 9 <lb/>25. &antm; 1607 <lb/><rs type="address" xml:id="address1">of london</rs></p>
 </div>
 &astroChart;
 </body>

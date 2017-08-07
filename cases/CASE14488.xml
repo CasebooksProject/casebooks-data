@@ -14,7 +14,7 @@
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -42,9 +42,15 @@
 <language ident="en">English</language>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1603-02-20"><name sameAs="#gjames">Gerence James</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2" notBefore="1603-02-23"><name sameAs="#rnapier">Richard Napier</name> added details to the question and judgment and added a treatment.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -71,7 +77,8 @@
 <p><date when="1603-02-20" n="Sunday"/></p>
 <p><time when="17:00:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier #gjames"/>
+<cb:consultant ref="#rnapier"/>
+<cb:astrologer ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="internal" present="unclear"/>
 <cb:subject ref="#et" present="no" consent="no"/>
@@ -87,6 +94,8 @@
 <change when="2012-09-17">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-09-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-16">Creation of text documented by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,8 +103,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/>Elsabeth Townesend <lb/><rs type="address" xml:id="address1">of Woadill</rs>. 80 y. &ff;ebr <lb/>20 &Sunday; ho. 5. p. m 1603</p>
-<p><lb/><handShift new="#rnapier"/><foreign xml:lang="la">sine consensu.</foreign> a kinsm<choice><orig>&aover;</orig><reg>an</reg></choice> for his <lb/>Aunt <lb/><foreign xml:lang="la">sine <lb/>consensu</foreign>.<note place="marginLeft">&times; &astroCaudaDraconisSymbol; &astroCaudaDraconisSymbol; <lb/>&astroCaudaDraconisSymbol; &astroCaudaDraconisSymbol; &astroCaudaDraconisSymbol;</note></p>
+<p change="#stage1"><lb/><handShift new="#gjames"/>Elsabeth Townesend <lb/><rs type="address" xml:id="address1">of Woadill</rs>. 80 y. &ff;ebr <lb/>20 &Sunday; ho. 5. p. m 1603</p>
+<p change="#stage2"><lb/><handShift new="#rnapier"/><foreign xml:lang="la">sine consensu.</foreign> a kinsm<choice><orig>&aover;</orig><reg>an</reg></choice> for his <lb/>Aunt <lb/><foreign xml:lang="la">sine <lb/>consensu</foreign>.<note place="marginLeft">&times; &astroCaudaDraconisSymbol; &astroCaudaDraconisSymbol; <lb/>&astroCaudaDraconisSymbol; &astroCaudaDraconisSymbol; &astroCaudaDraconisSymbol;</note></p>
 </div>
 &astroChart;
 </body>

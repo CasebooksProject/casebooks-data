@@ -14,7 +14,7 @@
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -66,7 +66,8 @@
 <cb:subject ref="#lu" present="no"/>
 <cb:topic key="requestingTreatment"><person sameAs="#lu"/></cb:topic>
 <cb:topic key="sickness" resp="#rnapier"><person sameAs="#lu"/></cb:topic>
-<cb:topic key="nonDizDisease"><person sameAs="#lu"/></cb:topic>
+<cb:topic key="unidentifiedMedical"><person sameAs="#lu"/></cb:topic>
+<cb:topic key="report"><person sameAs="#lu"/></cb:topic>
 <cb:topic key="navel"><person sameAs="#lu"/></cb:topic>
 <cb:info type="urine"/>
 <cb:treatment/>
@@ -82,6 +83,8 @@
 <change when="2013-09-04">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,7 +92,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Lewis &vVowel;powen <rs type="address" xml:id="address1">of Bric<supplied reason="binding">k</supplied><lb/><subst><del type="over"/><add place="over">h</add></subst>ill</rs> sick in his navell <lb/>sent to me againe for <lb/>former phisick did but <lb/>give him 3 stooles and <lb/>all Downeward. Apr <lb/>26. &ThursdayN; h. 11. &antm; <lb/>1599. water <subst><del type="over">i<gap reason="del" extent="1" unit="chars"/></del><add place="over">ve</add></subst>ry red <lb/>&amp; thick leeke puddle <lb/>miserablely tormented. 1599</p>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>Lewis &vVowel;powen <rs type="address" xml:id="address1">of Bric<supplied reason="binding">k</supplied><lb/><subst><del type="over"/><add place="over">h</add></subst>ill</rs> sick in his navell <lb/>sent to me againe for <lb/>former phisick did but <lb/>give him 3 stooles and <lb/>all Downeward. Apr <lb/>26. &ThursdayN; h. 11. &antm; <lb/>1599.<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/>water <subst><del type="over">i<gap reason="del" extent="1" unit="chars"/></del><add place="over">ve</add></subst>ry red <lb/>&amp; thick leeke puddle<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/><lb/>miserablely tormented. 1599</p><anchor xml:id="questionEnd2"/>
 </div>
 &astroChart;
 </body>

@@ -14,7 +14,7 @@
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,7 +40,7 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
 <particDesc>
@@ -76,7 +76,7 @@
 <cb:querent ref="#jb"/>
 <cb:subject ref="#jb #ad #rd" present="unclear"/>
 <cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#ad"/><person sameAs="#rd"/></cb:topic>
-<cb:topic key="nonDizDisease"><person sameAs="#jb"/></cb:topic>
+<cb:topic key="illness" resp="#rnapier"><person sameAs="#jb"/></cb:topic>
 <cb:topic key="bleeding"><person sameAs="#jb"/></cb:topic>
 <cb:topic key="nose"><person sameAs="#jb"/></cb:topic>
 <cb:topic key="throatMouth"><person sameAs="#jb"/></cb:topic>
@@ -94,6 +94,8 @@
 <change when="2012-01-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -101,10 +103,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;one Barnwell <rs type="address" xml:id="address1">of husb. <lb/>Crowlye</rs> 26 y. 3 weekes <lb/>married. but was ill ever <lb/>since Christmas &amp; was wont <lb/>to bleede at the nose <add place="supralinear">&amp; mouth</add> mutch <lb/>looketh ill &amp; hath a drye <lb/>cough &amp; shaketh her very <lb/>mutch. her wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of a very <lb/>good colour. shortwinded.</p> 
-<p><lb/>An Dennet. 3. y: her <lb/>wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> is hie coloured hath <lb/>motes &amp; leeke cobwebs.</p> 
-<p><lb/>Robart Dennet. 2 yeres <lb/>hath a reasonab. water <lb/>but hath some scales.</p> 
-<p><lb/>Septemb. 4. &TuesdayN; <lb/>h. 11. 30. &antm;. 1599.</p>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>&IConsonant;one Barnwell <rs type="address" xml:id="address1">of husb. <lb/>Crowlye</rs> 26 y. 3 weekes <lb/>married. but was ill ever <lb/>since Christmas &amp; was wont <lb/>to bleede at the nose <add place="supralinear">&amp; mouth</add> mutch <lb/>looketh ill &amp; hath a drye <lb/>cough &amp; shaketh her very <lb/>mutch.<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd1"/>her wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of a very <lb/>good colour.<anchor xml:id="urineInfoEnd1"/> <milestone unit="question" spanTo="#questionEnd2"/>shortwinded.</p>
+<p><lb/>An Dennet. 3. y:<anchor xml:id="questionEnd2"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd2"/>her <lb/>wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> is hie coloured hath <lb/>motes &amp; leeke cobwebs.</p><anchor xml:id="urineInfoEnd2"/>
+<milestone unit="question" spanTo="#questionEnd3"/>
+<p><lb/>Robart Dennet. 2 yeres<anchor xml:id="questionEnd3"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd3"/><lb/>hath a reasonab. water <lb/>but hath some scales.</p><anchor xml:id="urineInfoEnd3"/>
+<milestone unit="question" spanTo="#questionEnd4"/>
+<p><lb/>Septemb. 4. &TuesdayN; <lb/>h. 11. 30. &antm;. 1599.</p><anchor xml:id="questionEnd4"/>
 </div>
 &astroChart;
 </body>

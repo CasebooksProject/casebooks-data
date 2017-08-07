@@ -14,7 +14,7 @@
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1B</bibl>
+<bibl type="positionOnPage">uL-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,13 +40,23 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1609-03-23"><name sameAs="#gjames">Gerence James</name> carried out the original consultation and wrote out the question, judgment and treatment.</change>
+<change xml:id="stage2" when="1609-03-23"><name sameAs="#rnapier">Richard Napier</name> added to the judgment and wrote a note about the appearance of the urine.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
 <persName><forename>Gerence</forename> <surname>James</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="ad">
@@ -62,6 +72,7 @@
 <p><time when="08:45:00"/></p>
 <cb:consultation>
 <cb:consultant ref="#gjames"/>
+<cb:astrologer ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ad"/>
 <cb:subject ref="#ad" present="unclear"/>
@@ -77,6 +88,9 @@
 <change when="2015-02-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-11">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -84,7 +98,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Alice Dickerman <rs type="address" xml:id="address1">of marston</rs> <lb/>45 y march 23 &Thursday; ho. 8. <lb/>45 a. m. 1609</p>
+<p><lb/>Alice Dickerman <rs type="address" xml:id="address1">of marston</rs> <lb/>4<subst><del type="over">6</del><add place="over">5</add></subst> y march 23 &Thursday; ho. 8. <lb/>45 a. m. 1609</p>
 </div>
 </body>
 </text>

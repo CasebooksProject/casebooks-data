@@ -14,7 +14,7 @@
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,8 +40,8 @@
 <langUsage>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#interrogation"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationMedicalEpisode"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -59,9 +59,10 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="nonDizPassions" cert="high" xml:id="topic1" exclude="#topic2 #topic3"><person sameAs="#rnapier"/></cb:topic>
-<cb:topic key="head" xml:id="topic2" exclude="#topic1" cert="low"><person sameAs="#rnapier"/></cb:topic>
-<cb:topic key="pain" xml:id="topic3" exclude="#topic1" cert="low"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="brainPassions" cert="high" xml:id="topic1" exclude="#topic3 #topic4"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="unidentifiedPassions" cert="high" xml:id="topic2" exclude="#topic3 #topic4"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="head" xml:id="topic3" exclude="#topic1 #topic2" cert="low"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="pain" xml:id="topic4" exclude="#topic1 #topic2" cert="low"><person sameAs="#rnapier"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -70,6 +71,7 @@
 <change when="2012-08-01">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-08-24">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

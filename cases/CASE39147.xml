@@ -14,7 +14,7 @@
 <date when="2015-01-09">09 January 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,9 +41,15 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1612-02-05"><name sameAs="#gjames">Gerence James</name> carried out the original consultation and wrote out the question and judgment and drew up the astrological figure.</change>
+<change xml:id="stage2" notBefore="1612-02-06"><name sameAs="#rnapier">Richard Napier</name> added remarks to the question and judgment and a note about consulting an angel.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="gjames">
@@ -63,10 +69,11 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1612-02-15" n="Wednesday"/></p>
+<p><date when="1612-02-05" n="Wednesday"/></p>
 <p><time when="07:30:00"/></p>
 <cb:consultation>
 <cb:consultant ref="#gjames"/>
+<cb:astrologer ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rp"/>
 <cb:subject ref="#rp" present="unclear"/>
@@ -81,6 +88,8 @@
 <change when="2015-10-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-02-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,7 +97,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Robert Potter <rs type="address" xml:id="address1">of Northampton</rs>. <lb/>24 y. feb: 5 &Wednesday; ho. 7. 30. a. m <lb/>1612 <add place="pageTop" hand="#rnapier">can tell how to cure cankers.</add></p>
+<p change="#stage1"><lb/>Robert Potter <rs type="address" xml:id="address1">of Northampton</rs>. <lb/>24 y. feb: 5 &Wednesday; ho. 7. 30. a. m <lb/>1612 <add place="pageTop" hand="#rnapier" change="#stage2">can tell how to cure cankers.</add></p>
 </div>
 &astroChart;
 </body>

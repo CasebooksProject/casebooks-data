@@ -14,7 +14,7 @@
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">2</bibl>
+<bibl type="positionOnPage">bL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -39,9 +39,8 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
-<language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
+<textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#diary"/>
 </textClass>
 <particDesc>
@@ -50,33 +49,22 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="rl">
-<persName><forename>Robert</forename> <surname>Leech</surname></persName>
-<sex value="1">M</sex>
+<person xml:id="j">
+<persName><forename>J</forename></persName>
+<sex value="1" evidence="external">M</sex>
 </person>
-<person xml:id="n">
-<persName><roleName>Mr</roleName> <surname>Nicholas</surname> <roleName>Fellow</roleName></persName>
-<sex value="1">M</sex>
-<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-</person>
-<listRelation>
-<relation name="kinsman" mutual="#rl #rnapier"/>
-</listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1608-09-12" n="Monday"/></p>
-<p><time when="15:00:00" xml:id="time1" exclude="#time2"/></p>
-<p><time when="16:00:00" xml:id="time2" exclude="#time1"/></p>
+<p><date when="1608-09-12" n="Monday" evidence="inferred"/></p>
+<p><time notBefore="15:00:00" notAfter="17:00:00" evidence="inferred"/></p>
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:object ref="#rl"/>
-<cb:messenger ref="#n"/>
-<cb:topic key="letters"><person sameAs="#rl"/><person sameAs="#rnapier"/></cb:topic>
-<cb:item type="letter"/>
+<cb:object ref="#j"/>
+<cb:topic key="punishment"><person sameAs="#rnapier"/><person sameAs="#j"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -85,6 +73,8 @@
 <change when="2015-01-19">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2015-04-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-29">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,9 +82,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Sept. 12 h. 4 I pm I receaved <lb/>a letter fr<choice><orig>&oover;</orig><reg>om</reg></choice> my Cosen Robart Leach <lb/>in lattyn <foreign xml:lang="la">&MoonSymbol; sep a &squareSymbol; &JupiterSymbol; ap &oppositionSymbol; &MercurySymbol;</foreign></p>
-<p><lb/>m<hi rend="superscript">r</hi> nicholas <del type="strikethrough">of</del> fellow <rs type="address" xml:id="address1">of new colledg</rs> <lb/>brought it.</p>
-<p><lb/><gap reason="binding" unit="chars" extent="1"/> sept 12. h 3. p m 1608</p>
+<p><lb/>&IConsonant; f sept 12. h 3. p m 1608</p>
 </div>
 &astroChartPartial;
 </body>

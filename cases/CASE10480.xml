@@ -14,7 +14,7 @@
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">2B</bibl>
+<bibl type="positionOnPage">mL-2</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -41,26 +41,26 @@
 <language ident="la">Latin</language>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#diary"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#prescription"/>
 </textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
-<persName><forename>Richard</forename> <surname type="alternate">Sandy</surname> <surname type="alternate" evidence="external">Napier</surname></persName>
+<persName><forename>Richard</forename> <surname>Sandy</surname> <surname type="alternate" evidence="external">Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1600-05-02" n="Friday"/></p>
-<p><time when="06:30:00"/></p>
+<p><date when="1600-05-02" n="Friday" evidence="inferred"/></p>
+<p><time notBefore="06:30:00" notAfter="12:20:00" evidence="inferred"/></p>
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="unidentifiedMedical"><person sameAs="#rnapier"/></cb:topic>
 <cb:treatment/>
 </cb:consultation>
 </settingDesc>
@@ -71,6 +71,7 @@
 <change when="2011-09-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -78,7 +79,8 @@
 </facsimile>
 <text xml:lang="la">
 <body><div>
-<p><lb/><foreign xml:lang="la">mai&jVowel; 2<hi rend="superscript">o</hi></foreign> Rich Sand. hamec &unciae;&semis;. <lb/>decoct &unciae;i&jVowel; <foreign xml:lang="en">syrop of bittony</foreign> <lb/>&unciae;&jVowel;. h. 6. 30 &antm;. 1600.&slash;</p>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/><foreign xml:lang="la">mai&jVowel; 2<hi rend="superscript">o</hi></foreign> Rich Sand.<anchor xml:id="questionEnd1"/> <milestone unit="treatment" spanTo="#treatmentEnd"/>hamec &unciae;&semis;. <lb/>decoct &unciae;i&jVowel; <foreign xml:lang="en">syrop of bittony</foreign> <lb/>&unciae;&jVowel;.<anchor xml:id="treatmentEnd"/> <milestone unit="question" spanTo="#questionEnd2"/>h. 6. 30 &antm;. 1600.&slash;</p><anchor xml:id="questionEnd2"/>
 </div>
 </body>
 </text>

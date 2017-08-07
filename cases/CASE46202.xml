@@ -14,14 +14,14 @@
 <date when="2015-08-11">11 August 2015</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">f. 20r/Q3, f. 20v/Q1</bibl>
+<bibl type="positionOnPage">f. 20r/uR, f. 20v/uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="201">MS Ashmole 201, ff. 20r-20v</idno>
+<idno n="201">MS Ashmole 201, f. 20r-v</idno>
 &Napier028;
 </msIdentifier>
 <msContents>
@@ -40,8 +40,8 @@
 <langUsage>
 <language ident="la">Latin</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#interrogation"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationAstronomical"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -49,16 +49,21 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
+<personGrp xml:id="anon" evidence="internal">
+<sex value="0">U</sex>
+</personGrp>
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore-custom="1618-03-16T20:00:00" notAfter-custom="1618-03-17T09:15:00"/></p>
+<p><date notBefore-custom="1618-03-16T20:00:00" notAfter-custom="1618-03-17T09:15:00" evidence="inferred"/></p>
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#rnapier"/></cb:topic>
+<cb:object ref="#anon"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><personGrp sameAs="#anon"/></cb:topic>
+<cb:judgment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -68,6 +73,7 @@
 <change when="2016-02-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -77,7 +83,7 @@
 <text xml:lang="la">
 <body><div>
 <p><lb/>Marti&jVowel; 11. &WednesdayLatin; h. 6 <lb/>&antm; 1618.</p>
-<p><lb/>quo t<choice><orig>&eover;</orig><reg>em</reg></choice>pore &SunSymbol; ingredit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>&AriesSymbol;. p<unclear cert="low" reason="hand">ru</unclear>t<choice><orig>&eover;</orig><reg>em</reg></choice> &aelig;quinoct <lb/>vernale</p>
+<p><lb/>quo t<choice><orig>&eover;</orig><reg>em</reg></choice>pore &SunSymbol; ingredit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>&AriesSymbol;. <choice><orig><choice><sic>puct&uover;</sic><corr>punct&uover;</corr></choice></orig><reg>punctum</reg></choice> &aelig;quinoct <lb/>vernale</p>
 </div>
 &astroChart;
 <pb xml:id="f20v" n="20v" facs="#ckx0058.jpg"/>

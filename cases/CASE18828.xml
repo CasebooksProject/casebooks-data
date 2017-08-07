@@ -14,7 +14,7 @@
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
 <sourceDesc>
-<bibl type="positionOnPage">3</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -40,9 +40,15 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
-<textClass xml:base="../05-master-lists/consultation-types.xml">
-<catRef target="#practice"/>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1600-09-25"><name sameAs="#sforman">Simon Forman</name> took the original consultation and wrote out the entry.</change>
+<change xml:id="stage2" notBefore="1601-01-20" notAfter="1601-01-21"><name sameAs="#rnapier">Richard Napier</name> copied out the entry.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -56,7 +62,6 @@
 <person xml:id="mo">
 <persName><forename>Mary</forename> <surname>Okes</surname></persName>
 <sex value="2">F</sex>
-
 <age value="35">35</age>
 </person>
 <person xml:id="anon">
@@ -65,9 +70,10 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore-custom="1601-01-20T19:00:00" notAfter-custom="1601-01-21T11:00:00" evidence="inferred"/></p>
+<p><date when="1600-09-25" n="Thursday"/></p>
+<p><time when="07:10:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier #sforman"/>
+<cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#mo"/>
 <cb:subject ref="#mo" present="unclear"/>
@@ -83,6 +89,8 @@
 <change when="2012-03-23">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2012-04-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

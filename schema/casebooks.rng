@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2016-10-26T11:53:56Z. 
+Schema generated from ODD source 2017-07-03T15:26:47Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -6043,6 +6042,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
   </define>
   <define name="model.encodingDescPart">
     <choice>
+      <ref name="samplingDecl"/>
       <ref name="variantEncoding"/>
     </choice>
   </define>
@@ -6050,6 +6050,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
     <choice>
       <ref name="particDesc"/>
       <ref name="settingDesc"/>
+      <ref name="creation"/>
       <ref name="langUsage"/>
       <ref name="textClass"/>
       <ref name="handNotes"/>
@@ -6113,36 +6114,30 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
   </define>
   <define name="att.milestoneUnit.attribute.unit">
     <attribute name="unit">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a conventional name for the kind of section changing at this milestone.
-Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] canto; 7] speaker; 8] stanza; 9] act; 10] scene; 11] section; 12] absent; 13] unnumbered</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
       <choice>
-        <value>page</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">physical page breaks (synonymous with the pb element).</a:documentation>
-        <value>column</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">column breaks.</a:documentation>
-        <value>line</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">line breaks (synonymous with the lb element).</a:documentation>
+        <value>angelInfo</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">angelic advice portion of the entry</a:documentation>
+        <value>divinationInfo</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">divination record portion of the entry</a:documentation>
+        <value>financialInfo</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">financial information portion of the entry</a:documentation>
+        <value>judgment</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">judgment portion of the entry</a:documentation>
+        <value>previousConsultationEventInfo</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">previous consultation event information portion of the entry</a:documentation>
+        <value>question</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">question portion of the entry</a:documentation>
+        <value>recipe</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">recipe portion of the entry</a:documentation>
+        <value>subsequentEventInfo</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">subsequent event information portion of the entry</a:documentation>
+        <value>treatment</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">treatment portion of the entry</a:documentation>
+        <value>urineInfo</value>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">urine description portion of the entry</a:documentation>
         <value>book</value>
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">any units termed book, liber, etc.</a:documentation>
-        <value>poem</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">individual poems in a collection.</a:documentation>
-        <value>canto</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">cantos or other major sections of a poem.</a:documentation>
-        <value>speaker</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">changes of speaker or narrator.</a:documentation>
-        <value>stanza</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">stanzas within a poem, book, or canto.</a:documentation>
-        <value>act</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">acts within a play.</a:documentation>
-        <value>scene</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">scenes within a play or act.</a:documentation>
-        <value>section</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">sections of any kind.</a:documentation>
-        <value>absent</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">passages not present in the reference edition.</a:documentation>
-        <value>unnumbered</value>
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">passages present in the text, but not to be included as part of the reference.</a:documentation>
-        <data type="Name"/>
       </choice>
     </attribute>
   </define>
@@ -6163,6 +6158,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.declaring.attributes"/>
       <ref name="att.fragmentable.attributes"/>
       <optional>
@@ -6196,6 +6192,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
       <attribute name="xml:lang">
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) indicates the language of the element content using a tag generated according to BCP 47.</a:documentation>
         <ref name="data.language"/>
@@ -6207,6 +6204,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
     <element name="hi">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(highlight) marks text that has been distinctively rendered in some way, e.g. underlined, overlined, italicised, or in larger text or a different colour. The nature of the formatting is indicated in rend. [3.3.2.2.  3.3.2. ]</a:documentation>
       <ref name="macro.paraContent"/>
+      <ref name="att.global.change.attribute.change"/>
       <attribute name="rend">
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) values are "allCaps" (capitalised), "bold" (bold), "dropCap" (drop capital), "italic" (italic), "overline" (overlined), "smallCaps" (small capitals), "subscript" (subscripted), "superscript" (superscripted), "underline" (single underlined), "doubleUnderline" (double underlined). rend can also be used to indicate changes in text size with "large", "larger", "largest" and "small", "smaller", "smallest". It can also be used to indicate a change of writing medium, with "redInk" used to indicate that a word or phrase is written in red ink, "redUnderline" to indicate that a text string is underlined in red but not itself written in red, or "differentInk" if the text string is written in a different ink (of unknown colour).</a:documentation>
         <list>
@@ -6712,9 +6710,14 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
           <report test="not(@xml:id) and not(@sameAs)">ERROR: <name/> needs @xml:id or @sameAs</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-name-name-in-change-links-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:name[@sameAs][ancestor::tei:change]">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-name-name-in-revisionDesc-change-links-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:revisionDesc/tei:change/tei:name[@sameAs]">
           <assert test="@sameAs = ancestor::tei:revisionDesc//tei:change//tei:name[@xml:id]/concat('#',@xml:id)">ERROR: <name/>@sameAs does not seem to point to a valid name@xml:id in change.</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-name-name-in-listChange-change-links-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:listChange/tei:change/tei:name[@sameAs]">
+          <assert test="@sameAs = ancestor::tei:teiHeader//tei:listPerson//(tei:person|tei:org)[@xml:id]/concat('#',@xml:id)">ERROR: <name/>@sameAs does not seem to point to a valid person@xml:id in listPerson.</assert>
         </rule>
       </pattern>
       <ref name="att.global.attributes"/>
@@ -6808,6 +6811,16 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <ref name="model.global"/>
         </choice>
       </zeroOrMore>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-metadata-date-no-children-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date">
+          <report test="(ancestor::tei:settingDesc|ancestor::tei:death|ancestor::tei:birth) and (*|text()[normalize-space()])">ERROR: Date should not have any children or text within it</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-ensure-no-time-with-dateTime-on-date-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@*[matches(local-name(),'-custom')]]">
+          <report test="(ancestor::tei:settingDesc|ancestor::tei:death|ancestor::tei:birth|ancestor::tei:event)[descendant::tei:date[@*[matches(local-name(),'-custom')]]]//tei:time         ">ERROR: You cannot have a time element along with a date with dateTimestamps</report>
+        </rule>
+      </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-exclude-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date">
           <let name="current_date" value="."/>
@@ -6930,6 +6943,12 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-needs-datable-attr-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date">
           <report test="count((@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) = 0">ERROR: <name/> needs a datable attribute</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-has-illegal-mix-datable-attrs-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@when|@when-custom]">
+          <report test="count((@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) &gt; 0">ERROR: <name/> has @when and <value-of select="string-join(for $x in (@notBefore,@notBefore-custom,@notAfter,@notAfter-custom) return concat('@',$x/local-name()),', ')"/>
+               </report>
         </rule>
       </pattern>
       <ref name="att.global.attribute.xmlid"/>
@@ -7079,6 +7098,11 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <ref name="model.global"/>
         </choice>
       </zeroOrMore>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-metadata-time-no-children-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
+          <report test="(ancestor::tei:settingDesc|ancestor::tei:death|ancestor::tei:birth) and (*|text()[normalize-space()])">ERROR: Time should not have any children or text within it</report>
+        </rule>
+      </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-same-container-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
           <let name="current_time" value="."/>
@@ -7134,6 +7158,12 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-to-gt-from-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@to and @from]">
           <assert test="xs:time(@to) &gt; xs:time(@from)">ERROR: <name/>@from must be less than @to</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-has-illegal-mix-datable-attrs-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@when|@when-custom]">
+          <report test="count((@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) &gt; 0">ERROR: <name/> has @when and <value-of select="string-join(for $x in (@notBefore,@notBefore-custom,@notAfter,@notAfter-custom) return concat('@',$x/local-name()),', ')"/>
+               </report>
         </rule>
       </pattern>
       <ref name="att.global.attribute.xmlid"/>
@@ -7229,21 +7259,22 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-pointing-to-case-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[A-E]*[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')]">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-(f\d\d\d\d[A-E]*[rv]*|p\d\d\d\d[A-E]*)-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')]">
           <assert test="@type='case'">ERROR: ref pointing to another case must have type="case"</assert>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-case-filenames-in-live-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[A-E]*[rv]-\d(\.xml)*$','i')]">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-(f\d\d\d\d[A-E]*[rv]|p\d\d\d\d[A-E]*)-\d(\.xml)*$','i')]">
           <let name="location" value="replace(replace(base-uri(.),'file:',''),'^.*casebooks-data/([^/]+)/.+$','$1')"/>
-          <report test="$location='04-live'">ERROR: ref pointing to a case file rather than number</report>
+          <report test="$location='04-live'">ERROR: ref pointing to a case file rather than case number</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-type-case-must-point-to-case-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[@type='case']">
-          <assert test="matches(@target,'^(MS_Ashmole_)*\d\d\d-f\d\d\d\d[A-E]*[rv]-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')">ERROR: ref/@type="case" must point to a valid case number or case filename</assert>
+          <assert test="matches(@target,'^(MS_Ashmole_)*\d\d\d-(f\d\d\d\d[A-E]*[rv]*|p\d\d\d\d[A-E]*)-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')">ERROR: ref/@type="case" must point to a valid case number or case filename</assert>
         </rule>
       </pattern>
+      
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-refAtts-constraint">
         <rule context="tei:ref">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
@@ -7369,6 +7400,7 @@ Suggested values include: 1] ordered; 2] bulleted; 3] simple; 4] gloss</a:docume
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.typed.attributes"/>
       <optional>
         <attribute name="rend">
@@ -7399,6 +7431,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <ref name="att.global.attribute.rend"/>
       <ref name="att.global.attribute.xmlbase"/>
       <ref name="att.global.attribute.xmlspace"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.placement.attributes"/>
       <ref name="att.pointing.attributes"/>
       <ref name="att.responsibility.attributes"/>
@@ -7437,6 +7470,14 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <zeroOrMore>
         <ref name="model.descLike"/>
       </zeroOrMore>
+      
+      
+      
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-graphic-ensure-url-equals-xml-id-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:graphic[parent::tei:facsimile]">
+          <assert test="@url = @xml:id">ERROR: <name/>/@xml:id doesn't equal @url</assert>
+        </rule>
+      </pattern>
       <ref name="att.typed.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.media.attributes"/>
@@ -7447,11 +7488,17 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
   </define>
   <define name="milestone">
     <element name="milestone">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">is analogous to pb but only used in the extremely rare cases where the component pages of an entry appear in separate volumes. [3.10.3. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">demarcates a significant boundary within a given file. For Casebooks purposes, this can take two forms. In entries that have been transcribed in their entirety for whatever reason, it marks the beginning of a distinct section within the entry, with a unit value of "angelInfo", "divinationInfo", "financialInfo", "judgment", "previousConsultationEventInfo", "question", "recipe", "subsequentEventInfo", "treatment" or "urineInfo" (corresponding to the suffixes of the elements ascribed to the relevant sections in the header). In all these cases it should link by means of the spanTo value to a corresponding anchor (q.v.) marking the end of the section in question. Alternatively, it can take the unit value "book" in the extremely rare cases (at the time of writing this has only arisen once) where the component pages of an entry appear in separate volumes. [3.10.3. ]</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-needs-sameAs-or-xmlid-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:milestone[not(@sameAs)]">
-          <assert test="@xml:id">ERROR: <name/> needs @xml:id or @sameAs</assert>
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:milestone[not(@sameAs|@xml:id|@spanTo)]">
+          <assert test="@xml:id">ERROR: <name/> needs one of @xml:id, @sameAs or @spanTo</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-spanTo-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:milestone[@spanTo]">
+          <let name="text" value="ancestor::tei:text"/>
+          <assert test="@spanTo = following::tei:anchor/concat('#',@xml:id)">ERROR: <name/>@spanTo must point to an anchor/@xml:id following it.</assert>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-sameas-constraint">
@@ -7477,6 +7524,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.milestoneUnit.attributes"/>
       <ref name="att.typed.attributes"/>
       <ref name="att.edition.attributes"/>
@@ -7517,6 +7565,12 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
           <assert test="@n">ERROR: <name/> requires @n</assert>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-ensure-pb-n-matches-facsimile-graphic-n-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:pb">
+          <assert test="@n = /tei:TEI/tei:facsimile/tei:graphic/@n">ERROR: <name/>/@n does not match any facsimile/graphic/@n value.</assert>
+        </rule>
+      </pattern>
+      
       <ref name="att.global.attribute.xmllang"/>
       <ref name="att.global.attribute.rend"/>
       <ref name="att.global.attribute.xmlbase"/>
@@ -7529,6 +7583,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.typed.attributes"/>
       <ref name="att.edition.attributes"/>
       <ref name="att.spanning.attributes"/>
@@ -7542,7 +7597,9 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <optional>
         <attribute name="n">
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) gives a number (or other label) for an element, which is not necessarily unique within the document.</a:documentation>
-          <ref name="data.text"/>
+          <data type="string">
+            <param name="pattern">\d+[A-M]*[rv]*</param>
+          </data>
         </attribute>
       </optional>
       <empty/>
@@ -7550,7 +7607,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
   </define>
   <define name="lb">
     <element name="lb">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line break) marks the beginning of a line of prose, including the first line of a paragraph. Although formally defined as ‘line break’, it is more usefully thought of as ‘line beginning’. [3.10.3.  7.2.5. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line break) marks the beginning of a line of prose, including the first line of a paragraph. Although formally defined as ‘line break’, it is more usefully thought of as ‘line beginning’. If a word is hyphenated because it has been split by a line break, lb takes the type value "hyphenated" and the hyphen itself should not be transcribed, unless it is a ‘hard’ hyphen that would have appeared anyway, as in ‘star-chart’. [3.10.3.  7.2.5. ]</a:documentation>
       <empty/>
       <ref name="att.global.attributes"/>
       <ref name="att.typed.attributes"/>
@@ -7562,7 +7619,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
   </define>
   <define name="cb">
     <element name="cb">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(column break) marks the beginning of a new column in an entry that occupies more than one column. It takes the xml:id value "colA" or "colB" and the n value "a" or "b". [3.10.3. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(column break) marks the beginning of a new column in an entry that occupies more than one column. If (as is normally the case) there are only two columns on the page, it takes the xml:id value "colA" or "colB" and the n value "a" or "b". If there are three columns on the page (or part of it), it takes the xml:id value "colA", "colB" or "colC" and the n value "a", "b" or "c". [3.10.3. ]</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-needs-sameAs-or-xmlid-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:cb[not(@sameAs)]">
@@ -7592,6 +7649,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.typed.attributes"/>
       <ref name="att.edition.attributes"/>
       <ref name="att.spanning.attributes"/>
@@ -7682,7 +7740,7 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
   </define>
   <define name="bibl">
     <element name="bibl">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(bibliographic citation) is used only (for Casebooks purposes) to define the physical location of an entry. The type value "positionOnPage" gives the quadrant in which an entry begins or the quadrant(s) it occupies, as explained in the Guidelines. [3.11.1.  2.2.7.  15.3.2. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(bibliographic citation) is used only (for Casebooks purposes) to define the physical location of an entry. The type value "positionOnPage" gives the zone in which an entry begins or the zone(s) it occupies, as explained in the Guidelines, section I. 4. [3.11.1.  2.2.7.  15.3.2. ]</a:documentation>
       <zeroOrMore>
         <choice>
           <text/>
@@ -7699,6 +7757,11 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-bibl-asterisk-in-bibl-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:bibl">
           <report test="descendant::text()[contains(.,'*')]">ERROR: <name/> contains an asterisk</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-bibl-positionOnPage-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:bibl[@type='positionOnPage']">
+          <report test="exists(tokenize(.,',')[not(normalize-space(.)=('uS','uL','mL','bL','uR', 'mR', 'bR', 'bS', 'mS', 'mC', 'uC', 'bC'))][not(matches(normalize-space(.),'^(uS|uL|bL|uR|bR|uC|bC|mL|mC|mR|mS|bS)(-[1-9])*$'))][not(matches(normalize-space(.),'^(MS\s+Ashmole\s+\d+\s+)*(f\.\s+\d+[A-M]*[rv]|p\.\s+\d+[A-M]*)/(uS|uL|bL|uR|bR|uC|bC|mL|mC|mR|mS|bS)(-[1-9])*$'))])">ERROR: <name/> does not seem to contain a validly formatted positionOnPage data.</report>
         </rule>
       </pattern>
       <ref name="att.global.attributes"/>
@@ -8108,7 +8171,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
   </define>
   <define name="encodingDesc">
     <element name="encodingDesc">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. [2.3.  2.1.1. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(encoding description) is only used, for Casebooks purposes, as a container for samplingDecl. [2.3.  2.1.1. ]</a:documentation>
       <group>
         <oneOrMore>
           <choice>
@@ -8118,6 +8181,37 @@ Sample values include: 1] text; 2] corpus</a:documentation>
         </oneOrMore>
       </group>
       <ref name="att.global.attributes"/>
+      <empty/>
+    </element>
+  </define>
+  <define name="samplingDecl">
+    <element name="samplingDecl">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(sampling declaration) contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection. [2.3.2.  2.3.  15.3.2. ]</a:documentation>
+      <oneOrMore>
+        <ref name="model.pLike"/>
+      </oneOrMore>
+      <ref name="att.global.attribute.n"/>
+      <ref name="att.global.attribute.xmllang"/>
+      <ref name="att.global.attribute.rend"/>
+      <ref name="att.global.attribute.xmlbase"/>
+      <ref name="att.global.attribute.xmlspace"/>
+      <ref name="att.global.linking.attribute.corresp"/>
+      <ref name="att.global.linking.attribute.synch"/>
+      <ref name="att.global.linking.attribute.sameAs"/>
+      <ref name="att.global.linking.attribute.copyOf"/>
+      <ref name="att.global.linking.attribute.next"/>
+      <ref name="att.global.linking.attribute.prev"/>
+      <ref name="att.global.linking.attribute.exclude"/>
+      <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
+      <ref name="att.declarable.attributes"/>
+      <attribute name="xml:id">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
+        <choice>
+          <value>wholeEntry</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+        </choice>
+      </attribute>
       <empty/>
     </element>
   </define>
@@ -8182,6 +8276,18 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.global.attributes"/>
       <ref name="att.handFeatures.attributes"/>
       <empty/>
+    </element>
+  </define>
+  <define name="creation">
+    <element name="creation">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains information about the creation of a text. [2.4.1.  2.4. ]</a:documentation>
+      <zeroOrMore>
+        <choice>
+          <text/>
+          <ref name="model.limitedPhrase"/>
+          <ref name="listChange"/>
+        </choice>
+      </zeroOrMore>
     </element>
   </define>
   <define name="langUsage">
@@ -8267,6 +8373,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
       <ref name="att.global.facs.attribute.facs"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.declarable.attributes"/>
       <attribute name="xml:base">
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a base URI reference with which applications can resolve relative URI references into absolute URI references.</a:documentation>
@@ -8290,7 +8397,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.responsibility.attributes"/>
       <ref name="att.global.attributes"/>
       <attribute name="target">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines the type of document being encoded using one of the categories explained in Types of text. Permitted values: "#caseNotes", "#decumbiture", "#diary", "#election", "#horary", "#interrogation", "#nativity", "#practice", "#revolutions".</a:documentation>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines the type of document being encoded using one of the categories explained in Types of text. Permitted values: "#caseNotes", "#decumbiture", "#diary", "#election", "#horary", "#interrogation", "@interrogationAstronomical", @interrogationDeath", "@interrogationMarriage", "@interrogationParturition", "@interrogationQuestion", "@interrogationTreatment", "#nativity", "#practice", "#revolutions".</a:documentation>
         <list>
           <oneOrMore>
             <choice>
@@ -8302,13 +8409,57 @@ Sample values include: 1] text; 2] corpus</a:documentation>
               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
               <value>#election</value>
               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#entry</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#geomantic</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
               <value>#horary</value>
               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
               <value>#interrogation</value>
               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationAstronomical</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationBurial</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationCastingFigure</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationConversation</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationDeath</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationGivingBirth</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationItemLoss</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationLabour</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationMarriage</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationMedicalEpisode</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationMissedQuestion</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationQuestion</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationQuickening</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationReceivingMessage</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationSendingMessage</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationStartingJourney</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationStartingWork</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationTreatment</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#interrogationVisit</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
               <value>#nativity</value>
               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
               <value>#practice</value>
+              <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+              <value>#prescription</value>
               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
               <value>#revolutions</value>
               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -8330,6 +8481,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">records the work done on the electronic file, with dates and the identities of the editors who have done the work. [2.5.  2.1.1. ]</a:documentation>
       <choice>
         <ref name="list"/>
+        <ref name="listChange"/>
         <oneOrMore>
           <ref name="change"/>
         </oneOrMore>
@@ -8341,19 +8493,45 @@ Sample values include: 1] text; 2] corpus</a:documentation>
   </define>
   <define name="change">
     <element name="change">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">documents significant stages in the creation, transcription, checking or processing of an electronic file. [2.5.  2.4.1. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">documents significant stages in the creation, transcription, checking or processing of an electronic file (if in revisionDesc) or the original artefact (if in listChange). [2.5.  2.4.1. ]</a:documentation>
       <ref name="macro.specialPara"/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-change-change-date-check-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:change">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:change[parent::tei:revisionDesc]">
           <report test="not(@when)">ERROR: <name/>@when is mandatory</report>
           <report test="@when &lt; '2009-01-01' or @when &gt;format-date(current-date(),'[Y0001]-[M01]-[D01]')">ERROR: <name/>@when must be between 2009-01-01 and today's date</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-change-change-in-listChange-needs-xmlid-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:change[parent::tei:listChange]">
+          <report test="not(@xml:id)">ERROR: <name/>@xml:id is mandatory</report>
         </rule>
       </pattern>
       <ref name="att.ascribed.attributes"/>
       <ref name="att.datable.attributes"/>
       <ref name="att.docStatus.attributes"/>
-      <ref name="att.global.attributes"/>
-      <ref name="att.typed.attributes"/>
+      <ref name="att.global.attribute.xmlid"/>
+      <ref name="att.global.change.attribute.change"/>
+      <empty/>
+    </element>
+  </define>
+  <define name="listChange">
+    <element name="listChange">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. [2.5.  11.7. ]</a:documentation>
+      <oneOrMore>
+        <choice>
+          <ref name="listChange"/>
+          <ref name="change"/>
+        </choice>
+      </oneOrMore>
+      <attribute name="ordered">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates whether the ordering of its child change elements is to be considered significant or not</a:documentation>
+        <choice>
+          <value>true</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          <value>false</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+        </choice>
+      </attribute>
       <empty/>
     </element>
   </define>
@@ -8463,7 +8641,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
   </define>
   <define name="anchor">
     <element name="anchor">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anchor point) attaches an identifier to a point within a text, whether or not it corresponds with a textual element. [8.4.2.  16.4. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anchor point) marks the end of a section in entries that have either been transcribed in their entirety or in which sections extraneous to the question are inextricably bound up with it. It takes one of the xml:id values "angelInfoEnd", "divinationInfoEnd", "financialInfoEnd", "judgmentEnd", "previousConsultationEventInfoEnd", "questionEnd", "recipeEnd", "subsequentEventInfoEnd", "treatmentEnd" or "urineInfoEnd", which are linked to from the corresponding milestone (q.v.) marking the beginning of the section in question. [8.4.2.  16.4. ]</a:documentation>
       <empty/>
       <ref name="att.global.attributes"/>
       <ref name="att.typed.attributes"/>
@@ -8521,6 +8699,8 @@ Sample values include: 1] text; 2] corpus</a:documentation>
     <element name="locus">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines the page or pages on which an entry appears. [10.3.5. ]</a:documentation>
       <ref name="macro.xtext"/>
+      
+      
       <ref name="att.global.attributes"/>
       <ref name="att.pointing.attributes"/>
       <attribute name="from">
@@ -8988,14 +9168,14 @@ Sample values include: 1] text; 2] corpus</a:documentation>
     <element name="forename">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a forename, given or baptismal name. [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-forename-frances-sex-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-forename-frances-clemence-sex-constraint">
         <rule context="tei:forename">
-          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test=".='Frances' and ancestor::tei:person//tei:sex[not(@value=(0,2))]">ERROR: 'Frances' is a women's name. Either name or sex is incorrect</report>
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test=".=('Frances','Clemence') and ancestor::tei:person//tei:sex[not(@value=(0,2))]">ERROR: '<value-of select="."/>' is a women's name. Either name or sex is incorrect</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-forename-francis-sex-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-forename-francis-clement-sex-constraint">
         <rule context="tei:forename">
-          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test=".='Francis' and ancestor::tei:person//tei:sex[not(@value=(0,1))]">ERROR: 'Francis' is a men's name. Either name or sex is incorrect</report>
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test=".=('Francis','Clement') and ancestor::tei:person//tei:sex[not(@value=(0,1))]">ERROR: '<value-of select="."/>' is a men's name. Either name or sex is incorrect</report>
         </rule>
       </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
@@ -9285,6 +9465,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.global.linking.attribute.next"/>
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.editLike.attribute.evidence"/>
       <ref name="att.responsibility.attribute.cert"/>
       <ref name="att.responsibility.attribute.resp"/>
@@ -9307,6 +9488,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.global.linking.attribute.next"/>
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.editLike.attribute.evidence"/>
       <ref name="att.responsibility.attribute.cert"/>
       <ref name="att.responsibility.attribute.resp"/>
@@ -9366,6 +9548,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <ref name="att.global.linking.attribute.next"/>
       <ref name="att.global.linking.attribute.prev"/>
       <ref name="att.global.linking.attribute.exclude"/>
+      <ref name="att.global.change.attribute.change"/>
       <ref name="att.editLike.attribute.evidence"/>
       <ref name="att.responsibility.attribute.cert"/>
       <ref name="att.responsibility.attribute.resp"/>
@@ -9998,7 +10181,7 @@ Sample values include: 1] text; 2] corpus</a:documentation>
         </optional>
         <optional>
           <attribute name="mutual">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to two or more people and/or groups of people who have the same relationship to one another, e.g. cousin or friend.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to two or more people and/or groups of people who have the same relationship to one another, e.g. brother or friend.</a:documentation>
             <list>
               <oneOrMore>
                 <ref name="data.pointer"/>
@@ -10230,6 +10413,12 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           </zeroOrMore>
         </group>
       </choice>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-trait-check-trait-name-constraint">
+        <rule context="tei:trait">
+          <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="normalize-space(string-join(.//text(),'')) = doc(replace(replace(base-uri(.),'file:',''),'casebooks-data/.+$','casebooks-data/master-lists/traits.xml'))//tei:item/tei:label/normalize-space(string-join(descendant::text(),''))">ERROR: <value-of select="normalize-space(string-join(.//text(),''))"/> is not valid for <name/>
+               </assert>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.datable.attributes"/>
       <ref name="att.editLike.attributes"/>
@@ -10623,6 +10812,16 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
           <report test="not(starts-with(@sameAs,'#'))">ERROR: <name/>@sameAs must start with '#' when pointing to @xml:id.</report>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-needs-positionOnPage-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:TEI[descendant::cb:consultation]">
+          <assert test="descendant::tei:bibl[@type='positionOnPage']">ERROR: Missing positionOnPage</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-if-change-attr-then-listChange-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:TEI[descendant::tei:*[@change]]">
+          <assert test="/tei:TEI/tei:teiHeader/tei:profileDesc/tei:creation/tei:listChange/tei:change">ERROR: You seem to be using @change on an element. That means you need to include listChange code in the header.</assert>
+        </rule>
+      </pattern>
       <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
       <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
       <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="rng" uri="http://relaxng.org/ns/structure/1.0"/>
@@ -10638,7 +10837,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
   </define>
   <define name="text">
     <element name="text">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">for Casebooks purposes, contains on the element body, which in turn contains the text of the transcribed document. [4.  15.1. ]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">for Casebooks purposes, contains only the element body, which in turn contains the text of the transcribed document. [4.  15.1. ]</a:documentation>
       <group>
         <zeroOrMore>
           <ref name="model.global"/>
@@ -10996,8 +11195,27 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
     </optional>
   </define>
   <define name="att.global.change.attributes">
-    <empty/>
+    <ref name="att.global.change.attribute.change"/>
   </define>
+  <define name="att.global.change.attribute.change">
+    <optional>
+      <attribute name="change">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to one or more change elements within listChange to which the element bearing this attribute and its children have been assigned by the encoder.</a:documentation>
+        <list>
+          <oneOrMore>
+            <ref name="data.pointer"/>
+          </oneOrMore>
+        </list>
+      </attribute>
+    </optional>
+  </define>
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.global.change-check-changes-pointers-constraint">
+    <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@change]">
+      <let name="changes" value="tokenize(@change,'\s+')"/>
+      <let name="root" value="ancestor::tei:TEI"/>
+      <report test="$changes[not(.=$root/tei:teiHeader//tei:listChange/tei:change/concat('#',@xml:id))]">ERROR: Invalid pointer in <name/>@change: <value-of select="$changes[not(.=$root/tei:teiHeader//tei:listChange/tei:change/concat('#',@xml:id))]"/>..</report>
+    </rule>
+  </pattern>
   <define name="facsimile">
     <element name="facsimile">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the element graphic, which in turn contains a pointer to an image (or pointers to images) of the source document. [11.1. ]</a:documentation>
@@ -11458,6 +11676,24 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       <empty/>
     </element>
   </define>
+  <define name="astrologer">
+    <element name="astrologer" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(astrologer) points, by means of the ref attribute, to the xml:id value of the person conducting the astrological portions of the case.</a:documentation>
+      <empty/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-astrologer-astrologer-links-constraint">
+        <rule context="cb:astrologer">
+          <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@ref,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@ref,'\s+'))">ERROR: <name/> does not point to a valid listPerson//person, org or personGrp</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-astrologer-astrologer-repeated-ref-constraint">
+        <rule context="cb:astrologer">
+          <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(distinct-values(tokenize(@ref,'\s+'))) = count(tokenize(@ref,'\s+'))">ERROR: <name/>@ref contains a repeated value</assert>
+        </rule>
+      </pattern>
+      <ref name="att.casebooks.participants.attributes"/>
+      <empty/>
+    </element>
+  </define>
   <define name="consultation">
     <element name="consultation" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultation) contains information about the consultation and the roles of the participants.</a:documentation>
@@ -11467,6 +11703,9 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
           <ref name="questionNumber"/>
         </optional>
         <ref name="consultant"/>
+        <zeroOrMore>
+          <ref name="astrologer"/>
+        </zeroOrMore>
         <oneOrMore>
           <ref name="querent"/>
         </oneOrMore>
@@ -11491,9 +11730,9 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
         <optional>
           <ref name="judgment"/>
         </optional>
-        <optional>
+        <zeroOrMore>
           <ref name="treatment"/>
-        </optional>
+        </zeroOrMore>
         <zeroOrMore>
           <ref name="info"/>
         </zeroOrMore>
@@ -11556,14 +11795,43 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-practitionerReceivesMessage-needs-ref-constraint">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type='practitionerReceivesMessage']">
-          <report test="not(@ref) or normalize-space(@ref)=''">ERROR: <name/>@type='practitionerReceivesMessage' requires @ref</report>
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('practitionerReceivesMessage','neutralGround')]">
+          <let name="querent" value="./ancestor::cb:consultation//cb:querent"/>
+          <let name="subject" value="./ancestor::cb:consultation//cb:subject[tokenize(@ref,'\s+')=$querent[not(@present)]/tokenize(@ref,'\s+')]"/>
+          <report test="not(@ref) or normalize-space(@ref)=''">ERROR: <name/>@type='<value-of select="@type"/>' requires @ref</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-needs-cb-querent-present-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('neutralGround','practitionerVisitsQuerent','querentVisitsPractitioner','unknown')]">
+          <let name="elem" value="."/>
+          <let name="querent" value="./ancestor::cb:consultation//cb:querent"/>
+          <let name="subject" value="./ancestor::cb:consultation//cb:subject[tokenize(@ref,'\s+')=$querent[not(@present)]/tokenize(@ref,'\s+')]"/>
+          <let name="default_present_vals" value="($querent/@present, $subject/@present)"/>
+          <assert test="$default_present_vals[. = 'yes']">ERROR: At least one querent must have @present='yes' if the location is '<value-of select="$elem/@type"/>'</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-needs-cb-querent-present2-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('practitionerReceivesMessage')]">
+          <let name="elem" value="."/>
+          <let name="querent" value="./ancestor::cb:consultation//cb:querent"/>
+          <let name="subject" value="./ancestor::cb:consultation//cb:subject[tokenize(@ref,'\s+')=$querent[not(@present)]/tokenize(@ref,'\s+')]"/>
+          <let name="default_present_vals" value="($querent/@present, $subject/@present)"/>
+          <assert test="$default_present_vals[. = 'no']">ERROR: At least one querent must have @present='no' if the location is '<value-of select="$elem/@type"/>'</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-querentSendsSubject-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('querentSendsSubject')]">
+          <let name="elem" value="."/>
+          <let name="querents" value="./ancestor::cb:consultation//cb:querent"/>
+          <let name="subjects" value="./ancestor::cb:consultation//cb:subject"/>
+          <let name="querent_present_vals" value="distinct-values(($querents[@present]/@present, ./ancestor::cb:consultation//cb:subject[tokenize(@ref,'\s+')=$querents[not(@present)]/tokenize(@ref,'\s+')]/@present))"/>
+          <assert test="$querent_present_vals[. = 'no'] and $subjects[@present='yes']">ERROR: At least one querent must have @present='no' and one subject must be @present='yes' if the location is '<value-of select="$elem/@type"/>'</assert>
         </rule>
       </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.canonical.attribute.key"/>
       <attribute name="type">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">takes one of the values "neutralGround", "practitionerReceivesMessage", "practitionerVisitsQuerent", "querentVisitsPractitioner" or "unknown". By far the commonest type values are practitionerVisitsQuerent and querentVisitsPractitioner, which are hopefully self-explanatory, except that "practitionerVisitsQuerent" also covers instances where the practitioner visits a subject who is not, or not necessarily, the same person or in the same place as the querent. "neutralGround" indicates that the encounter took place somewhere that was neither the querent’s nor the practitioner’s current place of residence. "practitionerReceivesMessage", which should only be used in conjunction with ref, caters for the extremely rare instances in which there is concrete evidence of where the practitioner was when he received a message, such as CASE12933, in which Napier notes that the bringer of the message ‘met me then at Staunton’. "unknown", which should also be used only in conjunction with ref, applies in the equally rare instances in which the place of the consultation is known, but it is not clear whether this was either the practitioner’s or the querent’s current place of residence at the time (for instance an inn that, so far as the record reveals, may have been either where the querent was staying, where the practitioner was staying, or a place where neither of them was staying but where they agreed, or happened, to meet).</a:documentation>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">takes one of the values "neutralGround", "practitionerReceivesMessage", practitionerVisitsQuerent", "querentSendsSubject", "querentVisitsPractitioner" or "unknown". By far the commonest type values are practitionerVisitsQuerent and querentVisitsPractitioner, which are hopefully self-explanatory, except that "practitionerVisitsQuerent" also covers instances where the practitioner visits a subject who is not, or not necessarily, the same person or in the same place as the querent. "neutralGround" indicates that the encounter took place somewhere that was neither the querent’s nor the practitioner’s current place of residence. "practitionerReceivesMessage", which should only be used in conjunction with ref, caters for the extremely rare instances in which there is concrete evidence of where the practitioner was when he received a message, such as CASE12933, in which Napier notes that the bringer of the message ‘met me then at Staunton’. "querentSendsSubject", which has been used a grand total of two times at the time of writing, applies to entries such as CASE49604 in which it is apparent that not only the question but the subject her or himself has been sent to the practitioner by the querent (probably for residential treatment, though this is unlikely to be made explicit). "unknown", which like "practitionerReceivesMessage" should be used only in conjunction with ref, applies in the equally rare instances in which the place of the consultation is known, but it is not clear whether this was either the practitioner’s or the querent’s current place of residence at the time (for instance an inn that, so far as the record reveals, may have been either where the querent was staying, where the practitioner was staying, or a place where neither of them was staying but where they agreed, or happened, to meet).</a:documentation>
         <choice>
           <value>neutralGround</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">records that the place of the consultation is known to be neither the practitioner”s current place of residence nor that of the querent or the subject.</a:documentation>
@@ -11571,6 +11839,8 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">caters for the extremely rare instances in which there is concrete evidence of where the practitioner was when he received a message, such as CASE12933, in which Napier notes that the bringer of the message ‘met me then at Staunton’.</a:documentation>
           <value>practitionerVisitsQuerent</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">records that the practitioner visited the querent (or, in the extremely unlikely event that the querent is known to be a different person from the subject and they do not share an address, the subject).</a:documentation>
+          <value>querentSendsSubject</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">DESCRIPTION NEEDED.</a:documentation>
           <value>querentVisitsPractitioner</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">records that the querent visited the practitioner.</a:documentation>
           <value>unknown</value>
@@ -11627,11 +11897,16 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
   </define>
   <define name="info">
     <element name="info" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(additional information) records the presence of information about events relevant to the case, financial transactions associated with it, the condition of the patient’s urine, or Napier’s reliance on angelic advice in formulating a diagnosis or prognosis.</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(additional information) records the presence of information about events relevant to the case, financial transactions associated with it, the condition of the patient’s urine, or Napier’s reliance on divination or angelic advice in formulating a diagnosis or prognosis.</a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-angel-needs-subtype-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@type=('angel')]">
           <report test="not(@subtype=('Aladiah','Asariel','Gabriel','Michael','Raphael','Uriel','Unspecified'))">ERROR: cb:info@type='angel' needs @subtype with the angel name ('Aladiah','Asariel', 'Gabriel', 'Michael', 'Raphael', 'Uriel' or 'Unspecified' are presently supported).</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-divination-needs-subtype-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@type=('divination')]">
+          <report test="not(@subtype=('dice'))">ERROR: cb:info@type='divination' needs @subtype with the value 'dice'.</report>
         </rule>
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-event-needs-subtype-constraint">
@@ -11641,14 +11916,16 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       </pattern>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-n-not-needed-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@subtype]">
-          <report test="not(@type=('angel','event'))">ERROR: cb:info@subtype must only be used when @type is 'angel' or 'event'</report>
+          <report test="not(@type=('angel','event', 'divination'))">ERROR: cb:info@subtype must only be used when @type is 'angel', 'diviniation' or 'event'</report>
         </rule>
       </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <attribute name="type">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">states what the information is about (or, in the case of angels, its source). Permitted values: "angel", "event", "financial" or "urine".</a:documentation>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">states what the information is about (or, in the case of angels, its source). Permitted values: "angel", "divination" "event", "financial" or "urine".</a:documentation>
         <choice>
           <value>angel</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          <value>divination</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
           <value>event</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -11660,8 +11937,10 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       </attribute>
       <optional>
         <attribute name="subtype">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">applies only where the type value is "event" or "angel". For events, it records whether the event falls into the "previousConsultation" or "subsequentEvent" category, or takes the value "unclear" if it is not apparent whether the event in question is prior or subsequent to the consultation. For angels, it records the angel’s name if known (currently permitted values are "Aladiah", "Asariel", "Gabriel", "Michael", "Raphael", "Uriel", or "Unspecified" if no name is given).</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">applies only where the type value is "divination", "event" or "angel". For divination, it records how the divination was cast, namely "dice" (this being the only method encountered to date). For events, it records whether the event falls into the "previousConsultation" or "subsequentEvent" category, or takes the value "unclear" if it is not apparent whether the event in question is prior or subsequent to the consultation. For angels, it records the angel’s name if known (currently permitted values are "Aladiah", "Asariel", "Gabriel", "Michael", "Raphael", "Uriel", or "Unspecified" if no name is given).</a:documentation>
           <choice>
+            <value>dice</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>previousConsultation</value>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <value>subsequentEvent</value>
@@ -11754,6 +12033,13 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-inferred-ref-count-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[@evidence='inferred']">
           <assert test="count(tokenize(@ref,'\s+'))=1">ERROR: <name/>/@ref must contain a single token if @evidence='inferred'</assert>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-conflicting-inferred-present-values-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[not(@present)]">
+          <let name="refs" value="tokenize(@ref,'\s+')"/>
+          <let name="present_vals" value="distinct-values(//cb:subject[tokenize(@ref,'\s+')=$refs]/@present)"/>
+          <assert test="count($present_vals)=1">ERROR: Multiple inferred @present values (<value-of select="string-join($present_vals,', ')"/>) for the querents (<value-of select="$refs"/>)</assert>
         </rule>
       </pattern>
       <ref name="att.casebooks.participants.attribute.reason"/>
@@ -11930,9 +12216,23 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
   </define>
   <define name="treatment">
     <element name="treatment" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(treatment) indicates that the entry either records a particular treatment recommended or administered by the practitioner, or includes an explicit statement that no treatment was offered.</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(treatment) indicates that the entry either records a particular treatment recommended or administered by the practitioner, or includes an explicit statement that no treatment was offered. If the prescribed treatment involves one or more sigils, cb:treatment takes a type value of "sigil": this may be either as well as or instead of a cb:treatment element with no type value.</a:documentation>
       <empty/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-treatment-cb-treatment-count-constraint">
+        <rule context="cb:treatment">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::*:consultation[count(descendant::*:treatment)&gt;2 or count(descendant::*:treatment[@type])&gt;1 or count(descendant::*:treatment[not(@type)])&gt;1]">ERROR: There may at most be two cb:treatment elements (one with type='sigil' and one without that attribute).</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
+      <optional>
+        <attribute name="type">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This attribute should be applied, with the value "sigil", if the prescribed treatment consists of or involves a sigil or sigils. This may be either instead of or as well as a cb:treatment element with no type value, denoting a more conventional treatment or treatments.</a:documentation>
+          <choice>
+            <value>sigil</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+          </choice>
+        </attribute>
+      </optional>
       <empty/>
     </element>
   </define>
