@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE22100</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-05-31">31 May 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="238">MS Ashmole 238, f. 11v</idno>
+<altIdentifier type="fn_number"><idno n="Napier048">Napier, vol. 48</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0011v" to="0011v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jp">
+<persName><forename>Joan</forename> <surname>Parrot</surname></persName>
+<sex value="2">F</sex>
+<age value="8">8</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1621-12-07" precision="medium" xml:id="date1" exclude="#date2"/><date when="1622-12-07" precision="medium" xml:id="date2" exclude="#date1"/><time when="12:30:00"/></birth>
+</person>
+<person xml:id="sp">
+<persName><forename>Susan</forename> <surname evidence="inferred" type="maiden">Parrot</surname></persName>
+<sex value="2">F</sex>
+<age value="3">3</age>
+<birth><date when="1627-05-03" n="Thursday"/></birth>
+</person>
+<person xml:id="ep">
+<persName><forename>Elizabeth</forename> <surname>Parrot</surname></persName>
+<sex value="2">F</sex>
+<age value="5">5</age>
+<birth><date when="1624-11-23" n="Tuesday"/><time when="17:30:00"/></birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="sister" mutual="#jp #sp #ep"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1630-06-08" n="Tuesday"/></p>
+<p><time when="13:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#jp #ep #sp" present="unclear"/>
+<cb:topic key="scrofula"><person sameAs="#jp"/><person sameAs="#sp"/></cb:topic>
+<cb:topic key="fingers"><person sameAs="#jp"/></cb:topic>
+<cb:topic key="swelling"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="feet"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#ep"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-05-31">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-06-10">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-05">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-05-09">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-05-10">Checked and revised by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-05-26">Rechecked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afc0042.jpg" url="afc0042.jpg" n="11v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>oane Parrot <rs type="address" xml:id="address1">of Lillingston <lb/>Loavell</rs> 8. y <add place="supralinear">a fortnight before St Th his day h. 12 30 p m</add> <choice><orig>I</orig><reg>J</reg></choice>une 8 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 1. 30 <lb/>p. m 1630</p>
+<p><lb/>kings evill on her finger of her <lb/>left arme</p>
+<p><lb/>Susan her sister 3 of may being <lb/>holy thursd was 3 y a swelling <lb/>in her <choice><sic>f</sic><corr type="noText"/></choice> left foote 8 weeks <lb/>sup to be the kings evill</p>
+<p><lb/>Elis Parret her sister 5 y <lb/><add place="supralinear">on tuesd</add> a weeke before S<hi rend="superscript">t</hi> Androus <lb/>day h. 5. 30 p m 1630</p>
+</div>
+</body>
+</text>
+</TEI>

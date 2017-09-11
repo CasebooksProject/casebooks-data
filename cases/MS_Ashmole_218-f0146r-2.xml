@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-06-07">07 June 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 146r/uR, f. 146v/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="218">MS Ashmole 218, f. 146r-v</idno>
+<altIdentifier type="fn_number"><idno n="Napier037">Napier, vol. 37</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0146r" to="0146v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="gm">
+<persName><forename>George</forename> <surname>Miles</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jm">
+<persName><forename>John</forename> <surname evidence="inferred">Miles</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><surname evidence="inferred">Miles</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="father" active="#m" passive="#gm #jm"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1623-06-27" n="Friday"/></p>
+<p><time when="08:39:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#gm" evidence="internal" present="unclear"/>
+<cb:querent ref="#m" evidence="internal" present="no"/>
+<cb:subject ref="#jm #anon" present="no"/>
+<cb:topic key="maritalProspects"><person sameAs="#jm"/><person sameAs="#anon"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-07-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-11-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aad0317.jpg" url="aad0317.jpg" n="146r"/>
+<graphic xml:id="aad0318.jpg" url="aad0318.jpg" n="146v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Georg miles moved a quest <lb/>in the behalfe of <lb/>his father for his <lb/>sonne m<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ohn <lb/> <foreign xml:lang="la">de con<choice><orig>i</orig><reg>j</reg></choice>ugio <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>erit <choice><orig>v</orig><reg>u</reg></choice>tri<choice><orig></orig><reg>que</reg></choice> <choice><orig></orig><reg>par</reg></choice>ti c<choice><orig>ō</orig><reg>om</reg></choice>mod<choice><orig>ū</orig><reg>um</reg></choice> <lb/>et conducibile</foreign> <choice><orig>I</orig><reg>J</reg></choice>une <lb/>27 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h: 8 39 <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> <lb/>1623</p>
+<pb xml:id="f146v" n="146v"/>
+<p><foreign xml:lang="la">Pater Gorgi<choice><orig>j</orig><reg>i</reg></choice> Miles <add place="supralinear"><choice><orig>v</orig><reg>u</reg></choice>na c<choice><orig>ū</orig><reg>um</reg></choice> filio</add> quærit <lb/><choice><orig><choice><sic>vtū</sic><corr>vtrū</corr></choice></orig><reg>utrum</reg></choice> con<choice><orig>i</orig><reg>j</reg></choice>ugi<choice><orig>ū</orig><reg>um</reg></choice> oblat<choice><orig>ū</orig><reg>um</reg></choice> ei <choice><orig></orig><reg>pro</reg></choice> filio <lb/><choice><orig>I</orig><reg>J</reg></choice>oh<choice><orig>ā</orig><reg>an</reg></choice>i erit <choice><orig>v</orig><reg>u</reg></choice>tri<choice><orig></orig><reg>que</reg></choice> <choice><orig></orig><reg>par</reg></choice>ti erit con<lb/>ducibile</foreign> <choice><orig>I</orig><reg>J</reg></choice>une 27 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 8. 39 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1623</p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

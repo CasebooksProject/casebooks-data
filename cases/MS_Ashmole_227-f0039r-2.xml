@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-08-11">11 August 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 39r/uR-2, f. 39v/uL, f. 39v/uR-1, f. 40r/mR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="227">MS Ashmole 227, ff. 39r-v, 40r</idno>
+<altIdentifier type="fn_number"><idno n="Napier042">Napier, vol. 42</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0039r" to="0040r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wh">
+<persName><roleName>Mr</roleName> <forename>William</forename> <surname>Hutchinson</surname></persName>
+<sex value="1">M</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Preacher</occupation>
+<occupation notAfter="1627-03-27">Chaplain</occupation>
+</person>
+<person xml:id="h1">
+<persName><surname type="married" evidence="inferred">Hutchinson</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" cert="medium">Hutchinson</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a1">
+<persName><roleName>Bishop</roleName> <surname>Andrews</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a2" evidence="internal">
+<persName><roleName>Dr</roleName> <surname>Allat</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="wife" active="#h1" passive="#wh" from="1615-03-28" precision="low"/>
+<relation name="father" active="#h2" passive="#wh"/>
+<relation name="chaplainRank" active="#wh" passive="#a1" notAfter="1627-03-27"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1627-03-28" n="Wednesday"/></p>
+<p><time when="10:20:00" xml:id="time1" exclude="#time2"/><time when="10:30:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h1 #h2" evidence="internal" present="unclear"/>
+<cb:subject ref="#wh" present="no" consent="no"/>
+<cb:topic key="brainPassions"><person sameAs="#wh"/></cb:topic>
+<cb:topic key="distemperedPassions"><person sameAs="#wh"/></cb:topic>
+<cb:topic key="lightheadedPassions"><person sameAs="#wh"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-11">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-08-11">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-23">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-04-03">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aab0085.jpg" url="aab0085.jpg" n="39r"/>
+<graphic xml:id="aab0086.jpg" url="aab0086.jpg" n="39v"/>
+<graphic xml:id="aab0087.jpg" url="aab0087.jpg" n="40r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Willi<choice><orig>ā</orig><reg>am</reg></choice> Hutching<lb/>son: 40. y: march. <lb/>28. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 10. 2<subst><del type="over">5</del><add place="over">0</add></subst>. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1627. <add place="inline"><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>xor <choice><orig></orig><reg>pro</reg></choice> marito</foreign> <lb/>a tale big m<choice><orig>ā</orig><reg>an</reg></choice>. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> yell hayre very <lb/>mery &amp; cheer<lb/>full by <lb/>his owne <lb/>nature &amp; c<choice><orig>ō</orig><reg>om</reg></choice>plexion <lb/>taketh mutch <lb/>tobacco <lb/><foreign xml:lang="la">pater <choice><orig></orig><reg>pro</reg></choice> <lb/>filio sine <lb/>c<choice><orig>ō</orig><reg>on</reg></choice>sensu/</foreign></add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<pb xml:id="f39v" n="39v"/>
+<p><lb/>M<hi rend="superscript">r</hi> Will: Hutchinson 40 y <lb/><rs type="address" xml:id="address1">of Bl<choice><orig>ū</orig><reg>un</reg></choice>s<choice><orig>ā</orig><reg>am</reg></choice> in <choice><sic>Hutington</sic><corr>Huntington</corr></choice> <lb/>sheere hard by Erith</rs> <lb/>march 28. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 10 30 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1627.</p>
+<p><lb/>a tale yell hayre very <lb/><choice><orig>I</orig><reg>J</reg></choice>oviall &amp; mery by his <lb/>owne disposition very Kind <lb/>&amp; yet thrifty.</p>
+<p><lb/>he was Chaplyn to B And <add place="lineEnd">in</add> <lb/><add place="supralinear">his owne</add> who bestowed on him a good <lb/><choice><orig></orig><reg>par</reg></choice>sonage &amp; p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>bend</p>
+</div>
+<cb xml:id="colB" n="b"/>
+<div>
+<pb xml:id="f40r" n="40r"/>
+<p><lb/>M<hi rend="superscript">r</hi> Hutchingson a p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>ach <subst><del type="over">a</del><add place="over">&amp;</add></subst> a chaplyn <lb/>to B Andros 40 y <del type="strikethrough">Iuly</del> March <lb/>28 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 10. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1627. <add place="infralinear">brayne distempered <lb/><choice><sic>extree</sic><corr>extreme</corr></choice> proud of his <lb/>gifts <choice><orig>I</orig><reg>J</reg></choice>ealous <lb/>of his wife</add><note place="chart">light headed <lb/>distenperd in his breane <lb/><choice><orig>I</orig><reg>J</reg></choice>ealous of his wife</note></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

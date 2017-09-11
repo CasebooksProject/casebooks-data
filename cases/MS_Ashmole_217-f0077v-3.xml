@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-06-07">07 June 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="217">MS Ashmole 217, f. 77v</idno>
+<altIdentifier type="fn_number"><idno n="Napier040">Napier, vol. 40</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0077v" to="0077v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mr</roleName> <surname>Chaplin</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="th">
+<persName><forename>Thomas</forename> <surname>Harris</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h">
+<persName><surname type="married" evidence="inferred">Harris</surname> <surname type="maiden" cert="medium" evidence="inferred">Chaplin</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="husband" active="#th" passive="#h"/>
+<relation name="daughter" active="#h" passive="#c"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1625-04-29" n="Friday"/></p>
+<p><time when="13:39:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c" evidence="internal" present="no"/>
+<cb:subject ref="#th" present="no"/>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#th"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-07-05">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-02-14">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cnd0176.jpg" url="cnd0176.jpg" n="77v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Chaplin wrote in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> behalfe <lb/>of Th Harys <choice><orig><subst><del type="over">a</del><add place="over">y<hi rend="superscript">t</hi></add></subst></orig><reg>that</reg></choice> <choice><sic>mayed</sic><corr>maryed</corr></choice> his <lb/>Daughter Ap 29 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 1. 39 <lb/>p m 1625</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-10-25">25 October 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="406">MS Ashmole 406, f. 344v</idno>
+<altIdentifier type="fn_number"><idno n="Napier046">Napier, vol. 46</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0344v" to="0344v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tm">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Middleton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+<birth><date when="1629-11-04" n="Wednesday"/><time when="01:00:00"/></birth>
+</person>
+<listRelation>
+<relation name="daughter" active="#anon1" passive="#tm"/>
+<relation name="mother" active="#anon1" passive="#anon2"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1629-11-12" n="Thursday" evidence="inferred"/></p>
+<p><time notBefore="15:20:00" notAfter="17:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon1"/>
+<cb:subject ref="#anon1" present="unclear"/>
+<cb:topic key="childbirthMedical"><person sameAs="#anon1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-18">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-10-25">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-11-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-08-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abn0520.jpg" url="abn0520.jpg" n="344v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Thomas Mydletons daughter <lb/>brought a bed <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out mydwife <lb/>or helpe of women nov<choice><orig>ē</orig><reg>em</reg></choice>b 4 <del type="strikethrough">☿</del> <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <lb/><del type="strikethrough">♃</del> h. <del type="strikethrough">1. p m </del> 13 p. m. 1629</p>
+</div>
+</body>
+</text>
+</TEI>

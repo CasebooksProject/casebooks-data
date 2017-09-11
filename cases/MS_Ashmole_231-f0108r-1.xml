@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-03-22">22 March 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 108r/uL, f. 108r/uR, f. 108v/uL, f. 108v/uR, f. 109r/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="231">MS Ashmole 231, ff. 108r-109r</idno>
+<altIdentifier type="fn_number"><idno n="Napier034">Napier, vol. 34</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0108r" to="0109r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mg">
+<persName><roleName>Mrs</roleName> <forename>Mary</forename> <surname>Gray</surname></persName>
+<sex value="2">F</sex>
+<age value="34">34</age>
+<birth><date when="1587-05-25" n="Thursday"/><time when="12:08:00"/></birth>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<death><date when="1614-09-30" precision="low"/></death>
+</person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+<death><date notAfter="1621-09-29"/></death>
+</person>
+<person xml:id="anon3">
+<sex value="0">U</sex>
+<death><date notAfter="1621-09-29"/></death>
+</person>
+<person xml:id="anon4">
+<sex value="0">U</sex>
+<death><date notAfter="1621-09-29"/></death>
+</person>
+<person xml:id="anon5">
+<sex value="0">U</sex>
+<death><date notAfter="1621-09-29"/></death>
+</person>
+<person xml:id="anon6">
+<sex value="0">U</sex>
+<death><date notAfter="1621-09-29"/></death>
+</person>
+<person xml:id="anon7">
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon8">
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon9">
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon10">
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon11">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="father" active="#anon1" passive="#mg"/><relation name="mother" active="#mg" passive="#anon2 #anon3 #anon4 #anon5 #anon6 #anon7 #anon8 #anon9 #anon10 #anon11"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1621-09-30T08:00:00" notAfter-custom="1621-10-01T09:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mg"/>
+<cb:subject ref="#mg" present="unclear"/>
+<cb:topic key="fortune" evidence="internal"><person sameAs="#mg"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-22">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-03-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-11">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-07-28">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aaw0235.jpg" url="aaw0235.jpg" n="108r"/>
+<graphic xml:id="aaw0236.jpg" url="aaw0236.jpg" n="108v"/>
+<graphic xml:id="aaw0237.jpg" url="aaw0237.jpg" n="109r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la">Radix rectificata</foreign> for <choice><orig>m<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Mary Gray may 25 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 12. <lb/><add place="supralinear"><subst><del type="over">7</del><add place="over">8</add></subst></add> <choice><orig>post m</orig><reg>pm</reg></choice>. 34 y. &amp; 8 y sinc had <lb/>the smale pox. 1587. her father dyed 7 y sinc &amp; then began <lb/>her <choice><sic>miseyes</sic><corr>miseryes</corr></choice> <add place="infralinear">had 3 <choice><sic>fyst</sic><corr>fyrst</corr></choice> but lived 4. y. had <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> smale pox. <lb/>not longe 11 child. 5 dead &amp; 5 live &amp; on <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><sic>care</sic><corr>came</corr></choice> not to be quicke.</add><note place="chart">may 1587</note></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB" n="b"/>
+<pb xml:id="f108v" n="108v"/>
+<cb xml:id="colB" n="b"/>
+<pb xml:id="f109r" n="109r"/>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-06-07">07 June 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="218">MS Ashmole 218, f. 177v</idno>
+<altIdentifier type="fn_number"><idno n="Napier037">Napier, vol. 37</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0177v" to="0177v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="aa">
+<persName><roleName>Mr</roleName> <forename>Adolph</forename> <surname>Andrews</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1623-07-27" n="Sunday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#aa" evidence="internal"/>
+<cb:subject ref="#aa" present="no"/>
+<cb:item type="urine"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#aa"/></cb:topic>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-07-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-11-17">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-02-18">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-15">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aad0380.jpg" url="aad0380.jpg" n="177v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>M<hi rend="superscript">r</hi> Adolph Androwes <rs type="address" xml:id="address1">of Lathbury</rs> <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 27 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 2. p m <lb/>1623.</p>
+<p><lb/>sent his water<anchor xml:id="questionEnd"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> was <lb/><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">v</add></subst>ery good &amp; well coloured <lb/>but froathy &amp; full of wynd</p><anchor xml:id="urineInfoEnd"/>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

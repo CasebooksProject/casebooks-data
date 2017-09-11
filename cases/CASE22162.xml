@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE22162</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-05-31">31 May 2013</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="238">MS Ashmole 238, f. 22r</idno>
+<altIdentifier type="fn_number"><idno n="Napier048">Napier, vol. 48</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0022r" to="0022r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1630-06-15"><name sameAs="#srnapier">Sir Richard Napier</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2"><name sameAs="#rnapier">Richard Napier</name> added information about subsequent events.</change>
+</listChange>
+</creation>
+<settingDesc>
+<p><date when="1630-06-15" n="Tuesday"/></p>
+<p><time when="06:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#srnapier"/>
+<cb:astrologer ref="#srnapier #rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon1" evidence="conjecture"/>
+<cb:subject ref="#anon1" present="unclear"/>
+<cb:topic key="journeys"><person sameAs="#anon1"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-05-31">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-06-12">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-05">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-05-10">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-05-15">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afc0063.jpg" url="afc0063.jpg" n="22r"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><handShift new="#srnapier"/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> iter erit Prosper<choice><orig>ū</orig><reg>um</reg></choice> <lb/>hor. 6. <choice><orig>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> <foreign xml:lang="en"><choice><orig>I</orig><reg>J</reg></choice>une the 15 <choice><orig>an. m</orig><reg>am</reg></choice>. <lb/>1630.<anchor xml:id="questionEnd"/> <lb/><milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><handShift new="#rnapier"/>they went not neyther <lb/>would it have taken effect.</foreign></p>
+<anchor xml:id="subsequentEventInfoEnd"/>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

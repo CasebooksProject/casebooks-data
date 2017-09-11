@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL, uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="212">MS Ashmole 212, p. 430</idno>
+<altIdentifier type="fn_number"><idno n="Napier050">Napier, vol. 50</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0430" to="0430"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="srnapier">
+<persName><roleName>Sir</roleName> <forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rn">
+<persName><forename>Robert</forename> <surname evidence="inferred">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lord Bridgewater</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="pe">
+<persName><forename evidence="external">Penelope</forename> <surname evidence="external">Egerton</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="nephew" active="#srnapier" passive="#rnapier"/><relation name="brother" mutual="#srnapier #rn"/><relation name="daughter" active="#pe" passive="#person1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-02-06" n="Monday"/></p>
+<p><time when="17:15:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#srnapier" evidence="internal" present="unclear"/>
+<cb:subject ref="#rn" present="no" consent="no"/>
+<cb:object ref="#pe"/>
+<cb:topic key="maritalProspects"><person sameAs="#rn"/><person sameAs="#pe"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-06">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-22">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmj0474.jpg" url="cmj0474.jpg" n="430"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><choice><sic>M<hi rend="superscript">r</hi></sic><corr type="delText"/></choice> <add place="lineBeginning"><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice></add> Rich: Nap <foreign xml:lang="la">nepos <lb/>quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> frat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Robertus <lb/>maritebit</foreign> my lord Bridgwaters <lb/>daughter. feb. 6. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 5. 15 p <lb/><choice><sic>p</sic><corr type="noText"/></choice> m 1632 <foreign xml:lang="la">sine c<choice><orig>ō</orig><reg>on</reg></choice>sensu</foreign></p>
+<anchor xml:id="questionEnd"/>
+
+</div>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

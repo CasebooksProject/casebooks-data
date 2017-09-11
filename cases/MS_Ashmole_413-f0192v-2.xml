@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-02-10">10 February 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 192v/bL, f. 193r/bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="413">MS Ashmole 413, ff. 192v-193r</idno>
+<altIdentifier type="fn_number"><idno n="Napier038">Napier, vol. 38</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0192v" to="0193r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><roleName>Mrs</roleName> <surname>Prescot</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="k">
+<persName><roleName>Mrs</roleName> <surname>Kendall</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="et">
+<persName><forename>Eleanor</forename> <surname>Cook</surname> <surname evidence="inferred" type="married">Typsley</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="ft">
+<persName><forename>Francis</forename> <surname>Typsley</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="at">
+<persName><forename>Anne</forename> <surname type="maiden">Typsley</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="daughter-in-law" active="#et" passive="#k"/>
+<relation name="wife" active="#et" passive="#ft"/>
+<relation name="son" active="#ft" passive="#k"/>
+<relation name="daughter" active="#at" passive="#et"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1624-05-17" n="Monday"/></p>
+<p><time when="13:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#p" evidence="internal"/>
+<cb:subject ref="#p" present="no"/>
+<cb:object ref="#et #at"/>
+<cb:item type="letter"/>
+<cb:topic key="controversies" cert="medium"><person sameAs="#p"/></cb:topic>
+<cb:topic key="secretEnemies" cert="medium"><person sameAs="#p"/><person sameAs="#et"/><person sameAs="#at"/></cb:topic>
+<cb:topic key="torso"><person sameAs="#p"/></cb:topic>
+<cb:topic key="heart"><person sameAs="#p"/></cb:topic>
+<cb:topic key="consumed"><person sameAs="#p"/></cb:topic>
+<cb:topic key="medicalCounsel"><person sameAs="#p"/></cb:topic>
+<cb:topic key="requestingTreatment"><person sameAs="#p"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-05-31">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-11-25">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aca0416.jpg" url="aca0416.jpg" n="192v"/>
+<graphic xml:id="aca0417.jpg" url="aca0417.jpg" n="193r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Pescot sent a letter to <lb/>me touching certen ptyes susp <lb/>to doe her <choice><sic>hane</sic><corr>harme</corr></choice> May 17 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 1. 30 <lb/>p m. 1624</p>
+<pb xml:id="f193r" n="193r"/>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Prescot was <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/><del type="strikethrough">goody</del> <choice><orig>M<hi rend="overline"><hi rend="superscript">r</hi>es</hi></orig><reg>Mrs</reg></choice> Kendall who <lb/>did excuse her selfe <subst><del type="over">&amp;</del><add place="over">b</add></subst>efore she <lb/>dyed &amp; did put it on her daughter <lb/>in law that <choice><sic>mayed</sic><corr>maryed</corr></choice> her sonne called <lb/>Ellenor Cooke now wife of francis <lb/>Typsley confessed <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> her daughter <lb/>sent for a m<choice><orig>ā</orig><reg>an</reg></choice> to <choice><orig></orig><reg>pro</reg></choice>cure her mischiefe <lb/>but they did not <choice><orig></orig><reg>per</reg></choice>fourme it. still <lb/>is tormented almost in all <choice><orig></orig><reg>par</reg></choice>t<choice><orig>ꝭ</orig><reg>es</reg></choice> of her <lb/>bodye yet not sicke so <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she is <lb/>afrayd <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> all her <choice><sic>adversayes</sic><corr>adversaryes</corr></choice> are not <lb/>rooted out. this <add place="supralinear">last</add> wom<choice><orig>ā</orig><reg>an</reg></choice> hath a <lb/>Daughter <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> was <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the old wom<choice><orig>ā</orig><reg>an</reg></choice> before she dyed <lb/>called Anne Typsley. <lb/>always tormented at hart feareth a <lb/>c<choice><orig>ō</orig><reg>on</reg></choice>s<choice><orig>ū</orig><reg>um</reg></choice>ption &amp; craveth my consayle <lb/>&amp; helpe <choice><orig>v</orig><reg>u</reg></choice>nder god.</p>
+</div>
+</body>
+</text>
+</TEI>

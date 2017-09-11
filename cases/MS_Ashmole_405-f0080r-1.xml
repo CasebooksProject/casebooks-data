@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-08-26">26 August 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="405">MS Ashmole 405, f. 80r</idno>
+<altIdentifier type="fn_number"><idno n="Napier044">Napier, vol. 44</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0080r" to="0080r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="je">
+<persName><forename>John</forename> <surname>Evans</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+</person>
+<person xml:id="e">
+<persName><surname evidence="inferred" type="married">Evans</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<personGrp xml:id="jec">
+<persName><surname evidence="inferred">Evans</surname></persName>
+<sex value="0">U</sex>
+</personGrp>
+<person xml:id="anon2">
+<sex value="2">F</sex>
+<death><date notAfter="1628-06-18"/></death>
+</person>
+<listRelation>
+<relation name="wife" active="#e" passive="#je"/>
+<relation name="child" active="#jec" passive="#je"/>
+<relation name="wife" active="#anon2" passive="#anon1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1628-06-19" n="Thursday"/></p>
+<p><time when="18:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#je" evidence="internal"/>
+<cb:subject ref="#je #anon1" present="no"/>
+<cb:topic key="financeAndProperty"><person sameAs="#je"/></cb:topic>
+<cb:topic key="counsel"><person sameAs="#je"/></cb:topic>
+<cb:topic key="aCold"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="griefPassions"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="melancholy"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="noUseOfPart"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="cold"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="head"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="nose"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="hearing"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="medicalCounsel"><person sameAs="#anon1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-18">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-24">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-08-26">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-22">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-01-30">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-02-04">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abk0177.jpg" url="abk0177.jpg" n="80r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><supplied reason="binding" cert="high"><choice><orig>I</orig><reg>J</reg></choice></supplied>ohn Evans <rs type="address" xml:id="address1">of the Mynrys <lb/>in London</rs> <choice><orig><choice><sic>Iue</sic><corr>Iune</corr></choice></orig><reg>June</reg></choice> 19 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 6 p <lb/>m. 1628</p>
+<p><lb/>writeth for a gent m<choice><orig>ā</orig><reg>an</reg></choice></p>
+<p><lb/>first <choice><orig>v</orig><reg>u</reg></choice>nfoldeth his owne greefe <lb/>how he is wr<choice><orig>ō</orig><reg>on</reg></choice>ged &amp; cosened <lb/>of all <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he hath &amp; therby he <lb/>his wife &amp; childr<choice><orig>ē</orig><reg>en</reg></choice> broght <lb/>to great want &amp; misery craveth <lb/>my Counsell &amp; instruction</p>
+<p><lb/>Also writeth in the behalfe of a <lb/>gentlem<choice><orig>ā</orig><reg>an</reg></choice> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> having taken an <lb/>extreme cold &amp; p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently an exceeding <lb/>greefe for the Death of his wife &amp; <lb/><supplied reason="binding" cert="medium">th</supplied>erby cast Downe into sicknes &amp; mutch <lb/>melancholy of a sanguyne c<choice><orig>ō</orig><reg>om</reg></choice>plexion <lb/>his sicknes &amp; melancholy is mutch <lb/>abated &amp; now his voice is almost <lb/>Lost <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><sic>he s cānot</sic><corr type="delText"/></choice> <add place="supralinear">on c<choice><orig>ā</orig><reg>an</reg></choice>not</add> <del type="strikethrough">spea</del> heare <subst><del type="strikethrough">on</del> <add place="supralinear">him</add></subst> <lb/><del type="strikethrough">that</del> <choice><sic>speaketh</sic><corr type="delText"/></choice> <add place="supralinear">to speake</add> a yard of</p>
+<p><lb/>c<choice><orig>ō</orig><reg>om</reg></choice>playneth of something about the <lb/>pit of his throate his voice <lb/>is only low &amp; weake but not troubled <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> any fault in <choice><orig></orig><reg>pro</reg></choice>noncing but cleere inough every where no physick but c<choice><orig>ō</orig><reg>om</reg></choice>playneth of the coldnes of his <lb/>stomack &amp; head &amp; <choice><sic>sone</sic><corr>some</corr></choice> stoppage <lb/>about the beg<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>ing of his nose cold <lb/>flegme &amp; cold head &amp; defect in <lb/>hearing hath 2 great manyscripts <lb/>of physick <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he is Desyrous <lb/>I should <choice><orig></orig><reg>per</reg></choice><choice><orig>v</orig><reg>u</reg></choice>se craveth <choice><orig>v</orig><reg>u</reg></choice>nder god <lb/>my consayle for the frind his <lb/>gentleman</p>
+</div>
+</body>
+</text>
+</TEI>

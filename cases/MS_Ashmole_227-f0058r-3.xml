@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-08-11">11 August 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 58r/bR, f. 58v/mL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="227">MS Ashmole 227, f. 58r-v</idno>
+<altIdentifier type="fn_number"><idno n="Napier042">Napier, vol. 42</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0058r" to="0058v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><genName>Old</genName> <roleName>Lady Westmorland</roleName></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="person2">
+<persName><roleName>Lady de la Spencer</roleName></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="h">
+<persName><roleName>Lady</roleName> <surname>Home</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mrs</roleName> <surname>Craste</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="d">
+<persName><surname>Duppa</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<occupation>Bailiff</occupation>
+</person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="mother" active="#person1" passive="#h"/><relation name="grandmother" active="#d" passive="#c"/><relation name="father" active="#anon1" passive="#anon2"/><relation name="daughter" active="#h" passive="#person2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1627-04-13" n="Friday" evidence="conjecture"/></p>
+<p><time notBefore="07:45:00" notAfter="08:25:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#person1 #person2" evidence="internal" present="no"/>
+<cb:subject ref="#h #c" present="no"/>
+<cb:topic key="counsel"><person sameAs="#h"/></cb:topic>
+<cb:topic key="pregnancy"><person sameAs="#h"/></cb:topic>
+<cb:topic key="costive"><person sameAs="#c"/></cb:topic>
+<cb:topic key="report"><person sameAs="#c"/></cb:topic>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-11">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-08-11">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-26">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-04-04">Checked and amended by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-05-12">Rehecked and further amended by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-05-12">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aab0123.jpg" url="aab0123.jpg" n="58r"/>
+<graphic xml:id="aab0124.jpg" url="aab0124.jpg" n="58v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>The Lady West <lb/>&amp; the Lady de <lb/>Lespencer sent for <lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Crosts to <lb/>goe to her grand<lb/>motter Dup<choice><orig></orig><reg>per</reg></choice> &amp; not <lb/>to come Home to th<choice><orig>ē</orig><reg>em</reg></choice> <lb/>for feare of relapse</p><anchor xml:id="questionEnd1"/>
+<milestone unit="financialInfo" spanTo="#financialInfoEnd1"/>
+<p><lb/>&amp; sent me 5<hi rend="superscript">l</hi> <lb/>for m<hi rend="superscript">rs</hi> Crosts <lb/>&amp; the lady West <lb/>a peece for her <lb/>child.</p><anchor xml:id="financialInfoEnd1"/>
+<milestone unit="question" spanTo="#questionEnd2"/>
+<p><lb/><foreign xml:lang="la">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit gravida</foreign></p>
+<pb xml:id="f58v" n="58v"/>
+
+<p><lb/><choice><orig><choice><sic>renēb</sic><corr>remēb</corr></choice></orig><reg>rememb</reg></choice> to write to her &amp; <lb/>to the Bayly for his <lb/>Child <add place="supralinear">the falling sicknes</add> &amp; to the lady Westmor<lb/>land &amp; to the lady delespencer <lb/><foreign xml:lang="la">et <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice></foreign> Her daughter lady <lb/>Humes be <foreign xml:lang="la">gravida</foreign> &amp; in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>behalfe of <choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Crosts. <lb/><add place="supralinear">is Costive always/</add> her dyet <add place="supralinear">purging Drink</add> wroght 3 or 4 <lb/><choice><sic>tys</sic><corr>tyms</corr></choice> a day</p>
+<p><lb/>fearth astringent playsters <lb/>will bynd it</p><anchor xml:id="questionEnd2"/>
+<milestone unit="financialInfo" spanTo="#financialInfoEnd2"/>
+<p><lb/>I had 5<hi rend="superscript"><hi rend="overline">l</hi></hi> of the lady Delespencer <lb/>&amp; a peece fr<choice><orig>ō</orig><reg>om</reg></choice> the old lady <lb/>Westmorland for my Counsell <lb/>for her child <add place="inline">Ap 13.</add></p><anchor xml:id="financialInfoEnd2"/>
+<milestone unit="question" spanTo="#questionEnd3"/>
+<p><lb/><choice><orig><hi rend="overline">M<hi rend="superscript">res</hi></hi></orig><reg>Mrs</reg></choice> Crost was willed for feare <lb/>of relapse to goe to her Grand<lb/>mother Dup<choice><orig></orig><reg>per</reg></choice> for a while <lb/>I wished her to stay vntill the 8 <lb/>of May 8.</p><anchor xml:id="questionEnd3"/>
+</div>
+
+</body>
+</text>
+</TEI>

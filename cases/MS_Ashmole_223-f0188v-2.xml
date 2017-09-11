@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-11-16">16 November 2015</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR, bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="223">MS Ashmole 223, f. 188v</idno>
+<altIdentifier type="fn_number"><idno n="Napier035">Napier, vol. 35</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0188v" to="0188v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rn1">
+<persName><roleName>Sir</roleName> <forename>Robert</forename> <surname evidence="external">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="r">
+<persName><roleName>Sir</roleName> <forename>Robert</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<person xml:id="rn2">
+<persName><forename>Robert</forename> <surname evidence="inferred">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lord Purbeck</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="daughter" active="#anon" passive="#r"/>
+<relation name="son" active="#rn2" passive="#rn1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1622-07-14" n="Sunday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rn1" evidence="internal"/>
+<cb:subject ref="#rn1" present="unclear"/>
+<cb:object ref="#r #anon #rn2 #person1"/>
+<cb:topic key="financeAndProperty"><person sameAs="#rn1"/><person sameAs="#r"/></cb:topic>
+<cb:topic key="maritalProspects"><person sameAs="#rn2"/><person sameAs="#anon"/></cb:topic>
+<cb:topic key="curable"><person sameAs="#person1"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-11-16">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-02-29">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-09-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmz0404.jpg" url="cmz0404.jpg" n="188v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob enquireth <lb/><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> Debeat</foreign> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob. will <choice><sic>a<subst><del type="over">c</del><add place="over">d</add></subst>nit</sic><corr>admit</corr></choice> <lb/>of his daught for his <lb/>sone Robert. he will <lb/>give <foreign xml:lang="la"><choice><orig>3000<hi rend="superscript">l</hi></orig><reg>3000 libra</reg></choice></foreign> Dowrie &amp; <foreign xml:lang="la"><choice><orig>3000<supplied reason="binding"><hi rend="superscript">li</hi></supplied></orig><reg>3000 libra</reg></choice></foreign> <lb/>at his death. &amp; if he <lb/>have no son. he will <lb/><choice><sic>assue</sic><corr>assure</corr></choice> him <choice><orig><choice><sic>futh<hi rend="superscript">r</hi></sic><corr>furth<hi rend="superscript">r</hi></corr></choice></orig><reg>further</reg></choice> <foreign xml:lang="la"><choice><orig>800<hi rend="superscript">li</hi></orig><reg>800 libra</reg></choice></foreign> <gap extent="1" unit="words" reason="binding" cert="low"/> <lb/>land a yere <choice><orig>I</orig><reg>J</reg></choice>uly 14 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <lb/>h. 2. p m 1622 <add place="infralinear">&amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></add> I have any hope of do<unclear cert="medium" reason="binding">ing</unclear> <lb/>good to my lord Purbecke</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colA" n="a"/>
+</body>
+</text>
+</TEI>

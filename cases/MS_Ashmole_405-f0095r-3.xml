@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-08-26">26 August 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="405">MS Ashmole 405, f. 95r</idno>
+<altIdentifier type="fn_number"><idno n="Napier044">Napier, vol. 44</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0095r" to="0095r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mr">
+<persName><roleName>Mrs</roleName> <forename>Mary</forename> <surname>Robinson</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="ir" evidence="internal">
+<persName><forename>Isaac</forename> <surname>Richardson</surname></persName>
+<sex value="1">M</sex> 
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1628-07-04" n="Friday"/></p>
+<p><time when="06:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mr" evidence="internal"/>
+<cb:subject ref="#mr" present="no"/>
+<cb:object ref="#ir"/>
+<cb:item type="urine"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#mr"/></cb:topic>
+<cb:topic key="witchcraft"><person sameAs="#mr"/><person sameAs="#ir"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-18">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-24">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-08-26">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-23">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-01-31">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abk0207.jpg" url="abk0207.jpg" n="95r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Mary Robynson <lb/>sent her water <choice><orig>I</orig><reg>J</reg></choice>uly <lb/>4 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h 6. <choice><sic>20</sic><corr type="delText"/></choice> <add place="supralinear">30</add> <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1628</p>
+<p><lb/>supposeth her selfe to be <lb/>bewitched </p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

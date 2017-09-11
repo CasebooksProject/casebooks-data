@@ -33,6 +33,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -43,13 +46,19 @@
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1606-03-22"><name sameAs="#willoughby">Mr Willoughby</name> held the consultation.</change>
+<change xml:id="stage2" notBefore="1606-03-22" notAfter="1606-03-23"><name sameAs="#rnapier">Richard Napier</name> wrote out the entry.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="w">
+<person xml:id="willoughby">
 <persName><roleName>Mr</roleName> <surname>Willoughby</surname></persName>
 <sex value="1">M</sex>
 </person>
@@ -64,10 +73,11 @@
 <p><date when="1606-03-22" n="Saturday"/></p>
 <p><time when="08:15:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier"/>
+<cb:consultant ref="#willoughby"/>
+<cb:astrologer ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#w" evidence="internal" present="unclear"/>
-<cb:subject ref="#anon" present="no"/>
+<cb:querent ref="#anon" evidence="internal"/>
+<cb:subject ref="#anon" present="yes"/>
 <cb:topic key="pregnancy"><person sameAs="#anon"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>

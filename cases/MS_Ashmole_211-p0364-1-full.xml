@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 364</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0364" to="0364"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="q">
+<persName><roleName>Mrs</roleName> <forename>Quicke</forename></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <forename>Magdalen</forename></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Countess</roleName></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="a">
+<persName><roleName>Lady</roleName> <forename>Alice</forename></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#person1" passive="#m"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-08-08" n="Thursday"/></p>
+<p><time when="20:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#q" evidence="internal" present="no"/>
+<cb:subject ref="#m #a" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="requestingTreatment"><person sameAs="#m"/></cb:topic>
+<cb:topic key="report"><person sameAs="#m"/><person sameAs="#a"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-08">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-21">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0387.jpg" url="clq0387.jpg" n="364"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Aug 8 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 8. 20 p <lb/>m. 1633</p>
+<p><lb/>I receaved a letter <lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> <choice><orig><hi rend="overline">mres</hi></orig><reg>Mrs</reg></choice> <choice><sic>Quck</sic><corr>Quick</corr></choice> <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the lady Magda<lb/>len by means of <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/><choice><sic>lady</sic><corr type="delText"/></choice> <add place="supralinear">Countes</add> her mother. hath <lb/>bene forced to <del type="strikethrough">vs</del> <lb/>fast. <del type="strikethrough">&amp; to keepe <lb/>a fast but once</del> <lb/>the Countes hath <lb/>made the lady Magd <lb/>to keepe an exact <lb/>dyet &amp; fasting &amp; <lb/>hath abstaynd fr<choice><orig>ō</orig><reg>om</reg></choice> <lb/>the <choice><orig>v</orig><reg>u</reg></choice>se of any <lb/>p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>scribed by me <lb/>&amp; semeth to be <lb/>mutch better <lb/>for it</p>
+<p><lb/>craveth a <lb/>masse of <lb/>my pils</p>
+<p><lb/>the lady Magdalen <lb/>was lately <lb/>sick but <lb/>now mutch <lb/>amended.</p>
+<p><lb/>The lady Alce well <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out taking any phy<lb/>sick</p>
+<anchor xml:id="questionEnd"/>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-06-22">22 June 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 153r/uL, f. 153r/bR-1, f. 153r/bR-3, f. 153r/uR, f. 153v/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="222">MS Ashmole 222, f. 153r-v</idno>
+<altIdentifier type="fn_number"><idno n="Napier036">Napier, vol. 36</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0153r" to="0153v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h1">
+<persName><roleName>Mrs</roleName> <surname type="married">Hanger</surname> <surname type="alternate">Edwards</surname> <surname evidence="inferred" type="maiden">Knight</surname></persName>
+<sex value="2">F</sex>
+<age value="55">55</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1577-03-01" n="Friday" evidence="extrapolated" xml:id="date1" exclude="#date2"/><date when="1578-02-21" n="Friday" evidence="extrapolated" xml:id="date2" exclude="#date1"/></birth>
+</person>
+<person xml:id="h2">
+<persName><roleName>Dr</roleName> <surname>Hanger</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Minister</occupation>
+</person>
+<person xml:id="k">
+<persName><surname>Knight</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="a" evidence="internal">
+<persName><roleName>Dr</roleName> <surname>Allat</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="wife" active="#h1" passive="#h2"/><relation name="daughter" active="#h1" passive="#k"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1622-01-07" n="Tuesday"/></p>
+<p><time when="14:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#h1" present="no"/>
+<cb:topic key="fancies"><person sameAs="#h1"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#h1"/></cb:topic>
+<cb:topic key="temptedAndSuicidal"><person sameAs="#h1"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:info type="event" subtype="previousConsultation"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-09">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-09-20">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-09-11">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aam0331.jpg" url="aam0331.jpg" n="153r"/>
+<graphic xml:id="aam0332.jpg" url="aam0332.jpg" n="153v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Hanger <add place="supralinear">30 y myles</add> <rs type="address" xml:id="address1">of Steapington</rs> <lb/>the first fryday in lent 55 y <lb/><choice><orig>I</orig><reg>J</reg></choice>an. 7. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 2. 40 p m. 1622.</p>
+<p><lb/><choice><orig>v</orig><reg>u</reg></choice>p<choice><orig></orig><reg>per</reg></choice> lip it was cut a litle <lb/>after Whitsontyde about <lb/>mydsomer. otherwise <choice><orig>M<hi rend="superscript">r</hi>es</orig><reg>Mrs</reg></choice> <lb/><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">E</add></subst>dwards Knight<choice><orig>ꝭ</orig><reg>es</reg></choice> Daughter <lb/><rs type="address" xml:id="address2">at Pyddington</rs> <lb/>full of fond fancyes <lb/>before in her throate <lb/>now sinc in her <lb/>Lip &amp; sayth <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she <lb/>is poonished for mary<lb/>ing of D Hanger <lb/>a par<choice><orig></orig><reg>par</reg></choice>son.</p>
+<p><lb/>A Wom<choice><orig>ā</orig><reg>an</reg></choice> otherwise Wise <lb/>inough./ <add place="marginLeft">she did strive <lb/><supplied reason="binding" cert="medium">to</supplied> harme or Drowne <lb/>her selfe.</add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB" n="b"/>
+<pb xml:id="f153v" n="153v"/>
+</body>
+</text>
+</TEI>
