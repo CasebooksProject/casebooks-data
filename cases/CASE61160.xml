@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE61160</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-11-30">30 November 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="224">MS Ashmole 224, f. 20v</idno>
+<altIdentifier type="fn_number"><idno n="Napier041">Napier, vol. 41</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0020v" to="0020v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ag">
+<persName><forename>Anne</forename> <surname>Gale</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="g">
+<persName><surname evidence="inferred" cert="medium">Gale</surname></persName>
+<sex value="1">M</sex>
+<age value="11">11</age>
+</person>
+<listRelation><relation name="son" active="#g" passive="#ag"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1625-10-19" n="Wednesday"/></p>
+<p><time when="13:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner" evidence="external"/>
+<cb:querent ref="#ag" evidence="external"/>
+<cb:subject ref="#ag" present="yes"/>
+<cb:subject ref="#g" present="no"/>
+<cb:topic key="animalDeathAndDisease"><person sameAs="#ag"/></cb:topic>
+<cb:topic key="bruise"><person sameAs="#g"/></cb:topic>
+<cb:topic key="ague"><person sameAs="#g"/></cb:topic>
+<cb:topic key="speechProblem"><person sameAs="#g"/></cb:topic>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-03">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-17">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-12-01">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-03-29">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-31">Separated from <ref target="CASE61161" type="case">CASE61161</ref> by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-04-26">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cml0058.jpg" url="cml0058.jpg" n="20v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Anne Gale <rs type="address" xml:id="address1">of Goldington</rs> <lb/>octob: 19. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice>. h. 1. 45. p. m <lb/>1625</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/>hath had great losse <lb/>by <del type="strikethrough">beasts.</del> her carte <lb/>horses</p>
+<p><lb/>a boy of hers 11. y. ill by a bruse an ague <lb/>his speach &amp; sences.</p>
+</div>
+<div>
+</div>
+</body>
+</text>
+</TEI>

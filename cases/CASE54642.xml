@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE54642</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-06-22">22 June 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 3v/uL, f. 3v/uR, f. 4r/uL-1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="222">MS Ashmole 222, ff. 3v-4r</idno>
+<altIdentifier type="fn_number"><idno n="Napier036">Napier, vol. 36</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0003v" to="0004r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jm">
+<persName><roleName>Mr</roleName> <forename>John</forename> <surname>Monson</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon3">
+<sex value="2">F</sex>
+</person>
+<person xml:id="m">
+<persName><surname evidence="inferred">Monson</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Lord Treasurer</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="j">
+<persName><roleName>King</roleName> <forename evidence="external">James</forename></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="father" active="#m" passive="#jm"/><relation name="wouldBeSweetheart" active="#jm" passive="#anon1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1622-07-19" n="Friday"/></p>
+<p><time when="21:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jm" evidence="internal"/>
+<cb:subject ref="#jm" present="unclear"/>
+<cb:subject ref="#m" present="no"/>
+<cb:object ref="#anon1 #anon2 #anon3 #person1 #j"/>
+<cb:topic key="romanticRelations"><person sameAs="#jm"/><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="romanticRelations"><person sameAs="#jm"/><person sameAs="#anon2"/></cb:topic>
+<cb:topic key="romanticRelations"><person sameAs="#jm"/><person sameAs="#anon3"/></cb:topic>
+<cb:topic key="financeAndProperty"><person sameAs="#m"/><person sameAs="#person1"/><person sameAs="#j"/></cb:topic>
+<cb:topic key="trauma"><person sameAs="#jm"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-06-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-06-27">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-09-06">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aam0026.jpg" url="aam0026.jpg" n="3v"/>
+<graphic xml:id="aam0027.jpg" url="aam0027.jpg" n="4r"/>
+</facsimile>
+<text xml:lang="la">
+<body><div>
+<p><lb/><foreign xml:lang="en">M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ohn mounson</foreign> <rs type="address" xml:id="address1">Lond</rs> quærit</p>
+<p><lb/>1 <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> obtinebit amasi<choice><orig>ā</orig><reg>am</reg></choice>. <foreign xml:lang="en"><choice><orig>I</orig><reg>J</reg></choice>uly 19 <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 9 p m. 1622</foreign></p>
+<p><lb/>2 <foreign xml:lang="en">also</foreign> <choice><orig><choice><sic>vtū</sic><corr>vtrū</corr></choice></orig><reg>utrum</reg></choice> mulier <choice><orig>i</orig><reg>j</reg></choice><choice><orig>ā</orig><reg>am</reg></choice> maritata et <lb/>nunc gravida, <choice><orig></orig><reg>per</reg></choice>severabit in <lb/>amore suo c<choice><orig>ō</orig><reg>on</reg></choice>stant<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> erga <lb/>e<choice><orig>ū</orig><reg>um</reg></choice></p>
+<p><lb/>3. <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> re<choice><orig></orig><reg>pro</reg></choice>b<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">a</add></subst>bit aliqu<choice><orig>ē</orig><reg>em</reg></choice> amo<lb/>ris sui <unclear cert="low" reason="hand">ænu</unclear>l<choice><orig>ū</orig><reg>um</reg></choice> sicut ei <lb/><choice><orig></orig><reg>pro</reg></choice>misit, paucis abhinc diebus</p>
+<p><lb/>4. <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> Pater n<choice><orig>ō</orig><reg>on</reg></choice> t<choice><orig>ā</orig><reg>am</reg></choice> digni<lb/>tates pristinas recupera<lb/>bit, qu<choice><orig>ā</orig><reg>am</reg></choice> Debit<choice><orig>ū</orig><reg>um</reg></choice> a rege <lb/>ei <choice><orig></orig><reg>pro</reg></choice>miss<choice><orig>ū</orig><reg>um</reg></choice>. <choice><orig>qꝛ</orig><reg>quia</reg></choice> <choice><orig>d<hi rend="overline">ns</hi></orig><reg>dominus</reg></choice> mag <lb/>Thesaurarius <choice><orig></orig><reg>pro</reg></choice>mittit <choice><orig>2000 l<hi rend="overline">ib</hi></orig><reg>2000 libra</reg></choice> <lb/>c<choice><orig>ū</orig><reg>um</reg></choice> debuissit ei <choice><orig></orig><reg>per</reg></choice>solvere <choice><orig>3000<hi rend="superscript">l</hi></orig><reg>3000 libra</reg></choice> et 5 baronatos <add place="infralinear"><foreign xml:lang="en">a litle before eight he had a sore fall fr<choice><orig>ō</orig><reg>om</reg></choice> his horse <lb/>who fell <choice><orig>v</orig><reg>u</reg></choice>ppon him &amp; brused him sorely.</foreign></add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB" n="b"/>
+<pb xml:id="f4r" n="4r"/>
+</body>
+</text>
+</TEI>

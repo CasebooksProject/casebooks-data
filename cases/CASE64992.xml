@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE64992</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-08-09">09 August 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL, uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="410">MS Ashmole 410, f. 19r</idno>
+<altIdentifier type="fn_number"><idno n="Napier043">Napier, vol. 43</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0019r" to="0019r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ak">
+<persName><roleName>Mr</roleName> <forename>Anthony</forename> <surname>King</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ta">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Anderton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="friend" mutual="#ak #ta"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1627-11-22" n="Thursday"/></p>
+<p><time when="10:38:00" xml:id="time1" exclude="#time2"/><time when="10:45:00" xml:id="time2" exclude="#time1"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ta" evidence="internal" present="unclear"/>
+<cb:subject ref="#ak" present="no"/>
+<cb:messenger ref="#ta"/>
+<cb:topic key="fallingSickness"><person sameAs="#ak"/></cb:topic>
+<cb:topic key="report"><person sameAs="#ak"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-18">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-08-09">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-12-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abq0057.jpg" url="abq0057.jpg" n="19r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> <subst><del type="over">O</del><add place="over">A</add></subst>nthony King <rs type="address" xml:id="address1">of Ashby <lb/>de la Land</rs> troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>the epilepsy signifyed by <lb/>his worthy good frind &amp; gentlem<choice><orig>ā</orig><reg>an</reg></choice> <lb/>M<hi rend="superscript">r</hi> Thomas Anderton how <lb/>he tooke all the physick sent <lb/>him &amp; touching the working <lb/>therof. nov<choice><orig>ē</orig><reg>em</reg></choice>b 22. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 10 38 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1627</p>
+<cb xml:id="colB" n="b"/>
+<p><lb/>M<hi rend="superscript">r</hi> King sent his <lb/>frind to acquaint <lb/>me touching the <lb/>operat of his <lb/>physick nov<choice><orig>ē</orig><reg>em</reg></choice>b. 22 <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 10: 45 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1627.</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

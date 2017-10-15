@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE63631</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-08-11">11 August 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="227">MS Ashmole 227, f. 61r</idno>
+<altIdentifier type="fn_number"><idno n="Napier042">Napier, vol. 42</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0061r" to="0061r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t">
+<persName><roleName>Goodman</roleName> <surname>Turvey</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tt">
+<persName><forename>Thomas</forename> <surname evidence="inferred" cert="medium">Turvey</surname></persName>
+<sex value="1">M</sex>
+<age value="22">22</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Clerk</occupation>
+</person>
+<person xml:id="fs">
+<persName><roleName>Sir</roleName> <forename>Francis</forename> <surname>Stanton</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="f" evidence="internal">
+<persName><surname>Frayne</surname></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+<listRelation>
+<relation name="son" active="#tt" passive="#t"/>
+<relation name="clerk" active="#tt" passive="#fs"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1627-04-14" n="Saturday"/></p>
+<p><time when="09:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tt"/>
+<cb:subject ref="#tt" present="unclear"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#tt"/></cb:topic>
+<cb:info type="urine"/>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-11">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-08-11">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-31">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-04-05">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aab0129.jpg" url="aab0129.jpg" n="61r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>Goodm<choice><orig>ā</orig><reg>an</reg></choice> Tur<add place="supralinear"><choice><orig>u</orig><reg>v</reg></choice></add>ys sonne <lb/><rs type="address" xml:id="address1">of Crowly</rs>. Thomas <add place="infralinear">22 y</add> <lb/>Ap. 14 <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 9 40 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1627.</p><anchor xml:id="questionEnd1"/>
+<milestone unit="urineInfo" spanTo="#urineInfoEnd1"/>
+<p><lb/>a thick red water</p><anchor xml:id="urineInfoEnd1"/>
+<milestone unit="question" spanTo="#questionEnd2"/>
+<p><lb/>Clarke to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> francis <lb/>Stanton <rs type="address" xml:id="address2">of Burche<lb/>more</rs> <lb/>sickned on <choice><sic><unclear cert="low" reason="hand">s</unclear></sic><corr type="delText"/></choice> monday last</p><anchor xml:id="questionEnd2"/>
+<milestone unit="urineInfo" spanTo="#urineInfoEnd2"/>
+<p><lb/>a red thick water.</p><anchor xml:id="urineInfoEnd2"/>
+</div>
+</body>
+</text>
+</TEI>

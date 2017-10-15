@@ -55,8 +55,11 @@
 <person xml:id="hw">
 <persName><forename>Hester</forename> <surname>Weltch</surname></persName>
 <sex value="2">F</sex>
-
+<age value="2">2</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
 </person>
 </listPerson>
 </particDesc>
@@ -66,7 +69,7 @@
 <cb:consultation>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#hw"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
 <cb:subject ref="#hw" present="unclear"/>
 <cb:topic key="trauma" evidence="internal"><person sameAs="#hw"/></cb:topic>
 <cb:judgment/>
@@ -80,6 +83,7 @@
 <change when="2014-06-19">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-19">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,7 +91,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Hester Welsh <rs type="address" xml:id="address1">of Bedford</rs> <lb/><gap reason="binding" extent="1" unit="chars"/>2 y. Septemb. 20 &Saturday; ho. 11. 6 <lb/>a m. 1606</p>
+<p><lb/>Hester Welsh <rs type="address" xml:id="address1">of Bedford</rs> <lb/>2 y. Septemb. 20 &Saturday; ho. 11. 6 <lb/>a m. 1606</p>
 </div>
 &astroChart;
 </body>

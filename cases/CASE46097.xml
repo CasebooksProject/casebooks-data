@@ -42,6 +42,7 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -69,8 +70,7 @@
 <cb:querent ref="#td"/>
 <cb:subject ref="#td" present="unclear"/>
 <cb:topic key="swooning"><person sameAs="#td"/></cb:topic>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#td"/></cb:topic>
-<cb:judgment/>
+<cb:topic key="malignantFever"><person sameAs="#td"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 <cb:treatment/>
 </cb:consultation>
@@ -82,6 +82,7 @@
 <change when="2016-02-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-21">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,7 +90,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Thomas Dorell <rs type="address" xml:id="address1">of lullingston</rs> <lb/>65 y. feb 27 &Friday; h. 9. &antm; 1618 <lb/><gap reason="binding" extent="5" unit="chars"/> <space unit="chars" extent="4" dim="horizontal"/> swounded</p>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Thomas Dorell <rs type="address" xml:id="address1">of lullingston</rs> <lb/>65 y. feb 27 &Friday; h. 9. &antm; 1618 <add place="infralinear">swounded</add> <add place="infralinear"><foreign xml:lang="la"><supplied reason="binding" cert="medium">fe</supplied>br maligna</foreign></add><note place="chart"><foreign xml:lang="la">feb. malig</foreign></note></p>
 </div>
 &astroChart;
 <cb xml:id="colB" n="b"/>

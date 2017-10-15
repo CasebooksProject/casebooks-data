@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE65325</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-08-09">09 August 2016</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE65324">CASE65324</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL, uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="410">MS Ashmole 410, f. 93v</idno>
+<altIdentifier type="fn_number"><idno n="Napier043">Napier, vol. 43</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0093v" to="0093v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fl">
+<persName><roleName>Mrs</roleName> <forename>Frances</forename> <surname>Latch</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1623-03-02" n="Sunday"/>
+</birth>
+</person>
+<person xml:id="l" evidence="external">
+<persName><surname evidence="inferred">Latch</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="father" active="#l" passive="#fl" evidence="external"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1628-02-06" n="Wednesday" evidence="inferred"/></p>
+<p><time notBefore="11:00:00" notAfter="13:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#l" evidence="external" present="unclear"/>
+<cb:subject ref="#fl" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#fl"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-18">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-08-09">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2016-12-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abq0208.jpg" url="abq0208.jpg" n="93v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Francis Latch <rs type="address" xml:id="address1">of <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>Strand in London</rs> borne <lb/> <foreign xml:lang="la">marti<choice><orig>j</orig><reg>i</reg></choice></foreign> 2. <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h 6 p 20 p m <lb/>1622. </p>
+
+<cb xml:id="colB" n="b"/>
+<p><lb/><del type="erased">M<hi rend="superscript">r</hi> Flatcher of Husba<supplied reason="binding">nd</supplied> <lb/>Crowly 22 y feb</del></p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Franke Latch borne <lb/><rs type="address" sameAs="#address1">in the Strand in London</rs> <lb/>Martch 20 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 6. 20 p <lb/>m. 162<subst><del type="over">2</del><add place="over">3</add></subst> 1623.</p>
+</div>
+<figure type="astro" subtype="astroChartPartialDeleted"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

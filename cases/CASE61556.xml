@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE61556</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-11-30">30 November 2016</date>
+</publicationStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE61555">CASE61555</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 82r/bR, f. 82v/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="224">MS Ashmole 224, f. 82r-v</idno>
+<altIdentifier type="fn_number"><idno n="Napier041">Napier, vol. 41</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0082r" to="0082v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mh">
+<persName><forename>Margaret</forename> <surname>Howlet</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<person xml:id="b" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Bing</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="jw" evidence="internal">
+<persName><roleName>Sir</roleName> <forename>James</forename> <surname>Windfild</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1626-01-30" n="Monday" evidence="external"/></p>
+<p><time when="08:00:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#mh" present="unclear"/>
+<cb:object ref="#b"/>
+<cb:topic key="strangeAffliction"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="convulsions"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="swooning"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="fits"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="face"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="witchcraft" evidence="internal"><person sameAs="#mh"/><person sameAs="#b"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:treatment type="sigil"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-03">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-17">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-12-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-04-12">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-04-28">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cml0181.jpg" url="cml0181.jpg" n="82r"/>
+<graphic xml:id="cml0182.jpg" url="cml0182.jpg" n="82v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> strang convul<lb/>sions the <del type="strikethrough">wench the <lb/>morow</del> on <add place="supralinear">St</add> Stephens Daye <lb/><foreign xml:lang="la">☾ sep a ⚹ ♄ <lb/>ap ☌ ♀. p △ ♂</foreign> h. 8 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 162<subst><del type="over"><unclear cert="low" reason="del">6</unclear></del><add place="over">5</add></subst> &amp; swounded <lb/>at that tyme &amp; hath <lb/>bene troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> convulsi<choice><orig>ō</orig><reg>on</reg></choice>s <lb/>ever sinc</p>
+</div>
+<figure type="astro" subtype="astroChartDeleted"/>
+<div>
+<pb xml:id="f82v" n="82v"/>
+<p><lb/>Marg Howlet taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>strang fits of convulsions &amp; <lb/>wythering of her face &amp; <lb/>neck <choice><sic>S<hi rend="superscript">t</hi></sic><corr type="noText"/></choice> Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 26 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. <lb/>8 <choice><orig>ant m</orig><reg>am</reg></choice> 1625</p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

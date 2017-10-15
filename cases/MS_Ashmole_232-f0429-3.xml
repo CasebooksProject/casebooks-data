@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-06-05">05 June 2017</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="232">MS Ashmole 232, p. 429</idno>
+<altIdentifier type="fn_number"><idno n="Napier049">Napier, vol. 49</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0429" to="0429"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Andrew</forename> <surname>Hill</surname></persName>
+<sex value="1">M</sex>
+<age value="26">26</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="h1">
+<persName><surname evidence="inferred">Hill</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h2">
+<persName><surname evidence="inferred" cert="medium">Hill</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="brother" mutual="#ah #h1"/>
+<relation name="mother" active="#h2" passive="#ah"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1631-06-17" n="Friday"/></p>
+<p><time when="11:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h1" evidence="internal" present="unclear"/>
+<cb:subject ref="#ah" present="no" consent="no"/>
+<cb:topic key="lostWits"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="illness" resp="#rnapier"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#ah"/></cb:topic>
+<cb:topic key="troubled"><person sameAs="#ah"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-14">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-06-05">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-07-08">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-10-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aas0456.jpg" url="aas0456.jpg" n="429"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Andrew Hill <rs type="address" xml:id="address1">of <lb/>Hardn<choice><orig>ā</orig><reg>am</reg></choice></rs> 26 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>I</orig><reg>J</reg></choice><supplied reason="binding" cert="high">une</supplied> <lb/>17. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice>. h. 11. 20 <choice><orig><supplied reason="binding">ant</supplied> <lb/>m</orig><reg>am</reg></choice>. 1631.</p>
+<p><lb/>neyther wit <supplied reason="binding" cert="high">nor</supplied> <lb/>meanes</p>
+<p><lb/>fell ill <del type="strikethrough">in</del> 30 of <gap reason="binding" unit="words" extent="1"/> <lb/>wits &amp; mynd tr<supplied reason="binding" cert="low">oubled</supplied> <lb/>Is watched.</p>
+<p><lb/>ready to mi<gap extent="unclear" reason="binding"/> <lb/>his mother him selfe <gap extent="unclear" reason="binding"/><lb/>was so &amp; did so <lb/>&amp; night <add place="lineBeginning"><foreign xml:lang="la">frater <choice><orig></orig><reg>pro</reg></choice> fratre <lb/>sine c<choice><orig>ō</orig><reg>on</reg></choice>sensu</foreign></add></p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

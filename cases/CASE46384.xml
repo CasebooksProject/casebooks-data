@@ -58,12 +58,20 @@
 <age value="32">32</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="s" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Stayton</surname></persName>
+<sex value="0">U</sex>
+<age value="6">6</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<birth><date when="1611-09-29" precision="medium" evidence="extrapolated" xml:id="date1" exclude="#date2"/><date when="1612-09-29" precision="medium" evidence="extrapolated" xml:id="date2" exclude="#date1"/></birth>
+</person>
+<listRelation><relation name="mother" active="#as" passive="#s" evidence="internal"/></listRelation>
 
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1618-04-11" n="Saturday"/></p>
-<p><time notBefore="10:00:00" notAfter="10:59:00"/></p>
+<p><time when="10:15:00"/></p>
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -81,6 +89,7 @@
 <change when="2016-02-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-22">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,7 +97,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Agnys Stayton <rs type="address" xml:id="address1">of <lb/>Wicken</rs> 32 y <lb/>Ap 11 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 10. <gap reason="binding" extent="2" unit="chars" cert="medium"/> <lb/>&antm; 1618</p>
+<p><lb/>Agnys Stayton <rs type="address" xml:id="address1">of <lb/>Wicken</rs> 32 y <lb/>Ap 11 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor 10. 15 <lb/>&antm; 1618.</p>
 </div>
 </body>
 </text>

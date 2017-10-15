@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-03-30">30 March 2017</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS, bL, bR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="194">MS Ashmole 194, p. 164</idno>
+<altIdentifier type="fn_number"><idno n="Napier047">Napier, vol. 47</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0164" to="0164"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#unknown-h">Unidentified Hand H</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="unknown-h">
+<persName><roleName>Unidentified scribe H</roleName></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="tw">
+<persName><forename>Thomas</forename> <surname>Wright</surname></persName>
+<sex value="1">M</sex>
+<birth>
+<date when="1628-10-04" n="Saturday"/>
+<time when="11:00:00" xml:id="time1" exclude="#time2 #time3"/><time when="12:00:00" xml:id="time2" exclude="#time1 #time3"/><time xml:id="time3" exclude="#time1 #time2"/>
+</birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1630-03-14" n="Sunday"/></p>
+<p><time when="13:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#unknown-h"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#anon" evidence="inferred" present="yes"/>
+<cb:subject ref="#tw" present="yes"/>
+<cb:topic key="swooning"><person sameAs="#tw"/></cb:topic>
+<cb:topic key="trembling"><person sameAs="#tw"/></cb:topic>
+<cb:topic key="pox"><person sameAs="#tw"/></cb:topic>
+<cb:topic key="fits"><person sameAs="#tw"/></cb:topic>
+<cb:topic key="head"><person sameAs="#tw"/></cb:topic>
+<cb:topic key="heaviness"><person sameAs="#tw"/></cb:topic>
+<cb:topic key="sleepiness"><person sameAs="#tw"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-03-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-07-18">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-09-18">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciq0202.jpg" url="ciq0202.jpg" n="164"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Thomas write <del type="cancelled"><gap reason="del" extent="1" unit="chars"/></del> was <lb/>borne <subst><del type="strikethrough">on</del> <add place="supralinear">the next</add></subst> satterday at night after <lb/><del type="strikethrough">on</del> michelmus was twel<lb type="hyphenated"/>mounth, betweene a 11 or 12 <subst><del type="over">at</del><add place="over">or</add></subst> <choice><orig>i</orig><reg>1</reg></choice>3, a Clock <lb/>but cam to me at 1 of clock, <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>14<hi rend="superscript">th</hi>: of march 1630./</p>
+<p><lb/>had a qui<choice><orig>u</orig><reg>v</reg></choice>orin &amp; sounding on michelmus <lb/>last &amp; 3 Dayes <del type="strikethrough">the</del> after <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> small <lb/>pox <del type="strikethrough">&amp; then at shroftide</del> &amp; this <lb/>last night had 3 fitts after the <lb/>same manner a bo<choice><orig>u</orig><reg>v</reg></choice>e saide, being <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 13<hi rend="superscript">th</hi> Day <lb/>complaines on the head &amp; hea<choice><orig>u</orig><reg>v</reg></choice>ie <lb/>&amp; apt to sleepe</p>
+</div>
+<cb xml:id="colA" n="a"/>
+<figure type="astro" subtype="astroChartBlank"/>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

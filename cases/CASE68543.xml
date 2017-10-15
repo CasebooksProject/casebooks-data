@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE68543</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-10-25">25 October 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="406">MS Ashmole 406, f. 22v</idno>
+<altIdentifier type="fn_number"><idno n="Napier046">Napier, vol. 46</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0022v" to="0022v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ah">
+<persName><forename>Agnes</forename> <surname>Hombee</surname></persName>   
+<sex value="2">F</sex>
+<age value="60">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>    
+</person>
+<person xml:id="h">
+<persName><surname evidence="inferred" cert="medium">Hombee</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="conjecture"/>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="husband" active="#h" passive="#ah"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1629-05-25T19:40:00" notAfter-custom="1629-05-26T07:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#ah" present="unclear"/>
+<cb:topic key="distracted"><person sameAs="#ah"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-18">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2016-10-25">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-07-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-07-10">Checked by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abn0064.jpg" url="abn0064.jpg" n="22v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Agnys Hombye <rs type="address" xml:id="address1">of <lb/>Kettering</rs> 60 y. a wife <lb/><choice><sic>mayed</sic><corr>maryed</corr></choice> an old hus<supplied reason="binding" cert="medium">band</supplied> <lb/>distracted 3 y &amp; r<supplied reason="binding" cert="medium">un</supplied><lb/>neth <choice><orig>v</orig><reg>u</reg></choice>p &amp; downe</p>
+<p><lb/>neav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> had but on <lb/>child &amp; <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dy<supplied reason="binding" cert="low">ed</supplied> <lb/>she neav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> hath <lb/>bene well sinc <lb/>but as a distract<supplied reason="binding">ed</supplied> <lb/><choice><orig></orig><reg>per</reg></choice>son rangeth <choice><orig>v</orig><reg>u</reg></choice>p <supplied reason="binding" cert="high">&amp;</supplied> <lb/>do<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">wn</add></subst>e</p>
+</div>
+</body>
+</text>
+</TEI>

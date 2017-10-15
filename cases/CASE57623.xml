@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE57623</title>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-02-10">10 February 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 64r/uL, f. 64r/uR, f. 64v/uL, f. 64v/uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="413">MS Ashmole 413, f. 64r-v</idno>
+<altIdentifier type="fn_number"><idno n="Napier038">Napier, vol. 38</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0064r" to="0064v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="eb">
+<persName><roleName>Mrs</roleName> <forename>Elizabeth</forename> <surname>Conyears</surname> <surname type="married">Berkeley</surname></persName>
+<sex value="2">F</sex>
+<birth>
+<date when="1598-01-24" n="Tuesday"/>
+<time when="21:00:00" xml:id="time1" exclude="#time2 #time3"/><time when="21:30:00" xml:id="time2" exclude="#time1 #time3"/><time when="22:30:00" xml:id="time3" exclude="#time1 #time2"/>
+</birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1624-01-20T08:40:00" notAfter-custom="1624-01-20T11:20:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#eb" present="unclear"/>
+<cb:topic key="frantic"><person sameAs="#eb"/></cb:topic>
+<cb:topic key="mad"><person sameAs="#eb"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-06">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aca0151.jpg" url="aca0151.jpg" n="64r"/>
+<graphic xml:id="aca0152.jpg" url="aca0152.jpg" n="64v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Eliz. Connyers now <lb/>Barckley by mari<add place="supralinear">a</add>ge <foreign xml:lang="la">nata</foreign> <lb/><choice><orig>I</orig><reg>J</reg></choice>an 24. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 9. 30 <add place="infralinear">10 <subst><del type="over">2</del><add place="over">3</add></subst>0.</add> p m <lb/>1598</p>
+</div>
+<figure type="astro" subtype="astroChartPartial"/>
+<div>
+<cb xml:id="colB" n="b"/>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Eliz Connyers <foreign xml:lang="la">nata</foreign> <lb/><choice><orig>I</orig><reg>J</reg></choice>an 24 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 10 30 p m 1598 <add place="infralinear">h. 9 p. m 159<subst><del type="over">9</del><add place="over">8</add></subst></add><note place="chart">frentick &amp; mad</note></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<pb xml:id="f64v" n="64v"/>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Eliz. Comyers now <lb/>Barkley by mariage <foreign xml:lang="la">Nata</foreign> <lb/><choice><orig>I</orig><reg>J</reg></choice>an 24 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 9 p m 1598. <lb/><choice><sic>mayed</sic><corr>maryed</corr></choice> about 15. <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">ae</add></subst>leaven yers <lb/>2 children boath dead</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>
