@@ -291,16 +291,21 @@
       <item xml:id="evilThoughts" corresp="#temptedAndSuicidal">
          <desc type="editorial">This topic should be used for entries that refer to someone being troubled with ‘evil thoughts’, ‘ill thoughts’, ‘bad cogitations’ or ‘cogitations’ (or ‘cogit’) where context implies that they are bad. If the phrase is ‘ill thoughts’ then <val>illnessPassions</val> should not be used in addition to this topic; if the full expression is ‘troubled in the mind with ill thoughts’ then the topics <val>troubled</val>, <val>mind</val> and <val>evilThoughts</val> should be supplied.</desc>
       </item>
-      <item xml:id="unidentifiedPassions" corresp="#unspecifiedPassions">
-         <seg type="editorial">unidentifiedPassions</seg> 
-         <desc type="editorial">Questions that clearly relate to a mental issue but are couched in terms that defy more precise definition. This topic is for questions that are either incomprehensible (though clearly relating to the passions) or cannot reasonably be placed into one of our existing topics. It currently includes expressions such as ‘confused’, ‘perplexed’ and ‘suddenly taken’, each of which has appeared once to date.</desc>
-      </item>
       <item xml:id="unspecifiedPassions" sortKey="topic-173">
          <seg type="public">unspecified passions</seg>
          <desc>Entries that clearly relate to a mental issue, although none is specified in the question section.</desc>
          <desc type="editorial">This should always be given <att>evidence</att>, specifying <val>internal</val> if the judgment provides direct evidence that the consultation was passions-related, or <val>external</val> if the evidence comes from some source outside the case itself. (In theory, <val>inferred</val> is also available for the situation in which the inference is based on another component of the entry, such as a treatment note or a urine note, but in practice it would be impossible to distinguish passions entries from medical entries based on this alone, and the assumption should be that such entries are medical unless there is direct evidence of a passions-related problem.) An individual should not be associated with both <val>unspecifiedPassions</val> and another passions topic; <val>unspecifiedPassions</val> is a fall-back topic for ensuring an entry is designated as concerning the passions. It should not be used for recording the common phenomenon that particular symptoms are mentioned in the judgment but not in the question. However, one person can be given both <val>unspecifiedPassions</val> and any medical (non-passions) topic.</desc>
       </item>
-      
+      <item xml:id="unidentifiedPassions" sortKey="topic-174">
+         <seg type="public">unidentified passions</seg> 
+         <desc>Questions that are clearly psychological in nature but couched in terms that defy more precise definition.</desc>
+         <desc type="editorial">This topic is for questions that are either incomprehensible (though clearly relating to the passions) or cannot reasonably be placed into one of our existing topics. It currently includes expressions such as ‘confused’, ‘perplexed’ and ‘suddenly taken’, each of which has appeared once to date.</desc>
+      </item>
+      <item xml:id="jealousy" corresp="#unidentifiedPassions">
+         <seg type="editorial">jealousy</seg>
+         <desc type="editorial">This topic is for explicit references to jealousy or to people being jealous (in sufficiently extreme a form for it to count as a problem of the passions): it can be spelled ‘iealous’ or ‘gealous’, and the Latin is ‘zelotypia’.</desc>
+      </item>
+
 </list>
    <list sortKey="subtopics2" n="General Medical">
       <item xml:id="aegritudo" sortKey="topic-235">
@@ -1540,6 +1545,10 @@
       <item xml:id="noUrine" corresp="#bladderIncontinence">
          <seg type="editorial">noUrine</seg>
          <desc type="editorial">Inability to urinate.</desc>
+      </item>
+      <item xml:id="painfulUrination" corresp="#bladderIncontinence">
+         <seg type="editorial">painfulUrination</seg>
+         <desc type="editorial">At least for now, the topic ‘pain’ should not be used alongside this topic, unless the question mentions pain separately or in relation to a different body part or symptom.</desc>
       </item>
       <item xml:id="consumed" sortKey="topic-194">
          <seg type="public">wasting</seg> 

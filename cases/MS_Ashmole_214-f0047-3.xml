@@ -6,12 +6,12 @@
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title xml:id="main_title">CASE23101</title>
+<title xml:id="main_title"/>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
-<date when="2013-05-31">31 May 2013</date>
+<date when="2017-08-18">18 August 2017</date>
 </publicationStmt>
 <sourceDesc>
 <bibl type="positionOnPage">mR</bibl>
@@ -21,12 +21,12 @@
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="238">MS Ashmole 238, f. 166v</idno>
-<altIdentifier type="fn_number"><idno n="Napier048">Napier, vol. 48</idno></altIdentifier>
+<idno n="214">MS Ashmole 214, f. 47</idno>
+<altIdentifier type="fn_number"><idno n="Napier052">Napier, vol. 52</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
-<locus from="0166v" to="0166v"/>
+<locus from="0047" to="0047"/>
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
@@ -44,58 +44,56 @@
 <langUsage>
 <language ident="en">English</language>
 </langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="w1">
-<persName><roleName evidence="external">Mrs</roleName> <surname type="married" evidence="external">Whaley</surname></persName>
+<person xml:id="cw">
+<persName><roleName>Lady</roleName> <forename>Catherine</forename> <surname>Williams</surname></persName>
 <sex value="2">F</sex>
 </person>
-<person xml:id="w2">
-<persName><roleName>Mr</roleName> <surname>Whaley</surname></persName>
+<person xml:id="h" evidence="internal">
+<persName><roleName>Dr</roleName> <surname>Hughes</surname></persName>
 <sex value="1">M</sex>
-<age value="42">42</age>
-<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<listRelation><relation name="husband" active="#w2" passive="#w1"/></listRelation>
 </listPerson>
 </particDesc>
-<textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
-</textClass>
 <settingDesc>
-<p><date when="1630-10-04" n="Monday" evidence="external"/></p>
-<p><time when="13:00:00" evidence="external"/></p>
+<p><date when="1632-10-01" n="Monday"/></p>
+<p><time when="09:20:00"/></p>
 <cb:consultation>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#w1" evidence="internal" present="unclear"/>
-<cb:subject ref="#w2" present="no"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#w2"/></cb:topic>
+<cb:messenger ref="#h"/>
+<cb:querent ref="#cw" evidence="internal"/>
+<cb:subject ref="#cw" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#cw"/></cb:topic>
+<cb:item type="letter" evidence="internal"/>
 <cb:judgment/>
-<cb:treatment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
 <revisionDesc>
-<change when="2013-05-31">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
-<change when="2013-07-11">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2016-08-05">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-06-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
-<change when="2017-06-14">Checked by <name sameAs="#jyoung">John Young</name>.</change>
-<change when="2017-10-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-08-18">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-06">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-10-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-10-21">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic xml:id="afc0362.jpg" url="afc0362.jpg" n="166v"/>
+<graphic xml:id="aaa0077.jpg" url="aaa0077.jpg" n="47"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>for her husb M<hi rend="superscript">r</hi> Wha<supplied reason="binding" cert="high">ly</supplied> <lb/><rs type="address" xml:id="address1">of Grafton</rs>. 42 y</p>
+<p><lb/>The lady Katherin <lb/>Willi<choice><orig>ā</orig><reg>am</reg></choice>s <del type="strikethrough">Sept</del> octob. <lb/>1. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 9. 20 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1632</p>
 </div>
 </body>
 </text>
