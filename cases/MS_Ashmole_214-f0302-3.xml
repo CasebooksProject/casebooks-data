@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-08-18">18 August 2017</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="214">MS Ashmole 214, f. 302</idno>
+<altIdentifier type="fn_number"><idno n="Napier052">Napier, vol. 52</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0302" to="0302"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wl">
+<persName><roleName>Sir</roleName> <forename>Walter</forename> <surname>Leech</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="l">
+<persName><surname evidence="inferred" type="married">Leech</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<listRelation><relation name="wife" active="#l" passive="#wl"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-02-08" n="Friday"/></p>
+<p><time when="15:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#srnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#wl" evidence="internal" present="no"/>
+<cb:subject ref="#l" present="no"/>
+<cb:topic key="report"><person sameAs="#l"/></cb:topic>
+<cb:topic key="nauseaPhlegm"><person sameAs="#l"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#l"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-08-18">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-16">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-12-13">Checked by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aaa0330.jpg" url="aaa0330.jpg" n="302"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Walter Leach <rs type="address" xml:id="address1">of Cad<gap reason="binding" extent="unclear"/> <lb/>in D.vonsheire</rs>. writes <supplied reason="binding" cert="low"><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice></supplied> <lb/>his Lady tooke a vomitt <gap extent="1" unit="words" reason="binding"/> <lb/><choice><orig>w<hi rend="superscript">c</hi>h</orig><reg>which</reg></choice> hath much eased her <supplied reason="binding" cert="low">of</supplied> <lb/>that grosse flegme <supplied reason="binding" cert="low"><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice></supplied> <lb/>Lay <del type="strikethrough">vnfr</del> <choice><orig>v</orig><reg>u</reg></choice>pon her <supplied reason="binding" cert="medium">sto</supplied><lb type="hyphenated"/>macke. Feb. 8. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <lb/>h. 2. p. m. 1633</p>
+</div>
+</body>
+</text>
+</TEI>

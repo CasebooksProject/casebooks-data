@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="214">MS Ashmole 214, p. 323</idno>
+<altIdentifier type="fn_number"><idno n="Napier052">Napier, vol. 52</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0323" to="0323"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#unknown-f">Unidentified Hand (1624–1634)</handNote>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="unknown-f">
+<persName><roleName>Unidentified (1624–1634)</roleName></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="me">
+<persName><roleName>Lady</roleName> <forename>Magdalen</forename> <surname>Egerton</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="ae">
+<persName><roleName>Lady</roleName> <forename>Alice</forename> <surname>Egerton</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="q">
+<persName><roleName>Mrs</roleName> <surname>Quicke</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="w">
+<persName><roleName>Mr</roleName> <surname>Wright</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tj">
+<persName><forename>Thomas</forename> <surname>Jennings</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-02-21" n="Thursday"/></p>
+<p><time when="20:00:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#q #w" evidence="internal" present="no"/>
+<cb:querent ref="#tj" evidence="internal"/>
+<cb:subject ref="#me #ae #tj" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#me"/><person sameAs="#ae"/></cb:topic>
+<cb:topic key="maritalProspects"><person sameAs="#tj"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-07">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-23">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-11-21">Minor revisions by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aaa0351.jpg" url="aaa0351.jpg" n="323"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>M<hi rend="superscript">rs</hi> Quick sent her <choice><orig>Le<hi rend="overline">ttr</hi></orig><reg>Letter</reg></choice> Concerning the <lb/>Lady Magdal: &amp; Lady Alice Egerton. at the <lb/>same time <choice><orig>℞</orig><reg type="gloss">received</reg></choice> likewise a Letter from M<hi rend="superscript">r</hi> Wright <lb/>&amp; another from M<hi rend="superscript">r</hi> Tho: <choice><orig>I</orig><reg>J</reg></choice>ennins. febr. 21. <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 8. p m. 1633</p>
+<p><lb/><handShift new="#rnapier"/>also M<hi rend="superscript">r</hi> Thomas <choice><orig>I</orig><reg>J</reg></choice>ennins <foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> maritabit</foreign><handShift new="#unknown-f"/></p>
+<anchor xml:id="questionEnd"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="judgment" spanTo="#judgmentEnd"/>
+<p><lb/><choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> Lady Magd. had <choice><orig><hi rend="overline">y</hi></orig><reg>them</reg></choice> about <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> full moone. <lb/>her courses come downe &amp; was <lb/>swelled</p>
+<p><lb/><choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> Lady Alice had some sad fits fortnight <lb/>since.</p>
+<p><lb/><handShift new="#rnapier"/>The Lady Magd</p>
+
+<p><lb/>Lady magdalen had taking <lb/>her strong purg: pils 2 or 3 <lb/>days before the full her <lb/>terms came down &amp; neav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> before &amp; sud<lb/>denly ceased &amp; her face swelle<subst><del type="over">th</del><add place="over">d</add></subst> &amp; was <lb/>ill</p>
+<anchor xml:id="judgmentEnd"/>
+<milestone unit="treatment" spanTo="#treatmentEnd"/>
+<p><lb/>pil spl. ʒ<choice><orig>j</orig><reg>i</reg></choice> aloes ʒi<choice><orig>j</orig><reg>i</reg></choice> rud ʒ<subst><del type="over">j</del><add place="over">i</add></subst><choice><orig>j</orig><reg>i</reg></choice> myrh <lb/>sav. an ℈i<choice><orig>j</orig><reg>i</reg></choice> croci ʒ<choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice>. olei nyist <lb/>gut v<choice><orig>j</orig><reg>i</reg></choice></p>
+<p><lb/>let her blood <choice><orig>v</orig><reg>u</reg></choice>nder the ham <lb/>or saph. or apply leaches</p>
+<p><lb/>for the Lady Alce: syr <subst><del type="strikethrough">vomit cocl ii<choice><orig>j</orig><reg>i</reg></choice> <gap reason="del" extent="1" unit="chars"/> q <unclear cert="low" reason="del">mitt</unclear></del> <add place="supralinear"><subst><del type="over"><gap reason="del" extent="2" unit="chars"/></del><add place="over">El</add></subst>ect ♂ gr iii<choice><orig>j</orig><reg>i</reg></choice> aq ced <choice><sic><unclear cert="medium" reason="hand">c</unclear>ocl</sic><corr type="noText"/></choice></add></subst> <lb/>cocl <choice><orig>j</orig><reg>i</reg></choice><choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice> vini albi cul / aq cinina cul <choice><orig>j</orig><reg>i</reg></choice> <lb/>pil: cossaf ʒ<choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice> rud ℈<choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice>. an ʒ<choice><orig>j</orig><reg>i</reg></choice> spl an ℈i<choice><orig>j</orig><reg>i</reg></choice> 15 pils</p>
+<p><lb/>febr 23. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> for thrice olei myust gut ii<choice><orig>j</orig><reg>i</reg></choice></p>
+<anchor xml:id="treatmentEnd"/>
+<milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/>
+<p><lb/>her vomyte wrought excedingly <lb/>&amp; made her very sicke.</p>
+<anchor xml:id="subsequentEventInfoEnd"/>
+</div>
+
+</body>
+</text>
+</TEI>

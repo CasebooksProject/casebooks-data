@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-03">03 October 2017</date>
+</publicationStmt>
+<notesStmt><note resp="#ymartin" type="editorial">This nativity is associated with the horary entry <ref target="MS_Ashmole_416-f0263-1" type="case">MS_Ashmole_416-f0263-1</ref>.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="416">MS Ashmole 416, p. 263</idno>
+<altIdentifier type="fn_number"><idno n="Napier051">Napier, vol. 51</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0263" to="0263"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ww">
+<persName><forename>William</forename> <surname>Watkins</surname></persName>
+<sex value="1">M</sex>
+<age value="7">7</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1625-02-25" n="Friday"/>
+<time when="18:30:00"/>
+</birth>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-06-23" n="Saturday" evidence="external"/></p>
+<p><time when="15:40:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#ww" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ww"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-22">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-03">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-06">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-11-21">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acy0305.jpg" url="acy0305.jpg" n="263" width="5848" height="8530"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><del type="blockStrikethrough">Iohn Bowsted of Bedford <lb/>21 y Iune. 23. h. hor. 6 <lb/>p m 1632</del></p>
+<p><lb/><del type="blockStrikethrough">Is mopish, to mutch given to <unclear cert="low" reason="hand">scut</unclear> <add place="infralinear"><unclear cert="low" reason="hand">ready</unclear></add> <lb/>light headed a weeke <lb/>eateth litle sleepeth litle</del></p>
+<p><lb/><add place="pageTop">willi<choice><orig>ā</orig><reg>am</reg></choice> watkins <rs type="address" xml:id="address1">lond</rs> <foreign xml:lang="la">natus</foreign> feb <lb/>25 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 6 30 p m <lb/>1625.</add> <lb/>will: watkins feb 25 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 6 30 p m <lb/>1625. <note place="chart">william watkins <lb/>7 y.</note></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

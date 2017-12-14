@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 5</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0005" to="0005"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wd">
+<persName><roleName>Mr</roleName> <forename>William</forename> <surname>Davis</surname></persName>
+<sex value="1">M</sex>
+<age value="28">28</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="d">
+<persName><surname evidence="inferred">Davis</surname></persName>
+<sex value="2">F</sex>
+<age value="4">4</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation>
+<relation name="daughter" active="#d" passive="#wd"/>
+</listRelation>    
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-04-05" n="Friday"/></p>
+<p><time when="08:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="internal" present="unclear"/>
+<cb:subject ref="#wd" present="no" consent="no"/>
+<cb:topic key="raging"><person sameAs="#wd"/></cb:topic>
+<cb:topic key="illnessPassions" resp="#rnapier"><person sameAs="#wd"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-23">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-12-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0028.jpg" url="clq0028.jpg" n="5" width="5068" height="7218"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Will: Davys <rs type="address" xml:id="address1">of <lb/>great Milton</rs> 28. y Ap 5 <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice>. h. 8. 20 <choice><orig>ant m</orig><reg>am</reg></choice> 1633.</p>
+<p><lb/><choice><sic>mayed</sic><corr>maryed</corr></choice> 5 y hath a daughter <lb/>4 y him selfe a goodly <lb/><choice><orig></orig><reg>pro</reg></choice><choice><orig></orig><reg>per</reg></choice> tale m<choice><orig>ā</orig><reg>an</reg></choice>. will some<lb/>tyms be very froward &amp; some<lb/>what furious <add place="inline"><foreign xml:lang="la">sine consens:</foreign></add> <add place="infralinear">hath bene <lb/>great swagg <lb/>&amp; drinker</add> <add place="infralinear">5. yers ill</add></p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2017-10-20T13:01:36Z. 
+Schema generated from ODD source 2017-12-01T09:00:47Z. 
 Edition: Version 2.6.0. Last updated on
 	20th January 2014, revision 12802
 Edition Location: http://www.tei-c.org/Vault/P5/Version 2.6.0/
@@ -6714,6 +6714,16 @@ Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] for
           <assert test="@sameAs = ancestor::tei:teiHeader//tei:listPerson//(tei:person|tei:org)[@xml:id]/concat('#',@xml:id)">ERROR: <name/>@sameAs does not seem to point to a valid person@xml:id in listPerson.</assert>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-name-has-name-bit-child-constraint">
+        <rule context="tei:name">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName">ERROR: <name/> contains a <value-of select="(descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName)/local-name()"/>.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-name-is_empty-constraint">
+        <rule context="tei:name">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(normalize-space(.)) and not(descendant::tei:gap)">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
       <ref name="att.datable.attributes"/>
@@ -7158,6 +7168,12 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@when|@when-custom]">
           <report test="count((@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) &gt; 0">ERROR: <name/> has @when and <value-of select="string-join(for $x in (@notBefore,@notBefore-custom,@notAfter,@notAfter-custom) return concat('@',$x/local-name()),', ')"/>
                </report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-has-space-in-attrs-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
+          <let name="time_regex" value="'^((0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]:00|23:59:59)$'"/>
+          <report test="(@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom,@from,@to)[normalize-space(.)][not(matches(.,$time_regex))]">ERROR: Invalid <value-of select="(ancestor::tei:birth|ancestor::tei:death|ancestor::tei:settingDesc)/local-name()"/> time/<value-of select="for $x in (@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom,@from,@to)[normalize-space(.)][not(matches(.,$time_regex))]/local-name() return concat('@',$x)"/> value '<value-of select="for $x in (@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom,@from,@to)[normalize-space(.)][not(matches(.,$time_regex))] return $x"/>'.</report>
         </rule>
       </pattern>
       <ref name="att.global.attribute.xmlid"/>
@@ -9132,6 +9148,21 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <report test="(normalize-space(string-join(text(),'')))[not(.='')]">ERROR: <name/> should not have textual content directly within it</report>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-empty-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:persName[not(normalize-space(.))]">
+          <report test="not(normalize-space(.))">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-with-persName-descendant-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:persName[ancestor::tei:persName]">
+          <report test="ancestor::tei:persName">ERROR: <name/> is within a persName.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-invalid-child-constraint">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:persName[*[not(local-name()[.=('surname','forename','roleName','nameLink','genName','name','addName')])]]">
+          <report test="*[not(local-name()[.=('surname','forename','roleName','nameLink','genName','name','addName')])]">ERROR: Invalid child of <name/>. Shouldn't <value-of select="*[not(local-name()[.=('surname','forename','roleName','nameLink','genName','name','addName')])]/local-name()"/> be inside one of the name elements?</report>
+        </rule>
+      </pattern>
       <ref name="att.global.attributes"/>
       <ref name="att.datable.attributes"/>
       <ref name="att.editLike.attributes"/>
@@ -9152,6 +9183,16 @@ Sample values include: 1] text; 2] corpus</a:documentation>
     <element name="surname">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(surname) contains a family name, with the optional type values "adopted", "alternate", "deckname", "maiden", "maidenAlternate", "maidenVariant", "married", "marriedAlternate", "marriedVariant", "nickname", "variant" (see the Guidelines for advice on exactly when and how to apply these). [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-surname-has-name-bit-child-constraint">
+        <rule context="tei:surname">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName">ERROR: <name/> contains a <value-of select="(descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName)/local-name()"/>.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-surname-is_empty-constraint">
+        <rule context="tei:surname">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(normalize-space(.)) and not(descendant::tei:gap)">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
@@ -9201,6 +9242,16 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test=".=('Francis','Clement') and ancestor::tei:person//tei:sex[not(@value=(0,1))]">ERROR: '<value-of select="."/>' is a men's name. Either name or sex is incorrect</report>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-forename-has-name-bit-child-constraint">
+        <rule context="tei:forename">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName">ERROR: <name/> contains a <value-of select="(descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName)/local-name()"/>.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-forename-is_empty-constraint">
+        <rule context="tei:forename">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(normalize-space(.)) and not(descendant::tei:gap)">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
@@ -9231,6 +9282,16 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <report test="not(contains(document-uri(/),'master-lists'))">ERROR: @type is currently only used in the master name files</report>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-genName-has-name-bit-child-constraint">
+        <rule context="tei:genName">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName">ERROR: <name/> contains a <value-of select="(descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName)/local-name()"/>.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-genName-is_empty-constraint">
+        <rule context="tei:genName">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(normalize-space(.)) and not(descendant::tei:gap)">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
@@ -9252,6 +9313,16 @@ Sample values include: 1] text; 2] corpus</a:documentation>
     <element name="nameLink">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name link) covers connecting (usually possessive) prepositions within proper names, such as ‘ap’, ‘van’, ‘de’. There are frequently inconsistencies in the source as to whether or not these should be capitalised, and as to whether or not they should be regarded as part of the surname (van Dyck, Vandyck?). There are also instances of their being mutilated by anglicisation, e.g. ‘Fan Hoeck’. In the material under consideration here, however, these are fairly rare, so the precise rendition can be sorted out on a case-by-case basis. It contains an optional type attribute that is used to indicate the type of nameLink value. [13.2.1. ]</a:documentation>
       <ref name="macro.phraseSeq"/>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-nameLink-has-name-bit-child-constraint">
+        <rule context="tei:nameLink">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName">ERROR: <name/> contains a <value-of select="(descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName)/local-name()"/>.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-nameLink-is_empty-constraint">
+        <rule context="tei:nameLink">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(normalize-space(.)) and not(descendant::tei:gap)">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <optional>
@@ -9293,6 +9364,16 @@ Sample values include: 1] text; 2] corpus</a:documentation>
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(descendant::node())">ERROR: <name/> should not contain any XML elements. It should only contain text</report>
         </rule>
       </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-addName-has-name-bit-child-constraint">
+        <rule context="tei:addName">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName">ERROR: <name/> contains a <value-of select="(descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName)/local-name()"/>.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-addName-is_empty-constraint">
+        <rule context="tei:addName">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(normalize-space(.)) and not(descendant::tei:gap)">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
       <ref name="att.casebooks.certainty.attributes"/>
       <ref name="att.global.attributes"/>
       <ref name="att.personal.attributes"/>
@@ -9307,6 +9388,16 @@ Sample values include: 1] text; 2] corpus</a:documentation>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-roleName-roleName-type-only-allowed-in-master-lists-constraint">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:roleName[@type]">
           <report test="not(contains(document-uri(/),'master-lists'))">ERROR: @type is currently only used in the master name files</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-roleName-is_empty-constraint">
+        <rule context="tei:roleName">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(normalize-space(.)) and not(descendant::tei:gap)">ERROR: <name/> is empty.</report>
+        </rule>
+      </pattern>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-roleName-has-name-bit-child-constraint">
+        <rule context="tei:roleName">
+          <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName">ERROR: <name/> contains a <value-of select="(descendant::surname|descendant::forename|descendant::roleName|descendant::nameLink|descendant::genName|descendant::name|descendant::addName)/local-name()"/>.</report>
         </rule>
       </pattern>
       <ref name="att.casebooks.certainty.attributes"/>

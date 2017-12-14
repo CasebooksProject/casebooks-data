@@ -57,20 +57,20 @@
 <persName><roleName>Lady</roleName> <surname>Vaux</surname></persName>
 <sex value="2">F</sex>
 </person>
-<person xml:id="b">
-<persName><roleName>Lady</roleName> <surname>Burgoyne</surname></persName>
+<person xml:id="person1">
+<persName><roleName>Lady Bergavenny</roleName></persName>
 <sex value="2">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<person xml:id="fb">
-<persName><roleName>Mrs</roleName> <forename>Frances</forename> <surname evidence="inferred" cert="medium">Burgoyne</surname></persName>
+<person xml:id="f">
+<persName><roleName>Mrs</roleName> <forename>Frances</forename> <surname evidence="external">Neville</surname></persName>
 <sex value="2">F</sex>
 <age value="7">7</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <listRelation>
-<relation name="grandmother" active="#v" passive="#fb"/>
-<relation name="mother" active="#b" passive="#fb"/>
+<relation name="grandmother" active="#v" passive="#f"/>
+<relation name="mother" active="#person1" passive="#f"/>
 </listRelation>
 </listPerson>
 </particDesc>
@@ -81,9 +81,9 @@
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#v" evidence="internal" present="no"/>
-<cb:subject ref="#fb" present="no"/>
+<cb:subject ref="#f" present="no"/>
 <cb:item type="letter"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#fb"/></cb:topic>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#f"/></cb:topic>
 <cb:info type="urine"/>
 <cb:judgment/>
 <cb:treatment/>
@@ -97,7 +97,7 @@
 <change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-12-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-04-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-10-21">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

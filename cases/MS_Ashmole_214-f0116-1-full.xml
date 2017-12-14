@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="214">MS Ashmole 214, p. 116</idno>
+<altIdentifier type="fn_number"><idno n="Napier052">Napier, vol. 52</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0116" to="0116"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
+
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="me">
+<persName><roleName>Lady</roleName> <forename>Magdalen</forename> <surname>Egerton</surname></persName>
+<sex value="2">F</sex>
+<age value="16">16</age>
+</person>
+<person xml:id="ae">
+<persName><roleName>Lady</roleName> <forename>Alice</forename> <surname>Egerton</surname></persName>
+<sex value="2">F</sex>
+<age value="13">13</age>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-11-01" n="Thursday"/></p>
+<p><time when="15:30:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#me #ae" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#me"/><person sameAs="#ae"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-07">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-22">Rechecked and revised by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-03-28">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aaa0146.jpg" url="aaa0146.jpg" n="116"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>for the lady Magd Edgerton <lb/>16 y nov<choice><orig>ē</orig><reg>em</reg></choice>b. 1. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 3. 30 p <lb/>m 1632 when they are to <lb/>goe home <add place="inline"><choice><sic>a</sic><corr type="delText"/></choice> <del type="strikethrough">vom</del> 2 vomyts</add></p><anchor xml:id="questionEnd1"/>
+</div>
+<div>
+<milestone unit="treatment" spanTo="#treatmentEnd1"/>
+<list>
+<item><lb/>1 Reg ♂ gr iii<choice><orig>j</orig><reg>i</reg></choice> cal aromat ℈<choice><orig>j</orig><reg>i</reg></choice></item>
+<item><lb/>another sutch.</item>
+<item><lb/>2 clyst o<unclear reason="hand" cert="low">rdring</unclear> pils</item>
+<item><lb/>3 spl. ℈i<choice><orig>j</orig><reg>i</reg></choice> rud ℈<choice><orig>j</orig><reg>i</reg></choice> olei <unclear cert="low" reason="hand">nyist</unclear> git lii<choice><orig>j</orig><reg>i</reg></choice></item>
+<item><lb/>another sutch</item>
+</list><anchor xml:id="treatmentEnd1"/>
+<milestone unit="question" spanTo="#questionEnd2"/>
+<p><subst><del type="over"><gap reason="del" extent="2" unit="chars"/></del><add place="over">Th</add></subst>e lady Alce Edg. 13. y <lb/><subst><del type="over">a</del><add place="over">2</add></subst> vomyts <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">f</add></subst>or every month on</p><anchor xml:id="questionEnd2"/>
+<milestone unit="treatment" spanTo="#treatmentEnd2"/>
+<p><lb/>℞ ♂ gr ii<choice><orig>j</orig><reg>i</reg></choice> aromat ros ℈<choice><orig>j</orig><reg>i</reg></choice> <lb/>two sutch pils for twice</p>
+<p><lb/>pil fætid ʒ<choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice> Rud ℈<choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice>. olei <unclear cert="low" reason="hand">nyist</unclear> gut i<choice><orig>j</orig><reg>i</reg></choice></p>
+<p><lb/>another sutch</p>
+<p><lb/>a purg dyet Drink for boath the <lb/>Ladyes</p>
+<p><lb/>Sene ℥iii<choice><orig>j</orig><reg>i</reg></choice> turb Agarick rub an ℥<choice><orig>j</orig><reg>i</reg></choice> <lb/>h<unclear cert="low" reason="hand">enu</unclear>d ℥i<choice><orig>j</orig><reg>i</reg></choice> Arist rot<choice><orig>ū</orig><reg>un</reg></choice>d rub <unclear cert="medium" reason="hand"><choice><sic>tnct</sic><corr>tinct</corr></choice></unclear> an ℥<choice><orig>j</orig><reg>i</reg></choice> <lb/><subst><del type="strikethrough">I<unclear reason="del" cert="low">av</unclear><gap extent="1" unit="chars" reason="del"/></del> <add place="lineBeginning">Im<choice><orig></orig><reg>per</reg></choice></add></subst> berys ℥i<choice><orig><subst><del type="over">i</del><add place="over">j</add></subst></orig><reg>i</reg></choice><del type="strikethrough">ij</del> sem peon ℥i<choice><orig>j</orig><reg>i</reg></choice> <lb/>dill seeds ℥i<choice><orig>j</orig><reg>i</reg></choice> mugw <choice><sic>Calaynt</sic><corr cert="medium">Calamynt</corr></choice> <lb/>briony roots an ℥i<choice><orig>j</orig><reg>i</reg></choice> eulac<choice><orig>ā</orig><reg>am</reg></choice>p Angel canded <lb/>an ℥i<choice><orig>j</orig><reg>i</reg></choice> polip ℥i<choice><orig>j</orig><reg>i</reg></choice> brusc ℥<choice><orig>j</orig><reg>i</reg></choice> sass. calans <lb/>an ℥i<choice><orig>j</orig><reg>i</reg></choice> cinam ℥i<choice><orig>j</orig><reg>i</reg></choice> nutmegs ℥i<choice><orig>j</orig><reg>i</reg></choice> in <del type="strikethrough">℥</del> <lb/>5 gallons sem anisi licor an ℥iii<choice><orig>j</orig><reg>i</reg></choice></p>
+<p><lb/>a Ring for the Lady Alice &amp; a <lb/>pomander of ♃ for the lady <lb/>magd on sonday next</p>
+<anchor xml:id="treatmentEnd2"/>
+
+</div>
+</body>
+</text>
+</TEI>

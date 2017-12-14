@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title"/>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-03">03 October 2017</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="416">MS Ashmole 416, p. 282</idno>
+<altIdentifier type="fn_number"><idno n="Napier051">Napier, vol. 51</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0282" to="0282"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s1">
+<persName><roleName>Goody</roleName> <surname>Southam</surname></persName>
+<sex value="2">F</sex>
+<age value="37">37</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="s2">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s3">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s4">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s5">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s6">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s7">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s8">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s9">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="s10">
+<persName><surname evidence="inferred" cert="low">Southam</surname></persName>
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="mother" active="#s1" passive="#s2 #s3 #s4 #s5 #s6 #s7 #s8 #s9 #s10"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-07-03" n="Tuesday"/></p>
+<p><time when="12:40:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s1"/>
+<cb:subject ref="#s1" present="unclear"/>
+<cb:topic key="pain"><person sameAs="#s1"/></cb:topic>
+<cb:topic key="shooting"><person sameAs="#s1"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#s1"/></cb:topic>
+<cb:topic key="hot"><person sameAs="#s1"/></cb:topic>
+<cb:topic key="pregnancy"><person sameAs="#s1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-22">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-03">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-08">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-11-21">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acy0325.jpg" url="acy0325.jpg" n="282" width="5848" height="8530"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Goody Southam <lb/><rs type="address" xml:id="address1">of Coaten</rs> 37 y <lb/><choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">I</add></subst>uly</orig><reg>July</reg></choice>. 3 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 12 <lb/>40 p m 1632</p>
+<p><lb/>aches &amp; shooting <lb/>in her leg <add place="infralinear"><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> grav</foreign></add> <lb/>&amp; a flushing <lb/>heate. <add place="infralinear">had th<choice><orig>ē</orig><reg>em</reg></choice> a <lb/>fortnight since</add></p>
+<p><lb/>9 childr<choice><orig>ē</orig><reg>en</reg></choice>.</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>
