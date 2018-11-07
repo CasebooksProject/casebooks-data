@@ -1,6 +1,6 @@
 Casebooks Project Data
 
-The Casebooks Project is a Wellcome Trust funded project that aims to make available the medico-astrological records of Simon Forman and Richard Napier — unparalleled resources in the history of early modern medicine. While the data can be browsed and searched on our website (http://www.magicandmedicine.hps.cam.ac.uk/), this repository was created to give people access to our raw XML transcriptions.
+In the decades around 1600, the astrologers Simon Forman and Richard Napier produced one of the largest surviving sets of medical records in history. The Casebooks Project, a team of scholars at the University of Cambridge, has transformed this paper archive into a digital archive. The data can be browsed and searched on our website (https://casebooks.lib.cam.ac.uk/). This repository provides access to our raw XML transcriptions.
 
 The data is contained in two directories:
 
@@ -8,6 +8,4 @@ The data is contained in two directories:
 
 * master-lists: contains authority files for our topics, relations, occupations and languages.
 
-For details on our Transcription Guidelines and Element Set, please see http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/transcription-guidelines and http://www.magicandmedicine.hps.cam.ac.uk/using-our-edition/editorial-policies/element-set.
-
-Since this project is still under way, this data should be considered a 'work in progress'. In addition to adding new case files, we will also be improving the granularity and accuracy of the data that has already been committed. 
+For details on our Transcription Guidelines and Element Set, please see https://casebooks.lib.cam.ac.uk/about-us/editorial-and-tagging-guidelines.
