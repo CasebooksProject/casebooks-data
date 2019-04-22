@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE70913</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-03-30">30 March 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">p. 406/bR, p. 406/bL, p. 407/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="194">MS Ashmole 194, pp. 406-407</idno>
+<altIdentifier type="fn_number"><idno n="Napier047">Napier, vol. 47</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0406" to="0407"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ws">
+<persName><forename>William</forename> <surname>Story</surname></persName>
+<sex value="1">M</sex>
+<age value="12">12</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1617-08-30" xml:id="date1" exclude="#date2" evidence="extrapolated"/>
+<date when="1618-08-30" xml:id="date2" exclude="#date1" evidence="extrapolated"/>
+<time notBefore="06:00:00" notAfter="07:00:00" precision="medium"/>
+<placeName sameAs="#place1"/>
+</birth>
+</person>
+<person xml:id="mw">
+<persName><forename>Margaret</forename> <surname>Wyn</surname></persName>
+<sex value="2">F</sex>
+<occupation>Maid</occupation>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="servant" active="#mw" passive="#anon"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1630-05-25" n="Tuesday"/></p>
+<p><time when="18:20:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#ws #mw" present="no"/>
+<cb:topic key="treatment"><person sameAs="#ws"/></cb:topic>
+<cb:topic key="lameness"><person sameAs="#mw"/><person sameAs="#ws"/></cb:topic>
+<cb:topic key="thighs"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="knees"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="skin"><person sameAs="#mw"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#ws"/></cb:topic>
+<cb:topic key="loins"><person sameAs="#ws"/></cb:topic>
+<cb:topic key="sides"><person sameAs="#ws"/></cb:topic>
+<cb:topic key="cough"><person sameAs="#ws"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#ws"/></cb:topic>
+<cb:judgment/>
+
+<cb:treatment/>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-03-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-28">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-10-16">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-05-17">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciq0450.jpg" url="ciq0450.jpg" n="406"/>
+<graphic xml:id="ciq0451.jpg" url="ciq0451.jpg" n="407"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Willi<choice><orig>ā</orig><reg>am</reg></choice> Stoary <rs type="address" xml:id="address1" key="PLACE1186" resp="#mhawkins">of <choice><orig><hi rend="overline">S<hi rend="superscript">t</hi></hi></orig><reg>Saint</reg></choice> <lb/>Albions</rs> 12 y the <lb/>30 of August next <lb/>twixt 6 &amp; 7 in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>morning at <placeName xml:id="place1" key="PLACE1186" resp="#mhawkins">Saraz<supplied reason="binding" cert="low">ings</supplied> <lb/>head</placeName> about Easter <lb/>was 12 monthe <lb/>may 25. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h 6 <lb/>20 <subst><del type="over">a</del><add place="over">p</add></subst> m 1630.</p>
+<p><lb/>her mayd <choice><orig><choice><sic>cōtinth</sic><corr>cōtinueth</corr></choice></orig><reg>continueth</reg></choice> <lb/>Lame &amp; hath spots <lb/>about her thighs &amp; <lb/>Knees.</p>
+<p><lb/>his legs</p>
+<p><lb/>the child c<choice><orig>ō</orig><reg>om</reg></choice>play<lb/>neth of his loynes<lb/>&amp; legs &amp; of a payne <lb/>of his Left syde <lb/>&amp; also hath a dry <lb/>cough.</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div><cb xml:id="colA" n="a"/>
+<p><lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> fit to <lb/>make an issue Is lame &amp; <lb/>goeth <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> payne</p>
+<p><lb/>was p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>ty well sinc <lb/>Easter was a twelfmonth <lb/>when &amp; where.</p>
+</div>
+<div><pb xml:id="p407" n="407"/>
+<p><lb/>will. Stoary 12 y may 25 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <lb/>h. 6. 30 p m 1630</p>
+<p><lb/>Lame in his loyns <lb/>Legs &amp; left syde payned</p>
+
+<p><lb/>There mayden <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> was <lb/>Lame. Marg. Wynne <lb/>at the same tyme.</p>
+</div>
+</body>
+</text>
+</TEI>

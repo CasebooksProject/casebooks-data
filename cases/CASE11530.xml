@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11530</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 212r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,8 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#unknown">Unidentified Hand</handNote>
@@ -43,6 +48,7 @@
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -68,6 +74,7 @@
 <p><date when="1600-12-18" n="Thursday"/></p>
 <p><time when="07:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
@@ -86,16 +93,21 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ack0447.jpg" url="ack0447.jpg" n="212r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><handShift new="#unknown"/>Qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an soror mea ex <lb/>morbo morietur <handShift new="#rnapier"/>Decemb <lb/>18 &ThursdayN; h. 7. 45 &antm; <lb/>1600.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><handShift new="#unknown"/>Quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an soror mea ex <lb/>morbo morietur <handShift new="#rnapier"/>Decemb <lb/>18 <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 7. 45 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1600.</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>It is asked whether my sister will die of the disease Thursday 18 December 1600 at 7.45am.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

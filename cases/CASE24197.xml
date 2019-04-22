@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE24197</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-29">29 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="237">MS Ashmole 237, f. 140v</idno>
-&Napier023;
+<altIdentifier type="fn_number"><idno n="Napier023">Napier, vol. 23</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -44,7 +48,7 @@
 <language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<catRef target="#interrogationQuestion"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -67,15 +71,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1614-12-26" n="Monday"/></p>
-<p><time when="22:00:00"/></p>
+<p><date notBefore-custom="1614-12-28T07:00:00" notAfter-custom="1614-12-29T08:50:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#tt" evidence="internal" present="no"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
 <cb:subject ref="#at" present="no"/>
-<cb:topic key="unspecifiedMedical" evidence="external"><person sameAs="#at"/></cb:topic>
-<cb:info type="event" subtype="subsequentEvent"/>
+<cb:topic key="death"><person sameAs="#at"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -94,9 +97,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Anthony Tyring <lb/>dyed Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 28 &Wednesday; <lb/>h. 7 &antm; 1614 <add place="infralinear">S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Thom sent for me Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b 26 <lb/>&Monday; Hor 10 &antm;</add><note place="chart">he dyed</note></p>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Anthony Tyring <lb/>dyed Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 28 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <lb/>h. 7 <choice><orig>ant m</orig><reg>am</reg></choice> 1614 <add place="infralinear">S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Thom sent for me Dec<choice><orig>ē</orig><reg>em</reg></choice>b 26 <lb/><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> Hor 10 <choice><orig>ant m</orig><reg>am</reg></choice></add><note place="chart">he dyed</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

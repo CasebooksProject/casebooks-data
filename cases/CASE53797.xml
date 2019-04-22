@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE53797</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-11-16">16 November 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -34,9 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -65,6 +68,7 @@
 <p><date when="1622-04-03" n="Wednesday"/></p>
 <p><time when="09:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gd"/>
@@ -79,7 +83,8 @@
 <change when="2015-12-04">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-08-16">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-05-22">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,8 +92,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Georg D<choice><orig>ū</orig><reg>um</reg></choice>meldon <rs type="address" xml:id="address1">of Tocetou<supplied reason="binding" cert="medium">r</supplied></rs> <lb/><del type="strikethrough">25</del> 46 y <choice><sic>mayed</sic><corr>maryed</corr></choice> Ap 3. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <supplied reason="binding">h</supplied> <lb/>9. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1622</p>
-<p><lb/>sick sinc our lady daye <lb/>sinc monday was senet <lb/>in the field fell besydes his <lb/>horse <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> foote in the sty<unclear cert="low" reason="binding">r</unclear><supplied reason="binding" cert="low">up</supplied> <lb/>horse standing still &amp; then <lb/><choice><sic>contined</sic><corr>continued</corr></choice> as on deade <gap reason="binding" extent="unclear" cert="low"/> <lb/>some 2 or 3 <choice><sic>houer<add place="supralinear">r</add>es</sic><corr>houeres</corr></choice>. in <lb/>a tempest of hale wynd <lb/>&amp; snowe he went</p>
+<p><lb/>Georg D<choice><orig>ū</orig><reg>um</reg></choice>meldon <rs type="address" xml:id="address1" key="PLACE1782" resp="#mhawkins">of Tocetour</rs> <lb/><del type="strikethrough">25</del> 46 y <choice><sic>mayed</sic><corr>maryed</corr></choice> Ap 3. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h <lb/>9. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1622</p>
+<p><lb/>sick sinc our lady daye <lb/>sinc monday was senet <lb/>in the field fell besydes his <lb/>horse <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> foote in the styrup <lb/>horse standing still &amp; then <lb/><choice><sic>contined</sic><corr>continued</corr></choice> as on deade <lb/>some 2 or 3 <choice><sic>houer<add place="supralinear">r</add>es</sic><corr>houeres</corr></choice>. in <lb/>a tempest of hale wynd <lb/>&amp; snowe he went</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

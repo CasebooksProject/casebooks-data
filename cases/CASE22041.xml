@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE22041</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL-3</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 36r</idno>
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0036r" to="0036r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="mother" active="#anon2" passive="#anon1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1601-02-18" n="Wednesday" evidence="external"/></p>
+<p><time when="12:15:00" evidence="external"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#anon1" evidence="conjecture" present="yes"/>
+<cb:subject ref="#anon2" present="no"/>
+<cb:topic key="pain"><person sameAs="#anon2"/></cb:topic>
+<cb:treatment/>
+<cb:info type="financial"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-30">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afw0089.jpg" url="afw0089.jpg" n="36r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>I gave that mayd <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> came for him for her mothers <lb/>aches<anchor xml:id="questionEnd"/> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><milestone unit="treatment" spanTo="#treatmentEnd"/><choice><orig>v</orig><reg>u</reg></choice>ng <choice><sic>hyrudinar’</sic><corr>hyrundinar’</corr></choice></foreign><seg xml:id="translation001" xml:lang="en" decls="#translation">ointment of swallows</seg><link type="is-translation-of" target="#foreign001 #translation001"/><anchor xml:id="treatmentEnd"/> <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">gratis</foreign><seg xml:id="translation002" xml:lang="en" decls="#translation">free</seg><link type="is-translation-of" target="#foreign002 #translation002"/>.</p><anchor xml:id="financialInfoEnd"/>
+</div>
+</body>
+</text>
+</TEI>

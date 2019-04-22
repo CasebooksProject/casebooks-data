@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE3512</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="195">MS Ashmole 195, f. 41v</idno>
-&Forman003;
+<altIdentifier type="fn_number"><idno n="Forman003">Forman, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -62,6 +70,7 @@
 <settingDesc>
 <p><date notBefore-custom="1598-04-21T14:05:00" notAfter-custom="1598-04-22T08:30:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman" evidence="conjecture" present="yes"/>
@@ -89,14 +98,14 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd"/>
-<p><lb/>the 21 of Aprill &Friday; &Anmfl; <lb/>at 30 &past; 5.</p>
+<p><lb/>the 21 of Aprill <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>An m’</orig><reg>am</reg></choice> <lb/>at 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 5.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>at this tym m<hi rend="superscript">r</hi> culpa<choice><orig>&crossedp;</orig><reg>per</reg></choice> tok <lb/>hys vomit <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> wrote alto<lb/>gether <choice><sic>doward&pluralLoop;</sic><corr>downward&pluralLoop;</corr></choice> &amp; not &vVowel;p<lb/>ward&pluralLoop; at all. <add place="lineEnd"><unclear reason="hand" cert="medium" resp="#rralley">stu<choice><orig>&mover;</orig><reg>mm</reg></choice>i</unclear> gr 5</add></p>
+<p><lb/>at this tym m<hi rend="superscript">r</hi> culpa<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> tok <lb/>hys vomit <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> wrote alto<lb/>gether <choice><sic>doward<choice><orig>ꝭ</orig><reg>es</reg></choice></sic><corr>downward<choice><orig>ꝭ</orig><reg>es</reg></choice></corr></choice> &amp; not <choice><orig>v</orig><reg>u</reg></choice>p<lb/>ward<choice><orig>ꝭ</orig><reg>es</reg></choice> at all. <add place="lineEnd"><unclear reason="hand" cert="medium" resp="#rralley">stu<choice><orig>m̄</orig><reg>mm</reg></choice>i</unclear> gr 5</add></p>
 <anchor xml:id="questionEnd"/>
 <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/>
-<p><lb/>On Sundai morn<choice><orig>&iover;</orig><reg>in</reg></choice>g folowin<supplied reason="binding">g</supplied> <lb/>being the 23. Aprill he toke the <lb/>sam dos of stibi<choice><orig>&uover;</orig><reg>um</reg></choice> again for a <lb/>vomit And yt wrot D<choice><orig><hi rend="overline">owa</hi></orig><reg>ownwa</reg></choice>rd&pluralLoop; <lb/>Again altogether and not <lb/>&vVowel;pward at all &amp; yt brought <lb/>moch veri ill &amp; stinking mater <lb/>from him</p>
+<p><lb/>On Sundai morn<choice><orig>ī</orig><reg>in</reg></choice>g folowin<supplied reason="binding">g</supplied> <lb/>being the 23. Aprill he toke the <lb/>sam dos of stibi<choice><orig>ū</orig><reg>um</reg></choice> again for a <lb/>vomit And yt wrot D<choice><orig><hi rend="overline">owa</hi></orig><reg>ownwa</reg></choice>rd<choice><orig>ꝭ</orig><reg>es</reg></choice> <lb/>Again altogether and not <lb/><choice><orig>v</orig><reg>u</reg></choice>pward at all &amp; yt brought <lb/>moch veri ill &amp; stinking mater <lb/>from him</p>
 <anchor xml:id="subsequentEventInfoEnd"/>
 </div>
 </body>

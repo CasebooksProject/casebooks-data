@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE12016</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 92r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -64,6 +68,7 @@
 <p><date when="1599-03-02" n="Friday"/></p>
 <p><time when="08:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -80,6 +85,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,9 +93,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas Mablye <rs type="address" xml:id="address1">of Newport</rs> <lb/>23. troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <unclear reason="hand" cert="high">&vVowel;&uConsonant;ula</unclear> &amp; the <lb/>falling of his pallate, <choice><sic>1</sic><corr type="noText" cert="high"/></choice>4 or <lb/>5 times a days at the fall <lb/>or springe for this 3 yeres <lb/>almost. came him selfe this <lb/><choice><sic>this</sic><corr type="noText"/></choice> 2 of Marche &FridayN; h. <lb/>8. 1599.</p>
+<p><lb/>Thomas Mablye <rs type="address" xml:id="address1" key="PLACE766" resp="#mhawkins">of Newport</rs> <lb/>23. troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <unclear reason="hand" cert="high"><choice><orig>v</orig><reg>u</reg></choice><choice><orig>u</orig><reg>v</reg></choice>ula</unclear> &amp; the <lb/>falling of his pallate, <choice><sic>1</sic><corr type="noText" cert="high"/></choice>4 or <lb/>5 times a days at the fall <lb/>or springe for this 3 yeres <lb/>almost. came him selfe this <lb/><choice><sic>this</sic><corr type="noText"/></choice> 2 of Marche <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h. <lb/>8. 1599.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

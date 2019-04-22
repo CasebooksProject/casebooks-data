@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE36409</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="editorial" resp="#jyoung">It is not clear what role Goody Teare plays in this entry.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="203">MS Ashmole 203, f. 136v</idno>
-&Napier016;
+<altIdentifier type="fn_number"><idno n="Napier016">Napier, vol. 16</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -69,6 +75,7 @@
 <p><date when="1609-08-21" n="Monday"/></p>
 <p><time when="13:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ap"/>
@@ -87,6 +94,7 @@
 <change when="2016-03-11">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,9 +102,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Agnys Porter <lb/><rs type="address" xml:id="address1">of North<choice><orig>&aover;</orig><reg>am</reg></choice>pton</rs> <lb/>46 y Aug <lb/>21. &Monday; h. 1. 20 <subst><del type="over">a</del><add place="over">p</add></subst> m <lb/>1609 <add place="infralinear">Goody Teare.&slash;</add></p>
+<p><lb/>Agnys Porter <lb/><rs type="address" xml:id="address1" key="PLACE1712" resp="#mhawkins">of North<choice><orig>ā</orig><reg>am</reg></choice>pton</rs> <lb/>46 y Aug <lb/>21. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 1. 20 <subst><del type="over">a</del><add place="over">p</add></subst> m <lb/>1609 <add place="infralinear">Goody Teare./</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

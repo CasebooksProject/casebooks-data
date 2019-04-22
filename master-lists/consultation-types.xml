@@ -2,36 +2,36 @@
 <?xml-model href="../schema/tei_all_topics.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-     <fileDesc>
-        <titleStmt>
-           <title>Consultation Types</title>
-        </titleStmt>
-        <publicationStmt>
-           <publisher>The Casebooks Project</publisher>
-           <pubPlace>Cambridge</pubPlace>
-           <date when="2015-12-02">2 December 2015</date>
-        </publicationStmt>
-        <sourceDesc>
-           <p>Born digital</p>
-        </sourceDesc>
-     </fileDesc>
-     <encodingDesc>
-        <classDecl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Consultation Types</title>
+            <funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>The Casebooks Project</publisher>
+            <pubPlace>Cambridge</pubPlace>
+            <date when="2015-12-02">2 December 2015</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><classDecl>
             <taxonomy>
                <category xml:id="entry" n="0">
                   <desc>Entry</desc>
-                  <category xml:id="caseNotes" n="1">
-                     <desc>Other</desc>
-                     <desc type="editorial">These entries are post hoc records of illnesses suffered and treatments given; their records of substances administered and quantities given are part of the same paragraph, and even sentence, as the name of the patient and date and time of the treatment; this makes these entries significantly trickier to transcribe. The date and time at which they were written is rarely if ever supplied, but <att>notBefore</att> and <att>notAfter</att> (or <att>notBefore-custom</att> and <att>notAfter-custom</att>) values can often be worked out based on the surrounding entries. Entries of this type were transcribed from Forman’s casebooks, but those in Napier are being set aside to deal with at a future point. Transcribers encountering one should fill in the <tag>bibl type="positionOnPage"</tag> in the template file, change the value of <att>target</att> on <gi>catRef</gi> to <val>#caseNotes</val>, and otherwise leave the template unaltered and uncompleted. Editors checking transcriptions should move caseNotes files into their dedicated separate folder. Note that where Napier is writing about his own ailments and medicines that he has administered on himself, then the note counts as <val>#diary</val> (and in that case should be transcribed if a chart is present or noted in the relevant place on the ‘Untranscribed Ashmole XXX’ wiki page if no chart is present).</desc>
-                  </category>
+                  
+                  
                   <category xml:id="decumbiture" n="2">
                      <desc>Decumbiture</desc>
                      <desc type="editorial">A question answered by looking at the heavens at the time at which the patient fell ill or took to his or her bed as a result of illness. If there is a chart, the time for which it was cast will match the point at which the person fell ill, not the time at which the question was asked. This sort of entry does not usually include information about the time and date at which the question was put, but in the typical situation that a decumbiture is associated with a neighbouring horary entry (where the querent asked a question, then the practitioner drew up a chart for the time of the question and a chart for the time of the subject’s original illness), that information can be supplied. Otherwise a range can be inferred based on the dates and times of neighbouring entries and the event itself: a decumbiture is always <att>notBefore</att> (or <att>notBefore-custom</att>) the point at which the person fell ill, and is typically <att>notAfter</att> (or <att>notAfter-custom</att>) the next horary entry in the volume. Decumbitures are by definition medical, so that if there is no explicit question they should be given the topic <val>unspecifiedMedical</val> (with <att>evidence</att>, the value depending on whether it is judgment, or an associated horary entry, that indicates that it is a decumbiture). Note also that decumbitures are for the point at which someone falls ill, not (for instance) the point at which, already ill, they suffer a fit (in which case the topic <val>#interrogationMedicalEpisode</val> should be used instead). Where Napier himself is concerned, the overlap between decumbiture and diary entry can be tricky, but as a general rule, an entry is only a decumbiture if it concerns the beginning of an illness and presents enough detail to make identification unequivocal; otherwise it should be taken as a diary entry. Lastly, if an entry says that a woman was ‘brought abed’ at a particular time, it is saying that she gave birth then, not that she took to her bed through illness — such an entry is therefore <val>#interrogationGivingBirth</val>, not a decumbiture.</desc>
                   </category>
                   <category xml:id="diary" n="3">
                      <desc>Diary</desc>
-                     <desc type="editorial">Records of events in the practitioner’s personal life, or events he has witnessed, accompanied by an astrological chart and/or analysis presumably intended to determine the cause, significance or outcome of such events. These may be tricky to distinguish from interrogations; on the whole, diary entries record events in the practitioner’s life and have no judgments, while interrogations cover a wider range of events and have questions, either explicitly or at least implicitly. If a diary entry has a chart, the chart’s time will be for the event itself. Because the entry concerns a past event, its time (and that of its chart, if applicable) will be out of sequence with the surrounding entries; it will typically be earlier than horary entries either side of it. A range of possible times (and dates) during which the entry must have been written can be worked out from neighbouring horary entries and the event itself: it will have been written <att>notBefore</att> (or <att>notBefore-custom</att>) the event, and <att>notAfter</att> (or <att>notAfter-custom</att>) the earliest horary entry following it. The nature of the event recorded will determine the appropriate topic. (Some diary entries written by Napier concern medical problems that he is suffering or treatments that he has given himself. These still count as <val>#diary</val> and not <val>#caseNotes</val>, though if he is concerned with the specific time at which he became ill, that is a <val>#decumbiture</val>.)</desc>
+                     <desc type="editorial">Records of events in the practitioner’s personal life, or events he has witnessed, accompanied by an astrological chart and/or analysis presumably intended to determine the cause, significance or outcome of such events. These may be tricky to distinguish from interrogations; on the whole, diary entries record events in the practitioner’s life and have no judgments, while interrogations cover a wider range of events and have questions, either explicitly or at least implicitly. If a diary entry has a chart, the chart’s time will be for the event itself. Because the entry concerns a past event, its time (and that of its chart, if applicable) will be out of sequence with the surrounding entries; it will typically be earlier than horary entries either side of it. A range of possible times (and dates) during which the entry must have been written can be worked out from neighbouring horary entries and the event itself: it will have been written <att>notBefore</att> (or <att>notBefore-custom</att>) the event, and <att>notAfter</att> (or <att>notAfter-custom</att>) the earliest horary entry following it. The nature of the event recorded will determine the appropriate topic. (Some diary entries written by Napier concern medical problems that he is suffering or treatments that he has given himself. These count as <val>#diary</val>, unless he is concerned with the specific time at which he became ill, in which case that is a <val>#decumbiture</val>.)</desc>
                   </category>
                   <category xml:id="election" n="4">
                      <desc>Election</desc>
@@ -45,85 +45,89 @@
                      <desc>Horary</desc>
                      <desc type="editorial">An investigation of the stars at the time the question was asked (or, if it was not asked in person, the time at which the astrologer received it). The overwhelming majority of Forman’s and Napier’ records fall into this category. These almost all have exact times explicitly stated, which on the whole follow the volume’s chronological order. If there is an astrological chart, the time for which the chart was cast should (excepting errors and Napier’s habitual lack of accuracy) match the time given for the consultation.</desc>
                   </category>
+                  <category xml:id="horaryGeomantic" n="48">
+                     <desc>Horary/Geomantic combined</desc>
+                     <desc type="editorial">An entry combining a horary element with a geomantic figure.If the horary and geomantic elements can easily be separated into distinct entries then this should be done; if they cannot then this category should be employed.</desc>
+                  </category>
                   <category xml:id="interrogation" n="6">
                      <desc>Interrogation</desc>
                      <desc type="editorial">A chart cast retrospectively to determine the significance or future outcome of a past event. Strictly speaking, the term ‘interrogation’ covers a broader range than this: elections are actually types of interrogation. For our purposes, however, it is more useful to distinguish them in this way. If there is a chart it will be cast for the time of the event, a time prior to the writing of the question (sometimes only moments, sometimes years). In a sense, nativities and decumbitures are types of interrogation, for the specific events of birth and falling ill. It is sometimes difficult to distinguish between interrogations and diary entries; interrogations typically include an explicit question such as ‘quid inde?’ (what next?), or strongly imply a question through the presence of a judgment or other features, whereas diary entries, whose charts were doubtless drawn up with the aim of finding something out, nevertheless entirely lack any hint at a question or judgment. An interrogation can be given a more specific <att>catRef</att> value if the event concerned falls into one of the subcategories discussed below. The nature of the event in question may also help determine the topic under discussion (though if no question can be determined, the topic should be given as <val>uknown</val> with the <att>reason</att> as <val>notGiven</val>). The date and time of the consultation are rarely supplied and should be inferred as a range from the details of neighbouring entries and the event itself if applicable (if the entry was written shortly after the event). One exception to all this is <val>#interrogationQuestion</val>, where a supplementary question is added to someone’s consultation: in those instances (see below) the interrogation can sometimes be given the same time as the horary entry that it accompanies.</desc>
-<category xml:id="interrogationAstronomical" n="10">
-<desc>Interrogation (astronomical)</desc>
-<desc type="editorial">An interrogation cast for the time of an astronomical event, such as the conjunction of two planets, an eclipse, or the entry of a planet into a particular constellation. Where no clue is given as to the practitioner’s specific concern in drawing up the chart, the topic <val>unknown</val> should be recorded with a <att>reason</att> of <val>notGiven</val>. In some instances, however, a judgment or subsequent event information may indicate that the intention was to understand the astronomical event’s likely effect on a particular person’s illness, or on health and illness more generally, or (for instance) the weather. Where this is the case, the relevant topic should be supplied. If the concern is with the health and illnesses of some unidentified members of the population then an anonymous <gi>personGrp</gi> should be posited.</desc>
-</category>
-<category xml:id="interrogationBurial" n="16">
-<desc>Interrogation (burial)</desc>
-<desc type="editorial">An interrogation cast for the time of someone’s burial. Typically the topic <val>death</val> will also be used.</desc>
-</category>
-<category xml:id="interrogationCastingFigure" n="27">
-<desc>Interrogation (casting figure)</desc>
-<desc type="editorial">An interrogation cast for the time at which the practitioner cast an astrological figure. Such interrogations tend to accompany horary entries when the figure was not immediately cast but was drawn up some time later.</desc>
-</category>
-<category xml:id="interrogationConversation" n="29">
-<desc>Interrogation (conversation)</desc>
-<desc type="editorial">An interrogation cast for the time at which two or more people spoke.</desc>
-</category>
-<category xml:id="interrogationDeath" n="11">
-<desc>Interrogation (death)</desc>
-<desc type="editorial">An interrogation cast for the time of someone’s death (modern astrologers call this a ‘death chart’). Typically the topic <val>death</val> will also be used.</desc>
-</category>
-<category xml:id="interrogationGivingBirth" n="13">
-<desc>Interrogation (giving birth)</desc>
-<desc type="editorial">An interrogation cast for the time at which someone gave birth. The phrase most often employed in the casebooks is ‘brought abed’. Note that the difference between this and a <val>#nativity</val> is who the subject is: a nativity is cast to investigate the fortune or health of the child, whereas for entries categorised as <val>#interrogationGivingBirth</val> the subject is the mother and the entry is concerned with her health instead.</desc>
-</category>
-<category xml:id="interrogationItemLoss" n="20">
-<desc>Interrogation (loss of item)</desc>
-<desc type="editorial">An interrogation cast for the time at which a possession was lost or stolen.</desc>
-</category>
-<category xml:id="interrogationLabour" n="21">
-<desc>Interrogation (labour)</desc>
-<desc type="editorial">An interrogation cast for the time at which a woman went into labour.</desc>
-</category>
-<category xml:id="interrogationMarriage" n="12">
-<desc>Interrogation (marriage)</desc>
-<desc type="editorial">An interrogation cast for the time of someone’s marriage.</desc>
-</category>
-<category xml:id="interrogationMedicalEpisode" n="24">
-<desc>Interrogation (medical episode)</desc>
-<desc type="editorial">An interrogation cast for the time at which someone suffered a medical problem of some sort (or a problem of the passions), where that does not constitute a <val>#decumbiture</val>. Decumbitures mark the beginning of an illness; if the illness is already in progress when the event in question occurs — such as when an interrogation records the time of a particular fit suffered by someone with the falling sickness — then this category should be used instead.</desc>
-</category>
-<category xml:id="interrogationMissedQuestion" n="17">
-<desc>Interrogation (missed question)</desc>
-<desc type="editorial">An interrogation cast for the time at which a visiting querent or a querent’s message arrived for Napier in his absence. In a sense these function like horary entries for consultations that did not take place, but Napier should be recorded as the querent (with an <att>evidence</att> value of <val>conjecture</val> and the time range inferred from neighbouring entries, as usual.</desc>
-</category>
-<category xml:id="interrogationQuestion" n="14">
-<desc>Interrogation (question)</desc>
-<desc type="editorial">An interrogation cast for the time of someone’s (horary) question, typically to find out something that that querent did not ask. This is to cover the situation in which a client comes to the practitioner and asks a question, then the practitioner adds a question of his own: the client’s question is horary, but the practitioner’s question is an interrogation because it was occasioned by (and is timed for) an external event — the client’s asking something. They should accordingly be recorded as two separate entries, with the same person subject in both but with the praqctitioner as querent in the interrogation. Such situations often arise where a woman consults Napier about a medical matter and Napier wonders if she is pregnant. The time for these is usually given as the time of the original (horary) question if the supplementary question was clearly added immediately by the practitioner; if it looks as though the practitioner asked this question later then the time of the interrogation should be inferred from neighbouring entries as usual.</desc>
-</category>
-<category xml:id="interrogationQuickening" n="22">
-<desc>Interrogation (quickening)</desc>
-<desc type="editorial">An interrogation cast for the time at which a pregnant woman first felt her baby move.</desc>
-</category>
-<category xml:id="interrogationReceivingMessage" n="25">
-<desc>Interrogation (receiving message)</desc>
-<desc type="editorial">An interrogation cast for the time at which a message was received, whether by letter or by other means.</desc>
-</category>
-<category xml:id="interrogationSendingMessage" n="28">
-<desc>Interrogation (sending message)</desc>
-<desc type="editorial">An interrogation cast for the time at which a message was written and/or sent. This is for entries in which the time of sending is specifically and explicitly discussed; they typically accompany <val>#horary</val> or <val>#interrogationReceivingMessage</val> entries in which the time of the message’s receipt is recorded. If an entry is unclear about whether it is presenting the time of sending or the time of receipt, or if it seems more likely that a time of receipt is intended despite the wording of the entry, then <val>#interrogationReceivingMessage</val> should be used instead.</desc>
-</category>
-<category xml:id="interrogationStartingJourney" n="19">
-<desc>Interrogation (starting journey)</desc>
-<desc type="editorial">An interrogation cast for the time at which someone sets off on a journey.</desc>
-</category>
-<category xml:id="interrogationStartingWork" n="26">
-<desc>Interrogation (starting work)</desc>
-<desc type="editorial">An interrogation cast for the time at which work began on producing a sigil or other medicinal substance or item; not for the time at which it began to be used, for which <val>#interrogationTreatment</val> should be employed instead. Note that Napier typically refers to sigils being ‘made’ at the specified time, but in one instance he expicitly gives both the time at which they ‘weare made’ and the time at which they ‘weare ended’, and casts the chart for the former time; so it seems that the time at which he records that a sigil was ‘made’ is the time at which work began on it.</desc>
-</category>
-<category xml:id="interrogationTreatment" n="15">
-<desc>Interrogation (treatment)</desc>
-<desc type="editorial">An interrogation cast for the time of someone’s treatment. These sometimes resemble <val>#caseNotes</val> entries, but as a general rule <val>#caseNotes</val> entries are full retrospective accounts of illness, treatment and result, whereas interrogations about treatment more usually restrict themselves to a record of the date and time at which a person underwent a particular treatment, rarely with an indication of its effects.</desc>
-</category>
-<category xml:id="interrogationVisit" n="23">
-<desc>Interrogation (visit)</desc>
-<desc type="editorial">An interrogation cast for the time at which one person visited another. The exceptions are where that visit was for a consultation (in which case <val>#horary</val> should be specified) or where the visit was for a consultation but the practitioner was absent (in which case <val>#interrogationMissedQuestion</val> should be specified). Otherwise, the reason for the visit does not matter for the type of entry, only for the topic.</desc>
-</category>
+                     <category xml:id="interrogationAstronomical" n="10">
+                        <desc>Interrogation (astronomical)</desc>
+                        <desc type="editorial">An interrogation cast for the time of an astronomical event, such as the conjunction of two planets, an eclipse, or the entry of a planet into a particular constellation. Where no clue is given as to the practitioner’s specific concern in drawing up the chart, the topic <val>unknown</val> should be recorded with a <att>reason</att> of <val>notGiven</val>. In some instances, however, a judgment or subsequent event information may indicate that the intention was to understand the astronomical event’s likely effect on a particular person’s illness, or on health and illness more generally, or (for instance) the weather. Where this is the case, the relevant topic should be supplied. If the concern is with the health and illnesses of some unidentified members of the population then an anonymous <gi>personGrp</gi> should be posited.</desc>
+                     </category>
+                     <category xml:id="interrogationBurial" n="16">
+                        <desc>Interrogation (burial)</desc>
+                        <desc type="editorial">An interrogation cast for the time of someone’s burial. Typically the topic <val>death</val> will also be used.</desc>
+                     </category>
+                     <category xml:id="interrogationCastingFigure" n="27">
+                        <desc>Interrogation (casting figure)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which the practitioner cast an astrological figure. Such interrogations tend to accompany horary entries when the figure was not immediately cast but was drawn up some time later.</desc>
+                     </category>
+                     <category xml:id="interrogationConversation" n="29">
+                        <desc>Interrogation (conversation)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which two or more people spoke.</desc>
+                     </category>
+                     <category xml:id="interrogationDeath" n="11">
+                        <desc>Interrogation (death)</desc>
+                        <desc type="editorial">An interrogation cast for the time of someone’s death (modern astrologers call this a ‘death chart’). Typically the topic <val>death</val> will also be used.</desc>
+                     </category>
+                     <category xml:id="interrogationGivingBirth" n="13">
+                        <desc>Interrogation (giving birth)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which someone gave birth. The phrase most often employed in the casebooks is ‘brought abed’. Note that the difference between this and a <val>#nativity</val> is who the subject is: a nativity is cast to investigate the fortune or health of the child, whereas for entries categorised as <val>#interrogationGivingBirth</val> the subject is the mother and the entry is concerned with her health instead.</desc>
+                     </category>
+                     <category xml:id="interrogationItemLoss" n="20">
+                        <desc>Interrogation (loss of item)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which a possession was lost or stolen.</desc>
+                     </category>
+                     <category xml:id="interrogationLabour" n="21">
+                        <desc>Interrogation (labour)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which a woman went into labour.</desc>
+                     </category>
+                     <category xml:id="interrogationMarriage" n="12">
+                        <desc>Interrogation (marriage)</desc>
+                        <desc type="editorial">An interrogation cast for the time of someone’s marriage.</desc>
+                     </category>
+                     <category xml:id="interrogationMedicalEpisode" n="24">
+                        <desc>Interrogation (medical episode)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which someone suffered a medical problem of some sort (or a problem of the passions), where that does not constitute a <val>#decumbiture</val>. Decumbitures mark the beginning of an illness; if the illness is already in progress when the event in question occurs — such as when an interrogation records the time of a particular fit suffered by someone with the falling sickness — then this category should be used instead.</desc>
+                     </category>
+                     <category xml:id="interrogationMissedQuestion" n="17">
+                        <desc>Interrogation (missed question)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which a visiting querent or a querent’s message arrived for Napier in his absence. In a sense these function like horary entries for consultations that did not take place, but Napier should be recorded as the querent (with an <att>evidence</att> value of <val>conjecture</val> and the time range inferred from neighbouring entries, as usual.</desc>
+                     </category>
+                     <category xml:id="interrogationQuestion" n="14">
+                        <desc>Interrogation (question)</desc>
+                        <desc type="editorial">An interrogation cast for the time of someone’s (horary) question, typically to find out something that that querent did not ask. This is to cover the situation in which a client comes to the practitioner and asks a question, then the practitioner adds a question of his own: the client’s question is horary, but the practitioner’s question is an interrogation because it was occasioned by (and is timed for) an external event — the client’s asking something. They should accordingly be recorded as two separate entries, with the same person subject in both but with the praqctitioner as querent in the interrogation. Such situations often arise where a woman consults Napier about a medical matter and Napier wonders if she is pregnant. The time for these is usually given as the time of the original (horary) question if the supplementary question was clearly added immediately by the practitioner; if it looks as though the practitioner asked this question later then the time of the interrogation should be inferred from neighbouring entries as usual.</desc>
+                     </category>
+                     <category xml:id="interrogationQuickening" n="22">
+                        <desc>Interrogation (quickening)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which a pregnant woman first felt her baby move.</desc>
+                     </category>
+                     <category xml:id="interrogationReceivingMessage" n="25">
+                        <desc>Interrogation (receiving message)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which a message was received, whether by letter or by other means.</desc>
+                     </category>
+                     <category xml:id="interrogationSendingMessage" n="28">
+                        <desc>Interrogation (sending message)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which a message was written and/or sent. This is for entries in which the time of sending is specifically and explicitly discussed; they typically accompany <val>#horary</val> or <val>#interrogationReceivingMessage</val> entries in which the time of the message’s receipt is recorded. If an entry is unclear about whether it is presenting the time of sending or the time of receipt, or if it seems more likely that a time of receipt is intended despite the wording of the entry, then <val>#interrogationReceivingMessage</val> should be used instead.</desc>
+                     </category>
+                     <category xml:id="interrogationStartingJourney" n="19">
+                        <desc>Interrogation (starting journey)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which someone sets off on a journey.</desc>
+                     </category>
+                     <category xml:id="interrogationStartingWork" n="26">
+                        <desc>Interrogation (starting work)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which work began on producing a sigil or other medicinal substance or item; not for the time at which it began to be used, for which <val>#interrogationTreatment</val> should be employed instead. Note that Napier typically refers to sigils being ‘made’ at the specified time, but in one instance he expicitly gives both the time at which they ‘weare made’ and the time at which they ‘weare ended’, and casts the chart for the former time; so it seems that the time at which he records that a sigil was ‘made’ is the time at which work began on it.</desc>
+                     </category>
+                     <category xml:id="interrogationTreatment" n="15">
+                        <desc>Interrogation (treatment)</desc>
+                        <desc type="editorial">An interrogation cast for the time of someone’s treatment. These sometimes resemble <val>#noteReport</val> entries, but as a general rule <val>#noteReport</val> entries are full retrospective accounts of illness, treatment and result, whereas interrogations about treatment more usually restrict themselves to a record of the date and time at which a person underwent a particular treatment, rarely with an indication of its effects.</desc>
+                     </category>
+                     <category xml:id="interrogationVisit" n="23">
+                        <desc>Interrogation (visit)</desc>
+                        <desc type="editorial">An interrogation cast for the time at which one person visited another. The exceptions are where that visit was for a consultation (in which case <val>#horary</val> should be specified) or where the visit was for a consultation but the practitioner was absent (in which case <val>#interrogationMissedQuestion</val> should be specified). Otherwise, the reason for the visit does not matter for the type of entry, only for the topic.</desc>
+                     </category>
                   </category>
                   <category xml:id="nativity" n="7">
                      <desc>Nativity</desc>
@@ -142,7 +146,7 @@
                      <desc type="editorial">Enquiries relating to the supposed revolutions of the heavens about the earth and consequently cyclical pattern of worldly affairs, generally used by the astrologers in drawing up prognostications for themselves. This is a chart for the beginning of a year to see what that year will hold. It can either be for the world’s year (that is, midnight on New Year’s Eve/New Year’s Day) or for the subject’s year (that is, a whole number of years to the hour since the subject’s birth). Forman records several of these for his birthdays and surrounds them with post hoc notes about what happened during that year. This is the sort of entry that (for Forman, at least) goes at the ends of notebooks and so is not datable in any clear way beyond the fact that it was presumably written somewhere around about the date in question. They are best given the topic <val>fortune</val> with an <att>evidence</att> value of <val>inferred</val>.</desc>
                   </category>
                </category>
-
+               
                <category xml:id="example" n="31">
                   <desc>Example</desc>
                   <category xml:id="exampleDecumbiture" n="32">
@@ -153,7 +157,7 @@
                      <desc>Example election</desc>
                      <desc type="editorial">An election reused or reworked as an example in or for a longer text. It can be transcribed according to normal rules. This category is applicable only rarely, to entries in the volumes of loose papers, and can otherwise be disregarded.</desc>
                   </category>
-
+                  
                   <category xml:id="exampleHorary" n="34">
                      <desc>Example horary</desc>
                      <desc type="editorial">A horary entry reused or reworked as an example in or for a longer text. It can be transcribed according to normal rules. This category is applicable only rarely, to entries in the volumes of loose papers, and can otherwise be disregarded.</desc>
@@ -167,14 +171,229 @@
                      <desc type="editorial">A nativity reused or reworked as an example in or for a longer text. It can be transcribed according to normal rules. This category is applicable only rarely, to entries in the volumes of loose papers, and can otherwise be disregarded.</desc>
                   </category>
                </category>
+               
+               <category xml:id="note" n="37">
+                  <desc>Note</desc>
+                  
+                  <category xml:id="noteDiary" n="39">
+                     <desc>Diary</desc>
+                     <desc type="editorial">A diary note without an astrological chart.</desc>
+                     <category xml:id="diaryReligiousExperience" n="46">
+                        <desc>Religious experience</desc>
+                        <desc type="editorial">A chartless diary entry recording a religious experience.</desc>
+                     </category>
+                     <category xml:id="diaryDreams" n="47">
+                        <desc>Dreams</desc>
+                        <desc type="editorial">A chartless diary entry recording a dream or dreams.</desc>
+                     </category>
+                  </category>
+                  
+                  <category xml:id="noteNotebook" n="84">
+                     <desc>Notebook</desc>
+                     <desc type="editorial">A note of the sort that would be put into a notebook.</desc>
+                     <category xml:id="AshmoleSlip" n="60">
+                        <desc>Ashmole’s bookmark</desc>
+                        <desc type="editorial">These are small slips of paper inserted into certain volumes, on which Elias Ashmole has written astrological details and calculations relating to sigils recorded or prescribed in nearby entries.</desc>
+                     </category>
+                     <category xml:id="noteAlchemical" n="57">
+                        <desc>Alchemical</desc>
+                        <desc type="editorial">Recipes and notes relating to alchemical processes.</desc>
+                     </category>
+                     <category xml:id="noteAngelic" n="61">
+                        <desc>Angelic</desc>
+                        <desc type="editorial">These are notes of questions for, information from and conversations with angels.</desc>
+                     </category>
+                     <category xml:id="noteAstrological" n="67">
+                        <desc>Astrological instructions</desc>
+                        <desc type="editorial">General astrological and astronomical notes and explanations, sometimes in short excerpts and at other times in longer passages. This category is not to be confused with <val>noteAstrologicalWorking</val>, which is for working related to a specific, but unidentified, chart.</desc>
+                     </category>
+                     <category xml:id="noteAstrologicalTable">
+                        <desc>Astrological table</desc>
+                        <desc type="editorial">Tables of astrological and astronomical (and related) information.</desc>
+                     </category>
+                     <category xml:id="noteAstrologicalWorking" n="38">
+                        <desc>Astrological working</desc>
+                        <desc type="editorial">Astrological jottings, notes and calculations, not obviously associated with an entry and typically without any indication of their purpose or significance.</desc>
+                     </category>
+                     <category xml:id="noteBooks" n="56">
+                        <desc>Books</desc>
+                        <desc type="editorial">Notes giving the bibliographical details of books, or listing books. These should not be confused with records (often lists) of books lent to people, which should instead be classified as <val>noteFinancial</val>.</desc>
+                     </category>
+                     <category xml:id="noteCalendar">
+                        <desc>Calendar</desc>
+                        <desc type="editorial">Notes recording the days (and sometimes times) at which particular events are due to happen.</desc>
+                     </category>
+                     <category xml:id="noteDirections" n="79">
+                        <desc>Directions</desc>
+                        <desc type="editorial">Directions for getting to a particular place or places.</desc>
+                     </category>
+                     <category xml:id="noteDivination" n="73">
+                        <desc>Divination</desc>
+                        <desc type="editorial">Notes about, and guides to, divinatory procedures.</desc>
+                     </category>
+                     <category xml:id="noteDocument" n="72">
+                        <desc>Document</desc>
+                        <desc type="editorial">Documents and certificates recording agreements, debts and transactions, some of them copies and some of them signed originals.</desc>
+                     </category>
+                     <category xml:id="noteFinancial" n="40">
+                        <desc>Financial</desc>
+                        <desc type="editorial">Records of loans of money and books, receipts, and/or payments made to people. If books are noted or listed but without any suggestion that they have been lent to people then <val>noteBooks</val> should be used instead.</desc>
+                     </category>
+                     <category xml:id="noteHousehold" n="70">
+                        <desc>Household</desc>
+                        <desc type="editorial">Recipes for food, for ink, for poisons for pests, and any other notes relating to the functioning of a household.</desc>
+                     </category>
+                     <category xml:id="noteIndex" n="64">
+                        <desc>Index</desc>
+                        <desc type="editorial">In later volumes, Napier’s assistants (chiefly his nephew and Unidentified (1624–1634) compiled indexes for his volumes. Most include the names of patients.</desc>
+                     </category>
+                     <category xml:id="noteInscription" n="52">
+                        <desc>Inscription</desc>
+                        <desc type="editorial">One of the various notes and headings included in the casebooks such as the Trinitarian incipits with which Napier sometimes begins his volumes, or page headings giving the date.</desc>
+                     </category>
+                     <category xml:id="noteLanguagesAndAlphabets" n="74">
+                        <desc>Languages and alphabets</desc>
+                        <desc type="editorial">Notes that record alphabets, symbols, and the meanings of words in other languages.</desc>
+                     </category>
+                     <category xml:id="noteListPeople" n="63">
+                        <desc>List of people</desc>
+                        <desc type="editorial">Forman sometimes lists people who have something particular in common: knighted in the current year, kings of England, </desc>
+                     </category>
+                     <category xml:id="noteListThings" n="76">
+                        <desc>List of things</desc>
+                        <desc type="editorial">Lists of items, presumably for a variety of purposes though their purpose is not always clear. This includes lists of items resembling shopping lists, lists of sums of money that do not form part of a normal ‘financial’ note (that is, that are not records of the practitioner’s own financial affairs), and lists of items or types of item under some heading or theme.</desc>
+                     </category>
+                     <category xml:id="notePerson" n="66">
+                        <desc>Person</desc>
+                        <desc type="editorial">A note that simply names or describes a person. These lack any clear indication of the person’s significance, as a clearer idea of why the person has been mentioned would allow us to classify the note in another way. Some of these notes may be part of neighbouring entries; others may be shorthand for a diary note or an entry that was never written up in full. Often only a name is given; sometimes an address, and/or a relationship or occupation.</desc>
+                     </category>
+                     <category xml:id="notePlace" n="78">
+                        <desc>Place</desc>
+                        <desc type="editorial">A note that refers to a place or places, without any indication of its/their significance. Where the note provides directions to a place or places, it should be made <val>#noteDirections</val> instead.</desc>
+                     </category>
+                     <category xml:id="notePrayer" n="49">
+                        <desc>Prayer</desc>
+                        <desc type="editorial">A prayer not written as part of or associated with an entry.</desc>
+                     </category>
+                     <category xml:id="noteProphecies" n="71">
+                        <desc>Prophecies and portents</desc>
+                        <desc type="editorial">Quoted prophecies and quotations from prophetic literature; reports of portents and prodigies.</desc>
+                     </category>
+                     <category xml:id="noteQuery" n="62">
+                        <desc>Query</desc>
+                        <desc type="editorial">A query recorded by Napier. It is unclear how he went about determining the answers to these queries. Where a query is explicitly recorded as being for an angel, then the category <val>#noteAngelic</val> should be used instead. Sometimes the word ‘quære’ is appended to an entry or a note of some other sort, in which case the category used should reflect the item to which it is appended (and not the presence of the query).</desc>
+                     </category>
+                     <category xml:id="noteQuotationsAphorisms" n="81">
+                        <desc>Quotations and aphorisms</desc>
+                        <desc type="editorial">Short excerpts, noted down sayings and generally any aphoristic text.</desc>
+                     </category>
+                     <category xml:id="noteReligious" n="82">
+                        <desc>Religious discussion</desc>
+                        <desc type="editorial">Thoughts, lists and discussions on religious themes.</desc>
+                     </category>
+                     <category xml:id="noteSermon" n="65">
+                        <desc>Sermon</desc>
+                        <desc type="editorial">A draft or copy of a sermon, or some part of a sermon.</desc>
+                     </category>
+                     <category xml:id="noteStory" n="75">
+                        <desc>Story</desc>
+                        <desc type="editorial">Accounts of events in other people’s lives, typically noted down by one of the practitioners because of some point of interest in the story.</desc>
+                     </category>
+                     <category xml:id="noteUnclassified" n="73">
+                        <desc>Unclassified</desc>
+                        <desc type="editorial">A note that has not (yet) been placed into any of the other subcategories, but which is not sufficiently obscure in meaning to count as unidentified. This category is, it is hoped, temporary.</desc>
+                     </category>
+                     <category xml:id="noteUnidentified" n="69">
+                        <desc>Unidentified</desc>
+                        <desc type="editorial">A passage, word, mark or image whose purpose and/or meaning has not been identified. It includes oddly repeated names and phrases that may have significance or may simply have been pen-tests, as well as items rendered unintelligible through handwriting, damage or simply brevity.</desc>
+                     </category>
+                     <category xml:id="noteVerse" n="59">
+                        <desc>Verse</desc>
+                        <desc type="editorial">Passages of verse.</desc>
+                     </category>
+                     <category xml:id="noteWeather" n="44">
+                        <desc>Weather report</desc>
+                        <desc type="editorial">A record of what the weather was on a particular day or days.</desc>
+                     </category>
+                  </category>
+                  
+                  <category xml:id="notePracticeRelated" n="83">
+                     <desc>Practice-related</desc>
+                     <desc type="editorial">A note relating directly to the astrological/medical practice.</desc>
+                     <category xml:id="entryFragment" n="58">
+                        <desc>Entry fragment</desc>
+                        <desc type="editorial">These comprise bits of text or astrological chart that were originally part of an entry, but which were either abandoned so early that they cannot be transcribed as an entry, or have been separated from the entry of which they originally formed a part.</desc>
+                     </category>
+                     <category xml:id="nonCasebooksEntry" n="53">
+                        <desc>Non-casebooks entry</desc>
+                        <desc type="editorial">These are normal entries — horary entries, nativities, interrogations and the like — from practices other than those covered by this project. They include a number of entries by John Booker, John Stansbey and William Lilly. All are from the loose papers volumes.</desc>
+                     </category>
+                     <category xml:id="noteEpidemic" n="68">
+                        <desc>Epidemic</desc>
+                        <desc type="editorial">Notes that report widespread suffering from an ailment, typically in a particular location. This category should be applied even when the problem suffered is not something that would be recognised today as contagious or likely to affect many people at once.</desc>
+                     </category>
+                     <category xml:id="noteFurtherCaseDetails" n="80">
+                        <desc>Further case details</desc>
+                        <desc type="editorial">Notes giving more details of medical problems or events mentioned more briefly elsewhere in entries.</desc>
+                     </category>
+                     <category xml:id="noteLifeEvents" n="55">
+                        <desc>Life events</desc>
+                        <desc type="editorial">Notes of birth and other major events in the life of a person or the lives of several people (usually members of a family). These were probably originally associated with navities or requests for nativities to be cast, though if so the associated letters or entries do not always survive.</desc>
+                     </category>
+                     <category xml:id="noteListPatients" n="61">
+                        <desc>List of patients</desc>
+                        <desc type="editorial">Lists of patients, perhaps with particular features in common, sometimes accompanied by details such as address, the nature of the problem.</desc>
+                     </category>
+                     <category xml:id="noteMemorandum" n="41">
+                        <desc>Memorandum</desc>
+                        <desc type="editorial">A reminder by the practitioner to do something.</desc>
+                     </category>
+                     <category xml:id="noteOtherPractitionersTreatments" n="77">
+                        <desc>Other practitioners’ treatments</desc>
+                        <desc type="editorial">Records of treatment that people have received by, or under the direction of, practitioners other than Napier. These are noted without any indication that the writer is considering them for future use; where treatments are recorded for future use then they should be given the category <val>#noteTreatment</val>, even if use by another practitioner is cited in their favour.</desc>
+                     </category>
+                     <category xml:id="notePatientUpdate" n="42">
+                        <desc>Patient update</desc>
+                        <desc type="editorial">A note recording the outcome of a previous entry. These are not attached to the entry in question (as is the case for typical event information), but are presumably added to the casebooks on the page open when the practitioner is given the information.</desc>
+                     </category>
+                     <category xml:id="notePractitioner" n="51">
+                        <desc>Practitioner</desc>
+                        <desc type="editorial">A note recording the existence, and possibly expertise, of a medical practitioner.</desc>
+                     </category>
+                     <category xml:id="notePrescription" n="50">
+                        <desc>Prescription</desc>
+                        <desc type="editorial">A prescription for a particular patient.</desc>
+                     </category>
+                     <category xml:id="noteReport" n="1">
+                        <desc>Report</desc>
+                        <desc type="editorial">Post hoc records of illnesses suffered, treatments given, and their outcomes; their records of substances administered and quantities given are part of the same paragraph, and even sentence, as the name of the patient and date and time of the treatment. The date and time at which they were written is rarely if ever supplied. They do not have charts because the practitioner is not seeking to find anything out. (The clearest examples are in Forman: <ref type="case" target="CASE301">CASE301</ref> and <ref type="case" target="CASE302">CASE302</ref>, which both have the form: ‘X had the plague and I gave her/him an ounce of strong water and he/she survived’. These notes are often difficult to distinguish from <val>#interrogationTreatment</val> entries; if in doubt, the best course of action is to choose <val>#interrogationTreatment</val>. Note that where Napier is writing about his own ailments and medicines that he has administered on himself, then the note counts as <val>#diary</val> (with a chart) or (without a chart) <val>#noteDiary</val>.</desc>
+                     </category>
+                     <category xml:id="noteTreatment" n="43">
+                        <desc>Treatment</desc>
+                        <desc type="editorial">A treatment or recipe recorded for general purposes (the medical problem it treats may or may not be indicated) rather than specifically for an individual.</desc>
+                     </category>
+                  </category>
+               </category>
+               
+               
+               
+               <category xml:id="treatise" n="45">
+                  <desc>Treatise</desc>
+                  <desc type="editorial">A draft or copy of a treatise or part of a treatise. This also covers copies of sections from longer works, which in any case may be impossible to distinguish without careful work to identify them.</desc>
+               </category>
+               
+               <category xml:id="letter" n="54">
+                  <desc>Letter</desc>
+               </category>
+               
+               
             </taxonomy>
-        </classDecl>
-     </encodingDesc>
-  </teiHeader>
-
-  <text>
+         </classDecl></encodingDesc>
+   </teiHeader>
+   
+   <text>
       <body>
          <p/>
       </body>
-  </text>
+   </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11797</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR, bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 51v</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -76,6 +82,7 @@
 <p><date when="1598-11-13" n="Monday"/></p>
 <p><time when="12:06:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mt" evidence="internal"/>
@@ -101,6 +108,8 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-06">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -108,9 +117,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Margaret <subst><del type="strikethrough">Tarelton</del> <add place="supralinear">Thorne</add></subst> the wife <lb/>of Will Tarelton a tealer <lb/><add place="supralinear"><rs type="address" xml:id="address1">of Newport</rs>.</add> 40 yeres old 16 yeres maried <lb/>sick &amp; hath had her disease <lb/>growing &vVowel;ppon her this <lb/>12 <choice><sic>monets</sic><corr>moneths</corr></choice> &amp; better <foreign xml:lang="la">qu&aelig;rit</foreign> <lb/>novemb. it taketh her every <lb/>foote. Novemb. 13 &MondayN;. h. <lb/>12. 6. mi 1598. shee was <lb/>so weak shee could not come <lb/>but sent her servant mead <lb/>it ariseth from her hart &vVowel;pward to her <lb/>throot ready to stop her winde</p>
+<p><lb/>Margaret <subst><del type="strikethrough">Tarelton</del> <add place="supralinear">Thorne</add></subst> the wife <lb/>of Will Tarelton a tealer <lb/><add place="supralinear"><rs type="address" xml:id="address1" key="PLACE766" resp="#mhawkins">of Newport</rs>.</add> 40 yeres old 16 yeres maried <lb/>sick &amp; hath had her disease <lb/>growing <choice><orig>v</orig><reg>u</reg></choice>ppon her this <lb/>12 <choice><sic>monets</sic><corr>moneths</corr></choice> &amp; better <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>novemb. it taketh her every <lb/>foote. Novemb. 13 <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. h. <lb/>12. 6. mi 1598. shee was <lb/>so weak shee could not come <lb/>but sent her servant mead <lb/>it ariseth from her hart <choice><orig>v</orig><reg>u</reg></choice>pward to her <lb/>throot ready to stop her winde</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>
 </body>
 </text>

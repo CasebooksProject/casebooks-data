@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE28785</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="216">MS Ashmole 216, f. 61v</idno>
-&Napier010;
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -52,18 +58,23 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
+<person xml:id="hl" evidence="external">
+<persName><roleName>Sir</roleName> <forename>Henry</forename> <surname>Longueville</surname></persName>
+<sex value="1">M</sex>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1605-04-23" n="Tuesday" evidence="inferred"/></p>
 <p><time notBefore="09:00:00" notAfter="10:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#rnapier" evidence="internal"/>
-<cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="treatment" evidence="internal"><person sameAs="#rnapier"/></cb:topic>
-<cb:info type="event" subtype="previousConsultation"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#hl" present="no"/>
+<cb:topic key="treatment" evidence="internal"><person sameAs="#hl"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -80,11 +91,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Apr <del type="strikethrough">13</del> <subst><del type="over">1<gap reason="del" extent="1" unit="chars"/></del><add place="over">23</add></subst>. <choice><orig><subst><del type="cancelled">&MercurySymbol;</del> <add place="supralinear">&MarsSymbol;</add></subst></orig><reg type="gloss">Tuesday</reg></choice>. h. 13. 30</p>
+<p><lb/>Apr <del type="strikethrough">13</del> <subst><del type="over">1<gap reason="del" extent="1" unit="chars"/></del><add place="over">23</add></subst>. <choice><orig><subst><del type="cancelled">☿</del> <add place="supralinear">♂</add></subst></orig><reg type="gloss">Tuesday</reg></choice>. h. 13. 30</p>
 
-<p><lb/>Apr 19. &Tuesday; h. 13. 30 p <lb/>m. 1605</p>
+<p><lb/>Apr 19. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 13. 30 p <lb/>m. 1605</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE45419</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-06-07">07 June 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="220">MS Ashmole 220, f. 57r</idno>
-&Napier027;
+<altIdentifier type="fn_number"><idno n="Napier027">Napier, vol. 27</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -72,6 +82,7 @@
 <p><date when="1617-08-07" n="Thursday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -80,7 +91,7 @@
 <cb:topic key="troubled"><person sameAs="#sm"/></cb:topic>
 <cb:topic key="mind"><person sameAs="#sm"/></cb:topic>
 <cb:topic key="temptedAndSuicidal"><person sameAs="#sm"/></cb:topic>
-<cb:topic key="requestingSigil"><person sameAs="#sm"/></cb:topic>
+<cb:topic key="sigils"><person sameAs="#sm"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -98,9 +109,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Sara Musgrave 32 y. <lb/>Aug 7 &Thursday; h. 2. p m. 1617 <add place="infralinear">her husb came for a S <choice><orig>&crossedp;</orig><reg>pro</reg></choice>mised</add> <add place="marginLeft">is locked every night <lb/>to <choice><sic>his</sic><corr cert="high">her</corr></choice> bed.</add><note place="chart">troubled sorely <lb/>in mynd <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> temptat to hurt her <lb/>selfe or her child</note></p>
+<p><lb/>Sara Musgrave 32 y. <lb/>Aug 7 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 2. p m. 1617 <add place="infralinear">her husb came for a S <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>mised</add> <add place="marginLeft">is locked every night <lb/>to <choice><sic>his</sic><corr cert="high">her</corr></choice> bed.</add><note place="chart">troubled sorely <lb/>in mynd <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> temptat to hurt her <lb/>selfe or her child</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

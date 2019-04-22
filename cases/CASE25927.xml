@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25927</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-23">23 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="174">MS Ashmole 174, p. 300</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0300" to="0300"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><forename>Christian</forename></persName>
+<sex value="2" evidence="external">F</sex>
+</person>
+<person xml:id="tm">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Middleton</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="kinsman" active="#rnapier" passive="#c"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1620-12-15" n="Friday"/></p>
+<p><time when="14:38:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c" evidence="internal" present="unclear"/>
+<cb:subject ref="#tm" present="no" consent="no"/>
+<cb:topic key="fertility" cert="medium"><person sameAs="#tm"/></cb:topic>
+<cb:topic key="girlOrBoy" cert="medium" evidence="internal"><person sameAs="#tm"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-07-26">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-02">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-06">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-05-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acg0338.jpg" url="acg0338.jpg" n="300"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my Cosen Crystian <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks whether</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Th <lb/>Myd. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">habebit fili<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">will have a son</seg><link type="is-translation-of" target="#foreign002 #translation002"/> Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 15. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 2. 38 <lb/>p m. 1620 <add place="inline"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">sine consens.</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">without consent.</seg><link type="is-translation-of" target="#foreign003 #translation003"/></add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

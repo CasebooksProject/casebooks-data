@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13388</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 92r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,18 +35,24 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#nativity"/>
@@ -65,13 +76,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1611"/></p>
+<p><date notBefore="1611-01-01" notAfter="1611-12-31"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -81,16 +93,21 @@
 <change when="2012-02-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-29">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0203.jpg" url="acm0203.jpg" n="92r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Rich. na<choice><orig>&crossedp;</orig><reg>per</reg></choice> natus <del type="strikethrough">159</del> <rs type="address" xml:id="address1">exoni&jVowel; in comitatu <lb/>devonie</rs> <unclear cert="low" reason="hand">h</unclear> sub latit 52. <rs type="date" xml:id="date1">mai&jVowel; 4. asc. die <lb/>&Thursday;</rs> <rs type="time" xml:id="time1">h. <subst><del type="over">9 <add place="supralinear">30</add></del><add place="over">8</add></subst> <add place="supralinear"><del type="cancelled"><gap reason="del" unit="chars" extent="2"/></del> 50</add> &antm;</rs>. <rs type="date" sameAs="#date1"><del type="strikethrough">1611</del> 1559</rs>.<note place="marginLeft"><rs type="time" sameAs="#time1">h. 8. 50 <lb/>p m</rs> 1611</note> filius Alex <lb/>Naperi et Agnetis Burchlie.<note place="infralinear">ann<choice><orig>&uover;</orig><reg>um</reg></choice> reg <del type="strikethrough">elisab</del> <choice><sic>amo</sic><corr>anno</corr></choice> primo</note><note place="infralinear">verius c&aelig;teris calculata</note></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Rich. na<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> natus <del type="strikethrough">159</del> <rs type="address" xml:id="address1" key="PLACE959">exoni<choice><orig>j</orig><reg>i</reg></choice> in comitatu <lb/>devonie</rs> <unclear cert="low" reason="hand">h</unclear> sub latit 52. <rs type="date" xml:id="date1">mai<choice><orig>j</orig><reg>i</reg></choice> 4. asc. die <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice></rs> <rs type="time" xml:id="time1">h. <subst><del type="over">9 <add place="supralinear">30</add></del><add place="over">8</add></subst> <add place="supralinear"><del type="cancelled"><gap reason="del" unit="chars" extent="2"/></del> 50</add> <choice><orig>ant m</orig><reg>am</reg></choice></rs>. <rs type="date" sameAs="#date1"><del type="strikethrough">1611</del> 1559</rs>.<note place="marginLeft"><rs type="time" sameAs="#time1">h. 8. 50 <lb/>p m</rs> 1611</note> filius Alex <lb/>Naperi et Agnetis Burchlie.<note place="infralinear">ann<choice><orig>ū</orig><reg>um</reg></choice> reg <del type="strikethrough">elisab</del> <choice><sic>amo</sic><corr>anno</corr></choice> primo</note><note place="infralinear">verius cæteris calculata</note></p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Richard Napier born at Exeter in the county of Devon under the latitude 52 on Thursday 4 May Ascension Day 1559 at 8.50am 8.50 pm 1611 the son of Alexander Napier and Agnes Birchley in the first year of the reign more accurately calculated than the others.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

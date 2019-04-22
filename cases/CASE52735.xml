@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE52735</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-03-22">22 March 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE52733">CASE52733</ref>.</note>
 </notesStmt>
@@ -36,9 +41,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -70,6 +75,7 @@
 <p><date when="1621-06-27" n="Wednesday" evidence="external"/></p>
 <p><time when="11:00:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mo"/>
@@ -84,7 +90,8 @@
 <change when="2016-03-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-03-29">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-07-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-19">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Mary Odill <rs type="address" xml:id="address1">of Sawford</rs> <foreign xml:lang="la">nata</foreign> 15 y nov<choice><orig>ē</orig><reg>em</reg></choice>b 4 <foreign xml:lang="la">ante <lb/>Solis ort<choice><orig>ū</orig><reg>um</reg></choice></foreign> <del type="cancelled">26<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">1</add></subst>5</del> <del type="strikethrough">2605</del> 1605 <lb/><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 6. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1605 <add place="infralinear"><foreign xml:lang="la">in novilunio</foreign></add></p>
+<p><lb/>Mary Odill <rs type="address" xml:id="address1" key="PLACE483" resp="#mhawkins">of Sawford</rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> 15 y nov<choice><orig>ē</orig><reg>em</reg></choice>b 4 <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">ante <lb/>Solis ort<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">before sunrise</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <del type="cancelled">26<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">1</add></subst>5</del> <del type="strikethrough">2605</del> 1605 <lb/><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 6. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1605 <add place="infralinear"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">in novilunio</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">in the new moon</seg><link type="is-translation-of" target="#foreign003 #translation003"/></add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

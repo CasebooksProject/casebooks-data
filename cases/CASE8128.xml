@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE8128</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 202v/bR, f. 203r/uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, ff. 202v-203r</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -70,6 +79,7 @@
 <p><date when="1600-09-03" n="Wednesday"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman" evidence="conjecture"/>
@@ -90,20 +100,29 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-23">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-19">Page/column break coding updated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="adj0444.jpg" url="adj0444.jpg" n="202v"/>
 <graphic xml:id="adj0445.jpg" url="adj0445.jpg" n="203r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><foreign xml:lang="en">&VVowel;nifret Gra&uConsonant;e of 20 yers <lb/>3 Septm &Wednesday; &anflmfl; at 10</foreign> missa <lb/>fuit mihi <choice><orig>&crossedp;</orig><reg>per</reg></choice> magistr<choice><orig>&aover;</orig><reg>am</reg></choice> quid inde <lb/><choice><sic>se<choice><orig><hi rend="overline">qu</hi></orig><reg>qui</reg></choice>tr</sic><corr>sequitur</corr></choice> &slash;&slash; prim<choice><orig>&uover;</orig><reg>um</reg></choice> tempus</p>
-<p><lb/>Et promissa est mihi si &vVowel;nqu<choice><orig>&aover;</orig><reg>am</reg></choice> sit <lb/>Digna 40 libris erit ad mandat<unclear reason="hand" cert="medium">&flourish;</unclear> <lb/>me<choice><orig>&uover;</orig><reg>um</reg></choice>. et sub eadem C<choice><orig>&oover;</orig><reg>on</reg></choice>di<choice><orig><hi rend="overline">oe</hi></orig><reg>cione</reg></choice> dedit <lb/>mihi man<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&aover;</orig><reg>am</reg></choice>. Et <choice><orig>&crossedp;</orig><reg>pro</reg></choice>missa est <lb/>&vVowel;ltra erit filia mea et si aliquod <lb/>facio <choice><orig>&crossedp;</orig><reg>pro</reg></choice> se. vult <foreign xml:lang="en">Requit me Again</foreign> <lb/>Cum Amore&slash; et vult me Amare <lb/>ad hoc tempus sic&flourish; <choice><orig>&crossedp;</orig><reg>pro</reg></choice>missa est</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><foreign xml:lang="en"><choice><orig>V</orig><reg>U</reg></choice>nifret Gra<choice><orig>u</orig><reg>v</reg></choice>e of 20 yers <lb/>3 Septm <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <choice><orig>an’ m’</orig><reg>am</reg></choice> at 10</foreign> missa <lb/>fuit mihi <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> magistr<choice><orig>ā</orig><reg>am</reg></choice> quid inde <lb/><choice><sic>se<choice><orig><hi rend="overline">qu</hi></orig><reg>qui</reg></choice>tr</sic><corr>sequitur</corr></choice> // prim<choice><orig>ū</orig><reg>um</reg></choice> tempus</p>
+<p><lb/>Et promissa est mihi si <choice><orig>v</orig><reg>u</reg></choice>nqu<choice><orig>ā</orig><reg>am</reg></choice> sit <lb/>Digna 40 libris erit ad mandat<unclear reason="hand" cert="medium">’</unclear> <lb/>me<choice><orig>ū</orig><reg>um</reg></choice>. et sub eadem C<choice><orig>ō</orig><reg>on</reg></choice>di<choice><orig><hi rend="overline">oe</hi></orig><reg>cione</reg></choice> dedit <lb/>mihi man<choice><orig>ū</orig><reg>um</reg></choice> su<choice><orig>ā</orig><reg>am</reg></choice>. Et <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>missa est <lb/><choice><orig>v</orig><reg>u</reg></choice>ltra erit filia mea et si aliquod <lb/>facio <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> se. vult <foreign xml:lang="en">Requit me Again</foreign> <lb/>Cum Amore/ et vult me Amare <lb/>ad hoc tempus sic’ <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>missa est</p>
 <pb xml:id="f203r" n="203r" facs="#adj0445.jpg"/>
-<p><lb/>at 10 &anflmfl; 3 <lb/>Septm 1600.</p>
+<p><lb/><foreign xml:lang="en">at 10 <choice><orig>an’ m’</orig><reg>am</reg></choice> 3 <lb/>Septm 1600.</foreign></p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Winifred Graves was sent by [her] mistress: what will come of it?</p>
+<p>And it is promised to me if she is ever worth 40 pounds she will be committed to my charge. And under this condition she gave me her hand. And it is further promised she will be my [girl/daughter] and if I do anything for her she will requite me again with love and will love me at this time; thus she is promised to me.</p>
+<pb xml:id="f203r-t" n="203r"/>
+<p>At 10am 3 September 1600.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

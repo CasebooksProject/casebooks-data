@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE32215</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 291v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -62,7 +66,8 @@
 <sex value="2">F</sex>
 </person>
 <person xml:id="anon2">
-<sex value="0">U</sex>
+<sex value="1">M</sex>
+<occupation>Minister</occupation>
 </person>
 <person xml:id="c1">
 <persName><surname evidence="inferred">Child</surname></persName>
@@ -82,6 +87,7 @@
 <p><date when="1607-10-05" n="Monday"/></p>
 <p><time when="17:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon3" evidence="conjecture" cert="medium" present="unclear"/>
@@ -99,6 +105,8 @@
 <change when="2015-10-07">Checked against new images by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-02-16">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -106,8 +114,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Child <rs type="address" xml:id="address1">of <lb/><subst><del type="strikethrough">Wa</del> <add place="supralinear">Abbats</add></subst> langly</rs> 21 y <lb/>Octob. 5 &Monday; h 5 <lb/>p m. 1607.</p>
-<p><lb/><del type="strikethrough">hed</del> mynd set &vVowel;p<lb/>pon a wentch <lb/>c<choice><orig>&oover;</orig><reg>on</reg></choice>trary to his fath<choice><orig><hi rend="superscript">r<supplied reason="binding" cert="high">s</supplied></hi></orig><reg>ers</reg></choice> <lb/>&amp; mothers mynd &amp; <gap reason="binding" unit="chars" extent="2" cert="medium"/> <lb/>is gone a myle fro<supplied reason="binding" cert="medium">m</supplied> <lb/><subst><del type="over">h</del><add place="over">t</add></subst>hem. on a ny<gap reason="binding" unit="chars" extent="3"/> <lb/>Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> his my<supplied reason="binding" cert="high">nd</supplied> <lb/>is set.</p>
+<p><lb/>Wylli<choice><orig>ā</orig><reg>am</reg></choice> Child <rs type="address" xml:id="address1" key="PLACE1092" resp="#mhawkins">of <lb/><subst><del type="strikethrough">Wa</del> <add place="supralinear">Abbats</add></subst> langly</rs> 21 y <lb/>Octob. 5 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h 5 <lb/>p m. 1607.</p>
+<p><lb/><del type="strikethrough">hed</del> mynd set <choice><orig>v</orig><reg>u</reg></choice>p<lb/>pon a wentch <lb/>c<choice><orig>ō</orig><reg>on</reg></choice>trary to his fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>&amp; mothers mynd &amp; <lb/>is gone a myle fr<choice><orig>ō</orig><reg>om</reg></choice> <lb/><subst><del type="over">h</del><add place="over">t</add></subst>hem. on a mynisters <lb/>Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> his mynd <lb/>is set.</p>
 </div>
 </body>
 </text>

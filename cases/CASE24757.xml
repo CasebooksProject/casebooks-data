@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE24757</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-03">03 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 34v/uL, f. 34r/bL-3</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="239">MS Ashmole 239, f. 34v, f. 34r</idno>
-&Napier018;
+<altIdentifier type="fn_number"><idno n="Napier018">Napier, vol. 18</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -80,7 +86,7 @@
 <person xml:id="v" evidence="internal">
 <persName><roleName>Mother</roleName> <surname>Vaux</surname></persName>
 <sex value="2">F</sex>
-<residence key="databaseNormalizedIDKey" evidence="internal">of litle Crowly</residence>
+<residence key="PLACE735">of litle Crowly</residence>
 </person>
 <person xml:id="h1" evidence="internal">
 <persName><surname>Hall</surname></persName>
@@ -97,6 +103,7 @@
 <p><date when="1610-05-15" n="Tuesday"/></p>
 <p><time when="07:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#sp"/>
@@ -111,7 +118,8 @@
 <cb:topic key="nausea"><person sameAs="#sp"/></cb:topic>
 <cb:topic key="readyToStopWind"><person sameAs="#sp"/></cb:topic>
 <cb:topic key="weak"><person sameAs="#sp"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#sp"/><person sameAs="#ec"/><person sameAs="#t2"/><person sameAs="#v"/><person sameAs="#h2"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#sp"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins" evidence="internal"><person sameAs="#ec"/><person sameAs="#t2"/><person sameAs="#v"/><person sameAs="#h2"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -125,6 +133,7 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -133,7 +142,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Sara Pauly <rs type="address" xml:id="address1">of NorthCrowlye</rs> <lb/>38. y may 15. &Tuesday; h. 7. &antm;. 16<choice><orig>i</orig><reg>1</reg></choice>0 <lb/>Delivered this day sennet about <lb/>8. in the morning. was in <lb/>labour from monday to that Daye <lb/>tooke a cold. &amp; sore all over. &amp; <lb/>was swelled all over &amp; now <lb/>is swelled in her left hand <lb/>&amp; c<choice><orig>&aover;</orig><reg>an</reg></choice>not make water onc <lb/>in 24 houres. ready to cast <lb/>&amp; her wynd is ready to be <lb/>stopt <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it very weake.</p>
+<p><lb/>Sara Pauly <rs type="address" xml:id="address1" key="PLACE770" resp="#mhawkins">of NorthCrowlye</rs> <lb/>38. y may 15. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 7. <choice><orig>ant m</orig><reg>am</reg></choice>. 16<choice><orig>i</orig><reg>1</reg></choice>0 <lb/>Delivered this day sennet about <lb/>8. in the morning. was in <lb/>labour from monday to that Daye <lb/>tooke a cold. &amp; sore all over. &amp; <lb/>was swelled all over &amp; now <lb/>is swelled in her left hand <lb/>&amp; c<choice><orig>ā</orig><reg>an</reg></choice>not make water onc <lb/>in 24 houres. ready to cast <lb/>&amp; her wynd is ready to be <lb/>stopt <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it very weake.</p>
 </div>
 <pb xml:id="f34r" n="34r" facs="#afp0087.jpg"/>
 </body>

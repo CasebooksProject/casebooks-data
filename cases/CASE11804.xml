@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11804</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 53r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -62,7 +68,7 @@
 <person xml:id="anon">
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<occupation cert="medium">Boy (Servant)</occupation>
+<occupation cert="medium">Boy (servant)</occupation>
 </person>
 <listRelation><relation name="servant" active="#anon" passive="#rd" cert="medium"/></listRelation>
 </listPerson>
@@ -71,12 +77,14 @@
 <p><date when="1598-11-16" n="Thursday"/></p>
 <p><time when="08:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rd" evidence="internal"/>
 <cb:subject ref="#rd" present="no"/>
 <cb:messenger ref="#anon"/>
 <cb:item type="urine"/>
+<cb:topic key="medicalCounsel"><person sameAs="#rd"/></cb:topic>
 <cb:topic key="unidentifiedMedical"><person sameAs="#rd"/></cb:topic>
 <cb:topic key="bruise"><person sameAs="#rd"/></cb:topic>
 <cb:topic key="bedridden"><person sameAs="#rd"/></cb:topic>
@@ -93,6 +101,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,9 +109,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Raynold Davyes <del type="strikethrough">of</del> the glover <lb/><rs type="address" xml:id="address1">of Stonystratford</rs> sent his <lb/>boy <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his water keepeth <lb/>his bed most of all but sometimes <lb/>riseth &vVowel;ppon the 11 of novemb<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it <lb/>took him first, but was very ill <lb/>handled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it &vVowel;ppon &SundayN; <lb/>sent his boy to me for my consell <lb/>this 16 of novemb &ThursdayN; h. <lb/>8. &antm;. 1598 he thincketh he took <lb/>it <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a bruise he took <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the caring of <lb/>hides a yere since. 40 yeres old.</p>
+<p><lb/>Raynold Davyes <del type="strikethrough">of</del> the glover <lb/><rs type="address" xml:id="address1" key="PLACE825" resp="#mhawkins">of Stonystratford</rs> sent his <lb/>boy <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his water keepeth <lb/>his bed most of all but sometimes <lb/>riseth <choice><orig>v</orig><reg>u</reg></choice>ppon the 11 of novemb<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it <lb/>took him first, but was very ill <lb/>handled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> it <choice><orig>v</orig><reg>u</reg></choice>ppon <choice><orig>die ☉</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice> <lb/>sent his boy to me for my consell <lb/>this 16 of novemb <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. <lb/>8. <choice><orig>ant m</orig><reg>am</reg></choice>. 1598 he thincketh he took <lb/>it <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a bruise he took <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the caring of <lb/>hides a yere since. 40 yeres old.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

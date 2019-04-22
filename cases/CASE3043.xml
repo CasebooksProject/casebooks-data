@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE3043</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 284v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -73,15 +82,15 @@
 <p><date when="1598-01-11" n="Wednesday"/></p>
 <p><time when="07:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#cs"/>
 <cb:subject ref="#cs" present="unclear"/>
 <cb:object ref="#rs"/>
-<cb:topic key="fortune"><person sameAs="#rs"/></cb:topic>
+<cb:topic key="generalFuture"><person sameAs="#rs"/></cb:topic>
 <cb:topic key="financeAndProperty"><person sameAs="#rs"/></cb:topic>
 <cb:judgment/>
-
 </cb:consultation>
 
 </settingDesc>
@@ -93,17 +102,23 @@
 <change when="2011-02-28">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-11">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ach0592.jpg" url="ach0592.jpg" n="284v"/>
 </facsimile>
-<text xml:lang="la">
+<text>
 <body>
- <div>
-  <p><lb/><foreign xml:lang="en">Katerin Sare <rs type="address" xml:id="address1">of S<hi rend="superscript">t</hi> <lb/>Toolies</rs></foreign> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> Rowland Sare <lb/>marit<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice> quid sibi accid <lb/><choice><orig>&vVowel;trm&flourish;</orig><reg>&vVowel;trum</reg></choice> vult vendere bona <lb/>&amp;c <foreign xml:lang="en">159<subst><del type="over">7</del><add place="over">8</add></subst> the 11 &IConsonant;an &Wednesday; <choice><orig>an&flourish; <supplied reason="binding">m&flourish;</supplied></orig><reg>am</reg></choice> <lb/>at 30 &past; 7.</foreign></p>
+ <div xml:id="foreign001" xml:lang="la" decls="#original_source">
+  <p><lb/><foreign xml:lang="en">Katerin Sare <rs type="address" xml:id="address1" key="PLACE2071" resp="#mhawkins">of S<hi rend="superscript">t</hi> <lb/>Toolies</rs></foreign> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> Rowland Sare <lb/>marit<choice><orig>ū</orig><reg>um</reg></choice> su<choice><orig>ū</orig><reg>um</reg></choice> quid sibi accid <lb/><choice><orig>vtrm’</orig><reg>utrum</reg></choice> vult vendere bona <lb/>&amp;c <foreign xml:lang="en">159<subst><del type="over">7</del><add place="over">8</add></subst> the 11 <choice><orig>I</orig><reg>J</reg></choice>an <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <choice><orig>an’ <supplied reason="binding">m’</supplied></orig><reg>am</reg></choice> <lb/>at 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 7.</foreign></p>
  </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Catherine Sare of Tooley [Street] for her husband Rowland Sare: what will happen to him; whether he wants to sell her goods etc Wednesday 11 January 1598 at 30 past 7.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE78316</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 467</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0467" to="0467"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mr</roleName> <surname>Croutch</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="brother" active="#anon2" passive="#anon1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-09-24" n="Tuesday"/></p>
+<p><time when="06:45:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#c"/>
+<cb:subject ref="#c" present="unclear"/>
+<cb:object ref="#anon1"/>
+<cb:topic key="maritalProspects"><person sameAs="#c"/><person sameAs="#anon1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-12-08">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-01-26">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-08-28">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0489.jpg" url="clq0489.jpg" n="467" width="5113" height="7216"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Croutch <add place="supralinear">χροτχ Croutch Croutch</add> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> obtinebit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether he will win [her]</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>sept 2<subst><del type="over">5</del><add place="over">4</add></subst> <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 6. 45. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1633.</p>
+<p><lb/>there have bene manye Delays <lb/>by means of her broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

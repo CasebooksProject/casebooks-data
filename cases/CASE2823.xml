@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2823</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 253r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -55,12 +65,12 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="er">
-<persName><forename>Ellen</forename> <surname type="married">Roe</surname></persName>
+<persName><forename>Ellen</forename> <surname type="married">Rowe</surname></persName>
 <sex value="2">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="tr">
-<persName><forename>Thomas</forename> <surname>Roe</surname></persName>
+<persName><forename>Thomas</forename> <surname>Rowe</surname></persName>
 <sex value="1">M</sex>
 <age value="32">32</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -94,6 +104,7 @@
 <p><date when="1597-11-21" n="Monday"/></p>
 <p><time when="12:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#er #ap" evidence="internal" present="unclear"/>
@@ -116,6 +127,8 @@
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-04-25">Coding of ships updated by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-05-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -124,10 +137,10 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Thomas Roe of 32 yeres <lb/><rs type="address" xml:id="address1"><supplied reason="binding">of</supplied> wapping</rs> <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> of the Reporte <lb/>m<hi rend="superscript">r</hi> Shut&pluralLoop; ship <rs type="address" xml:id="address2">in temstrete</rs> <lb/>that went to <placeName>the straight&pluralLoop;</placeName> the <lb/>2<subst><del type="over">2</del><add place="over">7</add></subst> novemb 1596 being &Tuesday; <lb/>&amp; set sall 22 dai the &Monday; morn&flourish; <lb/><unclear reason="binding" cert="low">15</unclear> 20 Dai. <foreign xml:lang="la">Ellin Ro <choice><orig>&crossedp;</orig><reg>pro</reg></choice> ma<lb/>rito fecit quest</foreign> 1597 the 21 <lb/>of novem at 10 &past; 12 &inmfl;</p> 
-<p>Agnis porto <choice><orig>&crossedp;</orig><reg>pro</reg></choice> Roberto marit<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>eodem tempore</p>
+<p><lb/>Thomas Roe of 32 yeres <lb/><rs type="address" xml:id="address1" key="PLACE1487" resp="#mhawkins"><supplied reason="binding">of</supplied> wapping</rs> <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> of the Reporte <lb/>m<hi rend="superscript">r</hi> Shut<choice><orig>ꝭ</orig><reg>es</reg></choice> ship <rs type="address" xml:id="address2" key="PLACE290" resp="#mhawkins">in temstrete</rs> <lb/>that went to <placeName key="PLACE2347">the straight<choice><orig>ꝭ</orig><reg>es</reg></choice></placeName> the <lb/>2<subst><del type="over">2</del><add place="over">7</add></subst> novemb 1596 being <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <lb/>&amp; set sall 22 dai the <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> morn’ <lb/><unclear reason="binding" cert="low">15</unclear> 20 Dai. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Ellin Ro <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> ma<lb/>rito fecit quest</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Ellen Rowe put this question concerning her husband</seg><link type="is-translation-of" target="#foreign001 #translation001"/> 1597 the 21 <lb/>of novem at 10 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 12 <choice><orig>in m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice></p> 
+<p><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">Agnis porto <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> Roberto marit<choice><orig>ū</orig><reg>um</reg></choice> su<choice><orig>ū</orig><reg>um</reg></choice> <lb/>eodem tempore</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">Agnes Porter for her husband Robert at the same time</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

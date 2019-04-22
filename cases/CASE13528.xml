@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13528</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 198v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,11 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -62,11 +69,13 @@
 <p><date when="1598-06-08" n="Thursday"/></p>
 <p><time when="08:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#es" evidence="internal"/>
 <cb:subject ref="#es" present="yes"/>
+<cb:topic key="medicalCounsel"><person sameAs="#es"/></cb:topic>
 <cb:topic key="pain"><person sameAs="#es"/></cb:topic>
 <cb:topic key="arms"><person sameAs="#es"/></cb:topic>
 <cb:judgment/>
@@ -87,9 +96,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elisab. Smithe came to m<subst><del type="over">y</del><add place="over">e</add></subst> <lb/>for my counsell <choice><sic>1595</sic><corr>1598</corr></choice>. the <lb/>8 of &IConsonant;une &ThursdayN; h. 8. 30. <lb/><choice><orig>ant merid</orig><reg>am</reg></choice>. for an ache in her <lb/>armes.&slash;</p>
+<p><lb/>Elisab. Smithe came to m<subst><del type="over">y</del><add place="over">e</add></subst> <lb/>for my counsell <choice><sic>1595</sic><corr>1598</corr></choice>. the <lb/>8 of <choice><orig>I</orig><reg>J</reg></choice>une <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 8. 30. <lb/><choice><orig>ant merid</orig><reg>am</reg></choice>. for an ache in her <lb/>armes./</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

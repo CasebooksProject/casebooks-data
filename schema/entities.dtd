@@ -70,10 +70,12 @@
 <!ENTITY Napier058 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="Napier058">Napier, vol. 58</idno></altIdentifier>' >
 <!ENTITY SirRNapier001 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="SirRNapier001">Sir Richard Napier, vol. 1</idno></altIdentifier>' >
 <!ENTITY SirRNapier002 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="SirRNapier002">Sir Richard Napier, vol. 2</idno></altIdentifier>' >
-<!ENTITY AssortedPapers001 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="AssortedPaper001">Assorted Papers, vol. 1</idno></altIdentifier>' >
-<!ENTITY AssortedPapers002 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="AssortedPapers002">Assorted Papers, vol. 2</idno></altIdentifier>' >
-<!ENTITY AssortedPapers003 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="AssortedPapers003">Assorted Papers, vol. 3</idno></altIdentifier>' >
-<!ENTITY NapierPapers '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="NapierPapers">Napier Papers</idno></altIdentifier>' >
+<!ENTITY AssortedPapers001 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>' >
+<!ENTITY AssortedPapers002 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="AssortedPapers002">Various Papers, vol. 2</idno></altIdentifier>' >
+<!ENTITY AssortedPapers003 '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="AssortedPapers003">Various Papers, vol. 3</idno></altIdentifier>' >
+<!ENTITY NapierPapers '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>' >
+<!ENTITY UnnamedVol '<altIdentifier type="fn_number" xmlns="http://www.tei-c.org/ns/1.0"><idno n="UnnamedVol">Unnamed volume</idno></altIdentifier>' >
+
 
 <!--Head: European Characters-->
 <!ENTITY Aacute  "&#x00c1;" >
@@ -410,16 +412,16 @@
 <!ENTITY lb '&#x2114;'>
 
 <!--Head: Brevigraphs-->
-<!ENTITY crossedp  '&#xe670;' >
-<!ENTITY crossedP  '&#xe270;' >
+<!ENTITY crossedp '<g ref="#crossedp" xmlns="http://www.tei-c.org/ns/1.0">&#xe670;</g>' >
+<!ENTITY crossedP '<g ref="#crossedP" xmlns="http://www.tei-c.org/ns/1.0">&#xe270;</g>' >
 <!ENTITY sup9  '&#xa770;' >
 <!ENTITY tail  '&#xa76b;' >
-<!ENTITY qtail '&#xe8bf;'>
+<!ENTITY qtail '<g ref="#qtail" xmlns="http://www.tei-c.org/ns/1.0">&#xe8bf;</g>'>
 <!ENTITY hookedq '&qtail;' >
 <!ENTITY hookedt 't&tail;' >
 <!ENTITY uiaSymbol '&#xa75b;' >
-<!ENTITY quia '&#xe8b3;' >
-<!ENTITY ssquiggle 's<hi rend="superscript">s</hi>' >
+<!ENTITY quia '<g ref="#quia" xmlns="http://www.tei-c.org/ns/1.0">&#xe8b3;</g>' >
+<!ENTITY ssquiggle 's<hi rend="superscript" xmlns="http://www.tei-c.org/ns/1.0">s</hi>' >
 <!ENTITY crossedq '&#xa757;' >
 <!ENTITY crossedb '&#x180;' >
 <!ENTITY loopedr '<hi rend="superscript" xmlns="http://www.tei-c.org/ns/1.0">r</hi>' >
@@ -445,7 +447,7 @@
 <!ENTITY cross '&#x271d;'>
 
 
-<!ENTITY aqua '&#xe704;'>
+<!ENTITY aqua '&#x1F704;'>
 
 
 <!ENTITY asterisk "*">
@@ -457,7 +459,7 @@
 <!ENTITY Rx '&#x211e;'>
 
 
-<!ENTITY SulphurSymbol '&#xe70d;'>
+<!ENTITY SulphurSymbol '&#x1F70d;'>
 
 <!ENTITY malteseCross '&#x2720;'>
 
@@ -469,7 +471,7 @@
 
 <!ENTITY LeoSymbol '&#x264c;'>
 
-<!ENTITY descendantLeoSymbol '<seg rend="rotate180">&LeoSymbol;</seg>'>
+<!ENTITY descendantLeoSymbol '<seg rend="rotate180" xmlns="http://www.tei-c.org/ns/1.0">&LeoSymbol;</seg>'>
 
 <!ENTITY PiscesSymbol '&#x2653;'>
 
@@ -489,7 +491,7 @@
 
 <!ENTITY CapricornSymbol '&#x2651;'>
 
-<!ENTITY EarthSymbol '&#xe714;'><!-- NB: This may be a variant earth symbol. &#x2641; appears to be the main earth symbol - though it's used to mean antimony in Napier -->
+<!ENTITY EarthSymbol '&#x1F714;'><!-- NB: This may be a variant earth symbol. &#x2641; appears to be the main earth symbol - though it's used to mean antimony in Napier -->
 
 <!ENTITY MoonSymbol '&#x263e;'>
 <!ENTITY SilverSymbol '&#x263e;'> 
@@ -502,7 +504,7 @@
 <!ENTITY SunSymbol '&#x2609;'>
 <!ENTITY GoldSymbol '&#x2609;'>
 
-<!ENTITY StarSymbol '&#xe739;'>
+<!ENTITY StarSymbol '&#x1F739;'>
 
 <!ENTITY MarsSymbol '&#x2642;'>
 <!ENTITY IronSymbol '&#x2642;'> 
@@ -513,7 +515,7 @@
 <!ENTITY SaturnSymbol '&#x2644;'>
 <!ENTITY LeadSymbol '&#x2644;'> 
 
-<!ENTITY WaterSymbol '&#xe704;' >
+<!ENTITY WaterSymbol '&aqua;' >
 
 <!ENTITY trineSymbol '&#x25b3;'>
 <!ENTITY conjunctionSymbol '&#x260c;'>
@@ -522,7 +524,7 @@
 <!ENTITY squareSymbol '&#x25a1;'>
 
 <!ENTITY LotOfFortune '&#x2297;' >
-<!ENTITY CaputMortuumSymbol '&#xe74e;' >
+<!ENTITY CaputMortuumSymbol '&#x1F74e;' >
 <!ENTITY astroCaputDraconisSymbol '&#x260a;'>
 <!ENTITY astroCaudaDraconisSymbol '&#x260b;'>
 
@@ -540,6 +542,8 @@
 <!ENTITY minus "&#x2212;" >
 <!ENTITY equals "=" >
 <!ENTITY invisibleTimes "" >
+<!ENTITY mfrac12 '<formula xmlns="http://www.tei-c.org/ns/1.0"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>1</mi><mi>2</mi></mfrac></math></formula>' >
+
 
 <!--Head: Charts-->
 <!ENTITY astroChart '<figure type="astro" subtype="astroChart"  xmlns="http://www.tei-c.org/ns/1.0"/>' >
@@ -549,7 +553,7 @@
 <!ENTITY astroChartPartialDeleted '<figure type="astro" subtype="astroChartPartialDeleted"  xmlns="http://www.tei-c.org/ns/1.0"/>' >
 <!ENTITY astroChartRound '<figure type="astro" subtype="astroChartRound"  xmlns="http://www.tei-c.org/ns/1.0"/>' >
 <!ENTITY astroChartRoundExtended '<figure type="astro" subtype="astroChartRoundExtended"  xmlns="http://www.tei-c.org/ns/1.0"/>' >
-<!ENTITY astroChartSpace '<space unit="lines" extent="7" dim="vertical" />' >
+<!ENTITY astroChartSpace '<space unit="lines" extent="7" dim="vertical" xmlns="http://www.tei-c.org/ns/1.0"/>' >
 <!ENTITY geoChart '<figure type="geo" subtype="geoChart"  xmlns="http://www.tei-c.org/ns/1.0"/>' >
 <!ENTITY geoChartAstroGrid '<figure type="geo" subtype="geoChartAstroGrid"  xmlns="http://www.tei-c.org/ns/1.0"/>' >
 <!ENTITY geoChartAstroGridExpanded '<figure type="geo" subtype="geoChartAstroGridExpanded"  xmlns="http://www.tei-c.org/ns/1.0"/>' >
@@ -617,6 +621,23 @@
 <!ENTITY husbandForman 'husband' >
 
 <!ENTITY Mres '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig>M<hi rend="superscript">res</hi></orig><reg>Mrs</reg></choice>' >
+<!ENTITY NapierJrMonogram 'VA' >
 
 <!--Head: Text sampling-->
 <!ENTITY wholeEntry '<samplingDecl xml:id="wholeEntry" xmlns="http://www.tei-c.org/ns/1.0"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>' >
+<!ENTITY translationDesc '<ab xml:id="translation" xmlns="http://www.tei-c.org/ns/1.0">Translation of normalised text provided by The Casebooks Project</ab>'>
+<!ENTITY wholeText '<samplingDecl xml:id="wholeText" xmlns="http://www.tei-c.org/ns/1.0"><p>The text has been transcribed in its entirety.</p></samplingDecl>' >
+<!ENTITY catalogued '<samplingDecl xml:id="catalogued" xmlns="http://www.tei-c.org/ns/1.0"><p></p></samplingDecl>'>
+
+<!-- Head: Layout Description-->
+<!ENTITY layoutOneColumn '<physDesc xmlns="http://www.tei-c.org/ns/1.0"><objectDesc><layoutDesc><layout columns="1" /></layoutDesc></objectDesc></physDesc>'>
+<!ENTITY layoutTwoColumn '<physDesc xmlns="http://www.tei-c.org/ns/1.0"><objectDesc><layoutDesc><layout columns="2" /></layoutDesc></objectDesc></physDesc>'>
+<!ENTITY layoutThreeColumns '<physDesc xmlns="http://www.tei-c.org/ns/1.0"><objectDesc><layoutDesc><layout columns="3" /></layoutDesc></objectDesc></physDesc>'>
+
+<!-- Head: SeriesStmt for citation -->
+<!ENTITY greaterTeamAsEditors '<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>' >
+<!ENTITY seniorTeamAsAuthors '<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><resp/></respStmt>' >
+
+<!ENTITY primaryDocSeriesStmt '<title level="s">The casebooks of Simon Forman and Richard Napier, 1596&ndash;1634: a digital edition</title>' >
+<!ENTITY siteDocSeriesStmt '<title level="s">A Critical Introduction to the Casebooks of Simon Forman and Richard Napier, 1596&ndash;1634</title>' >
+<!ENTITY seriesStmtStandardSitePage '&siteDocSeriesStmt;&seniorTeamAsAuthors;' >

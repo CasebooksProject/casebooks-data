@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE19580</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 145r</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -64,6 +68,7 @@
 <p><date when="1601-07-10" n="Friday"/></p>
 <p><time when="07:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l"/>
@@ -79,6 +84,8 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-08">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,8 +93,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="superscript"><hi rend="overline">res</hi></hi></orig><reg>Mrs</reg></choice> Lonfild <rs type="address" xml:id="address1">of <lb/>woulverton</rs> &IConsonant;uly <lb/>10 &FridayN; hor 7. 30</p>
-<p><lb/><foreign xml:lang="la">qu&aelig;rit <subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">a</add></subst> quib<choice><orig>&uscon;</orig><reg>us</reg></choice> c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>miss<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> <lb/>est furt<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>. suffuraret<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>pecunias</foreign></p>
+<p><lb/><choice><orig>M<hi rend="superscript"><hi rend="overline">res</hi></hi></orig><reg>Mrs</reg></choice> Lonfild <rs type="address" xml:id="address1" key="PLACE869" resp="#mhawkins">of <lb/>woulverton</rs> <choice><orig>I</orig><reg>J</reg></choice>uly <lb/>10 <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> hor 7. 30</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">a</add></subst> quib<choice><orig>ꝯ</orig><reg>us</reg></choice> c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>miss<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> <lb/>est furt<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>. suffuraret<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>pecunias</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks by whom the theft was committed: [he/she] stole money</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
 </body>
 </text>

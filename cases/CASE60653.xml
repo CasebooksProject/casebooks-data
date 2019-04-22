@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE60653</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -30,12 +35,17 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="3"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -55,7 +65,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="tm">
-<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Middleton</surname></persName>
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Middleton</surname></persName>
 <sex value="1">M</sex>
 </person>
 </listPerson>
@@ -64,6 +74,7 @@
 <p><date when="1625-06-16" n="Thursday"/></p>
 <p><time when="18:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tm" evidence="internal"/>
@@ -79,7 +90,8 @@
 <change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-07-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-02-28">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-03-29">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-08-13">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><supplied reason="binding" cert="medium">M<hi rend="superscript">r</hi></supplied> Th mydleton <foreign xml:lang="la">quærit</foreign> <subst><del type="over"><unclear cert="low" reason="del"></unclear></del><add place="over">h</add></subst>ow it will goe <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <choice><orig></orig><reg>par</reg></choice>liament <lb/><choice><orig>I</orig><reg>J</reg></choice>une 16. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 6. p m. 1625.</p>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Th mydleton <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <subst><del type="over"><unclear cert="low" reason="del"><g ref="#crossedp"></g></unclear></del><add place="over">h</add></subst>ow it will goe <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>liament <lb/><choice><orig>I</orig><reg>J</reg></choice>une 16. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 6. p m. 1625.</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26424</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-08">08 August 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL, uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="204">MS Ashmole 204, f. 147r</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers002">Various Papers, vol. 2</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0147r" to="0147r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationVisit"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t1">
+<persName><roleName>Lady</roleName> <surname>Tyrringham</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="t2">
+<persName><surname type="maiden" evidence="inferred">Tyrringham</surname></persName>
+<sex value="2">F</sex>
+</person>
+
+<person xml:id="at">
+<persName><roleName>Mrs</roleName> <forename>Anne</forename> <surname>Tyrringham</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="c">
+<persName><roleName>Mr</roleName> <surname>Cade</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h">
+<persName><roleName>Dr</roleName> <surname>Hill</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="daughter" active="#t2 #at" passive="#t1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1631-05-22" notAfter="1632-09-23" evidence="inferred" cert="low"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#srnapier"/>
+<cb:consultant ref="#srnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#srnapier"/>
+<cb:subject ref="#srnapier" present="yes"/>
+<cb:object ref="#t1 #t2 #at"/>
+<cb:topic key="romanticRelations" evidence="conjecture" cert="low"><person sameAs="#srnapier"/><person sameAs="#at"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-08">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-19">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-07">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-14">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-03-02">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aco0342.jpg" url="aco0342.jpg" n="147r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>I came to <placeName key="PLACE840" resp="#mhawkins">Tyringham</placeName> May <del type="cancelled"><gap reason="del" extent="1" unit="chars"/></del> 22 <add place="supralinear"><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 5. 40. <lb/>p m. 1631. when I saw my Lady &amp; her <lb/>daughters &amp; m<hi rend="superscript">rs</hi> An. first.</add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>I went out fr<choice><orig>ō</orig><reg>om</reg></choice> home <lb/>Mai<choice><orig>j</orig><reg>i</reg></choice> 17. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice>. h. 2. p m <lb/>I rode <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> night to <placeName key="PLACE1355" resp="#mhawkins">Bilsden</placeName> <lb/>to m<hi rend="superscript">r</hi> Cades —</p>
+<p><lb/>Satturday I came by D<hi rend="superscript">r</hi> <lb/>Hills &amp; so went to <placeName>Rowhill</placeName> <lb/>&amp; thane to <placeName key="PLACE1674" resp="#mhawkins">Kettering</placeName> &amp; so <lb/>to <placeName key="PLACE416" resp="#mhawkins">Henwick</placeName> <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> &amp; as I went <lb/>home I went into <placeName key="PLACE840">Tyring</placeName> <lb/><choice><orig>v</orig><reg>u</reg></choice>pon <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> importunity of a frend <lb/>&amp; there I saw m<hi rend="superscript">rs</hi> <lb/>An Tyringham.</p>
+</div>
+</body>
+</text>
+</TEI>

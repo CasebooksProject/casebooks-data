@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE30945</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 122r</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -65,6 +69,7 @@
 <p><date when="1607-03-24" n="Tuesday"/></p>
 <p><time when="10:25:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ar"/>
@@ -80,6 +85,8 @@
 <change when="2014-11-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,9 +94,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Abigale <lb/><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">R</add></subst>uthall <rs type="address" xml:id="address1">of Woul<lb/>verton</rs> 28 y march <lb/>24. &Tuesday; h. 10. 25 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1607 <add place="inline"><foreign xml:lang="la">metuit paralysin</foreign></add> <add place="infralinear">hath c<choice><orig>&oover;</orig><reg>on</reg></choice></add>tinued long ill of the <lb/>palsye &amp; mendeth not.<note place="chart">palsye</note></p>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Abigale <lb/><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">R</add></subst>uthall <rs type="address" xml:id="address1" key="PLACE869" resp="#mhawkins">of Woul<lb/>verton</rs> 28 y march <lb/>24. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 10. 25 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1607 <add place="inline"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">metuit paralysin</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">fears paralysis</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add> <add place="infralinear">hath c<choice><orig>ō</orig><reg>on</reg></choice></add>tinued long ill of the <lb/>palsye &amp; mendeth not.<note place="chart">palsye</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

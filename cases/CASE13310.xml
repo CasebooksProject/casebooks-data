@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13310</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 19r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -47,6 +52,12 @@
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#nativity"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" notBefore="1597-01-01" notAfter="1598-12-31"><name sameAs="#rnapier">Richard Napier</name> wrote out the original entry.</change>
+<change xml:id="stage2" notBefore="1601-01-28" notAfter="1634-04-01"><name sameAs="#rnapier">Richard Napier</name> added information about subsequent events.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -62,8 +73,9 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1597" notAfter="1598" evidence="conjecture" cert="low"/></p>
+<p><date notBefore="1597-03-08" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wg"/>
@@ -79,18 +91,28 @@
 <change when="2012-02-09">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-28">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0057.jpg" url="acm0057.jpg" n="19r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Nativitas Gulielmi Greene <rs type="date" xml:id="date1">1578 &IConsonant;an: <lb/>28 &TuesdayN;</rs> <choice><sic>&SaturnSymbol;</sic><corr>h</corr></choice>. <choice><orig>i</orig><reg>1</reg></choice><hi rend="superscript">a</hi>. <del type="strikethrough">15</del> <choice><sic>m:</sic><corr type="delText"/></choice> <choice><orig>post merid</orig><reg>pm</reg></choice>: <foreign xml:lang="en"><rs type="address" xml:id="address1">in <lb/>Linford</rs>.</foreign> <rs type="time" xml:id="time1">h. 12. 55. m.</rs></p>
-<p><lb/><foreign xml:lang="en">candlemas day <lb/>was then satterdaye.</foreign></p>
-<p><lb/><foreign xml:lang="en">he dyed <rs type="address" xml:id="address2">in Ireland</rs> <lb/><rs type="date" xml:id="date2">when he was <lb/>24 y</rs>.</foreign></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<milestone unit="question" spanTo="#questionEnd"/>
+<p change="#stage1"><lb/>Nativitas Gulielmi Greene <rs type="date" xml:id="date1">1578 <choice><orig>I</orig><reg>J</reg></choice>an: <lb/>28 <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs> <choice><sic>♄</sic><corr>h</corr></choice>. <choice><orig>i</orig><reg>1</reg></choice><hi rend="superscript">a</hi>. <del type="strikethrough">15</del> <choice><sic>m:</sic><corr type="delText"/></choice> <choice><orig>post merid</orig><reg>pm</reg></choice>: <foreign xml:lang="en"><rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">in <lb/>Linford</rs>.</foreign> <rs type="time" xml:id="time1">h. 12. 55. m.</rs></p>
+<p change="#stage1"><lb/><foreign xml:lang="en">candlemas day <lb/>was then satterdaye.</foreign></p><anchor xml:id="questionEnd"/>
+<milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/>
+<p change="#stage2"><lb/><foreign xml:lang="en">he dyed <rs type="address" xml:id="address2" key="PLACE2230" resp="#mhawkins">in Ireland</rs> <lb/><rs type="date" xml:id="date2">when he was <lb/>24 y</rs>.</foreign></p><anchor xml:id="subsequentEventInfoEnd"/>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>The nativity of William Green Tuesday 28 January 1578 at 1pm in Linford at 12.55.</p>
+<p>Candlemas day was then Saturday.</p>
+<p>He died in Ireland when he was 24 years [old].</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

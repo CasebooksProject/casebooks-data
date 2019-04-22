@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE54509</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-11-16">16 November 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note resp="#ymartin" type="editorial">This nativity is associated with the horary entry <ref target="CASE54508" type="case">CASE54508</ref>.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
@@ -34,9 +39,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -49,10 +54,19 @@
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#nativity"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1622-06-25"><name sameAs="#rnapier">Richard Napier</name> held the consultation and wrote out the entry; <name sameAs="#unknown-e">Unidentified (1622–1624)</name> did calculations.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="unknown-e">
+<persName><roleName>Unidentified (1622–1624)</roleName></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="jv">
@@ -70,6 +84,7 @@
 <p><date when="1622-06-25" n="Tuesday" evidence="external"/></p>
 <p><time when="19:45:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jv"/>
@@ -84,7 +99,7 @@
 <change when="2016-02-22">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-09-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-07-24">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,7 +107,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>my lord Purbocke other<lb/>wise Villers <foreign xml:lang="la">Natus</foreign> <lb/>sept <foreign xml:lang="la">die</foreign> 6. h. 12 <lb/><foreign xml:lang="la">media nocte</foreign> 30 y <lb/> complete. 1591. <add place="inline"><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice></add></p>
+<p><lb/>my lord Purbocke other<lb/>wise Villers <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>sept <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">die</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">day</seg><link type="is-translation-of" target="#foreign002 #translation002"/> 6. h. 12 <lb/><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">media nocte</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">at midnight</seg><link type="is-translation-of" target="#foreign003 #translation003"/> 30 y <lb/> complete. 1591. <add place="inline"><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice></add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>

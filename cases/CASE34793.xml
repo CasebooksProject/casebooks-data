@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE34793</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 301v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -67,7 +75,7 @@
 </person>
 <person xml:id="anon1">
 <sex value="2">F</sex>
-<occupation>Midwife</occupation>
+<occupation type="medicalPractitioner">Midwife</occupation>
 </person>
 <person xml:id="anon2">
 <sex value="0">U</sex>
@@ -78,6 +86,7 @@
 <p><date when="1609-01-31" n="Tuesday" evidence="inferred"/></p>
 <p><time notBefore="08:30:00" notAfter="10:45:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon2" evidence="conjecture" present="unclear"/>
@@ -92,6 +101,9 @@
 <change when="2015-04-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-18">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,15 +112,15 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><sic><subst><del type="strikethrough">younge goody f</del> <add place="supralinear">An</add></subst></sic><corr type="delText"/></choice></p>
-<p><lb/>An fild &amp; An Richard<lb/>son <rs type="address" xml:id="address1">of hav<choice><orig>&loopedr;</orig><reg>er</reg></choice>sh<choice><orig>&aover;</orig><reg>am</reg></choice></rs>. about <lb/>25 y boath &vVowel;nder on <lb/><del type="strikethrough">ruffe</del> rough. &amp; came togeath<choice><orig>&loopedr;</orig><reg>er</reg></choice> <lb/>to the same howse at on tyme <lb/>fell in labour. &IConsonant;an 15. <lb/>h. <foreign xml:lang="la">circi<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 9 <add place="supralinear">p m</add> noctur</foreign>. sent <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> <lb/>obstetrice</foreign>. 1609</p>
+<p><lb/>An fild &amp; An Richard<lb/>son <rs type="address" xml:id="address1" key="PLACE701" resp="#mhawkins">of hav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>sh<choice><orig>ā</orig><reg>am</reg></choice></rs>. about <lb/>25 y boath <choice><orig>v</orig><reg>u</reg></choice>nder on <lb/><del type="strikethrough">ruffe</del> rough. &amp; came togeath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>to the same howse at on tyme <lb/>fell in labour. <choice><orig>I</orig><reg>J</reg></choice>an 15. <lb/>h. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">circi<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 9 <add place="supralinear">p m</add> noctur</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">at about 9pm at night</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. sent <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <lb/>obstetrice</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">for the midwife</seg><link type="is-translation-of" target="#foreign002 #translation002"/>. 1609</p>
 </div>
-&astroChartPartial;
+<figure type="astro" subtype="astroChartPartial"/>
 <div>
-<p><lb/>An fild <add place="supralinear"><del type="strikethrough">borne.</del> 29 y. satterd afore <lb/>candlemas <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> was at hand.</add> began her labour <del type="strikethrough"><unclear cert="low" reason="del">as</unclear></del> <lb/>on satterday night <add place="supralinear">&IConsonant;an. 14.</add> h. 10. <lb/>30 p m 1609.</p>
-<p><lb/>An Richards. began her <lb/>labour. &IConsonant;an 16. h. 12. 30 <choice><sic>p</sic><corr type="delText"/></choice> <choice><orig>med noct&eover;</orig><reg>mediam noctem</reg><reg type="gloss">around midnight</reg></choice>&slash;</p>
+<p><lb/>An fild <add place="supralinear"><del type="strikethrough">borne.</del> 29 y. satterd afore <lb/>candlemas <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> was at hand.</add> began her labour <del type="strikethrough"><unclear cert="low" reason="del">as</unclear></del> <lb/>on satterday night <add place="supralinear"><choice><orig>I</orig><reg>J</reg></choice>an. 14.</add> h. 10. <lb/>30 p m 1609.</p>
+<p><lb/>An Richards. began her <lb/>labour. <choice><orig>I</orig><reg>J</reg></choice>an 16. h. 12. 30 <choice><sic>p</sic><corr type="delText"/></choice> <choice><orig>med noctē</orig><reg>mediam noctem</reg><reg type="gloss">around midnight</reg></choice>/</p>
 </div>
 <cb xml:id="colB" n="b"/>
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
 </body>
 </text>
 </TEI>

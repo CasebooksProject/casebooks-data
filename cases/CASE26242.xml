@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26242</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS, mL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 167r</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0167r" to="0167r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fd">
+<persName><forename>Frances</forename> <surname>Dorrington</surname></persName>
+<sex value="2">F</sex>
+<age value="19">19</age>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1607-04-24" n="Friday"/></p>
+<p><time when="06:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#fd"/>
+<cb:subject ref="#fd" present="unclear"/>
+<cb:topic key="melancholy"><person sameAs="#fd"/></cb:topic>
+<cb:topic key="swooning"><person sameAs="#fd"/></cb:topic>
+<cb:topic key="mother"><person sameAs="#fd"/></cb:topic>
+<cb:topic key="lightheadedPassions"><person sameAs="#fd"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-08">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-01">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-19">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0377.jpg" url="acr0377.jpg" n="167r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>francis dorrington 19 y Ap 24. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 6. 15 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1607 a gentlewom<choice><orig>ā</orig><reg>an</reg></choice> sub<choice><orig>i</orig><reg>j</reg></choice>ect to many melancholy <lb/>passions <choice><sic>swodings</sic><corr>swondings</corr></choice> mother <add place="inline">lighte headed./</add></p>
+</div>
+<cb xml:id="colA" n="a"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

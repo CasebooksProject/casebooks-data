@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13227</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 93v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -69,8 +74,9 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1597" cert="medium"/></p>
+<p><date notBefore="1597-01-22" notAfter="1597-09-06" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
@@ -87,6 +93,7 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,9 +101,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ane Ashburnor the daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>of Edw. Ashb. was buried the <lb/>14 of <del type="strikethrough">sept:</del> Novemb<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>. 1592. <lb/>&TuesdayN; <foreign xml:lang="la"><unclear cert="low" reason="hand">sed</unclear> gravit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> egrotabat <lb/>circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> h. pr. <choice><orig>post merid</orig><reg>pm</reg></choice>. &MondayN;. <lb/>13 nov. <add place="lineEnd">Nov. 13 &MondayN;. h. <choice><orig>i</orig><reg>1</reg></choice><hi rend="superscript">a</hi></add></foreign></p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ane Ashburnor the daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>of Edw. Ashb. was buried the <lb/>14 of <del type="strikethrough">sept:</del> Novemb<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>. 1592. <lb/><choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><unclear cert="low" reason="hand">sed</unclear> gravit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> egrotabat <lb/>circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> h. pr. <choice><orig>post merid</orig><reg>pm</reg></choice>. <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. <lb/>13 nov. <add place="lineEnd">Nov. 13 <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. h. <choice><orig>i</orig><reg>1</reg></choice><hi rend="superscript">a</hi></add></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">[but?] became gravely ill at about the first hour after noon Monday 13 November Monday 13 November at the 1st hour</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

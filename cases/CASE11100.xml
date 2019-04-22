@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11100</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 147r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -57,6 +63,7 @@
 <sex value="1">M</sex>
 <age value="30">30</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<residence sameAs="#address2" key="databaseNormalizedIDKey" notAfter="1600-07-30"/>
 <occupation>Tailor</occupation>
 </person>
 </listPerson>
@@ -65,6 +72,7 @@
 <p><date when="1600-07-31" n="Thursday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gr"/>
@@ -86,6 +94,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,11 +102,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Guy Rive <rs type="address" xml:id="address1">of Haversham</rs> <lb/>30. <del type="strikethrough">m</del> batcheler a Tayler <lb/>sometymes of <placeName>Hanslop</placeName>. <lb/>&IConsonant;uly 31 &ThursdayN; h. 12. <lb/>1600. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an ache <choice><sic>in</sic><corr type="delText"/></choice> <lb/><del type="strikethrough">his right hip. &amp; thenc</del> <lb/>into the soule of his <lb/>feete. cold ache. ever <lb/>sinc whitsontide.</p>
-<p><lb/>hath bene cupped nev<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> the <lb/>better&slash;.</p>
+<p><lb/>Guy Rive <rs type="address" xml:id="address1" key="PLACE701" resp="#mhawkins">of Haversham</rs> <lb/>30. <del type="strikethrough">m</del> batcheler a Tayler <lb/>sometymes <rs type="address" xml:id="address2" key="PLACE695" resp="#mhawkins">of Hanslop</rs>. <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 31 <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 12. <lb/>1600. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an ache <choice><sic>in</sic><corr type="delText"/></choice> <lb/><del type="strikethrough">his right hip. &amp; thenc</del> <lb/>into the soule of his <lb/>feete. cold ache. ever <lb/>sinc whitsontide.</p>
+<p><lb/>hath bene cupped nev<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> the <lb/>better/.</p>
 <p><lb/>hath had a seere clooth &amp; <lb/>was the better for it.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

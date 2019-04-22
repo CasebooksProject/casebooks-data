@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13240</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#rralley">The text of the first page of this entry is written inside the charts.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 101r/uS, f. 102r/uS</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 101r, f. 102r</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -32,9 +37,15 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -61,11 +72,13 @@
 <p><date when="1597-04-21" n="Thursday"/></p>
 <p><time when="06:05:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
 <cb:topic key="morbus" resp="#rnapier"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="kidneys"><person sameAs="#rnapier"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -77,6 +90,7 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -85,17 +99,17 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Rich. Nap. <foreign xml:lang="la">de morbi <lb/>genere</foreign>. 1597. 21 of <lb/>Ap. &ThursdayN;. h. 6. 5 m</p>
+<p><lb/>Rich. Nap. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">de morbi <lb/>genere</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">about the type of his disease</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. 1597. 21 of <lb/>Ap. <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice>. h. 6. 5 m</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/><foreign xml:lang="la">R. N. iter<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>calc. et alio modo <lb/>rectius calc. de<lb/>notat morb<choice><orig>&uover;</orig><reg>um</reg></choice> in <lb/>renib<choice><orig>&uscon;</orig><reg>us</reg></choice>. et</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">R. N. iter<choice><orig>ū</orig><reg>um</reg></choice> <lb/>calc. et alio modo <lb/>rectius calc. de<lb/>notat morb<choice><orig>ū</orig><reg>um</reg></choice> in <lb/>renib<choice><orig>ꝯ</orig><reg>us</reg></choice>. et</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">R. N. calculated again and by a different method more correctly calculated: it indicates disease of the kidneys and</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div><pb xml:id="f102r" n="102r" facs="#ace0219.jpg"/>
-<p><lb/>R. N. the 21 of Ap. 1597 <lb/>&ThursdayN;. at 6 &amp; 5 m. <choice><orig>in aur.</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice> <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> <lb/>morbi genere</foreign>.&slash;</p>
+<p><lb/>R. N. the 21 of Ap. 1597 <lb/><choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice>. at 6 &amp; 5 m. <choice><orig>in aur.</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice> <lb/><foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <lb/>morbi genere</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">about the type of his disease</seg><link type="is-translation-of" target="#foreign003 #translation003"/>./</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

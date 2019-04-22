@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE33900</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
-<notesStmt><note type="editorial" resp="#rralley">This decumbiture is associated with the horary entry <ref type="case" target="CASE33899">CASE33899</ref>.</note>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="editorial" resp="#rralley">This nativity is associated with the horary entry <ref type="case" target="CASE33899">CASE33899</ref>.</note>
 </notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 179r/bL-3, f. 179v/uR</bibl>
@@ -24,7 +29,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 179r-v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,6 +40,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -58,9 +64,8 @@
 <person xml:id="d">
 <persName><roleName>Mrs</roleName> <surname>Dodd</surname></persName>
 <sex value="2">F</sex>
-<age value="35">35</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<birth><date when="1535-03-07" n="Tuesday" evidence="internal"/><time when="23:59:59" precision="medium" evidence="internal"/></birth>
+
 </person>
 </listPerson>
 </particDesc>
@@ -68,10 +73,12 @@
 <p><date when="1608-08-08" n="Monday" evidence="external"/></p>
 <p><time when="14:20:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#d"/>
 <cb:subject ref="#d" present="unclear"/>
+<cb:topic key="mind"><person sameAs="#d"/></cb:topic>
 <cb:topic key="griefPassions"><person sameAs="#d"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
@@ -84,6 +91,9 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-01-08">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-18">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,11 +102,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><foreign xml:lang="la">nata marti&jVowel;</foreign> <del type="strikethrough">12</del> 7. &Tuesday; about mydnight 1535. <lb/>no fault in her body but only greefe</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata marti<choice><orig>j</orig><reg>i</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born 7</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <del type="strikethrough">12</del> 7. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> about mydnight 1535. <lb/>no fault in her body but only greefe</p>
 <pb xml:id="f179v" n="179v" facs="#aap0362.jpg"/>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> dod <rs type="address" xml:id="address1">of Shitling<supplied reason="binding">ton</supplied></rs> <lb/><del type="strikethrough">ton 35 y Au</del> <foreign xml:lang="la">nata <lb/>marti&jVowel;</foreign> 7. &Tuesday;. h. 12. <subst><del type="strikethrough">16</del> <add place="supralinear">at mid<supplied reason="binding">night</supplied></add></subst> <lb/><del type="strikethrough">1535</del> 1535 <add place="inline">mynd <lb/>gree<subst><del type="over">f</del><add place="over">v</add></subst>ed</add></p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> dod <rs type="address" xml:id="address1" key="PLACE492" resp="#mhawkins">of Shitling</rs> <lb/><del type="strikethrough">ton 35 y Au</del> <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">nata <lb/>marti<choice><orig>j</orig><reg>i</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">born March</seg><link type="is-translation-of" target="#foreign002 #translation002"/> 7. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice>. h. 12. <subst><del type="strikethrough">160</del> <add place="supralinear">at midnight</add></subst> <lb/><del type="strikethrough">1535</del> 1535 <add place="inline">mynd <lb/>gree<subst><del type="over">f</del><add place="over">v</add></subst>ed.</add></p>
 </div>
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
 </body>
 </text>
 </TEI>

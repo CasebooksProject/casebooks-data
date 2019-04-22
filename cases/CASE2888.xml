@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2888</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 262v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -71,6 +75,7 @@
 <p><date when="1597-12-01" n="Thursday"/></p>
 <p><time when="10:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ac1" present="unclear" evidence="internal"/>
@@ -87,6 +92,7 @@
 <change when="2011-02-23">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,7 +101,7 @@
 <text xml:lang="en">
 <body>
 <div>
- <p><lb/><choice><orig><hi rend="overline">Alls</hi></orig><reg>Allis</reg></choice> Comy <rs type="address" xml:id="address1">in the <lb/>Crutched fryers</rs>. for <lb/>Anton&jVowel; comi her son <lb/>wher he shall obteine <lb/>to be the quens man. <lb/>1597. the first Decemb <lb/>&Thursday; &Anflmfl; 45 &past; <choice><orig>i</orig><reg>1</reg></choice>0. <add place="marginLeft"><choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice>out <lb/>the sonns <lb/><choice><sic>cons<choice><orig>&eover;</orig><reg>en</reg></choice></sic><corr>consent</corr></choice>&slash;</add></p>
+ <p><lb/><choice><orig><hi rend="overline">Alls</hi></orig><reg>Allis</reg></choice> Comy <rs type="address" xml:id="address1" key="PLACE88" resp="#mhawkins">in the <lb/>Crutched fryers</rs>. for <lb/>Anton<choice><orig>j</orig><reg>i</reg></choice> comi her son <lb/>wher he shall obteine <lb/>to be the quens man. <lb/>1597. the first Decemb <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <choice><orig>An’ m’</orig><reg>am</reg></choice> 45 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> <choice><orig>i</orig><reg>1</reg></choice>0. <add place="marginLeft"><choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice>out <lb/>the sonns <lb/><choice><sic>cons<choice><orig>ē</orig><reg>en</reg></choice></sic><corr>consent</corr></choice>/</add></p>
 </div>
 </body>
 </text>

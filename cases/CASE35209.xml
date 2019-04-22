@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE35209</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-10">10 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 49r/uS, f. 48v/uS, f. 50r/uS, f. 49v/uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="338">MS Ashmole 338, f. 49r, f. 48v, f. 50r, f. 49v</idno>
-&Napier014;
+<altIdentifier type="fn_number"><idno n="Napier014">Napier, vol. 14</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,18 +38,20 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -70,6 +77,7 @@
 <p><date when="1608-10-11" n="Tuesday"/></p>
 <p><time when="17:25:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mn"/>
@@ -89,6 +97,8 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-19">Page/column break coding updated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,19 +107,33 @@
 <graphic xml:id="abi0113.jpg" url="abi0113.jpg" n="50r"/>
 <graphic xml:id="abi0112.jpg" url="abi0112.jpg" n="49v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><add place="lineBeginning">&vVowel;tr&flourish;</add> &IConsonant;ane sit serv. &vVowel;tilis <lb/>Octob. 11. &TuesdayLatin; h. 5. 20. <lb/>p m. 1608.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><add place="lineBeginning"><choice><orig>v</orig><reg>u</reg></choice>tr’</add> <choice><orig>I</orig><reg>J</reg></choice>ane sit serv. <choice><orig>v</orig><reg>u</reg></choice>tilis <lb/>Octob. 11. <choice><orig>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 5. 20. <lb/>p m. 1608.</p>
 </div>
-&astroChartPartial;
-<div><pb xml:id="f48v" n="48v" facs="#abi0110.jpg"/>
-<p><lb/><del type="strikethrough">Iane</del> qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an &IConsonant;ane <lb/>serva sit &vVowel;tilis Octob <lb/>11. &TuesdayLatin; h. 5. 20 &antm; <lb/>1608</p>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether Jane would be a useful servant Tuesday 11 October 1608 at 5.20pm.</p>
 </div>
-&astroChartPartial;
-<div><pb xml:id="f50r" n="50r" facs="#abi0113.jpg"/>
-<p><lb/>Qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an &IConsonant;ane sit serva <lb/>&vVowel;tilis Octob. 11 &TuesdayLatin; h. 5. <lb/>25. p m 1608.</p>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartPartial"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source"><pb xml:id="f48v" n="48v" facs="#abi0110.jpg"/>
+<p><lb/><del type="strikethrough">Iane</del> quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an <choice><orig>I</orig><reg>J</reg></choice>ane <lb/>serva sit <choice><orig>v</orig><reg>u</reg></choice>tilis Octob <lb/>11. <choice><orig>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 5. 20 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1608</p>
 </div>
-&astroChart;
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<pb xml:id="f48v-t" n="48v"/>
+<p>It is asked whether Jane would be a useful servant Tuesday 11 October 1608 at 5.20am.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
+<figure type="astro" subtype="astroChartPartial"/>
+<div xml:id="foreign003" xml:lang="la" decls="#original_source"><pb xml:id="f50r" n="50r" facs="#abi0113.jpg"/>
+<p><lb/>Quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an <choice><orig>I</orig><reg>J</reg></choice>ane sit serva <lb/><choice><orig>v</orig><reg>u</reg></choice>tilis Octob. 11 <choice><orig>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 5. <lb/>25. p m 1608.</p>
+</div>
+<div xml:id="translation003" xml:lang="en" decls="#translation">
+<pb xml:id="f50r-t" n="50r"/>
+<p>It is asked whether Jane would be a useful servant Tuesday 11 October 1608 at 5.25pm.</p>
+</div>
+<link type="is-translation-of" target="#foreign003 #translation003"/>
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f49v" n="49v" facs="#abi0112.jpg"/>
 </body>
 </text>

@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE17064</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
-<notesStmt><note type="editorial" resp="#rralley">The friends referred to in this entry are identified on f. 63v as being &lsquo;M<hi rend="superscript">r</hi> Althem &amp; his wife &amp; his 2 men M<hi rend="superscript">r</hi> leate &amp; his wife my brother Sandy &amp; his wife my cosen John Warren &amp; his wife&rsquo;.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="editorial" resp="#rralley">The friends referred to in this entry are identified on f. 63v as being ‘M<hi rend="superscript">r</hi> Althem &amp; his wife &amp; his 2 men M<hi rend="superscript">r</hi> leate &amp; his wife my brother Sandy &amp; his wife my cosen John Warren &amp; his wife’.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="221">MS Ashmole 221, f. 66r</idno>
-&Napier006;
+<altIdentifier type="fn_number"><idno n="Napier006">Napier, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -64,11 +68,11 @@
 </person>
 <person xml:id="anon1" evidence="external">
 <sex value="1">M</sex>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="anon2" evidence="external">
 <sex value="1">M</sex>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="nl" evidence="external">
 <persName><forename>Nicholas</forename> <surname>Leate</surname></persName>
@@ -101,6 +105,7 @@
 <p><date when="1602-05-29" n="Saturday"/></p>
 <p><time notBefore="13:00:00" notAfter="14:40:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -117,6 +122,7 @@
 <change when="2014-01-15">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -124,9 +130,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>my <placeName>london</placeName> fry<subst><del type="over">d</del><add place="over">n</add></subst>ds came to my <lb/>house. Mai&jVowel; 27 &Thursday; hor. 6. <del type="strikethrough">40</del> <lb/><del type="strikethrough">p</del> 30. p m 1602.</p>
+<p><lb/>my <placeName key="PLACE1" resp="#mhawkins">london</placeName> fry<subst><del type="over">d</del><add place="over">n</add></subst>ds came to my <lb/>house. Mai<choice><orig>j</orig><reg>i</reg></choice> 27 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> hor. 6. <del type="strikethrough">40</del> <lb/><del type="strikethrough">p</del> 30. p m 1602.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

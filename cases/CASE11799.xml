@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11799</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 52r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -65,6 +69,7 @@
 <settingDesc>
 <p><date notBefore="1598-11-12"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="internal" present="yes"/>
@@ -88,11 +93,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Vines fell extreeme sicke <lb/>o<subst><del type="over">f</del><add place="over">n</add></subst> thursday night the 9 of <lb/>novemb. <del type="strikethrough">at</del> betwixt a 11 &amp; <lb/>12. at night after the members <lb/>of the howse had bene at bed <lb/>1598. I set it of myne owne <lb/>accord they thought shee would <lb/>have died <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> night. it holdeth her by <lb/>fits prety well a friday ill on satterd. <lb/>&amp; prety well on sunday &amp; monday but <lb/>ill on tuesday following.</p>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Vines fell extreeme sicke <lb/>o<subst><del type="over">f</del><add place="over">n</add></subst> thursday night the 9 of <lb/>novemb. <del type="strikethrough">at</del> betwixt a 11 &amp; <lb/>12. at night after the members <lb/>of the howse had bene at bed <lb/>1598. I set it of myne owne <lb/>accord they thought shee would <lb/>have died <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> night. it holdeth her by <lb/>fits prety well a friday ill on satterd. <lb/>&amp; prety well on sunday &amp; monday but <lb/>ill on tuesday following.</p>
 </div>
-&astroChartPartial;
+<figure type="astro" subtype="astroChartPartial"/>
 <cb xml:id="colB" n="b"/>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

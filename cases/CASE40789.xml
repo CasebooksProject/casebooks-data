@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE40789</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-02-24">24 February 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="199">MS Ashmole 199, f. 23r</idno>
-&Napier022;
+<altIdentifier type="fn_number"><idno n="Napier022">Napier, vol. 22</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -59,6 +63,7 @@
 <person xml:id="jb">
 <persName><forename>John</forename> <surname>Bird</surname></persName>
 <sex value="1">M</sex>
+<occupation type="medicalPractitioner" resp="#mhawkins">Medical practitioner</occupation>
 </person>
 </listPerson>
 </particDesc>
@@ -66,6 +71,7 @@
 <p><date when="1613-01-16" n="Saturday"/></p>
 <p><time when="11:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b" evidence="internal"/>
@@ -82,6 +88,7 @@
 <change when="2015-06-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,8 +96,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goody Blea did send being <lb/>in great misery <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <lb/>leg. to Have it lanced <lb/>it all soft over. &amp; swelleth <lb/>more at night th<choice><orig>&eover;</orig><reg>en</reg></choice> other<lb/>wise &amp; is well by fits. <lb/>&IConsonant;an 16. <choice><orig><subst><del type="over">&MoonSymbol;</del><add place="over">&SaturnSymbol;</add></subst></orig><reg type="gloss">Saturday</reg></choice> hor. 8. 25 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1613</p>
-<p><lb/>&IConsonant;ohn Byrd was sent for <lb/>&amp; he thought it to be <lb/>a waterish &amp; a wyndy <unclear cert="medium" reason="hand">hu</unclear>mour <lb/>wynd <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an ague better <lb/>on day &amp; worse another by <lb/>fits &amp; &vVowel;ncertenly</p>
+<p><lb/>Goody Blea did send being <lb/>in great misery <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <lb/>leg. to Have it lanced <lb/>it all soft over. &amp; swelleth <lb/>more at night th<choice><orig>ē</orig><reg>en</reg></choice> other<lb/>wise &amp; is well by fits. <lb/><choice><orig>I</orig><reg>J</reg></choice>an 16. <choice><orig><subst><del type="over">☾</del><add place="over">♄</add></subst></orig><reg type="gloss">Saturday</reg></choice> hor. 8. 25 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1613</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Byrd was sent for <lb/>&amp; he thought it to be <lb/>a waterish &amp; a wyndy <unclear cert="medium" reason="hand">hu</unclear>mour <lb/>wynd <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an ague better <lb/>on day &amp; worse another by <lb/>fits &amp; <choice><orig>v</orig><reg>u</reg></choice>ncertenly</p>
 </div>
 </body>
 </text>

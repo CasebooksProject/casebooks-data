@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE29785</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-1, uR-3, bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="216">MS Ashmole 216, f. 206v</idno>
-&Napier010;
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -53,22 +59,37 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="si">
-<persName><forename>Sara</forename> <surname>Isaac</surname></persName>
+<persName><forename>Sara</forename> <surname type="maiden">Isaac</surname></persName>
 <sex value="2">F</sex>
 <age value="17">17</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="i">
+<persName><roleName>Mr</roleName> <surname>Isaac</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l" evidence="internal">
+<persName><roleName>Goody</roleName> <surname>Lumbley</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="father" active="#i" passive="#si" evidence="internal"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1605-09-24" n="Tuesday"/></p>
 <p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#si"/>
-<cb:subject ref="#si" present="unclear"/>
+<cb:querent ref="#i" evidence="internal"/>
+<cb:subject ref="#i" present="unclear"/>
+<cb:subject ref="#si" present="no"/>
+<cb:object ref="#l"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#si"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" evidence="internal"><person sameAs="#si"/></cb:topic>
+<cb:topic key="witchcraftSuspect" evidence="internal"><person sameAs="#l"/></cb:topic>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#i"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 </cb:consultation>
@@ -78,10 +99,11 @@
 <change when="2013-08-21">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2014-03-03">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2014-04-29">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-
 <change when="2014-10-02">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-21">Merged with CASE29786 by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,9 +111,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Sara Isaac <rs type="address" xml:id="address1">of fens<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/>17 y. sept 24 &Tuesday; h 11 <lb/>&antm;. 1605</p>
+<p><lb/>Sara Isaac <rs type="address" xml:id="address1" key="PLACE391" resp="#mhawkins">of fens<choice><orig>ā</orig><reg>am</reg></choice></rs> <lb/>17 y. sept 24 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h 11 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1605</p>
+<p><lb/>M<hi rend="superscript">r</hi> Isaac for him selfe.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>
 </body>
 </text>

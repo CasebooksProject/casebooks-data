@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE1244</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 21v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -89,6 +95,7 @@
 <p><date when="1597-02-18" n="Friday"/></p>
 <p><time when="08:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#b" evidence="internal"/>
@@ -109,6 +116,7 @@
 <change when="2011-02-16">Coding upgraded by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -117,9 +125,9 @@
 <text xml:lang="en">
 <body>
 <div>
- <p><lb/>M<hi rend="superscript">r</hi> Broughton <foreign xml:lang="la">quest&flourish; <lb/>fec&flourish;</foreign> 1597 the 18 feb &Friday; <choice><orig>An&flourish; <lb/>m&flourish;</orig><reg>am</reg></choice> at 8 <foreign xml:lang="la">&VVowel;trum erit matr&flourish; <lb/>inter Ric<choice><orig>&uover;</orig><reg>um</reg></choice> Wilbrom</foreign> and Mary <lb/>Egerton <foreign xml:lang="la">nec n<choice><orig>&oover;</orig><reg>on</reg></choice></foreign> &slash; and the questo <lb/>is made in the behalf of the man.<note place="marginLeft"><lb/>Thom eger <lb type="intentional"/>Mary <lb type="intentional"/>Thom&flourish; wilbrom <lb type="intentional"/>frainc&pluralLoop; &IConsonant;omley</note></p>
+ <p><lb/>M<hi rend="superscript">r</hi> Broughton <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quest’ <lb/>fec’</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">put this question</seg><link type="is-translation-of" target="#foreign001 #translation001"/> 1597 the 18 feb <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>An’ <lb/>m’</orig><reg>am</reg></choice> at 8 <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>V</orig><reg>U</reg></choice>trum erit matr’ <lb/>inter Ric<choice><orig>ū</orig><reg>um</reg></choice> Wilbrom</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">whether there will be a marriage between Richard Wilbraham</seg><link type="is-translation-of" target="#foreign002 #translation002"/> and Mary <lb/>Egerton <foreign xml:lang="la" xml:id="foreign003" decls="#original_source">nec n<choice><orig>ō</orig><reg>on</reg></choice></foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">or not</seg><link type="is-translation-of" target="#foreign003 #translation003"/> / and the questo <lb/>is made in the behalf of the man.<note place="marginLeft"><lb/>Thom eger <lb type="intentional"/>Mary <lb type="intentional"/>Thom’ wilbrom <lb type="intentional"/>frainc<choice><orig>ꝭ</orig><reg>es</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>omley</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE12959</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 250r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -69,6 +73,7 @@
 <p><date when="1600-01-08" n="Tuesday"/></p>
 <p><time when="10:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#p1" evidence="internal" present="no"/>
@@ -91,6 +96,7 @@
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +105,9 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd1"/>
-<p><lb/>&Mres; Potter <rs type="address" xml:id="address1">of willing</rs> sent <lb/>for her husb. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> out his <lb/>consent at 10. 10. &antm; <lb/><del type="strikethrough">1599</del> 1600 cannot sleepe<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/><lb/>his water betwixt yellow <lb/>&amp; red thick leeke puddle.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/><lb/>his stomack hot &amp; his <lb/>tounge scab &amp; broken out &amp; <lb/>his head cannot move <lb/>but as he is turned.</p><anchor xml:id="questionEnd2"/>
+<p><lb/><choice><orig>M<hi rend="superscript">res</hi></orig><reg>Mrs</reg></choice> Potter <rs type="address" xml:id="address1" key="PLACE864" resp="#mhawkins">of willing</rs> sent <lb/>for her husb. <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> out his <lb/>consent at 10. 10. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/><del type="strikethrough">1599</del> 1600 cannot sleepe<anchor xml:id="questionEnd1"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/><lb/>his water betwixt yellow <lb/>&amp; red thick leeke puddle.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/><lb/>his stomack hot &amp; his <lb/>tounge scab &amp; broken out &amp; <lb/>his head cannot move <lb/>but as he is turned.</p><anchor xml:id="questionEnd2"/>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

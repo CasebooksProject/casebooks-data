@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13311</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 19v/uS, f. 20r/uS, f. 20v/uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, ff. 19v-20v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,13 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -61,13 +67,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1597" notAfter="1598" evidence="conjecture" cert="low"/></p>
+<p><date notBefore="1597-03-08" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#fb"/>
 <cb:subject ref="#fb" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#fb"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#fb"/></cb:topic>
 <cb:judgment/>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
@@ -82,6 +89,9 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-29">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-19">Page/column break coding updated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,20 +99,35 @@
 <graphic xml:id="acm0059.jpg" url="acm0059.jpg" n="20r"/>
 <graphic xml:id="acm0060.jpg" url="acm0060.jpg" n="20v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>fr. Blund. nativ. <rs type="date" xml:id="date1">1579 sept 4 <lb/>&FridayN;</rs> <rs type="time" xml:id="time1">h. 4. 15 m.</rs> <rs type="address" xml:id="address1">in linford</rs> <rs type="time" sameAs="#time1"><choice><orig>an<supplied reason="binding">te</supplied> <lb/>merid</orig><reg>am</reg></choice>:</rs> 1579.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>fr. Blund. nativ. <rs type="date" xml:id="date1">1579 sept 4 <lb/><choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice></rs> <rs type="time" xml:id="time1">h. 4. 15 m.</rs> <rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">in linford</rs> <rs type="time" sameAs="#time1"><choice><orig>an<supplied reason="binding">te</supplied> <lb/>merid</orig><reg>am</reg></choice>:</rs> 1579.</p>
 </div>
-&astroChart;
-<div><pb xml:id="f20r" n="20r" facs="#acm0059.jpg"/>
-<p><lb/>frauncis Blundle <rs type="date" sameAs="#date1">1579 sept. 4 &FridayN;</rs> <lb/><foreign xml:lang="en">at day breake</foreign>. <del type="strikethrough">h. 5<hi rend="superscript">ta</hi></del> <choice><sic>h.</sic><corr type="delText"/></choice> <del type="strikethrough">4. 45 mi.</del> <rs type="time" sameAs="#time1"><choice><orig>ante <lb/>merid</orig><reg>am</reg></choice>. h. 4. 15 m.</rs> <foreign xml:lang="en"><rs type="address" sameAs="#address1">in Linford</rs></foreign> <choice><orig>in aur.</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice></p>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>The nativity of Fr. Blundell Friday 4 September 1579 at 4.15am in Linford 1579.</p>
 </div>
-&astroChartPartial;
-<div><pb xml:id="f20v" n="20v" facs="#acm0060.jpg"/>
-<p><lb/><choice><orig>francisc<subst><del type="over">&uscon;</del><add place="over">j</add></subst></orig><reg>francisci</reg></choice> <choice><sic>Bludelli</sic><corr>Blundelli</corr></choice> nativitas <lb/><rs type="date" sameAs="#date1">sept 4. &Friday;</rs> <rs type="time" sameAs="#time1">h. 4. 15 &antm;</rs> <del type="strikethrough">16.</del> <rs type="date" sameAs="#date1">1579</rs>. <lb/><rs type="address" sameAs="#address1"><foreign xml:lang="en">at linford</foreign> in comitatu <choice><sic>Bucking<lb/>gh<choice><orig>&aover;</orig><reg>am</reg></choice></sic><corr>Buckingham</corr></choice></rs></p>
-<p><lb/><foreign xml:lang="en">he came to good fortun&flourish;</foreign></p>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source"><pb xml:id="f20r" n="20r" facs="#acm0059.jpg"/>
+<p><lb/>frauncis Blundle <rs type="date" sameAs="#date1">1579 sept. 4 <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice></rs> <lb/><foreign xml:lang="en">at day breake</foreign>. <del type="strikethrough">h. 5<hi rend="superscript">ta</hi></del> <choice><sic>h.</sic><corr type="delText"/></choice> <del type="strikethrough">4. 45 mi.</del> <rs type="time" sameAs="#time1"><choice><orig>ante <lb/>merid</orig><reg>am</reg></choice>. h. 4. 15 m.</rs> <foreign xml:lang="en"><rs type="address" sameAs="#address1" key="PLACE685" resp="#mhawkins">in Linford</rs></foreign> <choice><orig>in aur.</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice></p>
 </div>
-&astroChart;
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<pb xml:id="f20r-t" n="20r"/>
+<p>Francis Blundell Friday 4 September 1579 at daybreak  at 4.15am in Linford in the morning.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
+<figure type="astro" subtype="astroChartPartial"/>
+<div xml:id="foreign003" xml:lang="la" decls="#original_source"><pb xml:id="f20v" n="20v" facs="#acm0060.jpg"/>
+<p><lb/><choice><orig>francisc<subst><del type="over">ꝯ</del><add place="over">j</add></subst></orig><reg>francisci</reg></choice> <choice><sic>Bludelli</sic><corr>Blundelli</corr></choice> nativitas <lb/><rs type="date" sameAs="#date1">sept 4. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice></rs> <rs type="time" sameAs="#time1">h. 4. 15 <choice><orig>ant m</orig><reg>am</reg></choice></rs> <del type="strikethrough">16.</del> <rs type="date" sameAs="#date1">1579</rs>. <lb/><rs type="address" sameAs="#address1" key="PLACE685" resp="#mhawkins"><foreign xml:lang="en">at linford</foreign> in comitatu <choice><sic>Bucking<lb/>gh<choice><orig>ā</orig><reg>am</reg></choice></sic><corr>Buckingham</corr></choice></rs></p>
+<p><lb/><foreign xml:lang="en">he came to good fortun’</foreign></p>
+</div>
+<div xml:id="translation003" xml:lang="en" decls="#translation">
+<pb xml:id="f20v-t" n="20v"/>
+<p>The nativity of Francis Blundell Friday 4 September 1579 at 4.15am at Linford in the county of Buckingham.</p>
+<p>He came to good fortune.</p>
+</div>
+<link type="is-translation-of" target="#foreign003 #translation003"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE32307</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 305r</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -55,18 +59,18 @@
 <person xml:id="rd">
 <persName><forename>Reynold</forename> <surname>Davis</surname></persName>
 <sex value="1">M</sex>
-<residence key="databaseNormalizedIDKey" evidence="internal">of Stony stratford</residence>
+<residence key="PLACE825" evidence="internal">of Stony stratford</residence>
 </person>
 <person xml:id="d1">
 <persName><surname type="married" evidence="inferred">Davis</surname></persName>
 <sex value="2">F</sex>
-<residence key="databaseNormalizedIDKey" evidence="internal">of Stony stratford</residence>
+<residence key="PLACE825" evidence="internal">of Stony stratford</residence>
 </person>
 <person xml:id="eb">
 <persName><forename>Elizabeth</forename> <surname>Brown</surname></persName>
 <sex value="2">F</sex>
 <occupation>Servant</occupation>
-<residence key="databaseNormalizedIDKey" evidence="internal">of Stony stratford</residence>
+<residence key="PLACE825" evidence="internal">of Stony stratford</residence>
 
 </person>
 <person xml:id="d2">
@@ -90,7 +94,7 @@
 <person xml:id="n" evidence="internal">
 <persName><genName>Old</genName> <surname>Needle</surname></persName>
 <sex value="1" evidence="conjecture" cert="medium">M</sex>
-<residence key="databaseNormalizedIDKey">of Stony stratford</residence>
+<residence key="PLACE825">of Stony stratford</residence>
 </person>
 <listRelation><relation name="servant" active="#eb" passive="#d1"/><relation name="child" active="#d2 #d3 #d4 #d5" passive="#rd #d1"/></listRelation>
 </listPerson>
@@ -100,6 +104,7 @@
 <p><date when="1607-10-27" n="Tuesday" xml:id="date2" exclude="#date1"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#d1"/>
@@ -124,7 +129,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Raynold Da<subst><del type="over">y</del><add place="over">v</add></subst>yes wife. sick of <lb/>the plaugue octob. 27 &Monday; h 10 <lb/>&antm; 1607. did bery Elis Browne <lb/>her servant 3 wekes before harvest &amp; did <lb/>bury that day sennight on child. &amp; 3 <lb/>weekes aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> a noth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; dyed. &amp; 2 more <lb/>sicke &amp; recovered this daye s<choice><orig>&eover;</orig><reg>en</reg></choice>net. And <lb/>she he<subst><del type="over">l</del><add place="over">r</add></subst> selfe fell sicke about this <lb/>day senet in the after noone that her <lb/>childs sore did break. she hath bene <lb/>twice <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">p</add></subst>rayed for. c<choice><orig>&aover;</orig><reg>an</reg></choice>not sleepe. hath a sore &vVowel;nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> her left share.</p>
+<p><lb/>Raynold Da<subst><del type="over">y</del><add place="over">v</add></subst>yes wife. sick of <lb/>the plaugue octob. 27 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h 10 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1607. did bery Elis Browne <lb/>her servant 3 wekes before harvest &amp; did <lb/>bury that day sennight on child. &amp; 3 <lb/>weekes aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> a noth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; dyed. &amp; 2 more <lb/>sicke &amp; recovered this daye s<choice><orig>ē</orig><reg>en</reg></choice>net. And <lb/>she he<subst><del type="over">l</del><add place="over">r</add></subst> selfe fell sicke about this <lb/>day senet in the after noone that her <lb/>childs sore did break. she hath bene <lb/>twice <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">p</add></subst>rayed for. c<choice><orig>ā</orig><reg>an</reg></choice>not sleepe. hath a sore <choice><orig>v</orig><reg>u</reg></choice>nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> her left share.</p>
 </div>
 <cb xml:id="colB" n="b"/>
 </body>

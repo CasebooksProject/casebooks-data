@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE61355</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-11-30">30 November 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -66,6 +75,7 @@
 <p><date when="1625-12-01" n="Thursday"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jb"/>
@@ -82,7 +92,6 @@
 <change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-12-07">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-04-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>as<choice><orig></orig><reg>per</reg></choice> Burnabe <rs type="address" xml:id="address1">of Manton</rs> a yeom<choice><orig>ā</orig><reg>an</reg></choice> <lb/>husbandm<choice><orig>ā</orig><reg>an</reg></choice> 5<subst><del type="over"><unclear cert="medium" reason="del">2</unclear></del><add place="over">8</add></subst> y <del type="strikethrough">novēb 3</del> Dec<choice><orig>ē</orig><reg>em</reg></choice>b 1. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h <lb/><choice><sic>h.</sic><corr type="noText"/></choice> 10 <choice><orig>ant m</orig><reg>am</reg></choice>. 1625.</p>
+<p><lb/>M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>as<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> Burnabe <rs type="address" xml:id="address1">of Manton</rs> a yeom<choice><orig>ā</orig><reg>an</reg></choice> <lb/>husbandm<choice><orig>ā</orig><reg>an</reg></choice> 5<subst><del type="over"><unclear cert="medium" reason="del">2</unclear></del><add place="over">8</add></subst> y <del type="strikethrough">novēb 3</del> Dec<choice><orig>ē</orig><reg>em</reg></choice>b 1. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h <lb/><choice><sic>h.</sic><corr type="noText"/></choice> 10 <choice><orig>ant m</orig><reg>am</reg></choice>. 1625.</p>
 </div><figure type="astro" subtype="astroChart"/>
 </body>
 </text>

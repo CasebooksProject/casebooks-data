@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE42872</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-04-25">25 April 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note resp="#rralley" type="editorial">This nativity is associated with the horary entry <ref type="case" target="CASE42873">CASE42873</ref>.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-1</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="408">MS Ashmole 408, f. 2v</idno>
-&Napier025;
+<altIdentifier type="fn_number"><idno n="Napier025">Napier, vol. 25</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,6 +76,7 @@
 <settingDesc>
 <p><date notBefore-custom="1616-02-23T15:30:00" notAfter-custom="1616-02-23T15:45:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#eh"/>
@@ -86,6 +93,8 @@
 <change when="2015-09-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-16">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,7 +102,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Elizab. Hale <lb/><rs type="address" xml:id="address1">of H<choice><sic><unclear cert="medium" reason="blot">e</unclear></sic><corr type="delText"/></choice><add place="supralinear">e</add>xton</rs> <foreign xml:lang="la">nata</foreign> <placeName xml:id="place1">luton</placeName> <lb/>6 &IConsonant;uly &Sunday; h. <choice><sic>2.</sic><corr type="delText" cert="medium"/></choice> <add place="supralinear">1. 30</add> p m <lb/>1578.&slash;</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Elizab. Hale <lb/><rs type="address" xml:id="address1" key="PLACE1144" resp="#mhawkins">of H<choice><sic><unclear cert="medium" reason="blot">e</unclear></sic><corr type="delText"/></choice><add place="supralinear">e</add>xton</rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <placeName xml:id="place1" key="PLACE442" resp="#mhawkins">luton</placeName> <lb/>6 <choice><orig>I</orig><reg>J</reg></choice>uly <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. <choice><sic>2.</sic><corr type="delText" cert="medium"/></choice> <add place="supralinear">1. 30</add> p m <lb/>1578./</p>
 </div>
 </body>
 </text>

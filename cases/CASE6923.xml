@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6923</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 47v</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -96,6 +102,7 @@
 <p><date when="1600-03-12" n="Wednesday"/></p>
 <p><time when="10:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sb"/>
@@ -115,6 +122,9 @@
 <change when="2011-03-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-30">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -122,14 +132,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Sara Bruwar <lb/>of 21 years 1600 the 12 <lb/>of march &Wednesday; &anflmfl; at 10 <lb/>&past; 10 diz <foreign xml:lang="la">et &VVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>ducit wi<choice><orig><hi rend="overline">ll</hi></orig><reg>llia</reg></choice>m <lb/>&IConsonant;ettard of <lb/>29 yers</p>
+<p><lb/>Sara Bruwar <lb/>of 21 years 1600 the 12 <lb/>of march <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <choice><orig>an’ m’</orig><reg>am</reg></choice> at 10 <lb/><choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 10 diz <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">et <choice><orig>V</orig><reg>U</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>ducit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">and whether she will marry</seg><link type="is-translation-of" target="#foreign001 #translation001"/> wi<choice><orig><hi rend="overline">ll</hi></orig><reg>llia</reg></choice>m <lb/><choice><orig>I</orig><reg>J</reg></choice>ettard of <lb/>29 yers</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div>
- <p><lb/>W<choice><orig><hi rend="overline">illm</hi></orig><reg>illiam</reg></choice> &IConsonant;ettard <add place="supralinear"><rs type="address" xml:id="address1">of greies ind</rs></add> the sonn of <lb/>&amp; &IConsonant;ulian. natus</p>
- <p><lb/>Sara Bruware the daughter of <lb/>&IConsonant;hon breware. and Elizab. waker <lb/><rs type="address" xml:id="address2">of S<hi rend="superscript">t</hi> An lane by Aldergate at the <lb/>Corner of foster lane hoock&slash; <lb/>in S<hi rend="superscript">t</hi> &IConsonant;hon Sacred&pluralLoop; parishe <lb/>S<hi rend="superscript">t</hi> Anes Lane</rs>. she lieth <rs type="address" xml:id="address3">at S<hi rend="superscript">t</hi> <lb/>gilles in the fild</rs>. a m<hi rend="superscript">r</hi> short&pluralLoop; a <lb/>gardner <rs type="address" sameAs="#address3">in the lane that goeth <lb/>Downe to the strone</rs>&slash;</p>
- <p><lb/>&IConsonant;ettard <lb/>Eyther of <placeName>lecester shir</placeName> or <placeName>Kent</placeName></p>
+ <p><lb/>W<choice><orig><hi rend="overline">illm</hi></orig><reg>illiam</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>ettard <add place="supralinear"><rs type="address" xml:id="address1" resp="#mhawkins">of greies ind</rs></add> the sonn of <lb/>&amp; <choice><orig>I</orig><reg>J</reg></choice>ulian. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">natus</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
+ <p><lb/>Sara Bruware the daughter of <lb/><choice><orig>I</orig><reg>J</reg></choice>hon breware. and Elizab. waker <lb/><rs type="address" xml:id="address2" key="PLACE227" resp="#mhawkins">of S<hi rend="superscript">t</hi> An lane by Aldergate at the <lb/>Corner of foster lane hoock/ <lb/>in S<hi rend="superscript">t</hi> <choice><orig>I</orig><reg>J</reg></choice>hon Sacred<choice><orig>ꝭ</orig><reg>es</reg></choice> parishe <lb/>S<hi rend="superscript">t</hi> Anes Lane</rs>. she lieth <rs type="address" xml:id="address3" key="PLACE240" resp="#mhawkins">at S<hi rend="superscript">t</hi> <lb/>gilles in the fild</rs>. a m<hi rend="superscript">r</hi> short<choice><orig>ꝭ</orig><reg>es</reg></choice> a <lb/>gardner <rs type="address" sameAs="#address3" resp="#mhawkins">in the lane that goeth <lb/>Downe to the strone</rs>/</p>
+ <p><lb/><choice><orig>I</orig><reg>J</reg></choice>ettard <lb/>Eyther of <placeName key="PLACE1350" resp="#mhawkins">lecester shir</placeName> or <placeName key="PLACE1303" resp="#mhawkins">Kent</placeName></p>
 </div>
 </body>
 </text>

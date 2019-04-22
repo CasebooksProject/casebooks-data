@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE75407</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-03">03 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="416">MS Ashmole 416, p. 413</idno>
+<altIdentifier type="fn_number"><idno n="Napier051">Napier, vol. 51</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0413" to="0413"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="an">
+<persName><forename>Anne</forename> <surname>Nichols</surname></persName>
+<sex value="2">F</sex>
+<death><date when="1632-09-06"/></death>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-09-07" n="Friday" evidence="inferred"/></p>
+<p><time notBefore="13:00:00" notAfter="17:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#an" present="no"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#an"/></cb:topic>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#an"/></cb:topic>
+<cb:topic key="death" evidence="inferred"><person sameAs="#an"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-22">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-03">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-22">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-12-08">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-05-07">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acy0457.jpg" url="acy0457.jpg" n="413" width="5848" height="8530"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><foreign xml:lang="en">Anne Nichols fell sick <lb/>at this houre Aug <lb/>27. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 7 p m 1632</foreign> <lb/>initi<choice><orig>ū</orig><reg>um</reg></choice> morbi</p>
+<p><lb/>Mortua est die 6 sept <foreign xml:lang="en">10 days after</foreign><note place="chart">Initi<choice><orig>ū</orig><reg>um</reg></choice> morbi <lb/>hora decubi<unclear cert="low" reason="faded">tu</unclear>is</note><note place="pageTop">NB NB</note></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Anne Nichols fell sick at this hour Monday 27 August 1632 the beginning of the disease.</p>
+<p>She died on 6 September 10 days after. The beginning of the disease the hour of falling sick. NB. NB.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source">
+<p><lb/>vide Aug. 29</p>
+<p><lb/>mors contigit <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> <lb/><del type="strikethrough">S</del> 6 Sept<choice><orig>ē</orig><reg>em</reg></choice>b. 6 <choice><orig>q<hi rend="overline">uado</hi></orig><reg>quando</reg></choice> <lb/>☾ ap ☌ ♂</p><anchor xml:id="questionEnd"/>
+</div>
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<p>See 29 August.</p>
+<p>Death took her Thursday 6 September when the moon was applied to the conjunction of Mars.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
+
+</body>
+</text>
+</TEI>

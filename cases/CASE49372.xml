@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE49372</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-10-02">02 October 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="235">MS Ashmole 235, f. 125v</idno>
-&Napier030;
+<altIdentifier type="fn_number"><idno n="Napier030">Napier, vol. 30</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -84,6 +94,7 @@
 <p><date when="1619-07-29" n="Thursday"/></p>
 <p><time when="09:58:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="internal" present="unclear"/>
@@ -102,6 +113,8 @@
 <change when="2016-02-23">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-18">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -109,9 +122,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Rogar Lawrenc <rs type="address" xml:id="address1">of lilly</rs> 29 y <add place="supralinear">&iConsonant;ust</add> <lb/><choice><sic>I</sic><corr type="delText"/></choice> 27 <add place="supralinear">of</add> march last &Tuesday; <add place="supralinear"><del type="strikethrough">tuesday</del> or monday</add> h. 1. p m <lb/><subst><del type="over">or</del><add place="over">h</add></subst>is <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> or mother know of it <lb/>&IConsonant;uly 29 &Thursday; h. 9. <subst><del type="over"><unclear cert="low" reason="del">4</unclear></del><add place="over">5</add></subst>8 &antm; <lb/>1619 <add place="infralinear"><choice><orig>M<hi rend="superscript">r</hi></orig><reg>Master</reg></choice> <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice></foreign> a servant</add></p>
+<p><lb/>Rogar Lawrenc <rs type="address" xml:id="address1" key="PLACE1160" resp="#mhawkins">of lilly</rs> 29 y <add place="supralinear"><choice><orig>i</orig><reg>j</reg></choice>ust</add> <lb/><choice><sic>I</sic><corr type="delText"/></choice> 27 <add place="supralinear">of</add> march last <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <add place="supralinear"><del type="strikethrough">tuesday</del> or monday</add> h. 1. p m <lb/><subst><del type="over">or</del><add place="over">h</add></subst>is <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> or mother know of it <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 29 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 9. <subst><del type="over"><unclear cert="low" reason="del">4</unclear></del><add place="over">5</add></subst>8 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1619 <add place="infralinear"><choice><orig>M<hi rend="superscript">r</hi></orig><reg>Master</reg></choice> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for</seg><link type="is-translation-of" target="#foreign001 #translation001"/> a servant</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>
 </body>
 </text>

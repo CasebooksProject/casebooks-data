@@ -7,26 +7,32 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE26589</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-11-11">11 November 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">bL</bibl>
+<bibl type="positionOnPage">f. 16r/bL, f. 15v/bR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="215">MS Ashmole 215, f. 16r</idno>
-&Napier011;
+<idno n="215">MS Ashmole 215, f. 16r, f. 15v</idno>
+<altIdentifier type="fn_number"><idno n="Napier011">Napier, vol. 11</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
 <locus from="0016r" to="0016r"/>
+<locus from="0015v" to="0015v"/>
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
@@ -34,8 +40,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -56,24 +65,28 @@
 <person xml:id="r">
 <persName><surname>Russell</surname></persName>
 <sex value="1">M</sex>
-<occupation>Man (Servant)</occupation>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="l">
 <persName><roleName>Mr</roleName> <surname>Lea</surname></persName>
 <sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <listRelation><relation name="servant" active="#r" passive="#l"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1606-01-13" n="Monday"/></p>
-<p><time when="15:20:00"/></p>
+<p><time when="15:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#r"/>
 <cb:subject ref="#r" present="unclear"/>
 <cb:topic key="gonorrhoea"><person sameAs="#r"/></cb:topic>
+<cb:treatment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -83,15 +96,21 @@
 <change when="2014-03-25">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-08-09">Combined with CASE26587 by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="cmp0051.jpg" url="cmp0051.jpg" n="16r"/>
+<graphic xml:id="cmp0050.jpg" url="cmp0050.jpg" n="15v"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Russle m<hi rend="superscript">r</hi> leas m<choice><orig>&aover;</orig><reg>an</reg></choice> &IConsonant;an <lb/>13. &Monday; h 3. 20 p m. 106 <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice>fluvi<choice><orig>&uover;</orig><reg>um</reg></choice> ren<choice><orig>&mover;</orig><reg>mm</reg></choice>.</foreign></p>
+<p><lb/>Russle m<hi rend="superscript">r</hi> leas m<choice><orig>ā</orig><reg>an</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>an <lb/>13. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h 3. 20 p m. 106 <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>fluvi<choice><orig>ū</orig><reg>um</reg></choice> ren<choice><orig>m̄</orig><reg>mm</reg></choice>.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the running of the reins</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+<pb xml:id="f15v" n="15v" facs="#cmp0050.jpg"/>
+<p><lb/>Russell M<hi rend="superscript">r</hi> leas <lb/>man <rs type="address" xml:id="address1" key="PLACE815" resp="#mhawkins">of Stanton</rs> <lb/><choice><orig>I</orig><reg>J</reg></choice>an. 13. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 3. 30 <lb/>p m. 1606.<note place="chart"><choice><sic>gono<unclear cert="high" reason="blot">r</unclear></sic><corr type="delText"/></choice> <lb/>gonorrhæa.</note></p>
 </div>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

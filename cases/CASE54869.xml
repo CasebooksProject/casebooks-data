@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE54869</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-22">22 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 43v/bR, f. 44r/uL, f. 44r/uR</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -75,6 +84,7 @@
 <p><date when="1622-08-30" n="Friday"/></p>
 <p><time when="16:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m" evidence="internal" present="unclear"/>
@@ -91,7 +101,7 @@
 <change when="2016-06-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-07-15">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-09-08">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-07-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -103,7 +113,7 @@
 <p><lb/>My Cosen Th Marsh hath ha<supplied reason="binding">d</supplied> <lb/>the repulse of his <choice><orig>m<hi rend="overline">res</hi></orig><reg>mistress</reg></choice> <lb/>but her father wished her to <lb/>write to him this Fryday Aug <lb/>30. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 4 30 p m 1622 <lb/>would know wheather it <lb/>wilbe a match betwixt th<choice><orig>ē</orig><reg>em</reg></choice></p>
 
 <pb xml:id="f44r" n="44r"/>
-<p><lb/>my Cosen Marsh <foreign xml:lang="la"><choice><orig></orig><reg>pro</reg></choice> <lb/>filio <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> erit</foreign> a good <lb/>match. <foreign xml:lang="la">et bene succedet</foreign> <lb/>Aug 30. h. 4. 30 p m <lb/>1622</p>
+<p><lb/>my Cosen Marsh <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <lb/>filio <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> erit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for his son: whether it will be</seg><link type="is-translation-of" target="#foreign001 #translation001"/> a good <lb/>match. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">et bene succedet</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">and turn out well</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>Aug 30. h. 4. 30 p m <lb/>1622</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>

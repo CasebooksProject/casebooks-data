@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE20800</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-11-23">23 November 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR, bR-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="415">MS Ashmole 415, f. 40v</idno>
-&Napier009;
+<altIdentifier type="fn_number"><idno n="Napier009">Napier, vol. 9</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,6 +76,7 @@
 <p><date when="1604-03-15" n="Thursday"/></p>
 <p><time when="13:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ab" evidence="internal"/>
@@ -89,6 +94,8 @@
 <change when="2014-01-18">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,9 +103,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Alce Britten <rs type="address" xml:id="address1">of <lb/>Sherington</rs> 27. y <lb/>maried her yongest <lb/>2 y. old marti&jVowel; 15 <lb/>&Thursday; hor. 1: 45 p m <lb/>1604 <add place="interlinear"><foreign xml:lang="la">qu&aelig;rit an sit <lb/>gravida. vel <lb/><del type="strikethrough">habeat</del> hydropidi</foreign> 1. 45</add></p>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Alce Britten <rs type="address" xml:id="address1" key="PLACE802" resp="#mhawkins">of <lb/>Sherington</rs> 27. y <lb/>maried her yongest <lb/>2 y. old marti<choice><orig>j</orig><reg>i</reg></choice> 15 <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> hor. 1: 45 p m <lb/>1604 <add place="interlinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit an sit <lb/>gravida. vel <lb/><del type="strikethrough">habeat</del> hydropidi</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">she asks whether she is pregnant or has a hypdropsy</seg><link type="is-translation-of" target="#foreign001 #translation001"/> 1. 45</add></p><anchor xml:id="questionEnd"/>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="judgment" spanTo="#judgmentEnd"/>
+<p><lb/>this Alce Britten <lb/>counteth <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> shee hath <lb/>gone <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in 2 or 3 days <lb/>of her tyme <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> 3 quart<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s of <lb/>an yere great bellyed <lb/>her swelling came <lb/><del type="strikethrough">about</del> about christmas <lb/>very healthfull.</p><anchor xml:id="judgmentEnd"/>
+</div>
 </body>
 </text>
 </TEI>

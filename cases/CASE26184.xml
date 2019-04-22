@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26184</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 122v</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0122v" to="0122v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<person xml:id="mb">
+<persName><forename>Mary</forename> <surname>Bonner</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1606-05-05" n="Monday"/></p>
+<p><time when="18:20:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon"/>
+<cb:subject ref="#anon" present="unclear"/>
+<cb:object ref="#mb"/>
+<cb:topic key="employeeChoice"><person sameAs="#mb"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-07">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-30">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-16">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-12-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0278.jpg" url="acr0278.jpg" n="122v"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Maria Bonner <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> serva <lb/><subst><del type="over">v</del><add place="over">c</add></subst><choice><orig>ō</orig><reg>om</reg></choice>modi<choice><orig><hi rend="overline">ssa</hi></orig><reg>ssima</reg></choice> mai<choice><orig>j</orig><reg>i</reg></choice> 5. h. 6. 20. p <lb/>m. 1606.</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether Mary Bonner is a most fitting servant 5 May 1606 at 6.20pm.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartPartialDeleted"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

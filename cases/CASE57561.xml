@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE57561</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-02-10">10 February 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -56,7 +61,6 @@
 <person xml:id="ab">
 <persName><roleName>Lady</roleName> <forename>Anne</forename> <surname>Boteler</surname></persName>
 <sex value="2">F</sex>
-<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <person xml:id="ob">
 <persName><roleName>Mr</roleName> <forename>Oliver</forename> <surname>Boteler</surname></persName>
@@ -73,13 +77,13 @@
 <time notAfter="01:00:00" precision="medium"/>
 </birth>
 </person>
-<listRelation><relation name="mother" active="#ab" passive="#ob"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1624-01-03" n="Saturday"/></p>
 <p><time when="11:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ab" evidence="internal" present="no"/>
@@ -94,7 +98,7 @@
 <cb:topic key="pining"><person sameAs="#ob"/></cb:topic>
 <cb:topic key="cannotStand"><person sameAs="#ob"/></cb:topic>
 <cb:topic key="cannotWalk"><person sameAs="#ob"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#ob"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#ob"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 <cb:treatment/>
@@ -107,7 +111,7 @@
 <change when="2016-03-30">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-10-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -115,7 +119,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The lady <add place="supralinear">An</add> Butler <lb/>for <del type="strikethrough">her</del> m<hi rend="superscript">r</hi> Oliver <lb/>Butler 9 y next <lb/>march <choice><sic>bone</sic><corr>borne</corr></choice> 28 or 29 <lb/>about 12 &amp; on in the <lb/>night. <rs type="address" xml:id="address1">of Harolde</rs> <lb/>sent to me for this <lb/>child <choice><orig>I</orig><reg>J</reg></choice>an 3 <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor <lb/>11. 45 <choice><orig>ant m</orig><reg>am</reg></choice> <choice><sic>1623</sic><corr>1624</corr></choice>. <lb/><choice><sic>extree</sic><corr>extreme</corr></choice> weake &amp; feeble <lb/>&amp; c<choice><orig>ā</orig><reg>an</reg></choice> take no physick <lb/>taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> strang fits <lb/>plucking his <add place="supralinear">right</add> syde &amp; <lb/>r<choice><orig>ū</orig><reg>un</reg></choice>neth to his back being <lb/>holden harde &amp; an <lb/><choice><sic>extree</sic><corr>extreme</corr></choice> cough almost <lb/>halfe a yere. &amp; <lb/>is pyned &amp; c<choice><orig>ā</orig><reg>an</reg></choice> not <lb/>stand nor goe <lb/>Ill tong suspected</p>
+<p><lb/>The lady <add place="supralinear">An</add> Butler <lb/>for <del type="strikethrough">her</del> m<hi rend="superscript">r</hi> Oliver <lb/>Butler 9 y next <lb/>march <choice><sic>bone</sic><corr>borne</corr></choice> 28 or 29 <lb/>about 12 &amp; on in the <lb/>night. <rs type="address" xml:id="address1" key="PLACE406" resp="#mhawkins">of Harolde</rs> <lb/>sent to me for this <lb/>child <choice><orig>I</orig><reg>J</reg></choice>an 3 <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor <lb/>11. 45 <choice><orig>ant m</orig><reg>am</reg></choice> <choice><sic>1623</sic><corr>1624</corr></choice>. <lb/><choice><sic>extree</sic><corr>extreme</corr></choice> weake &amp; feeble <lb/>&amp; c<choice><orig>ā</orig><reg>an</reg></choice> take no physick <lb/>taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> strang fits <lb/>plucking his <add place="supralinear">right</add> syde &amp; <lb/>r<choice><orig>ū</orig><reg>un</reg></choice>neth to his back being <lb/>holden harde &amp; an <lb/><choice><sic>extree</sic><corr>extreme</corr></choice> cough almost <lb/>halfe a yere. &amp; <lb/>is pyned &amp; c<choice><orig>ā</orig><reg>an</reg></choice> not <lb/>stand nor goe <lb/>Ill tong suspected</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

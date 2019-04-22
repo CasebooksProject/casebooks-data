@@ -7,15 +7,20 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE54938</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-22">22 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -34,9 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -65,11 +73,12 @@
 <p><date when="1622-09-14" n="Saturday" evidence="inferred"/></p>
 <p><time notBefore="12:50:00" notAfter="14:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
 <cb:subject ref="#person1" present="no"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#person1"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#person1"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -80,16 +89,20 @@
 <change when="2016-06-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-07-19">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-09-09">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-04-25">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="aam0135.jpg" url="aam0135.jpg" n="56r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>6. 0 ♏. 12 dig in <lb/>☌ ☉ <add place="supralinear">et ☾</add> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>ced. hic <choice><orig>qꝛ</orig><reg>quia</reg></choice> <lb/>☿ <choice><orig></orig><reg>pro</reg></choice>pius acced ad sig <lb/>Asc qu<choice><orig>ā</orig><reg>am</reg></choice> ad sig 10 <lb/>ideo ponat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <del type="strikethrough">sig in q<hi rend="superscript">o</hi> <lb/>sit</del> horosc gradus <lb/>in <unclear cert="low" reason="hand">nume</unclear>ro gradi<choice><orig>ū</orig><reg>um</reg></choice> in <lb/><choice><orig>q<hi rend="superscript">o</hi></orig><reg>quo</reg></choice> <del type="strikethrough">invent<unclear cert="low" reason="del">u</unclear></del> est Almuten p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>ced<choice><orig>ē</orig><reg>en</reg></choice><lb/>tis ☌. videlicet ☿ qui est <lb/>in gradu 29. <add place="marginLeft">tunc vide 29 ♌ in Asc <foreign xml:lang="en">in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice></foreign></add><note place="chart"><foreign xml:lang="en">false</foreign></note></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>6. 0 ♏. 12 dig in <lb/>☌ ☉ <add place="supralinear">et ☾</add> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>ced. hic <choice><orig>qꝛ</orig><reg>quia</reg></choice> <lb/>☿ <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>pius acced ad sig <lb/>Asc qu<choice><orig>ā</orig><reg>am</reg></choice> ad sig 10 <lb/>ideo ponat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <del type="strikethrough">sig in q<hi rend="superscript">o</hi> <lb/>sit</del> horosc gradus <lb/>in <unclear cert="low" reason="hand">nume</unclear>ro gradi<choice><orig>ū</orig><reg>um</reg></choice> in <lb/><choice><orig>q<hi rend="superscript">o</hi></orig><reg>quo</reg></choice> <del type="strikethrough">invent<unclear cert="low" reason="del">u</unclear></del> est Almuten p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>ced<choice><orig>ē</orig><reg>en</reg></choice><lb/>tis ☌. videlicet ☿ qui est <lb/>in gradu 29. <add place="marginLeft">tunc vide 29 ♌ in Asc <foreign xml:lang="en">in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice></foreign></add><note place="chart"><foreign xml:lang="en">false</foreign></note></p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>6. 0 Scorpio 12 [dignity?] in the preceding conjunction of the sun and moon more rightly approaching the sign of the ascendant than the 10th sign; therefore the horoscope’s degree is set in the number of degrees in which Almuten is in the preceding conjunction, to wit Mercury which is in the 29th degree.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 <figure type="astro" subtype="astroChart"/>
 </body>
 </text>

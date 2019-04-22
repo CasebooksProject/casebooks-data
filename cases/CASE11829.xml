@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11829</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bS, bL, bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 58r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -71,6 +77,7 @@
 <p><date when="1598-11-30" n="Thursday"/></p>
 <p><time when="09:18:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#js"/>
@@ -96,6 +103,7 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-08">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,10 +112,10 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd1"/>
-<p><lb/>&IConsonant;ane Smithe 30 yeres old <del type="strikethrough">sc</del> <rs type="address" xml:id="address1">of haversham</rs> sick this sennet. <lb/>scoureth mutch this 2 days. Dry, will nothing mouth sore<anchor xml:id="questionEnd1"/> <lb/><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>water high coloured.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/>well blooded woman Novemb. 30. <lb/>&ThursdayN; h. 9. 1598. h. 9. 18. m. &antm;. 1598. a stitch &vVowel;nder <lb/>her right side. shee sucketh her child mutch payne in her <lb/>hed &amp; cannot sleepe.</p><anchor xml:id="questionEnd2"/>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ane Smithe 30 yeres old <del type="strikethrough">sc</del> <rs type="address" xml:id="address1" key="PLACE701" resp="#mhawkins">of haversham</rs> sick this sennet. <lb/>scoureth mutch this 2 days. Dry, will nothing mouth sore<anchor xml:id="questionEnd1"/> <lb/><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>water high coloured.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/>well blooded woman Novemb. 30. <lb/><choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 9. 1598. h. 9. 18. m. <choice><orig>ant m</orig><reg>am</reg></choice>. 1598. a stitch <choice><orig>v</orig><reg>u</reg></choice>nder <lb/>her right side. shee sucketh her child mutch payne in her <lb/>hed &amp; cannot sleepe.</p><anchor xml:id="questionEnd2"/>
 </div>
 <cb xml:id="colA" n="a"/>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>
 </body>
 </text>

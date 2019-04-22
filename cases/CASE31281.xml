@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE31281</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
-<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 81v of Ashmole 229, written on 28 March 1608, reads: &lsquo;Alce Hammon of litle Brickhill 26 y. a mayden. swelled in her legs face hands &amp; feete. longe sick &amp; at lenght dyed a yere since. swelled from Christmas to Easter had her termes well after swelled &amp; had them not.&rsquo;</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 81v of Ashmole 229, written on 28 March 1608, reads: ‘Alce Hammon of litle Brickhill 26 y. a mayden. swelled in her legs face hands &amp; feete. longe sick &amp; at lenght dyed a yere since. swelled from Christmas to Easter had her termes well after swelled &amp; had them not.’</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 167v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -63,6 +69,7 @@
 <person xml:id="gjames" evidence="internal">
 <persName><roleName>Mr</roleName> <forename>Gerence</forename></persName>
 <sex value="1">M</sex>
+<occupation type="medicalPractitioner" resp="#mhawkins">Medical practitioner</occupation>
 </person>
 </listPerson>
 </particDesc>
@@ -70,6 +77,7 @@
 <p><date when="1607-04-20" n="Monday"/></p>
 <p><time when="15:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ah"/>
@@ -88,6 +96,8 @@
 <change when="2015-01-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,9 +105,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><subst><del type="cancelled">Dorothy</del> <add place="supralinear">Alice</add></subst> H<choice><orig>&aover;</orig><reg>am</reg></choice>mon <rs type="address" xml:id="address1">of litle <lb/>Brickhill</rs> <choice><sic>24 y</sic><corr type="delText" cert="high" resp="#jyoung"/></choice> <add place="supralinear">30 y.</add> Apr 20 &Monday; <lb/>h. 3. p m 1607.</p>
+<p><lb/><subst><del type="cancelled">Dorothy</del> <add place="supralinear">Alice</add></subst> H<choice><orig>ā</orig><reg>am</reg></choice>mon <rs type="address" xml:id="address1" key="PLACE437" resp="#mhawkins">of litle <lb/>Brickhill</rs> <choice><sic>24 y</sic><corr type="delText" cert="high" resp="#jyoung"/></choice> <add place="supralinear">30 y.</add> Apr 20 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>h. 3. p m 1607.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

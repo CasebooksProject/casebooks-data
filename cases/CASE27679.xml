@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE27679</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-11-11">11 November 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="215">MS Ashmole 215, f. 199v</idno>
-&Napier011;
+<altIdentifier type="fn_number"><idno n="Napier011">Napier, vol. 11</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,13 +76,15 @@
 <p><date when="1606-06-28" n="Saturday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#aw"/>
 <cb:subject ref="#aw" present="unclear"/>
 <cb:object ref="#ac"/>
 <cb:topic key="unfortunatePlaces"><person sameAs="#aw"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal" cert="high"><person sameAs="#aw"/><person sameAs="#ac"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" evidence="internal" cert="high"><person sameAs="#aw"/></cb:topic>
+<cb:topic key="witchcraftSuspect" evidence="internal" cert="high"><person sameAs="#ac"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -87,6 +95,10 @@
 <change when="2014-06-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-20">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-12">Rechecked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,11 +106,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Alce Woodward <rs type="address" xml:id="address1">of <lb/>Stoakeh<choice><orig>&aover;</orig><reg>am</reg></choice>mon</rs> 38 <supplied reason="binding" cert="medium">y</supplied> <lb/>&IConsonant;une 28 &Saturday; hor. 2 p <lb/>m. 1606</p>
+<p><lb/>Alce Woodward <rs type="address" xml:id="address1" key="PLACE820" resp="#mhawkins">of <lb/>Stoakeh<choice><orig>ā</orig><reg>am</reg></choice>mon</rs> 38 y <lb/><choice><orig>I</orig><reg>J</reg></choice>une 28 <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> hor. 2 p <lb/>m. 1606</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/><foreign xml:lang="la">qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> il<supplied reason="binding" cert="medium">le</supplied> <lb/>locus &vVowel;bi habit<supplied reason="binding" cert="medium">at</supplied> <lb/>sibi c<choice><orig>&oover;</orig><reg>om</reg></choice>petat.</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> ille <lb/>locus <choice><orig>v</orig><reg>u</reg></choice>bi habitat <lb/>sibi c<choice><orig>ō</orig><reg>om</reg></choice>petat.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">she asks whether that place where she lives agrees with her</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
 </body>
 </text>

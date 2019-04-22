@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE23516</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-29">29 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="237">MS Ashmole 237, f. 19v</idno>
-&Napier023;
+<altIdentifier type="fn_number"><idno n="Napier023">Napier, vol. 23</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,6 +70,7 @@
 <p><date when="1614-06-03" n="Friday"/></p>
 <p><time when="11:29:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#al"/>
@@ -83,6 +90,7 @@
 <change when="2016-06-07">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,9 +98,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig><hi rend="overline">Mre</hi>s</orig><reg>Mrs</reg></choice> Alce lockye <rs type="address" xml:id="address1">of West<lb/>ning</rs> <del type="strikethrough">6</del> 76 y. <del type="strikethrough">m</del> &IConsonant;une. 3. &Friday; <lb/>h. 11. 29. &antm; 1614. <add place="marginLeft">is troubled <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she c<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>fynd no c<choice><orig>&oover;</orig><reg>om</reg></choice>fort <lb/>in praying. <lb/>desyreth others <lb/>to pray for her.</add> <add place="infralinear">in <choice><orig>&loopedr;</orig><reg>pre</reg></choice>senc her selfe</add></p>
+<p><lb/><choice><orig><hi rend="overline">Mre</hi>s</orig><reg>Mrs</reg></choice> Alce lockye <rs type="address" xml:id="address1" key="PLACE532" resp="#mhawkins">of West<lb/>ning</rs> <del type="strikethrough">6</del> 76 y. <del type="strikethrough">m</del> <choice><orig>I</orig><reg>J</reg></choice>une. 3. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <lb/>h. 11. 29. <choice><orig>ant m</orig><reg>am</reg></choice> 1614. <add place="marginLeft">is troubled <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she c<choice><orig>ā</orig><reg>an</reg></choice> <lb/>fynd no c<choice><orig>ō</orig><reg>om</reg></choice>fort <lb/>in praying. <lb/>desyreth others <lb/>to pray for her.</add> <add place="infralinear">in <choice><orig><hi rend="superscript">r</hi></orig><reg>pre</reg></choice>senc her selfe</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

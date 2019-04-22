@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE37373</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-31">31 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="334">MS Ashmole 334, f. 41v</idno>
-&Napier019;
+<altIdentifier type="fn_number"><idno n="Napier019">Napier, vol. 19</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,11 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -60,7 +67,7 @@
 <death><date when="1609-10-05" precision="medium" evidence="internal"/></death>
 </person>
 <person xml:id="g">
-<persName><surname>Gybburd</surname></persName>
+<persName><surname>Gybburd</surname> <roleName>Knight</roleName></persName>
 <occupation>Soldier</occupation>
 <sex value="1">M</sex>
 </person>
@@ -74,6 +81,7 @@
 <p><date when="1609-08-17" n="Thursday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
@@ -89,6 +97,7 @@
 <change when="2014-08-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,7 +105,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Gi<unclear reason="hand" cert="low">bbur</unclear>t <foreign xml:lang="la">filius militis Gi<gap extent="5" reason="hand" unit="chars"/></foreign> <lb/>Aug. 17. &Thursday; h. 2. p m 4 ye<supplied reason="binding" cert="medium">res</supplied> <lb/>next Aug. 3 y c<choice><orig>&oover;</orig><reg>om</reg></choice>plete bor<supplied reason="binding" cert="medium">ne</supplied> <lb/><del type="strikethrough">when</del> in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> full of moone</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Gi<unclear reason="hand" cert="low">bbur</unclear>t <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">filius militis Gi<gap extent="5" reason="hand" unit="chars"/></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the son of Sir </seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>Aug. 17. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 2. p m 4 ye<supplied reason="binding" cert="medium">res</supplied> <lb/>next Aug. 3 y c<choice><orig>ō</orig><reg>om</reg></choice>plete bor<supplied reason="binding" cert="medium">ne</supplied> <lb/><del type="strikethrough">when</del> in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> full of moone</p>
 </div>
 </body>
 </text>

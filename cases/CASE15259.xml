@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE15259</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
-<notesStmt><note type="editorial" resp="#rralley">This entry may share its chart with <ref type="case" target="CASE15258">CASE15258</ref>, for Catherine Warner.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="editorial" resp="#rralley">This entry shares its chart with <ref type="case" target="CASE80093">CASE80093</ref>, for Catherine Warner.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 98v/bR-1, f. 99r/uL-2</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="207">MS Ashmole 207, ff. 98v-99r</idno>
-&Napier007;
+<altIdentifier type="fn_number"><idno n="Napier007">Napier, vol. 7</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -60,17 +66,13 @@
 <age value="30" xml:id="age2" exclude="#age1" evidence="internal">30</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<person xml:id="cw">
-<persName><forename>Catherine</forename> <surname>Warner</surname></persName>
-<sex value="2">F</sex>
-<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
-</person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1603-07-03" n="Sunday"/></p>
 <p><time when="13:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jn"/>
@@ -91,6 +93,7 @@
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +102,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ane <del type="cancelled">Hue</del> Nuet <rs type="address" xml:id="address1">of <lb/>Islyp</rs>. 36 y. &IConsonant;uly 3. <lb/>1603. a wyndcholyke <add place="infralinear">1. 15. p m 1603</add> <lb/>body chest belly hot <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a great gryping <lb/>hath had 6 childr<choice><orig>&eover;</orig><reg>en</reg></choice> <lb/>the youngest 5 quart<supplied reason="binding" cert="medium"><choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s</supplied> <lb/>old.<note place="inline">Katheron warner</note><note place="marginLeft">Katheron <lb/>Warner <rs type="address" xml:id="address2">of Stony stratford</rs> <lb/>at the <lb/>same tyme.</note></p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ane <del type="cancelled">Hue</del> Nuet <rs type="address" xml:id="address1" key="PLACE1672" resp="#mhawkins">of <lb/>Islyp</rs>. 36 y. <choice><orig>I</orig><reg>J</reg></choice>uly 3. <lb/>1603. a wyndcholyke <add place="infralinear">1. 15. p m 1603</add> <lb/>body chest belly hot <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a great gryping <lb/>hath had 6 childr<choice><orig>ē</orig><reg>en</reg></choice> <lb/>the youngest 5 quart<supplied reason="binding" cert="medium"><choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s</supplied> <lb/>old.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f99r" n="99r" facs="#clp0199.jpg"/>
 </body>
 </text>

@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13208</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 82v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,17 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -43,6 +53,7 @@
 <langUsage>
 <language ident="la">Latin</language>
 <language ident="el">Greek</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -62,6 +73,7 @@
 <p><date when="1597-08-17" n="Wednesday"/></p>
 <p><time when="16:18:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -77,17 +89,22 @@
 <change when="2012-03-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-27">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ace0180.jpg" url="ace0180.jpg" n="82v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><del type="strikethrough">Ric. N. qu&aelig;r &crossedp; <foreign xml:lang="el">&lambda;&epsilon;&sigma;&tau;&alpha;&iota;&endsigma;</foreign>. Ian 22. <lb/>1597. die &SaturnSymbol;. h. 1<hi rend="superscript">a</hi> post merid.</del></p>
-<p><lb/>Ric. nap. qu&aelig;rit <choice><orig>&crossedp;</orig><reg>pro</reg></choice> <foreign xml:lang="el">&lambda;&eta;&sigma;&tau;&alpha;&iota;&endsigma;</foreign> 1597. Aug. 17. <lb/><choice><orig><subst><del type="over">h</del><add place="over">d</add></subst>ie &MercurySymbol;</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice>. h 4. <del type="strikethrough">20</del> 18. m <choice><orig>post merid</orig><reg>pm</reg></choice>.<note place="pageTop">signa bicorporea.</note><note place="pageTop">1597.</note></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><del type="strikethrough">Ric. N. quær <g ref="#crossedp"></g> <foreign xml:lang="el">λεσταις</foreign>. Ian 22. <lb/>1597. die ♄. h. 1<hi rend="superscript">a</hi> post merid.</del></p>
+<p><lb/>Ric. nap. quærit <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <foreign xml:lang="el">λησταις</foreign> 1597. Aug. 17. <lb/><choice><orig><subst><del type="over">h</del><add place="over">d</add></subst>ie ☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice>. h 4. <del type="strikethrough">20</del> 18. m <choice><orig>post merid</orig><reg>pm</reg></choice>.<note place="pageTop">signa bicorporea.</note><note place="pageTop">1597.</note></p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Richard Napier asks about the robbers Wednesday 17 August 1597 at 4.18pm bicorporeal sign 1597.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

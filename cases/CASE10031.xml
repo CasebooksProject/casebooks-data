@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10031</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#jyoung">This entry is in the right margin next to the chart for <ref target="CASE991" type="case">CASE991</ref>.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-2</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="234">MS Ashmole 234, f. 139r</idno>
-&Forman001;
+<altIdentifier type="fn_number"><idno n="Forman001">Forman, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -36,8 +41,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -45,6 +54,7 @@
 <langUsage>
 <language ident="la">Latin</language>
 <language ident="el">Greek</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -65,6 +75,7 @@
 <p><date when="1596-12-21" n="Tuesday" evidence="external"/></p>
 <p><time when="09:20:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -80,15 +91,20 @@
 <change when="2010-11-18">Checked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-10-17">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="bkz0297.jpg" url="bkz0297.jpg" n="139r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>questo ad hoc <lb/>temp<choice><orig>&uscon;</orig><reg>us</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> <foreign xml:lang="el">&Alpha; &Alpha;&lambda;</foreign> <lb/>quis sec<choice><orig>&uover;</orig><reg>um</reg></choice> pr<choice><orig>&aover;</orig><reg>an</reg></choice>diat <lb/><foreign xml:lang="el">&Alpha;&mu;</foreign>atorem <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> <lb/>non&slash;</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>questo ad hoc <lb/>temp<choice><orig>ꝯ</orig><reg>us</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <foreign xml:lang="el">Α Αλ</foreign> <lb/>quis sec<choice><orig>ū</orig><reg>um</reg></choice> pr<choice><orig>ā</orig><reg>an</reg></choice>diat <lb/><foreign xml:lang="el">Αμ</foreign>atorem <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> <lb/>non/</p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Question at this time about Avis Allen: who is walking around with her a lover or not?</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 </body>
 </text>
 </TEI>

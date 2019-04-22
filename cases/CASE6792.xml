@@ -7,14 +7,19 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6792</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">uL</bibl>
+<bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 31v</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -69,29 +75,29 @@
 <p><date when="1600-02-25" n="Monday"/></p>
 <p><time when="09:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:location type="practitionerVisitsQuerent" ref="#address1"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#fh"/>
 <cb:subject ref="#fh" present="yes"/>
-<cb:topic key="maritalProspects"><person sameAs="#fh" resp="#mhawkins"/></cb:topic>
-<cb:topic key="fortune"><person sameAs="#fh" resp="#mhawkins"/></cb:topic>
+<cb:topic key="maritalProspects"><person sameAs="#fh"/></cb:topic>
+<cb:topic key="generalFuture"><person sameAs="#fh"/></cb:topic>
 <cb:judgment/>
 
-
 </cb:consultation>
-
 </settingDesc>
 </profileDesc>
 <revisionDesc>
 <change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
 <change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
 <change when="2010-12-13">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
- <change when="2011-03-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
- <change when="2011-07-15">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2011-03-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-07-15">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-30">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,12 +105,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/><hi rend="redInk">fraunces haward</hi> alias <lb/>prannell 1600 25 of feb. &Monday; <lb/>&Anflmfl; at 30 &past; 9. to know <lb/>what sutors she hath <foreign xml:lang="la">et quid sibi <lb/>Evenit</foreign>. &amp;c <note place="marginLeft">loke 1597 21 of <lb/>mai &amp; the <lb/>19 of &IConsonant;uli&jVowel; &amp; <lb/>1600. 2 of march &Sunday; <lb/>&pmfl; at 30 &past; 6. &Wednesday;</note></p>
+<p><lb/><hi rend="redInk">fraunces haward</hi> alias <lb/>prannell 1600 25 of feb. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/><choice><orig>An’ m’</orig><reg>am</reg></choice> at 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 9. to know <lb/>what sutors she hath <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">et quid sibi <lb/>Evenit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">and what will happen to her</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. &amp;c <note place="marginLeft">loke 1597 21 of <lb/>mai &amp; the <lb/>19 of <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> &amp; <lb/>1600. 2 of march <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <lb/><choice><orig>p m’</orig><reg>pm</reg></choice> at 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 6. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice></note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>This Dai I was <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> her at <lb/><rs type="address" xml:id="address1">my L. hayward&pluralLoop;</rs>.</p>
+<p><lb/>This Dai I was <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> her at <lb/><rs type="address" xml:id="address1">my L. hayward<choice><orig>ꝭ</orig><reg>es</reg></choice></rs>.</p>
 </div>
+<cb xml:id="colB" n="b"/>
 </body>
 </text>
 </TEI>

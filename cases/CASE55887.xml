@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE55887</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -34,9 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -57,14 +64,16 @@
 <person xml:id="s">
 <persName><roleName>Dr</roleName> <surname evidence="external">Spicer</surname></persName>
 <sex value="1">M</sex>
+<occupation type="medicalPractitioner" resp="#mhawkins">Medical practitioner</occupation>
 </person>
 <person xml:id="anon1">
 <sex value="0">U</sex>
-<birth><date notBefore="1578-06-01" notAfter="1578-06-30"/><time when="13:00:00"/></birth>
+<birth><date when="1578-06-13"/><time when="13:00:00"/></birth>
 </person>
 <person xml:id="anon2">
 <sex value="0">U</sex>
-<birth><date when="1556-07-07"/></birth>
+<birth><date when="1556-07-07"/>
+</birth>
 </person>
 <listRelation>
 <relation name="patient" active="#anon1" passive="#s"/></listRelation>
@@ -75,11 +84,12 @@
 <p><date when="1623-03-27" n="Thursday"/></p>
 <p><time when="17:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s" evidence="conjecture" present="unclear"/>
 <cb:subject ref="#anon1 #anon2" present="no"/>
-<cb:topic key="fortune"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="generalFuture" evidence="conjecture" cert="low"><person sameAs="#anon1"/></cb:topic>
 <cb:topic key="lifeExpectancy"><person sameAs="#anon2"/></cb:topic>
 </cb:consultation>
 </settingDesc>
@@ -90,7 +100,9 @@
 <change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-16">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-10-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-05-09">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,9 +110,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>D Sp. honourable pati<supplied reason="binding" cert="low">ent</supplied> <lb/>addicted to astrologye <lb/>&amp; believing continuall <lb/><choice><orig>i</orig><reg>j</reg></choice>udg. most <choice><orig></orig><reg>pro</reg></choice>per to <lb/>build <choice><orig>i</orig><reg>j</reg></choice>udg <choice><orig>v</orig><reg>u</reg></choice>ppon <foreign xml:lang="la">qu<supplied reason="binding" cert="medium">ærit</supplied></foreign> <lb/>first how long an old <lb/>frind of his might li<supplied reason="binding" cert="medium">ve</supplied> <lb/>2. <choice><orig>v</orig><reg>u</reg></choice>nder what plan<supplied reason="binding" cert="high">et</supplied> <lb/>h<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">is</add></subst> owne selfe was <lb/>borne March 27 <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 5. 45 pm 16<supplied reason="binding">23</supplied></p>
-<p><lb/>his old frinds age m<gap extent="unclear" reason="binding"/> <lb/>1556 <choice><orig>I</orig><reg>J</reg></choice>uly 87. <choice><orig>ant m</orig><reg>am</reg></choice></p>
-<p><lb/>His owne age <choice><orig>I</orig><reg>J</reg></choice>une <gap extent="unclear" reason="binding"/> <lb/><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 1. p m 1578</p>
+<p><lb/>D Sp. honourable patient <lb/>addicted to astrologye <lb/>&amp; believing continuall <lb/><choice><orig>i</orig><reg>j</reg></choice>udg. most <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>per to <lb/>build <choice><orig>i</orig><reg>j</reg></choice>udg <choice><orig>v</orig><reg>u</reg></choice>ppon <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>first how long an old <lb/>frind of his might live <lb/>2. <choice><orig>v</orig><reg>u</reg></choice>nder what planet <lb/>h<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">is</add></subst> owne selfe was <lb/>borne March 27 <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 5. 45 pm 1623</p>
+<p><lb/>his old frinds age <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">natus</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>1556 <choice><orig>I</orig><reg>J</reg></choice>uly 87. <choice><orig>ant m</orig><reg>am</reg></choice></p>
+<p><lb/>His owne age <choice><orig>I</orig><reg>J</reg></choice>une 13 <lb/><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 1. p m 1578</p>
 </div><figure type="astro" subtype="astroChart"/>
 </body>
 </text>

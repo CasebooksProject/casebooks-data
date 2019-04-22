@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE12155</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 114v</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -62,12 +68,12 @@
 <person xml:id="b1" evidence="inferred" cert="high">
 <persName><surname>Brightwell</surname></persName>
 <sex value="1">M</sex>
-<death><date notAfter="1588" evidence="inferred"/></death>
+<death><date notAfter="1588-03-27" precision="low" evidence="inferred"/></death>
 </person>
 <person xml:id="b2" evidence="inferred" cert="high">
 <persName><surname>Brightwell</surname></persName>
 <sex value="2">F</sex>
-<death><date notAfter="1588" evidence="inferred"/></death>
+<death><date notAfter="1588-03-27" precision="low" evidence="inferred"/></death>
 </person>
 <listRelation><relation name="daughter" active="#mb" passive="#b1 #b2"/></listRelation>
 </listPerson>
@@ -76,6 +82,7 @@
 <p><date when="1599-03-27" n="Tuesday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mb"/>
@@ -99,6 +106,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -106,9 +114,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Margery Brightwell <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> this <lb/>11 yeres. <rs type="address" xml:id="address1">of Milton Kenes</rs>. <lb/>40 yeres old. a meaden &vVowel;nmarid <lb/>&amp; kept of almes by the towne. <lb/>sick ever sinc Alhalloutide. loketh <lb/>leane &amp; yellowe &amp; pineth as in a <lb/>c<choice><orig>&oover;</orig><reg>on</reg></choice>sumption &amp; bendeth double. 27 <lb/>of March. &TuesdayN;. h 2. p m. <lb/>1599. shee came yesterday <choice><orig>die <lb/>&MoonSymbol;</orig><reg>die Lun&aelig;</reg><reg type="gloss">Monday</reg></choice> h. 12. <del type="strikethrough">but</del> 26 of March but <lb/>then I could not speak <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her.</p>
+<p><lb/>Margery Brightwell <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out fath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> this <lb/>11 yeres. <rs type="address" xml:id="address1" key="PLACE757" resp="#mhawkins">of Milton Kenes</rs>. <lb/>40 yeres old. a meaden <choice><orig>v</orig><reg>u</reg></choice>nmarid <lb/>&amp; kept of almes by the towne. <lb/>sick ever sinc Alhalloutide. loketh <lb/>leane &amp; yellowe &amp; pineth as in a <lb/>c<choice><orig>ō</orig><reg>on</reg></choice>sumption &amp; bendeth double. 27 <lb/>of March. <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice>. h 2. p m. <lb/>1599. shee came yesterday <choice><orig>die <lb/>☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice> h. 12. <del type="strikethrough">but</del> 26 of March but <lb/>then I could not speak <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

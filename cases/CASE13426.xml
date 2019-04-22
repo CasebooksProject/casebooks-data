@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13426</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 114r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,16 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -61,13 +70,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1598" cert="medium"/></p>
+<p><date notBefore="1597-03-08" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rv"/>
 <cb:subject ref="#rv" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#rv"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#rv"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -77,6 +87,8 @@
 <change when="2012-03-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -84,10 +96,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Ralfe Vines <foreign xml:lang="la">natus</foreign> <rs type="date" xml:id="date1">1585 <lb/>the sunday afore <choice><sic>milkle<lb/>mas</sic><corr>miklemas</corr></choice> <del type="strikethrough">h</del> &SundayN; 26 Septemb</rs>. <lb/><rs type="address" xml:id="address1">at Pistone <foreign xml:lang="la">in comitatu Buc<lb/>chingham</foreign></rs> <rs type="time" xml:id="time1">h. 9. 45 mi <choice><orig>ant <lb/>merid</orig><reg>am</reg></choice></rs>. <foreign xml:lang="la">verius &aelig;stimata &vVowel;ti patet <lb/><choice><orig>&crossedp;</orig><reg>per</reg></choice> c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>plexion<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice>. <rs type="time" xml:id="time2">9. 30. <choice><orig>ant <choice><sic>merd</sic><corr>merid</corr></choice></orig><reg>am</reg></choice></rs></foreign></p>
+<p><lb/>Ralfe Vines <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <rs type="date" xml:id="date1">1585 <lb/>the sunday afore <choice><sic>milkle<lb/>mas</sic><corr>miklemas</corr></choice> <del type="strikethrough">h</del> <choice><orig>die ☉</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice> 26 Septemb</rs>. <lb/><rs type="address" xml:id="address1" key="PLACE788" resp="#mhawkins">at Pistone <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">in comitatu Buc<lb/>chingham</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">in the county of Buckingham</seg><link type="is-translation-of" target="#foreign002 #translation002"/></rs> <rs type="time" xml:id="time1">h. 9. 45 mi <choice><orig>ant <lb/>merid</orig><reg>am</reg></choice></rs>. <foreign xml:lang="la" xml:id="foreign003" decls="#original_source">verius æstimata <choice><orig>v</orig><reg>u</reg></choice>ti patet <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>plexion<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice>. <rs type="time" xml:id="time2">9. 30. <choice><orig>ant <choice><sic>merd</sic><corr>merid</corr></choice></orig><reg>am</reg></choice></rs></foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">more truly estimated as appears from his complexion at 9.30am</seg><link type="is-translation-of" target="#foreign003 #translation003"/></p>
 <p><lb/>he careth not to mary <lb/>yet a great <lb/>wencher.</p>
 </div>
-&astroChartDeleted;
+<figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>
 </TEI>

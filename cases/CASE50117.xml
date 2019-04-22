@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE50117</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-10-10">10 October 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="213">MS Ashmole 213, f. 94v</idno>
-&Napier031;
+<altIdentifier type="fn_number"><idno n="Napier031">Napier, vol. 31</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -68,6 +74,7 @@
 <p><date when="1620-01-04" n="Tuesday"/></p>
 <p><time when="15:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ec"/>
@@ -76,7 +83,8 @@
 <cb:topic key="pregnancy" evidence="internal"><person sameAs="#ec"/></cb:topic>
 <cb:topic key="shooting"><person sameAs="#ec"/></cb:topic>
 <cb:topic key="swooning"><person sameAs="#ec"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#ec"/><person sameAs="#eh"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#ec"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#eh"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -95,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Elis: Clarke <rs type="address" xml:id="address1">of <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">Y</add></subst>e <subst><del type="over"><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">r</add></subst></del><add place="over">l</add></subst><lb/><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">v</add></subst>erton</rs> 26 y &IConsonant;an 4. &Tuesday; h. <lb/>3. p m. <del type="strikethrough">1619</del> 1620. is blynd <lb/>supposeth her selfe to be <lb/>quick <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child <add place="marginRight">&vVowel;ryne good <lb/>but full of slymy <lb/>dregs</add> <lb/>a shooting <del type="strikethrough">of</del> &amp; r<choice><orig>&uover;</orig><reg>un</reg></choice>ning &vVowel;p &amp; <lb/>downe of certen humours <lb/>&amp; it maketh her to swound <lb/>sinc. S<hi rend="superscript">t</hi> Steaph. days <lb/>twice <add place="infralinear">a day sinc swoundeth</add> gone in a swound</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Elis: Clarke <rs type="address" xml:id="address1">of <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">Y</add></subst>e <subst><del type="over"><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">r</add></subst></del><add place="over">l</add></subst><lb/><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">v</add></subst>erton</rs> 26 y <choice><orig>I</orig><reg>J</reg></choice>an 4. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. <lb/>3. p m. <del type="strikethrough">1619</del> 1620. is blynd <lb/>supposeth her selfe to be <lb/>quick <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child <add place="marginRight"><choice><orig>v</orig><reg>u</reg></choice>ryne good <lb/>but full of slymy <lb/>dregs</add> <lb/>a shooting <del type="strikethrough">of</del> &amp; r<choice><orig>ū</orig><reg>un</reg></choice>ning <choice><orig>v</orig><reg>u</reg></choice>p &amp; <lb/>downe of certen humours <lb/>&amp; it maketh her to swound <lb/>sinc. S<hi rend="superscript">t</hi> Steaph. days <lb/>twice <add place="infralinear">a day sinc swoundeth</add> gone in a swound</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>
 </body>
 </text>

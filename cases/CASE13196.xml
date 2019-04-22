@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13196</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 73v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -76,8 +81,9 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1597-04-17" cert="medium"/></p>
+<p><date notBefore="1597-04-17" notAfter="1597-09-06" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
@@ -92,6 +98,8 @@
 <change when="2012-03-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +107,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Godfrey Kirkland was borne <lb/>the <choice><sic>some</sic><corr>sonne</corr></choice> of &IConsonant;ohn Kirkland mi<lb/>nister &amp; Elisab. Pope <foreign xml:lang="la">nunc Bird</foreign> <lb/>was borne <rs type="date" xml:id="date1">1582 the 17 of <lb/>Aprill on tuesday</rs> <rs type="time" xml:id="time1">betwixt 10 &amp; <lb/>a 11 of the clocke in the mor<lb/>ning</rs>. <foreign xml:lang="la"><rs type="address" xml:id="address1">in comit: <del type="strikethrough">Buc</del> Warwicke</rs> <lb/>qui vixit 14 a<choice><orig>&nover;</orig><reg>nn</reg></choice>os plene et si vix<lb/>isset ad</foreign> <rs type="date" xml:id="date3">17 of Aprill 1597</rs>. <foreign xml:lang="la">esset <lb/><choice><sic>an&oover;&crossedr;</sic><corr>a<choice><orig>&nover;</orig><reg>nn</reg></choice>o<choice><orig>&crossedr;</orig><reg>rum</reg></choice></corr></choice> 15. obi&jVowel;t <rs type="date" xml:id="date2">1597</rs>.</foreign> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a cold <lb/>he tooke <rs type="date" sameAs="#date2">after his thrashing the 12 <lb/>of feb. 1597</rs>.<note place="infralinear"><foreign xml:lang="la">nativitas vere calc:</foreign></note></p>
+<p><lb/>Godfrey Kirkland was borne <lb/>the <choice><sic>some</sic><corr>sonne</corr></choice> of <choice><orig>I</orig><reg>J</reg></choice>ohn Kirkland mi<lb/>nister &amp; Elisab. Pope <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nunc Bird</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">now Bird</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>was borne <rs type="date" xml:id="date1">1582 the 17 of <lb/>Aprill on tuesday</rs> <rs type="time" xml:id="time1">betwixt 10 &amp; <lb/>a 11 of the clocke in the mor<lb/>ning</rs>. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><rs type="address" xml:id="address1" key="PLACE2097" resp="#mhawkins">in comit: <del type="strikethrough">Buc</del> Warwicke</rs> <lb/>qui vixit 14 a<choice><orig>n̄</orig><reg>nn</reg></choice>os plene et si vix<lb/>isset ad</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">in the county of Warwick who lived 14 years complete and if he had lived till</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <rs type="date" xml:id="date3">17 of Aprill 1597</rs>. <foreign xml:lang="la" xml:id="foreign003" decls="#original_source">esset <lb/><choice><sic>anōꝝ</sic><corr>a<choice><orig>n̄</orig><reg>nn</reg></choice>o<choice><orig>ꝝ</orig><reg>rum</reg></choice></corr></choice> 15. obi<choice><orig>j</orig><reg>i</reg></choice>t <rs type="date" xml:id="date2">1597</rs>.</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">he would be 15 years old. He died</seg><link type="is-translation-of" target="#foreign003 #translation003"/> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a cold <lb/>he tooke <rs type="date" sameAs="#date2">after his thrashing the 12 <lb/>of feb. 1597</rs>.<note place="infralinear"><foreign xml:lang="la" xml:id="foreign004" decls="#original_source">nativitas vere calc:</foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">[his] nativity truly calculated</seg><link type="is-translation-of" target="#foreign004 #translation004"/></note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

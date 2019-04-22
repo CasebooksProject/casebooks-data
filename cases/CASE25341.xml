@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE25341</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-03">03 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="239">MS Ashmole 239, f. 117r</idno>
-&Napier018;
+<altIdentifier type="fn_number"><idno n="Napier018">Napier, vol. 18</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -53,9 +59,9 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="ap">
-<persName><forename>Agnes</forename> <surname>Plowman</surname></persName>
+<persName><forename>Agnes</forename> <surname>Ploughman</surname></persName>
 <sex value="2">F</sex>
-<age value="20" cert="low">20</age>
+<age value="20">20</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="jr" evidence="internal">
@@ -68,6 +74,7 @@
 <p><date when="1610-08-15" n="Wednesday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ap"/>
@@ -76,7 +83,8 @@
 <cb:topic key="afflictedPassions" resp="#rnapier"><person sameAs="#ap"/></cb:topic>
 <cb:topic key="troubled"><person sameAs="#ap"/></cb:topic>
 <cb:topic key="mind"><person sameAs="#ap"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#ap"/><person sameAs="#jr"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#ap"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins" evidence="internal"><person sameAs="#jr"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 <cb:treatment/>
@@ -90,6 +98,8 @@
 <change when="2015-07-07">Checked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-15">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,9 +107,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Agnys Plowm<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Blisworth</rs> <lb/>2<unclear cert="low" reason="blot">0</unclear> y Aug. 15. &Wednesday; h. 2. p m. 16<choice><orig>i</orig><reg>1</reg></choice>0<note place="chart">afflicted &amp; troubled in <lb/>mynd ever since <lb/>Whitesontyde</note></p>
+<p><lb/>Agnys Plowm<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" xml:id="address1" key="PLACE1526" resp="#mhawkins">of Blisworth</rs> <lb/>20 y Aug. 15. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 2. p m. 16<choice><orig>i</orig><reg>1</reg></choice>0<note place="chart">afflicted &amp; troubled in <lb/>mynd ever since <lb/>Whitesontyde</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

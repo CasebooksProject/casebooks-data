@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13135</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 32v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,18 +35,24 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -62,6 +73,7 @@
 <p><date when="1597-06-07" n="Tuesday"/></p>
 <p><time when="08:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#sb"/>
@@ -81,11 +93,15 @@
 <facsimile>
 <graphic xml:id="ace0080.jpg" url="ace0080.jpg" n="32v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">S</add></subst>us. Blund. 1597 <choice><orig>&crossedp;</orig><reg>pro</reg></choice> mor gen. <lb/>&IConsonant;uni&jVowel; 7. <choice><orig><choice><sic>dei</sic><corr>die</corr></choice> Martis</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice>. h. 8. 15. m <lb/>&antm;. 1597</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">S</add></subst>us. Blund. 1597 <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> mor gen. <lb/><choice><orig>I</orig><reg>J</reg></choice>uni<choice><orig>j</orig><reg>i</reg></choice> 7. <choice><orig><choice><sic>dei</sic><corr>die</corr></choice> Martis</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice>. h. 8. 15. m <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1597</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Susan Blundell Tuesday 7 June 1597 at 8.15am concerning her [general?] disease.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

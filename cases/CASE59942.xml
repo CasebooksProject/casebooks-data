@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE59942</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, bR-1</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -72,13 +81,14 @@
 <p><date when="1625-03-17" n="Thursday" evidence="inferred"/></p>
 <p><time notBefore="12:20:00" notAfter="13:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#h"/>
 <cb:subject ref="#h" present="no"/>
 <cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#h"/></cb:topic>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#h"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#h"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#h"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 <cb:treatment type="sigil"/>
@@ -92,7 +102,6 @@
 <change when="2016-06-15">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-01-31">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-02-01">Rechecked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -101,7 +110,7 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/>for the Ladye Harding <lb/>to be sent by the <choice><sic>cayer</sic><corr>caryer</corr></choice> <lb/>on monday. to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Thom <lb/>Darnell.
-<rs type="address" xml:id="address1">betwixt the 2 sarecens <lb/>in the <choice><orig>v</orig><reg>u</reg></choice>p<choice><orig></orig><reg>per</reg></choice> end of Holbone</rs>.</p>
+<rs type="address" xml:id="address1">betwixt the 2 sarecens <lb/>in the <choice><orig>v</orig><reg>u</reg></choice>p<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> end of Holbone</rs>.</p>
 </div>
 <cb xml:id="colB" n="b"/>
 </body>

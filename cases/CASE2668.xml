@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2668</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 231v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -89,6 +97,7 @@
 <p><date when="1597-10-12" n="Wednesday"/></p>
 <p><time when="09:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ac" present="unclear" evidence="internal"/>
@@ -106,6 +115,7 @@
  <change when="2011-07-11">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -114,13 +124,13 @@
 <text xml:lang="en">
 <body>
 <div>
- <p><lb/><foreign xml:lang="la">Questo &vVowel;trum Simon <lb/>Clint Conducit &IConsonant;one Sentor</foreign> <lb/>1597 the 12 of octob &Wednesday; <choice><orig>An m&flourish;</orig><reg>am</reg></choice> <lb/>at 10 &past; 9. the mother for <lb/>the daughter&slash;.</p>
+ <p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Questo <choice><orig>v</orig><reg>u</reg></choice>trum Simon <lb/>Clint Conducit <choice><orig>I</orig><reg>J</reg></choice>one Sentor</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Question: whether Simon Clint will marry Joan Centor</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>1597 the 12 of octob <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <choice><orig>An m’</orig><reg>am</reg></choice> <lb/>at 10 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 9. the mother for <lb/>the daughter/.</p>
  <p><lb/>the sonn of henry &amp; margery</p>
 </div>
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
 
- <div><p><lb/>Simon Clinte <rs type="address" xml:id="address1">in the <choice><orig>&crossedp;</orig><reg>par</reg></choice>ish of S<hi rend="superscript">t</hi> <lb/>Austines</rs> the son of henry and <lb/>marger.</p>
- <p><lb/>&IConsonant;on the daughter of Agnis <choice><sic>&amp;</sic><corr type="delText"/></choice> <lb/><del type="strikethrough">&IConsonant;hon&slash;</del> osborn &amp; grigory <lb/>Centor &slash;</p>
+ <div><p><lb/>Simon Clinte <rs type="address" xml:id="address1">in the <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ish of S<hi rend="superscript">t</hi> <lb/>Austines</rs> the son of henry and <lb/>marger.</p>
+ <p><lb/><choice><orig>I</orig><reg>J</reg></choice>on the daughter of Agnis <choice><sic>&amp;</sic><corr type="delText"/></choice> <lb/><del type="strikethrough"><choice><orig>I</orig><reg>J</reg></choice>hon/</del> osborn &amp; grigory <lb/>Centor /</p>
 </div>
 </body>
 </text>

@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE15942</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
-<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 95r of Ashmole 415, written 1 May 1604, reads: &lsquo;Grace Russell of Westning 50 y. dead of a tympany. came to me last mydsomer or whitsontyde dyed a weeke afore shrovetide legs hoven &amp; did runne &amp; brake &amp; looked exceding blacke&rsquo;.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 95r of Ashmole 415, written 1 May 1604, reads: ‘Grace Russell of Westning 50 y. dead of a tympany. came to me last mydsomer or whitsontyde dyed a weeke afore shrovetide legs hoven &amp; did runne &amp; brake &amp; looked exceding blacke’.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="207">MS Ashmole 207, f. 167v</idno>
-&Napier007;
+<altIdentifier type="fn_number"><idno n="Napier007">Napier, vol. 7</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -59,7 +65,7 @@
 <sex value="2">F</sex>
 <age value="52">52</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<birth><date when="1551" sameAs="#date1"/></birth>
+<birth><date notBefore="1551-01-01" notAfter="1551-12-31" sameAs="#date1"/></birth>
 <death><date when="1604-02-13" precision="medium" evidence="external"/></death>
 </person>
 </listPerson>
@@ -68,6 +74,7 @@
 <p><date when="1603-12-01" n="Thursday"/></p>
 <p><time when="14:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gr"/>
@@ -87,6 +94,8 @@
 <change when="2014-01-13">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-11">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,10 +103,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Grace Russell <rs type="address" xml:id="address1">of <lb/>westning</rs> 52 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b <lb/>1 &Thursday; hor. 2. 30 p m <lb/>1603.</p>
-<p><lb/><foreign xml:lang="la">nata <rs type="date" xml:id="date1"><choice><orig>&aover;</orig><reg>an</reg></choice>no <choice><orig><hi rend="overline">dni</hi></orig><reg>domini</reg></choice> 1551 <lb/>anno regni Ed<subst><del type="over">d</del><add place="over">o</add></subst>vardi 6 <lb/>5</rs>.</foreign></p>
+<p><lb/>Grace Russell <rs type="address" xml:id="address1" key="PLACE532" resp="#mhawkins">of <lb/>westning</rs> 52 y Dec<choice><orig>ē</orig><reg>em</reg></choice>b <lb/>1 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> hor. 2. 30 p m <lb/>1603.</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata <rs type="date" xml:id="date1"><choice><orig>ā</orig><reg>an</reg></choice>no <choice><orig><hi rend="overline">dni</hi></orig><reg>domini</reg></choice> 1551 <lb/>anno regni Ed<subst><del type="over">d</del><add place="over">o</add></subst>vardi 6 <lb/>5</rs>.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born in the year of our Lord 1551, the 5th year of the reign of Edward VI</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

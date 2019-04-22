@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13509</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 185r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,18 +35,20 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#nativity"/>
@@ -60,13 +67,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1598" cert="medium"/></p>
+<p><date notBefore="1597-03-08" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -76,16 +84,21 @@
 <change when="2012-03-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-19">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0359.jpg" url="acm0359.jpg" n="185r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>nativ. Ric. N. <rs type="date" xml:id="date1">1559 4 <lb/>mai&jVowel; 4. &ThursdayN;</rs>. <rs type="time" xml:id="time1">h. 9. 42</rs>. <add place="infralinear">natus in 3 grad <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">10</add></subst>. m. &CapricornSymbol;. iuxta <lb/>D form<choice><orig>&aover;</orig><reg>an</reg></choice>. <rs type="time" xml:id="time2">42. mi. post <unclear cert="medium" reason="blot">10</unclear> <lb/><choice><orig>post merid</orig><reg>pm</reg></choice></rs>.</add><note place="marginLeft">natus in <lb/>3<hi rend="superscript">o</hi> grad. <lb/>10 minut<choice><orig>&loop;</orig><reg>is</reg></choice> <lb/>&CapricornSymbol;: post <lb/><del type="strikethrough">42</del> <rs type="time" sameAs="#time2">10 hor<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>et 42. mi <lb/><choice><orig>post merid</orig><reg>pm</reg></choice></rs>.</note></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>nativ. Ric. N. <rs type="date" xml:id="date1">1559 4 <lb/>mai<choice><orig>j</orig><reg>i</reg></choice> 4. <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice></rs>. <rs type="time" xml:id="time1">h. 9. 42</rs>. <add place="infralinear">natus in 3 grad <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">10</add></subst>. m. ♑. iuxta <lb/>D form<choice><orig>ā</orig><reg>an</reg></choice>. <rs type="time" xml:id="time2">42. mi. post <unclear cert="medium" reason="blot">10</unclear> <lb/><choice><orig>post merid</orig><reg>pm</reg></choice></rs>.</add><note place="marginLeft">natus in <lb/>3<hi rend="superscript">o</hi> grad. <lb/>10 minut<choice><orig>ꝭ</orig><reg>is</reg></choice> <lb/>♑: post <lb/><del type="strikethrough">42</del> <rs type="time" sameAs="#time2">10 hor<choice><orig>ā</orig><reg>am</reg></choice> <lb/>et 42. mi <lb/><choice><orig>post merid</orig><reg>pm</reg></choice></rs>.</note></p>
 </div>
-&astroChartDeleted;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>The nativity of Richard N. Thursday 4 May 4 1559 at 9.42: born 3 degrees and 10 minutes into Capricorn according to Mr Forman 42 minutes after [10?] pm. Born 3 degrees and 10 minutes into Capricorn: after the 10th hour and 42 minutes after noon.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>
 </TEI>

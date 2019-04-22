@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26039</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 7r/uS, f. 8v/uS, f. 6r/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 7r, f. 8v, f. 6r</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0007r" to="0007r"/>
+<locus from="0008v" to="0008v"/>
+<locus from="0006r" to="0006r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Mrs</roleName> <surname>Blundell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="sb">
+<persName><forename>Susan</forename> <surname type="maiden">Blundell</surname></persName>
+<sex value="2">F</sex>
+<age value="12" precision="medium">about 12</age>
+</person>
+<listRelation><relation name="mother" active="#b" passive="#sb"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1598-01-20" n="Friday"/></p>
+<p><time when="13:45:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b" evidence="internal" present="unclear"/>
+<cb:subject ref="#sb" present="no"/>
+<cb:topic key="fits"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="fallingSickness"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="noUseOfPart"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="head"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="legs"><person sameAs="#sb"/></cb:topic>
+<cb:topic key="hands"><person sameAs="#sb"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-01">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-21">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-12">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-08-31">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0045.jpg" url="acr0045.jpg" n="7r"/>
+<graphic xml:id="acr0048.jpg" url="acr0048.jpg" n="8v"/>
+<graphic xml:id="acr0043.jpg" url="acr0043.jpg" n="6r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="superscript">res</hi></orig><reg>Mrs</reg></choice> Blundell sent to me to come to Her <lb/>daughter Susan about 12 yeres old who <lb/>layd speechles for a weeke &amp; after ward<choice><orig>ꝭ</orig><reg>es</reg></choice> spak <lb/>a worde or two. who <del type="strikethrough">h</del> is troubled day &amp; <lb/>night <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> diverse fitt<choice><orig>ꝭ</orig><reg>es</reg></choice> <del type="strikethrough">&amp; hath</del> falleth often <lb/>&amp; nowe hath no <choice><orig>v</orig><reg>u</reg></choice>se of hed necke legs <lb/>hand<choice><orig>ꝭ</orig><reg>es</reg></choice> <choice><sic>or</sic><corr type="delText"/></choice> <del type="strikethrough">an</del> but only of her eyes &amp; yet <lb/>eateth &amp; hath a good colour. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">1598 <choice><orig>I</orig><reg>J</reg></choice>an <lb/>die 20. <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Friday the 20th day of January 1598</seg><link type="is-translation-of" target="#foreign001 #translation001"/> h: <choice><orig>post merid</orig><reg>pm</reg></choice>. 1. 45.</p>
+</div>
+<figure type="astro" subtype="astroChartPartial"/>
+<pb xml:id="f8v" n="8v"/>
+<figure type="astro" subtype="astroChart"/>
+<div><pb xml:id="f6r" n="6r"/>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">mater <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> filia Susan Blund: <choice><orig>I</orig><reg>J</reg></choice>an. 20 <lb/><choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h <choice><orig>post merid</orig><reg>pm</reg></choice> 1. 45. 1598.</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">the mother for her daughter Susan Blund[ell], Friday 20 January 1598 at 1.45pm.</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

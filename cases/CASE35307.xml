@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE35307</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-10">10 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#rralley">This entry is upside down.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 163v/uS, f. 164r/uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="338">MS Ashmole 338, ff. 163v-164r</idno>
-&Napier014;
+<altIdentifier type="fn_number"><idno n="Napier014">Napier, vol. 14</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -31,18 +36,20 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#nativity"/>
@@ -58,16 +65,20 @@
 <sex value="2">F</sex>
 <birth><date when="1570-05-04" n="Thursday"/><time when="12:30:00"/><placeName sameAs="#address1"/></birth>
 </person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date notBefore="1608-09-21" notAfter="1609-02-27" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#cr"/>
-<cb:subject ref="#cr" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#cr"/></cb:topic>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#cr" present="no"/>
+<cb:topic key="history"><person sameAs="#cr"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -79,18 +90,24 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="abi0340.jpg" url="abi0340.jpg" n="163v"/>
 <graphic xml:id="abi0341.jpg" url="abi0341.jpg" n="164r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <p><lb/><choice><sic>Agnys</sic><corr type="delText"/></choice> <del type="strikethrough">Wa<unclear reason="del" cert="low">l</unclear></del></p>
-<p><lb/>Christiana Robinson nata <lb/><rs type="address" xml:id="address1">londini</rs> <choice><sic>p</sic><corr type="noText"/></choice> mai&jVowel; 4 &ThursdayLatin; h. 12. 30 <lb/><choice><sic>p</sic><corr>p m</corr></choice> 1570.</p>
+<p><lb/>Christiana Robinson nata <lb/><rs type="address" xml:id="address1" key="PLACE1" resp="#mhawkins">londini</rs> <choice><sic>p</sic><corr type="noText"/></choice> mai<choice><orig>j</orig><reg>i</reg></choice> 4 <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 12. 30 <lb/><choice><sic>p</sic><corr>p m</corr></choice> 1570.</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Christian Robinson born in London Thursday 4 May 1570 at 12.30pm.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f164r" n="164r" facs="#abi0341.jpg"/>
 </body>
 </text>

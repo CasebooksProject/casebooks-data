@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13494</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 171r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,17 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -68,6 +78,7 @@
 <p><date when="1598-04-24" n="Monday"/></p>
 <p><time when="11:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -87,17 +98,22 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-04-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0331.jpg" url="acm0331.jpg" n="171r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <milestone unit="question" spanTo="#questionEnd"/>
-<p><lb/>mater venit ad me <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filia <lb/>Su<choice><orig><hi rend="overline">san</hi></orig><reg>sann</reg></choice>a aqu<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> asportans <lb/>Apr. 24 &MondayN;. h. 11. 10. m. <choice><orig>ant <lb/>merid</orig><reg>am</reg></choice> 1598<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><add place="inline"><foreign xml:lang="en">she c<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice>tinued long <lb/>sick &amp; in the end <lb/>dyed senceles &amp; mopish <lb/>like a changling</foreign></add></p><anchor xml:id="subsequentEventInfoEnd"/>
+<p><lb/>mater venit ad me <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> filia <lb/>Su<choice><orig><hi rend="overline">san</hi></orig><reg>sann</reg></choice>a aqu<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> asportans <lb/>Apr. 24 <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. h. 11. 10. m. <choice><orig>ant <lb/>merid</orig><reg>am</reg></choice> 1598<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><add place="inline"><foreign xml:lang="en">she c<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice>tinued long <lb/>sick &amp; in the end <lb/>dyed senceles &amp; mopish <lb/>like a changling</foreign></add></p><anchor xml:id="subsequentEventInfoEnd"/>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>The mother came to me for her daughter Susan bringing her water Monday 24 April 1598 at 11.10am; she continued long sick and in the end died senseless and mopish like a changeling.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

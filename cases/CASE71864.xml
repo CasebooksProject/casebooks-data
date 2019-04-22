@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE71864</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-06-05">05 June 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="232">MS Ashmole 232, p. 265</idno>
+<altIdentifier type="fn_number"><idno n="Napier049">Napier, vol. 49</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0265" to="0265"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1631-04-20" n="Wednesday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon"/>
+<cb:subject ref="#anon" present="unclear"/>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#anon"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-14">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-06-05">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-06-27">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-09-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-05-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aas0290.jpg" url="aas0290.jpg" n="265"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><del type="strikethrough"><choice><orig>I</orig><reg>J</reg></choice>acobus</del> <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> obtineb<supplied reason="binding" cert="high">it</supplied> <lb/>Ap 20 <choice><orig>☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> h 8 <choice><orig>ant <supplied reason="binding">m</supplied></orig><reg>am</reg></choice> <lb/>163<choice><orig>i</orig><reg>1</reg></choice></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether [he/she] will obtain [it] Wednesday 20 April 1631 at 8am.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE30624</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 76v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph><glyph xml:id="qtail">
+        <glyphName>Q WITH TAIL</glyphName>
+        <mapping type="standard">q</mapping>
+        <mapping type="PUA">U+E8BF</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -62,6 +74,7 @@
 <p><date when="1607-02-11" n="Wednesday"/></p>
 <p><time notBefore="08:30:00" notAfter="12:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -76,6 +89,8 @@
 <change when="2014-09-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -83,15 +98,15 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M&loopedr;</orig><reg>Memorandum</reg></choice> the 20 of &IConsonant;anuary <lb/>hapned a mighty stormy <lb/>wynd <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> drownd 28 parishes <lb/>in <placeName>S<choice><orig>&oover;</orig><reg>om</reg></choice>mersetsheere</placeName> ha<add place="supralinear">r</add>d by <lb/><placeName>Bristowe</placeName> m<choice><orig>&aover;</orig><reg>an</reg></choice> women &amp; <lb/>child so <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> is <lb/>gotten xx miles <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in <subst><del type="over">d<gap extent="1" unit="chars" reason="del"/></del><add place="over">th</add></subst>e <lb/>lande. churches &amp; townes <lb/>all over flowed.</p>
-<p><lb/><subst><del type="over">S</del><add place="over">t</add></subst>he like hapned in <add place="supralinear">the strond in</add> <placeName>Glocester<lb/>sheere</placeName> <choice><sic>l</sic><corr type="noText"/></choice> in there marshes &amp; elswhere.</p>
-<p><lb/>reported this x&jVowel; of feb by some <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>came thenc <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> had a great <lb/>losse <foreign xml:lang="la">&MoonSymbol; sep a &sextileSymbol; &MarsSymbol; ap &trineSymbol; &VenusSymbol; <lb/><choice><orig>&crossedp;</orig><reg>per</reg></choice> p &sextileSymbol; &SunSymbol;</foreign>.</p>
-<p><lb/>I gave th<choice><orig>&eover;</orig><reg>em</reg></choice> 12<hi rend="superscript">d</hi>.&slash;</p>
-<p><lb/>Also in <placeName>Wales</placeName> in <placeName>Anglesee</placeName>.&slash;</p>
-<p><lb/>this hapned &IConsonant;an 20 &Tuesday; <foreign xml:lang="la">&MoonSymbol; in &PiscesSymbol; <lb/>sep a &sextileSymbol; &SaturnSymbol;. vac ap &conjunctionSymbol; &MarsSymbol; <lb/>&MoonSymbol; <unclear reason="hand" cert="medium">&astroCaudaDraconisSymbol; &CapricornSymbol;</unclear> in <choice><orig>&crossedp;</orig><reg>par</reg></choice>te &vVowel;<choice><orig>&qtail;</orig><reg>que</reg></choice> ad 11. <lb/>&conjunctionSymbol; &SunSymbol; &MercurySymbol; ap.</foreign></p>
-<p><lb/><foreign xml:lang="la">circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> hor<choice><orig>&aover;</orig><reg>am</reg></choice> 3 p m 1607</foreign></p>
+<p><lb/><choice><orig>M<hi rend="superscript">r</hi></orig><reg>Memorandum</reg></choice> the 20 of <choice><orig>I</orig><reg>J</reg></choice>anuary <lb/>hapned a mighty stormy <lb/>wynd <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> drownd 28 parishes <lb/>in <placeName key="PLACE2005" resp="#mhawkins">S<choice><orig>ō</orig><reg>om</reg></choice>mersetsheere</placeName> ha<add place="supralinear">r</add>d by <lb/><placeName key="PLACE1059" resp="#mhawkins">Bristowe</placeName> m<choice><orig>ā</orig><reg>an</reg></choice> women &amp; <lb/>child so <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> is <lb/>gotten xx miles <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in <subst><del type="over">d<gap extent="1" unit="chars" reason="del"/></del><add place="over">th</add></subst>e <lb/>lande. churches &amp; townes <lb/>all over flowed.</p>
+<p><lb/><subst><del type="over">S</del><add place="over">t</add></subst>he like hapned in <add place="supralinear">the strond in</add> <placeName key="PLACE1054" resp="#mhawkins">Glocester<lb/>sheere</placeName> <choice><sic>l</sic><corr type="noText"/></choice> in there marshes &amp; elswhere.</p>
+<p><lb/>reported this x<choice><orig>j</orig><reg>i</reg></choice> of feb by some <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>came thenc <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> had a great <lb/>losse <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">☾ sep a ⚹ ♂ ap △ ♀ <lb/>p <choice><sic>p</sic><corr type="noText"/></choice> ⚹ ☉</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the moon separating from the sextile of Mars applying to the trine of Venus following the sextile of the sun</seg><link type="is-translation-of" target="#foreign001 #translation001"/>.</p>
+<p><lb/>I gave th<choice><orig>ē</orig><reg>em</reg></choice> 12<hi rend="superscript">d</hi>./</p>
+<p><lb/>Also in <placeName key="PLACE2218" resp="#mhawkins">Wales in Anglesee</placeName>./</p>
+<p><lb/>this hapned <choice><orig>I</orig><reg>J</reg></choice>an 20 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">☾ in ♓ <lb/>sep a ⚹ ♄. vac ap ☌ ♂ <lb/>☾ <unclear reason="hand" cert="medium">☋ ♑</unclear> in <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>te <choice><orig>v</orig><reg>u</reg></choice>s<choice><orig><g ref="#qtail"></g></orig><reg>que</reg></choice> ad 11. <lb/>☌ ☉ ☿ ap.</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">the moon in the Pisces separating from the sextile of Saturn leaving and applying to the conjunction of Mars; the moon, [the dragon’s tail Capricorn?] in the region up to the conjunction of the sun and Mercury applying</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> hor<choice><orig>ā</orig><reg>am</reg></choice> 3 p m 1607</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">at about the third hour after noon 1607</seg><link type="is-translation-of" target="#foreign003 #translation003"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

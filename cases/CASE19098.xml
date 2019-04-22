@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE19098</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 65r/uL-1, f. 64v/bR, f. 65r/uL-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 65r, f. 64v, f. 65r</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -66,6 +76,7 @@
 <p><date when="1601-03-31" n="Tuesday"/></p>
 <p><time when="10:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#hs"/>
@@ -84,6 +95,8 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-07">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,13 +106,13 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Henry Savadge <rs type="address" xml:id="address1">of Woott<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice></rs> <lb/>25 y. Marti&jVowel; <subst><del type="over">2</del><add place="over">3</add></subst><choice><orig>i</orig><reg>1</reg></choice> &TuesdayN; <lb/>hor. 10. 45. &antm;. 160<choice><orig>i</orig><reg>1</reg></choice>. <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> &aelig;gylope</foreign></p>
+<p><lb/>Henry Savadge <rs type="address" xml:id="address1" key="PLACE542" resp="#mhawkins">of Woott<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice></rs> <lb/>25 y. Marti<choice><orig>j</orig><reg>i</reg></choice> <subst><del type="over">2</del><add place="over">3</add></subst><choice><orig>i</orig><reg>1</reg></choice> <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> <lb/>hor. 10. 45. <choice><orig>ant m</orig><reg>am</reg></choice>. 160<choice><orig>i</orig><reg>1</reg></choice>. <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> ægylope</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for an aegilops</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
 <div><pb xml:id="f64v" n="64v" facs="#afw0146.jpg"/>
-<p><lb/><del type="strikethrough">mar</del> for an &aelig;gylops <lb/>in his eye corner. or <lb/>rath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &vVowel;nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> the eye <lb/>corner. Marti&jVowel; 3<choice><orig>i</orig><reg>1</reg></choice> <choice><orig>die <lb/>&MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> hor. 10. 45. &antm; 160<supplied reason="binding">1</supplied></p>
+<p><lb/><del type="strikethrough">mar</del> for an ægylops <lb/>in his eye corner. or <lb/>rath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> the eye <lb/>corner. Marti<choice><orig>j</orig><reg>i</reg></choice> 3<choice><orig>i</orig><reg>1</reg></choice> <choice><orig>die <lb/>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> hor. 10. 45. <choice><orig>ant m</orig><reg>am</reg></choice> 160<supplied reason="binding">1</supplied></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f65r" n="65r" facs="#afw0147.jpg"/>
 </body>
 </text>

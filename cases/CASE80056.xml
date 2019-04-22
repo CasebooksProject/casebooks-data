@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE80056</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-10-10">10 October 2015</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 55v</idno>
+<altIdentifier type="fn_number"><idno n="Napier031">Napier, vol. 31</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0055v" to="0055v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationTreatment"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c">
+<persName><forename>Catherine</forename></persName>
+<sex value="2">F</sex>
+<occupation>Maid</occupation>
+</person>
+<listRelation>
+<relation name="servant" active="#c" passive="#rnapier"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1619-11-15T09:30:00" notAfter-custom="1619-11-16T11:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#c" present="unclear"/>
+<cb:topic key="treatment" evidence="inferred"><person sameAs="#c"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-10-10">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-10-26">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-09-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0128.jpg" url="cmn0128.jpg" n="55v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>My mayd Kate had ♁ gr iiii sal vitr <lb/>gr viii sac candi ℥i wyne ℥iii <lb/>It wrought very strongly <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her &amp; made <lb/>her very sick. nov<choice><orig>ē</orig><reg>em</reg></choice>b 15. h. 9. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1619</p>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE77285</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This entry may share its chart with <ref type="case" target="CASE77286">CASE77826</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 134</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0134" to="0134"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ea1">
+<persName><roleName>Mrs</roleName> <forename>Eleanor</forename> <surname>Aylet</surname></persName>
+<sex value="2">F</sex>
+<age value="40">40</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ea2">
+<persName><forename>Eleanor</forename> <surname>Aylet</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="1">M</sex>
+<death>
+<date when="1621-05-15" precision="low"/>
+</death>    
+</person>
+<listRelation>
+<relation name="mother" active="#ea1" passive="#ea2"/>
+<relation name="husband" active="#anon" passive="#ea1"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-05-15" n="Wednesday"/></p>
+<p><time when="19:30:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#ea1" evidence="internal" present="yes"/>
+<cb:subject ref="#ea1" present="yes"/>
+<cb:topic key="witchcraftSufferedNonMedical"><person sameAs="#ea1"/></cb:topic>
+<cb:topic key="animalDeathAndDisease"><person sameAs="#ea1"/></cb:topic>
+<cb:info type="financial"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-10">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-12-20">Checked and split from CASE72286 by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-01-02">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0159.jpg" url="clq0159.jpg" n="134" width="5113" height="7216"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><supplied reason="binding">M</supplied><hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> <supplied reason="binding" cert="high">El</supplied>nor Aylet <rs type="address" xml:id="address1" key="PLACE1016" resp="#mhawkins">of Magdalen Laver in Essex</rs> 40 y <add place="marginLeft"><supplied reason="binding" cert="high">he</supplied>r daughter <lb/>Elnor Aylet <lb/><supplied reason="binding" cert="medium">su</supplied>specteth <lb/>witchery <lb/>husb &amp; Cattle <lb/><supplied reason="binding" cert="low">be</supplied>witched <lb/>her husb dyed <lb/>is now <lb/><choice><sic><supplied reason="binding" cert="high">m</supplied>ayed</sic><corr>maryed</corr></choice></add> <lb/>The mother came <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <lb/>daughter &amp; sent me a great <lb/>cake &amp; another a fortnight <lb/>before may 15. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> hor 7. 30 p <lb/>m. 1633 <add place="lineEnd">her husb dyed by <lb/>witchery 12 y <lb/>since</add></p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

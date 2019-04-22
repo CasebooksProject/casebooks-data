@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE24776</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-03">03 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 36v/bR, f. 36v/bL-2, f. 37r/uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="239">MS Ashmole 239, ff. 36v-37r</idno>
-&Napier018;
+<altIdentifier type="fn_number"><idno n="Napier018">Napier, vol. 18</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -88,10 +94,13 @@
 <p><date when="1610-05-16" n="Wednesday"/></p>
 <p><time when="13:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#s1 #s2 #ss #gc #a"/>
-<cb:subject ref="#s1 #s2 #ss #gc #a" present="unclear"/>
+<cb:querent ref="#s2" evidence="external"/>
+<cb:querent ref="#s1 #gc #a"/>
+<cb:subject ref="#s2" present="no"/>
+<cb:subject ref="#s1 #ss #gc #a" present="unclear"/>
 <cb:topic key="plague"><person sameAs="#s1"/><person sameAs="#s2"/><person sameAs="#ss"/><person sameAs="#gc"/><person sameAs="#a"/></cb:topic>
 <cb:topic key="sickness" resp="#rnapier"><person sameAs="#s1"/><person sameAs="#s2"/><person sameAs="#ss"/><person sameAs="#gc"/><person sameAs="#a"/></cb:topic>
 <cb:info type="urine"/>
@@ -108,6 +117,7 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -117,22 +127,22 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd1"/>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Say <rs type="address" xml:id="address1">of Dod<lb/>dington by Wellingbo<lb/>rough</rs>. 38 y may 16 <lb/>&Wednesday; h. 1. p m 16<choice><orig>i</orig><reg>1</reg></choice>0.</p><anchor xml:id="questionEnd1"/>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Say <rs type="address" xml:id="address1" key="PLACE1631" resp="#mhawkins">of Dod<lb/>dington by Wellingbo<lb/>rough</rs>. 38 y may 16 <lb/><choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 1. p m 16<choice><orig>i</orig><reg>1</reg></choice>0.</p><anchor xml:id="questionEnd1"/>
 <milestone unit="urineInfo" spanTo="#urineInfoEnd1"/>
 <p><lb/>water good</p><anchor xml:id="urineInfoEnd1"/>
 <milestone unit="question" spanTo="#questionEnd2"/>
-<p><lb/>George Cheseldye <lb/>22 y a batch. <rs type="address" xml:id="address2">of dod<lb/>dington by welborough</rs> <lb/>may 16 &Wednesday;. h. 1. p m <lb/>1610</p><anchor xml:id="questionEnd2"/>
+<p><lb/>George Cheseldye <lb/>22 y a batch. <rs type="address" xml:id="address2" key="PLACE1631" resp="#mhawkins">of dod<lb/>dington by welborough</rs> <lb/>may 16 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice>. h. 1. p m <lb/>1610</p><anchor xml:id="questionEnd2"/>
 <milestone unit="urineInfo" spanTo="#urineInfoEnd2"/>
 <p><lb/>water good</p><anchor xml:id="urineInfoEnd2"/>
 <milestone unit="question" spanTo="#questionEnd3"/>
 <cb n="a" xml:id="colA"/>
-<p><lb/>Sus<choice><orig>&aover;</orig><reg>an</reg></choice>na Say <add place="supralinear"><rs type="address" sameAs="#address1">of dodington</rs></add> her daughter. <lb/>6 y may. 16. &Wednesday;. h. &jVowel;. p m 16<choice><orig>i</orig><reg>1</reg></choice>0 <lb/>this wench was <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a litle wench <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dyed.&slash;<anchor xml:id="questionEnd3"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd3"/><add place="inline">water good</add></p><anchor xml:id="urineInfoEnd3"/>
+<p><lb/>Sus<choice><orig>ā</orig><reg>an</reg></choice>na Say <add place="supralinear"><rs type="address" sameAs="#address1" key="PLACE1631" resp="#mhawkins">of dodington</rs></add> her daughter. <lb/>6 y may. 16. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice>. h. <choice><orig>j</orig><reg>i</reg></choice>. p m 16<choice><orig>i</orig><reg>1</reg></choice>0 <lb/>this wench was <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a litle wench <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dyed./<anchor xml:id="questionEnd3"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd3"/><add place="inline">water good</add></p><anchor xml:id="urineInfoEnd3"/>
 <milestone unit="question" spanTo="#questionEnd4"/>
 <p><lb/>Alce m<hi rend="superscript">r</hi> Says mayd 24 y all these feare the plauge <lb/>&amp; sicknes having bene <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> sutch as dyed</p>
 <pb xml:id="f37r" n="37r" facs="#afp0093.jpg"/>
-<p><lb/><choice><orig>m<hi rend="overline">es</hi></orig><reg>Mrs</reg></choice> Say <rs type="address" sameAs="#address1">of dod<del type="strikethrough">ford</del><add place="lineEnd">dington</add> <lb/>by wellingborough</rs> 38 y <lb/>may 16 &Wednesday; h. 1. p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0</p><anchor xml:id="questionEnd4"/>
+<p><lb/><choice><orig>m<hi rend="overline">es</hi></orig><reg>Mrs</reg></choice> Say <rs type="address" sameAs="#address1" key="PLACE1631" resp="#mhawkins">of dod<del type="strikethrough">ford</del><add place="lineEnd">dington</add> <lb/>by wellingborough</rs> 38 y <lb/>may 16 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 1. p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0</p><anchor xml:id="questionEnd4"/>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

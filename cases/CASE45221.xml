@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE45221</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-06-07">07 June 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="220">MS Ashmole 220, f. 25r</idno>
-&Napier027;
+<altIdentifier type="fn_number"><idno n="Napier027">Napier, vol. 27</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -66,6 +72,7 @@
 <p><date when="1617-06-26" n="Thursday"/></p>
 <p><time notBefore="06:38:00" notAfter="11:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -82,6 +89,7 @@
 <change when="2015-10-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,9 +97,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ames went to <placeName>Newp</placeName> of purpose <lb/>to expostulate the matter <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>the wom<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Newp</rs> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> sold <lb/>him feysty meate &IConsonant;une 26 &Thursday; <lb/>h. <choice><sic>6.</sic><corr type="delText"/></choice> <del type="strikethrough">40</del> <choice><sic><add place="supralinear">30 40</add> &antm; 1617</sic><corr type="delText"/></choice> <add place="supralinear">6. 38 &antm; 1617</add> </p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ames went to <placeName key="PLACE766" resp="#mhawkins">Newp</placeName> of purpose <lb/>to expostulate the matter <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>the wom<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" xml:id="address1" key="PLACE766" resp="#mhawkins">of Newp</rs> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> sold <lb/>him feysty meate <choice><orig>I</orig><reg>J</reg></choice>une 26 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <lb/>h. <choice><sic>6.</sic><corr type="delText"/></choice> <del type="strikethrough">40</del> <choice><sic><add place="supralinear">30 40</add> <choice><orig>ant m</orig><reg>am</reg></choice> 1617</sic><corr type="delText"/></choice> <add place="supralinear">6. 38 <choice><orig>ant m</orig><reg>am</reg></choice> 1617</add> </p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

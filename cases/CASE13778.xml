@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13778</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL-1, uL-3</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="197">MS Ashmole 197, f. 39r</idno>
-&Napier008;
+<altIdentifier type="fn_number"><idno n="Napier008">Napier, vol. 8</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -65,6 +71,7 @@
 <p><date when="1603-05-31" n="Tuesday"/></p>
 <p><time when="06:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#es"/>
@@ -80,6 +87,8 @@
 <change when="2012-10-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,10 +96,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elisabeth Smith <rs type="address" xml:id="address1">of Emberton</rs> <lb/>25 y. Mai&jVowel; 31 &Tuesday; hor. 6. 30 <lb/>&antm;. 1603.</p>
-<p><lb/><foreign xml:lang="la">qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> sit san<lb/>guis minend<choice><orig>&uscon;</orig><reg>us</reg></choice>. id en<choice><orig>&iover;</orig><reg>im</reg></choice> <lb/>cupit <choice><orig>&oover;</orig><reg>om</reg></choice>ni<choice><orig>&uover;</orig><reg>um</reg></choice> maxe</foreign></p>
+<p><lb/>Elisabeth Smith <rs type="address" xml:id="address1" key="PLACE663" resp="#mhawkins">of Emberton</rs> <lb/>25 y. Mai<choice><orig>j</orig><reg>i</reg></choice> 31 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> hor. 6. 30 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1603.</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit san<lb/>guis minend<choice><orig>ꝯ</orig><reg>us</reg></choice>. id en<choice><orig>ī</orig><reg>im</reg></choice> <lb/>cupit <choice><orig>ō</orig><reg>om</reg></choice>ni<choice><orig>ū</orig><reg>um</reg></choice> maxe</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">she asks whether she is to be let blood for she desires that above all</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

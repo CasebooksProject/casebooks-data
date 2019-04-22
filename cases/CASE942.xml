@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE942</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="234">MS Ashmole 234, f. 131v</idno>
-&Forman001;
+<altIdentifier type="fn_number"><idno n="Forman001">Forman, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -73,6 +82,7 @@
 <p><date when="1596-12-07" n="Tuesday"/></p>
 <p><time when="22:55:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -96,11 +106,15 @@
 <facsimile>
 <graphic xml:id="bkz0282.jpg" url="bkz0282.jpg" n="131v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Anno 1596 <foreign xml:lang="en">the 7 of Decemb <lb/>&Tuesday; &pmfl; at 55 &past; 10</foreign> questo &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/><choice><orig>W<hi rend="superscript">m</hi></orig><reg>William</reg></choice> Buck &vVowel;titur cor<choice><orig>&crossedp;</orig><reg>por</reg></choice>e Bridg <lb/><foreign xml:lang="el">&Alpha;&lambda;</foreign> et <foreign xml:lang="el">&Alpha;&mu;&alpha;&tau;</foreign> <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice>n<choice><orig>&oover;</orig><reg>on</reg></choice> et <choice><orig>vtr&flourish;</orig><reg>utrum</reg></choice> illi <lb/>intendunt mihi mal<choice><orig>&uover;</orig><reg>um</reg></choice> aliquod <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice> <lb/>et <choice><orig>vtr&flourish;</orig><reg>utrum</reg></choice> <foreign xml:lang="el">&Alpha; &Alpha;&lambda;</foreign> loquit<choice><orig>&uscon;</orig><reg>us</reg></choice> est c<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><sic>wlmo</sic><corr>willelmo</corr></choice> <choice><orig>&nover;</orig><reg>nec</reg></choice>n<choice><orig>&oover;</orig><reg>on</reg></choice> hodie</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Anno 1596 <foreign xml:lang="en">the 7 of Decemb <lb/><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> at 55 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 10</foreign> questo <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/><choice><orig>W<hi rend="superscript">m</hi></orig><reg>William</reg></choice> Buck <choice><orig>v</orig><reg>u</reg></choice>titur cor<choice><orig><g ref="#crossedp"></g></orig><reg>por</reg></choice>e Bridg <lb/><foreign xml:lang="el">Αλ</foreign> et <foreign xml:lang="el">Αματ</foreign> <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice>n<choice><orig>ō</orig><reg>on</reg></choice> et <choice><orig>vtr’</orig><reg>utrum</reg></choice> illi <lb/>intendunt mihi mal<choice><orig>ū</orig><reg>um</reg></choice> aliquod <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice> <lb/>et <choice><orig>vtr’</orig><reg>utrum</reg></choice> <foreign xml:lang="el">Α Αλ</foreign> loquit<choice><orig>ꝯ</orig><reg>us</reg></choice> est c<choice><orig>ū</orig><reg>um</reg></choice> <choice><sic>wlmo</sic><corr>willelmo</corr></choice> <choice><orig>n̄</orig><reg>nec</reg></choice>n<choice><orig>ō</orig><reg>on</reg></choice> hodie</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>In the year 1596 Tuesday the 7 of December at 55 past 10 pm: question whether William Buck has had the use of Bridget Al[len’s] body and loves her or not and whether they mean me any harm or not and whether A[vis] Al[len] has spoken with William today or not.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

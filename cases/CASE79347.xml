@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE79347</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-11-20">20 November 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL, uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="412">MS Ashmole 412, f. 206r</idno>
+<altIdentifier type="fn_number"><idno n="Napier054">Napier, vol. 54</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0206r" to="0206r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tgravius">
+<persName><roleName>Mr</roleName> <surname>Gravius</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="a1">
+<persName><roleName>Mr</roleName> <surname>Alardin</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<occupation>Goldsmith</occupation>
+</person>
+<person xml:id="a2">
+<persName><surname evidence="inferred" cert="medium">Alardin</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address3" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="hh">
+<persName><forename>Henrick</forename> <surname>Havinc Horst</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address3" key="databaseNormalizedIDKey"/>
+<occupation>Shipper</occupation>
+</person>
+<person xml:id="t">
+<persName><roleName>Mr</roleName> <surname>Toman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="brother" mutual="#a1 #a2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1635-06-05" n="Friday"/></p>
+<p><time when="08:50:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#srnapier"/>
+<cb:consultant ref="#srnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#srnapier" evidence="internal"/>
+<cb:subject ref="#srnapier" present="yes"/>
+<cb:object ref="#tgravius #a1"/>
+<cb:topic key="letters"><person sameAs="#tgravius"/><person sameAs="#srnapier"/></cb:topic>
+<cb:topic key="journeys"><person sameAs="#tgravius"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-21">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-11-20">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-01-19">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-01-24">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-04-11">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abr0427.jpg" url="abr0427.jpg" n="206r" width="5789" height="8214"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>I recei<choice><orig>u</orig><reg>v</reg></choice>ed letters fr<choice><orig>om</orig><reg>om</reg></choice> M<hi rend="superscript">r</hi> Gravius fr<choice><orig>om</orig><reg>om</reg></choice> <lb/><placeName key="PLACE2354">Bremen</placeName> <choice><orig>I</orig><reg>J</reg></choice>une. 5. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice>. h. 8. 50. a. m. <lb/>1635.</p>
+</div><figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/>On <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 22 Aprilis <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 6. <choice><orig>Mat</orig><reg>Matutine</reg><reg type="gloss">in the morning</reg></choice>. he sayled <lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> <placeName key="PLACE1318" resp="#mhawkins">Gra<choice><orig>u</orig><reg>v</reg></choice>esend</placeName> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> good wind &amp; fayre weather <lb/>and <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> about noone they mett with a ship <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> <lb/>made them strike sayles &amp; weiwing them &amp; <lb/>not finding them to be Dunkerkers they let hem <lb/>passe. that night the wynd turned &amp; was <lb/>quite Contrary to <choice><orig>y<hi rend="superscript">eir</hi></orig><reg>their</reg></choice> voyage &amp; the sea very <lb/>tempestuous <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> they were in great danger of <lb/>being cast away. 3 ships were missed <lb/>&amp; lost in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> storme <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> were not come in <lb/>2 weekes after &amp; so feared to be cast away in <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>storme.</p>
+<p><lb/>On sunday after <del type="strikethrough">we</del> beyond <choice><orig>y<hi rend="superscript">eir</hi></orig><reg>their</reg></choice> <choice><orig>ex<hi rend="overline">pectacon</hi></orig><reg>expectacion</reg></choice> <choice><orig>y<hi rend="superscript">ey</hi></orig><reg>they</reg></choice> <lb/>arri<choice><orig>u</orig><reg>v</reg></choice>ed at <placeName key="PLACE2354">Bremen</placeName></p>
+<p><lb/>Lyes yet at <placeName key="PLACE2354">Bremen</placeName> where he shall <del type="strikethrough">not</del> <lb/>continue <del type="strikethrough">here</del> he knowes not how Long</p>
+<p><lb/><placeName resp="#mhawkins">Newenburgh</placeName> being beseiged <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> is a <lb/>hinde<del type="strikethrough">a</del>rance to all passage</p>
+<p><lb/>Then only the great <add place="supralinear">&amp; strongest</add> Holds is taken by the <lb/>Imperialists. &amp; his freinds fled to <placeName resp="#mhawkins">Cassell</placeName></p>
+<p><lb/>Desirith me to send him some Books <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> ha<choice><orig>u</orig><reg>v</reg></choice>e written in the <lb/>defence of the <add place="supralinear">rites &amp; ceremonies of the</add> Church of England. &amp; also an English <lb/>Dictionary either Rider or another. And to deli<choice><orig>u</orig><reg>v</reg></choice>er them <lb/>to M<hi rend="superscript">r</hi> Alardin <rs type="address" xml:id="address1" next="#address2" resp="#mhawkins">in Coven garden</rs> a goldsmyth <rs type="address" xml:id="address2" prev="#address1" resp="#mhawkins">the <lb/>next doore to <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> golden fleece Taverne</rs>, who is as <lb/>he sayes a very honest man. &amp; he is to deli<choice><orig>u</orig><reg>v</reg></choice>er <cb xml:id="colB" n="b"/> to the shipper <rs type="address" xml:id="address3" resp="#mhawkins">fr<choice><orig>ō</orig><reg>om</reg></choice> Bremen</rs> who <lb/>purposed to be in <placeName key="PLACE2235">England</placeName> agayne <lb/>about midsomer <choice><sic>is</sic><corr>his</corr></choice> Name is Henricke <lb/>Havinc Horst. this m<hi rend="superscript">r</hi> Alardine hath a brother <rs type="address" sameAs="#address3" resp="#mhawkins">in Bremen</rs> who li<choice><orig>u</orig><reg>v</reg></choice>es there.</p>
+<p><lb/>M<hi rend="superscript">r</hi> Toman<choice><orig>ꝯ</orig><reg>us</reg></choice> at his being in <placeName key="PLACE1" resp="#mhawkins">London</placeName> did <lb/>propound a marriage to him <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> he <lb/>refused then &amp; does now desire me to <lb/>let h im know that he desires him to treate <lb/>noe more of that subject or to perswade <lb/>with the gentlewoman. so much he <lb/>told m<hi rend="superscript">r</hi> Toman then when he made the <lb/>first motion./.</p>
+<p><lb/>The <choice><orig>l<hi rend="overline">ers</hi></orig><reg>letters</reg></choice> were dated <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 28<hi rend="superscript">th</hi> of April.</p>
+</div>
+</body>
+</text>
+</TEI>

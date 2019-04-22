@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE9026</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="physical" resp="#jyoung">Two folios that rightfully belong in this volume have for some reason been bound into MS Ashmole 411: these include the preparatory geomantic figure for this entry.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">MS Ashmole 411 f. 54r/uR, MS Ashmole 219 f. 68r/bR</bibl>
@@ -25,7 +30,7 @@
 <collection>Ashmole Mss</collection>
 <idno n="411">MS Ashmole 411, f. 54r</idno>
 </altIdentifier>
-&Forman006;
+<altIdentifier type="fn_number"><idno n="Forman006">Forman, vol. 6</idno></altIdentifier>
 <altIdentifier type="partial">
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -33,7 +38,7 @@
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 68r</idno>
 </altIdentifier>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -46,6 +51,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -80,6 +86,7 @@
 <p><date when="1601-05-29" n="Wednesday"/></p>
 <p><time when="18:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -98,6 +105,7 @@
 <change when="2011-06-02">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-30">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -106,12 +114,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>To knowe what will com of <lb/>m<hi rend="superscript">r</hi> strensams co<choice><orig>&mover;</orig><reg>mm</reg></choice>ing for m<hi rend="superscript">rs</hi> Bro<choice><orig><hi rend="overline">w</hi></orig><reg>wn</reg></choice> <lb/>1601 29 of may &Friday; p m &slash; at 45 &past; 6. <lb/>wher he means any falshod or noe <lb/>or wher she will c<choice><orig>&oover;</orig><reg>om</reg></choice> or noe &amp; when <lb/><foreign xml:lang="la">et <choice><orig>qd</orig><reg>quid</reg></choice> inde <choice><sic>sequitr</sic><corr>sequitur</corr></choice></foreign>&slash;</p>
+<p><lb/>To knowe what will com of <lb/>m<hi rend="superscript">r</hi> strensams co<choice><orig>m̄</orig><reg>mm</reg></choice>ing for m<hi rend="superscript">rs</hi> Bro<choice><orig><hi rend="overline">w</hi></orig><reg>wn</reg></choice> <lb/>1601 29 of may <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> p m / at 45 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 6. <lb/>wher he means any falshod or noe <lb/>or wher she will c<choice><orig>ō</orig><reg>om</reg></choice> or noe &amp; when <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">et <choice><orig>qd</orig><reg>quid</reg></choice> inde <choice><sic>sequitr</sic><corr>sequitur</corr></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">and what will follow from it</seg><link type="is-translation-of" target="#foreign001 #translation001"/>/</p>
 </div>
 <milestone unit="book" n="MS 219 f. 68r Q4" xml:id="MS_219-f68r" facs="#acn0159.jpg"/>
-&geoChartPreliminary;
+<figure type="geo" subtype="geoChartPreliminary"/>
 <milestone unit="book" n="MS 411 f. 54r Q3" xml:id="MS_411-f54r" facs="#aex0131.jpg"/>
-&geoChart;
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE57927</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-02-10">10 February 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note resp="#rralley" type="editorial">Elias Ashmole added a bookmark to this manuscript (<ref type="note" target="NOTE8039">NOT8039</ref>) giving astrological details associated with the sigil mentioned in this entry.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -33,9 +39,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -64,12 +70,14 @@
 <p><date when="1624-03-18" n="Thursday"/></p>
 <p><time when="07:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#n"/>
 <cb:subject ref="#n" present="unclear"/>
 <cb:topic key="hips"><person sameAs="#n"/></cb:topic>
-<cb:treatment/><cb:treatment type="sigil"/>
+<cb:treatment/>
+<cb:treatment type="sigil"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -78,7 +86,7 @@
 <change when="2016-04-28">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-10-28">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,7 +94,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The Lady Napeir <rs type="address" xml:id="address1">of the <lb/>how</rs> <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">t</add></subst>ormented in her <lb/>hip march. 18 h 7. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1624</p>
+<p><lb/>The Lady Napeir <rs type="address" xml:id="address1" key="PLACE443" resp="#mhawkins">of the <lb/>how</rs> <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">t</add></subst>ormented in her <lb/>hip march. 18 h 7. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1624</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

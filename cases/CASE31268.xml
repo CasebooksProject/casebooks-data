@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE31268</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="editorial" resp="#jyoung">This nativiy is associated with the horary entry <ref type="case" target="CASE31269">CASE31269</ref>.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR, uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 165r</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -74,6 +83,7 @@
 <p><date when="1607-04-16" n="Thursday" evidence="external"/></p>
 <p><time when="15:30:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon1" evidence="inferred" present="unclear"/>
@@ -89,22 +99,35 @@
 <change when="2015-01-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-02-14">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-04-11">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="bqo0333.jpg" url="bqo0333.jpg" n="165r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Rogar Walthorne <lb/><rs type="address" xml:id="address1">londinensis</rs> natus <lb/>&IConsonant;an 23. &ThursdayLatin; h. 8. p m <lb/>160<subst><del type="over">5</del><add place="over">6</add></subst>: <foreign xml:lang="en">troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>swounding</foreign></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Rogar Walthorne <lb/><rs type="address" xml:id="address1" key="PLACE1" resp="#mhawkins">londinensis</rs> natus <lb/><choice><orig>I</orig><reg>J</reg></choice>an 23. <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 8. p m <lb/>160<subst><del type="over">5</del><add place="over">6</add></subst>: <foreign xml:lang="en">troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>swounding</foreign></p>
 </div>
-&astroChart;
-<div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Roger Walthorne of London born Thursday 23 January 1606 at 8pm troubled with swooning.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source">
 <p><lb/><foreign xml:lang="en">wheather he <lb/>have the <lb/>falling sicknes <lb/>&amp; what to be done <lb/>&amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> the nurse to be <lb/>charged</foreign></p>
-<cb xml:id="colA" n="a"/>
-<p><lb/><supplied reason="binding">re</supplied>ctificat<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>&crossedp;</orig><reg>per</reg></choice> animodar</p>
+<cb xml:id="colA-1" n="a"/>
+<p><lb/>rectificat<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> animodar</p>
 </div>
-&astroChartDeleted;
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<p>Whether he has the falling sickness and what [is] to be done; whether the nurse [is] to be charged.</p>
+<cb xml:id="colA-2" n="a"/>
+<p>Rectified by [the] Animodar [method].</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
+<figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>
 </TEI>

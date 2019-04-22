@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE59001</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-19">19 August 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -59,7 +64,7 @@
 <age value="42">42</age>
 </person>
 <person xml:id="ms">
-<persName><forename evidence="external">Mary</forename> <surname evidence="external">Spicer</surname></persName>
+<persName><forename evidence="external">Mary</forename> <surname evidence="external" type="maiden">Spicer</surname></persName>
 <sex value="2">F</sex>
 </person>
 <listRelation><relation name="mother" active="#as" passive="#ms"/></listRelation>
@@ -67,8 +72,9 @@
 </particDesc>
 <settingDesc>
 <p><date when="1624-08-30" n="Monday"/></p>
-<p><time notBefore="10:00:00" notAfter="11:59:00"/></p>
+<p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#as"/>
@@ -86,7 +92,7 @@
 <change when="2016-08-19">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-09-01">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-01-06">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-02">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,7 +100,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Agnys Spicer her mother <lb/>42 y Aug. 30 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 1<gap extent="3" unit="chars" reason="binding"/> <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1624</p>
+<p><lb/>Agnys Spicer her mother <lb/>42 y Aug. 30 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 10 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1624</p>
 </div>
 </body>
 </text>

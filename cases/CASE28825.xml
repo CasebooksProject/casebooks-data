@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE28825</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="216">MS Ashmole 216, f. 66v</idno>
-&Napier010;
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,6 +76,7 @@
 <p><date when="1605-04-25" n="Thursday"/></p>
 <p><time when="17:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -92,6 +97,7 @@
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,14 +106,14 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd1"/>
-<p><lb/>I went to <choice><orig><hi rend="overline">m<hi rend="superscript">res</hi></hi></orig><reg>Mrs</reg></choice> Smith <lb/>to see her. &amp; by chanc <lb/>I met <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Th. Dennet <lb/>who was coming to my house <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his daughters water <lb/>Apr 25 &Thursday; h. 4. 30 <lb/>p m 1605.</p><anchor xml:id="questionEnd1"/>
+<p><lb/>I went to <choice><orig><hi rend="overline">m<hi rend="superscript">res</hi></hi></orig><reg>Mrs</reg></choice> Smith <lb/>to see her. &amp; by chanc <lb/>I met <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Th. Dennet <lb/>who was coming to my house <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his daughters water <lb/>Apr 25 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 4. 30 <lb/>p m 1605.</p><anchor xml:id="questionEnd1"/>
 <milestone unit="urineInfo" spanTo="#urineInfoEnd"/>
 <p><lb/>a good wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> full <lb/>of motes</p><anchor xml:id="urineInfoEnd"/>
 <milestone unit="question" spanTo="#questionEnd2"/>
-<p><lb/><foreign xml:lang="la">metuit c<choice><orig>&oover;</orig><reg>on</reg></choice>s<choice><orig>&uover;</orig><reg>um</reg></choice>ption<choice><orig>&eover;</orig><reg>em</reg></choice>.</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">metuit c<choice><orig>ō</orig><reg>on</reg></choice>s<choice><orig>ū</orig><reg>um</reg></choice>ption<choice><orig>ē</orig><reg>em</reg></choice>.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">he fears a consumption</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 <p><lb/>h. 5. p m. 1605.</p><anchor xml:id="questionEnd2"/>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

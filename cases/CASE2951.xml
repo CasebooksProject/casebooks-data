@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2951</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 272r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -54,13 +58,13 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="es">
-<persName><forename>Elizabeth</forename> <surname type="married">Speke</surname> <surname evidence="inferred" type="maiden" cert="medium">Beke</surname></persName>
+<persName><forename>Elizabeth</forename> <surname type="married">Speke</surname> <surname evidence="inferred" type="maiden" cert="medium">Beck</surname></persName>
 <sex value="2">F</sex>
 <birth><date when="1574-06-06" n="Sunday" sameAs="#date1"/><time when="18:00:00" sameAs="#time1"/></birth>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="hb">
-<persName><forename>Henry</forename> <surname>Beke</surname></persName>
+<persName><forename>Henry</forename> <surname>Beck</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address2" key="databaseNormalizedIDKey"/>
 </person>
@@ -70,13 +74,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1597-12"/></p>
+<p><date notBefore="1597-12-13" notAfter="1597-12-14" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#es"/>
 <cb:subject ref="#es" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#es" resp="#mhawkins"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#es" resp="#mhawkins"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -88,6 +93,7 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,7 +102,7 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Elizabeth speak Daughter <lb/>of henry beke <rs type="address" xml:id="address2">of Trotton <lb/>in Sussex</rs>. nowe <rs type="address" xml:id="address1">of harlie <lb/>Court in barkshire</rs>. <rs type="date" xml:id="date1">1574 <lb/>Triniti &Sunday;. the v&jVowel; of &IConsonant;une</rs>. <lb/><rs type="time" xml:id="time1">at 6 &pmfl;</rs> as she supposeth</p>
+<p><lb/>Elizabeth speak Daughter <lb/>of henry beke <rs type="address" xml:id="address2">of Trotton <lb/>in Sussex</rs>. nowe <rs type="address" xml:id="address1" key="PLACE557" resp="#mhawkins">of harlie <lb/>Court in barkshire</rs>. <rs type="date" xml:id="date1">1574 <lb/>Triniti <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice>. the v<choice><orig>j</orig><reg>i</reg></choice> of <choice><orig>I</orig><reg>J</reg></choice>une</rs>. <lb/><rs type="time" xml:id="time1">at 6 <choice><orig>p m’</orig><reg>pm</reg></choice></rs> as she supposeth</p>
 </div>
 </body>
 </text>

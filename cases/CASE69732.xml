@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE69732</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-10-25">25 October 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -33,9 +38,12 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
-<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -53,13 +61,13 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="r">
+<person xml:id="srnapier">
 <persName><forename>Richard</forename></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="jm">
-<persName><roleName>J.</roleName> <surname>Mas</surname></persName>
-<sex value="0">U</sex>
+<persName><forename>J.</forename> <surname>Mas</surname></persName>
+<sex value="1" evidence="external">M</sex>
 </person>
 </listPerson>
 </particDesc>
@@ -67,12 +75,13 @@
 <p><date when="1629-11-19" n="Thursday" evidence="inferred"/></p>
 <p><time notBefore="10:25:00" notAfter="11:30:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
-<cb:subject ref="#r" present="no"/>
+<cb:subject ref="#srnapier" present="no"/>
 <cb:object ref="#jm"/>
-<cb:topic key="visits"><person sameAs="#r"/><person sameAs="#jm"/></cb:topic>
+<cb:topic key="visits"><person sameAs="#srnapier"/><person sameAs="#jm"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -84,7 +93,7 @@
 <change when="2016-11-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-08-22">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-09-01">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-08-17">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,7 +102,7 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/>Rich: went to <choice><orig>I</orig><reg>J</reg></choice> Mas. nov<choice><orig>ē</orig><reg>em</reg></choice>b 19 <lb/><choice><sic>h</sic><corr type="noText"/></choice> <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 10 25 <choice><orig>ant m</orig><reg>am</reg></choice> 1629</p>
-<p><lb/><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <unclear cert="low" reason="hand">ci</unclear> <choice><orig></orig><reg>pro</reg></choice>sp it<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> habebit <lb/>et c<choice><orig>ū</orig><reg>um</reg></choice> ei<choice><orig>j</orig><reg>i</reg></choice>s col<lb/>loquet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <unclear cert="low" reason="hand">ci</unclear> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>sp it<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> habebit <lb/>et c<choice><orig>ū</orig><reg>um</reg></choice> ei<choice><orig>j</orig><reg>i</reg></choice>s col<lb/>loquet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether he will have a prosperous journey and speak with them</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div><figure type="astro" subtype="astroChart"/>
 </body>
 </text>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13496</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 173r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,11 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -66,6 +73,7 @@
 <p><date when="1598-04-28" n="Friday"/></p>
 <p><time when="09:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#am" evidence="internal"/>
@@ -90,6 +98,7 @@
 <change when="2012-03-07">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,9 +106,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>An Malins 17 yeares old <foreign xml:lang="la">qu&aelig;rit <lb/>caus<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> morbi et remedi<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>. 1598 <lb/>Apr. 28. &FridayN; h. 9<hi rend="superscript">a</hi>. <choice><orig>ant <choice><sic>merd</sic><corr>merid</corr></choice></orig><reg>am</reg></choice> <lb/>nata fuit <rs type="date" xml:id="date1">1581. novemb. 11. <choice><orig>die <lb/><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice></rs></foreign> at break of day every moone <lb/>a breaking out in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> face. a peane in <lb/>her head &amp; hart every <lb/>where &slash;</p>
+<p><lb/>An Malins 17 yeares old <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <lb/>caus<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> morbi et remedi<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>. 1598 <lb/>Apr. 28. <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h. 9<hi rend="superscript">a</hi>. <choice><orig>ant <choice><sic>merd</sic><corr>merid</corr></choice></orig><reg>am</reg></choice> <lb/>nata fuit <rs type="date" xml:id="date1">1581. novemb. 11. <choice><orig>die <lb/><choice><sic>h</sic><corr>♄</corr></choice></orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice></rs></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks the cause and remedy of her disease Friday 28 April 1598: she was born on Saturday 11 November 1581</seg><link type="is-translation-of" target="#foreign001 #translation001"/> at break of day every moone <lb/>a breaking out in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> face. a peane in <lb/>her head &amp; hart every <lb/>where /</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

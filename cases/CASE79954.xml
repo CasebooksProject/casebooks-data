@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE79954</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-06-30">30 June 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS, bL, bR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="240">MS Ashmole 240, f. 17r</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers003">Various Papers, vol. 3</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0017r" to="0017r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#sforman">Simon Forman</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#exampleHorary"/>
+</textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1596-11-24"><name sameAs="#sforman">Simon Forman</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2"><name sameAs="#sforman">Simon Forman</name> reworked and enlarged the entry, providing additional context and detail, for use as an example.</change>
+</listChange>
+</creation>
+<particDesc>
+<listPerson>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wb">
+<persName><forename>William</forename> <surname>Buck</surname></persName>
+<sex value="1">M</sex>
+<occupation>Servant</occupation>
+</person>
+<person xml:id="rb">
+<persName><forename>Robert</forename> <surname>Barnes</surname></persName>
+<sex value="1">M</sex>
+<occupation>Servant</occupation>
+</person>
+<listRelation><relation name="servant" active="#wb #rb" passive="#sforman"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1596-11-24" n="Wednesday"/></p>
+<p><time when="08:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#sforman" evidence="internal"/>
+<cb:subject ref="#sforman" present="yes"/>
+<cb:object ref="#wb #rb"/>
+<cb:topic key="absentPerson"><person sameAs="#wb"/><person sameAs="#rb"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2017-02-13">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-06-29">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-06-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-07-04">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-03-19">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-05-15">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="biy0033.jpg" url="biy0033.jpg" n="17r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<head>To knowe what is becom <lb/>of one that is sent forth in A messag <lb/>or About Any busines in the Towne <lb/>or nere hand. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> Capietur necnon</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether [he/she] will be taken or not</seg><link type="is-translation-of" target="#foreign001 #translation001"/></head>
+<p><lb/>A Certain man being in som’ troble sent his <lb/>ser<choice><orig>u</orig><reg>v</reg></choice>ante out aboute busines Among his enimies &amp; <lb/>his ser<choice><orig>u</orig><reg>v</reg></choice>ante Retorned not by the tyme Apointed and <lb/>he was in doubte they had taken his ser<choice><orig>u</orig><reg>v</reg></choice>ant and im<lb/>prisoned him. for he sent him to his house pri<choice><orig>u</orig><reg>v</reg></choice>ily <lb/>And because he cam not. he sent Another the nexte <lb/>morninge After him to see. And he alsoe Retorned <lb/>not by his Apointed tym’ nor Longe After <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> <lb/>ga<choice><orig>u</orig><reg>v</reg></choice>e him greter doubte. wher <choice><orig>v</orig><reg>u</reg></choice>pon he made <lb/>this question. To knowe wher his man were <lb/>taken and Imprisoned or noe or wher he was <lb/>And what was alsoe becom of the other <choice><sic>messange<hi rend="superscript">r</hi></sic><corr>messanger</corr></choice> <lb/>that he sent after him/ 1596 the 24 no<choice><orig>u</orig><reg>v</reg></choice>emb <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <lb/><choice><orig>Ante m’</orig><reg>am</reg></choice> at 8. &amp; wher ther were Any troble toward<choice><orig>ꝭ</orig><reg>es</reg></choice> <lb/>him self or noe<note place="marginRight">wilm buck <lb/><choice><orig>Ro<hi rend="overline">brt</hi></orig><reg>Robart</reg></choice> barns/</note></p>
+</div>
+<cb xml:id="colA" n="a"/>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

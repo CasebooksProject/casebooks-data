@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE32376</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="editorial" resp="#jyoung">This interrogation is presumably associated with the horary entry <ref type="case" target="CASE32374">CASE32374</ref>.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 313v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -63,6 +69,7 @@
 <p><date when="1607-10-31" n="Saturday" evidence="external"/></p>
 <p><time when="11:25:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
@@ -79,6 +86,7 @@
 <change when="2015-10-07">Checked against new images by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-02-16">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,9 +94,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> WyllStanly octob <supplied reason="binding" cert="high">30</supplied> <lb/>&Friday; h. 11. 30 &antm; <gap reason="binding" extent="unclear"/> <lb/>moved his quest b<gap reason="binding" unit="chars" extent="4"/> <lb/>wished him to send <gap reason="binding" unit="words" extent="1" cert="medium"/> <lb/>his wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; then <gap reason="binding" unit="chars" extent="4"/> <lb/>would devise a cou<gap reason="binding" unit="chars" extent="4"/></p>
+<p><lb/>M<hi rend="superscript">r</hi> WyllStanly octob <subst><del type="strikethrough">29</del> <add place="supralinear">30</add></subst> <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 11. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1607 <lb/>moved his quest but I <lb/>wished him to send me <lb/>his wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; then I <lb/>would devise a course</p>
 </div>
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
 </body>
 </text>
 </TEI>

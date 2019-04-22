@@ -7,14 +7,19 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE33191</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">uR-1</bibl>
+<bibl type="positionOnPage">uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 87v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -52,23 +58,32 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="eb">
+<person xml:id="eb1">
 <persName><forename>Edward</forename> <surname>Boddington</surname></persName>
 <sex value="1">M</sex>
 <age value="50">50</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="eb2">
+<persName><forename>Elizabeth</forename> <surname type="married">Boddington</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="wife" active="#eb2" passive="#eb1"/></listRelation>   
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-04-01" n="Friday"/></p>
 <p><time when="09:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#eb"/>
-<cb:subject ref="#eb" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#eb"/></cb:topic>
+<cb:querent ref="#eb1 #eb2"/>
+<cb:subject ref="#eb1 #eb2" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#eb1"/></cb:topic>
+<cb:topic key="stuffed"><person sameAs="#eb2"/></cb:topic>
+<cb:topic key="aCold"><person sameAs="#eb2"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -81,6 +96,8 @@
 <change when="2016-03-23">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-09-18">Merged with CASE33192 by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,7 +105,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Edward Bodingt <lb/><rs type="address" xml:id="address1">of Bryfild</rs> <lb/>5<subst><del type="over">6</del><add place="over">0</add></subst> y <del type="strikethrough">marh</del> <lb/>Apr 1. &Friday; h. 9 <lb/>50 &antm; 1608</p>
+<p><lb/>Edward Bodington <lb/><rs type="address" xml:id="address1" key="PLACE638" resp="#mhawkins">of Bryfild</rs> <lb/>5<subst><del type="over">6</del><add place="over">0</add></subst> y <del type="strikethrough">marh</del> <lb/>Apr 1. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 9 <lb/>50 <choice><orig>ant m</orig><reg>am</reg></choice> 1608</p>
+
+<p><lb/>Elis Bodington <lb/><rs type="address" sameAs="#address1" key="PLACE638">of Brafild</rs> his <lb/>wife stuffed <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> cold.</p>
 </div>
 </body>
 </text>

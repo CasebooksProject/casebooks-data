@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE33868</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR, bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 174v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -72,10 +78,11 @@
 <p><date when="1608-08-02" n="Tuesday"/></p>
 <p><time when="06:40:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s" evidence="internal" present="unclear"/>
-<cb:subject ref="#sa" present="unclear"/>
+<cb:subject ref="#sa" present="no"/>
 <cb:topic key="pregnancy"><person sameAs="#sa"/></cb:topic>
 <cb:info type="urine"/>
 <cb:judgment/>
@@ -90,6 +97,10 @@
 <change when="2015-04-07">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-01-08">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-08">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-18">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,9 +108,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Susan Allyn <add place="supralinear">Nuem<choice><orig>&aover;</orig><reg>an</reg></choice></add> <choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> <lb/>Saunders mayd <rs type="address" xml:id="address1">of <lb/>l<supplied reason="binding">ath</supplied><lb/>berye</rs> 23 <choice><sic>23</sic><corr type="noText"/></choice> y <supplied reason="binding">Aug</supplied> <lb/>2. &Tuesday; h. 6 <subst><del type="over">3</del><add place="over">4</add></subst>0 &antm; <supplied reason="binding" cert="medium">1608</supplied> <add place="infralinear"><foreign xml:lang="la"><choice><orig>d<hi rend="overline">na</hi></orig><reg>domina</reg></choice> qu&aelig;rit an sit <supplied reason="binding">gravida</supplied></foreign></add></p>
+<p><lb/>Susan Allyn <add place="supralinear">Nuem<choice><orig>ā</orig><reg>an</reg></choice></add> <choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> <lb/>Saunders mayd <rs type="address" xml:id="address1" key="PLACE724" resp="#mhawkins">of <lb/>lath<lb/>berye</rs> 23 <choice><sic>23</sic><corr type="noText"/></choice> y Aug <lb/>2. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 6 <subst><del type="over">3</del><add place="over">4</add></subst>0 <choice><orig>ant m</orig><reg>am</reg></choice> 1608 <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>d<hi rend="overline">na</hi></orig><reg>domina</reg></choice> quærit an sit gravida</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">her mistress asks whether she is pregnant</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>
 </body>
 </text>

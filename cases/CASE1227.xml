@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE1227</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 18v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -80,6 +90,7 @@
 <p><date when="1597-02-13" n="Sunday"/></p>
 <p><time when="08:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -97,7 +108,9 @@
 <change when="2010-08-25">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2010-09-27">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -106,15 +119,15 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/><foreign xml:lang="la">Anno 1597</foreign> the 13 feb <lb/>&Sunday; <choice><orig>An&flourish; m&flourish;</orig><reg type="normalisation">am</reg></choice> at 8. questo <lb/>what mann<choice><orig>&loopedr;</orig><reg type="normalisation">er</reg></choice> of man he shall <lb/>be <foreign xml:lang="la"><choice><orig>q<hi rend="overline">d</hi></orig><reg type="normalisation">quod</reg></choice> erit <del type="cancelled">episcop</del></foreign> <placeName>chestre</placeName></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Anno 1597</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">In the year 1597</seg><link type="is-translation-of" target="#foreign001 #translation001"/> the 13 feb <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <choice><orig>An’ m’</orig><reg type="normalisation">am</reg></choice> at 8. questo <lb/>what mann<choice><orig><hi rend="superscript">r</hi></orig><reg type="normalisation">er</reg></choice> of man he shall <lb/>be <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>q<hi rend="overline">d</hi></orig><reg type="normalisation">quod</reg></choice> erit <del type="cancelled">episcop</del></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">who will be Bishop of</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <placeName key="PLACE937" resp="#mhawkins">chestre</placeName></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>gabriell goodman d<hi rend="superscript">r</hi> in <lb/>divinitie deane of <lb/><placeName>westmynster</placeName>.</p>
-<p><lb/><space dim="horizontal" unit="chars" extent="5"/>vaughan. Byshop <lb/>of <placeName>Bangor</placeName>. d<hi rend="superscript">r</hi> of <lb/>Di&uConsonant;initie.&slash;</p>
-<p><lb/>Roger Dod vic of <lb/><placeName>Eppinge</placeName>. D<hi rend="superscript">r</hi> in divinitie</p>
+<p><lb/>gabriell goodman d<hi rend="superscript">r</hi> in <lb/>divinitie deane of <lb/><placeName key="PLACE2201" resp="#mhawkins">westmynster</placeName>.</p>
+<p><lb/><space dim="horizontal" unit="chars" extent="5"/>vaughan. Byshop <lb/>of <placeName key="PLACE2220" resp="#mhawkins">Bangor</placeName>. d<hi rend="superscript">r</hi> of <lb/>Di<choice><orig>u</orig><reg>v</reg></choice>initie./</p>
+<p><lb/>Roger Dod vic of <lb/><placeName key="PLACE997" resp="#mhawkins">Eppinge</placeName>. D<hi rend="superscript">r</hi> in divinitie</p>
 
-<p><lb/>gerradde <choice><orig>&crossedp;</orig><reg>par</reg></choice>son <lb/>of <placeName>Stopforde <subst><del type="over">&slash;</del><add place="over">in</add></subst> <lb/>Cheshere</placeName>&slash;</p> </div>
+<p><lb/>gerradde <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>son <lb/>of <placeName key="PLACE2335">Stopforde <subst><del type="over">/</del><add place="over">in</add></subst> <lb/>Cheshere</placeName>/</p> </div>
 </body>
 </text>
 </TEI>

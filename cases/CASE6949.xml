@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6949</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 51r</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -60,7 +70,7 @@
 <person xml:id="wc">
 <persName><forename evidence="external">William</forename> <surname>Cutler</surname></persName>
 <sex value="1">M</sex>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="tn">
 <persName><forename>Thomas</forename> <surname>Nailor</surname></persName>
@@ -74,6 +84,7 @@
 <p><date when="1600-03-16" n="Sunday"/></p>
 <p><time when="09:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#rg"/>
@@ -93,6 +104,7 @@
  <change when="2011-03-14">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,9 +112,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/>Rafe Grene best to let <lb/>his man Cutler goe to <placeName>New castle</placeName> <lb/>or noe. And wher he shall <choice><orig>&Rx;</orig><reg>receive</reg></choice> any <lb/>money of Thomas Nailor <rs type="address" xml:id="address1">of newe castle</rs> <lb/>Toward the Discharg of that <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> Raf <lb/>standeth bound for nailor&slash; Accord<lb/>ing to his <choice><orig>&crossedp;</orig><reg>pro</reg></choice>mise or no&slash; 1600 <lb/>the 16 of march &Sunday; &anflmfl; at <lb/>45 &past; 9. and wher Rafe shalbe <lb/>Imprisoned for Debte or noe <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in 3 monethes &slash;</p>
+ <p><lb/>Rafe Grene best to let <lb/>his man Cutler goe to <placeName key="PLACE2252" resp="#mhawkins">New castle</placeName> <lb/>or noe. And wher he shall <choice><orig>℞</orig><reg>receive</reg></choice> any <lb/>money of Thomas Nailor <rs type="address" xml:id="address1" key="PLACE2252" resp="#mhawkins">of newe castle</rs> <lb/>Toward the Discharg of that <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> Raf <lb/>standeth bound for nailor/ Accord<lb/>ing to his <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>mise or no/ 1600 <lb/>the 16 of march <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <choice><orig>an’ m’</orig><reg>am</reg></choice> at <lb/>45 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 9. and wher Rafe shalbe <lb/>Imprisoned for Debte or noe <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in 3 monethes /</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

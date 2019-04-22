@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE67311</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-26">26 August 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE67310">CASE67310</ref>.</note>
 </notesStmt>
@@ -37,10 +42,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
-
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -79,6 +81,7 @@
 <p><date when="1628-11-04" n="Tuesday" evidence="external"/></p>
 <p><time when="16:00:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#k" evidence="external" present="unclear"/>
@@ -94,7 +97,8 @@
 <change when="2016-10-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-03-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-03-20">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -102,7 +106,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Anth King<del type="cancelled">s</del> <foreign xml:lang="la">natus</foreign> Apr <lb/>12. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice>. 16. 30 p m 1607 <add place="infralinear"><rs type="address" xml:id="address1">of Ashbee in Leycestersheere</rs></add> </p>
+<p><lb/>M<hi rend="superscript">r</hi> Anth King<del type="cancelled">s</del> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> Apr <lb/>12. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice>. 16. 30 p m 1607 <add place="infralinear"><rs type="address" xml:id="address1" key="PLACE1352" resp="#mhawkins">of Ashbee in Leycestersheere</rs></add> </p>
 </div><figure type="astro" subtype="astroChart"/>
 </body>
 </text>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26163</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 114v</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0114v" to="0114v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Mr</roleName> <surname>Baskerville</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rn">
+<persName><forename evidence="external">Robert</forename> <surname evidence="inferred">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tb">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Benn<gap reason="binding" extent="unclear"/></surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="brother" mutual="#rnapier #rn"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
+<settingDesc>
+<p><date notBefore-custom="1605-10-19T15:15:00" notAfter="1634-04-01" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:object ref="#b #rn #tb"/>
+<cb:topic key="friendship"><person sameAs="#b"/><person sameAs="#rn"/><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#tb"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-05">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-28">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-16">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-06">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0262.jpg" url="acr0262.jpg" n="114v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Baskavyll intreatethe <lb/>my fryndsh &amp; my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s <del type="strikethrough">cōp</del> further <lb/>Octob. 19. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> hor 3. 15 p m 1605. <add place="infralinear">to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Th. B<choice><orig>ē</orig><reg>en</reg></choice>n<gap extent="unclear" reason="binding"/></add></p>
+</div>
+<figure type="astro" subtype="astroChartPartial"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

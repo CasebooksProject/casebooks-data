@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13384</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 88r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,11 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,6 +71,7 @@
 <p><date when="1597-10-21" n="Friday"/></p>
 <p><time when="13:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tr"/>
@@ -82,6 +90,7 @@
 <change when="2012-02-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,9 +98,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas Rudgwey. 48 yeres old a <lb/>creeple <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> goeth <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a croutche <lb/>1597. Oct. 21. &FridayN; h. 1. 20. mi. <lb/><foreign xml:lang="la">qu&aelig;rit morbi caus<choice><orig>&aover;</orig><reg>am</reg></choice> h&aelig;c fig. tentationis <lb/>causa et delusoria</foreign> my &iConsonant;udg <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I gave him <lb/>was true for he had taken a fall fr<choice><orig>&oover;</orig><reg>om</reg></choice> a horse <lb/>&amp; had b<add place="supralinear">r</add>used his bowels</p>
+<p><lb/>Thomas Rudgwey. 48 yeres old a <lb/>creeple <choice><orig>w<hi rend="superscript">c</hi></orig><reg>which</reg></choice> goeth <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a croutche <lb/>1597. Oct. 21. <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h. 1. 20. mi. <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit morbi caus<choice><orig>ā</orig><reg>am</reg></choice> hæc fig. tentationis <lb/>causa et delusoria</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">he asks the cause of his disease; this chart [shows it to come of delusory temptations?]</seg><link type="is-translation-of" target="#foreign001 #translation001"/> my <choice><orig>i</orig><reg>j</reg></choice>udg <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I gave him <lb/>was true for he had taken a fall fr<choice><orig>ō</orig><reg>om</reg></choice> a horse <lb/>&amp; had b<add place="supralinear">r</add>used his bowels</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

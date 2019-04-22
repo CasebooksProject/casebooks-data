@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE1474</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 58r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -69,6 +79,7 @@
 <p><date when="1597-04-06" n="Wednesday"/></p>
 <p><time when="09:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#aa"/>
@@ -87,6 +98,7 @@
 <change when="2010-09-30">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,9 +107,9 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/><foreign xml:lang="el">&Alpha; &Alpha;&lambda;</foreign> 45 &past; 9 <choice><orig>An <lb/>m&flourish;</orig><reg>am</reg></choice> <del type="cancelled">at</del> the 6 of Aprill <lb/><foreign xml:lang="la">&vVowel;tr<choice><orig>m&flourish;</orig><reg>um</reg></choice> quis intendit <choice><orig>v<hi rend="superscript">r</hi>s&uscon;</orig><reg>versus</reg></choice> <lb/><choice><orig><hi rend="overline">illa</hi></orig><reg>illam</reg></choice> mal<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>&crossedp;</orig><reg>per</reg></choice> voluntat <lb/>Kather&flourish; aut <choice><orig>&crossedp;</orig><reg>per</reg></choice> se <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice>&slash;</foreign> <lb/>wher Kate doth entend Any mischef <lb/>Against her or <placeName>her house</placeName>. or Any for for her in <lb/><placeName>her hous</placeName></p>
+<p><lb/><foreign xml:lang="el">Α Αλ</foreign> 45 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 9 <choice><orig>An <lb/>m’</orig><reg>am</reg></choice> <del type="cancelled">at</del> the 6 of Aprill <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>m’</orig><reg>um</reg></choice> quis intendit <choice><orig>v<hi rend="superscript">r</hi>sꝯ</orig><reg>versus</reg></choice> <lb/><choice><orig><hi rend="overline">illa</hi></orig><reg>illam</reg></choice> mal<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> voluntat <lb/>Kather’ aut <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> se <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice>/</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether someone intends ill against her [by Catherine’s will or her/his own?] or not</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>wher Kate doth entend Any mischef <lb/>Against her or <placeName>her house</placeName>. or Any for her in <lb/><placeName>her hous</placeName></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

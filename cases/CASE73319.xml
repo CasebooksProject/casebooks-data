@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE73319</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-07-12">12 July 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="212">MS Ashmole 212, p. 279</idno>
+<altIdentifier type="fn_number"><idno n="Napier050">Napier, vol. 50</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0279" to="0279"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#unknown-f">Unidentified Hand (1624–1634)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="unknown-f">
+<persName><roleName>Unidentified (1624–1634)</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tt">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Tyrringham</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wg">
+<persName><forename>William</forename> <surname>Gadstone</surname></persName>
+<sex value="1">M</sex>    
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1631-11-09" n="Wednesday"/></p>
+<p><time when="10:30:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#unknown-f"/>
+<cb:consultant ref="#unknown-f"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#tt" evidence="internal" present="no"/>
+<cb:subject ref="#wg" present="no"/>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#wg"/></cb:topic>
+<cb:item type="letter"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-25">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-07-12">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-08-01">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-08-30">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmj0322.jpg" url="cmj0322.jpg" n="279"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice>. Tho: Tyrringham sent his <lb/>Letter for <choice><orig><hi rend="overline">Will</hi></orig><reg>William</reg></choice> Gadsden. Novemb <supplied reason="binding" cert="high">9 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice></supplied> <lb/>h. 10. 30 a m. 1631</p>
+</div>
+</body>
+</text>
+</TEI>

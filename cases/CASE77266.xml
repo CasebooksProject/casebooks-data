@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE77266</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">The second version of this entry (on p. 129) appears to be a correction of the first (on p. 128) in the light of Napier’s realisation that he had cast the chart for the afternoon instead of the morning.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">p. 128/bR, p. 129/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, pp. 128–129</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0128" to="0129"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="pn">
+<persName><roleName>Lady</roleName> <forename>Penelope</forename> <surname>Napier</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-05-14" n="Tuesday"/></p>
+<p><time when="05:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#pn" evidence="internal"/>
+<cb:subject ref="#pn" present="no"/>
+<cb:item type="urine"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#pn"/></cb:topic>
+<cb:topic key="ague"><person sameAs="#pn"/></cb:topic>
+<cb:topic key="appetite"><person sameAs="#pn"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-08">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-21">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-12-19">Revised and merged into one file by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-12-19">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0153.jpg" url="clq0153.jpg" n="128"/>
+<graphic xml:id="clq0154.jpg" url="clq0154.jpg" n="129"/>
+</facsimile>
+<text xml:lang="en">
+<body>
+<div>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/><add place="interlinear">the lady Penelope sent her water</add> The ladye <lb/>Penelope sent <lb/>her water. may <lb/>14 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 5. p m <lb/>1633</p>
+<anchor xml:id="questionEnd1"/>
+<milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd1"/>
+<p><lb/>was mended <lb/>god be thanked</p>
+<anchor xml:id="subsequentEventInfoEnd1"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<pb xml:id="p129" n="129"/>
+<milestone unit="question" spanTo="#questionEnd2"/>
+<p><lb/>The Lady Penelope Naper <lb/><rs type="address" xml:id="address1" key="PLACE442" resp="#mhawkins">at luton</rs>. sick of an Ague <lb/>sinc satterday. &amp; hath eaten <lb/>litle may 14. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 5. 15 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1633.</p>
+<anchor xml:id="questionEnd2"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd2"/>
+<p><lb/>she mended <lb/>p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice></p>
+<anchor xml:id="subsequentEventInfoEnd2"/>
+</div>
+</body>
+</text>
+</TEI>

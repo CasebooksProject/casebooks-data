@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11778</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 47v</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -65,6 +69,7 @@
 <p><date when="1598-11-06" n="Monday"/></p>
 <p><time when="12:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tw" evidence="internal"/>
@@ -74,6 +79,7 @@
 <cb:topic key="sides"><person sameAs="#tw"/></cb:topic>
 <cb:topic key="skin"><person sameAs="#tw"/></cb:topic>
 <cb:topic key="arms"><person sameAs="#tw"/></cb:topic>
+<cb:topic key="torso"><person sameAs="#tw"/></cb:topic>
 <cb:topic key="head"><person sameAs="#tw"/></cb:topic>
 <cb:topic key="dizziness"><person sameAs="#tw"/></cb:topic>
 <cb:topic key="eyesight"><person sameAs="#tw"/></cb:topic>
@@ -91,6 +97,8 @@
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-08">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-06">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +107,9 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd1"/>
-<p><lb/>Thomas Whooton <rs type="address" xml:id="address1">of haversham</rs> <lb/>about 22. &vVowel;nmaried. sick this <lb/>yere. <foreign xml:lang="la">qu&aelig;rit remedi<choice><orig>&uover;</orig><reg>um</reg></choice></foreign>. novemb <lb/>6. &MondayN;. h. 12. 30. he hath <lb/>had a swelling in his right side <lb/>broken out in his wrest&pluralLoop; &amp; body<anchor xml:id="questionEnd1"/> <lb/><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>filthy water.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/>heavy &vVowel;nc<choice><orig>&oover;</orig><reg>om</reg></choice>fortable <lb/>his hed gyddy &amp; light his sight <lb/>bad</p><anchor xml:id="questionEnd2"/>
+<p><lb/>Thomas Whooton <rs type="address" xml:id="address1" key="PLACE701" resp="#mhawkins">of haversham</rs> <lb/>about 22. <choice><orig>v</orig><reg>u</reg></choice>nmaried. sick this <lb/>yere. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit remedi<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks a remedy</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. novemb <lb/>6. <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. h. 12. 30. he hath <lb/>had a swelling in his right side <lb/>broken out in his wrest<choice><orig>ꝭ</orig><reg>es</reg></choice> &amp; body<anchor xml:id="questionEnd1"/> <lb/><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>filthy water.<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/>heavy <choice><orig>v</orig><reg>u</reg></choice>nc<choice><orig>ō</orig><reg>om</reg></choice>fortable <lb/>his hed gyddy &amp; light his sight <lb/>bad</p><anchor xml:id="questionEnd2"/>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

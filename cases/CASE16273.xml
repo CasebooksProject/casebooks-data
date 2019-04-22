@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE16273</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="207">MS Ashmole 207, f. 208r</idno>
-&Napier007;
+<altIdentifier type="fn_number"><idno n="Napier007">Napier, vol. 7</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#gjames">Gerence James</handNote>
@@ -57,7 +61,7 @@
 <sex value="1">M</sex>
 <age value="16">16</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="b">
 <persName><roleName>Goodman</roleName> <surname>Blea</surname></persName>
@@ -71,6 +75,7 @@
 <p><date when="1604-08-01" n="Wednesday"/></p>
 <p><time when="17:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#gjames"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
@@ -88,6 +93,7 @@
 <change when="2013-03-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,7 +101,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Tho. Harrys. Goodman Bleas man <lb/><rs type="address" xml:id="address1">of this towne</rs> 16 y. Aug 1. &Wednesday; ho <lb/>5 15. p. m. 1604 Came for some<lb/>what for the ache and swelling of <lb/>his legge <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> he hurt <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a fall this <lb/>day sevenight. His knee swelled <lb/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> afterward brake</p>
+<p><lb/>Tho. Harrys. Goodman Bleas man <lb/><rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">of this towne</rs> 16 y. Aug 1. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> ho <lb/>5 15. p. m. 1604 Came for some<lb/>what for the ache and swelling of <lb/>his legge <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> he hurt <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a fall this <lb/>day sevenight. His knee swelled <lb/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> afterward brake</p>
 </div>
 </body>
 </text>

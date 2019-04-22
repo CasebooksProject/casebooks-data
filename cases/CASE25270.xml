@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE25270</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-03">03 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="239">MS Ashmole 239, f. 106r</idno>
-&Napier018;
+<altIdentifier type="fn_number"><idno n="Napier018">Napier, vol. 18</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,6 +72,7 @@
 <p><date when="1610-07-26" n="Thursday"/></p>
 <p><time when="07:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#n"/>
@@ -78,19 +88,28 @@
 <change when="2015-07-06">Checked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-09">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="afp0231.jpg" url="afp0231.jpg" n="106r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><supplied reason="binding">Q</supplied>u&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an <choice><orig>&crossedp;</orig><reg>pro</reg></choice>sper<choice><orig>&uover;</orig><reg>um</reg></choice> futur<choice><orig>&uover;</orig><reg>um</reg></choice> sit <lb/>&IConsonant;uli&jVowel; 26. &ThursdayLatin; h. 7. &antm; <lb/>1610 <add place="inline"><foreign xml:lang="en">M<hi rend="superscript">r</hi> n<unclear cert="low" reason="hand">o</unclear></foreign></add></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><supplied reason="binding">Q</supplied>uærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> an <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>sper<choice><orig>ū</orig><reg>um</reg></choice> futur<choice><orig>ū</orig><reg>um</reg></choice> sit <lb/><choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> 26. <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 7. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1610 <add place="inline"><foreign xml:lang="en">M<hi rend="superscript">r</hi> n<unclear cert="low" reason="hand">o</unclear></foreign></add></p>
 </div>
-&astroChart;
-<div>
-<p><lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>l<hi rend="overline">r&aelig;</hi></orig><reg>litter&aelig;</reg></choice> p<choice><orig>&loopedr;</orig><reg>re</reg></choice>valebunt.</p>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>It is asked whether the future will be prosperous Thursday 26 July 1610 1610 at 7 am. Mr N.</p>
 </div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source">
+<p><lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig>l<hi rend="overline">ræ</hi></orig><reg>litteræ</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>valebunt.</p>
+</div>
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<p>Whether the letter will serve its purpose.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
 </body>
 </text>
 </TEI>

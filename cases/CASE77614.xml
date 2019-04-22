@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE77614</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 237</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0237" to="0237"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c1">
+<persName><roleName>Mr</roleName> <surname>Charlet</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c2">
+<persName><surname evidence="inferred">Charlet</surname> <roleName>Master of Arts</roleName></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="w">
+<persName><roleName>Mr</roleName> <surname>White</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<org xml:id="pco">
+<orgName>Pembroke College, Oxford</orgName>
+</org>
+<org xml:id="aso">
+<orgName>All Souls College, Oxford</orgName>
+</org>
+<listRelation>
+<relation name="son" active="#c2" passive="#c1"/>
+<relation name="collegeFellow" active="#c2 #w" passive="#pco"/>
+<relation name="collegeFellow" active="#c2" passive="#aso" notAfter="1633-06-16"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-06-17" n="Monday"/></p>
+<p><time when="07:20:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#c2" evidence="internal" present="yes"/>
+<cb:subject ref="#w" present="no"/>
+<cb:topic key="eyesight"><person sameAs="#w"/></cb:topic>
+<cb:info type="event" subtype="previousConsultation"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-20">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-01-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0260.jpg" url="clq0260.jpg" n="237" width="5068" height="7218"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Charlets sonne <rs type="address" xml:id="address1" key="PLACE1932" resp="#mhawkins">of Pembroke <lb/>college in Oxford</rs> <choice><orig>M<hi rend="superscript">r</hi></orig><reg>Master</reg></choice> of Arts <lb/>sometyms c<choice><orig>ō</orig><reg>om</reg></choice>moner of <placeName key="PLACE1831" resp="#mhawkins">Alsoule <lb/>college</placeName> came to me in the <lb/>behalfe of M<hi rend="superscript">r</hi> White fellow <lb/>of <placeName key="PLACE1932" resp="#mhawkins">Pembroke college</placeName> who <lb/>hath a purpose to come to me <lb/>for his eys <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> be very dym <lb/>that he c<choice><orig>ā</orig><reg>an</reg></choice> scarce see <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> them <lb/><del type="strikethrough">but</del> hath bene so a yere &amp; <lb/>formerly hath had my consayle <lb/><choice><orig>I</orig><reg>J</reg></choice>une 17 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 7. 20. <choice><orig>ant m</orig><reg>am</reg></choice> 1633</p>
+</div>
+</body>
+</text>
+</TEI>

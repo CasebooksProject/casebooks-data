@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE47259</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-08-11">11 August 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This entry appears to be an interrogation associated with the horary entry <ref type="case" target="CASE47260">CASE47260</ref>.</note>
 </notesStmt>
@@ -25,7 +30,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="201">MS Ashmole 201, f. 216v</idno>
-&Napier028;
+<altIdentifier type="fn_number"><idno n="Napier028">Napier, vol. 28</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -36,6 +41,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -72,6 +78,7 @@
 <p><date when="1618-08-07" n="Friday" evidence="external"/></p>
 <p><time notBefore="15:00:00" notAfter="15:59:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" present="yes" evidence="conjecture"/>
@@ -87,6 +94,8 @@
 <change when="2016-03-17">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-17">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>francis low<add place="inline">n</add>es <rs type="address" xml:id="address1">of <lb/>Winsloe</rs> 22 y Aug 7 <lb/>&Friday; h. 6 &antm; 1618 <lb/><foreign xml:lang="la">qu&aelig;rit a <choice><orig>m<hi rend="superscript">r</hi>&oover;</orig><reg>Magistro</reg></choice> wall<supplied reason="binding" cert="high">ys</supplied> <lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> sit gravida</foreign></p>
+<p><lb/>francis low<add place="inline">n</add>es <rs type="address" xml:id="address1" key="PLACE868" resp="#mhawkins">of <lb/>Winsloe</rs> 22 y Aug 7 <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 6 <choice><orig>ant m</orig><reg>am</reg></choice> 1618 <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit a <choice><orig>m<hi rend="superscript">r</hi>ō</orig><reg>Magistro</reg></choice> wall<supplied reason="binding" cert="high">ys</supplied> <lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit gravida</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks of Mr Wallis whether she is pregnant</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

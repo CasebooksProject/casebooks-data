@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25870</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-23">23 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="174">MS Ashmole 174, p. 210</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0210" to="0210"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1600-08-21"><name sameAs="#sforman">Simon Forman</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2"><name sameAs="#rnapier">Richard Napier</name> copied out the entry, altering two words at the end of the judgment without affecting its sense.</change>
+</listChange>
+</creation>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fb1">
+<persName><forename>Francis</forename> <surname>Barnes</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="fb2">
+<persName><forename>Frances</forename> <surname>Bood</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-08-21" n="Thursday"/></p>
+<p><time when="08:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
+<cb:consultant ref="#sforman"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#fb1"/>
+<cb:subject ref="#fb1" present="unclear"/>
+<cb:object ref="#fb2"/>
+<cb:topic key="maritalProspects"><person sameAs="#fb1"/><person sameAs="#fb2"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-07-24">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-29">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-01">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-11-22">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acg0230.jpg" url="acg0230.jpg" n="210"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>francis Barns <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> c<choice><orig>ō</orig><reg>on</reg></choice>trahet matr c<choice><orig>ū</orig><reg>um</reg></choice> <lb/>Fr. Bood vidua 1600 <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> Aug. 21. <choice><orig>a<supplied reason="binding" cert="low">nte</supplied> <lb/>m</orig><reg>am</reg></choice>. at 15 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 8.</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Francis Barnes: whether he will contract a marriage with the widow Frances Bood, Thursday 21 August at 8.15am.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

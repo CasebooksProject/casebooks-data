@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE21244</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-11-23">23 November 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="415">MS Ashmole 415, f. 105r</idno>
-&Napier009;
+<altIdentifier type="fn_number"><idno n="Napier009">Napier, vol. 9</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -75,6 +81,7 @@
 <p><date when="1604-07-08" n="Sunday"/></p>
 <p><time when="17:40:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#c #g2"/>
@@ -92,6 +99,7 @@
 <change when="2013-07-06">Merged with CASE21245 by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,12 +107,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Crawly <rs type="address" xml:id="address1">of newporte</rs> <lb/><subst><del type="over">50</del><add place="over">47</add></subst> y &IConsonant;uli&jVowel; 8 &Sunday; hor 5. 39. <lb/>p m 1604. <add place="inline">for a great tumour</add></p>
-<p><lb/>&amp; Gravestockes Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of 19 y <rs type="address" sameAs="#address1">of <lb/>newporte</rs></p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Crawly <rs type="address" xml:id="address1" key="PLACE766" resp="#mhawkins">of newporte</rs> <lb/><subst><del type="over">50</del><add place="over">47</add></subst> y <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> 8 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> hor 5. 39. <lb/>p m 1604. <add place="inline">for a great tumour</add></p>
+<p><lb/>&amp; Gravestockes Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of 19 y <rs type="address" sameAs="#address1" key="PLACE766" resp="#mhawkins">of <lb/>newporte</rs></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>Gravestockes Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <rs type="address" sameAs="#address1">of newport</rs> <lb/>19 y. &IConsonant;uly 8 h. 5. 40 p m 1604.</p>
+<p><lb/>Gravestockes Daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <rs type="address" sameAs="#address1" key="PLACE766" resp="#mhawkins">of newport</rs> <lb/>19 y. <choice><orig>I</orig><reg>J</reg></choice>uly 8 h. 5. 40 p m 1604.</p>
 </div>
 </body>
 </text>

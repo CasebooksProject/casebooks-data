@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13723</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="197">MS Ashmole 197, f. 29v</idno>
-&Napier008;
+<altIdentifier type="fn_number"><idno n="Napier008">Napier, vol. 8</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -56,11 +60,11 @@
 <persName><roleName>Mr</roleName> <forename>Nicholas</forename> <surname>Langford</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<occupation notAfter="1603-05-17">Proctor</occupation>
+<occupation notAfter="1603-05-17">University proctor</occupation>
 </person>
 <person xml:id="anon">
 <sex value="1">M</sex>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <org xml:id="uox">
 <orgName>University of Oxford</orgName>
@@ -75,6 +79,7 @@
 <p><date when="1603-05-18" n="Wednesday"/></p>
 <p><time when="08:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#nl" evidence="internal"/>
@@ -92,6 +97,7 @@
 <change when="2012-10-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +105,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>I opened a letter sent me <lb/>by <subst><del type="over">N</del><add place="over">M</add></subst><hi rend="superscript">r</hi> Nicholas lanckford <lb/><rs type="address" xml:id="address1">of Christchurch colledge in <lb/>Oxford</rs> onc proct<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>&vVowel;ni&uConsonant;<choice><orig>&loopedr;</orig><reg>er</reg></choice>sity. &amp; his man at <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>same tyme came &vVowel;nto me to <lb/>know when his <choice><orig>M<hi rend="superscript">r</hi></orig><reg>Master</reg></choice> should <lb/>fynd me at home to know <lb/>his sicknes &amp; what ayled him <lb/>mai&jVowel; 18. &Wednesday; hor. <del type="strikethrough">9.</del> 8. 45. &antm; <lb/>1603.</p>
+<p><lb/>I opened a letter sent me <lb/>by <subst><del type="over">N</del><add place="over">M</add></subst><hi rend="superscript">r</hi> Nicholas lanckford <lb/><rs type="address" xml:id="address1" key="PLACE1858" resp="#mhawkins">of Christchurch colledge in <lb/>Oxford</rs> onc proct<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/><choice><orig>v</orig><reg>u</reg></choice>ni<choice><orig>u</orig><reg>v</reg></choice><choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>sity. &amp; his man at <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>same tyme came <choice><orig>v</orig><reg>u</reg></choice>nto me to <lb/>know when his <choice><orig>M<hi rend="superscript">r</hi></orig><reg>Master</reg></choice> should <lb/>fynd me at home to know <lb/>his sicknes &amp; what ayled him <lb/>mai<choice><orig>j</orig><reg>i</reg></choice> 18. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> hor. <del type="strikethrough">9.</del> 8. 45. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1603.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

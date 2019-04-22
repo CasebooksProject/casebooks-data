@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6765</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 28r</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,18 +76,17 @@
 <p><date when="1600-02-19" n="Tuesday"/></p>
 <p><time when="18:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#eh"/>
 <cb:subject ref="#eh" present="unclear"/>
 <cb:object ref="#rh"/>
 <cb:topic key="dieFirst"><person sameAs="#eh"/><person sameAs="#rh"/></cb:topic>
-<cb:topic key="fortune"><person sameAs="#eh"/></cb:topic>
+<cb:topic key="generalFuture"><person sameAs="#eh"/></cb:topic>
 <cb:topic key="residence"><person sameAs="#eh"/><person sameAs="#rh"/></cb:topic>
 <cb:judgment/>
-
 </cb:consultation>
-
 </settingDesc>
 </profileDesc>
 <revisionDesc>
@@ -92,6 +97,7 @@
  <change when="2011-07-15">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-30">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +105,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/><hi rend="redInk">Eliz Quinie</hi> alias hort<choice><orig>&oover;</orig><reg>on</reg></choice> <lb/>of 26 years 1600 <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>19 of febr&flourish; &Tuesday; &pmfl; at <lb/>30 &past; 6. <foreign xml:lang="la"><choice><orig>vtr&flourish;</orig><reg>utrum</reg></choice> quis diutius Vi&uConsonant;<choice><orig>&loopedr;</orig><reg>er</reg></choice>e <lb/>de se aut suo marito&slash;. et <choice><orig>qd</orig><reg>quid</reg></choice> <lb/>sibi Accid in futuro</foreign>&slash;. &amp; best <lb/>to li&uConsonant;e <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him or noe.</p>
+<p><lb/><hi rend="redInk">Eliz Quinie</hi> alias hort<choice><orig>ō</orig><reg>on</reg></choice> <lb/>of 26 years 1600 <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>19 of febr’ <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> at <lb/>30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 6. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>vtr’</orig><reg>utrum</reg></choice> quis diutius Vi<choice><orig>u</orig><reg>v</reg></choice><choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>e <lb/>de se aut suo marito/. et <choice><orig>qd</orig><reg>quid</reg></choice> <lb/>sibi Accid in futuro</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">which is to live longer, whether her or her husband, and what will happen to her in time to come</seg><link type="is-translation-of" target="#foreign001 #translation001"/>/. &amp; best <lb/>to li<choice><orig>u</orig><reg>v</reg></choice>e <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him or noe.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

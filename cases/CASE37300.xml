@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE37300</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-24">24 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 110v/uS, f. 111r/uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="329">MS Ashmole 329, ff. 110v-111r</idno>
-&Napier017;
+<altIdentifier type="fn_number"><idno n="Napier017">Napier, vol. 17</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,13 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -68,6 +74,7 @@
 <p><date when="1610-10-30" n="Tuesday"/></p>
 <p><time when="13:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#c" evidence="internal" present="unclear"/>
@@ -84,22 +91,31 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="abg0240.jpg" url="abg0240.jpg" n="110v"/>
 <graphic xml:id="abg0241.jpg" url="abg0241.jpg" n="111r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> evadet franc <lb/>Curs. octob. 30 <choice><orig><subst><del type="over">&MoonSymbol;</del><add place="over">&MarsSymbol;</add></subst></orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 1. p <lb/>m 16<choice><orig>i</orig><reg>1</reg></choice>0 <add place="inline">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu.</add></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> evadet franc <lb/>Curs. octob. 30 <choice><orig><subst><del type="over">☾</del><add place="over">♂</add></subst></orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 1. p <lb/>m 16<choice><orig>i</orig><reg>1</reg></choice>0 <add place="inline">sine c<choice><orig>ō</orig><reg>on</reg></choice>sensu.</add></p>
 </div>
-&astroChartPartialDeleted;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>It is asked whether Francis Curson will escape Tuesday 30 October 1610 at 1pm without consent.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartPartialDeleted"/>
 <pb xml:id="f111r" n="111r" facs="#abg0241.jpg"/>
-<div>
-<p><lb/><foreign xml:lang="en">The lady Curson</foreign> qu&aelig;rit de patre <lb/>francisc Curson octob. 30 &TuesdayLatin; h. 1. p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0 &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> evadet mort<choice><orig>&eover;</orig><reg>em</reg></choice> <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice>.</p>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source">
+<p><lb/><foreign xml:lang="en">The lady Curson</foreign> quærit de patre <lb/>francisc Curson octob. 30 <choice><orig>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 1. p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0 <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> evadet mort<choice><orig>ē</orig><reg>em</reg></choice> <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice>.</p>
 </div>
-&astroChart;
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<p>The Lady Curson asks about her father [in law] Francis Curson Tuesday 30 October 1610 at 1pm. whether he will escape death or not.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

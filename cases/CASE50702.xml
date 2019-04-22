@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE50702</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-11-03">03 November 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-2</bibl>
 <msDesc>
@@ -34,9 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,9 +70,10 @@
 <person xml:id="s2">
 <persName><surname evidence="inferred" type="married">Smith</surname></persName>
 <sex value="2">F</sex>
-<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>    </person>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
 <person xml:id="l">
-<persName><surname type="married">Leach</surname> <surname evidence="inferred" type="maiden">Napier</surname></persName>
+<persName><surname type="married">Leech</surname> <surname evidence="inferred" type="maiden">Napier</surname></persName>
 <sex value="2">F</sex>
 </person>
 <person xml:id="b">
@@ -81,6 +89,7 @@
 <p><date when="1620-04-24" n="Monday" evidence="inferred"/></p>
 <p><time notBefore="12:00:00" notAfter="17:45:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s1" evidence="internal" present="unclear"/>
@@ -94,7 +103,7 @@
 <change when="2015-11-23">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-03-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -102,7 +111,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>on m<hi rend="superscript">r</hi> Smyth <choice><orig></orig><reg>par</reg></choice>son <lb/><rs type="address" xml:id="address1">of E<subst><del type="over">s</del><add place="over">l</add></subst>sborough</rs> a devon<lb/>sheere m<choice><orig>ā</orig><reg>an</reg></choice> &amp; on <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>was <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> my sister <lb/>leach &amp; my Cosen <lb/>Burrington &amp; did <lb/><unclear reason="hand" cert="low">c<choice><orig>ō</orig><reg>om</reg></choice>modations from</unclear> <lb/>them.</p>
+<p><lb/>on m<hi rend="superscript">r</hi> Smyth <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>son <lb/><rs type="address" xml:id="address1" key="PLACE662" resp="#mhawkins">of E<subst><del type="over">s</del><add place="over">l</add></subst>sborough</rs> a devon<lb/>sheere m<choice><orig>ā</orig><reg>an</reg></choice> &amp; on <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>was <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> my sister <lb/>leach &amp; my Cosen <lb/>Burrington &amp; did <lb/><unclear reason="hand" cert="low">c<choice><orig>ō</orig><reg>om</reg></choice>modations from</unclear> <lb/>them.</p>
 <p><lb/>desyrous of a <lb/>purg for his <lb/>owne wyfe./</p>
 </div>
 </body>

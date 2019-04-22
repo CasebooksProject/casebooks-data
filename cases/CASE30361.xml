@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE30361</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 33r/uR-2, f. 33v/uL, f. 33v/bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 33r-v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -60,7 +66,7 @@
 </person>
 <person xml:id="anon" evidence="internal">
 <sex value="1">M</sex>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <listRelation><relation name="servant" active="#anon" passive="#wa" evidence="internal"/></listRelation>
 </listPerson>
@@ -69,12 +75,13 @@
 <p><date when="1606-12-16" n="Tuesday"/></p>
 <p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wa" evidence="internal"/>
 <cb:subject ref="#wa" present="no"/>
 <cb:messenger ref="#anon" evidence="inferred"/>
-<cb:topic key="journeys"><person sameAs="#wa"/></cb:topic>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#wa"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
 </settingDesc>
@@ -87,6 +94,7 @@
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,14 +103,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Wylli<choice><orig>&aover;</orig><reg>am</reg></choice> Androwe <lb/>desyr to know <foreign xml:lang="la">&vVowel;tr fiet <lb/>et <unclear cert="low" reason="hand">sit</unclear> expediens.</foreign> <lb/>Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b 16. &Tuesday; h. 11. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1606</p>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Wylli<choice><orig>ā</orig><reg>am</reg></choice> Androwe <lb/>desyr to know <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr fiet <lb/>et <unclear cert="low" reason="hand">sit</unclear> expediens.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether [he/it] will become and [will be?] expedient</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>Dec<choice><orig>ē</orig><reg>em</reg></choice>b 16. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 11. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1606</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
 <pb xml:id="f33v" n="33v" facs="#bqo0070.jpg"/>
-<p><lb/><foreign xml:lang="la">Gul. And. miles qu&aelig;rit <lb/>an exped. erit et futur&flourish; <lb/>si deus voluerit</foreign> Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b 16 <lb/>&Tuesday; h. 11. &antm; 1606</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">Gul. And. miles quærit <lb/>an exped. erit et futur’ <lb/>si deus voluerit</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">Sir William Andrews asks whether it will be expedient and [come to pass?] if God so will</seg><link type="is-translation-of" target="#foreign002 #translation002"/> Dec<choice><orig>ē</orig><reg>em</reg></choice>b 16 <lb/><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 11. <choice><orig>ant m</orig><reg>am</reg></choice> 1606</p>
  </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

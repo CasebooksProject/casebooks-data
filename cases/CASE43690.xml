@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE43690</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-04-25">25 April 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="408">MS Ashmole 408, f. 141v</idno>
-&Napier025;
+<altIdentifier type="fn_number"><idno n="Napier025">Napier, vol. 25</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -65,7 +73,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="g">
-<persName><roleName>Dr</roleName> <surname>G<gap extent="2" unit="chars" reason="binding"/>d<unclear cert="low" reason="hand">nar</unclear></surname></persName>
+<persName><roleName>Dr</roleName> <surname>Gardner</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
@@ -75,6 +83,7 @@
 <settingDesc>
 <p><date notBefore-custom="1616-07-21T09:15:00" notAfter-custom="1616-07-22T07:25:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -92,6 +101,8 @@
 <change when="2016-05-12">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-21">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,12 +110,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> lane went to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/>Robart &IConsonant;uly 20 h. 9. 20 <lb/>&antm; 16<choice><orig>i</orig><reg>1</reg></choice>6</p>
+<p><lb/>M<hi rend="superscript">r</hi> lane went to <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/>Robart <choice><orig>I</orig><reg>J</reg></choice>uly 20 h. 9. 20 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 16<choice><orig>i</orig><reg>1</reg></choice>6</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>the Duke was on <choice><sic>going</sic><corr type="delText"/></choice> <add place="supralinear">De<choice><orig>&crossedp;</orig><reg>par</reg></choice>ting</add> at his <lb/>coming.</p>
-<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob. willed him to come on <lb/>monday &amp; he cam to me <choice><sic>an</sic><corr>on</corr></choice> sonday telling me <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> Doctor <unclear cert="medium" reason="binding">G</unclear><gap extent="unclear" reason="binding" cert="medium"/><lb/>d<gap extent="1" unit="chars" reason="hand"/><unclear cert="low" reason="hand">nar</unclear> <rs type="address" xml:id="address1">of christ church</rs> had the guift <choice><orig><choice><sic>g<unclear cert="low" reason="hand">&aover;</unclear>ted</sic><corr cert="medium">gr&aover;ted</corr></choice></orig><reg cert="medium">granted</reg></choice> of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> king</p>
+<p><lb/>the Duke was on <choice><sic>going</sic><corr type="delText"/></choice> <add place="supralinear">De<choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ting</add> at his <lb/>coming.</p>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob. willed him to come on <lb/>monday &amp; he cam to me <choice><sic>an</sic><corr>on</corr></choice> sonday telling me <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> Doctor Gardy<lb/>dnar <rs type="address" xml:id="address1" key="PLACE1858" resp="#mhawkins">of christ church</rs> had the guift <choice><orig><choice><sic>g<unclear cert="low" reason="hand">ā</unclear>ted</sic><corr cert="medium">grāted</corr></choice></orig><reg cert="medium">granted</reg></choice> of <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> king</p>
 </div>
 </body>
 </text>

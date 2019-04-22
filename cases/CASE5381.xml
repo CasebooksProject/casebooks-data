@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE5381</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 69r</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,8 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -69,6 +74,7 @@
 <p><date when="1599-05-13" n="Sunday"/></p>
 <p><time when="11:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -87,17 +93,22 @@
 <change when="2011-04-27">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-20">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acn0161.jpg" url="acn0161.jpg" n="69r"/>
 </facsimile>
-<text xml:lang="la">
+<text>
 <body>
-<div>
-<p><lb/><foreign xml:lang="en">Questo 1599 the 13 may &Sunday; <lb/>&inmfl; at 50 &past; xi.</foreign> Scire. &VVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>sit melius <del type="strikethrough">impon</del> Conduc An&slash; <lb/>Soror&flourish; mad<choice><orig>&aover;</orig><reg>am</reg></choice> monson et si im<lb/>pono question<choice><orig>&eover;</orig><reg>em</reg></choice> &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> erit <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice>&slash; <lb/>et &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> sit &vVowel;xor bona &slash; et <choice><orig>qd</orig><reg>quid</reg></choice> habet</p>
+<div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><foreign xml:lang="en">Questo 1599 the 13 may <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <lb/><choice><orig>in m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> at 50 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> xi.</foreign> Scire. <choice><orig>V</orig><reg>U</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>sit melius <del type="strikethrough">impon</del> Conduc An/ <lb/>Soror’ mad<choice><orig>ā</orig><reg>am</reg></choice> monson et si im<lb/>pono question<choice><orig>ē</orig><reg>em</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> erit <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice>/ <lb/>et <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit <choice><orig>v</orig><reg>u</reg></choice>xor bona / et <choice><orig>qd</orig><reg>quid</reg></choice> habet</p>
 </div>
-&geoChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Question Sunday the 13 May 1599 at 50 past 11 around noon. To know whether it would be better to marry Anne the sister of Madam Monson and if I put the question whether it will happen or not, and whether she will be a good wife and [how much?] she has.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

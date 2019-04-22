@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE41682</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-02-24">24 February 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 177v/uR, f. 178r/bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="199">MS Ashmole 199, f. 177v, f. 178r</idno>
-&Napier022;
+<altIdentifier type="fn_number"><idno n="Napier022">Napier, vol. 22</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -55,7 +61,7 @@
 <person xml:id="rc">
 <persName><roleName>Mr</roleName> <surname>Rose</surname></persName>
 <sex value="1">M</sex>
-<age atLeast="40" atMost="49">40-49</age>
+<age value="40">40</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 <occupation>Clerk of the kitchen</occupation>
 </person>
@@ -71,8 +77,9 @@
 </particDesc>
 <settingDesc>
 <p><date when="1613-07-29" n="Thursday"/></p>
-<p><time when="13:36:00"/></p>
+<p><time when="13:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rc"/>
@@ -92,6 +99,8 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-31">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,10 +109,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><del type="cancelled">S<hi rend="superscript">r</hi> Willi&aover; Cand<supplied reason="binding" cert="high">ish</supplied> <lb/>of Amptill parke</del></p>
-<p><lb/>M<hi rend="superscript">r</hi> Rose Clarke of <supplied reason="binding" cert="low">the</supplied> <lb/>citchen &amp; servant to <supplied reason="binding"><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice></supplied> <lb/>will: Candish <rs type="address" xml:id="address1">of <lb/>Amptill parke</rs> 4<gap reason="binding" extent="1" unit="chars"/> <supplied reason="binding">y</supplied> <lb/>&IConsonant;uly 29. &Thursday; h. 1. 3<supplied reason="binding" cert="high">6 p</supplied> <lb/>m. 1613.</p>
+<p><lb/><del type="cancelled">S<hi rend="superscript">r</hi> Williā Candish <lb/>of Amptill parke</del></p>
+<p><lb/>M<hi rend="superscript">r</hi> Rose Clarke of the <lb/>citchen &amp; servant to <supplied reason="binding"><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice></supplied> <lb/>will: Candish <rs type="address" xml:id="address1" key="PLACE2312">of <lb/>Amptill parke</rs> 40 y <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 29. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 1. 30 p <lb/>m. 1613.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f178r" n="178r" facs="#cjv0379.jpg"/>
 </body>
 </text>

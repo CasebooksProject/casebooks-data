@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13132</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
-<notesStmt><note type="layout" resp="#rralley">This entry is entirely deleted.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="blank" resp="#rralley">This entry is wholly deleted.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 31r/uS, f. 30v/uS</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 31r, f. 30v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -31,12 +36,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -62,13 +67,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1597-01-29" cert="medium" evidence="conjecture"/></p>
+<p><date notBefore="1597-01-29" notAfter="1597-09-06" cert="medium" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#sb"/>
 <cb:subject ref="#sb" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#sb" resp="#mhawkins"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#sb" resp="#mhawkins"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -80,6 +86,7 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,11 +99,11 @@
 morning betwixt <lb/>7 &amp; 8 as others betwixt 2 &amp; <lb/>3 mor. but we 
 take it about <lb/>7 &amp; 30 m. mor. <add place="inline">or rather <lb/>as we find at <rs type="time" sameAs="#time1">5 a clock mor</rs>.</add></del></p>
 </div>
-&astroChartPartialDeleted;
+<figure type="astro" subtype="astroChartPartialDeleted"/>
 <div><pb xml:id="f30v" n="30v" facs="#ace0076.jpg"/>
-<p><lb/><del type="blockStrikethrough">Susan Blundle. borne <rs type="date" xml:id="date1">1586 the <lb/>17 of Septemb. on satterd</rs> <choice><sic>morng</sic><corr>morning</corr></choice> <lb/><rs type="time" xml:id="time1">at 5 a clock morning</rs> the neerest <lb/>to the houre in our gesse &amp; leekliest <lb/>the trueth.<note place="marginLeft"><foreign xml:lang="la">verius c&aelig;teris cal<lb/>culata h&aelig;c nativitas</foreign></note></del></p>
+<p><lb/><del type="blockStrikethrough">Susan Blundle. borne <rs type="date" xml:id="date1">1586 the <lb/>17 of Septemb. on satterd</rs> <choice><sic>morng</sic><corr>morning</corr></choice> <lb/><rs type="time" xml:id="time1">at 5 a clock morning</rs> the neerest <lb/>to the houre in our gesse &amp; leekliest <lb/>the trueth.<note place="marginLeft"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">verius cæteris cal<lb/>culata hæc nativitas</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">this nativity more truly calculated than the others</seg><link type="is-translation-of" target="#foreign001 #translation001"/></note></del></p>
 </div>
-&astroChartDeleted;
+<figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>
 </TEI>

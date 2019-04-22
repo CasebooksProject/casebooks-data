@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2439</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 202r/uL, f. 201v/bR, f. 202r/bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 202r, f. 201v, f. 202r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,6 +40,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -47,7 +53,7 @@
 <language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<catRef target="#horaryGeomantic"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -66,6 +72,7 @@
 <p><date when="1597-09-02" n="Friday"/></p>
 <p><time when="10:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -84,6 +91,7 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-18">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,13 +101,13 @@
 <text xml:lang="en">
 <body>
 <div>
- <p><lb/><foreign xml:lang="la">&VVowel;trum sit thezaurum</foreign> <lb/>in <placeName><choice><orig><hi rend="overline">wm</hi></orig><reg>william</reg></choice> burnfild house</placeName> <rs type="address" xml:id="address1">in <lb/>yron m<choice><orig>&oover;</orig><reg>on</reg></choice>ger Lane</rs> <foreign xml:lang="la">necn<choice><orig>&oover;</orig><reg>on</reg></choice></foreign> <lb/>in the <placeName>Seller</placeName> &amp; Abo&uConsonant;e the <lb/>staiers 1597 2 Septm. &Friday; <lb/>&Anflmfl; <del type="strikethrough">3</del> 20 &past; 10. &slash;</p>
+ <p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>V</orig><reg>U</reg></choice>trum sit thezaurum</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Whether there is treasure</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>in <placeName><choice><orig><hi rend="overline">wm</hi></orig><reg>william</reg></choice> burnfild house</placeName> <rs type="address" xml:id="address1">in <lb/>yron m<choice><orig>ō</orig><reg>on</reg></choice>ger Lane</rs> <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">necn<choice><orig>ō</orig><reg>on</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">or not</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>in the <placeName>Seller</placeName> &amp; Abo<choice><orig>u</orig><reg>v</reg></choice>e the <lb/>staiers 1597 2 Septm. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <lb/><choice><orig>An’ m’</orig><reg>am</reg></choice> <del type="strikethrough">3</del> 20 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 10. /</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f201v" n="201v" facs="#ach0424.jpg"/>
-&geoChartPreliminary;
+<figure type="geo" subtype="geoChartPreliminary"/>
 <pb xml:id="f202r" n="202r" facs="#ach0425.jpg"/>
-&geoChart;
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

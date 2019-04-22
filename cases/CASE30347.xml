@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE30347</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 31r/bL-1, f. 31v/bL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 31r-v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -76,6 +82,7 @@
 <p><date when="1606-12-15" n="Monday"/></p>
 <p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:location type="practitionerVisitsQuerent" evidence="external"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -95,6 +102,7 @@
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -103,12 +111,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elnor Wyllyams <rs type="address" xml:id="address1">of <lb/>Adyngton</rs> servant to my <lb/>lady <del type="strikethrough">Dormer</del> Curson <lb/>20 y. Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 15 <del type="strikethrough">&SaturnSymbol;</del> &Monday; <lb/>h. 11 &antm; 1606. <add place="infralinear">my lady Curson</add></p>
+<p><lb/>Elnor Wyllyams <rs type="address" xml:id="address1" key="PLACE573" resp="#mhawkins">of <lb/>Adyngton</rs> servant to my <lb/>lady <del type="strikethrough">Dormer</del> Curson <lb/>20 y. Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 15 <del type="strikethrough">♄</del> <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>h. 11 <choice><orig>ant m</orig><reg>am</reg></choice> 1606. <add place="infralinear">my lady Curson</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
 <pb xml:id="f31v" n="31v" facs="#bqo0066.jpg"/>
-<p><lb/>Elnor Wylliams of <lb/>20 y servant to <choice><sic>th</sic><corr type="noText"/></choice> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/>&IConsonant;ohn Curson dec<choice><orig>&eover;</orig><reg>em</reg></choice>b 15 <lb/>&Monday; h 11 &antm; 1606</p>
+<p><lb/>Elnor Wylliams of <lb/>20 y servant to <choice><sic>th</sic><corr type="noText"/></choice> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Curson dec<choice><orig>ē</orig><reg>em</reg></choice>b 15 <lb/><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h 11 <choice><orig>ant m</orig><reg>am</reg></choice> 1606</p>
 </div>
 </body>
 </text>

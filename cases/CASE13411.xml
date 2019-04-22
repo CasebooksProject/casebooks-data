@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13411</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 105v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,17 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -50,7 +60,7 @@
 <creation>
 <listChange ordered="true">
 <change xml:id="stage1" when="1598-01-21"><name sameAs="#rnapier">Richard Napier</name> held the consultation and wrote down the entry.</change>
-<change xml:id="stage2" notBefore="1598-01-22"><name sameAs="#rnapier">Richard Napier</name> added information about the patient&rsquo;s death.</change>
+<change xml:id="stage2" notBefore="1598-01-22"><name sameAs="#rnapier">Richard Napier</name> added information about the patient’s death.</change>
 </listChange>
 </creation>
 <particDesc>
@@ -75,6 +85,7 @@
 <p><date when="1598-01-21" n="Saturday"/></p>
 <p><time when="08:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rp" evidence="internal" present="unclear"/>
@@ -92,17 +103,22 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-04-02">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0230.jpg" url="acm0230.jpg" n="105v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <milestone unit="question" spanTo="#questionEnd"/>
-<p><lb/>Rich Phylip <choice><orig>&crossedp;</orig><reg>pro</reg></choice> &vVowel;xore <del type="strikethrough">qua</del> qu&aelig;rit <lb/>morb<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>: <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> potius velit &vVowel;t ad <choice><sic><unclear cert="low" reason="hand">vx</unclear></sic><corr type="noText"/></choice> &vVowel;xor<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice> eius venir<choice><orig>&eover;</orig><reg>em</reg></choice>. 1598. &IConsonant;an. <lb/>die 21 &SaturdayN;. h 8<hi rend="superscript">a</hi>. 15. mi.<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><foreign xml:lang="en">shee <lb/>died the <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">n</add></subst>ext day being <rs type="date" xml:id="date1">22 of &IConsonant;an.</rs> <lb/><rs type="time" xml:id="time1">about 8 of <choice><orig>ant merid</orig><reg>am</reg></choice></rs>.</foreign></p><anchor xml:id="subsequentEventInfoEnd"/>
+<p><lb/>Rich Phylip <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>xore <del type="strikethrough">qua</del> quærit <lb/>morb<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice>: <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> potius velit <choice><orig>v</orig><reg>u</reg></choice>t ad <choice><sic><unclear cert="low" reason="hand">vx</unclear></sic><corr type="noText"/></choice> <choice><orig>v</orig><reg>u</reg></choice>xor<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice> eius venir<choice><orig>ē</orig><reg>em</reg></choice>. 1598. <choice><orig>I</orig><reg>J</reg></choice>an. <lb/>die 21 <choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>. h 8<hi rend="superscript">a</hi>. 15. mi.<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><foreign xml:lang="en">shee <lb/>died the <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">n</add></subst>ext day being <rs type="date" xml:id="date1">22 of <choice><orig>I</orig><reg>J</reg></choice>an.</rs> <lb/><rs type="time" xml:id="time1">about 8 of <choice><orig>ant merid</orig><reg>am</reg></choice></rs>.</foreign></p><anchor xml:id="subsequentEventInfoEnd"/>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Richard Phillips for his wife he asks [what her] disease [is] or rather he wants me to go to her Saturday 21 January 1598 at 8.15. She died the next day being 22 January about 8am.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE35286</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-10">10 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#rralley">This entry is upside down.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 121r/uS-4, f. 122r/bS</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="338">MS Ashmole 338, f. 121r, f. 122r</idno>
-&Napier014;
+<altIdentifier type="fn_number"><idno n="Napier014">Napier, vol. 14</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -32,12 +37,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -106,6 +111,7 @@
 <settingDesc>
 <p><date notBefore="1608-09-21" notAfter="1609-02-27" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon1" evidence="inferred" present="unclear"/>
@@ -121,6 +127,8 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-18">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -129,9 +137,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Chryst Robinson <foreign xml:lang="la">nata</foreign> may 4. &Thursday; <lb/>h. 12. 30 p m. 1570 <add place="supralinear">palsie.</add> <add place="supralinear">melancholy</add> <add place="interlinear">maryed 9 child <lb/>&amp; dyed.</add></p>
+<p><lb/>Chryst Robinson <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> may 4. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <lb/>h. 12. 30 p m. 1570 <add place="supralinear">palsie.</add> <add place="supralinear">melancholy</add> <add place="interlinear">maryed 9 child <lb/>&amp; dyed.</add></p>
 <pb xml:id="f122r" n="122r" facs="#abi0257.jpg"/>
-<p><lb/>Chryst Robinson <foreign xml:lang="la">nata</foreign> may <lb/>4 &Thursday; h 12. 30 <choice><sic>p</sic><corr>p m</corr></choice> 1570. fat &amp; <lb/>corpul: &amp; me<add place="supralinear">r</add>y by nature <lb/><subst><del type="over">h</del><add place="over">y</add></subst>et <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> disc<choice><orig>&oover;</orig><reg>on</reg></choice>t<choice><orig>&eover;</orig><reg>en</reg></choice>tm<choice><orig>&eover;</orig><reg>en</reg></choice>t &amp; greef <lb/>taken by her husb. who would <lb/>have her to live in the country <lb/>&amp; she willing to live in <placeName>london</placeName> <lb/>had 9 child 3. boyes &amp; <del type="strikethrough">every</del> <lb/>two dyed &amp; <subst><del type="over">one</del><add place="over">the</add></subst> youngest boy <lb/>liveth had <del type="strikethrough">&amp;</del> now but 4 in <lb/>all doe live. her husb. was <lb/>a widower. had spedy deliv <lb/>alwys. &amp; at lenght dyed in <lb/>child bed.</p>
+<p><lb/>Chryst Robinson <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">nata</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign002 #translation002"/> may <lb/>4 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h 12. 30 <choice><sic>p</sic><corr>p m</corr></choice> 1570. fat &amp; <lb/>corpul: &amp; me<add place="supralinear">r</add>y by nature <lb/><subst><del type="over">h</del><add place="over">y</add></subst>et <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> disc<choice><orig>ō</orig><reg>on</reg></choice>t<choice><orig>ē</orig><reg>en</reg></choice>tm<choice><orig>ē</orig><reg>en</reg></choice>t &amp; greef <lb/>taken by her husb. who would <lb/>have her to live in the country <lb/>&amp; she willing to live in <placeName key="PLACE1" resp="#mhawkins">london</placeName> <lb/>had 9 child 3. boyes &amp; <del type="strikethrough">every</del> <lb/>two dyed &amp; <subst><del type="over">one</del><add place="over">the</add></subst> youngest boy <lb/>liveth had <del type="strikethrough">&amp;</del> now but 4 in <lb/>all doe live. her husb. was <lb/>a widower. had spedy deliv <lb/>alwys. &amp; at lenght dyed in <lb/>child bed.</p>
 </div>
 </body>
 </text>

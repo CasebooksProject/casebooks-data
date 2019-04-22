@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE7893</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 172r</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -70,6 +74,7 @@
 <p><date when="1600-07-21" n="Monday"/></p>
 <p><time when="16:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#cc" evidence="internal"/>
@@ -92,6 +97,7 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-08-14">Question distinguished from judgment and encoding description added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-05-31">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,15 +106,15 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd1"/>
-<p><lb/>Christian Crowder <add place="supralinear">maid&slash;</add> <lb/>of 41 yeares 1600 the 21 <lb/>of &IConsonant;uli&jVowel; &Monday; &pmfl; at 30 &past; 4 <lb/>Diz her self</p>
+<p><lb/>Christian Crowder <add place="supralinear">maid/</add> <lb/>of 41 yeares 1600 the 21 <lb/>of <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> at 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 4 <lb/>Diz her self</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>Briant of 49 years. a bachelor<anchor xml:id="questionEnd1"/> <milestone unit="judgment" spanTo="#judgmentEnd"/><add place="infralinear"><foreign xml:lang="la">ille obit prius</foreign></add></p><anchor xml:id="judgmentEnd"/>
+<p><lb/>Briant of 49 years. a bachelor<anchor xml:id="questionEnd1"/> <milestone unit="judgment" spanTo="#judgmentEnd"/><add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">ille obit prius</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">he will die first</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add></p><anchor xml:id="judgmentEnd"/>
 <milestone unit="question" spanTo="#questionEnd2"/>
-<p><lb/>wher she shall li&uConsonant;e <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> her husband Again or noe</p>
-<p><lb/>wher she shall ha&uConsonant;e any end of her trobles</p>
-<p><lb/>wher she shall ha&uConsonant;e Any better fortune&slash;</p><anchor xml:id="questionEnd2"/>
+<p><lb/>wher she shall li<choice><orig>u</orig><reg>v</reg></choice>e <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> her husband Again or noe</p>
+<p><lb/>wher she shall ha<choice><orig>u</orig><reg>v</reg></choice>e any end of her trobles</p>
+<p><lb/>wher she shall ha<choice><orig>u</orig><reg>v</reg></choice>e Any better fortune/</p><anchor xml:id="questionEnd2"/>
 </div>
 </body>
 </text>

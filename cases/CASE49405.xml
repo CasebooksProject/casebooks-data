@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE49405</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-10-02">02 October 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="235">MS Ashmole 235, f. 132r</idno>
-&Napier030;
+<altIdentifier type="fn_number"><idno n="Napier030">Napier, vol. 30</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -71,6 +81,7 @@
 <p><date when="1619-07-31" n="Saturday"/></p>
 <p><time when="18:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentSendsSubject"/>
@@ -101,11 +112,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> &IConsonant;ermyn sent me the <lb/>butler of Corpus <choice><orig>ch<hi rend="overline">ri</hi></orig><reg>christi</reg></choice> <lb/>colledg. who is foolish <lb/>by fits &amp; &vVowel;seth often <lb/>to laugh &amp; smyle &IConsonant;uly 31. <lb/><choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 6. 15 p m 1619 <add place="infralinear">at this tyme the M<hi rend="superscript">r</hi> &IConsonant;ermyn</add></p>
+<p><lb/>M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ermyn sent me the <lb/>butler of Corpus <choice><orig>ch<hi rend="overline">ri</hi></orig><reg>christi</reg></choice> <lb/>colledg. who is foolish <lb/>by fits &amp; <choice><orig>v</orig><reg>u</reg></choice>seth often <lb/>to laugh &amp; smyle <choice><orig>I</orig><reg>J</reg></choice>uly 31. <lb/><choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 6. 15 p m 1619 <add place="infralinear">at this tyme the M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ermyn</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>M<hi rend="superscript">r</hi> &IConsonant;ermyn sent me <lb/>a letter in the behalfe <lb/>of sottish m<choice><orig>&aover;</orig><reg>an</reg></choice> Butler <lb/>of Corp<choice><orig>&uscon;</orig><reg>us</reg></choice> <choice><orig>ch<hi rend="overline">ri</hi></orig><reg>christi</reg></choice> colledg &amp; I <lb/>saw the <choice><orig>&crossedp;</orig><reg>par</reg></choice>ty at this tyme. This m<choice><orig>&aover;</orig><reg>an</reg></choice> hath <add place="supralinear">bene</add> at some <lb/>seasons of the yeare distempered <lb/>in his braynes.</p>
+<p><lb/>M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ermyn sent me <lb/>a letter in the behalfe <lb/>of sottish m<choice><orig>ā</orig><reg>an</reg></choice> Butler <lb/>of Corp<choice><orig>ꝯ</orig><reg>us</reg></choice> <choice><orig>ch<hi rend="overline">ri</hi></orig><reg>christi</reg></choice> colledg &amp; I <lb/>saw the <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ty at this tyme. This m<choice><orig>ā</orig><reg>an</reg></choice> hath <add place="supralinear">bene</add> at some <lb/>seasons of the yeare distempered <lb/>in his braynes.</p>
 </div>
 </body>
 </text>

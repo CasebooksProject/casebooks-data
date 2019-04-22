@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10681</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 84r/bL, f. 85r/uR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 84r, f. 85r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -74,6 +80,7 @@
 <p><date when="1600-05-26" n="Monday"/></p>
 <p><time when="13:26:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mw #fw"/>
@@ -99,6 +106,8 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-07">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -107,7 +116,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Mathewe Walsore <rs type="address" xml:id="address1">of <choice><sic>Buckgin<lb/>ham</sic><corr>Buckingham</corr></choice></rs> 30. <foreign xml:lang="la">music<choice><orig>&uscon;</orig><reg>us</reg></choice></foreign>. may 26 <choice><orig>die <lb/>&MoonSymbol;</orig><reg>die Lun&aelig;</reg><reg type="gloss">Monday</reg></choice> h. 1. <del type="strikethrough">3</del> 26. p m. 1600</p>
+<p><lb/>Mathewe Walsore <rs type="address" xml:id="address1" key="PLACE612" resp="#mhawkins">of <choice><sic>Buckgin<lb/>ham</sic><corr>Buckingham</corr></choice></rs> 30. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">music<choice><orig>ꝯ</orig><reg>us</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">musician</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. may 26 <choice><orig>die <lb/>☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice> h. 1. <del type="strikethrough">3</del> 26. p m. 1600</p>
 <p><lb/>paynd in his <add place="supralinear">head &amp;</add> chest by reason <lb/>of a wound receaved but healed <lb/><choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> maketh him cast. <choice><sic>alwyys</sic><corr>always</corr></choice> <lb/>leane somtimes voydeth leeke <lb/>matter &amp; choler. spade bone of <lb/>his shoulder perisheth his lungs. <lb/>&amp; francis Wal<subst><del type="over">so</del><add place="over">ge</add></subst>re 28. his <lb/>wif paynd <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a windines <lb/>in her stomacke.</p>
 </div>
 <pb xml:id="f85r" n="85r" facs="#ack0191.jpg"/>

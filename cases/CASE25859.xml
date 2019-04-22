@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE25859</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-23">23 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="174">MS Ashmole 174, p. 108</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0108" to="0108"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1597-08-10"><name sameAs="#sforman">Simon Forman</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2" notAfter="1600-07-31"><name sameAs="#rnapier">Richard Napier</name> wrote out the entry, though with a different time, and added his own chart.</change>
+</listChange>
+</creation>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="je">
+<persName><forename>John</forename> <surname>Evington</surname></persName>
+<sex value="1">M</sex>
+<age value="6">6</age>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1597-08-10" n="Wednesday"/></p>
+<p><time when="12:55:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#sforman"/>
+<cb:astrologer ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:subject ref="#je" present="unclear"/>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#je"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-07-24">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-27">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-01-31">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-11-22">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acg0122.jpg" url="acg0122.jpg" n="108"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Evington 1597 Aug. 10. <choice><orig>die <lb/>☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice>. h. 12 55. m. quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> de morbo <lb/>annos natus 6.</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>John Evington Wednesday 10 August 1597 at 12.55 around noon: [he/she] asks about his disease. Born 6 years ago.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE19601</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 148v</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -50,7 +56,7 @@
 <creation>
 <listChange ordered="true">
 <change xml:id="stage1" when="1601-05-06"><name sameAs="#sforman">Simon Forman</name> took the original consultation and wrote out the entry.</change>
-<change xml:id="stage2" notBefore="1601-07-11" notAfter="1601-07-12"><name sameAs="#rnapier">Richard Napier</name> copied out the entry, omitting the patient&rsquo;s details and with a slightly differing judgment.</change>
+<change xml:id="stage2" notBefore="1601-07-11" notAfter="1601-07-12"><name sameAs="#rnapier">Richard Napier</name> copied out the entry, omitting the patient’s details and with a slightly differing judgment.</change>
 </listChange>
 </creation>
 <particDesc>
@@ -79,9 +85,8 @@
 <cb:querent ref="#ae"/>
 <cb:subject ref="#ae" present="unclear"/>
 <cb:topic key="maritalProspects" evidence="internal"><person sameAs="#ae"/></cb:topic>
-<cb:topic key="fortune" evidence="internal"><person sameAs="#ae"/></cb:topic>
+<cb:topic key="generalFuture" evidence="internal"><person sameAs="#ae"/></cb:topic>
 <cb:judgment/>
-
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -93,6 +98,7 @@
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-08">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,11 +106,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>6 mai&jVowel; &Wednesday; hor 2. 50 p m <lb/>160<choice><orig>i</orig><reg>1</reg></choice></p>
+<p><lb/>6 mai<choice><orig>j</orig><reg>i</reg></choice> <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> hor 2. 50 p m <lb/>160<choice><orig>i</orig><reg>1</reg></choice></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/><foreign xml:lang="la">h&aelig;c questio erat de matrimonio institutu.</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">hæc questio erat de matrimonio institutu.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">this question was about the arrangement of a marriage.</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
 </body>
 </text>

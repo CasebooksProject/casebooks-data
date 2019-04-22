@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE57308</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-02-10">10 February 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -102,7 +107,7 @@
 </person>
 <person xml:id="f9">
 <persName><surname evidence="inferred" cert="medium">Fitzgeoffrey</surname></persName>
-<sex value="0">U</sex>
+<sex value="2" evidence="external">F</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <listRelation><relation name="mother" active="#mf" passive="#f1 #f2 #f3 #f4 #f5 #f6 #f7 #f8 #f9"/></listRelation>
@@ -112,6 +117,7 @@
 <p><date when="1623-10-22" n="Wednesday"/></p>
 <p><time when="10:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:questionNumber n="2"/>
@@ -129,7 +135,7 @@
 <change when="2016-03-09">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-09-27">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -137,7 +143,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Mary fitz <choice><orig>I</orig><reg>J</reg></choice>effery <lb/><rs type="address" xml:id="address1">of Risden</rs> 36 y octob <lb/>22. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 10 45 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1623 <add place="infralinear">new ague <lb/>pestil feaver</add> <add place="marginLeft">9 child all <lb/>sicke.</add><note place="marginLeft">2 fig</note></p>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Mary fitz <choice><orig>I</orig><reg>J</reg></choice>effery <lb/><rs type="address" xml:id="address1" key="PLACE1744" resp="#mhawkins">of Risden</rs> 36 y octob <lb/>22. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 10 45 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1623 <add place="infralinear">new ague <lb/>pestil feaver</add> <add place="marginLeft">9 child all <lb/>sicke.</add><note place="marginLeft">2 fig</note></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

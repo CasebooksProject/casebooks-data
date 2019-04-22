@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE64590</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-11">11 August 2016</date>
 </publicationStmt>
-<notesStmt><note resp="#ymartin" type="editorial">This decumbiture is associated with the horary entry <ref target="CASE64591" type="case">CASE64591</ref>.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note resp="#ymartin" type="editorial">This interrogation is associated with the horary entry <ref target="CASE64591" type="case">CASE64591</ref>.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -34,9 +39,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -54,22 +59,29 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="anon">
+<person xml:id="anon1">
 <sex value="2">F</sex>
 <age value="25">25</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="anon2">
+<sex value="0">U</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth><date when="1627-09-14"/><time when="12:00:00"/></birth>
+</person>
+<listRelation><relation name="mother" active="#anon1" passive="#anon2"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1627-09-14" n="Friday" evidence="external"/></p>
 <p><time when="19:45:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon" evidence="external"/>
-<cb:subject ref="#anon" present="no"/>
-<cb:topic key="childbirthMedical"><person sameAs="#anon"/></cb:topic>
+<cb:querent ref="#anon1" evidence="external"/>
+<cb:subject ref="#anon1" present="no"/>
+<cb:topic key="childbirthMedical"><person sameAs="#anon1"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -79,7 +91,7 @@
 <change when="2016-08-11">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-10-18">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-05-19">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>A wom<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Potters <choice><sic>s</sic><corr type="delText"/></choice> Perry</rs> <lb/>25 broght a bed Sept 14 <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 12. at noone 1627</p>
+<p><lb/>A wom<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" xml:id="address1" key="PLACE1729" resp="#mhawkins">of Potters <choice><sic>s</sic><corr type="delText"/></choice> Perry</rs> <lb/>25 broght a bed Sept 14 <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 12. at noone 1627</p>
 </div>
 <figure type="astro" subtype="astroChartBlank"/>
 <div>

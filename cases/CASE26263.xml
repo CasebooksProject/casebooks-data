@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26263</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">mS, bR-1, bL, bR-2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 183r</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0183r" to="0183r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Doctor of physic</roleName></persName>
+<sex value="1">M</sex>
+<occupation resp="#mhawkins">Medical practitioner</occupation>
+</person>
+<person xml:id="b">
+<persName><roleName>Dr</roleName> <surname>Band</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="l">
+<persName><surname cert="low">Leonard</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationQuestion"/>
+</textClass>
+<settingDesc>
+<p><date notBefore="1608-05-10" notAfter="1634-04-01" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="internal" present="yes"/>
+<cb:subject ref="#anon1" present="unclear"/>
+<cb:object ref="#b"/>
+<cb:topic key="disease" resp="#rnapier"><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="aliveOrDead"><person sameAs="#b"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-08">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-06">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-21">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-09-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0409.jpg" url="acr0409.jpg" n="183r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>may 8 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 7. 20 a young m<choice><orig>ā</orig><reg>an</reg></choice> came <lb/>to a doctor of phys in <placeName key="PLACE130" resp="#mhawkins">Gress house</placeName> for the <lb/>dropsy 1608 &amp; he gave him physick he <lb/>came the day before but byd him come agayne <lb/>the next daye &amp; so did now to know his <lb/>disease I set <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> figure for <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> tyme <lb/>may 10 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 8. he came into l<unclear cert="low" reason="hand">eona</unclear>ds shop &amp; tooke mythridate <cb xml:id="colB-1" n="b"/> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">et quæro</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">and I ask</seg><link type="is-translation-of" target="#foreign001 #translation001"/> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Doctor <lb/>Band be dead. &amp; how he <lb/>came to his death.</p>
+</div>
+<cb xml:id="colA" n="a"/>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB-2" n="b"/>
+</body>
+</text>
+</TEI>

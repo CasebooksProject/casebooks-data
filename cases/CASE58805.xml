@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE58805</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-19">19 August 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR-1</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -64,6 +69,7 @@
 <p><date when="1624-07-23" n="Friday"/></p>
 <p><time when="07:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner" ref="#place1"/>
@@ -79,7 +85,8 @@
 <change when="2016-08-19">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-08-25">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-12-10">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-07">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,7 +94,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>I</orig><reg>J</reg></choice>uly 22. my lord <choice><sic>Pub</sic><corr>Purb</corr></choice> came to <placeName xml:id="place1">Linford</placeName> <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 23. he came <foreign xml:lang="la"><choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice></foreign> to me <lb/>&amp; prayed <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> me <choice><orig>I</orig><reg>J</reg></choice>ulye 23. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <lb/>h. 7. <choice><orig>ant m</orig><reg>am</reg></choice> 1624 <lb/>&amp; told me <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he would take <lb/>a clyster aga<choice><orig>ȳ</orig><reg>yn</reg></choice>st the after <lb/>noone.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>uly 22. my lord <choice><sic>Pub</sic><corr>Purb</corr></choice> came to <placeName xml:id="place1" key="PLACE685" resp="#mhawkins">Linford</placeName> <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 23. he came <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Friday</seg><link type="is-translation-of" target="#foreign001 #translation001"/> to me <lb/>&amp; prayed <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> me <choice><orig>I</orig><reg>J</reg></choice>ulye 23. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <lb/>h. 7. <choice><orig>ant m</orig><reg>am</reg></choice> 1624 <lb/>&amp; told me <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he would take <lb/>a clyster aga<choice><orig>ȳ</orig><reg>yn</reg></choice>st the after <lb/>noone.</p>
 </div>
 </body>
 </text>

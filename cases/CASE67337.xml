@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE67337</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-26">26 August 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -70,6 +75,7 @@
 <p><date when="1628-11-10" n="Monday"/></p>
 <p><time when="09:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#t1" evidence="internal"/>
@@ -77,7 +83,7 @@
 <cb:subject ref="#t2" present="no"/>
 <cb:topic key="pregnancy"><person sameAs="#t2"/></cb:topic>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#t2"/></cb:topic>
-<cb:topic key="unidentifiedMedical"><person sameAs="#t1"/></cb:topic>
+<cb:topic key="regimen"><person sameAs="#t1"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 </cb:consultation>
@@ -91,7 +97,8 @@
 <change when="2017-03-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-03-20">Rechecked and merged into one file by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-20">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,11 +106,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Captayne Tyringh<choice><orig>ā</orig><reg>am</reg></choice> <rs type="address" xml:id="address1">of Emmerton</rs>. <lb/>for his wife <foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit gra<lb/>vida nec ne</foreign>. nov<choice><orig>ē</orig><reg>em</reg></choice>b<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 10 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>h. 9. 50 <choice><orig>ant m</orig><reg>am</reg></choice>. 1628</p>
+<p><lb/>Captayne Tyringh<choice><orig>ā</orig><reg>am</reg></choice> <rs type="address" xml:id="address1" key="PLACE663" resp="#mhawkins">of Emmerton</rs>. <lb/>for his wife <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit gra<lb/>vida nec ne</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether she is pregnant or not</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. nov<choice><orig>ē</orig><reg>em</reg></choice>b<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 10 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>h. 9. 50 <choice><orig>ant m</orig><reg>am</reg></choice>. 1628</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit gravida</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit gravida</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">whether she is pregnant</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 
 <p><lb/>Wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> good for Capt Tyringh<choice><orig>ā</orig><reg>am</reg></choice> <lb/>to leave Tobacco.</p>
 </div>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE18423</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="221">MS Ashmole 221, f. 271v</idno>
-&Napier006;
+<altIdentifier type="fn_number"><idno n="Napier006">Napier, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -67,6 +73,7 @@
 <p><date when="1602-12-18" n="Saturday"/></p>
 <p><time when="11:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -84,6 +91,7 @@
 <change when="2012-09-03">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,11 +99,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goody Gadbery <rs type="address" xml:id="address1">of brodwell</rs> <lb/>42 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b 18 &Saturday; hor 11. 45 <lb/><choice><sic>p</sic><corr type="noText"/></choice> &antm;. 1602. <del type="strikethrough">shee cam</del> <lb/>on came for her at x&jVowel;. but spake not <lb/>&vVowel;ntill 12 almost <lb/>12.</p>
+<p><lb/>Goody Gadbery <rs type="address" xml:id="address1" key="PLACE607" resp="#mhawkins">of brodwell</rs> <lb/>42 y Dec<choice><orig>ē</orig><reg>em</reg></choice>b 18 <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> hor 11. 45 <lb/><choice><sic>p</sic><corr type="noText"/></choice> <choice><orig>ant m</orig><reg>am</reg></choice>. 1602. <del type="strikethrough">shee cam</del> <lb/>on came for her at x<choice><orig>j</orig><reg>i</reg></choice>. but spake not <lb/><choice><orig>v</orig><reg>u</reg></choice>ntill 12 almost <lb/>12.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>see the figure on the page <lb/>before &amp; c<choice><orig>&oover;</orig><reg>on</reg></choice>sid<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> well <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> agreeth <lb/>best.</p>
+<p><lb/>see the figure on the page <lb/>before &amp; c<choice><orig>ō</orig><reg>on</reg></choice>sid<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> well <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> agreeth <lb/>best.</p>
 </div>
 </body>
 </text>

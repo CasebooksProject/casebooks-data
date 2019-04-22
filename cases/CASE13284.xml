@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13284</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#rralley">The text of this entry is written inside the first chart.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 130r</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -31,12 +36,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -46,7 +51,7 @@
 <language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<catRef target="#decumbiture"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -62,15 +67,15 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1597-04-10" n="Sunday"/></p>
-<p><time when="09:00:00"/></p>
+<p><date notBefore-custom="1597-04-10T13:00:00" notAfter="1597-12-31"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#tu"/>
-<cb:subject ref="#tu" present="unclear"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#tu" present="no"/>
 <cb:topic key="sickness" resp="#rnapier"><person sameAs="#tu"/></cb:topic>
-<cb:info type="event" subtype="subsequentEvent"/>
+<cb:topic key="death"><person sameAs="#tu"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -82,18 +87,26 @@
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-03-28">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ace0275.jpg" url="ace0275.jpg" n="130r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <milestone unit="question" spanTo="#questionEnd"/>
-<p><lb/>Th. &VVowel;&uConsonant;: <rs type="date" xml:id="date1"><foreign xml:lang="en">1597 <lb/>the x of Apr <lb/>extreeme sick. <lb/>at 9</foreign> h. &antm;. <lb/>&SundayN;</rs>&slash;<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/>quo die <lb/>obi&jVowel;t <rs type="time" xml:id="time1">int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> horam <lb/><del type="strikethrough">pr</del> 12<hi rend="superscript"><choice><orig>&aover;</orig><reg>am</reg></choice></hi> et prim<choice><orig>&aover;</orig><reg>am</reg></choice></rs> <lb/>19 an<choice><orig>&uover;</orig><reg>um</reg></choice> ingressur<choice><orig>&uscon;</orig><reg>us</reg></choice>.</p><anchor xml:id="subsequentEventInfoEnd"/>
+<p><lb/>Th. <choice><orig>V</orig><reg>U</reg></choice><choice><orig>u</orig><reg>v</reg></choice>: <rs type="date" xml:id="date1"><foreign xml:lang="en">1597 <lb/>the x of Apr <lb/>extreeme sick. <lb/>at 9</foreign> h. <choice><orig>ant m</orig><reg>am</reg></choice>. <lb/><choice><orig>die ☉</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice></rs>/<anchor xml:id="questionEnd"/> <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/>quo die <lb/>obi<choice><orig>j</orig><reg>i</reg></choice>t <rs type="time" xml:id="time1">int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> horam <lb/><del type="strikethrough">pr</del> 12<hi rend="superscript"><choice><orig>ā</orig><reg>am</reg></choice></hi> et prim<choice><orig>ā</orig><reg>am</reg></choice></rs> <lb/>19 an<choice><orig>ū</orig><reg>um</reg></choice> ingressur<choice><orig>ꝯ</orig><reg>us</reg></choice>.<note place="chart"><foreign xml:lang="en">Death</foreign></note></p><anchor xml:id="subsequentEventInfoEnd"/>
 </div>
-&astroChart;
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Th[omas] Uv[edale] Sunday 10 April 1597 extreme sick at 9am on which day he died between 12 and 1 having entered his 19th year.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/><foreign xml:lang="en">he died <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in 3 how<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s after/</foreign></p>
+</div>
 </body>
 </text>
 </TEI>

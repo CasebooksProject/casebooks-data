@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE5247</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 49v</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -117,6 +121,7 @@
 <p><date when="1599-04-24" n="Tuesday"/></p>
 <p><time when="19:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#np #p"/>
@@ -135,6 +140,8 @@
 <change when="2011-04-26">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-24">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -144,20 +151,20 @@
 <body>
 <div>
 <p><lb/>Elizab parker</p>
-<p><lb/><choice><sic>Amo</sic><corr>Anno</corr></choice> 1599 the 24 of aprill <lb/>&Tuesday; &pmfl; at 15 &past; 7. Nicolas <lb/>parker &amp; his Brother for <lb/>Besse&slash; <foreign xml:lang="la">quid incid&flourish; &slash; et <choice><sic>quus</sic><corr>quis</corr></choice> <lb/>est <choice><orig>pr</orig><reg>pater</reg></choice> ei<choice><orig>&uscon;</orig><reg>us</reg></choice> <choice><orig><subst><del type="over"><unclear reason="del" cert="low" resp="#rralley">f</unclear>r</del><add place="over">C</add></subst>onceptois</orig><reg>Conceptionis</reg></choice></foreign></p>
+<p><lb/><choice><sic>Amo</sic><corr>Anno</corr></choice> 1599 the 24 of aprill <lb/><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> at 15 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 7. Nicolas <lb/>parker &amp; his Brother for <lb/>Besse/ <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quid incid’ / et <choice><sic>quus</sic><corr>quis</corr></choice> <lb/>est <choice><orig>pr</orig><reg>pater</reg></choice> ei<choice><orig>ꝯ</orig><reg>us</reg></choice> <choice><orig><subst><del type="over"><unclear reason="del" cert="low" resp="#rralley">f</unclear>r</del><add place="over">C</add></subst>onceptois</orig><reg>Conceptionis</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">what will happen and who is the father of her child</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>In this Action Rem<choice><orig>&eover;</orig><reg>em</reg></choice>ber thes <lb/>that followe</p>
-<p><lb/>Whitfild howe he had her &vVowel;p</p>
-<p><lb/>The Smith that &vVowel;sed to her</p>
+<p><lb/>In this Action Rem<choice><orig>ē</orig><reg>em</reg></choice>ber thes <lb/>that followe</p>
+<p><lb/>Whitfild howe he had her <choice><orig>v</orig><reg>u</reg></choice>p</p>
+<p><lb/>The Smith that <choice><orig>v</orig><reg>u</reg></choice>sed to her</p>
 <p><lb/><choice><orig><hi rend="overline">Willm</hi></orig><reg>William</reg></choice> Casson howe he had her</p>
-<p><lb/>Old Whetley howe he did &vVowel;se her</p>
-<p><lb/>Captain Reddelsdon <rs type="address" xml:id="address1">at m<hi rend="superscript">r</hi> <subst><del type="strikethrough">blagu&flourish;</del> <add place="infralinear">brag&pluralLoop;</add></subst></rs></p>
-<p><lb/>fardell <rs type="address" xml:id="address2">of Southworke</rs> when I sent <lb/>her to see his wyf lying in</p>
-<p><lb/>The tyme that she went to <placeName>hackney</placeName> and she went not thether <lb/>but to <placeName>Lambeth</placeName> <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">a</add></subst> baker &amp; other fellows&slash; <add place="lineEnd">&amp; cam home dronk</add></p>
-<p><lb/>The tyme that she went to <placeName>flit streat</placeName> when I went to <placeName>Lambeth</placeName> <lb/>in An Afternon&slash; &amp; forbad her to goe out&slash;</p>
-<p><lb/>The tyme that she staid soe long at market&slash;</p>
+<p><lb/>Old Whetley howe he did <choice><orig>v</orig><reg>u</reg></choice>se her</p>
+<p><lb/>Captain Reddelsdon <rs type="address" xml:id="address1">at m<hi rend="superscript">r</hi> <subst><del type="strikethrough">blagu’</del> <add place="infralinear">brag<choice><orig>ꝭ</orig><reg>es</reg></choice></add></subst></rs></p>
+<p><lb/>fardell <rs type="address" xml:id="address2" key="PLACE2073" resp="#mhawkins">of Southworke</rs> when I sent <lb/>her to see his wyf lying in</p>
+<p><lb/>The tyme that she went to <placeName key="PLACE1463" resp="#mhawkins">hackney</placeName> and she went not thether <lb/>but to <placeName key="PLACE2057" resp="#mhawkins">Lambeth</placeName> <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">a</add></subst> baker &amp; other fellows/ <add place="lineEnd">&amp; cam home dronk</add></p>
+<p><lb/>The tyme that she went to <placeName key="PLACE111" resp="#mhawkins">flit streat</placeName> when I went to <placeName key="PLACE2057" resp="#mhawkins">Lambeth</placeName> <lb/>in An Afternon/ &amp; forbad her to goe out/</p>
+<p><lb/>The tyme that she staid soe long at market/</p>
 </div>
 </body>
 </text>

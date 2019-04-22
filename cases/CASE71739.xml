@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE71739</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-06-05">05 June 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="232">MS Ashmole 232, p. 225</idno>
+<altIdentifier type="fn_number"><idno n="Napier049">Napier, vol. 49</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0225" to="0225"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="3"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#tgravius">Theodoricus Gravius</handNote>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tgravius">
+<persName><forename>Theodoricus</forename> <surname>Gravius</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wi">
+<persName><forename>William</forename> <surname>Iremonger</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="i1">
+<persName><surname evidence="inferred" cert="medium">Iremonger</surname></persName>
+<sex value="1" evidence="external">M</sex>
+</person>
+<person xml:id="i2">
+<persName><surname evidence="inferred" cert="medium">Iremonger</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="i3">
+<persName><surname evidence="inferred" cert="low">Iremonger</surname></persName>
+<sex value="0">U</sex>
+</person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
+<listRelation><relation name="father" active="#wi" passive="#i1 #i2 #i3"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1631-04-05" n="Tuesday"/></p>
+<p><time when="19:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier #tgravius"/>
+<cb:consultant ref="#rnapier #tgravius"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#wi" present="no"/>
+<cb:topic key="fallingSickness"><person sameAs="#wi"/></cb:topic>
+<cb:topic key="lunatic"><person sameAs="#wi"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-14">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-06-05">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-06-26">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-09-19">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-10-23">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-05-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aas0250.jpg" url="aas0250.jpg" n="225"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><handShift new="#tgravius"/>Willelm<choice><orig>ꝯ</orig><reg>us</reg></choice> <unclear reason="hand" cert="low">Eirm<choice><orig>ā</orig><reg>an</reg></choice>ga<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></unclear> <rs type="address" xml:id="address1" key="PLACE380" resp="#mhawkins"><foreign xml:lang="en">of Danstabbel</foreign></rs>. Epileptic<choice><orig>ꝯ</orig><reg>us</reg></choice>. <lb/><choice><orig>v</orig><reg>u</reg></choice>xoratus <handShift new="#rnapier"/>3 lib. habet<note place="chart"><handShift new="#tgravius"/>1631 <lb/>Mense Aprili <lb/>d. 5. h 7. 15 p m. <lb/><handShift new="#rnapier"/>Lunaticus</note></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>William Iremonger of Dunstable epileptic a married man, he has 3 children: the 5th day of the month of April 1631 at 7.15pm lunatic.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

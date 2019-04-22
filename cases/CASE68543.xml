@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE68543</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-10-25">25 October 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,12 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
-<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,6 +80,7 @@
 <settingDesc>
 <p><date notBefore-custom="1629-05-25T19:40:00" notAfter-custom="1629-05-26T07:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="conjecture" present="unclear"/>
@@ -88,7 +97,7 @@
 <change when="2016-10-25">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-07-05">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-07-10">Checked by <name xml:id="jedge">Joanne Edge</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,8 +105,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Agnys Hombye <rs type="address" xml:id="address1">of <lb/>Kettering</rs> 60 y. a wife <lb/><choice><sic>mayed</sic><corr>maryed</corr></choice> an old hus<supplied reason="binding" cert="medium">band</supplied> <lb/>distracted 3 y &amp; r<supplied reason="binding" cert="medium">un</supplied><lb/>neth <choice><orig>v</orig><reg>u</reg></choice>p &amp; downe</p>
-<p><lb/>neav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> had but on <lb/>child &amp; <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dy<supplied reason="binding" cert="low">ed</supplied> <lb/>she neav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> hath <lb/>bene well sinc <lb/>but as a distract<supplied reason="binding">ed</supplied> <lb/><choice><orig></orig><reg>per</reg></choice>son rangeth <choice><orig>v</orig><reg>u</reg></choice>p <supplied reason="binding" cert="high">&amp;</supplied> <lb/>do<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">wn</add></subst>e</p>
+<p><lb/>Agnys Hombye <rs type="address" xml:id="address1" key="PLACE1674" resp="#mhawkins">of <lb/>Kettering</rs> 60 y. a wife <lb/><choice><sic>mayed</sic><corr>maryed</corr></choice> an old hus<supplied reason="binding" cert="medium">band</supplied> <lb/>distracted 3 y &amp; r<supplied reason="binding" cert="medium">un</supplied><lb/>neth <choice><orig>v</orig><reg>u</reg></choice>p &amp; downe</p>
+<p><lb/>neav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> had but on <lb/>child &amp; <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dy<supplied reason="binding" cert="low">ed</supplied> <lb/>she neav<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> hath <lb/>bene well sinc <lb/>but as a distract<supplied reason="binding">ed</supplied> <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>son rangeth <choice><orig>v</orig><reg>u</reg></choice>p <supplied reason="binding" cert="high">&amp;</supplied> <lb/>do<subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">wn</add></subst>e</p>
 </div>
 </body>
 </text>

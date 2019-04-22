@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE64507</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-11">11 August 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 197v/uR, f. 198r/uL</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -61,7 +66,7 @@
 <person xml:id="e2">
 <persName><surname evidence="inferred" type="maiden">Ersfeild</surname></persName>
 <sex value="2">F</sex>
-<birth><date notBefore="1627-08-23" notAfter="1628-05-23"/></birth>
+
 </person>
 <listRelation><relation name="mother" active="#e1" passive="#e2" evidence="internal"/></listRelation>
 </listPerson>
@@ -70,6 +75,7 @@
 <p><date when="1627-08-23" n="Thursday"/></p>
 <p><time when="16:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#e1" evidence="internal"/>
@@ -86,7 +92,7 @@
 <change when="2016-08-11">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-10-12">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-05-17">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-08-15">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,12 +101,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The ladye <add place="supralinear"><foreign xml:lang="la">Heroina</foreign></add> Earsfield <supplied reason="binding" cert="medium"><foreign xml:lang="la">quærit</foreign></supplied> <lb/><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> gestat in <choice><orig>v</orig><reg>u</reg></choice>tero m<supplied reason="binding">asc</supplied> <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> fæmin<choice><orig>ā</orig><reg>am</reg></choice></foreign> Aug 2<supplied reason="binding">3</supplied> <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice>. h. 4. p. m. 162<supplied reason="binding">7</supplied></p>
+<p><lb/>The ladye <add place="supralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Heroina</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Lady</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add> Earsfield <supplied reason="binding" cert="medium"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">quærit</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">asks</seg><link type="is-translation-of" target="#foreign002 #translation002"/></supplied> <lb/><foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> gestat in <choice><orig>v</orig><reg>u</reg></choice>tero m<supplied reason="binding">asc</supplied> <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> fæmin<choice><orig>ā</orig><reg>am</reg></choice></foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">whether she is carrying a male or a female in her womb</seg><link type="is-translation-of" target="#foreign003 #translation003"/> Aug 2<supplied reason="binding">3</supplied> <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice>. h. 4. p. m. 162<supplied reason="binding">7</supplied></p>
 </div>
 <figure type="astro" subtype="astroChartBlank"/>
 <div>
 <pb xml:id="f198r" n="198r"/>
-<p><lb/>The lady Earsfild <foreign xml:lang="la">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>in <choice><orig>v</orig><reg>u</reg></choice>tero gestat masc: <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> <lb/>fæmin<choice><orig>ā</orig><reg>am</reg></choice></foreign> Aug. 23. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice>. h. 4 <lb/>p m. 1627</p>
+<p><lb/>The lady Earsfild <foreign xml:lang="la" xml:id="foreign004" decls="#original_source">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>in <choice><orig>v</orig><reg>u</reg></choice>tero gestat masc: <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> <lb/>fæmin<choice><orig>ā</orig><reg>am</reg></choice></foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">asks whether she is carrying a male or a female in her womb</seg><link type="is-translation-of" target="#foreign004 #translation004"/> Aug. 23. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice>. h. 4 <lb/>p m. 1627</p>
 </div>
 <figure type="astro" subtype="astroChartBlank"/>
 </body>

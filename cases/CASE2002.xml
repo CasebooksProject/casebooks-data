@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2002</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#jyoung">This entry is unusual in layout: the question begins in the lower part of the left column, then runs across both columns, then picks up again a little further up the right column. The judgment comes immediately below this last section of the question.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, bR</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 139v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,6 +40,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -104,6 +110,7 @@
 <p><date when="1597-07-04" n="Monday"/></p>
 <p><time when="09:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#anon" present="unclear" evidence="inferred"/>
@@ -123,6 +130,8 @@
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-04-25">Coding of ships updated by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-05-18">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -131,8 +140,8 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/><choice><orig><hi rend="overline">Willm</hi></orig><reg>William</reg></choice> Palmer of 38 yers <lb/><rs type="address" xml:id="address1">of whitcrose stret</rs> marchant <lb/>the sonn&flourish; of <choice><orig><hi rend="overline">willm</hi></orig><reg>william</reg></choice> &amp; katerin&flourish; <lb/>The husband of &ff;raunces Ran<lb/>dole <del type="strikethrough">&amp; mary</del> Daughter of <lb/>Thomas Randoll &amp; mary <lb/>Agborough. this man <lb/>went awai 3 yers agoe <lb/>almost at mihelmas into <placeName>India</placeName> <lb/>to knowe what is becom of him <lb/><foreign xml:lang="la">vita at mors &slash;</foreign> he went awai <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> captain Lancaster <lb/>in the Re&uConsonant;endg.</p> <cb xml:id="colB" n="b"/>
-<p><lb/>questo 1597 <gap reason="blotDel" unit="chars" extent="2"/> the 4 &IConsonant;uly &Monday; <lb/>&Anflmfl; at 9.</p>
+<p><lb/><choice><orig><hi rend="overline">Willm</hi></orig><reg>William</reg></choice> Palmer of 38 yers <lb/><rs type="address" xml:id="address1" key="PLACE316" resp="#mhawkins">of whitcrose stret</rs> marchant <lb/>the sonn’ of <choice><orig><hi rend="overline">willm</hi></orig><reg>william</reg></choice> &amp; katerin’ <lb/>The husband of Fraunces Ran<lb/>dole <del type="strikethrough">&amp; mary</del> Daughter of <lb/>Thomas Randoll &amp; mary <lb/>Agborough. this man <lb/>went awai 3 yers agoe <lb/>almost at mihelmas into <placeName key="PLACE2253">India</placeName> <lb/>to knowe what is becom of him <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">vita at mors /</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">life or death</seg><link type="is-translation-of" target="#foreign001 #translation001"/> he went awai <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> captain Lancaster <lb/>in the Re<choice><orig>u</orig><reg>v</reg></choice>endg.</p> <cb xml:id="colB" n="b"/>
+<p><lb/>questo 1597 <gap reason="blotDel" unit="chars" extent="2"/> the 4 <choice><orig>I</orig><reg>J</reg></choice>uly <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/><choice><orig>An’ m’</orig><reg>am</reg></choice> at 9.</p>
 
 </div>
 </body>

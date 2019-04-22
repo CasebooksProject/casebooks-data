@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13473</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 149r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,18 +35,24 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#diary"/>
@@ -56,8 +67,9 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1598-02-28"/></p>
+<p><date notBefore="1598-02-28" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -73,16 +85,21 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0475.jpg" url="acm0475.jpg" n="149r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><add place="marginLeft">1598</add> feb. 27. <choice><orig>&crossedp;</orig><reg>per</reg></choice> tot<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> di<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice>. et 28 feb. <lb/><choice><orig>in aurora</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice>. et <choice><orig>die &MoonSymbol; et &MarsSymbol;</orig><reg>die Lun&aelig; et Martis</reg><reg type="gloss">Monday and Tuesday</reg></choice> vehe<lb/>mentiss. ventus seviebat. circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>hor<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> 7. <choice><orig>in aur.</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice> &TuesdayN; 28. feb.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><add place="marginLeft">1598</add> feb. 27. <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> tot<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> di<choice><orig><hi rend="overline">e</hi></orig><reg>em</reg></choice>. et 28 feb. <lb/><choice><orig>in aurora</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice>. et <choice><orig>die ☾ et ♂</orig><reg>die Lunæ et Martis</reg><reg type="gloss">Monday and Tuesday</reg></choice> vehe<lb/>mentiss. ventus seviebat. circit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>hor<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> 7. <choice><orig>in aur.</orig><reg>in aurora</reg><reg type="gloss">in the morning</reg></choice> <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> 28. feb.</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>All day on the 27 February and in the morning of the 28th and on Monday and Tuesday a most vehement wind raged at about 7 in the morning on Tuesday 28 February.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

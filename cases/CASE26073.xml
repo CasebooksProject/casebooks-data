@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26073</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="layout" resp="#jyoung">This page is written sideways.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS, bL</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 41r</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0041r" to="0041r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#diary"/>
+</textClass>
+<settingDesc>
+<p><date when="1602-04-22" n="Thursday" evidence="inferred"/></p>
+<p><time notBefore="19:00:00" notAfter="19:30:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="religiousExperience"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-01">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-13">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-11-27">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0113.jpg" url="acr0113.jpg" n="41r"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>R. Nap. Ap. 22 <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> hor 7. <choice><orig><subst><del type="over">a</del><add place="over">p</add></subst>ost m</orig><reg>pm</reg></choice> <lb/>a quopi<choice><orig>ā</orig><reg>am</reg></choice> nescio quo in p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>cib<choice><orig>ꝯ</orig><reg>us</reg></choice> <del type="strikethrough">qui</del> <choice><orig>v</orig><reg>u</reg></choice>t <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>transibat in ædib<choice><orig>ꝯ</orig><reg>us</reg></choice> Paulinis <choice><orig>v</orig><reg>u</reg></choice>t accidit <lb/>Ludibrio habitus. c. q. Hac hora optime <lb/>affect<choice><orig>ꝯ</orig><reg>us</reg></choice> deo <choice><orig>g<hi rend="overline">r</hi>æ</orig><reg>gratiæ</reg></choice> * * * *.</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>R. Nap. Thursday 22 April at 7pm [moving from I know not what place to the Pauline house?] was affected by the usual [mockery?] [two letters not understood] excellently affected at this time thanks be to God * * * *.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

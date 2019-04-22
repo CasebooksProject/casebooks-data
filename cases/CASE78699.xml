@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE78699</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-11-20">20 November 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="412">MS Ashmole 412, f. 63r</idno>
+<altIdentifier type="fn_number"><idno n="Napier054">Napier, vol. 54</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0063r" to="0063r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#unknown-f">Unidentified Hand (1624–1634)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="unknown-f">
+<persName><roleName>Unidentified (1624–1634)</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="th">
+<persName><forename>Thomas</forename> <surname>Harrowell</surname></persName>
+<sex value="1">M</sex>
+<age value="36">36</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1634-01-03" n="Friday"/></p>
+<p><time when="09:30:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#unknown-f"/>
+<cb:consultant ref="#unknown-f"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#th"/>
+<cb:subject ref="#th" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#th"/></cb:topic>
+<cb:info type="urine" cert="medium"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-21">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-11-20">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-12-15">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2018-01-10">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abr0137.jpg" url="abr0137.jpg" n="63r" width="5838" height="8250"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Thomas Harrowell <rs type="address" xml:id="address1" key="PLACE432" resp="#mhawkins">of Leighton Bu<lb type="hyphenated"/>dizert</rs>. 36. y. <choice><orig>I</orig><reg>J</reg></choice>an. 3. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice>. h. 9. 30. a m. <lb/>163<subst><del type="over">3</del><add place="over">4</add></subst></p><anchor xml:id="questionEnd"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>
+<p><lb/><choice><orig>v</orig><reg>u</reg></choice>r<supplied reason="damage" cert="low">ine</supplied> <gap extent="unclear" reason="damage"/></p><anchor xml:id="urineInfoEnd"/>
+</div>
+</body>
+</text>
+</TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE49281</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-10-02">02 October 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="235">MS Ashmole 235, f. 109v</idno>
-&Napier030;
+<altIdentifier type="fn_number"><idno n="Napier030">Napier, vol. 30</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -58,7 +64,7 @@
 <sex value="1">M</sex>
 <age value="16">16</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<birth><date when="1603-10-27" n="Thursday"/><time notBefore="13:00:00" notAfter="14:00:00"/></birth>
+<birth><date when="1603-10-27" n="Thursday"/><time when="14:00:00"/></birth>
 <death><date when="1619-07-20" evidence="internal"/><time when="11:00:00" xml:id="time1" exclude="#time2" evidence="internal"/><time when="23:00:00" xml:id="time2" exclude="#time1" evidence="internal"/></death>
 </person>
 <person xml:id="g">
@@ -72,6 +78,7 @@
 <p><date when="1619-07-20" n="Tuesday"/></p>
 <p><time when="07:39:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -91,6 +98,9 @@
 <change when="2016-02-22">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-01">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-18">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,12 +108,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice> Gulson <lb/><rs type="address" xml:id="address1">of Stony stratford</rs> <lb/>16 y: the thursday <lb/>before alhallowday <lb/>betwixt on &amp; two <gap reason="binding" extent="1" unit="words"/> <lb/>160<subst><del type="over">2</del><add place="over">3</add></subst> borne <add place="infralinear">alhallouday octob <choice><sic>27</sic><corr type="delText"/></choice> 27 <gap reason="binding" extent="1" unit="words"/></add> his <lb/>mother. came for <lb/>him &IConsonant;uly 20 &Tuesday; <lb/>h. 7. 39 &antm; <lb/>1619 <add place="infralinear"><foreign xml:lang="la">moriet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign></add></p>
+<p><lb/>Willi<choice><orig>ā</orig><reg>am</reg></choice> Gulson <lb/><rs type="address" xml:id="address1" key="PLACE825" resp="#mhawkins">of Stony stratford</rs> <lb/>16 y: the thursday <lb/>before alhallowday <lb/>betwixt on &amp; two <lb/>160<subst><del type="over">2</del><add place="over">3</add></subst> borne <add place="infralinear">alhallouday octob <choice><sic>27</sic><corr type="delText"/></choice> 27. h 2</add> his <lb/>mother. came for <lb/>him <choice><orig>I</orig><reg>J</reg></choice>uly 20 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <lb/>h. 7. 39 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1619 <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">moriet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">he will die</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add></p>
 </div>
 <div>
-<p><lb/>will: Gulson <rs type="address" sameAs="#address1">of Stony stratford</rs> <lb/>16 y &IConsonant;uly 20 &Tuesday; h 7. 39 &antm; <lb/>1619</p>
+<p><lb/>will: Gulson <rs type="address" sameAs="#address1" key="PLACE825" resp="#mhawkins">of Stony stratford</rs> <lb/>16 y <choice><orig>I</orig><reg>J</reg></choice>uly 20 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h 7. 39 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1619</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

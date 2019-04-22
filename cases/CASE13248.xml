@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13248</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 110r/uS, f. 109r/uS, f. 108v/uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 110r, f. 109r, f. 108v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -31,12 +36,13 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -62,13 +68,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1597" cert="medium"/></p>
+<p><date notBefore="1597-01-22" notAfter="1597-09-06" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gb"/>
 <cb:subject ref="#gb" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#gb" resp="#mhawkins"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#gb" resp="#mhawkins"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -81,6 +88,9 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-28">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-19">Page/column break coding updated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,25 +98,44 @@
 <graphic xml:id="ace0233.jpg" url="ace0233.jpg" n="109r"/>
 <graphic xml:id="ace0232.jpg" url="ace0232.jpg" n="108v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Georg Blundle <rs type="date" sameAs="#date1">1577</rs>. <rs type="address" sameAs="#address1">L</rs> <rs type="date" sameAs="#date1">10 <lb/>Septemb:</rs> <rs type="time" sameAs="#time1">h. 7 m. 30 <choice><orig>ant merid</orig><reg>am</reg></choice></rs> <rs type="date" sameAs="#date1"><choice><orig>die <lb/>&MarsSymbol;</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Georg Blundle <rs type="date" sameAs="#date1">1577</rs>. <rs type="address" sameAs="#address1" key="PLACE685">L</rs> <rs type="date" sameAs="#date1">10 <lb/>Septemb:</rs> <rs type="time" sameAs="#time1">h. 7 m. 30 <choice><orig>ant merid</orig><reg>am</reg></choice></rs> <rs type="date" sameAs="#date1"><choice><orig>die <lb/>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs></p>
 </div>
-&astroChartPartialDeleted;
-<div>
-<p><lb/>nativ. G Blund. <rs type="date" sameAs="#date1">1577</rs>. <rs type="address" sameAs="#address1"><foreign xml:lang="en">of Linfor.</foreign></rs> <rs type="date" sameAs="#date1">x septem</rs> 
-<lb/><rs type="time" sameAs="#time1">h. 7. m. 30 <choice><orig>ante merid</orig><reg>am</reg></choice></rs> <rs type="date" sameAs="#date1">&TuesdayN;</rs>.</p>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>George Blundell at L[inford?] Tuesday 10 September 1577 at 7.30am.</p>
 </div>
-&astroChartDeleted;
-<div><pb xml:id="f109r" n="109r" facs="#ace0233.jpg"/>
-<p><lb/>George Blundle nat<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/><rs type="date" sameAs="#date1">1577</rs> <rs type="address" sameAs="#address1">Linford comitat. Buckingh</rs> <lb/><rs type="date" sameAs="#date1">10 Sept.</rs> <rs type="time" sameAs="#time1"><choice><sic>h.</sic><corr type="delText"/></choice> <del type="strikethrough">8 ant</del> h. 7. 30. m. <lb/><choice><orig>ante merid:</orig><reg>am</reg></choice></rs> <rs type="date" sameAs="#date1"><choice><orig>die Martis</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs>. h&aelig;c nati<lb/>vitas verius calculata qu<choice><orig>&aover;</orig><reg>am</reg></choice> illa ex <lb/>p<choice><orig>&loopedr;</orig><reg>re</reg></choice>cedentib<choice><orig>&uscon;</orig><reg>us</reg></choice> eiusd<choice><orig>&eover;</orig><reg>em</reg></choice>.</p>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartPartialDeleted"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source">
+<p><lb/>nativ. G Blund. <rs type="date" sameAs="#date1">1577</rs>. <rs type="address" sameAs="#address1" key="PLACE685" resp="#mhawkins"><foreign xml:lang="en">of Linfor.</foreign></rs> <rs type="date" sameAs="#date1">x septem</rs> 
+<lb/><rs type="time" sameAs="#time1">h. 7. m. 30 <choice><orig>ante merid</orig><reg>am</reg></choice></rs> <rs type="date" sameAs="#date1"><choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs>.</p>
 </div>
-&astroChartDeleted;
-<div><pb xml:id="f108v" n="108v" facs="#ace0232.jpg"/>
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<p>The nativity of G. Blund[ell] of Linford Tuesday 10 September at 7.30am.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
+<figure type="astro" subtype="astroChartDeleted"/>
+<div xml:id="foreign003" xml:lang="la" decls="#original_source"><pb xml:id="f109r" n="109r" facs="#ace0233.jpg"/>
+<p><lb/>George Blundle nat<choice><orig>ꝯ</orig><reg>us</reg></choice> <lb/><rs type="date" sameAs="#date1">1577</rs> <rs type="address" sameAs="#address1" key="PLACE685" resp="#mhawkins">Linford comitat. Buckingh</rs> <lb/><rs type="date" sameAs="#date1">10 Sept.</rs> <rs type="time" sameAs="#time1"><choice><sic>h.</sic><corr type="delText"/></choice> <del type="strikethrough">8 ant</del> h. 7. 30. m. <lb/><choice><orig>ante merid:</orig><reg>am</reg></choice></rs> <rs type="date" sameAs="#date1"><choice><orig>die Martis</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs>. hæc nati<lb/>vitas verius calculata qu<choice><orig>ā</orig><reg>am</reg></choice> illa ex <lb/>p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>cedentib<choice><orig>ꝯ</orig><reg>us</reg></choice> eiusd<choice><orig>ē</orig><reg>em</reg></choice>.</p>
+</div>
+<div xml:id="translation003" xml:lang="en" decls="#translation">
+<pb xml:id="f109r-t" n="109r"/>
+<p>George Blundell born 1577 at Linford in the county of Buckingham Tuesday 10 September at 7.30am. This nativity more correctly calculated than any of those preceding it.</p>
+</div>
+<link type="is-translation-of" target="#foreign003 #translation003"/>
+<figure type="astro" subtype="astroChartDeleted"/>
+<div xml:id="foreign004" xml:lang="la" decls="#original_source"><pb xml:id="f108v" n="108v" facs="#ace0232.jpg"/>
 <head>fig. nativitatis</head>
-<p><lb/>Georg. Blundle <rs type="date" xml:id="date1">1577</rs>. <rs type="address" xml:id="address1">Linford</rs> <rs type="date" sameAs="#date1">10 <lb/>septemb.</rs> <rs type="time" xml:id="time1">hora <del type="strikethrough">8</del> 7. 30. m. <choice><orig>ant merid</orig><reg>am</reg></choice></rs> <lb/><rs type="date" sameAs="#date1">&TuesdayN;</rs>. verius calculata c&aelig;teris</p>
+<p><lb/>Georg. Blundle <rs type="date" xml:id="date1">1577</rs>. <rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">Linford</rs> <rs type="date" sameAs="#date1">10 <lb/>septemb.</rs> <rs type="time" xml:id="time1">hora <del type="strikethrough">8</del> 7. 30. m. <choice><orig>ant merid</orig><reg>am</reg></choice></rs> <lb/><rs type="date" sameAs="#date1"><choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs>. verius calculata cæteris</p>
 </div>
-&astroChartDeleted;
+<div xml:id="translation004" xml:lang="en" decls="#translation">
+<pb xml:id="f108v-t" n="108v"/>
+<head>Natal chart.</head>
+<p>George Blundell Linford Tuesday 10 September 1577 at 7.30am more correctly calculated than the others.</p>
+</div>
+<link type="is-translation-of" target="#foreign004 #translation004"/>
+<figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>
 </TEI>

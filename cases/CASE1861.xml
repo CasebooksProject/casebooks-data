@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE1861</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 117v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -60,10 +70,13 @@
 <person xml:id="hn">
 <persName><roleName>Sir</roleName> <forename>Henry</forename> <surname>Neville</surname> <roleName>Lord of Bergavenny</roleName></persName>
 <sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<death><date notAfter="1597-06-11"/></death>
 </person>
 <person xml:id="en">
 <persName><roleName>Mr</roleName> <forename>Edward</forename> <surname>Neville</surname></persName>
 <sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 </listPerson>
 </particDesc>
@@ -71,6 +84,7 @@
 <p><date when="1597-06-12" n="Sunday"/></p>
 <p><time when="08:40:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#anon"/>
@@ -90,6 +104,8 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-18">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,9 +114,9 @@
 <text xml:lang="en">
 <body>
 <div>
- <p><lb/><add place="lineBeginning">at</add> <placeName>Eridge in the <choice><orig>&crossedp;</orig><reg>par</reg></choice>ishe of <lb/>F<unclear reason="blot" cert="high">i</unclear>ncle in Sussex</placeName> <placeName>my L <lb/>of <placeName>Burgayne</placeName>s house</placeName> now <lb/>in the tenure of m<hi rend="superscript">r</hi> Edward <lb/>Nevell. <foreign xml:lang="la">&VVowel;trum sit thesaur<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>ibi necn<choice><orig>&oover;</orig><reg>on</reg></choice></foreign>.<note place="marginLeft"><lb/><foreign xml:lang="la"><choice><orig>5000<hi rend="superscript">li</hi></orig><reg>5000 libra</reg></choice></foreign> <lb/>in a <placeName>sellar</placeName></note> yt was hide a<lb/>bo&vVowel;te som 24 or 25 yers <lb/>Agoe. by <del type="strikethrough">the</del> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Henry Nevill <lb/>Lord of <placeName>Burganie</placeName> he hid <lb/>yt before he died as yt is <lb/>supposed. within <placeName>the howse</placeName> <lb/>And they ha&uConsonant;e di&uConsonant;ers <choice><orig>p<hi rend="superscript">r</hi></orig><reg>pre</reg></choice>s<choice><orig>&uover;</orig><reg>um</reg></choice>p<lb/>tions therof. by on that died <lb/>also. that was at the hiding <lb/>therof. questo at 40 &past; 8 <lb/>the 12 of &IConsonant;une &Sunday; &anflmfl; <lb/>This queston was made by <lb/>on that hard speches therof <lb/>but noe kine to the man but <lb/>he was sent by his kinsmane <lb/>that hid yt.</p>
+ <p><lb/><add place="lineBeginning">at</add> <rs type="address" xml:id="address1">Eridge in the <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ishe of <lb/>F<unclear reason="blot" cert="high">i</unclear>ncle in Sussex</rs> my L <lb/>of Burgaynes house now <lb/>in the tenure of m<hi rend="superscript">r</hi> Edward <lb/>Nevell. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>V</orig><reg>U</reg></choice>trum sit thesaur<choice><orig>ū</orig><reg>um</reg></choice> <lb/>ibi necn<choice><orig>ō</orig><reg>on</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Whether there is treasure there or not</seg><link type="is-translation-of" target="#foreign001 #translation001"/>.<note place="marginLeft"><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>5000<hi rend="superscript">li</hi></orig><reg>5000 libra</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">5000 pounds</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>in a <placeName>sellar</placeName></note> yt was hide a<lb/>bo<choice><orig>v</orig><reg>u</reg></choice>te som 24 or 25 yers <lb/>Agoe. by <del type="strikethrough">the</del> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Henry Nevill <lb/>Lord of Burganie he hid <lb/>yt before he died as yt is <lb/>supposed. within <placeName>the howse</placeName> <lb/>And they ha<choice><orig>u</orig><reg>v</reg></choice>e di<choice><orig>u</orig><reg>v</reg></choice>ers <choice><orig>p<hi rend="superscript">r</hi></orig><reg>pre</reg></choice>s<choice><orig>ū</orig><reg>um</reg></choice>p<lb/>tions therof. by on that died <lb/>also. that was at the hiding <lb/>therof. questo at 40 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 8 <lb/>the 12 of <choice><orig>I</orig><reg>J</reg></choice>une <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <choice><orig>an’ m’</orig><reg>am</reg></choice> <lb/>This queston was made by <lb/>on that hard speches therof <lb/>but noe kine to the man but <lb/>he was sent by his kinsmane <lb/>that hid yt.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

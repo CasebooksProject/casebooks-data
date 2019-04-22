@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE80072</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR-2</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 149r</idno>
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0149r" to="0149r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ju">
+<persName><forename>John</forename> <surname>Uvedale</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1601-07-12T17:00:00" notAfter-custom="1601-07-13T06:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#ju" present="unclear"/>
+<cb:topic key="faintness"><person sameAs="#ju"/></cb:topic>
+<cb:topic key="feebleness"><person sameAs="#ju"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-10-05">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afw0315.jpg" url="afw0315.jpg" n="149r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn <choice><orig>v</orig><reg>u</reg></choice><choice><orig>u</orig><reg>v</reg></choice>edale was very <lb/>faynt &amp; feeble this day. <lb/><choice><orig>I</orig><reg>J</reg></choice>uly. <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over"><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice></add></subst> hor. 3. 30 p <lb/>m. 160<choice><orig>i</orig><reg>1</reg></choice></p>
+</div>
+</body>
+</text>
+</TEI>

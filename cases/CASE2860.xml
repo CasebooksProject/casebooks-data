@@ -7,14 +7,19 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2860</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">uL</bibl>
+<bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 258r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -61,6 +71,11 @@
 <birth><date when="1566-08-18" n="Sunday" sameAs="#date1"/> <time when="07:40:00" sameAs="#time1"/></birth>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="m">
+<persName><forename>Magdalen</forename></persName>
+<sex value="2">F</sex>
+<age value="33">33</age>
+</person>
 <person xml:id="cj" evidence="internal">
 <persName><forename><unclear reason="hand" cert="medium" resp="#rralley">C</unclear>laise</forename> <surname>Jacobson</surname></persName>
 <sex value="1">M</sex>
@@ -72,10 +87,10 @@
 <occupation>Shipmaster</occupation>
 </person>
 <org xml:id="par" evidence="internal" type="ship">
-<orgName>The Paradice of <placeName>Amsterdam</placeName></orgName>
+<orgName>The Paradice of <placeName key="PLACE2217" resp="#mhawkins">Amsterdam</placeName></orgName>
 </org>
 <org xml:id="gri" evidence="internal" type="ship">
-<orgName>The Griffen of <placeName>Amsterdam</placeName></orgName>
+<orgName>The Griffen of <placeName key="PLACE2217" resp="#mhawkins">Amsterdam</placeName></orgName>
 </org>
 <listRelation><relation name="shipmaster" active="#cj" passive="#par" evidence="internal"/><relation name="shipmaster" active="#wt" passive="#gri" evidence="internal"/></listRelation>
 </listPerson>
@@ -83,11 +98,14 @@
 <settingDesc>
 <p><date notBefore="1597-01-20" notAfter="1598-02-20" evidence="inferred" cert="high"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#hw"/>
 <cb:subject ref="#hw" present="unclear"/>
+<cb:object ref="#m"/>
 <cb:topic key="journeys" evidence="internal"><person sameAs="#hw" resp="#mhawkins"/></cb:topic>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#m"/></cb:topic>
 <cb:info type="event" subtype="unclear"/>
 <cb:judgment/>
 </cb:consultation>
@@ -101,6 +119,8 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -109,9 +129,13 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Henri woode <rs type="address" xml:id="address1">of Swan <lb/>Alley in Colman streate</rs> <foreign xml:lang="la">Natus <lb/>erat</foreign> <rs type="date" xml:id="date1">1566 the 18 of Auguste <lb/>&Sunday;</rs> <rs type="time" xml:id="time1">&Anflmfl; at <subst><del type="over">3</del><add place="over">4</add></subst>0 &past; 7</rs>. <foreign xml:lang="la">sub latitud</foreign> <lb/>51 49 <choice><orig><hi rend="overline">mt&loop;</hi></orig><reg>minutes</reg></choice>&slash;</p>
+<p><lb/>Henri woode <rs type="address" xml:id="address1" key="PLACE286" resp="#mhawkins">of Swan <lb/>Alley in Colman streate</rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Natus <lb/>erat</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">was born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <rs type="date" xml:id="date1">1566 the 18 of Auguste <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice></rs> <rs type="time" xml:id="time1"><choice><orig>An’ m’</orig><reg>am</reg></choice> at <subst><del type="over">3</del><add place="over">4</add></subst>0 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 7</rs>. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">sub latitud</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">under the latitude</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>51 49 <choice><orig><hi rend="overline">mtꝭ</hi></orig><reg>minutes</reg></choice>/</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>maudlin a maid of 33 years</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">frater ei<choice><orig>ꝯ</orig><reg>us</reg></choice> est <choice><orig><choice><sic>inimcꝯ</sic><corr>inimicꝯ</corr></choice></orig><reg>inimicus</reg></choice> p<unclear reason="hand" cert="medium">u</unclear>llic<choice><orig>ꝯ</orig><reg>us</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> <lb/>quem <choice><orig><hi rend="overline">het</hi></orig><reg>habet</reg></choice> <choice><sic>nulta</sic><corr>multa</corr></choice> Iniuria et <lb/>mala/.</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">Her brother is a [word not understood] enemy by whom she has many injuries and mischiefs.</seg><link type="is-translation-of" target="#foreign003 #translation003"/></p>
+</div>
 </body>
 </text>
 </TEI>

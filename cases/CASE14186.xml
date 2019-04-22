@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE14186</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="197">MS Ashmole 197, f. 106r</idno>
-&Napier008;
+<altIdentifier type="fn_number"><idno n="Napier008">Napier, vol. 8</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,6 +71,7 @@
 <p><date when="1603-11-21" n="Monday"/></p>
 <p><time when="13:52:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#e"/>
@@ -81,6 +90,7 @@
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,9 +99,9 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd"/>
-<p><lb/>M<hi rend="superscript">r</hi> Evens <choice><orig>&crossedp;</orig><reg>par</reg></choice>son <lb/>of <placeName>fosket</placeName> 30 nov<choice><orig>&eover;</orig><reg>em</reg></choice>b<choice><orig><subst><del type="over">&loopedr;</del><add place="over"><hi rend="superscript">r</hi></add></subst></orig><reg>er</reg></choice> <lb/>21. &Monday; hor. 1. 52. p <lb/>m 1603. a heate in <lb/>his stomacke<anchor xml:id="questionEnd"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/>white <lb/>th<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>nish wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</p><anchor xml:id="urineInfoEnd"/>
+<p><lb/>M<hi rend="superscript">r</hi> Evens <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>son <lb/>of <placeName key="PLACE673" resp="#mhawkins">fosket</placeName> 30 nov<choice><orig>ē</orig><reg>em</reg></choice>b<choice><orig><subst><del type="over"><hi rend="superscript">r</hi></del><add place="over"><hi rend="superscript">r</hi></add></subst></orig><reg>er</reg></choice> <lb/>21. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> hor. 1. 52. p <lb/>m 1603. a heate in <lb/>his stomacke<anchor xml:id="questionEnd"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/>white <lb/>th<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>nish wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</p><anchor xml:id="urineInfoEnd"/>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE56593</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 146r/uR, f. 146v/uL</bibl>
 <msDesc>
@@ -33,9 +38,17 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph><glyph xml:id="qtail">
+        <glyphName>Q WITH TAIL</glyphName>
+        <mapping type="standard">q</mapping>
+        <mapping type="PUA">U+E8BF</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -78,6 +91,7 @@
 <p><date when="1623-06-27" n="Friday"/></p>
 <p><time when="08:39:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gm" evidence="internal" present="unclear"/>
@@ -95,7 +109,7 @@
 <change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-07-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-11-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-07-27">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,9 +118,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Georg miles moved a quest <lb/>in the behalfe of <lb/>his father for his <lb/>sonne m<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ohn <lb/> <foreign xml:lang="la">de con<choice><orig>i</orig><reg>j</reg></choice>ugio <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>erit <choice><orig>v</orig><reg>u</reg></choice>tri<choice><orig></orig><reg>que</reg></choice> <choice><orig></orig><reg>par</reg></choice>ti c<choice><orig>ō</orig><reg>om</reg></choice>mod<choice><orig>ū</orig><reg>um</reg></choice> <lb/>et conducibile</foreign> <choice><orig>I</orig><reg>J</reg></choice>une <lb/>27 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h: 8 39 <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> <lb/>1623</p>
+<p><lb/>Georg miles moved a quest <lb/>in the behalfe of <lb/>his father for his <lb/>sonne m<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ohn <lb/> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">de con<choice><orig>i</orig><reg>j</reg></choice>ugio <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>erit <choice><orig>v</orig><reg>u</reg></choice>tri<choice><orig><g ref="#qtail"></g></orig><reg>que</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ti c<choice><orig>ō</orig><reg>om</reg></choice>mod<choice><orig>ū</orig><reg>um</reg></choice> <lb/>et conducibile</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">concerning marriage: whether it will be to the comfort and benefit of both parties</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <choice><orig>I</orig><reg>J</reg></choice>une <lb/>27 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h: 8 39 <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> <lb/>1623</p>
 <pb xml:id="f146v" n="146v"/>
-<p><foreign xml:lang="la">Pater Gorgi<choice><orig>j</orig><reg>i</reg></choice> Miles <add place="supralinear"><choice><orig>v</orig><reg>u</reg></choice>na c<choice><orig>ū</orig><reg>um</reg></choice> filio</add> quærit <lb/><choice><orig><choice><sic>vtū</sic><corr>vtrū</corr></choice></orig><reg>utrum</reg></choice> con<choice><orig>i</orig><reg>j</reg></choice>ugi<choice><orig>ū</orig><reg>um</reg></choice> oblat<choice><orig>ū</orig><reg>um</reg></choice> ei <choice><orig></orig><reg>pro</reg></choice> filio <lb/><choice><orig>I</orig><reg>J</reg></choice>oh<choice><orig>ā</orig><reg>an</reg></choice>i erit <choice><orig>v</orig><reg>u</reg></choice>tri<choice><orig></orig><reg>que</reg></choice> <choice><orig></orig><reg>par</reg></choice>ti erit con<lb/>ducibile</foreign> <choice><orig>I</orig><reg>J</reg></choice>une 27 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 8. 39 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1623</p>
+<p><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">Pater Gorgi<choice><orig>j</orig><reg>i</reg></choice> Miles <add place="supralinear"><choice><orig>v</orig><reg>u</reg></choice>na c<choice><orig>ū</orig><reg>um</reg></choice> filio</add> quærit <lb/><choice><orig><choice><sic>vtū</sic><corr>vtrū</corr></choice></orig><reg>utrum</reg></choice> con<choice><orig>i</orig><reg>j</reg></choice>ugi<choice><orig>ū</orig><reg>um</reg></choice> oblat<choice><orig>ū</orig><reg>um</reg></choice> ei <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> filio <lb/><choice><orig>I</orig><reg>J</reg></choice>oh<choice><orig>ā</orig><reg>an</reg></choice>i erit <choice><orig>v</orig><reg>u</reg></choice>tri<choice><orig><g ref="#qtail"></g></orig><reg>que</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ti erit con<lb/>ducibile</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">The father George Miles together with the son asks whether the marriage proposed to him will be profitable to the son John and to both parties</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <choice><orig>I</orig><reg>J</reg></choice>une 27 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 8. 39 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1623</p>
 </div><figure type="astro" subtype="astroChart"/>
 </body>
 </text>

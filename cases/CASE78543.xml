@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE78543</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-11-20">20 November 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="412">MS Ashmole 412, f. 19v</idno>
+<altIdentifier type="fn_number"><idno n="Napier054">Napier, vol. 54</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0019v" to="0019v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ea">
+<persName><roleName>Mrs</roleName> <forename>Eleanor</forename> <surname>Aylet</surname></persName>
+<sex value="2">F</sex>
+<age value="17">17</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="a">
+<persName><surname evidence="inferred" cert="medium">Aylet</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="es">
+<persName><forename>Elizabeth</forename> <surname>Spacy</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rp">
+<persName><forename>Richard</forename> <surname>Pavet</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="p">
+<persName><surname evidence="inferred" type="married">Pavet</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="wife" active="#p" passive="#rp"/>
+<relation name="daughter" active="#ea" passive="#a"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-10-31" n="Thursday"/></p>
+<p><time when="10:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#ea #a" evidence="internal"/>
+<cb:subject ref="#ea #a" present="yes"/>
+<cb:object ref="#es #rp #p"/>
+<cb:item type="urine"/>
+<cb:topic key="sleeplessness" cert="low"><person sameAs="#ea"/></cb:topic>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#a"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#ea"/><person sameAs="#a"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#es"/><person sameAs="#rp"/><person sameAs="#p"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-21">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-11-20">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-12-01">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-12-14">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-04-09">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-07">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abr0058.jpg" url="abr0058.jpg" n="19v" width="5777" height="8163"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><choice><orig><hi rend="overline">M<hi rend="superscript">res</hi></hi></orig><reg>Mrs</reg></choice> Elenor Aylet <lb/><rs type="address" xml:id="address1" key="PLACE1016" resp="#mhawkins">of Madalen Laver</rs>. <lb/>17 octob 31 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 10 15 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1633 <add place="inline">hath th<choice><orig>ē</orig><reg>em</reg></choice> <lb/>well 2 y</add> <lb/><add place="inline">troubled in her <lb/>sleepe</add> sent her water <lb/>mother &amp; daughter brought <lb/><choice><sic>h<subst><del type="over">er</del><add place="over">th</add></subst>ere</sic><corr>there</corr></choice> waters. <add place="marginLeft">sleepeth well</add></p><anchor xml:id="questionEnd"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="judgment" spanTo="#judgmentEnd"/>
+<p><lb/>Elis: Spacy <rs type="address" xml:id="address2" key="PLACE1003" resp="#mhawkins">of <lb/>High Rooding</rs> <lb/>appeared plainly <lb/>to her in her sleep <lb/><add place="marginLeft">this night</add> &amp; then not well <lb/>2 or 3 days after</p>
+<p><lb/>Richard Pavet &amp; h<supplied reason="binding" cert="high">is</supplied> <lb/>wife susp:</p><anchor xml:id="judgmentEnd"/>
+</div>
+</body>
+</text>
+</TEI>

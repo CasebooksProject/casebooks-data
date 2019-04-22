@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE34584</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 273v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -59,10 +63,6 @@
 </person>
 <person xml:id="h2">
 <persName><surname evidence="inferred">Harrison</surname></persName>
-<sex value="1">M</sex>
-</person>
-<person xml:id="h3">
-<persName><surname evidence="inferred">Harrison</surname></persName>
 <sex value="0">U</sex>
 </person>
 <person xml:id="m">
@@ -71,9 +71,8 @@
 <occupation>Nurse</occupation>
 </person>
 <listRelation>
-<relation name="son" active="#h2" passive="#h1"/>
-<relation name="father" active="#h2" passive="#h3"/>
-<relation name="nurse" active="#m" passive="#h3"/>
+<relation name="father" active="#h1" passive="#h2"/>
+<relation name="nurse" active="#m" passive="#h2"/>
 <relation name="kinsman" active="#rnapier" passive="#h1"/>
 </listRelation>
 </listPerson>
@@ -82,12 +81,14 @@
 <p><date when="1608-12-17" n="Saturday"/></p>
 <p><time when="17:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#h1" evidence="internal" present="no"/>
-<cb:subject ref="#h3" present="no"/>
+<cb:subject ref="#h2" present="no"/>
 <cb:item type="letter"/>
-<cb:topic key="plague"><person sameAs="#h3"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#h2"/></cb:topic>
+<cb:topic key="plague"><person sameAs="#h2"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -97,6 +98,7 @@
 <change when="2015-04-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,8 +106,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>My Cosen Harryson <lb/>sent me a letter in <lb/>the behalfe of his <unclear cert="medium" reason="hand binding">son</unclear><supplied reason="binding" cert="low">s</supplied> <lb/>infant now being at <lb/><placeName>luton</placeName> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> maudly<unclear reason="binding" cert="medium">n</unclear> <lb/>nource Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 17 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <lb/>hor. 5. p m 1608.</p>
-<p><lb/>would know wheather <lb/>in danger of peyste <lb/>or water in his infan<supplied reason="binding" cert="medium">cy</supplied> <lb/>directed fr<choice><orig>&oover;</orig><reg>om</reg></choice> <rs type="address" xml:id="address1">london</rs> the 8 <lb/>of Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 1608.</p>
+<p><lb/>My Cosen Harryson <lb/>sent me a letter in <lb/>the behalfe of his sic<supplied reason="binding" cert="low">ke</supplied> <lb/>infant now being at <lb/><placeName key="PLACE442" resp="#mhawkins">luton</placeName> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> maudly<unclear reason="binding" cert="medium">n</unclear> <lb/>nource Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 17 <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <lb/>hor. 5. p m 1608.</p>
+<p><lb/>would know wheather <lb/>in danger of peyste <lb/>or water in his infan<supplied reason="binding" cert="medium">cy</supplied> <lb/>directed fr<choice><orig>ō</orig><reg>om</reg></choice> <rs type="address" xml:id="address1" key="PLACE1" resp="#mhawkins">london</rs> the 8 <lb/>of Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 1608.</p>
 </div>
 </body>
 </text>

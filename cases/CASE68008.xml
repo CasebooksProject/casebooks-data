@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE68008</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-10-26">26 October 2016</date>
 </publicationStmt>
-<notesStmt><note resp="#ymartin" type="editorial">This nativity is associated with the horary entry <ref target="CASE68006" type="case">CASE68006</ref>.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note resp="#ymartin" type="editorial">This nativity is associated with the horary entry <ref target="CASE68006" type="case">CASE68006</ref>. It was written on receipt of <ref target="LETTER4" type="letter">LETTER4</ref>, using the astrological chart drawn in that letter.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -34,9 +39,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -51,7 +56,7 @@
 </textClass>
 <creation>
 <listChange ordered="true">
-<change xml:id="stage1" when="1629-03-26"><name sameAs="#wbredon">William Bredon</name> wrote to Napier, asking the question and supplying his daughter’s natal chart.</change>
+<change xml:id="stage1" when="1629-03-26"><name sameAs="#wbredon">William Bredon</name> wrote to Napier, asking the question and supplying his daughter’s natal chart. The letter survives as <ref target="LETTER4" type="letter">LETTER4</ref>.</change>
 <change xml:id="stage2" when="1629-03-26"><name sameAs="#rnapier">Richard Napier</name> wrote out the nativity, copying Bredon’s chart into the casebook and supplying a judgment.</change>
 </listChange>
 </creation>
@@ -97,7 +102,9 @@
 <change when="2016-10-26">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-01-09">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-06-29">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-06">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-16">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -105,7 +112,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>An Breedon <rs type="address" xml:id="address1">of <lb/><add place="supralinear">norton</add></rs> <foreign xml:lang="la">nata fuit an<choice><orig>ū</orig><reg>um</reg></choice> d<gap reason="binding" extent="3" unit="chars"/></foreign> <lb/>1615. <foreign xml:lang="la">marti<choice><orig>j</orig><reg>i</reg></choice></foreign>. 21 <lb/><add place="supralinear"><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice></add> h. 1. 0 p m. 1615 <lb/>had a quartayne <lb/>at 10 y. <lb/>3 quarters</p>
+<p><lb/>An Breedon <rs type="address" xml:id="address1" key="PLACE1714" resp="#mhawkins">of <lb/><add place="supralinear">norton</add></rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata fuit an<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig><hi rend="overline">dni</hi></orig><reg>domini</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">was born in the year of our Lord</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>1615. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">marti<choice><orig>j</orig><reg>i</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">March</seg><link type="is-translation-of" target="#foreign002 #translation002"/>. 21 <lb/><add place="supralinear"><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice></add> h. 1. 0 p m. 1615 <lb/>had a quartayne <lb/>at 10 y. <lb/>3 quarters</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26028</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-23">23 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="layout" resp="#jyoung">This page is upside down.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="174">MS Ashmole 174, p. 399</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0399" to="0399"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="s">
+<persName><surname>Sandy</surname> <surname type="alternate" evidence="external">Napier</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="sister-in-law" active="#s" passive="#rnapier" evidence="external"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1605-06-10" n="Monday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#s" evidence="internal"/>
+<cb:subject ref="#s" present="unclear"/>
+<cb:topic key="problemCause"><person sameAs="#s"/></cb:topic>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#s"/></cb:topic>
+<cb:topic key="pregnancy"><person sameAs="#s"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-07-31">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-06">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-12">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-11-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acg0484.jpg" url="acg0484.jpg" n="399"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Soror mea <add place="supralinear">Sandy <rs type="address" xml:id="address1" key="PLACE1" resp="#mhawkins">Lond</rs>.</add> quærit quæ sit causa <lb/>morbi. et an sit gravida <choice><orig><choice><sic>Iinij</sic><corr>Iunij</corr></choice></orig><reg>Junii</reg></choice> <lb/>10 <choice><orig>☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice> <choice><sic>♄</sic><corr>h</corr></choice>. 11. <choice><orig>ant m</orig><reg>am</reg></choice>. 1605.</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>My sister Sandy of London asks what the cause of her disease is and whether she is pregnant: Monday 10 June 1605 at 11am.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

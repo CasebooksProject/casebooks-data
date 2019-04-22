@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE79115</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-11-20">20 November 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 145v/uL, f. 145v/uR, f. 146r/uL, f. 146r/uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="412">MS Ashmole 412, ff. 145v-146r</idno>
+<altIdentifier type="fn_number"><idno n="Napier054">Napier, vol. 54</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0145v" to="0146r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ea">
+<persName><roleName>Mrs</roleName> <forename>Eleanor</forename> <surname>Aylet</surname></persName>
+<sex value="2">F</sex>
+<age value="43">43</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="a1" evidence="internal">
+<persName><surname>Aylet</surname></persName>
+<sex value="1">M</sex>
+<death><date notAfter="1634-07-07" evidence="inferred"/></death>
+</person>
+<person xml:id="a2" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Aylet</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+
+<person xml:id="es">
+<persName><forename>Elizabeth</forename> <surname>Spacy</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rp1">
+<persName><forename>Richard</forename> <surname>Pavet</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address3" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rp2">
+<persName><forename>Rebecca</forename> <surname evidence="inferred" type="married">Pavet</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address3" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ps">
+<persName><forename>Parnell</forename> <surname>Sharpe</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="am">
+<persName><forename>Anne</forename> <surname>Marshal</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address4" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="jh1">
+<persName><forename>Jeffery</forename> <surname>Holmes</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jh2">
+<persName><forename>Joan</forename> <surname evidence="inferred" cert="low">Holmes</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="jd" evidence="internal">
+<persName><forename>Joan</forename> <surname>Dowsett</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="wife" active="#rp2" passive="#rp1"/>
+<relation name="mother" active="#jd" passive="#jh2"/>
+<relation name="wife" active="#ea" passive="#a1"/>
+<relation name="wife" active="#ea" passive="#a2"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1634-07-09" n="Wednesday"/></p>
+<p><time when="07:45:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#srnapier"/>
+<cb:consultant ref="#srnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#ea" evidence="internal"/>
+<cb:subject ref="#ea" present="yes"/>
+<cb:object ref="#jd #rp1 #rp2 #am #es #jh1 #jh2 #ps"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ea"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical"><person sameAs="#ea"/></cb:topic>
+<cb:topic key="witchcraftSufferedNonMedical"><person sameAs="#ea"/></cb:topic>
+<cb:topic key="witchcraftSuspect"><person sameAs="#es"/><person sameAs="#rp1"/><person sameAs="#rp2"/><person sameAs="#ps"/><person sameAs="#am"/><person sameAs="#jh1"/><person sameAs="#jh2"/><person sameAs="#jd"/></cb:topic>
+<cb:topic key="animalDeathAndDisease" evidence="internal"><person sameAs="#ea"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-21">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-11-20">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-01-24">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2018-01-25">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-30">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abr0302.jpg" url="abr0302.jpg" n="145v" width="5792" height="8210"/>
+<graphic xml:id="abr0303.jpg" url="abr0303.jpg" n="146r" width="5789" height="8214"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">rs</hi>. Eloner Aylett <rs type="address" xml:id="address1" key="PLACE1016" resp="#mhawkins">of Magdalen <lb/>Laver</rs> 4<subst><del type="over"><unclear cert="medium" reason="del">1</unclear></del><add place="over">3</add></subst>. y. <choice><orig>I</orig><reg>J</reg></choice>uly 9. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 7. 15. <lb/>a. m. 1634.</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<cb xml:id="colB-1" n="b"/>
+<figure type="astro" subtype="astroChartBlank"/>
+<div><pb xml:id="f146r" n="146r"/>
+<p><lb/>M<hi rend="superscript">rs</hi>. Elenor Aylett <rs type="address" sameAs="#address1" key="PLACE1016" resp="#mhawkins">of Magdalen Laver in <lb/><del type="strikethrough">Ep</del> Essex</rs> 43. y. came her selfe. <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 9. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 7. 45. a. m. 1634. <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">venefici<choice><orig>ū</orig><reg>um</reg></choice> suspicat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">witchcraft is suspected</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/>Elizabeth Spacy. <rs type="address" xml:id="address2" key="PLACE1003" resp="#mhawkins">in high rowding <lb/>neere Athrop Hall</rs>.</p>
+<p><lb/>Richard <del type="strikethrough">Ba<unclear cert="low" reason="del">b</unclear></del> Pavitt &amp; his wife <add place="supralinear">Rebecca.</add> <lb/><rs type="address" xml:id="address3" key="PLACE1009" resp="#mhawkins">of Leaden Roadinge</rs>.</p>
+<p><lb/>Parnel Sharpe.</p>
+<p><lb/>An Mathew <rs type="address" xml:id="address4" key="PLACE998" resp="#mhawkins">of Harlow</rs>.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>effery Holmes &amp; <choice><orig>I</orig><reg>J</reg></choice>oane &amp; <lb/>her Mothr <choice><orig>I</orig><reg>J</reg></choice>one dowsett.</p>
+</div>
+<cb xml:id="colB-2" n="b"/>
+</body>
+</text>
+</TEI>

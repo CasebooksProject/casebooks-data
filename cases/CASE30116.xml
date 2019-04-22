@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE30116</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 111r</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -77,7 +81,7 @@
 <person xml:id="j">
 <persName><forename>John</forename></persName>
 <sex value="1">M</sex>
-<occupation>Boy (Servant)</occupation>
+<occupation>Boy (servant)</occupation>
 </person>
 <person xml:id="aw">
 <persName><forename evidence="external">Anne</forename> <surname>Waller</surname></persName>
@@ -89,7 +93,7 @@
 </person>
 <person xml:id="anon1">
 <sex value="1">M</sex>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="c2">
 <persName><roleName>Mr</roleName> <surname>Cuer</surname></persName>
@@ -104,7 +108,7 @@
 <sex value="2">F</sex>
 </person>
 <person xml:id="f">
-<persName><roleName>Dominus</roleName> <surname>Fratello</surname></persName>
+<persName><roleName>Domino</roleName> <name>Fratello</name></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="b3">
@@ -121,12 +125,13 @@
 <sex value="1">M</sex>
 <occupation>Curate</occupation>
 </person>
-<listRelation><relation name="wife" active="#ab" passive="#sforman" from="1599-07-22T07:00:00"/><relation name="wife" active="#b2" passive="#b1"/><relation name="servant" active="#j" passive="#sforman"/><relation name="servant" active="#anon1" passive="#aw"/><relation name="wife" active="#g2" passive="#g1"/></listRelation>
+<listRelation><relation name="wife" active="#ab" passive="#sforman" from="1599-07-22T07:00:00"/><relation name="wife" active="#b2" passive="#b1"/><relation name="servant" active="#j" passive="#sforman"/><relation name="motherSoCalled" active="#aw" passive="#sforman"/><relation name="servant" active="#anon1" passive="#aw"/><relation name="wife" active="#g2" passive="#g1"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date notBefore-custom="1599-07-22T07:00:00" notAfter-custom="1599-07-23T08:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -141,6 +146,8 @@
 <change when="2015-07-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-24">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -149,12 +156,12 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>1599. <subst><del type="strikethrough"><unclear reason="del" cert="low">ha</unclear><gap reason="del" extent="9" unit="chars"/></del> <add place="supralinear">the</add></subst> <add place="supralinear">22 &IConsonant;uli&jVowel;</add> &Sunday; &anflmfl; <lb/>at 7 at this instante <lb/>tyme I was married to <lb/>An Baker. at <placeName>lambeth</placeName> <lb/>the 22 &IConsonant;uli&jVowel;</p>
+<p><lb/>1599. <subst><del type="strikethrough"><unclear reason="del" cert="low">ha</unclear><gap reason="del" extent="9" unit="chars"/></del> <add place="supralinear">the</add></subst> <add place="supralinear">22 <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice></add> <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <choice><orig>an’ m’</orig><reg>am</reg></choice> <lb/>at 7 at this instante <lb/>tyme I was married to <lb/>An Baker. at <placeName key="PLACE2057" resp="#mhawkins">lambeth</placeName> <lb/>the 22 <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div>
-<p><lb/>this morninge at 3 of the clocke yt <lb/>began to lighten and thunder and <lb/>did Raine exceadingly tyll half <lb/>an howare after 5. and then yt held <lb/><supplied reason="binding" cert="low">aga</supplied>yn. and I went forth p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently to <lb/><placeName>lambeth</placeName>. to be maried. ther went <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <lb/>me m<hi rend="superscript">r</hi> besto &amp; his wif. Dick coocke <lb/>m<hi rend="superscript">r</hi> coudwell. &amp; my boy &IConsonant;hon. and <lb/>my mother waller m<hi rend="superscript">rs</hi> Cuer and my <lb/>mothers man. m<hi rend="superscript">r</hi> Cuer &amp; m<hi rend="superscript">r</hi> <choice><orig>g<hi rend="overline">udng</hi></orig><reg>guding</reg></choice> <lb/><supplied reason="binding" cert="low">&amp;</supplied> his wif came After. and <foreign xml:lang="la"><choice><orig>d<hi rend="overline">no</hi></orig><reg>domino</reg></choice> <lb/><supplied reason="binding">fr</supplied>atello</foreign> ga&uConsonant;e my wif at church. &amp; <lb/>m<hi rend="superscript">rs</hi> blagu m<hi rend="superscript">rs</hi> applyerd &amp; som of the <lb/>house wente to church <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> &vVowel;s and we <lb/>wer maried &IConsonant;ust at 7 of the cloke <lb/>by the curat of Lambeth. and I <lb/>ga&uConsonant;e them 8&ssquiggle; 2<hi rend="superscript">d</hi>. Among them&slash; <lb/>and we Dined at <rs type="address" xml:id="address1">m<hi rend="superscript">rs</hi> blagues</rs> <lb/>And cam hom betwen on and <lb/>2 &pmfl;.</p>
+<p><lb/>this morninge at 3 of the clocke yt <lb/>began to lighten and thunder and <lb/>did Raine exceadingly tyll half <lb/>an howare after 5. and then yt helyd <lb/><supplied reason="binding" cert="low"><choice><orig>v</orig><reg>u</reg></choice></supplied>p. and I went forth p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently to <lb/><placeName key="PLACE2057" resp="#mhawkins">lambeth</placeName>. to be maried. ther went <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <lb/>me m<hi rend="superscript">r</hi> besto &amp; his wif. Dick coocke <lb/>m<hi rend="superscript">r</hi> coudwell. &amp; my boy <choice><orig>I</orig><reg>J</reg></choice>hon. and <lb/>my mother waller m<hi rend="superscript">rs</hi> Cuer and my <lb/>mothers man. m<hi rend="superscript">r</hi> Cuer &amp; m<hi rend="superscript">r</hi> <choice><orig>g<hi rend="overline">udng</hi></orig><reg>guding</reg></choice> <lb/><supplied reason="binding" cert="low">&amp;</supplied> his wif came After. and <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>d<hi rend="overline">no</hi></orig><reg>domino</reg></choice> <lb/><supplied reason="binding">fr</supplied>atello</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Mr Fratello</seg><link type="is-translation-of" target="#foreign001 #translation001"/> ga<choice><orig>u</orig><reg>v</reg></choice>e my wif at church. &amp; <lb/>m<hi rend="superscript">rs</hi> blagu m<hi rend="superscript">rs</hi> applyerd &amp; som of the <lb/>house wente to church <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>s and we <lb/>wer maried <choice><orig>I</orig><reg>J</reg></choice>ust at 7 of the cloke <lb/>by the curat of Lambeth. and I <lb/>ga<choice><orig>u</orig><reg>v</reg></choice>e them 8s<hi rend="superscript">s</hi> 2<hi rend="superscript">d</hi>. Among them/ <lb/>and we Dined at <rs type="address" xml:id="address1" key="PLACE2057" resp="#mhawkins">m<hi rend="superscript">rs</hi> blagues</rs> <lb/>And cam hom betwen on and <lb/>2 <choice><orig>p m’</orig><reg>pm</reg></choice>.</p>
 </div>
 </body>
 </text>

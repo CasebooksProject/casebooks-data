@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE70363</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-03-30">30 March 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">p. 214/uR, p. 215/uL, p. 215/uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="194">MS Ashmole 194, pp. 214-215</idno>
+<altIdentifier type="fn_number"><idno n="Napier047">Napier, vol. 47</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0214" to="0215"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tc">
+<persName><roleName>Mr</roleName> <forename>Thomas</forename> <surname>Chibnall</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1596-07-26" n="Monday"/>
+<time when="11:00:00" precision="medium"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1630-03-30" n="Tuesday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#tc" evidence="internal"/>
+<cb:subject ref="#tc" present="yes"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#tc"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-03-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-08-31">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-09-20">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-20">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciq0252.jpg" url="ciq0252.jpg" n="214"/>
+<graphic xml:id="ciq0253.jpg" url="ciq0253.jpg" n="215"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>M<hi rend="superscript">r</hi> Thomas Chibno<supplied reason="binding" cert="medium">ll</supplied> <lb/><rs type="address" xml:id="address1" key="PLACE585" resp="#mhawkins">of Astwood</rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natu<supplied reason="binding" cert="high">s</supplied></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>1596. the monday <lb/>after S<hi rend="superscript">t</hi> <choice><orig>I</orig><reg>J</reg></choice>ames h<supplied reason="binding" cert="low">is</supplied> <lb/><add place="supralinear">about 11 in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> morning.</add> day. came to m<supplied reason="binding">e</supplied> <lb/>march 30 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 2 <supplied reason="binding">p</supplied> <lb/>m. 1630.</p>
+
+<pb xml:id="p215" n="215"/>
+<p><lb/>M<hi rend="superscript">r</hi> Chibnoll <rs type="address" sameAs="#address1" key="PLACE585" resp="#mhawkins">of Astwood</rs>. <lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">natus</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <del type="strikethrough">1595.</del> march 30 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <lb/>h. 2. p m. 1630</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+
+<div>
+<p><lb/>Remember to Erect <lb/>the tyme of his <lb/>nativity agaynst this day <lb/>fortnight. * * *</p>
+</div>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13749</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
-<notesStmt><note type="externalEvidence" resp="#rralley">A  note on f. 156r of Ashmole 415, written 6 October 1604, reads: &lsquo;nicholas Mobs of Crickwell. 23. y a batcheler ... Easter last was twelfmoneth. dyed 3 days after he had taken that which was sent him&rsquo;.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="externalEvidence" resp="#rralley">A  note on f. 156r of Ashmole 415, written 6 October 1604, reads: ‘nicholas Mobs of Crickwell. 23. y a batcheler ... Easter last was twelfmoneth. dyed 3 days after he had taken that which was sent him’.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="197">MS Ashmole 197, f. 34r</idno>
-&Napier008;
+<altIdentifier type="fn_number"><idno n="Napier008">Napier, vol. 8</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -67,6 +73,7 @@
 <p><date when="1603-05-23" n="Monday"/></p>
 <p><time when="07:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#nm"/>
@@ -83,6 +90,8 @@
 <change when="2012-10-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,10 +99,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Nicholas ma<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">b</add></subst>s <add place="supralinear"><choice><sic>mabs</sic><corr type="noText"/></choice></add> <rs type="address" xml:id="address1">of Cuckno <lb/><choice><sic>Cucknoe</sic><corr type="noText"/></choice></rs> 25 y. a batch <lb/><rs type="address" sameAs="#address1">in north<choice><orig>&aover;</orig><reg>am</reg></choice>pton sheere</rs> <lb/>mai&jVowel; 23. &Monday; hor. 7. <lb/>15. &antm;. 1603.</p>
-<p><lb/><foreign xml:lang="la">Qu&aelig;re an mortuus.</foreign></p>
+<p><lb/>Nicholas ma<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">b</add></subst>s <add place="supralinear"><choice><sic>mabs</sic><corr type="noText"/></choice></add> <rs type="address" xml:id="address1" key="PLACE1566" resp="#mhawkins">of Cuckno <lb/><choice><sic>Cucknoe</sic><corr type="noText"/></choice></rs> 25 y. a batch <lb/><rs type="address" sameAs="#address1" key="PLACE1498" resp="#mhawkins">in north<choice><orig>ā</orig><reg>am</reg></choice>pton sheere</rs> <lb/>mai<choice><orig>j</orig><reg>i</reg></choice> 23. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> hor. 7. <lb/>15. <choice><orig>ant m</orig><reg>am</reg></choice>. 1603.</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Quære an mortuus.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Question: whether dead</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE31270</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, bL-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 165v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -66,6 +70,7 @@
 <p><date when="1607-04-16" n="Thursday" evidence="conjecture"/></p>
 <p><time notBefore="15:30:00" evidence="conjecture"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
@@ -81,6 +86,7 @@
 <change when="2015-01-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-15">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,7 +94,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Throckmorten <add place="supralinear">40 yeres. complete.</add> <rs type="address" xml:id="address1">of Weston <lb/>&vVowel;nderwood</rs> <foreign xml:lang="la">natus nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 15. <lb/>1566 &Friday;</foreign> <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> had the falling <lb/>sicknes &amp; dyed of it &amp; could <lb/>not be cured he was ma<add place="supralinear">r</add>yed <lb/>to may. 1. <space unit="chars" extent="4" dim="horizontal"/>1589. <add place="supralinear">at 16 y taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <lb/>falling sicknes</add></p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Throckmorten <add place="supralinear">40 yeres. complete.</add> <rs type="address" xml:id="address1" key="PLACE857">of Weston <lb/><choice><orig>v</orig><reg>u</reg></choice>nderwood</rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> nov<choice><orig>ē</orig><reg>em</reg></choice>b. 15. <lb/>1566 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> had the falling <lb/>sicknes &amp; dyed of it &amp; could <lb/>not be cured he was ma<add place="supralinear">r</add>yed <lb/>to may. 1. <space unit="chars" extent="4" dim="horizontal"/>1589. <add place="supralinear">at 16 y taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <lb/>falling sicknes</add></p>
 </div>
 </body>
 </text>

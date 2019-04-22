@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13387</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 91v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,15 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -68,6 +79,7 @@
 <p><date when="1597-10-19" n="Wednesday"/></p>
 <p><time when="10:09:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -92,6 +104,7 @@
 <change when="2012-02-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +112,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Widowe &ff;&jVowel;sher sente to me to <lb/>come to her. <del type="cancelled">fr</del> she lieth very <lb/>sicke 1597. Octob. 19. &WednesdayN; <lb/>hor. 10. 9 mi. <foreign xml:lang="la">qu&aelig;ro morb<choice><orig>&uover;</orig><reg>um</reg></choice> et an <lb/>recuperab. filius <choice><orig>&crossedp;</orig><reg>pro</reg></choice> mat et c<choice><orig>&uover;</orig><reg>um</reg></choice> consensu <lb/>cert<choice><orig>&uover;</orig><reg>um</reg></choice> &iConsonant;udici<choice><orig>&uover;</orig><reg>um</reg></choice> e<choice><orig>&uover;</orig><reg>um</reg></choice> dorso gra<choice><orig><hi rend="overline">visse</hi></orig><reg>vissime</reg></choice> &aelig;gro<lb/>tare et in tergo p<choice><orig>&loopedr;</orig><reg>re</reg></choice>cipue. et ventre</foreign> <lb/>shee hath a very great scouring &amp; tooke a cold.</p>
+<p><lb/>Widowe F<choice><orig>j</orig><reg>i</reg></choice>sher sente to me to <lb/>come to her. <del type="cancelled">fr</del> she lieth very <lb/>sicke 1597. Octob. 19. <choice><orig>die ☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> <lb/>hor. 10. 9 mi. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quæro morb<choice><orig>ū</orig><reg>um</reg></choice> et an <lb/>recuperab. filius <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> mat et c<choice><orig>ū</orig><reg>um</reg></choice> consensu <lb/>cert<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig>i</orig><reg>j</reg></choice>udici<choice><orig>ū</orig><reg>um</reg></choice> e<choice><orig>ū</orig><reg>um</reg></choice> dorso gra<choice><orig><hi rend="overline">visse</hi></orig><reg>vissime</reg></choice> ægro<lb/>tare et in tergo p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>cipue. et ventre</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">I ask [what] her disease [is] and whether she will recover. The son for the mother and with consent; his certain judgment is that she suffers principally in her back and belly</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>shee hath a very great scouring &amp; tooke a cold.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

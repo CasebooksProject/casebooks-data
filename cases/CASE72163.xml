@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE72163</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-06-05">05 June 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">p. 363/uL, p. 365/uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="232">MS Ashmole 232, p. 363, p. 365</idno>
+<altIdentifier type="fn_number"><idno n="Napier049">Napier, vol. 49</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0363" to="0363"/>
+<locus from="0365" to="0365"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName evidence="conjecture">Lord</roleName> <surname evidence="external" cert="medium">Berkeley</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1631-05-23" n="Monday"/></p>
+<p><time when="17:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b" evidence="internal"/>
+<cb:subject ref="#b" present="unclear"/>
+<cb:topic key="lifeExpectancy" cert="low" evidence="external"><person sameAs="#b"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-14">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-06-05">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-07-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-10-09">Checked and merged into one file by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-10-23">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-08-22">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aas0390.jpg" url="aas0390.jpg" n="363"/>
+<graphic xml:id="aas0392.jpg" url="aas0392.jpg" n="365"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>my H. L. B. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit quot <lb/>v. h.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks [how long a life he will have?]</seg><link type="is-translation-of" target="#foreign001 #translation001"/> may 23. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 5 <lb/>p m 1631</p>
+</div>
+<figure type="astro" subtype="astroChartBlank"/>
+<div>
+<pb xml:id="p365" n="365"/>
+<p><lb/>T. L. B <add place="supralinear">Barc</add> <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">q. q. v H.</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">[asks how long a life he will have?]</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>may 23. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 5. p m <lb/>163<choice><orig>i</orig><reg>1</reg></choice></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

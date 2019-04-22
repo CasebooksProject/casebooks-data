@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE22435</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-05-31">31 May 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -69,11 +78,13 @@
 <p><date when="1630-07-16" n="Friday"/></p>
 <p><time when="06:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon1" evidence="internal" present="unclear"/>
 <cb:subject ref="#anon2" present="no"/>
 <cb:topic key="frantic"><person sameAs="#anon2"/></cb:topic>
+<cb:topic key="fits"><person sameAs="#anon2"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -86,7 +97,8 @@
 <change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-05-17">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-05-23">Checked by <name sameAs="#jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-05-23">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-08-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,7 +106,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>A poer wom<choice><orig>ā</orig><reg>an</reg></choice> for o<supplied reason="binding" cert="high">n</supplied> <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> hath bene frenti<supplied reason="binding" cert="low">ck</supplied> <lb/>by fits &amp; hath also a <lb/>lethargy <choice><orig>I</orig><reg>J</reg></choice>uly 16 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h <lb/>6. 20 <choice><orig>ant m</orig><reg>am</reg></choice> 1630 <add place="infralinear"><foreign xml:lang="la">mater <choice><orig></orig><reg>pro</reg></choice> filio deli<gap extent="unclear" reason="binding"/> <lb/>et fur<unclear cert="low" reason="hand">rhite</unclear></foreign></add></p>
+<p><lb/>A poer wom<choice><orig>ā</orig><reg>an</reg></choice> for on <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> hath bene frentick <lb/>by fits &amp; hath also a <lb/>lethargy <choice><orig>I</orig><reg>J</reg></choice>uly 16 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h <lb/>6. 20 <choice><orig>ant m</orig><reg>am</reg></choice> 1630 <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">mater <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> filio deliveratu <lb/>et <unclear cert="low" reason="hand">fumigate</unclear></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the mother for the son [delivered and fumigated?]</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add></p>
 </div><figure type="astro" subtype="astroChart"/>
 </body>
 </text>

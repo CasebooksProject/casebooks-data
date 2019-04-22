@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE48358</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-08-04">04 August 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="230">MS Ashmole 230, f. 195v</idno>
-&Napier029;
+<altIdentifier type="fn_number"><idno n="Napier029">Napier, vol. 29</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -42,7 +48,6 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
-<language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#election"/>
@@ -53,8 +58,8 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="j">
-<persName><roleName>Mr</roleName> <name>John<gap extent="unclear" reason="binding" cert="medium"/></name></persName>
+<person xml:id="jd">
+<persName><roleName>Mr</roleName> <forename>John</forename> <surname>Davis</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
@@ -64,11 +69,12 @@
 <p><date when="1619-03-12" n="Friday" evidence="inferred"/></p>
 <p><time notBefore="14:00:00" notAfter="18:15:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" present="yes" evidence="conjecture"/>
-<cb:subject ref="#j" present="no"/>
-<cb:topic key="sigils"><person sameAs="#j"/></cb:topic>
+<cb:subject ref="#jd" present="no"/>
+<cb:topic key="sigils"><person sameAs="#jd"/></cb:topic>
 <cb:info type="divination" subtype="dice"/>
 </cb:consultation>
 </settingDesc>
@@ -80,6 +86,8 @@
 <change when="2016-03-18">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-16">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,9 +95,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Ap 2. h. 9 &antm; 1619 <lb/><foreign xml:lang="la">&FridayN;</foreign>. <add place="supralinear">of S &TinSymbol; for M<hi rend="superscript">r</hi> &IConsonant;ohn<gap extent="unclear" reason="binding"/> <lb/><rs type="address" xml:id="address1">of Chancery <lb/>in <gap extent="unclear" reason="binding"/></rs></add></p>
+<p><lb/>Ap 2. h. 9 <choice><orig>ant m</orig><reg>am</reg></choice> 1619 <lb/><choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice>. <add place="supralinear">of S ♃ for M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ohn davys <lb/><rs type="address" xml:id="address1" key="PLACE69" resp="#mhawkins">of Chancery Lane <lb/>in London</rs></add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE45206</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-06-07">07 June 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 21v/uR, f. 22r/uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="220">MS Ashmole 220, ff. 21v-22r</idno>
-&Napier027;
+<altIdentifier type="fn_number"><idno n="Napier027">Napier, vol. 27</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,6 +70,7 @@
 <p><date when="1617-06-23" n="Monday"/></p>
 <p><time when="12:00:00" xml:id="time1" exclude="#time2" cert="medium"/><time when="11:40:00" xml:id="time2" exclude="#time1" cert="low"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#cg"/>
@@ -82,6 +89,7 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,14 +98,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Constanc Galligan <lb/><rs type="address" xml:id="address1">of Coaple</rs> 42 y <lb/>&IConsonant;une 23. &Monday; h. <choice><sic>12</sic><corr type="delText"/></choice> <add place="supralinear">11. 40.</add> <lb/>1617</p>
-<p><lb/>on child 4 y sinc &amp; <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dead <lb/>nev<choice><orig>&loopedr;</orig><reg>er</reg></choice> any sinc</p>
+<p><lb/>Constanc Galligan <lb/><rs type="address" xml:id="address1" key="PLACE373" resp="#mhawkins">of Coaple</rs> 42 y <lb/><choice><orig>I</orig><reg>J</reg></choice>une 23. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. <choice><sic>12</sic><corr type="delText"/></choice> <add place="supralinear">11. 40.</add> <lb/>1617</p>
+<p><lb/>on child 4 y sinc &amp; <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> dead <lb/>nev<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> any sinc</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div>
 <pb xml:id="f22r" n="22r" facs="#aae0063.jpg"/>
-<p><lb/>Constanc Galligan <rs type="address" sameAs="#address1">of Coap<lb/>le</rs> 42 y &IConsonant;une 23 &Monday; h 12 <lb/>1617</p>
+<p><lb/>Constanc Galligan <rs type="address" sameAs="#address1" key="PLACE373" resp="#mhawkins">of Coap<lb/>le</rs> 42 y <choice><orig>I</orig><reg>J</reg></choice>une 23 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h 12 <lb/>1617</p>
 </div>
 
 </body>

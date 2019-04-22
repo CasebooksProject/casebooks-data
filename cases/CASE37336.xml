@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE37336</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-31">31 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="334">MS Ashmole 334, f. 6v</idno>
-&Napier019;
+<altIdentifier type="fn_number"><idno n="Napier019">Napier, vol. 19</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,18 +35,24 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#diary"/>
@@ -66,6 +77,7 @@
 <settingDesc>
 <p><date notBefore-custom="1610-03-26T09:15:00" notAfter="1634-04-01"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -80,16 +92,21 @@
 <change when="2014-08-18">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="abh0032.jpg" url="abh0032.jpg" n="6v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>R N marti&jVowel; 26 &MondayLatin; h. 9. 15. &antm; <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0 quasi extasi <add place="supralinear">c<choice><orig>&uover;</orig><reg>um</reg></choice> lachrimis</add> corrept<choice><orig>&uscon;</orig><reg>us</reg></choice> c<choice><orig>&oover;</orig><reg>on</reg></choice>stan<lb/>t<choice><orig><hi rend="overline">isse</hi></orig><reg>issime</reg></choice> p<choice><orig>&loopedr;</orig><reg>re</reg></choice>dicebat <choice><orig>D<hi rend="overline">n&aelig;</hi></orig><reg>Domin&aelig;</reg></choice> Mord frat val<unclear reason="faded" cert="medium">e</unclear><lb/>tud: recuperation<choice><orig>&eover;</orig><reg>em</reg></choice> deus <choice><orig><hi rend="overline">nri</hi></orig><reg>nostri</reg></choice> miserat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>et <choice><orig>&crossedp;</orig><reg>per</reg></choice>cat nobis misellis</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>R N marti<choice><orig>j</orig><reg>i</reg></choice> 26 <choice><orig>☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice> h. 9. 15. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0 quasi extasi <add place="supralinear">c<choice><orig>ū</orig><reg>um</reg></choice> lachrimis</add> corrept<choice><orig>ꝯ</orig><reg>us</reg></choice> c<choice><orig>ō</orig><reg>on</reg></choice>stan<lb/>t<choice><orig><hi rend="overline">isse</hi></orig><reg>issime</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>dicebat <choice><orig>D<hi rend="overline">næ</hi></orig><reg>Dominæ</reg></choice> Mord frat val<unclear reason="faded" cert="medium">e</unclear><lb/>tud: recuperation<choice><orig>ē</orig><reg>em</reg></choice> deus <choice><orig><hi rend="overline">nri</hi></orig><reg>nostri</reg></choice> miserat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>et <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>cat nobis misellis</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Monday 26 March 1610 at 9.15am R. N., bursting into tears as though in an ecstasy, most constantly foretold and prayed for the recovery of Lady Mordaunt’s brother’s health, our Lord have mercy on us wretches.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

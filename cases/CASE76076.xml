@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE76076</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-08-18">18 August 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="214">MS Ashmole 214, p. 194</idno>
+<altIdentifier type="fn_number"><idno n="Napier052">Napier, vol. 52</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0194" to="0194"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d">
+<persName><roleName>Mrs</roleName> <surname>Duncombe</surname></persName>
+<sex value="2">F</sex>
+<age value="36">36</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-12-05" n="Wednesday"/></p>
+<p><time when="15:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#d"/>
+<cb:subject ref="#d" present="unclear"/>
+<cb:topic key="pregnancy"><person sameAs="#d"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-08-18">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-27">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-11-06">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-27">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aaa0224.jpg" url="aaa0224.jpg" n="194"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> <choice><orig>D<hi rend="overline">ucobe</hi></orig><reg>Duncombe</reg></choice> <rs type="address" xml:id="address1" key="PLACE680" resp="#mhawkins">of great <lb/>Brickhill</rs> 36 y Dec<choice><orig>ē</orig><reg>em</reg></choice>b 5 <lb/><choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 3. p m 1632</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> gravida</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether pregnant</seg><link type="is-translation-of" target="#foreign001 #translation001"/> stopt <lb/>2 months</p>
+</div><figure type="astro" subtype="astroChartBlank"/>
+</body>
+</text>
+</TEI>

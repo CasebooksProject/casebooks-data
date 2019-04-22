@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10647</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 79r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -76,6 +82,7 @@
 <p><date when="1600-05-22" n="Thursday"/></p>
 <p><time when="11:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tw #sw"/>
@@ -95,6 +102,7 @@
 <cb:topic key="whites"><person sameAs="#sw"/></cb:topic>
 <cb:topic key="menstruation"><person sameAs="#sw"/></cb:topic>
 <cb:topic key="heart"><person sameAs="#sw"/></cb:topic>
+<cb:topic key="dizziness"><person sameAs="#sw"/></cb:topic>
 <cb:treatment/>
 <cb:info type="financial"/>
 <cb:info type="urine"/>
@@ -110,6 +118,7 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-08">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -118,8 +127,8 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd1"/>
-<p><lb/>Thomas White <rs type="address" xml:id="address1">of Milten</rs> <lb/>56. may 22 &ThursdayN; h. 11 30 <lb/>&antm; 1600 <add place="inline">a payne in his <lb/>shoulders</add> <lb/>payned in his head back <lb/>&amp; chest stuffed. faynt &amp; feeble<anchor xml:id="questionEnd1"/> <lb/><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>water good but yellowish.<anchor xml:id="urineInfoEnd"/> <lb/><milestone unit="question" spanTo="#questionEnd2"/>sande in his backe. a drye cough.</p>
-<p><lb/>Sus<choice><orig>&aover;</orig><reg>an</reg></choice>na White <rs type="address" xml:id="address2">of Milten</rs> <lb/><choice><orig><hi rend="superscript"><hi rend="overline">re</hi>s</hi></orig><reg>Mrs</reg></choice> Androwes servant <lb/>18 a red coloured wenche <lb/>legs sweld. hath the whites <lb/>but very few of the reds. <lb/>head &amp; harte a swimminge.</p><anchor xml:id="questionEnd2"/>
+<p><lb/>Thomas White <rs type="address" xml:id="address1" key="PLACE757" resp="#mhawkins">of Milten</rs> <lb/>56. may 22 <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 11 30 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1600 <add place="inline">a payne in his <lb/>shoulders</add> <lb/>payned in his head back <lb/>&amp; chest stuffed. faynt &amp; feeble<anchor xml:id="questionEnd1"/> <lb/><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>water good but yellowish.<anchor xml:id="urineInfoEnd"/> <lb/><milestone unit="question" spanTo="#questionEnd2"/>sande in his backe. a drye cough.</p>
+<p><lb/>Sus<choice><orig>ā</orig><reg>an</reg></choice>na White <rs type="address" xml:id="address2" key="PLACE757" resp="#mhawkins">of Milten</rs> <lb/><choice><orig><hi rend="superscript">M<hi rend="overline">re</hi>s</hi></orig><reg>Mrs</reg></choice> Androwes servant <lb/>18 a red coloured wenche <lb/>legs sweld. hath the whites <lb/>but very few of the reds. <lb/>head &amp; harte a swimminge.</p><anchor xml:id="questionEnd2"/>
 </div>
 </body>
 </text>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE76842</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="dating">In the text, the date of Alice Egerton’s birth is given according to the Gregorian calendar, which at this time was ten days ahead of the Julian.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS-2</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="214">MS Ashmole 214, p. 433</idno>
+<altIdentifier type="fn_number"><idno n="Napier052">Napier, vol. 52</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0433" to="0433"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ae">
+<persName><roleName>Lady</roleName> <forename>Alice</forename> <surname evidence="external">Egerton</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1619-06-03" n="Thursday"/><time when="15:45:00"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1632-09-11" notAfter="1633-04-03" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#srnapier"/>
+<cb:consultant ref="#srnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ae"/>
+<cb:subject ref="#ae" present="unclear"/>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#ae"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-12-16">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-03-17">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-28">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-05-08">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aaa0457.jpg" url="aaa0457.jpg" n="433"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Heroina Alice E. nata 13. <choice><orig>I</orig><reg>J</reg></choice>uni<choice><orig>j</orig><reg>i</reg></choice> 1619. hor. 3. 45. p. m. <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice></p><anchor xml:id="questionEnd"/>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Lady Alice E. born Thursday 13 June 1619 at 3.45pm.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+</body>
+</text>
+</TEI>

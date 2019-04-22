@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE52713</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-03-22">22 March 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -34,9 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -73,11 +76,12 @@
 <p><date when="1621-06-23" n="Saturday" evidence="inferred"/></p>
 <p><time notBefore="07:20:00" notAfter="10:45:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
 <cb:subject ref="#tv" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#tv"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#tv"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -86,7 +90,8 @@
 <change when="2016-03-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-03-29">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-07-19">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-19">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas Vilvayne <add place="supralinear">D Vilvayne<add place="inline">s</add> sonne</add> <foreign xml:lang="la"><rs type="address" xml:id="address1"><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">E</add></subst>xoniensis <lb/>civitatis</rs> natus</foreign> febr 24 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <lb/>h. 11 p m 1620. <add place="infralinear"><del type="strikethrough">mayed 5 or 6 y</del> <choice><sic>since had</sic><corr type="delText"/></choice> <del type="strikethrough">a child <lb/>or <unclear cert="low" reason="del">swo</unclear> a <unclear cert="low" reason="del">w</unclear><gap extent="2" unit="chars" reason="del"/>kle wise thryfty</del> <choice><sic>husband</sic><corr type="delText"/></choice></add></p>
+<p><lb/>Thomas Vilvayne <add place="supralinear">D Vilvayne<add place="inline">s</add> sonne</add> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><rs type="address" xml:id="address1" key="PLACE959" resp="#mhawkins"><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">E</add></subst>xoniensis <lb/>civitatis</rs> natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born in the city of Exeter</seg><link type="is-translation-of" target="#foreign001 #translation001"/> febr 24 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <lb/>h. 11 p m 1620. <add place="infralinear"><del type="strikethrough">mayed 5 or 6 y</del> <choice><sic>since had</sic><corr type="delText"/></choice> <del type="strikethrough">a child <lb/>or <unclear cert="low" reason="del">swo</unclear> a <unclear cert="low" reason="del">w</unclear><gap extent="2" unit="chars" reason="del"/>kle wise thryfty</del> <choice><sic>husband</sic><corr type="delText"/></choice></add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

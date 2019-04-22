@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE54809</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-22">22 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -34,9 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -56,19 +59,19 @@
 <person xml:id="jj">
 <persName><roleName>Mr</roleName> <forename>John</forename> <surname>Johnson</surname></persName>
 <sex value="1">M</sex>
-<occupation>Tailor</occupation>
 </person>
 <person xml:id="w">
 <persName><genName>Young</genName> <roleName>Lord</roleName> <surname>Wentworth</surname></persName>
 <sex value="1">M</sex>
 </person>
-<listRelation><relation name="tailor" active="#jj" passive="#w"/></listRelation>
+<listRelation><relation name="tutor" active="#jj" passive="#w"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1622-08-18" n="Sunday"/></p>
 <p><time when="12:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jj"/>
@@ -83,7 +86,6 @@
 <change when="2016-06-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-07-12">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-09-08">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,7 +93,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ohn <choice><sic><unclear cert="medium" reason="hand">s</unclear></sic><corr type="noText"/></choice> <del type="strikethrough">Ioinson</del> <choice><orig>I</orig><reg>J</reg></choice>honson <lb/>my young lord Wentworths <lb/>Tailer Aug 18 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 12. 30 <lb/>p m 1622</p>
+<p><lb/>M<hi rend="superscript">r</hi> <choice><orig>I</orig><reg>J</reg></choice>ohn <choice><sic><unclear cert="medium" reason="hand">s</unclear></sic><corr type="noText"/></choice> <del type="strikethrough">Ioinson</del> <choice><orig>I</orig><reg>J</reg></choice>honson <lb/>my young lord Wentworths <lb/>Tutor Aug 18 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 12. 30 <lb/>p m 1622</p>
 <p><lb/>to send word when <lb/>there coach. <choice><sic><unclear cert="low" reason="hand">c</unclear></sic><corr type="noText"/></choice> may <lb/>come or els when he <lb/>shall come over <choice><orig>v</orig><reg>u</reg></choice>nto <lb/>me to take physick <lb/>a greate feeder &amp; <del type="strikethrough">stom</del> <choice><sic>breath</sic><corr type="noText"/></choice> <lb/>breath strong</p>
 </div>
 </body>

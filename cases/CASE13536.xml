@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13536</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 209v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,11 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -68,11 +75,12 @@
 <p><date when="1598-07-14" n="Friday"/></p>
 <p><time when="07:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tr" evidence="internal" present="unclear"/>
 <cb:subject ref="#r" present="no"/>
-<cb:topic key="witchcraft"><person sameAs="#r"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#r"/></cb:topic>
 <cb:topic key="lightheadedPassions"><person sameAs="#r"/></cb:topic>
 <cb:topic key="speechlessPassions"><person sameAs="#r"/></cb:topic>
 <cb:topic key="incontinencePassions"><person sameAs="#r"/></cb:topic>
@@ -97,9 +105,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Millers 1598 &IConsonant;ul. 14. &FridayN; <lb/>h. 7. mi. <del type="strikethrough">12.</del> 45 m. Thomas <lb/>Richardson for his wife. to know <lb/>what wilbe her end. about 30 <lb/>yeres old. shee suspecteth shee <lb/>hath bene bewitched light headed <lb/>&amp; talketh mutch of the devill shee can <lb/>not speake sometimes in her fit letteth out <lb/>her excre<lb/>ment&pluralLoop;.</p>
+<p><lb/>Millers 1598 <choice><orig>I</orig><reg>J</reg></choice>ul. 14. <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> <lb/>h. 7. mi. <del type="strikethrough">12.</del> 45 m. Thomas <lb/>Richardson for his wife. to know <lb/>what wilbe her end. about 30 <lb/>yeres old. shee suspecteth shee <lb/>hath bene bewitched light headed <lb/>&amp; talketh mutch of the devill shee can <lb/>not speake sometimes in her fit letteth out <lb/>her excre<lb/>ment<choice><orig>ꝭ</orig><reg>es</reg></choice>.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

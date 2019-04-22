@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE32486</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR, bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 329v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -60,7 +66,7 @@
 <persName><surname>Kelly</surname></persName>
 <sex value="1">M</sex>
 <age value="20">20</age>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 <death><date when="1608-01-24" n="Sunday" evidence="internal"/><time when="12:00:00" evidence="internal"/></death>
 </person>
 <listRelation><relation name="servant" active="#k" passive="#c"/></listRelation>
@@ -70,6 +76,7 @@
 <p><date when="1607-12-28" n="Monday"/></p>
 <p><time when="22:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#c" evidence="internal" present="unclear"/>
@@ -88,6 +95,7 @@
 <change when="2015-10-08">Checked against new images by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-02-16">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>my lady also for <supplied reason="binding" cert="medium">her</supplied> <lb/>man. <add place="pageTop">kelly<gap extent="1" unit="chars" cert="medium" reason="binding"/></add> 20 y dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. <add place="supralinear">28 hor</add> 10 <supplied reason="binding" cert="low">10</supplied> <lb/>p m 1607 <add place="supralinear">dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 28 <choice><orig><choice><sic>&MercurySymbol;</sic><corr>&MoonSymbol;</corr></choice></orig><reg type="gloss">Monday</reg></choice> h. 10. 10 <subst><del type="over"><unclear cert="low" reason="del">m</unclear><gap reason="del" extent="1" unit="chars"/></del><add place="over">po</add></subst>st m<gap reason="binding" extent="unclear"/></add></p>
+<p><lb/>my lady also for <subst><del type="strikethrough">her</del> <add place="supralinear"><unclear cert="low" reason="hand">kellye</unclear></add></subst> <lb/>man.  20 y dec<choice><orig>ē</orig><reg>em</reg></choice>b. <add place="supralinear">28 hor</add> 10 <del type="strikethrough">ant</del> <lb/>p m 1607 <add place="supralinear">dec<choice><orig>ē</orig><reg>em</reg></choice>b. 28 <choice><orig><choice><sic>☿</sic><corr>☾</corr></choice></orig><reg type="gloss">Monday</reg></choice> h. 10. 10 <subst><del type="over"><unclear cert="low" reason="del">m</unclear><gap reason="del" extent="1" unit="chars"/></del><add place="over">po</add></subst>st m.</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>
 </body>
 </text>

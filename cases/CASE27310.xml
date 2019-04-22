@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE27310</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-11-11">11 November 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 134r/uL, f. 134r/uR, f. 133v/uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="215">MS Ashmole 215, ff. 134r, 133v</idno>
-&Napier011;
+<altIdentifier type="fn_number"><idno n="Napier011">Napier, vol. 11</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,6 +70,7 @@
 <p><date when="1606-05-21" n="Wednesday"/></p>
 <p><time when="09:40:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#fj"/>
@@ -81,6 +88,7 @@
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,17 +97,17 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><del type="blockStrikethrough">francis Iackm&aover;. of litcot <lb/><supplied reason="binding">3</supplied>2 y may 21. &Wednesday; h. 10 45 <lb/>ant m. 1606</del></p>
+<p><lb/><del type="blockStrikethrough">francis <choice><orig>I</orig><reg>J</reg></choice>ackmā. of litcot <lb/>32 y may 21. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 10 45 <lb/>ant m. 1606</del></p>
 </div>
-&astroChartDeleted;
+<figure type="astro" subtype="astroChartDeleted"/>
 <div><cb xml:id="colB" n="b"/>
-<p><lb/>francis <del type="strikethrough">litcot o</del> &IConsonant;ack<lb/>m<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Litcot</rs> h 9. 40 <lb/>&antm;. 1606. may 21. &Wednesday;</p>
+<p><lb/>francis <del type="strikethrough">litcot o</del> <choice><orig>I</orig><reg>J</reg></choice>ack<lb/>m<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" xml:id="address1" key="PLACE742" resp="#mhawkins">of Litcot</rs> h 9. 40 <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1606. may 21. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div>
 <pb xml:id="f133v" n="133v" facs="#cmp0286.jpg"/>
-<p><lb/>francis &IConsonant;ackm<supplied reason="binding" cert="low">an</supplied> <rs type="address" sameAs="#address1"><supplied reason="binding" cert="low">of</supplied> <lb/><del type="strikethrough">S</del> litcot</rs>. 32 y <supplied reason="binding">may</supplied> <lb/>21. &Wednesday; h. 9. <subst><del type="over">3</del><add place="over">4</add></subst>0 <choice><orig><supplied reason="binding">ant</supplied> <lb/>m</orig><reg>am</reg></choice>. 1606.</p>
+<p><lb/>francis <choice><orig>I</orig><reg>J</reg></choice>ackm<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" sameAs="#address1" key="PLACE742" resp="#mhawkins">of <lb/><del type="strikethrough">S</del> litcot</rs>. 32 y m<supplied reason="binding" cert="high">ay</supplied> <lb/>21. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 9. <subst><del type="over">3</del><add place="over">4</add></subst>0 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1606.</p>
 </div>
 </body>
 </text>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE80080</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2016-02-10">10 February 2016</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="202">MS Ashmole 202, f. 47r</idno>
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0047r" to="0047r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationTreatment"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="d">
+<persName><roleName>Goody</roleName> <surname>Dixon</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1600-04-22" n="Tuesday" evidence="inferred"/></p>
+<p><time notBefore="06:00:00" notAfter="08:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#d"/>
+<cb:subject ref="#d" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#d"/></cb:topic>
+<cb:info type="blessing"/>
+<cb:treatment/>
+<cb:info type="financial"/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-14">Template created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-04-28">Material previously compiled by <name xml:id="rralley">Robert Ralley</name> and <name xml:id="jyoung">John Young</name> transferred to template by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-10-09">Turned into entry by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ack0115.jpg" url="ack0115.jpg" n="47r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>I gave Goody Dickson <rs type="address" xml:id="address1">of <lb/>Linford</rs> Ap. 22 <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> <lb/>h. 6 <choice><orig>ant m</orig><reg>am</reg></choice>. 1600</p><anchor xml:id="questionEnd"/>
+<milestone unit="treatment" spanTo="#treatmentEnd"/>
+<p><lb/>syrupi rosa<choice><orig>ꝝ</orig><reg>rum</reg></choice> ℥<choice><orig>j</orig><reg>i</reg></choice>. triacle <lb/>℥<choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice>. dragon water ℥i<choice><orig>j</orig><reg>i</reg></choice><anchor xml:id="treatmentEnd"/> <milestone unit="financialInfo" spanTo="#financialInfoEnd"/><lb/>gratis<anchor xml:id="financialInfoEnd"/> <milestone unit="treatment" spanTo="#treatmentEnd2"/>god send it to doe <lb/>her good./</p><anchor xml:id="treatmentEnd2"/>
+<milestone unit="urineInfo" spanTo="#urineInfoEnd"/>
+<p><lb/>a good wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>.</p><anchor xml:id="urineInfoEnd"/>
+</div>
+</body>
+</text>
+</TEI>

@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE39585</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-02-28">28 February 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="409">MS Ashmole 409, f. 50v</idno>
-&Napier021;
+<altIdentifier type="fn_number"><idno n="Napier021">Napier, vol. 21</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,6 +71,7 @@
 <p><date when="1612-04-08" n="Wednesday"/></p>
 <p><time when="17:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -83,18 +92,24 @@
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-14">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-14">Milestones added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-04-17">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="abp0118.jpg" url="abp0118.jpg" n="50v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <milestone unit="question" spanTo="#questionEnd"/>
-<p><lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice>sp. futur<choice><orig>&uover;</orig><reg>um</reg></choice> sit iter <lb/>ad Her. Mord Ap 8 &WednesdayLatin; <lb/>h. 5. p m. 1612</p><anchor xml:id="questionEnd"/>
+<p><lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>sp. futur<choice><orig>ū</orig><reg>um</reg></choice> sit iter <lb/>ad Her. Mord Ap 8 <choice><orig>☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> <lb/>h. 5. p m. 1612</p><anchor xml:id="questionEnd"/>
 <milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><p><lb/><foreign xml:lang="en">I did answ her letter &amp; <lb/>went not.</foreign></p><anchor xml:id="subsequentEventInfoEnd"/>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether the prospective journey will be prosperous for Lady Mord[aunt] Wednesday 8 April 1612 at 5pm.</p>
+<p>I did answer her letter and went not.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

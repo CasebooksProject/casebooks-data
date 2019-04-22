@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13195</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 72r/uS, f. 71v/bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 72r, f. 71v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -61,13 +65,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1597" cert="medium"/></p>
+<p><date notBefore="1597-01-22" notAfter="1597-09-06" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jl"/>
 <cb:subject ref="#jl" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#jl"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#jl"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -79,6 +84,8 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,13 +94,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn leach <foreign xml:lang="la">nat<choice><orig>&uscon;</orig><reg>us</reg></choice></foreign>  <rs type="date" xml:id="date1"><foreign xml:lang="la"><choice><orig><hi rend="overline">ao</hi></orig><reg>anno</reg></choice> <choice><orig>d<hi rend="overline">ni</hi></orig><reg>domini</reg></choice></foreign> 1579 <lb/>the 10 &IConsonant;an. being satterd.</rs> h. betwixt <lb/>9 &amp; 10 <choice><orig>ant merid</orig><reg>am</reg></choice>. <rs type="address" xml:id="address1"><foreign xml:lang="la">in Exon:</foreign></rs> <rs type="time" xml:id="time1">at 9 a clock</rs>.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn leach <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nat<choice><orig>ꝯ</orig><reg>us</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <rs type="date" xml:id="date1"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig><hi rend="overline">ao</hi></orig><reg>anno</reg></choice> <choice><orig>d<hi rend="overline">ni</hi></orig><reg>domini</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">in the year of our Lord</seg><link type="is-translation-of" target="#foreign002 #translation002"/> 1579 <lb/>the 10 <choice><orig>I</orig><reg>J</reg></choice>an. being satterd.</rs> h. betwixt <lb/>9 &amp; 10 <choice><orig>ant merid</orig><reg>am</reg></choice>. <rs type="address" xml:id="address1" key="PLACE959" resp="#mhawkins"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">in Exon:</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">in Exeter</seg><link type="is-translation-of" target="#foreign003 #translation003"/></rs> <rs type="time" xml:id="time1">at 9 a clock</rs>.</p>
 </div>
-&astroChartDeleted;
+<figure type="astro" subtype="astroChartDeleted"/>
 <div><pb xml:id="f71v" n="71v" facs="#ace0158.jpg"/>
-<p><lb/><foreign xml:lang="la">nativitas &IConsonant;oh. leach<note place="marginLeft">nativitas <choice><sic>&IConsonant;ohais</sic><corr>&IConsonant;ohannis</corr></choice> <lb/>leache.</note> <lb/>verior &vVowel;ti arbitror. <lb/><rs type="time" sameAs="#time1">hora 9<hi rend="superscript">a</hi></rs>. <rs type="date" sameAs="#date1">1579. &SaturdayN;</rs>.</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign004" decls="#original_source">nativitas <choice><orig>I</orig><reg>J</reg></choice>oh. leach<note place="marginLeft">nativitas <choice><sic><choice><orig>I</orig><reg>J</reg></choice>ohais</sic><corr><choice><orig>I</orig><reg>J</reg></choice>ohannis</corr></choice> <lb/>leache.</note> <lb/>verior <choice><orig>v</orig><reg>u</reg></choice>ti arbitror. <lb/><rs type="time" sameAs="#time1">hora 9<hi rend="superscript">a</hi></rs>. <rs type="date" sameAs="#date1">1579. <choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice></rs>.</foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">The nativity of John Leech more truly as I judge at the 9th hour Saturday 1579</seg><link type="is-translation-of" target="#foreign004 #translation004"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

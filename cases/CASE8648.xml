@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE8648</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="411">MS Ashmole 411, f. 7r</idno>
-&Forman006;
+<altIdentifier type="fn_number"><idno n="Forman006">Forman, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,6 +76,7 @@
 <p><date when="1601-01-14" n="Wednesday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ww #tb"/>
@@ -88,6 +95,7 @@
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-04-25">Coding of ships updated by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,12 +103,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Will whitlocke. for the diamond <lb/>of <placeName>foy</placeName>. that was laden from thenc <lb/>for <placeName>London</placeName> the 4 of &IConsonant;an&flourish; And is <lb/>not hard of. questo 160<choice><orig>i</orig><reg>1</reg></choice> the 14 <lb/>of &IConsonant;ani at 12 <choice><orig>in mer</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> wher she <lb/>be safe or cast a wai or taken <lb/>or noe&slash;</p>
-<p><lb/>Thomas bird. for the <choice><sic>Diana</sic><corr cert="high">Diam</corr></choice> of <lb/><placeName>foie</placeName> Laden for <placeName>london</placeName> the 4<hi rend="superscript">th</hi> of <lb/>this moneth questo 160<choice><orig>i</orig><reg>1</reg></choice> the 14 <lb/>of &IConsonant;ani &Wednesday; &inmfl;. what is become <lb/>of her cast a way taken&slash;&amp;c&slash;</p>
+<p><lb/>Will whitlocke. for the diamond <lb/>of <placeName key="PLACE2356">foy</placeName>. that was laden from thenc <lb/>for <placeName key="PLACE1" resp="#mhawkins">London</placeName> the 4 of <choice><orig>I</orig><reg>J</reg></choice>an’ And is <lb/>not hard of. questo 160<choice><orig>i</orig><reg>1</reg></choice> the 14 <lb/>of <choice><orig>I</orig><reg>J</reg></choice>ani at 12 <choice><orig>in mer</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> wher she <lb/>be safe or cast a wai or taken <lb/>or noe/</p>
+<p><lb/>Thomas bird. for the <choice><sic>Diana</sic><corr cert="high">Diam</corr></choice> of <lb/><placeName key="PLACE2356">foie</placeName> Laden for <placeName key="PLACE1" resp="#mhawkins">london</placeName> the 4<hi rend="superscript">th</hi> of <lb/>this moneth questo 160<choice><orig>i</orig><reg>1</reg></choice> the 14 <lb/>of <choice><orig>I</orig><reg>J</reg></choice>ani <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <choice><orig>in m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice>. what is become <lb/>of her cast a way taken/&amp;c/</p>
 <cb xml:id="colB" n="b"/>
-<p><lb/>for the diamond&slash;</p>
+<p><lb/>for the diamond/</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

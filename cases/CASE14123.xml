@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE14123</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="197">MS Ashmole 197, f. 96v</idno>
-&Napier008;
+<altIdentifier type="fn_number"><idno n="Napier008">Napier, vol. 8</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#gjames">Gerence James</handNote>
@@ -75,6 +79,7 @@
 <p><date when="1603-11-04" n="Friday"/></p>
 <p><time when="16:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#gjames"/>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jh"/>
@@ -91,6 +96,8 @@
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-19">Cross-reference added to transcription by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2017-03-16">Creation of text documented by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,10 +105,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Halfhead <rs type="address" xml:id="address1">of swallowfield</rs> <lb/>Novemb. 4 &Friday; ho 4 p m. 1603<note place="marginLeft"><handShift new="#rnapier"/><foreign xml:lang="la">vid</foreign> Octob <lb/>17. &Monday; hor <lb/>2. 45 p m <lb/>1603.
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Halfhead <rs type="address" xml:id="address1" key="PLACE566" resp="#mhawkins">of swallowfield</rs> <lb/>Novemb. 4 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> ho 4 p m. 1603<note place="marginLeft"><handShift new="#rnapier"/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">vid</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">see</seg><link type="is-translation-of" target="#foreign001 #translation001"/> Octob <lb/>17. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> hor <lb/>2. 45 p m <lb/>1603.
 </note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

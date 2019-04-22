@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13389</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 92v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,15 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -79,7 +90,7 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1598-01-14"/></p>
+<p><date notBefore="1598-01-14" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
 <cb:consultant ref="#sforman"/>
 <cb:astrologer ref="#rnapier"/>
@@ -100,6 +111,8 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-06">Coding updated to include astrologer and creation tags by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -107,9 +120,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Dennys: Wilkins <rs type="address" xml:id="address1">of Lambeth</rs> of 40 yeres <lb/>1598 the 14 of &IConsonant;an: <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <choice><orig>post m</orig><reg>pm</reg></choice>. at 10 <lb/>mi. &postGlossed; 5.<note place="marginLeft">&Saturday; 5. 10 p m <lb/>1598.</note> husb. for the wife <foreign xml:lang="la">sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu</foreign> <lb/>disease <foreign xml:lang="la">2 grad: falso supp. sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu <lb/>1598. maritus <choice><orig>&crossedp;</orig><reg>pro</reg></choice> &vVowel;xore</foreign></p>
+<p><lb/>Dennys: Wilkins <rs type="address" xml:id="address1" key="PLACE2057" resp="#mhawkins">of Lambeth</rs> of 40 yeres <lb/>1598 the 14 of <choice><orig>I</orig><reg>J</reg></choice>an: <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <choice><orig>post m</orig><reg>pm</reg></choice>. at 10 <lb/>mi. <choice><orig>post</orig><reg>post</reg><reg type="gloss">past</reg></choice> 5.<note place="marginLeft"><choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> 5. 10 p m <lb/>1598.</note> husb. for the wife <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">sine c<choice><orig>ō</orig><reg>on</reg></choice>sensu</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">without consent</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>disease <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">2 grad: falso supp. sine c<choice><orig>ō</orig><reg>on</reg></choice>sensu <lb/>1598. maritus <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>xore</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">[2 degrees out as I suppose?] without consent 1598 the husband for the wife</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

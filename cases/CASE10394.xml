@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10394</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-2, bR-3</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 47v</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -55,7 +61,7 @@
 <person xml:id="d">
 <persName><roleName>Mrs</roleName> <surname>Duncombe</surname></persName>
 <sex value="2">F</sex>
-<residence evidence="internal" xml:id="address1" key="databaseNormalizedIDKey">of Lidlington</residence>
+<residence evidence="internal" xml:id="address1" key="PLACE433">of Lidlington</residence>
 </person>
 </listPerson>
 </particDesc>
@@ -63,6 +69,7 @@
 <p><date when="1600-04-22" n="Tuesday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#d"/>
@@ -88,9 +95,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="superscript"><hi rend="overline">re</hi></hi>s</orig><reg>Mrs</reg></choice> Dunkam Apr. 22 &TuesdayN; h. 12.</p>
+<p><lb/><choice><orig>M<hi rend="superscript"><hi rend="overline">re</hi></hi>s</orig><reg>Mrs</reg></choice> Dunkam Apr. 22 <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 12.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <cb xml:id="colB" n="b"/>
 

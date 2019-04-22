@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE42546</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-04-24">24 April 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="196">MS Ashmole 196, f. 129r</idno>
-&Napier024;
+<altIdentifier type="fn_number"><idno n="Napier024">Napier, vol. 24</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -61,11 +67,13 @@
 <person xml:id="d1">
 <persName><roleName>Mrs</roleName> <surname>Davis</surname></persName>
 <sex value="2">F</sex>
-<age value="19">19</age>    
+<age value="19">19</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <person xml:id="d2" evidence="internal">
 <persName><surname evidence="inferred" cert="medium">Davis</surname></persName>
 <sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 <birth><date when="1615-09-28"/></birth>
 </person>
 <listRelation><relation name="boarder" active="#w" passive="#d1"/><relation name="son" active="#d2" passive="#d1" evidence="internal"/></listRelation>
@@ -75,6 +83,7 @@
 <p><date when="1615-04-19" n="Wednesday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#w" evidence="conjecture" present="no"/>
@@ -90,6 +99,8 @@
 <change when="2015-09-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-16">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,10 +108,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><add place="supralinear">Whitaker <rs type="address" xml:id="address1">of Marson</rs>.</add> <choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Davyes Border 19 y <lb/>Ap 19. &Wednesday; h. 12. 1615</p>
-<p><lb/><foreign xml:lang="la">qu&aelig;rit an masc. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> <lb/>f&aelig;min<choice><orig>&aover;</orig><reg>am</reg></choice> &vVowel;tero ger<subst><del type="over">e</del><add place="over">i</add></subst>t.</foreign></p>
+<p><lb/><add place="supralinear">Whitaker <rs type="address" xml:id="address1" key="PLACE444" resp="#mhawkins">of Marson</rs>.</add> <choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Davyes Border 19 y <lb/>Ap 19. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 12. 1615</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit an masc. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> <lb/>fæmin<choice><orig>ā</orig><reg>am</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>tero ger<subst><del type="over">e</del><add place="over">i</add></subst>t.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">he asks whether she is carrying a male or a female in her womb.</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

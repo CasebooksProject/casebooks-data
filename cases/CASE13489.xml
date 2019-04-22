@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13489</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 162v/uS, f. 163r/uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, ff. 162v-163r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,15 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,6 +75,7 @@
 <p><date when="1598-04-20" n="Thursday"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#en"/>
@@ -82,6 +94,8 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,13 +104,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elisab: Norman <rs type="address" xml:id="address1">of Rawnson</rs> <lb/>the 20 of Apr.</p>
+<p><lb/>Elisab: Norman <rs type="address" xml:id="address1" key="PLACE794" resp="#mhawkins">of Rawnson</rs> <lb/>the 20 of Apr.</p>
 </div>
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
 <div><pb xml:id="f163r" n="163r" facs="#acm0315.jpg"/>
-<p><lb/>Elisab. Norm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> <rs type="address" sameAs="#address1">of Raunson</rs>. <lb/>20 of Aprill 1598. <choice><orig>die <lb/>&JupiterSymbol;</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice>. h. 10. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> morbi causa</foreign> <lb/>shee died not longe after</p>
+<p><lb/>Elisab. Norm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> <rs type="address" sameAs="#address1" key="PLACE794" resp="#mhawkins">of Raunson</rs>. <lb/>20 of Aprill 1598. <choice><orig>die <lb/>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice>. h. 10. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> morbi causa</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">about the cause of her disease</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>shee died not longe after</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

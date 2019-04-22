@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13401</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="blank" resp="#jyoung">This entry is wholly deleted.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 100v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -31,18 +36,20 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#nativity"/>
@@ -57,13 +64,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1597" notAfter="1598" evidence="conjecture" cert="low"/></p>
+<p><date notBefore="1597-03-08" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -73,16 +81,21 @@
 <change when="2012-02-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-29">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0220.jpg" url="acm0220.jpg" n="100v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><del type="blockStrikethrough">Rich Nap<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <add place="supralinear"><rs type="date" xml:id="date1">mai&jVowel; 4. die Asc:</rs></add> devoniensis <rs type="address" xml:id="address1">Exoni&jVowel;</rs> nat<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/><rs type="date" sameAs="#date1">a<choice><orig><hi rend="overline">no</hi></orig><reg>nno</reg></choice> <choice><orig><hi rend="overline">dni</hi></orig><reg>domini</reg></choice> 1559. p<choice><orig><hi rend="overline">rio</hi></orig><reg>rimo</reg></choice> <subst><del type="over">E</del><add place="over">a</add></subst><choice><orig><hi rend="overline">no</hi></orig><reg>nno</reg></choice> regni Elisa<lb/>beth&aelig; &ThursdayN; et Ascens</rs> <rs type="time" xml:id="time1">hor <choice><orig>post <lb/>m</orig><reg>pm</reg></choice>. quando lucern&aelig; accendabant<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice>. int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>9 et 10</rs>. sed de hora recte c<choice><orig>&oover;</orig><reg>on</reg></choice>i&jVowel;cere <lb/>n<choice><orig>&oover;</orig><reg>on</reg></choice> possum<choice><orig>&uscon;</orig><reg>us</reg></choice> duob<choice><orig>&uscon;</orig><reg>us</reg></choice> dieb<choice><orig>&uscon;</orig><reg>us</reg></choice> aut <choice><orig>&conjunctionSymbol;</orig><reg>coniunctionibus</reg></choice> <choice><orig>&SunSymbol;</orig><reg>Solis</reg></choice> et <choice><orig>&MoonSymbol;</orig><reg>Lun&aelig;</reg></choice>.</del></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><del type="blockStrikethrough">Rich Nap<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <add place="supralinear"><rs type="date" xml:id="date1">mai<choice><orig>j</orig><reg>i</reg></choice> 4. die Asc:</rs></add> devoniensis <rs type="address" xml:id="address1" key="PLACE959">Exoni<choice><orig>j</orig><reg>i</reg></choice></rs> nat<choice><orig>ꝯ</orig><reg>us</reg></choice> <lb/><rs type="date" sameAs="#date1">a<choice><orig><hi rend="overline">no</hi></orig><reg>nno</reg></choice> <choice><orig><hi rend="overline">dni</hi></orig><reg>domini</reg></choice> 1559. p<choice><orig><hi rend="overline">rio</hi></orig><reg>rimo</reg></choice> <subst><del type="over">E</del><add place="over">a</add></subst><choice><orig><hi rend="overline">no</hi></orig><reg>nno</reg></choice> regni Elisa<lb/>bethæ <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> et Ascens</rs> <rs type="time" xml:id="time1">hor <choice><orig>post <lb/>m</orig><reg>pm</reg></choice>. quando lucernæ accendabant<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice>. int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>9 et 10</rs>. sed de hora recte c<choice><orig>ō</orig><reg>on</reg></choice>i<choice><orig>j</orig><reg>i</reg></choice>cere <lb/>n<choice><orig>ō</orig><reg>on</reg></choice> possum<choice><orig>ꝯ</orig><reg>us</reg></choice> duob<choice><orig>ꝯ</orig><reg>us</reg></choice> dieb<choice><orig>ꝯ</orig><reg>us</reg></choice> aut <choice><orig>☌</orig><reg>coniunctionibus</reg></choice> <choice><orig>☉</orig><reg>Solis</reg></choice> et <choice><orig>☾</orig><reg>Lunæ</reg></choice>.</del></p>
 </div>
-&astroChartDeleted;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Richard Napier of Devon born in Exeter May 4 Ascension Day in the year of our Lord 1559 in the first year of Elizabeth’s reign Thursday and Ascension Day in the afternoon when the lamps were being lit between 9 and 10 but we cannot assign the exact time two days before the conjuction of the sun and moon.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>
 </TEI>

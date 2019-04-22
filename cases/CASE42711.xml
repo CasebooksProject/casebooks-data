@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE42711</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-04-24">24 April 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 160r/bL, f. 160r/bR, f. 159v/bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="196">MS Ashmole 196, f. 160r, f. 159v</idno>
-&Napier024;
+<altIdentifier type="fn_number"><idno n="Napier024">Napier, vol. 24</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -65,6 +71,7 @@
 <p><date when="1615-12-18" n="Monday"/></p>
 <p><time when="12:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jn"/>
@@ -82,6 +89,7 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,13 +98,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> &IConsonant;ohn Need<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 18 &Monday; h. <lb/>12. 16<choice><orig>i</orig><reg>1</reg></choice>5</p>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>ohn Need<choice><orig>ā</orig><reg>am</reg></choice> <lb/>Dec<choice><orig>ē</orig><reg>em</reg></choice>b<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> 18 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. <lb/>12. 16<choice><orig>i</orig><reg>1</reg></choice>5</p>
 </div>
-&astroChartPartial;
+<figure type="astro" subtype="astroChartPartial"/>
 <div><cb xml:id="colB" n="b"/>
-<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> &IConsonant;ohn Need<choice><orig>&aover;</orig><reg>am</reg></choice> <rs type="address" xml:id="address1">of <lb/>lichborough</rs> 50 y Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 18. &Monday; h. 12. 20 <lb/>p. m 16<choice><orig>i</orig><reg>1</reg></choice>5 <lb/>c<choice><orig>&aover;</orig><reg>an</reg></choice>not sleepe.</p>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>ohn Need<choice><orig>ā</orig><reg>am</reg></choice> <rs type="address" xml:id="address1" key="PLACE1684" resp="#mhawkins">of <lb/>lichborough</rs> 50 y Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 18. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 12. 20 <lb/>p. m 16<choice><orig>i</orig><reg>1</reg></choice>5 <lb/>c<choice><orig>ā</orig><reg>an</reg></choice>not sleepe.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f159v" n="159v" facs="#ciz0332.jpg"/>
 </body>
 </text>

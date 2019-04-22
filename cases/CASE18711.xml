@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE18711</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="221">MS Ashmole 221, f. 310r</idno>
-&Napier006;
+<altIdentifier type="fn_number"><idno n="Napier006">Napier, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -78,12 +84,12 @@
 <p><date when="1603-02-12" n="Saturday"/></p>
 <p><time when="08:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#a" evidence="internal" present="no"/>
 <cb:subject ref="#h" present="no"/>
-<cb:topic key="swelling"><person sameAs="#h"/></cb:topic>
-<cb:topic key="belly"><person sameAs="#h"/></cb:topic>
+<cb:topic key="tympany"><person sameAs="#h"/></cb:topic>
 <cb:topic key="pregnancy"><person sameAs="#h"/></cb:topic>
 <cb:judgment/>
 
@@ -97,6 +103,8 @@
 <change when="2012-09-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-11">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,11 +112,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Lady Hatre <rs type="address" xml:id="address1">of London</rs> <lb/>39. febr. 12 &Saturday; hor 8. 15 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1603 <add place="pageTop">M<hi rend="superscript">r</hi> Androwe sent for her</add></p>
-<p><lb/><foreign xml:lang="la">qu&aelig;rit an sit <lb/>gravida. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> t<choice><orig><hi rend="overline">y</hi></orig><reg>ym</reg></choice>pa<lb/>nit<choice><orig>&eover;</orig><reg>em</reg></choice> habeat.</foreign></p>
-<p><lb/>had 3 children by her first husb &amp; 3 by <lb/>this gentlem<choice><orig>&aover;</orig><reg>an</reg></choice> M<hi rend="superscript">r</hi> Priggot</p>
+<p><lb/>Lady Hatre <rs type="address" xml:id="address1" key="PLACE1" resp="#mhawkins">of London</rs> <lb/>39. febr. 12 <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> hor 8. 15 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1603 <add place="pageTop">M<hi rend="superscript">r</hi> Androwe sent for her</add></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit an sit <lb/>gravida. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> t<choice><orig><hi rend="overline">y</hi></orig><reg>ym</reg></choice>pa<lb/>nit<choice><orig>ē</orig><reg>em</reg></choice> habeat.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">she asks whether she is pregnant or has a tympany.</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+<p><lb/>had 3 children by her first husb &amp; 3 by <lb/>this gentlem<choice><orig>ā</orig><reg>an</reg></choice> M<hi rend="superscript">r</hi> Priggot</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

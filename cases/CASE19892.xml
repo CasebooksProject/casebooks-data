@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE19892</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 198r</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -69,6 +77,7 @@
 <p><date when="1601-09-07" n="Monday"/></p>
 <p><time when="08:25:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ec"/>
@@ -84,6 +93,7 @@
 <change when="2012-07-04">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,8 +101,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elisab. Camdon <rs type="address" xml:id="address1">of Stony <lb/>stratford</rs> Chrismas was <lb/>2 yeres for her hearing <lb/>&amp; tooke <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> cost 4<hi rend="superscript">s</hi> every oth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> night. <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> were <lb/>pils <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> helped her.</p>
-<p><lb/>This same meaden having <lb/>lost her cloathes <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> she <lb/>lefte <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an old woman to <lb/>keepe who delivered them <lb/>to on whom she knewe <lb/>not &amp; as shee sayth that <lb/><choice><orig>&crossedp;</orig><reg>par</reg></choice>ty came to her for in her <lb/>name Sept 7 &Monday; hor 8 2<subst><del type="over">0</del><add place="over">5</add></subst> <lb/>&antm;. 1601</p>
+<p><lb/>Elisab. Camdon <rs type="address" xml:id="address1" key="PLACE825" resp="#mhawkins">of Stony <lb/>stratford</rs> Chrismas was <lb/>2 yeres for her hearing <lb/>&amp; tooke <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> cost 4<hi rend="superscript">s</hi> every oth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> night. <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> were <lb/>pils <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> helped her.</p>
+<p><lb/>This same meaden having <lb/>lost her cloathes <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> she <lb/>lefte <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an old woman to <lb/>keepe who delivered them <lb/>to on whom she knewe <lb/>not &amp; as shee sayth that <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ty came to her for in her <lb/>name Sept 7 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> hor 8 2<subst><del type="over">0</del><add place="over">5</add></subst> <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1601</p>
 </div>
 </body>
 </text>

@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13416</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 109r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,18 +35,24 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#interrogation"/>
@@ -62,8 +73,9 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1597-07-24"/></p>
+<p><date notBefore="1597-07-24" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier #anon" evidence="conjecture" cert="low" present="yes"/>
@@ -78,16 +90,21 @@
 <change when="2012-03-02">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-02">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0237.jpg" url="acm0237.jpg" n="109r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Guil. Miller<choice><orig>&uscon;</orig><reg>us</reg></choice> 1597 &IConsonant;uni&jVowel; 24. &FridayN; h. <subst><del type="over">1</del><add place="over">2</add></subst>. <subst><del type="strikethrough">30. 45</del> <add place="supralinear">p m. 1597.</add></subst> <choice><sic>mi.</sic><corr type="delText"/></choice> nuptias quas <choice><orig>n<hi rend="overline">ro</hi></orig><reg>nostro</reg></choice> consilio <choice><orig>&crossedp;</orig><reg>per</reg></choice>agi <lb/>sperabat retractavit et quamvis <del type="strikethrough"><choice><orig>&crossedp;</orig><reg>per</reg></choice> nos</del> <lb/><choice><orig>p<hi rend="overline">rio</hi></orig><reg>primo</reg></choice> velit <choice><orig>&crossedp;</orig><reg>per</reg></choice> nos in ordin<choice><orig>&eover;</orig><reg>em</reg></choice> cogi <add place="supralinear">et <choice><orig>nr<hi rend="overline">um</hi></orig><reg>nostrum</reg></choice> sequi consili<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice></add>. postea <lb/>tamen palinodi<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> cecinit et n<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice> t<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice>nus et <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice>clivis ad nuptias maturandas qu<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> postea <lb/>remissus et refractus. nuptias c<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice>firmaturus <lb/>dissolvit. licet conditionib<choice><orig>&uscon;</orig><reg>us</reg></choice> paulo ini<lb/>quiorib<choice><orig>&uscon;</orig><reg>us</reg></choice> prius concesserat.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Guil. Miller<choice><orig>ꝯ</orig><reg>us</reg></choice> 1597 <choice><orig>I</orig><reg>J</reg></choice>uni<choice><orig>j</orig><reg>i</reg></choice> 24. <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h. <subst><del type="over">1</del><add place="over">2</add></subst>. <subst><del type="strikethrough">30. 45</del> <add place="supralinear">p m. 1597.</add></subst> <choice><sic>mi.</sic><corr type="delText"/></choice> nuptias quas <choice><orig>n<hi rend="overline">ro</hi></orig><reg>nostro</reg></choice> consilio <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>agi <lb/>sperabat retractavit et quamvis <del type="strikethrough"><choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> nos</del> <lb/><choice><orig>p<hi rend="overline">rio</hi></orig><reg>primo</reg></choice> velit <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> nos in ordin<choice><orig>ē</orig><reg>em</reg></choice> cogi <add place="supralinear">et <choice><orig>nr<hi rend="overline">um</hi></orig><reg>nostrum</reg></choice> sequi consili<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice></add>. postea <lb/>tamen palinodi<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> cecinit et n<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice> t<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>nus et <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>clivis ad nuptias maturandas qu<choice><orig><hi rend="overline">a</hi></orig><reg>am</reg></choice> postea <lb/>remissus et refractus. nuptias c<choice><orig><hi rend="overline">o</hi></orig><reg>on</reg></choice>firmaturus <lb/>dissolvit. licet conditionib<choice><orig>ꝯ</orig><reg>us</reg></choice> paulo ini<lb/>quiorib<choice><orig>ꝯ</orig><reg>us</reg></choice> prius concesserat.</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>William Miller Friday 24 June 1597 at 2pm 1597. He has withdrawn [from?] the marriage which by our advice he was hoping to have been carried out, and although at first he might wish to be encouraged by us in turn and to follow our counsel, afterwards, however, he recanted and [was] not so inclined and disposed to the hastening of the marriage as [gap: not understood] although he had first yielded [to terms/under conditions?] somewhat less favourable.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26069</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This entry may share its chart with <ref target="CASE26070" type="case">CASE26070</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS-1, mL, bS</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 39v</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0039v" to="0039v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rn">
+<persName><forename>Robert</forename> <surname evidence="inferred">Napier</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<org type="ship" xml:id="tro">
+<orgName>The Tr<supplied reason="binding" cert="medium">o</supplied>jan</orgName>
+</org>
+<person xml:id="w">
+<persName><roleName>Mrs</roleName> <surname>Walthorne</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="brother" mutual="#rn #rnapier"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1602-04-21" n="Wednesday"/></p>
+<p><time when="07:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rn" evidence="internal"/>
+<cb:subject ref="#rn" present="unclear"/>
+<cb:subject ref="#w" present="no"/>
+<cb:object ref="#tro"/>
+<cb:topic key="absentShip"><org sameAs="#tro"/></cb:topic>
+<cb:topic key="notWell" resp="#rnapier"><person sameAs="#w"/></cb:topic>
+<cb:topic key="pregnancy"><person sameAs="#w"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-01">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-24">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-13">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-03-15">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-03-19">Revised by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-11-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0110.jpg" url="acr0110.jpg" n="39v"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>frater meus Rob. N. <rs type="address" xml:id="address1" key="PLACE1" resp="#mhawkins">Lond</rs>. quærit qu<choice><orig>ā</orig><reg>an</reg></choice>do d<supplied reason="binding" cert="medium">eo</supplied> <lb/>volente et favente redibit navis Dicta <foreign xml:lang="en">the Tr<supplied reason="binding" cert="medium">o</supplied><lb/><choice><orig>i</orig><reg>j</reg></choice>an</foreign>. 7 ab hinc mensib<choice><orig>ꝯ</orig><reg>us</reg></choice> expectata. Apr 21. <choice><orig>☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> h<supplied reason="binding" cert="low">or</supplied> <lb/>7. 15. <choice><orig>ant m</orig><reg>am</reg></choice>. 1602.</p>
+<p><lb/><foreign xml:lang="en"><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Walthorne not well</foreign> quærit an sit gravida h 7 <supplied reason="binding" cert="low">15</supplied> <lb/>16<supplied reason="binding" cert="low">02</supplied></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>my brother Rob[ert] N. of London asks when by God’s will and favour the ship known as the Trojan will return, which has been expected for 7 months now. Wednesday 21 April 1602 at 7.15am.</p>
+<p>Mrs Walthorne not well: he asks whether she is pregnant, at 7.[15?] [1602?].</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<cb xml:id="colA" n="a"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

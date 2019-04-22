@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE52428</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-12-17">17 December 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -62,6 +71,17 @@
 <sex value="1">M</sex>
 <occupation>Judge</occupation>
 </person>
+<person xml:id="m1">
+<persName><roleName>Mr</roleName> <forename>Matthias</forename></persName>
+<sex value="1">M</sex>
+<occupation>Surgeon</occupation>
+<occupation>Physician</occupation>
+</person>
+<person xml:id="m2">
+<persName><roleName>Mr</roleName> <surname>More</surname></persName>
+<sex value="1">M</sex>
+<occupation>Surgeon</occupation>
+</person>
 <listRelation>
 <relation name="brother" mutual="#n #wn"/>
 </listRelation>
@@ -71,12 +91,12 @@
 <p><date when="1621-05-09" n="Wednesday"/></p>
 <p><time when="18:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wn"/>
 <cb:subject ref="#wn" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#wn"/></cb:topic>
-<cb:judgment/>
+<cb:topic key="sore"><person sameAs="#wn"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -85,7 +105,6 @@
 <change when="2016-05-30">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-06-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,6 +115,11 @@
 <p><lb/>M<hi rend="superscript">r</hi> Wil Nichol<supplied reason="binding">s</supplied> <lb/><choice><orig>I</orig><reg>J</reg></choice>udg Nichols <lb/>his <lb/>brother may 9 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice>  h <lb/>6: 20 p m. 162<choice><orig>i</orig><reg>1</reg></choice> <add place="infralinear">a dangerous long cure</add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/>my <choice><sic>opinon</sic><corr>opinion</corr></choice> touching <lb/>M<hi rend="superscript">r</hi> mathias <choice><sic>a</sic><corr type="delText"/></choice> <add place="supralinear">the</add> g<gap extent="unclear" reason="binding"/> <lb/><choice><sic>G</sic><corr type="noText" cert="medium"/></choice> a surg &amp; <lb/>physit</p>
+<p><lb/>M<hi rend="superscript">r</hi> More <lb/>a surg br<supplied reason="binding" cert="low">ought</supplied> <lb/><choice><orig>v</orig><reg>u</reg></choice>p by thi<unclear cert="medium" reason="binding">s</unclear> <lb/>an Issue thorough the <lb/>Inward <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>t fleshy of <lb/>the neck of the blad<lb/>der.</p>
+<p><lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it be a sore or <lb/>an <choice><orig>v</orig><reg>u</reg></choice>lcer.</p>
+</div>
 </body>
 </text>
 </TEI>

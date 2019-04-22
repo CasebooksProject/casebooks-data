@@ -7,15 +7,20 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE62563</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-11-30">30 November 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -34,15 +39,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#diary"/>
@@ -59,6 +64,7 @@
 <p><date when="1626-12-09" n="Saturday"/></p>
 <p><time notBefore="06:25:00" notAfter="11:20:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -74,16 +80,20 @@
 <change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-06-07">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-04-30">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="cml0523.jpg" url="cml0523.jpg" n="246r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <p><lb/>R N gratia c<choice><orig>ō</orig><reg>on</reg></choice>tritioris <lb/>c<choice><orig>ō</orig><reg>om</reg></choice>p<unclear cert="low" reason="hand">un</unclear>ctus Dec<choice><orig>ē</orig><reg>em</reg></choice>b 9. <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> hor. <lb/>6. 25 <choice><orig>ant m</orig><reg>am</reg></choice> 1626<note place="chart">vere c<choice><orig>ō</orig><reg>om</reg></choice>p<unclear cert="low" reason="hand">un</unclear>ctus <lb/>deo gratiæ</note></p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>R. N. [stimulated by the grace of contrition?] Saturday 9 December 1626 at 6.25am truly [stimulated?] thanks be to God.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 <figure type="astro" subtype="astroChart"/>
 </body>
 </text>

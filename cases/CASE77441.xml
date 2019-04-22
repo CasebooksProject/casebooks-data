@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE77441</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 184</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0184" to="0184"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="tt">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname evidence="external">Tyrringham</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-05-31" n="Friday"/></p>
+<p><time when="14:20:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#srnapier"/>
+<cb:subject ref="#srnapier" present="unclear"/>
+<cb:object ref="#tt"/>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#srnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-12-29">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-05-10">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0207.jpg" url="clq0207.jpg" n="184" width="5113" height="7216"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> expediat Rich: <unclear cert="low" reason="hand">mes</unclear> c<choice><orig>ō</orig><reg>om</reg></choice>pellare <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> ambire amor<choice><orig>ū</orig><reg>um</reg></choice> <foreign xml:lang="en">S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Th Ty <lb/>may 31. <choice><orig>♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h. 2. 20 <del type="strikethrough">ant</del>. p m <lb/>1633</foreign></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether it is expedient for Richard [to press the matter or speak about love to?] Sir Thomas Ty[rringham] Friday 31 May 1633 at 2.20pm.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

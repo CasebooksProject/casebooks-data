@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE8020</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 188r</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -65,17 +71,15 @@
 <p><date when="1600-08-12" n="Tuesday"/></p>
 <p><time when="17:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#wp" evidence="internal"/>
 <cb:subject ref="#wp" present="no"/>
-
-<cb:topic key="disease" resp="#sforman"><person sameAs="#wp" resp="#mhawkins"/></cb:topic>
+<cb:topic key="disease" resp="#sforman"><person sameAs="#wp"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
-
 </cb:consultation>
-
 </settingDesc>
 </profileDesc>
 <revisionDesc>
@@ -93,9 +97,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/><choice><orig><hi rend="overline">Willm</hi></orig><reg>William</reg></choice> page of 52 years <lb/>1600 12 Aug &Tuesday; &pmfl; at 20 &past; 5 <lb/>Diz he sent <rs type="address" xml:id="address1">king&pluralLoop; binch</rs></p>
+ <p><lb/><choice><orig><hi rend="overline">Willm</hi></orig><reg>William</reg></choice> page of 52 years <lb/>1600 12 Aug <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> at 20 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 5 <lb/>Diz he sent <rs type="address" xml:id="address1" key="PLACE153">king<choice><orig>ꝭ</orig><reg>es</reg></choice> binch</rs></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

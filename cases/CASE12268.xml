@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE12268</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR, bL-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 132r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -67,6 +73,7 @@
 <p><date when="1599-04-21" n="Saturday"/></p>
 <p><time when="15:53:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
@@ -88,6 +95,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Isbell Somes <rs type="address" xml:id="address1">of Groundon</rs> <lb/>4 yeres old on whitsons<choice><orig>&oover;</orig><reg>on</reg></choice><lb/>day. c<choice><orig>&oover;</orig><reg>om</reg></choice>plyneth of the gydines <lb/>of her hed. left syde &amp; left <lb/>leg. Ap. 21 &SaturdayN; h. 3. 53 <lb/>p m. 1599.</p>
+<p><lb/>Isbell Somes <rs type="address" xml:id="address1" key="PLACE690" resp="#mhawkins">of Groundon</rs> <lb/>4 yeres old on whitsons<choice><orig>ō</orig><reg>on</reg></choice><lb/>day. c<choice><orig>ō</orig><reg>om</reg></choice>plyneth of the gydines <lb/>of her hed. left syde &amp; left <lb/>leg. Ap. 21 <choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> h. 3. 53 <lb/>p m. 1599.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>
 </body>
 </text>

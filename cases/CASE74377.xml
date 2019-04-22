@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE74377</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-03">03 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL, mR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="416">MS Ashmole 416, p. 96</idno>
+<altIdentifier type="fn_number"><idno n="Napier051">Napier, vol. 51</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0096" to="0096"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rn1">
+<persName><genName>Old</genName> <roleName>Sir</roleName> <forename>Robert</forename> <surname evidence="internal">Napier</surname></persName>
+<sex value="1">M</sex>
+<residence evidence="internal" key="PLACE2366">of luton</residence>
+</person>
+<person xml:id="n">
+<persName><roleName>Lady</roleName> <surname evidence="inferred" type="married">Napier</surname></persName>
+<sex value="2">F</sex>
+<residence evidence="internal" key="PLACE2366">of luton</residence>
+</person>
+<person xml:id="rn2">
+<persName><genName>Young</genName> <roleName>Sir</roleName> <forename>Robert</forename> <surname evidence="external">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="te">
+<persName><roleName>Sir</roleName> <forename>Thomas</forename> <surname>Ersfeild</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wl">
+<persName><roleName>Sir</roleName> <forename>Walter</forename> <surname>Leech</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="an" evidence="internal">
+<persName><forename>Alexander</forename> <surname evidence="external">Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="wife" active="#n" passive="#rn1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-04-20" n="Friday"/></p>
+<p><time when="14:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#te #rn1" evidence="internal"/>
+<cb:subject ref="#te #rn1 #an" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="report"><person sameAs="#te"/></cb:topic>
+<cb:topic key="requestingTreatment"><person sameAs="#te"/></cb:topic>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#rn1"/><person sameAs="#an"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-04-22">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-03">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-18">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-11-13">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acy0138.jpg" url="acy0138.jpg" n="96" width="5736" height="8357"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>I had <del type="strikethrough">a</del> letters fr<choice><orig>ō</orig><reg>om</reg></choice> <subst><del type="strikethrough">young</del> <add place="supralinear">old</add></subst> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Robert <lb/>&amp; young <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob. <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Th.: Earffild <lb/>&amp; <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> water Leach Ap <subst><del type="strikethrough">1</del> <add place="supralinear">2</add></subst>0 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 2 <lb/>p m 1632</p>
+<p><lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> old <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob 6 rabbots &amp; 2 litle <lb/>troughts</p>
+<p><lb/>They desyre me to goe <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> <lb/>Rob &amp; his L into <placeName key="PLACE2187" resp="#mhawkins">yorke sheere</placeName> <lb/>&amp; <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> walter into <placeName key="PLACE956" resp="#mhawkins">Devonshire</placeName></p>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Thomas a<subst><del type="over">k</del><add place="over">c</add></subst>knowledge<subst><del type="over">d</del><add place="over">th</add></subst> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> my last <lb/>pouder sent about a fortnight sinc <lb/>hath recovered the <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>fect<gap extent="3" unit="chars" reason="hand"/> craveth the <lb/>same powder.</p>
+</div>
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

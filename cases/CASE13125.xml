@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13125</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 26r</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,11 +77,12 @@
 <settingDesc>
 <p><date when="1597-08-07" n="Sunday" evidence="external" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wg"/>
 <cb:subject ref="#wg" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#wg" resp="#mhawkins"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#wg" resp="#mhawkins"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -87,6 +93,8 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,10 +102,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<head><foreign xml:lang="la">Nativitas.&slash;</foreign></head>
-<p><lb/>Will. Greene the <choice><sic>some</sic><corr>sonne</corr></choice> of &IConsonant;ohn Greene <lb/>&amp; <del type="strikethrough">Ra</del> &IConsonant;ane Robinson was borne <rs type="date" xml:id="date1"><foreign xml:lang="la"><choice><orig>an<hi rend="overline">o</hi></orig><reg>anno</reg></choice> <lb/><choice><orig>d<hi rend="overline">ni</hi></orig><reg>domini</reg></choice> 1578</foreign>. the 28 of &IConsonant;an. on tuesday</rs> <rs type="time" xml:id="time1">in <lb/>the afternoone at on <del type="strikethrough">15</del> a clock. h. 1. 15. m</rs> <lb/><foreign xml:lang="la"><del type="strikethrough"><unclear cert="high" reason="del">in</unclear></del> <rs type="address" xml:id="address1">Linford mag. in comit. Bucchinh<choice><orig>&aover;</orig><reg>am</reg></choice></rs>. <lb/>hic admod<choice><orig>&uover;</orig><reg>um</reg></choice> cupiebat peregrinari c<choice><orig>&uover;</orig><reg>um</reg></choice> esset <lb/>nat<choice><orig>&uscon;</orig><reg>us</reg></choice> a<choice><orig>&nover;</orig><reg>nn</reg></choice>os 8 19. et 20.</foreign></p>
+<head><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Nativitas./</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Nativity/</seg><link type="is-translation-of" target="#foreign001 #translation001"/></head>
+<p><lb/>Will. Greene the <choice><sic>some</sic><corr>sonne</corr></choice> of <choice><orig>I</orig><reg>J</reg></choice>ohn Greene <lb/>&amp; <del type="strikethrough">Ra</del> <choice><orig>I</orig><reg>J</reg></choice>ane Robinson was borne <rs type="date" xml:id="date1"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>an<hi rend="overline">o</hi></orig><reg>anno</reg></choice> <lb/><choice><orig>d<hi rend="overline">ni</hi></orig><reg>domini</reg></choice> 1578</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">in the year of our Lord 1578</seg><link type="is-translation-of" target="#foreign002 #translation002"/>. the 28 of <choice><orig>I</orig><reg>J</reg></choice>an. on tuesday</rs> <rs type="time" xml:id="time1">in <lb/>the afternoone at on <del type="strikethrough">15</del> a clock. h. 1. 15. m</rs> <lb/><foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><del type="strikethrough"><unclear cert="high" reason="del">in</unclear></del> <rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">Linford mag. in comit. Bucchinh<choice><orig>ā</orig><reg>am</reg></choice></rs>. <lb/>hic admod<choice><orig>ū</orig><reg>um</reg></choice> cupiebat peregrinari c<choice><orig>ū</orig><reg>um</reg></choice> esset <lb/>nat<choice><orig>ꝯ</orig><reg>us</reg></choice> a<choice><orig>n̄</orig><reg>nn</reg></choice>os <del type="strikethrough">8</del> 19. et 20.</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">Great Linford in the county of Buckingham. He had a great desire to travel at 19 and 20 years after his birth.</seg><link type="is-translation-of" target="#foreign003 #translation003"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

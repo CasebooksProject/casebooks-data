@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11785</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 49r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -65,6 +71,7 @@
 <p><date when="1598-11-08" n="Wednesday"/></p>
 <p><time when="12:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jr" evidence="internal"/>
@@ -88,6 +95,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Risely <rs type="address" xml:id="address1">of Rawnson <lb/>mill</rs>. <del type="strikethrough">l</del> 72 yeres old sick <lb/>in <choice><sic>L</sic><corr type="noText"/></choice> his body this 2 or 3 <lb/>yeres about his <add place="supralinear">6 weekes.</add> he c<choice><orig>&oover;</orig><reg>om</reg></choice>play<lb/>neth <add place="supralinear">of his navell</add> it is sore &amp; r<choice><orig>&uover;</orig><reg>un</reg></choice>neth <lb/><subst><del type="over">a</del><add place="over">i</add></subst>t reeseth at his navell leek <lb/>an oake water. it looketh red <lb/>&amp; is rawe. he hath the cho<lb/>lick <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> all &amp; <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> for this <lb/>7 yeres: maketh water very <lb/>often. he thinketh his teeth <lb/>to <unclear reason="hand" cert="high">stink</unclear> in his hed. &amp; his <lb/>feete to Double &vVowel;nder him <lb/>&WednesdayN;. h. 12. 15. 1598 <lb/>he sent me a dish of oates <lb/>he is a fuller. <lb/>novemb. 8. 1598.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Risely <rs type="address" xml:id="address1" key="PLACE795" resp="#mhawkins">of Rawnson <lb/>mill</rs>. <del type="strikethrough">l</del> 72 yeres old sick <lb/>in <choice><sic>L</sic><corr type="noText"/></choice> his body this 2 or 3 <lb/>yeres about his <add place="supralinear">6 weekes.</add> he c<choice><orig>ō</orig><reg>om</reg></choice>play<lb/>neth <add place="supralinear">of his navell</add> it is sore &amp; r<choice><orig>ū</orig><reg>un</reg></choice>neth <lb/><subst><del type="over">a</del><add place="over">i</add></subst>t reeseth at his navell leek <lb/>an oake water. it looketh red <lb/>&amp; is rawe. he hath the cho<lb/>lick <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> all &amp; <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> for this <lb/>7 yeres: maketh water very <lb/>often. he thinketh his teeth <lb/>to <unclear reason="hand" cert="high">stink</unclear> in his hed. &amp; his <lb/>feete to Double <choice><orig>v</orig><reg>u</reg></choice>nder him <lb/><choice><orig>die ☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice>. h. 12. 15. 1598 <lb/>he sent me a dish of oates <lb/>he is a fuller. <lb/>novemb. 8. 1598.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

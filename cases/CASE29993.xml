@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE29993</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="216">MS Ashmole 216, f. 240r</idno>
-&Napier010;
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,6 +71,7 @@
 <p><date when="1605-11-25" n="Monday"/></p>
 <p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="practitionerVisitsQuerent"/>
@@ -86,9 +95,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 25 &Monday; h. 11. I came <lb/>to <rs type="address" xml:id="address1"><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Edw. Tyrrles</rs> &amp; <lb/>he shewed me his wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s <lb/>&amp; london physick. oyles <lb/>for back &amp; syde, elect for the <lb/>liver. manus <choice><orig>ch<hi rend="overline">ri</hi></orig><reg>christi</reg></choice>. sugar <lb/>of roses, <subst><del type="over"><gap extent="1" reason="del" unit="chars"/></del><add place="over">D</add></subst>yet Drinke a<lb/>gainst Dropsy <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over"><unclear cert="low" reason="over">co</unclear></add></subst>o<subst><del type="over"><gap reason="del" unit="chars" extent="3"/></del><add place="over"><unclear reason="hand" cert="medium">lin</unclear></add></subst>g <lb/>rubabe pouder weight of <lb/>2<hi rend="superscript">d</hi> in reasons. barly wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>made of 3 <choice><orig>&crossedp;</orig><reg>par</reg></choice>ts barly &amp; on of <lb/><unclear cert="medium" reason="hand">ri</unclear>se because he is laxative. <lb/>wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> cr<choice><orig>&uover;</orig><reg>um</reg></choice>b&pluralLoop; of bread a mace <lb/>&amp; sugar. &amp; enquireth of <lb/>me his Disease. &amp; what <lb/>helpe Nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 25 &Monday; h 11 <lb/>&antm; 1605.</p>
+<p><lb/>nov<choice><orig>ē</orig><reg>em</reg></choice>b. 25 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 11. I came <lb/>to <rs type="address" xml:id="address1"><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Edw. Tyrrles</rs> &amp; <lb/>he shewed me his wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>s <lb/>&amp; london physick. oyles <lb/>for back &amp; syde, elect for the <lb/>liver. manus <choice><orig>ch<hi rend="overline">ri</hi></orig><reg>christi</reg></choice>. sugar <lb/>of roses, <subst><del type="over"><gap extent="1" reason="del" unit="chars"/></del><add place="over">D</add></subst>yet Drinke a<lb/>gainst Dropsy <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over"><unclear cert="low" reason="over">co</unclear></add></subst>o<subst><del type="over"><gap reason="del" unit="chars" extent="3"/></del><add place="over"><unclear reason="hand" cert="medium">lin</unclear></add></subst>g <lb/>rubabe pouder weight of <lb/>2<hi rend="superscript">d</hi> in reasons. barly wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>made of 3 <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ts barly &amp; on of <lb/><unclear cert="medium" reason="hand">ri</unclear>se because he is laxative. <lb/>wat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> cr<choice><orig>ū</orig><reg>um</reg></choice>b<choice><orig>ꝭ</orig><reg>es</reg></choice> of bread a mace <lb/>&amp; sugar. &amp; enquireth of <lb/>me his Disease. &amp; what <lb/>helpe Nov<choice><orig>ē</orig><reg>em</reg></choice>b. 25 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h 11 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1605.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>
 </body>
 </text>

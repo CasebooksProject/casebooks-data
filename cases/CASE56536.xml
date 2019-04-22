@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE56536</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -57,56 +62,59 @@
 <persName><forename>Anne</forename> <surname>Green</surname></persName>
 <sex value="2">F</sex>
 <age value="43">43</age>
-<residence sameAs="#address1" key=""/>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="wo" evidence="internal">
 <persName><forename>William</forename> <surname>Okins</surname></persName>
 <sex value="1">M</sex>
-<residence key="databaseNormalizedIDKey">Cambridg</residence>
+<residence key="PLACE879">Cambridg</residence>
 <occupation>Cooper</occupation>
 </person>
-<person xml:id="c" evidence="internal">
+<person xml:id="c">
 <persName><roleName>Mr</roleName> <surname>Candle</surname></persName>
 <sex value="1">M</sex>
 <age value="60">60</age>
-<residence key="databaseNormalizedIDKey">Attleborough in Nortfolk</residence>
+<residence sameAs="#address2" key="databaseNormalizedIDKey"/>
 <occupation>Scrivener</occupation>
-<occupation>Physician</occupation>
+<occupation type="medicalPractitioner">Physician</occupation>
 </person>
-<person xml:id="rg" evidence="internal">
+<person xml:id="rg">
 <persName><roleName>Mr</roleName> <forename>Robert</forename> <surname>Green</surname></persName>
 <sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
-<person xml:id="if" evidence="internal">
+<person xml:id="if">
 <persName><forename>Isabel</forename> <surname>Free</surname></persName>
 <sex value="2">F</sex>
 </person>
 <person xml:id="jf">
-<persName><forename>Jennet</forename> <surname>Free</surname></persName>
+<persName><forename>Jennet</forename> <surname type="maiden">Free</surname></persName>
 <sex value="2">F</sex>
 </person>
-<person xml:id="y" evidence="internal">
+<person xml:id="y">
 <persName><genName>Old</genName> <surname>Yardley</surname></persName>
 <sex value="1">M</sex>
 <age value="80">80</age>
-<residence key="databaseNormalizedIDKey">Dunningham with in 2 or 3 myles of Newmarket</residence>
+<residence sameAs="#address3" key="databaseNormalizedIDKey"/>
 <occupation>Scholar</occupation>
-<occupation>Physician</occupation>
+<occupation type="medicalPractitioner">Physician</occupation>
 </person>
-<listRelation><relation name="wife" active="#ag" passive="#rg" evidence="internal"/><relation name="mother" active="#if" passive="#jf" evidence="internal"/></listRelation>
+<listRelation><relation name="wife" active="#ag" passive="#rg"/><relation name="mother" active="#if" passive="#jf"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1623-06-16" n="Monday"/></p>
 <p><time when="16:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wo" evidence="internal" present="unclear"/>
 <cb:subject ref="#ag" present="no"/>
 <cb:object ref="#if #jf" evidence="internal"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ag"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#ag"/><person sameAs="#if"/><person sameAs="#jf"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#ag"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins" evidence="internal"><person sameAs="#if"/><person sameAs="#jf"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 <cb:treatment type="sigil"/>
@@ -122,7 +130,9 @@
 <change when="2016-07-13">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-11-07">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-12-30">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-11">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -130,9 +140,16 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>An Grene <rs type="address" xml:id="address1">of <del type="cancelled">H</del> Hauxstone</rs> <lb/>43. y. <choice><orig>I</orig><reg>J</reg></choice>une 16 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 4. p m <lb/>1623.</p>
+<p><lb/>An Grene <rs type="address" xml:id="address1" key="PLACE899" resp="#mhawkins">of <del type="cancelled">H</del> Hauxstone</rs> <lb/>43. y. <choice><orig>I</orig><reg>J</reg></choice>une 16 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 4. p m <lb/>1623.</p>
+
 </div><figure type="astro" subtype="astroChart"/>
+
+<div>
 <cb xml:id="colB" n="b"/>
+<p><lb/>M<hi rend="superscript">r</hi> Candle a grave <lb/>old m<choice><orig>ā</orig><reg>an</reg></choice> dwelling <rs type="address" xml:id="address2" key="PLACE1494" resp="#mhawkins">in <lb/>Attleborough in Nortfolk</rs> <lb/>60 y. a Scrivenour <lb/>&amp; a physition <choice><sic>mtch</sic><corr>mutch</corr></choice> <lb/>sought <choice><orig>v</orig><reg>u</reg></choice>nto &amp; told <lb/>M<hi rend="superscript">r</hi> <add place="supralinear">Robart</add> Greene <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> his <lb/>wife was beworded. <lb/>Isabell Free the mother <lb/>&amp; her daughter <choice><orig>I</orig><reg>J</reg></choice>ennet <lb/>free/</p>
+<p><lb/>He gave out <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> it <lb/>was no ague <lb/>but a spirit.</p>
+<p><lb/>Old yardly <rs type="address" xml:id="address3">of Dun<choice><orig>ī</orig><reg>in</reg></choice>gham <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> in 2 or 3 myles <lb/>of Newmarket</rs> a <lb/>gentlem<choice><orig>ā</orig><reg>an</reg></choice> scholler <lb/>a great physition 80 <lb/>yers old no physick <lb/>nor bathing will <lb/>helpe her but a <lb/>learned m<choice><orig>ā</orig><reg>an</reg></choice>.</p>
+</div>
 </body>
 </text>
 </TEI>

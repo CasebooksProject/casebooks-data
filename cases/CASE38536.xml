@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE38536</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-01-09">09 January 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="200">MS Ashmole 200, f. 145r</idno>
-&Napier020;
+<altIdentifier type="fn_number"><idno n="Napier020">Napier, vol. 20</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -59,7 +65,7 @@
 </person>
 <person xml:id="anon1">
 <sex value="2">F</sex>
-<residence key="databaseNormalizedIDKey" evidence="internal">of Padb</residence>
+<residence key="PLACE779" evidence="internal">of Padb</residence>
 </person>
 <person xml:id="anon2">
 <sex value="2">F</sex>
@@ -70,6 +76,7 @@
 <p><date when="1611-08-13" n="Tuesday"/></p>
 <p><time when="18:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#g"/>
@@ -77,6 +84,8 @@
 <cb:object ref="#anon1 #anon2"/>
 <cb:topic key="maritalProspects"><person sameAs="#g"/><person sameAs="#anon1"/><person sameAs="#anon2"/></cb:topic>
 <cb:judgment/>
+<cb:info type="angel" subtype="Unspecified"/>
+<cb:info type="angel" subtype="Raphael"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -86,6 +95,8 @@
 <change when="2016-02-04">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-08">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-07-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,7 +104,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Godstowe 2 widowes. <lb/><foreign xml:lang="la">&vVowel;tr<choice><orig>&aover;</orig><reg>am</reg></choice> admittet</foreign> Aug 13. &Tuesday; h. 6 <lb/>p m 1611.</p>
+<p><lb/>M<hi rend="superscript">r</hi> Godstowe 2 widowes. <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ā</orig><reg>am</reg></choice> admittet</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">which he will accept</seg><link type="is-translation-of" target="#foreign001 #translation001"/> Aug 13. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 6 <lb/>p m 1611.</p>
 </div>
 </body>
 </text>

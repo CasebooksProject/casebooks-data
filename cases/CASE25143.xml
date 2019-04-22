@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE25143</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-03">03 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="239">MS Ashmole 239, f. 86v</idno>
-&Napier018;
+<altIdentifier type="fn_number"><idno n="Napier018">Napier, vol. 18</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -72,6 +82,7 @@
 <p><date when="1610-07-02" n="Monday"/></p>
 <p><time when="09:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b" evidence="internal" present="unclear"/>
@@ -95,6 +106,8 @@
 <change when="2015-07-01">Checked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-02">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -102,8 +115,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ames Bro<choice><orig>&wover;</orig><reg>wn</reg></choice>swell <rs type="address" xml:id="address1">of <lb/>Bedford</rs> a glover 36 y <lb/>&IConsonant;uly 2. &Monday;. h 9. 15. &antm; <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0</p>
-<p><lb/>fell sick on fryday last <lb/>c<choice><orig>&oover;</orig><reg>om</reg></choice>playneth of his <choice><sic>hante</sic><corr>harte</corr></choice> <lb/>rageth &amp; is ill in his <lb/>brayne&slash;. <foreign xml:lang="la">&vVowel;xor <choice><orig>&crossedp;</orig><reg>pro</reg></choice> marito <lb/>sine consensu.</foreign> hath a huske</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ames Bro<choice><orig>ū</orig><reg>wn</reg></choice>swell <rs type="address" xml:id="address1" key="PLACE329" resp="#mhawkins">of <lb/>Bedford</rs> a glover 36 y <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 2. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice>. h 9. 15. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>16<choice><orig>i</orig><reg>1</reg></choice>0</p>
+<p><lb/>fell sick on fryday last <lb/>c<choice><orig>ō</orig><reg>om</reg></choice>playneth of his <choice><sic>hante</sic><corr>harte</corr></choice> <lb/>rageth &amp; is ill in his <lb/>brayne/. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>xor <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> marito <lb/>sine consensu.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the wife for the husband without consent</seg><link type="is-translation-of" target="#foreign001 #translation001"/> hath a huske</p>
 </div>
 </body>
 </text>

@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE1591</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 73r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,8 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -65,6 +70,7 @@
 <p><date when="1597-04-25" n="Monday"/></p>
 <p><time when="10:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -82,17 +88,22 @@
 <change when="2010-10-20">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ach0169.jpg" url="ach0169.jpg" n="73r"/>
 </facsimile>
-<text xml:lang="la">
+<text>
 <body>
-<div>
- <p><lb/><choice><orig><hi rend="overline">Ao</hi></orig><reg>Anno</reg></choice> <foreign xml:lang="en">1597 the 25 apr &Monday; &inflmfl; <lb/>at 50 &past; 10 to knowe wher <lb/><foreign xml:lang="el">&Alpha; &Alpha;&lambda;</foreign> is gone</foreign> et &vVowel;bi est ad <lb/>hoc temp<choice><orig>&uscon;</orig><reg>us</reg></choice> et &vVowel;t<choice><orig><hi rend="overline">rm</hi></orig><reg>um</reg></choice> vult <choice><orig>m<hi rend="superscript">i</hi></orig><reg>mihi</reg></choice> <lb/>venire hodie <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice> et &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/><choice><orig><hi rend="overline">het</hi></orig><reg>habet</reg></choice> <choice><orig>&VenusSymbol;</orig><reg type="gloss">amorem</reg></choice> c<choice><orig>&uover;</orig><reg>um</reg></choice> aliquo alio <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice> <lb/>quia n<choice><orig>&oover;</orig><reg>on</reg></choice> est <placeName>Domi</placeName> &vVowel;t Dicunt</p>
+<div xml:id="foreign001" xml:lang="la" decls="#original_source">
+ <p><lb/><choice><orig><hi rend="overline">Ao</hi></orig><reg>Anno</reg></choice> <foreign xml:lang="en">1597 the 25 apr <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <choice><orig>in’ m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> <lb/>at 50 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 10 to knowe wher <lb/><foreign xml:lang="el">Α Αλ</foreign> is gone</foreign> et <choice><orig>v</orig><reg>u</reg></choice>bi est ad <lb/>hoc temp<choice><orig>ꝯ</orig><reg>us</reg></choice> et <choice><orig>v</orig><reg>u</reg></choice>t<choice><orig><hi rend="overline">rm</hi></orig><reg>um</reg></choice> vult <choice><orig>m<hi rend="superscript">i</hi></orig><reg>mihi</reg></choice> <lb/>venire hodie <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice> et <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/><choice><orig><hi rend="overline">het</hi></orig><reg>habet</reg></choice> <choice><orig>♀</orig><reg type="gloss">amorem</reg></choice> c<choice><orig>ū</orig><reg>um</reg></choice> aliquo alio <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice> <lb/>quia n<choice><orig>ō</orig><reg>on</reg></choice> est <placeName>Domi</placeName> <choice><orig>v</orig><reg>u</reg></choice>t Dicunt</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Monday 25 April 1597 at 50 past 10 around noon to know where Avis Allen is gone and where she is at this time and whether she wants to come today or not and whether she harbours love for some other man or not for she is not at home as they say.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

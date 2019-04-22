@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE35361</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-22">22 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="335">MS Ashmole 335, f. 71v</idno>
-&Napier015;
+<altIdentifier type="fn_number"><idno n="Napier015">Napier, vol. 15</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,9 +35,11 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -81,6 +88,7 @@
 <p><date when="1609-03-12" n="Sunday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier" evidence="internal" present="yes"/>
@@ -98,6 +106,9 @@
 <change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-09-19">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-07">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-19">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -105,9 +116,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Sandy sent <lb/>a letter to <placeName>the how</placeName> <lb/>certefying my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> h<gap reason="binding" extent="1" unit="words"/> <lb/>that mary. &amp; Elisabeth <lb/>be sickish. &amp; also her <lb/>mayde An. March 12 <supplied reason="binding" cert="medium">&Sunday;</supplied> <lb/>h. 12. <choice><sic><gap extent="1" reason="hand" unit="chars"/></sic><corr type="noText"/></choice> <choice><orig>in merid</orig><reg>in meridie</reg><reg type="gloss">at noon</reg></choice> 1609. <lb/><foreign xml:lang="la">qu&aelig;ro sine consensu.</foreign></p>
+<p><lb/>my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Sandy sent <lb/>a letter to <placeName key="PLACE443" resp="#mhawkins">the how</placeName> <lb/>certefying my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> how <lb/>that mary. &amp; Elisabeth <lb/>be sickish. &amp; also her <lb/>mayde An. March 12 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <lb/>h. 12. <choice><sic><gap extent="1" reason="hand" unit="chars"/></sic><corr type="noText"/></choice> <choice><orig>in merid</orig><reg>in meridie</reg><reg type="gloss">at noon</reg></choice> 1609. <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quæro sine consensu.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">I ask without consent.</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

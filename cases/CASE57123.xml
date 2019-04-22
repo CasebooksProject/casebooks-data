@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE57123</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 223v/uR, f. 224r/uL</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -59,7 +64,7 @@
 <age value="13">13</age>
 </person>
 <person xml:id="mr">
-<persName><forename>Margery</forename> <surname>Russell</surname> <surname type="alternate">Cow<gap reason="binding" extent="unclear"/></surname></persName>
+<persName><forename>Margery</forename> <surname>Russell</surname> <surname type="alternate">Cowntes</surname></persName>
 <sex value="2">F</sex>
 </person>
 </listPerson>
@@ -68,6 +73,7 @@
 <p><date when="1623-09-24" n="Wednesday"/></p>
 <p><time when="18:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -75,7 +81,8 @@
 <cb:subject ref="#ej" present="yes"/>
 <cb:object ref="#mr"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ej"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#ej"/><person sameAs="#mr"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#ej"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#mr"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -86,7 +93,6 @@
 <change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-08-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-12-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,7 +102,7 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Elis <choice><orig>I</orig><reg>J</reg></choice>ennings <supplied reason="binding" cert="medium">came</supplied> <lb/>to me in my studye 13 <supplied reason="binding" cert="high">y</supplied> <lb/>Sept 24 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 6. 20 p <supplied reason="binding" cert="high">m</supplied> <lb/>1623</p>
-<p><lb/>her selfe was present <lb/>Margery Russle called Cow<gap reason="binding" extent="unclear"/> <lb/>suspected.</p>
+<p><lb/>her selfe was present <lb/>Margery Russle called Cow<supplied reason="binding" cert="low">ntes</supplied> <lb/>suspected.</p>
 </div><figure type="astro" subtype="astroChart"/>
 <pb xml:id="f224r" n="224r"/>
 </body>

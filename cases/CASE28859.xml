@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE28859</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="216">MS Ashmole 216, f. 72v</idno>
-&Napier010;
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,6 +76,7 @@
 <p><date when="1605-04-29" n="Monday"/></p>
 <p><time when="17:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jc"/>
@@ -86,6 +93,7 @@
 <change when="2014-10-01">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,8 +101,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Coles his broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><rs type="address" xml:id="address1">of <choice><sic>d</sic><corr type="noText"/></choice> Badby</rs> a batch <lb/>2<subst><del type="over">5</del><add place="over">4</add></subst> y Apr 29. &Monday; hor <lb/><del type="strikethrough">4. 5</del> 5. <choice><sic>ant m</sic><corr>p m</corr></choice>. 1605.</p>
-<p><lb/>borne <rs type="date" xml:id="date1">25 of Octob<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></rs> <lb/><rs type="time" xml:id="time1">in the morning being <lb/>&Sunday; before daye <lb/>two houres</rs>.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Coles his broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><rs type="address" xml:id="address1" key="PLACE1518" resp="#mhawkins">of <choice><sic>d</sic><corr type="noText"/></choice> Badby</rs> a batch <lb/>2<subst><del type="over">5</del><add place="over">4</add></subst> y Apr 29. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> hor <lb/><del type="strikethrough">4. 5</del> 5. <choice><sic>ant m</sic><corr>p m</corr></choice>. 1605.</p>
+<p><lb/>borne <rs type="date" xml:id="date1">25 of Octob<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></rs> <lb/><rs type="time" xml:id="time1">in the morning being <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> before daye <lb/>two houres</rs>.</p>
 </div>
 </body>
 </text>

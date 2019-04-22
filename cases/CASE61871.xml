@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE61871</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-11-30">30 November 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -59,7 +64,7 @@
 <sex value="1">M</sex>
 <age value="8">8</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<birth><date when="1618-03-22" xml:id="date1" exclude="#date2"/><date when="1619-03-22" xml:id="date2" exclude="#date1"/> /&gt;<time when="12:00:00"/></birth>
+<birth><date when="1618-03-22" xml:id="date1" exclude="#date2"/><date when="1619-03-22" xml:id="date2" exclude="#date1"/><time when="12:00:00"/></birth>
 </person>
 <person xml:id="anon">
 <sex value="0">U</sex>
@@ -70,6 +75,7 @@
 <p><date when="1626-03-26" n="Sunday"/></p>
 <p><time when="18:38:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -88,7 +94,8 @@
 <change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-01-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-04-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-02-12">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-08-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,7 +105,7 @@
 <body><div>
 <p><lb/>Th: Seamer <rs type="address" xml:id="address1">of Hammelton <lb/>church house</rs>. 8 y 3 weeks <lb/>&amp; 3 days before miklemas <lb/>bo<add place="supralinear">r</add>ne last <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 12 at noone <lb/>but came to me march 26 <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 6. 38 p m. 1626</p>
 <cb xml:id="colB" n="b"/>
-<p><lb/><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>stat manere <choice><orig>v</orig><reg>u</reg></choice><supplied reason="binding" cert="low">bi est</supplied></foreign> <lb/>or to leave</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>stat manere <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether it is better to stay or</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>or to leave</p>
 <cb xml:id="colA" n="a"/>
 </div><figure type="astro" subtype="astroChart"/>
 </body>

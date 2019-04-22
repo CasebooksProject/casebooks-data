@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE40845</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-02-24">24 February 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="199">MS Ashmole 199, f. 32v</idno>
-&Napier022;
+<altIdentifier type="fn_number"><idno n="Napier022">Napier, vol. 22</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -67,6 +76,7 @@
 <p><date when="1613-01-27" n="Wednesday"/></p>
 <p><time when="09:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#cm #jl"/>
@@ -83,19 +93,28 @@
 <change when="2016-03-15">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-17">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="cjv0084.jpg" url="cjv0084.jpg" n="32v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>&VVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><sic>Chystophous</sic><corr>Chrystophorus</corr></choice> miles <lb/>et &IConsonant;ohan leach consequ<unclear cert="medium" reason="binding">en</unclear><supplied reason="binding" cert="medium">tur</supplied> <lb/>optat<choice><orig>&uover;</orig><reg>um</reg></choice> &IConsonant;an. 27 &WednesdayLatin; h <supplied reason="binding">9</supplied> <lb/>&antm;. 1613 <add place="inline"><foreign xml:lang="en">there worke <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it shalbe <choice><orig>&crossedp;</orig><reg>pro</reg></choice>fitable</foreign></add></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><choice><orig>V</orig><reg>U</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><sic>Chystophous</sic><corr>Chrystophorus</corr></choice> miles <lb/>et <choice><orig>I</orig><reg>J</reg></choice>ohan leach consequ<unclear cert="medium" reason="binding">en</unclear><supplied reason="binding" cert="medium">tur</supplied> <lb/>optat<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>an. 27 <choice><orig>☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> h <supplied reason="binding">9</supplied> <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1613 <add place="inline"><foreign xml:lang="en">there worke <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> it shalbe <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>fitable</foreign></add></p>
 </div>
-&astroChart;
-<div>
-<p><lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> iter ad <choice><orig><choice><sic>tr&aover;swarnas</sic><corr cert="medium">tr&aover;smarinas</corr></choice></orig><reg cert="medium">transmarinas</reg></choice> <choice><orig>&crossedp;</orig><reg>par</reg></choice>te<supplied reason="binding" cert="medium">s</supplied> <lb/>ei futur<choice><orig>&uover;</orig><reg>um</reg></choice> sit <choice><orig>&crossedp;</orig><reg>pro</reg></choice>sper<choice><orig>&uover;</orig><reg>um</reg></choice>.</p>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether Christopher Miles and John Leech will obtain what they seek Wednesday 27 April 1613: their work, whether it shall be profitable.</p>
 </div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source">
+<p><lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> iter ad <choice><orig><choice><sic>trāswarnas</sic><corr cert="medium">trāsmarinas</corr></choice></orig><reg cert="medium">transmarinas</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>te<supplied reason="binding" cert="medium">s</supplied> <lb/>ei futur<choice><orig>ū</orig><reg>um</reg></choice> sit <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>sper<choice><orig>ū</orig><reg>um</reg></choice>.</p>
+</div>
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<p>Whether the prospective journey overseas will be prosperous.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
 </body>
 </text>
 </TEI>

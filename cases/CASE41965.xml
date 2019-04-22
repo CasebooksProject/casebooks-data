@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE41965</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-04-24">24 April 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 33v/uR, f. 34r/uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="196">MS Ashmole 196, ff. 33v-34r</idno>
-&Napier024;
+<altIdentifier type="fn_number"><idno n="Napier024">Napier, vol. 24</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,7 +74,7 @@
 <person xml:id="o2">
 <persName><surname evidence="inferred" cert="medium">Odell</surname></persName>
 <sex value="1">M</sex>
-<residence key="databaseNormalizedIDKey" evidence="internal">of litle linford</residence>
+<residence key="PLACE738" evidence="internal">of litle linford</residence>
 </person>
 <person xml:id="rn">
 <persName><roleName>Sir</roleName> <forename>Robert</forename> <surname evidence="inferred">Napier</surname></persName>
@@ -75,7 +85,10 @@
 <occupation>Saddler</occupation>
 </person>
 <listRelation>
-<relation name="son" active="#o2" passive="#o1"/><relation name="brother" mutual="#rn #rnapier"/><relation name="acquaintance" mutual="#anon #o2"/>
+<relation name="son" active="#o2" passive="#o1"/>
+<relation name="brother" mutual="#rn #rnapier"/>
+<relation name="acquaintance" mutual="#anon #o2"/>
+<relation name="godfather" active="#b" passive="#o2"/>
 </listRelation>
 </listPerson>
 </particDesc>
@@ -83,10 +96,11 @@
 <p><date when="1615-06-04" n="Sunday"/></p>
 <p><time when="13:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
-<cb:querent ref="#o1" evidence="internal" present="yes"/>
+<cb:querent ref="#o1 #b" evidence="internal" present="yes"/>
 <cb:subject ref="#o2" present="yes"/>
 <cb:topic key="journeys"><person sameAs="#o2"/></cb:topic>
 <cb:topic key="occupation"><person sameAs="#o2"/></cb:topic>
@@ -102,6 +116,7 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-23">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -110,11 +125,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;uni&jVowel; 2 M<hi rend="superscript">r</hi> Byrd &amp; <lb/>Goody Odell spake <lb/>&vVowel;nto me to write <lb/>to my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> <lb/>Robart for <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> pla<lb/>cing of there sone <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> some <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> <lb/>of a Ship &amp; I <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice>mised th<choice><orig>&eover;</orig><reg>em</reg></choice> to doe <lb/>my best. the <lb/>boy <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his moth<supplied reason="binding" cert="medium">er</supplied> <lb/>came &amp; dyned <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> me &IConsonant;uni&jVowel; 4. <lb/>&amp; he sayd he wold <lb/>not. but would <lb/>goe to <placeName>france</placeName> &amp; drink <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a sadler of his ac<lb/>quaintanc. &IConsonant;uni&jVowel; 4. &SundayLatin; h. <lb/>1. 30 p m 1615. <add place="infralinear"><foreign xml:lang="la">mater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio</foreign></add></p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>uni<choice><orig>j</orig><reg>i</reg></choice> 2 M<hi rend="superscript">r</hi> Byrd &amp; <lb/>Goody Odell spake <lb/><choice><orig>v</orig><reg>u</reg></choice>nto me to write <lb/>to my broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> <lb/>Robart for <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> pla<lb/>cing of there sone <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> some <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> <lb/>of a Ship &amp; I <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>mised th<choice><orig>ē</orig><reg>em</reg></choice> to doe <lb/>my best. the <lb/>boy <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his moth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>came &amp; dyned <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> me <choice><orig>I</orig><reg>J</reg></choice>uni<choice><orig>j</orig><reg>i</reg></choice> 4. <lb/>&amp; he sayd he wold <lb/>not. but would <lb/>goe to <placeName key="PLACE2207">france</placeName> &amp; drink <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a sadler of his ac<lb/>quaintanc. <choice><orig>I</orig><reg>J</reg></choice>uni<choice><orig>j</orig><reg>i</reg></choice> 4. <choice><orig>☉</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice> h. <lb/>1. 30 p m 1615. <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">mater <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> filio</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the mother for the son</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>m<hi rend="superscript">r</hi> Byrd his g<gap extent="unclear" reason="binding"/> <lb/>&amp; his mother spake <lb/>to me.</p>
+<p><lb/>m<hi rend="superscript">r</hi> Byrd his godfath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>&amp; his mother spake <lb/>to me.</p>
 </div>
 <pb xml:id="f34r" n="34r" facs="#ciz0081.jpg"/>
 </body>

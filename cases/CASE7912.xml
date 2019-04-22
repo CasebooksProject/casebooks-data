@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE7912</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 174v</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -69,6 +75,7 @@
 <p><date when="1600-07-26" n="Saturday"/></p>
 <p><time when="15:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
@@ -84,6 +91,7 @@
 <change when="2011-03-29">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-31">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas porter of 2 <lb/>monethes <del type="strikethrough"><unclear reason="del" cert="medium">henc</unclear></del> old 1600 <lb/>the 26 of &IConsonant;uli&jVowel; 1600 &Saturday; pm <lb/>at 3. <foreign xml:lang="la">nat<choice><orig>&uscon;</orig><reg>us</reg></choice></foreign> <rs type="date" xml:id="date1">2<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">4</add></subst> of may</rs> <rs type="time" xml:id="time1"><choice><orig>an&flourish; <lb/>m&flourish;</orig><reg>am</reg></choice> at 5 or ther aboute</rs></p>
+<p><lb/>Thomas porter of 2 <lb/>monethes <del type="strikethrough"><unclear reason="del" cert="medium">henc</unclear></del> old 1600 <lb/>the 26 of <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> 1600 <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> pm <lb/>at 3. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nat<choice><orig>ꝯ</orig><reg>us</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <rs type="date" xml:id="date1">2<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">4</add></subst> of may</rs> <rs type="time" xml:id="time1"><choice><orig>an’ <lb/>m’</orig><reg>am</reg></choice> at 5 or ther aboute</rs></p>
 </div>
 </body>
 </text>

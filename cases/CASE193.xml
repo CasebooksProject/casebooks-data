@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE193</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="234">MS Ashmole 234, f. 25v</idno>
-&Forman001;
+<altIdentifier type="fn_number"><idno n="Forman001">Forman, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="qtail">
+        <glyphName>Q WITH TAIL</glyphName>
+        <mapping type="standard">q</mapping>
+        <mapping type="PUA">U+E8BF</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,6 +80,7 @@
 <p><date when="1596-04-30" n="Friday"/></p>
 <p><time when="12:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#jc"/>
@@ -90,6 +101,7 @@
 <change when="2011-02-14">Header revised by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-10-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-15">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,9 +109,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/>&IConsonant;udeth Clark of <del type="strikethrough">40</del> 36 yers <lb/>1596 the 30 of Aprill &Friday; &inflmfl; at <lb/>15 &past; 12. <foreign xml:lang="la"><choice><orig><hi rend="overline">&VVowel;tru</hi></orig><reg>&VVowel;trum</reg></choice> sit <choice><sic>gra&uConsonant;da</sic><corr>gra&uConsonant;ida</corr></choice>&slash;</foreign> <add place="infralinear"><foreign xml:lang="la">Et quando maritus suus vult Re&uConsonant;erti et &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>Re&uConsonant;ertit iter<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> non aut <lb/>obi&jVowel;t morte <lb/>anto<choice><orig>&qtail;</orig><reg>que</reg></choice> Re&uConsonant;ertitur</foreign></add><note place="marginLeft"><lb/>he went a way the <lb/>&Tuesday; night at 9 &pmfl; <lb/>being 27 Aprill to <lb/>sea.</note></p>
+ <p><lb/><choice><orig>I</orig><reg>J</reg></choice>udeth Clark of <del type="strikethrough">40</del> 36 yers <lb/>1596 the 30 of Aprill <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>in’ m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> at <lb/>15 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 12. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><hi rend="overline">Vtru</hi></orig><reg>Utrum</reg></choice> sit <choice><sic>gra<choice><orig>u</orig><reg>v</reg></choice>da</sic><corr>gra<choice><orig>u</orig><reg>v</reg></choice>ida</corr></choice>/</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Whether she is pregnant</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <add place="infralinear"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">Et quando maritus suus vult Re<choice><orig>u</orig><reg>v</reg></choice>erti et <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>Re<choice><orig>u</orig><reg>v</reg></choice>ertit iter<choice><orig>ū</orig><reg>um</reg></choice> <lb/><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> non aut <lb/>obi<choice><orig>j</orig><reg>i</reg></choice>t morte <lb/>anto<choice><orig><g ref="#qtail"></g></orig><reg>que</reg></choice> Re<choice><orig>u</orig><reg>v</reg></choice>ertitur</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">And when her husband will return and whether he will return again or not or will succumb to death before he returns</seg><link type="is-translation-of" target="#foreign002 #translation002"/></add><note place="marginLeft"><lb/>he went a way the <lb/><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> night at 9 <choice><orig>p m’</orig><reg>pm</reg></choice> <lb/>being 27 Aprill to <lb/>sea.</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

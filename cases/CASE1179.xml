@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE1179</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 12r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,8 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -74,6 +79,7 @@
 <p><date when="1597-02-02" n="Wednesday"/></p>
 <p><time when="11:15:00" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#aa" evidence="internal"/>
@@ -93,17 +99,22 @@
 <change when="2010-09-20">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ach0045.jpg" url="ach0045.jpg" n="12r"/>
 </facsimile>
-<text xml:lang="la">
+<text>
 <body>
-<div>
-<p><lb/>Questo <foreign xml:lang="el">&Alpha; &Alpha;&lambda;</foreign> <unclear reason="hand" cert="low">fact&flourish;</unclear> <foreign xml:lang="en">1597 the 2 of <lb/>feb <choice><sic>&Tuesday;</sic><corr>&Wednesday;</corr></choice> &inmfl; 15 &past; <choice><sic>&past;</sic><corr type="noText"/></choice> xi&jVowel;</foreign> &VVowel;trum <lb/><choice><orig>marit&flourish;</orig><reg>maritum</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice> fuit <placeName>horto</placeName> c<choice><orig>&uover;</orig><reg>um</reg></choice> Kate et halk c<choice><orig>&uover;</orig><reg>um</reg></choice> illa <choice><orig><hi rend="overline">n</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice>&slash;</p>
+<div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Questo <foreign xml:lang="el">Α Αλ</foreign> <unclear reason="hand" cert="low">fact’</unclear> <foreign xml:lang="en">1597 the 2 of <lb/>feb <choice><sic><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice></sic><corr><choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice></corr></choice> <choice><orig>in m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> 15 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> <choice><sic><choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice></sic><corr type="noText"/></choice> xi<choice><orig>j</orig><reg>i</reg></choice></foreign> <choice><orig>V</orig><reg>U</reg></choice>trum <lb/><choice><orig>marit’</orig><reg>maritum</reg></choice> su<choice><orig>ū</orig><reg>um</reg></choice> fuit <placeName>horto</placeName> c<choice><orig>ū</orig><reg>um</reg></choice> Kate et halk c<choice><orig>ū</orig><reg>um</reg></choice> illa <choice><orig><hi rend="overline">n</hi></orig><reg>nec</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice>/</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Question put by Avis Allen 2 February 1597 at 15 past 12 whether her husband was in the garden with Kate and had sex with her or not.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

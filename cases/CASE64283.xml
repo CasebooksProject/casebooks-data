@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE64283</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-11">11 August 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -30,14 +35,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="3"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
-
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -76,6 +79,7 @@
 <p><date when="1627-07-16" n="Monday"/></p>
 <p><time when="21:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#w1" evidence="internal" present="unclear"/>
@@ -92,7 +96,8 @@
 <change when="2016-08-11">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-09-29">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-05-05">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-15">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -101,7 +106,7 @@
 <text xml:lang="en">
 <body><div>
 <milestone unit="question" spanTo="#questionEnd"/>
-<p><lb/>The lady wentworth <rs type="address" xml:id="address1">of Tyd<lb/>dington</rs> <foreign xml:lang="la">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><sic>maritis</sic><corr>maritus</corr></choice> <lb/>et heres ille nobilis Honor<choice><orig>ē</orig><reg>em</reg></choice> <lb/>et c<choice><orig>ō</orig><reg>om</reg></choice>moditat<choice><orig>ē</orig><reg>em</reg></choice> apud princip<choice><orig>ē</orig><reg>em</reg></choice> <lb/>Carol<choice><orig>ū</orig><reg>um</reg></choice> deo favente obtinebit</foreign> <lb/><subst><del type="erased">Iuly <del type="strikethrough">2</del> 17 <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">♂</add></subst> h.</del> <add place="lineEnd"><choice><orig>I</orig><reg>J</reg></choice>uly 16. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice></add></subst> <lb/><choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. h. 9 p m 1627 <add place="infralinear"><foreign xml:lang="la"><add place="lineBeginning"><choice><orig>v</orig><reg>u</reg></choice>xor sine consensu <lb/>mariti</add></foreign></add><anchor xml:id="questionEnd"/> <milestone unit="judgment" spanTo="#judgmentEnd"/><add place="infralinear"><foreign xml:lang="la">deo favente obtinebit</foreign></add></p><anchor xml:id="judgmentEnd"/>
+<p><lb/>The lady wentworth <rs type="address" xml:id="address1" key="PLACE521" resp="#mhawkins">of Tyd<lb/>dington</rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><sic>maritis</sic><corr>maritus</corr></choice> <lb/>et heres ille nobilis Honor<choice><orig>ē</orig><reg>em</reg></choice> <lb/>et c<choice><orig>ō</orig><reg>om</reg></choice>moditat<choice><orig>ē</orig><reg>em</reg></choice> apud princip<choice><orig>ē</orig><reg>em</reg></choice> <lb/>Carol<choice><orig>ū</orig><reg>um</reg></choice> deo favente obtinebit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks whether that noble knight her husband will by God’s favour obtain honour and advantage from Prince Charles</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/><subst><del type="erased">Iuly <del type="strikethrough">2</del> 17 <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">♂</add></subst> h.</del> <add place="lineEnd"><choice><orig>I</orig><reg>J</reg></choice>uly 16. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice></add></subst> <lb/><choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. h. 9 p m 1627 <add place="infralinear"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><add place="lineBeginning"><choice><orig>v</orig><reg>u</reg></choice>xor sine consensu <lb/>mariti</add></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">the wife without the husband’s consent</seg><link type="is-translation-of" target="#foreign002 #translation002"/></add><anchor xml:id="questionEnd"/> <milestone unit="judgment" spanTo="#judgmentEnd"/><add place="infralinear"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">deo favente obtinebit</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">with God’s favour he will obtain it</seg><link type="is-translation-of" target="#foreign003 #translation003"/></add></p><anchor xml:id="judgmentEnd"/>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

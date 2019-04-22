@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE35488</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="203">MS Ashmole 203, f. 11v</idno>
-&Napier016;
+<altIdentifier type="fn_number"><idno n="Napier016">Napier, vol. 16</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -67,7 +77,7 @@
 <person xml:id="b">
 <persName><roleName>Goody</roleName> <surname>Bird</surname></persName>
 <sex value="2">F</sex>
-<occupation>Midwife</occupation>
+<occupation type="medicalPractitioner">Midwife</occupation>
 </person>
 <listRelation><relation name="mother" active="#ec" passive="#c"/><relation name="midwife" active="#b" passive="#ec"/></listRelation>
 </listPerson>
@@ -76,12 +86,13 @@
 <p><date when="1609-04-23" n="Sunday" evidence="internal"/></p>
 <p><time when="18:00:00" evidence="internal"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:querent ref="#b" evidence="internal" present="yes"/>
 <cb:subject ref="#ec" present="no"/>
-<cb:topic key="childbirth"><person sameAs="#ec"/></cb:topic>
+<cb:topic key="childbirthMedical"><person sameAs="#ec"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -94,6 +105,8 @@
 <change when="2016-03-03">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -101,9 +114,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis. Colm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of <lb/>this towne</rs> brough<supplied reason="binding" cert="high">t</supplied> <lb/>a bed a litle a fore <lb/>breake of daye. <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">A</add></subst>pr <lb/>23. &Sunday; h. 3. 45. &antm; <lb/>1609 her mydwife good<supplied reason="binding" cert="low">y</supplied> <lb/>Byrd came to me for <lb/>to <choice><orig>&crossedp;</orig><reg>pro</reg></choice>cure her aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> throw<supplied reason="binding" cert="low">e</supplied></p>
+<p><lb/>Elis. Colm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> <rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">of <lb/>this towne</rs> brough<supplied reason="binding" cert="high">t</supplied> <lb/>a bed a litle a fore <lb/>breake of daye. <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">A</add></subst>pr <lb/>23. <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 3. 45. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1609 her mydwife good<supplied reason="binding" cert="low">y</supplied> <lb/>Byrd came to me for <lb/>to <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>cure her aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> throw<supplied reason="binding" cert="low">e</supplied></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

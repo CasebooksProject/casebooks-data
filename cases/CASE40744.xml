@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE40744</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-02-24">24 February 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="199">MS Ashmole 199, f. 16r</idno>
-&Napier022;
+<altIdentifier type="fn_number"><idno n="Napier022">Napier, vol. 22</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -68,6 +72,7 @@
 <p><date when="1613-01-07" n="Thursday"/></p>
 <p><time when="15:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#t1" evidence="internal" present="unclear"/>
@@ -82,6 +87,7 @@
 <change when="2015-06-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-05">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,9 +95,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The Lady Temple <foreign xml:lang="la">qu&aelig;rit <lb/>&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> socrus moriet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign> &IConsonant;an. 7 <lb/>&Thursday; h. 3. 4<subst><del type="over">0</del><add place="over">5</add></subst>. p m 1613</p>
+<p><lb/>The Lady Temple <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> socrus moriet<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks whether [her] mother-in-law will die</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <choice><orig>I</orig><reg>J</reg></choice>an. 7 <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 3. 4<subst><del type="over">0</del><add place="over">5</add></subst>. p m 1613</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

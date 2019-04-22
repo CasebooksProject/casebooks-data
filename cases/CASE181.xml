@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE181</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR-1</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="234">MS Ashmole 234, f. 24r</idno>
-&Forman001;
+<altIdentifier type="fn_number"><idno n="Forman001">Forman, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -73,6 +82,7 @@
 <p><date when="1596-04-27" n="Tuesday"/></p>
 <p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ea"/>
@@ -91,15 +101,21 @@
 <change when="2011-05-03">Header revised by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-10-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="bkz0069.jpg" url="bkz0069.jpg" n="24r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Eliz <choice><sic>Adann</sic><corr>Adam</corr></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> <choice><orig><hi rend="overline">Wilmo</hi></orig><reg>Willelmo</reg></choice> <choice><orig><hi rend="overline">Milto</hi></orig><reg>Milton</reg></choice> marit<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice> qui se n<choice><orig>&oover;</orig><reg>on</reg></choice> Amat &amp;c <foreign xml:lang="en">1596 the <lb/>27 of Aprill &Tuesday; &Anflmfl; at x&jVowel; <rs type="address" xml:id="address1">of Ratlif</rs></foreign></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Eliz <choice><sic>Adann</sic><corr>Adam</corr></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <choice><orig><hi rend="overline">Wilmo</hi></orig><reg>Willelmo</reg></choice> <choice><orig><hi rend="overline">Milto</hi></orig><reg>Milton</reg></choice> marit<choice><orig>ū</orig><reg>um</reg></choice> su<choice><orig>ū</orig><reg>um</reg></choice> qui se n<choice><orig>ō</orig><reg>on</reg></choice> Amat &amp;c <foreign xml:lang="en">1596 the <lb/>27 of Aprill <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <choice><orig>An’ m’</orig><reg>am</reg></choice> at x<choice><orig>j</orig><reg>i</reg></choice> <rs type="address" xml:id="address1" key="PLACE1477" resp="#mhawkins">of Ratlif</rs></foreign></p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Elizabeth Adams of Ratcliff for William Milton her husband who does not love her etc. Tuesday 17 April 1596 at 11.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 </body>
 </text>
 </TEI>

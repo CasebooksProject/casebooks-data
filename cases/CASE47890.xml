@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE47890</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-08-04">04 August 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="230">MS Ashmole 230, f. 99v</idno>
-&Napier029;
+<altIdentifier type="fn_number"><idno n="Napier029">Napier, vol. 29</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -61,12 +65,14 @@
 </particDesc>
 <settingDesc>
 <p><date when="1618-11-25" n="Wednesday"/></p>
-<p><time notBefore="11:00:00" notAfter="11:59:00" evidence="inferred"/></p>
+<p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#k"/>
-<cb:subject ref="#k" present="unclear"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#k" evidence="internal"/>
+<cb:subject ref="#k" present="yes"/>
 <cb:topic key="temptedAndSuicidal"><person sameAs="#k"/></cb:topic>
 </cb:consultation>
 </settingDesc>
@@ -77,6 +83,9 @@
 <change when="2015-11-24">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-16">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-05-16">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -84,8 +93,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goody Kent <rs type="address" xml:id="address1">of Padb<supplied reason="binding" cert="high">ery</supplied></rs> <lb/>came to me lamenting <lb/>her state telling me <gap extent="unclear" reason="binding"/> <lb/>c<choice><orig>&aover;</orig><reg>an</reg></choice>not <choice><sic>h</sic><corr type="noText"/></choice> resist sath<supplied reason="binding" cert="medium">an</supplied> <lb/>longer nov<choice><orig>&eover;</orig><reg>em</reg></choice>b 25 &Wednesday; <gap extent="unclear" reason="binding"/> <lb/>&antm; 1618</p>
-<p><lb/>I prayed to god for <supplied reason="binding" cert="medium">her</supplied></p>
+<p><lb/>Goody Kent <rs type="address" xml:id="address1" key="PLACE779" resp="#mhawkins">of Padbey</rs> <lb/>came to me lamenting <lb/>her state telling me <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she <lb/>c<choice><orig>ā</orig><reg>an</reg></choice>not <choice><sic>s</sic><corr type="noText"/></choice> resist sathan no <lb/>longer nov<choice><orig>ē</orig><reg>em</reg></choice>b 25 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 11 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1618</p>
+<p><lb/>I prayed to god for her</p>
 </div>
 </body>
 </text>

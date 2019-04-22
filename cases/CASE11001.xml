@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11001</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-2, bR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 132r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -79,13 +89,15 @@
 <p><date when="1600-07-05" n="Saturday"/></p>
 <p><time when="13:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b" evidence="internal" present="unclear"/>
 <cb:subject ref="#mb" present="no" consent="no"/>
 <cb:object ref="#mi #ad"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#mb"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#mb"/><person sameAs="#mi"/><person sameAs="#ad"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#mb"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#mi"/><person sameAs="#ad"/></cb:topic>
 <cb:treatment/>
 <cb:info type="financial"/>
 </cb:consultation>
@@ -98,6 +110,8 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-07">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -105,12 +119,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Margaret Burchmore. 32. <rs type="address" xml:id="address1">of hanslop</rs> <lb/>&IConsonant;uly 5. &SaturdayN;. hor. 1. 20 p m. 1600 <lb/><foreign xml:lang="la">metuit malefici<choice><orig>&uover;</orig><reg>um</reg></choice> <del type="strikethrough">&vVowel;x</del> marit<choice><orig>&uscon;</orig><reg>us</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> &vVowel;xore <lb/>sine consensu &slash;</foreign></p>
+<p><lb/>Margaret Burchmore. 32. <rs type="address" xml:id="address1" key="PLACE695" resp="#mhawkins">of hanslop</rs> <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 5. <choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>. hor. 1. 20 p m. 1600 <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">metuit malefici<choice><orig>ū</orig><reg>um</reg></choice> <del type="strikethrough"><choice><orig>v</orig><reg>u</reg></choice>x</del> marit<choice><orig>ꝯ</orig><reg>us</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>xore <lb/>sine consensu /</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">he fears witchcraft: the husband for the wife without consent</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>Margaret Inges.&slash;</p>
-<p><lb/>Alce Dodsley. <foreign xml:lang="la">mater <choice><sic>illus</sic><corr>illius</corr></choice> <lb/><choice><orig>venefic<subst><del type="over"><unclear cert="low" reason="del">a</unclear></del><add place="over">ij</add></subst></orig><reg>venficii</reg></choice> arguebat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign></p>
+<p><lb/>Margaret Inges./</p>
+<p><lb/>Alce Dodsley. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">mater <choice><sic>illus</sic><corr>illius</corr></choice> <lb/><choice><orig>venefic<subst><del type="over"><unclear cert="low" reason="del">a</unclear></del><add place="over">ij</add></subst></orig><reg>venficii</reg></choice> arguebat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">her mother accused of witchcraft</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
 <cb xml:id="colB" n="b"/>
 </body>

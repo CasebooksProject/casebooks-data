@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE27022</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-11-11">11 November 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="215">MS Ashmole 215, f. 86v</idno>
-&Napier011;
+<altIdentifier type="fn_number"><idno n="Napier011">Napier, vol. 11</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -44,7 +50,7 @@
 <language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#decumbiture"/>
+<catRef target="#decumbiture" cert="low"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -69,6 +75,7 @@
 <p><date when="1606-03-28" n="Friday" evidence="external" cert="low"/></p>
 <p><time when="12:20:00" evidence="external" cert="low"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#aw1"/>
@@ -86,6 +93,7 @@
 <change when="2014-04-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,7 +101,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Alce Warre her daughter <rs type="address" xml:id="address1">of baggers <lb/>barton</rs> 20 y March 19 <choice><orig><choice><sic>&VenusSymbol;</sic><corr resp="#jyoung" cert="medium">&MercurySymbol;</corr></choice></orig><reg type="gloss">Wednesday</reg></choice> h 12. 38. <lb/>p m 1606.</p>
+<p><lb/>Alce Warre her daughter <rs type="address" xml:id="address1" key="PLACE590" resp="#mhawkins">of baggers <lb/>barton</rs> 20 y March 19 <choice><orig><choice><sic>♀</sic><corr resp="#jyoung" cert="medium">☿</corr></choice></orig><reg type="gloss">Wednesday</reg></choice> h 12. 38. <lb/>p m 1606.</p>
 </div>
 </body>
 </text>

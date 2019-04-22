@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE23632</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-29">29 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="237">MS Ashmole 237, f. 37v</idno>
-&Napier023;
+<altIdentifier type="fn_number"><idno n="Napier023">Napier, vol. 23</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -68,6 +72,7 @@
 <p><date when="1614-06-29" n="Wednesday" evidence="inferred"/></p>
 <p><time notBefore="11:00:00" notAfter="14:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s1" evidence="conjecture" present="unclear"/>
@@ -84,6 +89,7 @@
 <change when="2015-08-11">Checked and combined with CASE23633 by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,14 +97,17 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><del type="blockStrikethrough">M<hi rend="superscript">r</hi>es Stones Daughter borne <lb/>11 y. sinc S<hi rend="superscript">t</hi> Androws day nov&eover;b <lb/>30. &MercurySymbol; h. 4 ant m 1603.</del></p>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><del type="blockStrikethrough">M<hi rend="superscript">r</hi>es Stones Daughter borne <lb/>11 y. sinc S<hi rend="superscript">t</hi> Androws day novēb <lb/>30. ☿ h. 4 ant m 1603.</del></p>
 </div>
-&astroChartDeleted;
+<figure type="astro" subtype="astroChartDeleted"/>
 <div>
-
-<p><lb/><choice><orig>m<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Stones Daughter borne at <placeName xml:id="place1">Rudgmont</placeName> <lb/>Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b. 1. &Wednesday; h. 4. &antm;. 1602.</p>
+<p><lb/><add place="infralinear"><choice><orig>m<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Stones Daughter borne at <placeName xml:id="place1" key="PLACE477" resp="#mhawkins">Rudgmont</placeName> <lb/>Dec<choice><orig>ē</orig><reg>em</reg></choice>b. 1. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 4. <choice><orig>ant m</orig><reg>am</reg></choice>. 1602.</add><anchor xml:id="questionEnd"/> <milestone unit="judgment" spanTo="#judgmentEnd"/>this child was often <lb/>in da<choice><orig>ū</orig><reg>un</reg></choice>ger to be Drowned</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/>&amp; when she was a leaven yers <lb/>old fortnight before Christmas going <lb/>to wash reasons &amp; reaching after <lb/>a skillet <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> fell out of her hand <lb/>she fell into a pond &amp; was p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently <lb/>Drowned/</p><anchor xml:id="judgmentEnd"/>
+</div>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE12455</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 163r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -66,6 +72,7 @@
 <p><date when="1599-05-14" n="Monday"/></p>
 <p><time when="18:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wk"/>
@@ -76,7 +83,9 @@
 <cb:topic key="trembling"><person sameAs="#wk"/></cb:topic>
 <cb:topic key="shivering"><person sameAs="#wk"/></cb:topic>
 <cb:topic key="animalDeathAndDisease"><person sameAs="#wk"/></cb:topic>
-<cb:topic key="witchcraft" evidence="inferred"><person sameAs="#wk"/><person sameAs="#ac"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" evidence="inferred"><person sameAs="#wk"/></cb:topic>
+<cb:topic key="witchcraftSufferedNonMedical" evidence="inferred"><person sameAs="#wk"/></cb:topic>
+<cb:topic key="witchcraftSuspect" evidence="inferred" cert="high"><person sameAs="#ac"/></cb:topic>
 <cb:judgment/>
 </cb:consultation>
 </settingDesc>
@@ -95,10 +104,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Willi<choice><orig>&aover;</orig><reg>am</reg></choice> <choice><sic>C</sic><corr type="noText"/></choice> Kilpine hath <lb/>his beasts <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> die &vVowel;nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>his <choice><sic>s</sic><corr type="noText"/></choice> hand very strangly <lb/>&amp; sodenly quaking &amp; trembling <lb/>hath lost 7 beast&pluralLoop; &amp; 2 mares <lb/>moved his q. at: 14 of May <lb/>&MondayN; h. <del type="strikethrough">7.</del> 6. 30. 1599</p>
+<p><lb/>Willi<choice><orig>ā</orig><reg>am</reg></choice> <choice><sic>C</sic><corr type="noText"/></choice> Kilpine hath <lb/>his beasts <choice><orig>w<hi rend="superscript">ch</hi></orig><reg>which</reg></choice> die <choice><orig>v</orig><reg>u</reg></choice>nd<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>his <choice><sic>s</sic><corr type="noText"/></choice> hand very strangly <lb/>&amp; sodenly quaking &amp; trembling <lb/>hath lost 7 beast<choice><orig>ꝭ</orig><reg>es</reg></choice> &amp; 2 mares <lb/>moved his q. at: 14 of May <lb/><choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice> h. <del type="strikethrough">7.</del> 6. 30. 1599</p>
 <p><lb/>Agnes Campion.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

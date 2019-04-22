@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE61556</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-11-30">30 November 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE61555">CASE61555</ref>.</note>
 </notesStmt>
@@ -36,9 +41,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -65,7 +70,7 @@
 <sex value="0">U</sex>
 </person>
 <person xml:id="b" evidence="internal">
-<persName><roleName>Goody</roleName> <surname>Bing</surname></persName>
+<persName><roleName>Goody</roleName> <surname>Bins</surname></persName>
 <sex value="2">F</sex>
 </person>
 <person xml:id="jw" evidence="internal">
@@ -78,6 +83,7 @@
 <p><date when="1626-01-30" n="Monday" evidence="external"/></p>
 <p><time when="08:00:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
@@ -89,7 +95,8 @@
 <cb:topic key="fits"><person sameAs="#mh"/></cb:topic>
 <cb:topic key="face"><person sameAs="#mh"/></cb:topic>
 <cb:topic key="throatMouth"><person sameAs="#mh"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#mh"/><person sameAs="#b"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#mh"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins" evidence="internal"><person sameAs="#b"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 <cb:judgment/>
 <cb:info type="event" subtype="subsequentEvent"/>
@@ -105,7 +112,7 @@
 <change when="2016-12-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-04-12">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-04-28">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-08-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -114,7 +121,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> strang convul<lb/>sions the <del type="strikethrough">wench the <lb/>morow</del> on <add place="supralinear">St</add> Stephens Daye <lb/><foreign xml:lang="la">☾ sep a ⚹ ♄ <lb/>ap ☌ ♀. p △ ♂</foreign> h. 8 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 162<subst><del type="over"><unclear cert="low" reason="del">6</unclear></del><add place="over">5</add></subst> &amp; swounded <lb/>at that tyme &amp; hath <lb/>bene troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> convulsi<choice><orig>ō</orig><reg>on</reg></choice>s <lb/>ever sinc</p>
+<p><lb/>troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> strang convul<lb/>sions the <del type="strikethrough">wench the <lb/>morow</del> on <add place="supralinear">St</add> Stephens Daye <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">☾ sep a ⚹ ♄ <lb/>ap ☌ ♀. p △ ♂</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the moon separating from the sextile of Saturn applying to the conjunction of Venus by the trine of Mars</seg><link type="is-translation-of" target="#foreign001 #translation001"/> h. 8 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 162<subst><del type="over"><unclear cert="low" reason="del">6</unclear></del><add place="over">5</add></subst> &amp; swounded <lb/>at that tyme &amp; hath <lb/>bene troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> convulsi<choice><orig>ō</orig><reg>on</reg></choice>s <lb/>ever sinc</p>
 </div>
 <figure type="astro" subtype="astroChartDeleted"/>
 <div>

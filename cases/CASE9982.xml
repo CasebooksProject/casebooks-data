@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE9982</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="411">MS Ashmole 411, f. 176v</idno>
-&Forman006;
+<altIdentifier type="fn_number"><idno n="Forman006">Forman, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -47,6 +53,12 @@
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" notBefore="1603-08-30" notAfter="1603-08-31"><name sameAs="#sforman">Simon Forman</name> held the consultation and probably wrote out the entry.</change>
+<change xml:id="stage2" notBefore="1603-09-05"><name sameAs="#unknown-z">Unidentified scribe (1603)</name> copied the entry out.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="sforman">
@@ -69,6 +81,7 @@
 <p><date when="1603-08-31" n="Wednesday" xml:id="date2" exclude="#date1"/></p>
 <p><time when="07:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#mc"/>
@@ -93,7 +106,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Margaret Crosse of 40 <lb/>yeres 1603. the 30 of Aug &Wednesday; <lb/><choice><orig>a&flourish; m&flourish;</orig><reg>am</reg></choice> at 45 &past; <del type="cancelled">p</del> 7 Diz.</p>
+<p><lb/>Margaret Crosse of 40 <lb/>yeres 1603. the 30 of Aug <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <lb/><choice><orig>a’ m’</orig><reg>am</reg></choice> at 45 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> <del type="cancelled">p</del> 7 Diz.</p>
 </div>
 </body>
 </text>

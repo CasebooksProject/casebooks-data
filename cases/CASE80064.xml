@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE80064</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-04-25">25 April 2015</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="408">MS Ashmole 408, f. 153r</idno>
+<altIdentifier type="fn_number"><idno n="Napier025">Napier, vol. 25</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0153r" to="0153r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationTreatment"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Lady</roleName> <surname>Fortescue</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1616-08-18T16:38:00" notAfter-custom="1616-08-19T11:30:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#f" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#f"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-04-25">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2015-06-08">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2015-11-11">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-09-17">Rechecked and coding updated by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abo0331.jpg" url="abo0331.jpg" n="153r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>I went to my lady fortis<lb/>cue <rs type="address" xml:id="address1">of saldon</rs> Aug 18 <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h 4. 38 p m 16<choice><orig>i</orig><reg>1</reg></choice>6 <lb/>at 7 I gave her <lb/><del type="strikethrough">almost</del> the better <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>t of vin<choice><orig>ū</orig><reg>um</reg></choice> stib <lb/>gr ℥ij at onc <lb/>&amp; all in the space <lb/>of halfe an hour</p>
+<p><lb/>It wrought very kindly <lb/>gods name <lb/>be blessed</p>
+</div>
+</body>
+</text>
+</TEI>

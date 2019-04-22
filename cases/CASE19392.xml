@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE19392</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR, bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 113v</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -76,6 +86,7 @@
 <p><date when="1601-05-08" n="Friday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#a #ja #ra"/>
@@ -97,6 +108,8 @@
 <change when="2012-05-29">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-08">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,11 +117,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="superscript"><hi rend="overline">res</hi></hi></orig><reg>Mrs</reg></choice> Askue <rs type="address" xml:id="address1">of midle <lb/>Claydon</rs>. 40 y. mai&jVowel; <lb/>8 &FridayN; hor. 12. &antm;. <lb/>160<choice><orig>i</orig><reg>1</reg></choice></p>
-<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> capitis dolore <choice><orig>&crossedp;</orig><reg>per</reg></choice> 3<hi rend="superscript">es</hi> <lb/>annos</foreign></p>
-<p><lb/><foreign xml:lang="la">It<choice><orig>m&flourish;</orig><reg>em</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> puella</foreign> &IConsonant;ane <lb/>Askue <rs type="address" sameAs="#address1">of Middle Claydon</rs> <lb/>16 y. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice></foreign> greene sicknes.</p>
-<p><lb/>It<choice><orig>m&flourish;</orig><reg>em</reg></choice> Rich Askue. <rs type="address" sameAs="#address1">of <lb/>midle Claydon</rs>. 40 y. hor <lb/>12. &FridayN;.</p>
-<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> lateris dextri dolore <lb/>et algore et pulsu <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice>cedente &vVowel;ti arbitrat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>ex obstructione hepatis.</foreign></p>
+<p><lb/><choice><orig>M<hi rend="superscript"><hi rend="overline">res</hi></hi></orig><reg>Mrs</reg></choice> Askue <rs type="address" xml:id="address1" key="PLACE756" resp="#mhawkins">of midle <lb/>Claydon</rs>. 40 y. mai<choice><orig>j</orig><reg>i</reg></choice> <lb/>8 <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> hor. 12. <choice><orig>ant m</orig><reg>am</reg></choice>. <lb/>160<choice><orig>i</orig><reg>1</reg></choice></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> capitis dolore <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> 3<hi rend="superscript">es</hi> <lb/>annos</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for the pain of her head for three years</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">It<choice><orig>m’</orig><reg>em</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> puella</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">Item for the girl</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <choice><orig>I</orig><reg>J</reg></choice>ane <lb/>Askue <rs type="address" sameAs="#address1" key="PLACE756" resp="#mhawkins">of Middle Claydon</rs> <lb/>16 y. <foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice></foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">for</seg><link type="is-translation-of" target="#foreign003 #translation003"/> greene sicknes.</p>
+<p><lb/>It<choice><orig>m’</orig><reg>em</reg></choice> Rich Askue. <rs type="address" sameAs="#address1" key="PLACE756" resp="#mhawkins">of <lb/>midle Claydon</rs>. 40 y. hor <lb/>12. <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice>.</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign004" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> lateris dextri dolore <lb/>et algore et pulsu <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>cedente <choice><orig>v</orig><reg>u</reg></choice>ti arbitrat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>ex obstructione hepatis.</foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">for the pain of his right side and cold and throbbing, proceeding as he judges from an obstruction of the liver</seg><link type="is-translation-of" target="#foreign004 #translation004"/></p>
 <cb xml:id="colA" n="a"/>
 </div>
 </body>

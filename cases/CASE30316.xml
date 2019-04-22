@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE30316</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR-1, bL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 26r</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -75,6 +83,7 @@
 <p><date when="1606-11-18" n="Tuesday"/></p>
 <p><time when="09:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#d #s"/>
@@ -93,6 +102,7 @@
 <change when="2014-05-08">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,14 +110,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Dawson the kep<choice><orig>&crossedp;</orig><reg>per</reg></choice> <lb/>of my lords wardrope <lb/>his serv. nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 18 h. <lb/>8. <del type="strikethrough">ant</del> 30. &antm;. 1606 <lb/>for a gowte in his h<choice><orig>&aover;</orig><reg>an</reg></choice>ds <lb/>&amp; feete&slash;</p>
+<p><lb/>M<hi rend="superscript">r</hi> Dawson the kep<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> <lb/>of my lords wardrope <lb/>his serv. nov<choice><orig>ē</orig><reg>em</reg></choice>b. 18 h. <lb/>8. <del type="strikethrough">ant</del> 30. <choice><orig>ant m</orig><reg>am</reg></choice>. 1606 <lb/>for a gowte in his h<choice><orig>ā</orig><reg>an</reg></choice>ds <lb/>&amp; feete/</p>
 <cb xml:id="colB" n="b"/>
-<p><lb/>M<hi rend="superscript">r</hi> Sterope the Regist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> ascaridib<choice><orig>&uscon;</orig><reg>us</reg></choice></foreign>. belly 32 <lb/>y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 18. &Tuesday; h. 9. <lb/>&antm;. 1606.</p>
+<p><lb/>M<hi rend="superscript">r</hi> Sterope the Regist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> ascaridib<choice><orig>ꝯ</orig><reg>us</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for worms</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. belly 32 <lb/>y nov<choice><orig>ē</orig><reg>em</reg></choice>b. 18. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 9. <lb/><choice><orig>ant m</orig><reg>am</reg></choice>. 1606.</p>
 <cb xml:id="colA" n="a"/>
 <p><lb/>M<hi rend="superscript">r</hi> dawson &amp; m<hi rend="superscript">r</hi> <lb/>Sterope.</p>
 <p><lb/><choice><sic><subst><del type="over">m</del><add place="over">th</add></subst>e</sic><corr type="delText"/></choice> <del type="strikethrough">lady Brooke</del></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

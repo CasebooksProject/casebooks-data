@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE50666</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-11-03">03 November 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -83,6 +92,7 @@
 <p><date when="1620-04-20" n="Thursday"/></p>
 <p><time when="15:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#j1" evidence="internal" present="yes"/>
@@ -99,7 +109,8 @@
 <cb:topic key="stitch"><person sameAs="#j2"/></cb:topic>
 <cb:topic key="sides"><person sameAs="#j2"/></cb:topic>
 <cb:topic key="fits"><person sameAs="#j2"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#j2"/><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#j2"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#anon1"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -111,7 +122,8 @@
 <change when="2016-03-04">Checked and revised by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-07">Rechecked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-10">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -120,9 +132,9 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>D <choice><orig>I</orig><reg>J</reg></choice>ames <rs type="address" xml:id="address1">of Oxford</rs> <choice><sic>st<add place="inline">ran</add>gly</sic><corr type="delText"/></choice> <add place="supralinear">straungly</add> <lb/>taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a palsye on the <lb/>left syde of the face hand &amp; <lb/>leg taken at church &amp; great red blatches <lb/>in <subst><del type="over">t</del><add place="over">H</add></subst>is fac &amp; bodye <lb/>&amp; his ey swelling &amp; <subst><del type="over">f</del><add place="over">H</add></subst>is <lb/>face a yere before &amp; <lb/>sinc he contenting certen <lb/>sup witches &amp; on being ac<lb/>quitted he felt his strange <lb/>stitch on his <choice><sic>s</sic><corr type="noText"/></choice> left syde <lb/>by fits he supposeth <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>the wom<choice><orig>ā</orig><reg>an</reg></choice> susp for a witch <lb/>but quitted by the <choice><orig>I</orig><reg>J</reg></choice>udges <lb/>did hurte him the 24 of <lb/>feb. <foreign xml:lang="la">☾ sep a □ ♄ ap ☌ ♂</foreign> <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> night at sup<choice><orig></orig><reg>per</reg></choice> first <lb/>taken. had his first fit <lb/>after he talked <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> m<hi rend="superscript">r</hi> <lb/>Rob. Conye. feb 18. in <lb/><choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> after noone his first fit <lb/>but his worst fit the 24 of <lb/>feb when the sup witch <lb/>was acquitted/</p>
+<p><lb/>D <choice><orig>I</orig><reg>J</reg></choice>ames <rs type="address" xml:id="address1" key="PLACE1931" resp="#mhawkins">of Oxford</rs> <choice><sic>st<add place="inline">ran</add>gly</sic><corr type="delText"/></choice> <add place="supralinear">straungly</add> <lb/>taken <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a palsye on the <lb/>left syde of the face hand &amp; <lb/>leg taken at church &amp; great red blatches <lb/>in <subst><del type="over">t</del><add place="over">H</add></subst>is fac &amp; bodye <lb/>&amp; his ey swelling &amp; <subst><del type="over">f</del><add place="over">H</add></subst>is <lb/>face a yere before &amp; <lb/>sinc he contenting certen <lb/>sup witches &amp; on being ac<lb/>quitted he felt his strange <lb/>stitch on his <choice><sic>s</sic><corr type="noText"/></choice> left syde <lb/>by fits he supposeth <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>the wom<choice><orig>ā</orig><reg>an</reg></choice> susp for a witch <lb/>but quitted by the <choice><orig>I</orig><reg>J</reg></choice>udges <lb/>did hurte him the 24 of <lb/>feb. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">☾ sep a □ ♄ ap ☌ ♂</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the moon separating from the quadrant of Saturn applying to the conjunction of Mars</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> night at sup<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> first <lb/>taken. had his first fit <lb/>after he talked <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> m<hi rend="superscript">r</hi> <lb/>Rob. Conye. feb 18. in <lb/><choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> after noone his first fit <lb/>but his worst fit the 24 of <lb/>feb when the sup witch <lb/>was acquitted/</p>
 <cb xml:id="colB" n="b"/>
-<p><lb/><choice><orig>M<hi rend="subscript">r</hi><hi rend="overline">es</hi></orig><reg>Mrs</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>ames mentioned <lb/>M<hi rend="superscript">r</hi> Doctor <choice><orig>I</orig><reg>J</reg></choice>ames <lb/><add place="marginLeft"><rs type="address" sameAs="#address1">of oxford</rs></add> Ap. 20 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 3. 20 p <lb/>m. 1620 <add place="infralinear">she related all at this tyme/</add></p>
+<p><lb/><choice><orig>M<hi rend="superscript">r</hi><hi rend="overline">es</hi></orig><reg>Mrs</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>ames mentioned <lb/>M<hi rend="superscript">r</hi> Doctor <choice><orig>I</orig><reg>J</reg></choice>ames <lb/><add place="marginLeft"><rs type="address" sameAs="#address1" key="PLACE1931" resp="#mhawkins">of oxford</rs></add> Ap. 20 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 3. 20 p <lb/>m. 1620 <add place="infralinear">she related all at this tyme/</add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 

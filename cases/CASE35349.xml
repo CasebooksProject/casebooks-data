@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE35349</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-22">22 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 51r/uS, f. 50v/uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="335">MS Ashmole 335, f. 51r, f. 50v</idno>
-&Napier015;
+<altIdentifier type="fn_number"><idno n="Napier015">Napier, vol. 15</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -31,9 +36,11 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -46,7 +53,7 @@
 <language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#interrogation"/>
+<catRef target="#horary"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -62,22 +69,19 @@
 <persName><surname evidence="inferred">Napier</surname></persName>
 <sex value="2">F</sex>
 </person>
-<person xml:id="anon">
-<sex value="1">M</sex>
-<occupation>Servant</occupation>
-</person>
-<listRelation><relation name="sister-in-law" active="#n" passive="#rnapier" evidence="external"/><relation name="servant" active="#anon" passive="#n"/></listRelation>
+<listRelation><relation name="sister-in-law" active="#n" passive="#rnapier" evidence="external"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore-custom="1609-03-04T16:25:00" notAfter="1634-04-01"/></p>
+<p><date when="1609-03-04" n="Saturday"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#rnapier" evidence="conjecture"/>
-<cb:subject ref="#rnapier" present="yes"/>
-<cb:object ref="#eh #anon #n"/>
-<cb:topic key="romanticRelations"><person sameAs="#eh"/><person sameAs="#anon"/></cb:topic>
+<cb:querent ref="#rnapier" evidence="conjecture" present="yes"/>
+<cb:subject ref="#n" present="unclear"/>
+<cb:object ref="#eh"/>
+<cb:topic key="employeeChoice"><person sameAs="#eh"/></cb:topic>
 
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
@@ -90,6 +94,7 @@
 <change when="2016-04-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-18">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis Hill <foreign xml:lang="la">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>de ea, &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>shall have Elis. Hill <lb/>to se <lb/>4. &Saturday; hor 4. 25. p m <lb/>1609</p>
+<p><lb/>Elis Hill <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>de ea, <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">it is asked of her, whether</seg><link type="is-translation-of" target="#foreign001 #translation001"/> my sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>shall have Elis. Hill <lb/>to <choice><sic>se</sic><corr type="noText"/></choice> her servant march <lb/>4. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> hor 4. 25. p m <lb/>1609</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <pb xml:id="f50v" n="50v" facs="#abj0118.jpg"/> 
 </body>
 </text>

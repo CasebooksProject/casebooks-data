@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2096</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 152v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -93,6 +99,7 @@
 <p><date when="1597-07-18" n="Monday"/></p>
 <p><time when="19:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ab1" evidence="internal" cert="high"/>
@@ -111,6 +118,8 @@
 <change when="2011-08-05">Coding upgraded by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-18">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -119,7 +128,7 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Ane barns the daughter <lb/>of Richard <del type="cancelled">b<gap reason="del" unit="chars" extent="2"/>d</del> barnes and <lb/><choice><orig><hi rend="overline">alls</hi></orig><reg>allis</reg></choice> <rs type="address" xml:id="address2">in S<hi rend="superscript">t</hi> katerins</rs>. the late <lb/>wif of Briant swanton <lb/>she Dwells <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> W<choice><orig><hi rend="overline">illm</hi></orig><reg>illiam</reg></choice> Oli&uConsonant;er <lb/><rs type="address" xml:id="address1">by Crechurch</rs>. <foreign xml:lang="la"><choice><sic>&VVowel;trm</sic><corr>&VVowel;trum</corr></choice> cond</foreign> <lb/>1597 the 18 &IConsonant;uli&jVowel; at 15 <lb/>&past; 7. &dash;</p>
+<p><lb/>Ane barns the daughter <lb/>of Richard <del type="cancelled">b<gap reason="del" unit="chars" extent="2"/>d</del> barnes and <lb/><choice><orig><hi rend="overline">alls</hi></orig><reg>allis</reg></choice> <rs type="address" xml:id="address2" key="PLACE244" resp="#mhawkins">in S<hi rend="superscript">t</hi> katerins</rs>. the late <lb/>wif of Briant swanton <lb/>she Dwells <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> W<choice><orig><hi rend="overline">illm</hi></orig><reg>illiam</reg></choice> Oli<choice><orig>u</orig><reg>v</reg></choice>er <lb/><rs type="address" xml:id="address1" key="PLACE75" resp="#mhawkins">by Crechurch</rs>. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><sic><choice><orig>V</orig><reg>U</reg></choice>trm</sic><corr><choice><orig>V</orig><reg>U</reg></choice>trum</corr></choice> cond</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Whether she [should/will] marry</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>1597 the 18 <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> at 15 <lb/><choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 7. –</p>
 </div>
 </body>
 </text>

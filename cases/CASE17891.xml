@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE17891</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="221">MS Ashmole 221, f. 197r</idno>
-&Napier006;
+<altIdentifier type="fn_number"><idno n="Napier006">Napier, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -62,6 +70,7 @@
 <p><date when="1602-09-11" n="Saturday"/></p>
 <p><time when="07:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b" evidence="internal"/>
@@ -85,9 +94,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> Byrde <lb/>sent &vVowel;nto me to <lb/><choice><orig>&crossedp;</orig><reg>per</reg></choice>&vVowel;se my bookes <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> his Disease <lb/>be not a palsye <lb/>Sept 11. &Saturday; hor. 7. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1602. all in his ly<choice><orig>&mover;</orig><reg>mm</reg></choice>s</p>
+<p><lb/>M<hi rend="superscript">r</hi> Byrde <lb/>sent <choice><orig>v</orig><reg>u</reg></choice>nto me to <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice><choice><orig>v</orig><reg>u</reg></choice>se my bookes <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> his Disease <lb/>be not a palsye <lb/>Sept 11. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> hor. 7. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1602. all in his ly<choice><orig>m̄</orig><reg>mm</reg></choice>s</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

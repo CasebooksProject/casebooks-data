@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE9131</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="411">MS Ashmole 411, f. 66v</idno>
-&Forman006;
+<altIdentifier type="fn_number"><idno n="Forman006">Forman, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -61,19 +67,20 @@
 <persName evidence="external"><forename>Edward</forename> <surname>Seymour</surname> <roleName>Earl of Hertford</roleName></persName>
 <sex value="1">M</sex>
 </person>
-<listRelation><relation name="husband" active="#es" passive="#fp" from="1601-07" evidence="internal"/></listRelation>
+<listRelation><relation name="husband" active="#es" passive="#fp" from="1601-07-01" precision="medium" evidence="internal"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1601-04-18" n="Saturday"/></p>
 <p><time when="14:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#fp"/>
 <cb:subject ref="#fp" present="unclear"/>
 <cb:object ref="#es"/>
-<cb:topic key="fortune"><person sameAs="#es"/></cb:topic>
+<cb:topic key="stalking"><person sameAs="#es"/></cb:topic>
 <cb:topic key="maritalProspects"><person sameAs="#fp"/><person sameAs="#es"/></cb:topic>
 <cb:topic key="visits"><person sameAs="#es"/><person sameAs="#fp"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
@@ -94,9 +101,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Prannel at 10 &past; 2 <lb/>the 18 of Aprill &Saturday; to <lb/>knowe howe her L Doth <lb/>&amp; when she shalbe maried <lb/>&amp; when he will com.</p>
+<p><lb/>Prannel at 10 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 2 <lb/>the 18 of Aprill <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> to <lb/>knowe howe her L Doth <lb/>&amp; when she shalbe maried <lb/>&amp; when he will com.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

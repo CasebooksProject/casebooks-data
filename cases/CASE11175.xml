@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11175</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
-<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 77v of Ashmole 221, written on 7 June 1602, reads: &lsquo;Moore of meads Morten Dead Dyed about harvest was twelfmoneths.&rsquo;</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 77v of Ashmole 221, written on 7 June 1602, reads: ‘Moore of meads Morten Dead Dyed about harvest was twelfmoneths.’</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 158r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -67,6 +73,7 @@
 <p><date when="1600-08-20" n="Wednesday"/></p>
 <p><time when="09:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wm"/>
@@ -85,6 +92,8 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-07">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,9 +101,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Will: Moore <rs type="address" xml:id="address1">of Meades <lb/>Morton</rs> 23. <foreign xml:lang="la">marit<choice><orig>&uscon;</orig><reg>us</reg></choice></foreign>. Aug. <lb/>20 &WednesdayN; h. 9. 30. &antm; <lb/>1600</p>
+<p><lb/>Will: Moore <rs type="address" xml:id="address1" key="PLACE747" resp="#mhawkins">of Meades <lb/>Morton</rs> 23. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">marit<choice><orig>ꝯ</orig><reg>us</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">a married man</seg><link type="is-translation-of" target="#foreign001 #translation001"/>. Aug. <lb/>20 <choice><orig>die ☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> h. 9. 30. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1600</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

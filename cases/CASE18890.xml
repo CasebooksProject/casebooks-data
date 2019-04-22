@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE18890</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 29v</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,6 +76,7 @@
 <p><date when="1600-11-01" n="Saturday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ak"/>
@@ -89,6 +96,7 @@
 <change when="2012-04-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,9 +104,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Agnes Kent <rs type="address" xml:id="address1">of Mylton</rs> <lb/>a meaden daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> in lawe <lb/>to goodm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> Syms <rs type="address" xml:id="address2">of Milton</rs> <lb/>33 y. had on bastard <lb/>before c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>play. of a gret <lb/>swelling in her bodye <lb/>had not her sicknes <lb/>since whitsontyde Novem<lb/>ber <choice><orig>i</orig><reg>1</reg></choice> &SaturdayN; hor 12 1600</p>
+<p><lb/>Agnes Kent <rs type="address" xml:id="address1" key="PLACE757" resp="#mhawkins">of Mylton</rs> <lb/>a meaden daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> in lawe <lb/>to goodm<choice><orig><hi rend="overline">a</hi></orig><reg>an</reg></choice> Syms <rs type="address" xml:id="address2" key="PLACE757" resp="#mhawkins">of Milton</rs> <lb/>33 y. had on bastard <lb/>before c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>play. of a gret <lb/>swelling in her bodye <lb/>had not her sicknes <lb/>since whitsontyde Novem<lb/>ber <choice><orig>i</orig><reg>1</reg></choice> <choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> hor 12 1600</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

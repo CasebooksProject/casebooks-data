@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6215</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 177r</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,11 +70,12 @@
 <settingDesc>
 <p><date when="1599-10-20" n="Saturday"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ja"/>
 <cb:subject ref="#ja" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#ja" resp="#mhawkins"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#ja" resp="#mhawkins"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -88,9 +95,9 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>&IConsonant;hon Aynsworth of <lb/>23 yers <del type="strikethrough">15</del> born <rs type="date" xml:id="date1">on <choice><orig><subst><del type="cancelled">&JupiterSymbol;</del> <add place="lineEnd">&VenusSymbol;</add></subst> <lb/>Day</orig><reg>Venus Day</reg><reg type="gloss">Friday</reg></choice></rs> <rs type="time" xml:id="time1"><choice><sic>mornng</sic><corr>morning</corr></choice> <del type="cancelled"><gap reason="del" unit="chars" extent="1"/></del> at 30 &jVowel;</rs> <rs type="date" sameAs="#date1">the <lb/>15 of <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">M</add></subst>arch</rs> next <choice><orig>c<hi rend="overline">omnge</hi></orig><reg>cominge</reg></choice>&slash;</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>hon Aynsworth of <lb/>23 yers <del type="strikethrough">15</del> born <rs type="date" xml:id="date1">on <choice><orig><subst><del type="cancelled">♃</del> <add place="lineEnd">♀</add></subst> <lb/>Day</orig><reg>Venus Day</reg><reg type="gloss">Friday</reg></choice></rs> <rs type="time" xml:id="time1"><choice><sic>mornng</sic><corr>morning</corr></choice> <del type="cancelled"><gap reason="del" unit="chars" extent="1"/></del> at 30 <choice><orig>j</orig><reg>i</reg></choice></rs> <rs type="date" sameAs="#date1">the <lb/>15 of <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">M</add></subst>arch</rs> next <choice><orig>c<hi rend="overline">omnge</hi></orig><reg>cominge</reg></choice>/</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

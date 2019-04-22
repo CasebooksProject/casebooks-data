@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE78209</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 433</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0433" to="0433"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><forename>Bartholomew</forename></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="kinsman" mutual="#b #rnapier"/>
+<relation name="grandfather" active="#anon2" passive="#anon1"/>
+</listRelation>    
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-09-10" n="Tuesday"/></p>
+<p><time when="07:45:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b" evidence="internal"/>
+<cb:subject ref="#b" present="unclear"/>
+<cb:object ref="#anon1"/>
+<cb:topic key="maritalProspects"><person sameAs="#b"/><person sameAs="#anon1"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-12-05">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-01-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-05-10">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0455.jpg" url="clq0455.jpg" n="433" width="5113" height="7216"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><choice><orig>V</orig><reg>U</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> erit nec ne <lb/>et si fiat <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>valde conveniet <add place="infralinear"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> maritabit</add></p>
+<p><lb/><foreign xml:lang="en">my Cosen Barthol <add place="marginLeft">20 y</add> <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>pounded it Sept<choice><orig>ē</orig><reg>em</reg></choice>b <lb/>Sept: 10 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 7. <lb/><subst><del type="strikethrough">30</del> <add place="marginLeft">45.</add></subst></foreign> <choice><orig>ant m</orig><reg>am</reg></choice> 1633</p>
+<p><lb/>father &amp; mother Dead liveth <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <lb/>grandfather <add place="infralinear">her land 80<hi rend="superscript">l</hi> a yere <lb/>land held &amp; mony <lb/>hath no broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/>nor sister:</add></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether it will be or not and if it is whether it will be very fitting; whether [he] will marry.</p>
+<p>My kinsman Bartholomew propounded it Tuesday 10 September 1633 at 7.45am.</p>
+<p>Father and mother dead, lives with her grandfather: her land 80 pounds a  year; land held and money; has no brother nor sister.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

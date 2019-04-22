@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13126</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 27r/uS, f. 26v/uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, ff. 27r, 26v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -31,12 +36,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -71,13 +76,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1597" evidence="conjecture" cert="low"/></p>
+<p><date notBefore="1597-01-22" notAfter="1597-09-06" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#du"/>
 <cb:subject ref="#du" present="unclear"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#du" resp="#mhawkins"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#du" resp="#mhawkins"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -89,6 +95,8 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,14 +105,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<head><foreign xml:lang="la">nativitas <space unit="chars" extent="5" dim="horizontal"/> 1580.</foreign></head>
-<p><lb/>Dorothy &VVowel;&uConsonant;edale the Daughter <lb/>of &IConsonant;ohn &VVowel;&uConsonant;edal &amp; Agnes Croutch <lb/>borne <rs type="address" xml:id="address1"><foreign xml:lang="la">in Asplee in com. Bedford</foreign></rs>. <rs type="date" xml:id="date1"><foreign xml:lang="la"><choice><orig>an&oover;</orig><reg>anno</reg></choice> <lb/><choice><orig>d<hi rend="overline">ni</hi></orig><reg>domini</reg></choice> 1580</foreign>. <del type="strikethrough">Novemb</del> <del type="strikethrough">the first of Novemb <lb/>being holy rood day</del> the 14 of Sept <lb/>being holy r<subst><del type="over">o</del><add place="over">h</add></subst>oodeday. on munday</rs> night <lb/>at 8 a clock <choice><orig><subst><del type="strikethrough">or somwhat pass<subst><del type="over">e</del><add place="over">t</add></subst>. 8. 15 m</del> <add place="supralinear">iust</add></subst></orig><reg>just</reg></choice> <lb/>at <rs type="time" xml:id="time1">8 a clock 15 at night</rs>.</p>
+<head><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nativitas <space unit="chars" extent="5" dim="horizontal"/> 1580.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">nativity <space unit=" chars" extent="5" dim="horizontal"/> 1580</seg><link type="is-translation-of" target="#foreign001 #translation001"/></head>
+<p><lb/>Dorothy <choice><orig>V</orig><reg>U</reg></choice><choice><orig>u</orig><reg>v</reg></choice>edale the Daughter <lb/>of <choice><orig>I</orig><reg>J</reg></choice>ohn <choice><orig>V</orig><reg>U</reg></choice><choice><orig>u</orig><reg>v</reg></choice>edal &amp; Agnes Croutch <lb/>borne <rs type="address" xml:id="address1" key="PLACE323" resp="#mhawkins"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">in Asplee in com. Bedford</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">in Aspley in the county of Bedford</seg><link type="is-translation-of" target="#foreign002 #translation002"/></rs>. <rs type="date" xml:id="date1"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig>anō</orig><reg>anno</reg></choice> <lb/><choice><orig>d<hi rend="overline">ni</hi></orig><reg>domini</reg></choice> 1580</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">in the year of our Lord 1580</seg><link type="is-translation-of" target="#foreign003 #translation003"/>. <del type="strikethrough">Novemb</del> <del type="strikethrough">the first of Novemb <lb/>being holy rood day</del> the 14 of Sept <lb/>being holy r<subst><del type="over">o</del><add place="over">h</add></subst>oodeday. on munday</rs> night <lb/>at 8 a clock <choice><orig><subst><del type="strikethrough">or somwhat pass<subst><del type="over">e</del><add place="over">t</add></subst>. 8. 15 m</del> <add place="supralinear">iust</add></subst></orig><reg>just</reg></choice> <lb/>at <rs type="time" xml:id="time1">8 a clock 15 at night</rs>.</p>
 </div>
-&astroChartPartialDeleted;
+<figure type="astro" subtype="astroChartPartialDeleted"/>
 <div><pb xml:id="f26v" n="26v" facs="#ace0068.jpg"/>
-<p><lb/><foreign xml:lang="la">Doroty &VVowel;&uConsonant;edale. vere calculata. <lb/>nativ:</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign004" decls="#original_source">Doroty <choice><orig>V</orig><reg>U</reg></choice><choice><orig>u</orig><reg>v</reg></choice>edale. vere calculata. <lb/>nativ:</foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">Dorothy Uvedale’s nativity truly calculated</seg><link type="is-translation-of" target="#foreign004 #translation004"/></p>
 </div>
-&astroChartDeleted;
+<figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE45092</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-06-07">07 June 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="220">MS Ashmole 220, f. 1v</idno>
-&Napier027;
+<altIdentifier type="fn_number"><idno n="Napier027">Napier, vol. 27</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -71,6 +77,7 @@
 <p><date when="1617-06-07" n="Saturday"/></p>
 <p><time when="09:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#lc #a"/>
@@ -97,6 +104,7 @@
 <change when="2015-10-28">Rechecked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,14 +112,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Lawrenc Chamberlayne kinsm<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>to M<hi rend="superscript">r</hi> Adams <rs type="address" xml:id="address1">of Stachden</rs> 39 <lb/>y &IConsonant;une 7. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 9. &antm; <lb/>1617 <add place="infralinear">&amp; Mr Adams him selfe.</add></p>
+<p><lb/>Lawrenc Chamberlayne kinsm<choice><orig>ā</orig><reg>an</reg></choice> <lb/>to M<hi rend="superscript">r</hi> Adams <rs type="address" xml:id="address1" key="PLACE500" resp="#mhawkins">of Stachden</rs> 39 <lb/>y <choice><orig>I</orig><reg>J</reg></choice>une 7. <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor. 9. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1617 <add place="infralinear">&amp; Mr Adams him selfe.</add></p>
 </div>
-&astroChartPartial;
-&astroChart;
+<figure type="astro" subtype="astroChartPartial"/>
+<figure type="astro" subtype="astroChart"/>
 
 <div>
 <cb xml:id="colB" n="b"/>
-<p><lb/>M<hi rend="superscript">r</hi> Adams <rs type="address" sameAs="#address1">of Stachden</rs> <lb/>well recovered but his <lb/>mouth is very soare <lb/>the skyn of his <lb/>stomack is so hot <lb/>faynt &amp; sickly a bad <lb/>stomack &IConsonant;une 7 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <lb/>hor 9 &antm; 1617 <lb/>desyrous of a cool<unclear cert="high" reason="hand">in</unclear>g <lb/>syrope or other <lb/>c<choice><orig>&oover;</orig><reg>on</reg></choice>forta<unclear cert="low" reason="hand">ter</unclear></p>
+<p><lb/>M<hi rend="superscript">r</hi> Adams <rs type="address" sameAs="#address1" key="PLACE500" resp="#mhawkins">of Stachden</rs> <lb/>well recovered but his <lb/>mouth is very soare <lb/>the skyn of his <lb/>stomack is so hot <lb/>faynt &amp; sickly a bad <lb/>stomack <choice><orig>I</orig><reg>J</reg></choice>une 7 <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> <lb/>hor 9 <choice><orig>ant m</orig><reg>am</reg></choice> 1617 <lb/>desyrous of a cool<unclear cert="high" reason="hand">in</unclear>g <lb/>syrope or other <lb/>c<choice><orig>ō</orig><reg>on</reg></choice>forta<unclear cert="low" reason="hand">ter</unclear></p>
 </div>
 </body>
 </text>

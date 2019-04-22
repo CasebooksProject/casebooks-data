@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10156</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 11r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -84,6 +93,7 @@
 <p><date when="1600-03-12" n="Wednesday"/></p>
 <p><time when="07:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#en"/>
@@ -101,16 +111,21 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ack0041.jpg" url="ack0041.jpg" n="11r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><foreign xml:lang="en">Elisabeth Nichols. my servaunt <lb/>19 y.</foreign> &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> expediat illi nubere <lb/><foreign xml:lang="en">March 12</foreign> &WednesdayN; h. 7. &antm;. <lb/>1600 <del type="strikethrough">vir qu</del> n<choice><orig>&oover;</orig><reg>on</reg></choice> amat <choice><orig>&crossedp;</orig><reg>pro</reg></choice>crat<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>vir<choice><orig>&uover;</orig><reg>um</reg></choice>. eti<choice><orig>&aover;</orig><reg>am</reg></choice>si pat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> mater av<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/>ei consulant. nubere. <choice><orig><hi rend="overline">aio</hi></orig><reg>animo</reg></choice> discru<lb/>ciat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> suo. <choice><orig>q&uiaSymbol;</orig><reg>quia</reg></choice> mens n<choice><orig>&oover;</orig><reg>on</reg></choice> est ad <lb/>nuptias. me<choice><orig>&uover;</orig><reg>um</reg></choice> consili<choice><orig>&uover;</orig><reg>um</reg></choice> peti&jVowel;t</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><foreign xml:lang="en">Elisabeth Nichols. my servaunt <lb/>19 y.</foreign> <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> expediat illi nubere <lb/><foreign xml:lang="en">March 12</foreign> <choice><orig>die ☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> h. 7. <choice><orig>ant m</orig><reg>am</reg></choice>. <lb/>1600 <del type="strikethrough">vir qu</del> n<choice><orig>ō</orig><reg>on</reg></choice> amat <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>crat<choice><orig>ū</orig><reg>um</reg></choice> <lb/>vir<choice><orig>ū</orig><reg>um</reg></choice>. eti<choice><orig>ā</orig><reg>am</reg></choice>si pat<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> mater av<choice><orig>ꝯ</orig><reg>us</reg></choice> <lb/>ei consulant. nubere. <choice><orig><hi rend="overline">aio</hi></orig><reg>animo</reg></choice> discru<lb/>ciat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> suo. <choice><orig>qꝛ</orig><reg>quia</reg></choice> mens n<choice><orig>ō</orig><reg>on</reg></choice> est ad <lb/>nuptias. me<choice><orig>ū</orig><reg>um</reg></choice> consili<choice><orig>ū</orig><reg>um</reg></choice> peti<choice><orig>j</orig><reg>i</reg></choice>t</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Elizabeth Nichols my servant 19 years whether it is advisable for her to marry Wednesday March 12 1600 7am. She does not love the man but her father, mother and grandfather all advise her to marry. It is tormenting her soul because her inclination is not towards marriage. She asks my advice.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

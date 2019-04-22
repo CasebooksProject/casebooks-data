@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26393</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-08">08 August 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="layout" resp="#jyoung">This page is written sideways.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="204">MS Ashmole 204, f. 28r</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers002">Various Papers, vol. 2</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0028r" to="0028r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hs">
+<persName><forename>Hugh</forename> <surname evidence="external">Staper</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ee">
+<persName><forename>Elizabeth</forename> <surname evidence="external">Evington</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="n">
+<persName><surname evidence="inferred">Napier</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="sister-in-law" active="#n" passive="#rnapier" evidence="external"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1606-05-16" n="Friday" evidence="inferred"/></p>
+<p><time when="08:40:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#n" evidence="internal" present="unclear"/>
+<cb:subject ref="#ee" present="no"/>
+<cb:object ref="#hs"/>
+<cb:topic key="maritalProspects"><person sameAs="#hs"/><person sameAs="#ee"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-08">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-19">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-07">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-03-02">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-05">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-12-17">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aco0075.jpg" url="aco0075.jpg" n="28r"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>quærit soror Sandy <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> Hugo <lb/>Stap. maritabit Elis. Eving. <lb/><choice><orig>♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> h <del type="strikethrough"><del type="strikethrough">8.</del> 9.</del> 8. 40 <choice><orig>ant m</orig><reg>am</reg></choice>. 1606</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>[my] sister [in law] Sandy asks whether Hugh Stap[er] will marry Elizabeth Eving[ton] Friday 1606 at 8.40am</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartPartial"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE53046</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-03-22">22 March 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 81v/uR, f. 82r/uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -69,13 +74,15 @@
 <p><date when="1621-08-28" n="Tuesday"/></p>
 <p><time when="11:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#pr"/>
 <cb:subject ref="#pr" present="yes"/>
 <cb:object ref="#jp"/>
 <cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#pr"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#pr"/><person sameAs="#jp"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#pr"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins" evidence="internal"><person sameAs="#jp"/></cb:topic>
 <cb:judgment/>
 <cb:info type="event" subtype="previousConsultation"/>
 <cb:treatment/><cb:treatment type="sigil"/>
@@ -87,7 +94,7 @@
 <change when="2016-03-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-15">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-07-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Paule Robynson <rs type="address" xml:id="address1">of <lb/>Easton</rs>. 48 y Aug <lb/>28 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 12. 162<choice><orig>i</orig><reg>1</reg></choice></p>
+<p><lb/>Paule Robynson <rs type="address" xml:id="address1" key="PLACE1604" resp="#mhawkins">of <lb/>Easton</rs>. 48 y Aug <lb/>28 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 12. 162<choice><orig>i</orig><reg>1</reg></choice></p>
 <pb xml:id="f82r" n="82r"/>
-<p><lb/>Paul Robynson <rs type="address" sameAs="#address1">of <lb/>Easton Maudith</rs> 48 y <lb/>Aug. 28 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. <choice><sic>12.</sic><corr type="delText"/></choice> <add place="supralinear">11. 45.</add> 162<choice><orig>i</orig><reg>1</reg></choice> <lb/>was ther p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sent</p>
+<p><lb/>Paul Robynson <rs type="address" sameAs="#address1" key="PLACE1604" resp="#mhawkins">of <lb/>Easton Maudith</rs> 48 y <lb/>Aug. 28 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. <choice><sic>12.</sic><corr type="delText"/></choice> <add place="supralinear">11. 45.</add> 162<choice><orig>i</orig><reg>1</reg></choice> <lb/>was ther p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sent</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

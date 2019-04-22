@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE32369</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-1, bR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 312v</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -65,6 +75,7 @@
 <settingDesc>
 <p><date notBefore="1607-10-30" notAfter="1608-01-27" cert="medium" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -83,6 +94,8 @@
 <change when="2015-03-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-02-16">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,14 +103,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>M<hi rend="superscript">r</hi> vilvayne came to <lb/>my howse octob 30 &Friday; h <lb/>6. <del type="strikethrough">30</del> 20 p m 1607</p>
-<p><lb/>M<hi rend="superscript">r</hi> Baskavyll came <lb/>not <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him but excu<supplied reason="binding" cert="medium">sed</supplied> <lb/>that he had busynes but seemed <choice><sic><unclear cert="medium" reason="hand">b</unclear></sic><corr type="noText"/></choice> mutch gree<supplied reason="binding" cert="medium">ved</supplied> <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the repulse he ha<supplied reason="binding" cert="medium">d</supplied> <lb/>at <placeName>london</placeName>. &amp; now <lb/>intendeth to chang his <choice><orig>&crossedp;</orig><reg>pro</reg></choice><supplied reason="binding">fes</supplied><lb/>sion &amp; to study divin<supplied reason="binding" cert="medium">ity</supplied></p>
+<p><lb/>M<hi rend="superscript">r</hi> vilvayne came to <lb/>my howse octob 30 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h <lb/>6. <del type="strikethrough">30</del> 20 p m 1607</p>
+<p><lb/>M<hi rend="superscript">r</hi> Baskavyll came <lb/>not <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him but excused <lb/>that he had busynes but seemed <choice><sic><unclear cert="medium" reason="hand">b</unclear></sic><corr type="noText"/></choice> mutch greeved <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the repulse he had <lb/>at <placeName key="PLACE1" resp="#mhawkins">london</placeName>. &amp; now <lb/>intendeth to chang his <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice><supplied reason="binding">fes</supplied><lb/>sion &amp; to study divinity</p>
 </div>
 
 <div>
 <p><lb/>M<hi rend="superscript">r</hi> Baskavill</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE30277</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-03-25">25 March 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="193">MS Ashmole 193, f. 18r</idno>
-&Napier012;
+<altIdentifier type="fn_number"><idno n="Napier012">Napier, vol. 12</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -75,6 +81,7 @@
 <p><date when="1606-11-08" n="Saturday"/></p>
 <p><time when="07:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l" evidence="internal" present="unclear"/>
@@ -82,7 +89,8 @@
 <cb:object ref="#ar"/>
 <cb:topic key="fallingSickness"><person sameAs="#el"/></cb:topic>
 <cb:topic key="fits"><person sameAs="#el"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#el"/><person sameAs="#ar"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#el"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins" evidence="internal"><person sameAs="#ar"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 <cb:info type="financial"/>
@@ -95,6 +103,8 @@
 <change when="2014-05-07">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -102,9 +112,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis Lingard <rs type="address" xml:id="address1">of Lowick</rs> a yere &amp; <lb/>a quart<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 8 &Saturday; <lb/>hor 7. 20 &antm;. 1606. <add place="infralinear"><foreign xml:lang="la">pater sine consensu</foreign></add><note place="chart"><foreign xml:lang="la">morb<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/>comitialis</foreign></note><note place="chart"><foreign xml:lang="la">convulsio.</foreign></note></p>
+<p><lb/>Elis Lingard <rs type="address" xml:id="address1" key="PLACE1694" resp="#mhawkins">of Lowick</rs> a yere &amp; <lb/>a quart<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> nov<choice><orig>ē</orig><reg>em</reg></choice>b. 8 <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> <lb/>hor 7. 20 <choice><orig>ant m</orig><reg>am</reg></choice>. 1606. <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">pater sine consensu</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the father without consent</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add><note place="chart"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">morb<choice><orig>ꝯ</orig><reg>us</reg></choice> <lb/>comitialis</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">falling sickness</seg><link type="is-translation-of" target="#foreign002 #translation002"/></note><note place="chart"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">convulsio.</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">convulsion</seg><link type="is-translation-of" target="#foreign003 #translation003"/></note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE70905</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-03-30">30 March 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="194">MS Ashmole 194, p. 404</idno>
+<altIdentifier type="fn_number"><idno n="Napier047">Napier, vol. 47</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0404" to="0404"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="b">
+<persName><roleName>Lady</roleName> <surname>Brete</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="rwallis">
+<persName><roleName>Mr</roleName> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1630-05-25" n="Tuesday"/></p>
+<p><time when="11:50:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#b"/>
+<cb:subject ref="#b" present="unclear"/>
+<cb:topic key="report"><person sameAs="#b"/></cb:topic>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#b"/></cb:topic>
+<cb:topic key="nausea"><person sameAs="#b"/></cb:topic>
+<cb:topic key="weak"><person sameAs="#b"/></cb:topic>
+<cb:topic key="bedridden"><person sameAs="#b"/></cb:topic>
+<cb:topic key="requestingTreatment"><person sameAs="#b"/></cb:topic>
+<cb:topic key="spleen"><person sameAs="#b"/></cb:topic>
+<cb:info type="urine"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-03-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-26">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-10-16">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciq0448.jpg" url="ciq0448.jpg" n="404"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>The lady Bret was let blood <lb/>&amp; tooke her vomyt <choice><orig><choice><sic><unclear cert="low" reason="hand">wch</unclear></sic><corr cert="low">w<hi rend="superscript">ch</hi></corr></choice></orig><reg cert="low">which</reg></choice> gave <lb/>her 3 vomyts &amp; 12 stooles <lb/>&amp; M<hi rend="superscript">r</hi> Wallys gave her <lb/>a sleeping pill &amp; after her <lb/>awaking is sick &amp; so also <lb/>after meate</p>
+<p><lb/>&amp; c<choice><orig>ā</orig><reg>an</reg></choice> not take any thing <lb/>but it cometh <choice><orig>v</orig><reg>u</reg></choice>p &amp; now <lb/>is so weake as she is forced <lb/>to keepe her bed Continually <lb/>may 25 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h 11. 50 <choice><orig><subst><del type="over">p</del><add place="over">a</add></subst>nt m</orig><reg>am</reg></choice> <lb/>1630.</p><anchor xml:id="questionEnd1"/>
+<milestone unit="treatment" spanTo="#treatmentEnd"/>
+<p><lb/>Clysters &amp; Cooling almond milkes<anchor xml:id="treatmentEnd"/> <milestone unit="urineInfo" spanTo="#urineInfoEnd"/><lb/>her <choice><orig>v</orig><reg>u</reg></choice>ryne thick &amp; red<anchor xml:id="urineInfoEnd"/> <milestone unit="question" spanTo="#questionEnd2"/><lb/>desyreth another playster <lb/>of <unclear reason="hand" cert="low">opicac<choice><orig>ū</orig><reg>um</reg></choice></unclear> for the splene</p><anchor xml:id="questionEnd2"/>
+</div>
+</body>
+</text>
+</TEI>

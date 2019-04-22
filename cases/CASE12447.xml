@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE12447</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 161r</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,6 +67,7 @@
 <p><date when="1599-05-13" n="Sunday"/></p>
 <p><time when="16:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -80,6 +85,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-06">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,9 +93,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The 13 of may &SundayN; h. 4: 15. p m. <lb/>1599. I hard <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the medic. I gave <lb/>to on Willis <foreign xml:lang="la">in s<choice><orig>&uover;</orig><reg>um</reg></choice>m<unclear cert="low" reason="faded"><choice><orig>&uover;</orig><reg>um</reg></choice></unclear> vit&aelig; disc<unclear cert="low" reason="faded">rin</unclear><choice><orig>c&oover;</orig><reg>cio</reg></choice> <lb/>iecit. quod <unclear cert="low" reason="faded">l<choice><orig>&iover;</orig><reg>in</reg></choice>i&jVowel;s</unclear> ren<choice><orig>&uover;</orig><reg>un</reg></choice>ciavit.</foreign></p>
+<p><lb/>The 13 of may <choice><orig>die ☉</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice> h. 4: 15. p m. <lb/>1599. I hard <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the medic. I gave <lb/>to on Willis <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">in s<choice><orig>ū</orig><reg>um</reg></choice>m<unclear cert="low" reason="faded"><choice><orig>ū</orig><reg>um</reg></choice></unclear> vitæ disc<unclear cert="low" reason="faded">rin</unclear><choice><orig>cō</orig><reg>cio</reg></choice> <lb/>iecit. quod <unclear cert="low" reason="faded">l<choice><orig>ī</orig><reg>in</reg></choice>i<choice><orig>j</orig><reg>i</reg></choice>s</unclear> ren<choice><orig>ū</orig><reg>un</reg></choice>ciavit.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">[put him in great peril of his life and cast him into torment as he said in his letter of reply?]</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

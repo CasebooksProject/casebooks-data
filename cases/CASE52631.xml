@@ -7,15 +7,20 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE52631</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-03-22">22 March 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-1</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -34,9 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -67,6 +75,7 @@
 <p><date when="1621-06-11" n="Monday"/></p>
 <p><time when="10:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#mm" evidence="internal"/>
@@ -82,17 +91,20 @@
 <change when="2016-03-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-03-25">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-07-18">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="aaw0039.jpg" url="aaw0039.jpg" n="11r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <p><lb/><del type="strikethrough">Goody</del></p>
-<p><lb/>Mary Morgan quærit <lb/><choice><orig><choice><sic>vtū</sic><corr>vtrū</corr></choice></orig><reg>utrum</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>stat Ducere in <lb/>marit<choice><orig>ū</orig><reg>um</reg></choice> e<choice><orig>ū</orig><reg>um</reg></choice> qui ambit <lb/>et <choice><orig></orig><reg>pro</reg></choice>cat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <add place="supralinear">ipsa quærit</add>. <foreign xml:lang="en"><choice><orig>I</orig><reg>J</reg></choice>une 11. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>h. 10. 20 <choice><orig>ant m</orig><reg>am</reg></choice> 162<choice><orig>i</orig><reg>1</reg></choice></foreign></p>
+<p><lb/>Mary Morgan quærit <lb/><choice><orig><choice><sic>vtū</sic><corr>vtrū</corr></choice></orig><reg>utrum</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>stat Ducere in <lb/>marit<choice><orig>ū</orig><reg>um</reg></choice> e<choice><orig>ū</orig><reg>um</reg></choice> qui ambit <lb/>et <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>cat<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <add place="supralinear">ipsa quærit</add>. <foreign xml:lang="en"><choice><orig>I</orig><reg>J</reg></choice>une 11. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>h. 10. 20 <choice><orig>ant m</orig><reg>am</reg></choice> 162<choice><orig>i</orig><reg>1</reg></choice></foreign></p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Mary Morgan asks whether it is better to take to husband the man who goes about and [is asked for?]; she asks herself Monday 11 June 1621 at 10.20am.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 </body>
 </text>
 </TEI>

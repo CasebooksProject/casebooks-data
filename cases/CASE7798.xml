@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE7798</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 161r</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -46,7 +56,7 @@
 <language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<catRef target="#horaryGeomantic"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -71,6 +81,7 @@
 <p><date when="1600-07-06" n="Sunday"/></p>
 <p><time when="15:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sb" evidence="internal"/>
@@ -78,9 +89,7 @@
 <cb:messenger ref="#rb"/>
 <cb:topic key="treasure"><person sameAs="#sb" resp="#mhawkins"/></cb:topic>
 <cb:judgment/>
-
 </cb:consultation>
-
 </settingDesc>
 </profileDesc>
 <revisionDesc>
@@ -91,6 +100,8 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-31">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,14 +109,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Ste&uConsonant;en Ballard <lb/><rs type="address" xml:id="address1">of the <choice><orig>&crossedp;</orig><reg>par</reg></choice>ishe of Ramsbery in <lb/>wiltshire</rs> of 47 yeares <foreign xml:lang="la">fecit <lb/><choice><sic>inquison<choice><orig>&eover;</orig><reg>em</reg></choice></sic><corr>inquisition<choice><orig>&eover;</orig><reg>em</reg></choice></corr></choice> <choice><orig>&crossedp;</orig><reg>per</reg></choice> Robart<choice><orig>&uover;</orig><reg>um</reg></choice> ballard <lb/>fili<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice>. &vVowel;trum sit thezaur<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> <lb/>in <rs type="address" sameAs="#address1">Chapple close in the <lb/><choice><orig>&crossedp;</orig><reg>par</reg></choice>ish of Ramsbery</rs> nowe in <lb/>the tenure of the abo&uConsonant;esaid <lb/>Steven. questo 1600 the <lb/>6 of &IConsonant;uli&jVowel; &Sunday; <choice><orig>pm&flourish;</orig><reg>pm</reg></choice> 20 <lb/>&past; 3.</p>
+<p><lb/>Ste<choice><orig>u</orig><reg>v</reg></choice>en Ballard <lb/><rs type="address" xml:id="address1" key="PLACE2179" resp="#mhawkins">of the <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ishe of Ramsbery in <lb/>wiltshire</rs> of 47 yeares <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">fecit <lb/><choice><sic>inquison<choice><orig>ē</orig><reg>em</reg></choice></sic><corr>inquisition<choice><orig>ē</orig><reg>em</reg></choice></corr></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> Robart<choice><orig>ū</orig><reg>um</reg></choice> ballard <lb/>fili<choice><orig>ū</orig><reg>um</reg></choice> su<choice><orig>ū</orig><reg>um</reg></choice>. <choice><orig>v</orig><reg>u</reg></choice>trum sit thezaur<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">made enquiry by his son Robert Ballard whether there is treasure</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>in <rs type="address" sameAs="#address1" key="PLACE2173" resp="#mhawkins">Chapple close in the <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ish of Ramsbery</rs> nowe in <lb/>the tenure of the abo<choice><orig>u</orig><reg>v</reg></choice>esaid <lb/>Steven. questo 1600 the <lb/>6 of <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <choice><orig>pm’</orig><reg>pm</reg></choice> 20 <lb/><choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 3.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div><cb xml:id="colB" n="b"/>
-<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> thezauro in <rs type="address" sameAs="#address1">chapple clos</rs> <lb/>supradic ballard</foreign></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> thezauro in <rs type="address" sameAs="#address1" key="PLACE2173" resp="#mhawkins">chapple clos</rs> <lb/>supradic ballard</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">the aforesaid Ballard for the treasure in Chapel Close</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
-&geoChart;
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE79901</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-23">23 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note resp="#rralley" type="layout">The question for this entry is written entirely inside the chart.</note></notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">p. 75/uS, p. 77/uS, p. 78/uS, p. 79/uS</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="174">MS Ashmole 174, p. 75, pp. 77-79</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0075" to="0075"/>
+<locus from="0077" to="0079"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="kd">
+<persName><roleName evidence="internal">Sir</roleName> <forename evidence="external">Kenelm</forename> <surname evidence="external">Digby</surname> <roleName evidence="internal">Knight</roleName></persName>
+<sex value="1">M</sex>
+<birth><date when="1603-07-10"/><time when="05:30:00"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1629-04-26" notAfter="1634-04-01" evidence="inferred" cert="medium"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#srnapier #rnapier"/>
+<cb:consultant ref="#srnapier #rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#kd"/>
+<cb:subject ref="#kd" present="unclear"/>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#kd"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-27">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-09">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-12-18">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acg0085.jpg" url="acg0085.jpg" n="75"/>
+<graphic xml:id="acg0087.jpg" url="acg0087.jpg" n="77"/>
+<graphic xml:id="acg0088.jpg" url="acg0088.jpg" n="78"/>
+<graphic xml:id="acg0089.jpg" url="acg0089.jpg" n="79"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>1603. <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> iuxta comput<choice><orig>ū</orig><reg>um</reg></choice> <lb/>vet. Anglic.</p>
+<table>
+<row><cell>D.</cell> <cell>H.</cell> <cell>M.</cell> <cell>″</cell></row>
+<row><cell>10.</cell> <cell>17.</cell> <cell>30.</cell> <cell>4:</cell> <cell><choice><orig>Post <lb/>Merid.</orig><reg>pm</reg></choice></cell></row>
+</table>
+<p><lb/>Præc. ☌ lumin. in par. <lb/>15. 49. ♋.</p>
+<p><lb/>Altitudo Poli gr. 52.</p>
+<p><lb/>Longitudo gr. 22. 30.</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>July 1603 according to the old English computation</p>
+<table>
+<row><cell>D[ay]</cell> <cell>H[our]</cell> <cell>M[inutes]</cell> <cell>″</cell></row>
+<row><cell>10.</cell> <cell>17.</cell> <cell>30.</cell> <cell>4:</cell> <cell>pm</cell></row>
+</table>
+<p>Conjunction of the luminaries [preceding?] Cancer [in part?] 15.49.</p>
+<p>Under the polar altitude 52 degrees.</p>
+<p>Longitude 22 degrees 30.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+
+<pb xml:id="p77" n="77"/>
+<pb xml:id="p78" n="78"/>
+<pb xml:id="p79" n="79"/>
+</body>
+</text>
+</TEI>

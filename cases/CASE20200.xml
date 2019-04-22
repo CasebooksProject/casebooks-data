@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE20200</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 259r</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,11 +67,13 @@
 <p><date when="1601-01-06" n="Wednesday"/></p>
 <p><time when="14:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ap" evidence="internal"/>
 <cb:subject ref="#ap" present="no"/>
 <cb:topic key="report"><person sameAs="#ap"/></cb:topic>
+<cb:topic key="medicalCounsel"><person sameAs="#ap"/></cb:topic>
 <cb:info type="event" subtype="previousConsultation"/>
 </cb:consultation>
 </settingDesc>
@@ -79,6 +85,7 @@
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,9 +93,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Alce Parker <rs type="address" xml:id="address1">of Woulverton</rs> <lb/>sent to me for my counsell <lb/>&IConsonant;an 6 &Wednesday; hor 2. 20 p m <lb/>1602. her stib &amp; other <lb/>physick never wrought.</p>
+<p><lb/>Alce Parker <rs type="address" xml:id="address1" key="PLACE869" resp="#mhawkins">of Woulverton</rs> <lb/>sent to me for my counsell <lb/><choice><orig>I</orig><reg>J</reg></choice>an 6 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> hor 2. 20 p m <lb/>1602. her stib &amp; other <lb/>physick never wrought.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

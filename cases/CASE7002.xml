@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE7002</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="236">MS Ashmole 236, f. 58r</idno>
-&Forman005;
+<altIdentifier type="fn_number"><idno n="Forman005">Forman, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -69,6 +75,7 @@
 <p><date when="1600-03-25" n="Tuesday"/></p>
 <p><time when="08:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:questionNumber n="2"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
@@ -88,6 +95,7 @@
 <change when="2011-03-15">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-31">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,9 +103,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><sic>nn<hi rend="superscript">r</hi></sic><corr>m<hi rend="superscript">r</hi></corr></choice> Wood for An his <lb/>mother totching hir estat of body. <lb/><foreign xml:lang="la">Et &vVowel;trum vi&uConsonant;et aut moritur</foreign> <lb/>1600 the 25 march &Tuesday; <choice><orig>An&flourish; <lb/>merid</orig><reg>am</reg></choice> at 50 &past; 8. <foreign xml:lang="la">2<hi rend="superscript">a</hi> questo</foreign>&slash;</p>
+<p><lb/><choice><sic>nn<hi rend="superscript">r</hi></sic><corr>m<hi rend="superscript">r</hi></corr></choice> Wood for An his <lb/>mother totching hir estat of body. <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Et <choice><orig>v</orig><reg>u</reg></choice>trum vi<choice><orig>u</orig><reg>v</reg></choice>et aut moritur</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">And whether she will live or die</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>1600 the 25 march <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <choice><orig>An’ <lb/>merid</orig><reg>am</reg></choice> at 50 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 8. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">2<hi rend="superscript">a</hi> questo</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">2d question</seg><link type="is-translation-of" target="#foreign002 #translation002"/>/</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

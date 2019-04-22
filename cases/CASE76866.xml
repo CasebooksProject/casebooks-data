@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE76866</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="dating">In the text, the date of Mrs Margaret Tubeuffe’s birth is given according to both the Gregorian calendar and the Julian calendar.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL, uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 8</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0008" to="0008"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="mt">
+<persName><roleName>Mrs</roleName> <forename>Margaret</forename> <surname>Tubeuffe</surname></persName>
+<sex value="2">F</sex>
+<birth><date when="1612-11-16"/><time when="09:00:00"/><placeName sameAs="#place1"/></birth>
+<trait type="regionalIdentity"><desc>Frenchwoman</desc></trait>
+</person>
+<person xml:id="person1">
+<persName><roleName>Countess of Bridgewater</roleName></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="servant" active="#mt" passive="#person1"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-04-05" n="Friday" evidence="inferred"/></p>
+<p><time notBefore="14:30:00" notAfter="15:45:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#mt"/>
+<cb:subject ref="#mt" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#mt"/></cb:topic>
+<cb:topic key="rumours" evidence="internal"><person sameAs="#mt"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-01-09">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-12-16">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-03-17">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-27">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0031.jpg" url="clq0031.jpg" n="8"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Margaret Tubeuffe a <lb/>french wom<choice><orig>ā</orig><reg>an</reg></choice> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> nov<choice><orig>ē</orig><reg>em</reg></choice>b 26 <lb/><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 9 <choice><orig>ant m</orig><reg>am</reg></choice> in <placeName xml:id="place1" key="PLACE2207">france</placeName> <add place="marginRight"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">sub latitud 48</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">under the latitude 48</seg><link type="is-translation-of" target="#foreign002 #translation002"/></add> <lb/>1612 <add place="marginLeft">serv to the Comtes <lb/>of Bridgwater <lb/>2. y.</add> <add place="infralinear"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">novo stilo</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">in the new style</seg><link type="is-translation-of" target="#foreign003 #translation003"/> <lb/>with <choice><orig>v</orig><reg>u</reg></choice>s nov<choice><orig>ē</orig><reg>em</reg></choice>b 16 h 9 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1612</add></p><anchor xml:id="questionEnd"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="judgment" spanTo="#judgmentEnd"/>
+<p><lb/>emrods <lb/>bleeding <lb/>whit<choice><orig>ꝭ</orig><reg>es</reg></choice> <lb/>false sclanders</p><anchor xml:id="judgmentEnd"/>
+</div>
+
+<cb xml:id="colB" n="b"/>
+</body>
+</text>
+</TEI>

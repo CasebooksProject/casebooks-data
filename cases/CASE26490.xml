@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26490</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-08">08 August 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="204">MS Ashmole 204, f. 203r</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers002">Various Papers, vol. 2</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0203r" to="0203r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="srnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <genName>the nephew</genName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f">
+<persName><roleName>Lady</roleName> <forename>Frances</forename></persName>
+<sex value="2">F</sex>
+<age value="18">18</age>
+<birth><date when="1623-10-05" evidence="extrapolated"/><time when="18:00:00"/></birth>
+</person>
+<person xml:id="a">
+<persName><name>A</name></persName>
+<sex value="1" evidence="conjecture" cert="medium">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1642-04-09" n="Saturday"/></p>
+<p><time when="11:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#srnapier"/>
+<cb:consultant ref="#srnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#f"/>
+<cb:subject ref="#f" present="unclear"/>
+<cb:object ref="#a"/>
+<cb:topic key="maritalProspects" cert="medium"><person sameAs="#f"/><person sameAs="#a"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-08">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-22">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-07">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-16">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-03-15">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-05-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aco0472.jpg" url="aco0472.jpg" n="203r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>Q<hi rend="superscript">r</hi></orig><reg>Quæritur</reg></choice> ab Heroina <choice><orig>D<hi rend="overline">na</hi></orig><reg>Domina</reg></choice> Francis <lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> obtinebit. A.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">It is asked by the noble Lady Frances whether she will obtain A.</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>April. 9. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice>. h. 11. A. M. 1642. <add place="marginLeft"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">Nata fuit</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">She was born</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>that day the king returned <lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> <placeName key="PLACE2237" resp="#mhawkins">Spayne</placeName> being Michaelmas <lb/>6. p. m.</add> <add place="marginLeft">19. y. michaelmas next.</add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

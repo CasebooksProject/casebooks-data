@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE75416</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="416">MS Ashmole 416, p. 416</idno>
+<altIdentifier type="fn_number"><idno n="Napier051">Napier, vol. 51</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0416" to="0416"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <forename>Magdalen</forename> <surname>Egerton</surname></persName>
+<sex value="2">F</sex>
+<age value="15">15</age>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-09-09" n="Sunday"/></p>
+<p><time when="08:25:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#m"/>
+<cb:subject ref="#m" present="unclear"/>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#m"/></cb:topic>
+<cb:topic key="problemCause"><person sameAs="#m"/></cb:topic>
+<cb:topic key="eyes"><person sameAs="#m"/></cb:topic>
+<cb:topic key="eyesight"><person sameAs="#m"/></cb:topic>
+<cb:topic key="scrofula"><person sameAs="#m"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-06">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-31">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2017-05-25">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-24">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acy0460.jpg" url="acy0460.jpg" n="416"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> de causa <choice><orig><choice><sic>morboū</sic><corr>morborū</corr></choice></orig><reg>morborum</reg></choice> <lb/>heroine <choice><orig>D<hi rend="overline">næ</hi></orig><reg>Dominæ</reg></choice> magdalenæ <add place="supralinear">Bridgwater Edgerton</add></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asking the cause of the diseases of the noble Lady Magdalen Bridgwater Egerton</seg><link type="is-translation-of" target="#foreign001 #translation001"/> 15 y Sept 9 <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> hora 8. 25 <choice><orig>ant m</orig><reg>am</reg></choice>. 1632. <add place="infralinear">eys darke</add><note place="chart">Struma</note></p>
+<anchor xml:id="questionEnd"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="judgment" spanTo="#judgmentEnd"/>
+<p><lb/><add place="marginLeft"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">In novilunio</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">In the new moon</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>&amp; first quarter./</add> <add place="supralinear">melancholick ill</add> 6 y troubled hath had <lb/>Issues in her neck <lb/>two <subst><del type="over"><gap reason="del" extent="2" unit="chars"/></del><add place="over">A</add></subst>nd 2 in her <lb/>arms &amp; two nowe <lb/>in boath feete <lb/>hath bene let blood <lb/><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">b</add></subst>oath arme &amp; feete <lb/>3 or 4 tyms. <lb/>It came after the <lb/>smale pox. <lb/>a full pletherick body <add place="marginLeft">hath had <lb/>purges <lb/>pils dyet <lb/>drinks <lb/>&amp; An Angle <lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> king <choice><orig>I</orig><reg>J</reg></choice>ams <lb/>&amp; also this <lb/>king 
+<add place="infralinear">her face swelleth a litle <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>in <lb/>these 2 <lb/>months <lb/>her swelling</add></add> <add place="marginLeft">neaver had her terms</add> <add place="marginLeft">hath bene let blood <lb/>twice in her armes &amp; <lb/>twice in her feete <lb/>&amp; twice in her <lb/>hands <lb/>&amp; leaches at her lips &amp; thighs <lb/>&amp; fundament</add></p>
+<p><lb/>It is of ☉ in ♍ 26. 45. <lb/>in tripl <del type="strikethrough">♂</del> et ter ♂ et fac ☿<note place="marginLeft"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">☌ ☉ ♀ ap. <lb/>☍ ♄ ♃ ap. <lb/>☾ ☊ ap</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">conjunction of the sun and Venus applying to the opposition of Saturn and Jupiter applying to the moon and dragon’s head applying</seg><link type="is-translation-of" target="#foreign003 #translation003"/></note></p>
+
+<anchor xml:id="judgmentEnd"/>
+
+
+</div>
+</body>
+</text>
+</TEI>

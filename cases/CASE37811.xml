@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE37811</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-01-09">09 January 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="200">MS Ashmole 200, f. 53r</idno>
-&Napier020;
+<altIdentifier type="fn_number"><idno n="Napier020">Napier, vol. 20</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#gjames">Gerence James</handNote>
@@ -95,13 +103,15 @@
 <p><date when="1611-04-04" n="Thursday"/></p>
 <p><time when="11:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#gjames"/>
 <cb:consultant ref="#gjames"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wf #mf #lf #anon #eb"/>
 <cb:subject ref="#wf #mf #lf #lb #anon #eb" present="unclear"/>
 <cb:topic key="plague"><person sameAs="#wf"/><person sameAs="#mf"/><person sameAs="#lf"/><person sameAs="#lb"/></cb:topic>
+<cb:topic key="preventative"><person sameAs="#wf"/><person sameAs="#mf"/><person sameAs="#lf"/><person sameAs="#lb"/></cb:topic>
 <cb:topic key="plague" evidence="conjecture" cert="high"><person sameAs="#anon"/><person sameAs="#eb"/></cb:topic>
-</cb:consultation>
+<cb:topic key="preventative" evidence="conjecture" cert="high"><person sameAs="#anon"/><person sameAs="#eb"/></cb:topic></cb:consultation>
 </settingDesc>
 </profileDesc>
 <revisionDesc>
@@ -110,6 +120,8 @@
 <change when="2016-01-15">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -117,12 +129,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>wi<hi rend="overline">llm</hi></orig><reg>william</reg></choice> &ff;reeman <rs type="address" xml:id="address1">of S<hi rend="superscript">t</hi> eedes</rs> <lb/>44 y Apr: 4 <choice><orig><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> ho 11. 15 a m <lb/>1611.</p>
-<p><lb/><foreign xml:lang="la">Ad pr&aelig;caution<choice><orig>&eover;</orig><reg>em</reg></choice> pestis</foreign></p>
-<p><lb/>Mould &ff;reeman 60 y. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> eod<choice><orig>&eover;</orig><reg>em</reg></choice></foreign></p>
-<p><lb/>Lettice freeman 11 y <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> eod<choice><orig>&eover;</orig><reg>em</reg></choice></foreign></p>
-<p><lb/>Lowre Byrt 7 y. <foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> eod<choice><orig>&eover;</orig><reg>em</reg></choice></foreign></p>
-<p><lb/>Susan Byrt&pluralLoop; maid 16. y.</p>
+<p><lb/><choice><orig>wi<hi rend="overline">llm</hi></orig><reg>william</reg></choice> Freeman <rs type="address" xml:id="address1" key="PLACE1279" resp="#mhawkins">of S<hi rend="superscript">t</hi> eedes</rs> <lb/>44 y Apr: 4 <choice><orig><subst><del type="over"><gap reason="del" unit="chars" extent="1"/></del><add place="over">♃</add></subst></orig><reg type="gloss">Thursday</reg></choice> ho 11. 15 a m <lb/>1611.</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">Ad præcaution<choice><orig>ē</orig><reg>em</reg></choice> pestis</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">For something to prevent the plague</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+<p><lb/>Mould Freeman 60 y. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> eod<choice><orig>ē</orig><reg>em</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">for the same</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
+<p><lb/>Lettice freeman 11 y <foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> eod<choice><orig>ē</orig><reg>em</reg></choice></foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">for the same</seg><link type="is-translation-of" target="#foreign003 #translation003"/></p>
+<p><lb/>Lowre Byrt 7 y. <foreign xml:lang="la" xml:id="foreign004" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> eod<choice><orig>ē</orig><reg>em</reg></choice></foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">for the same</seg><link type="is-translation-of" target="#foreign004 #translation004"/></p>
+<p><lb/>Susan Byrt<choice><orig>ꝭ</orig><reg>es</reg></choice> maid 16. y.</p>
 <p><lb/>Elsabeth Byrt 35 y.</p>
 </div>
 </body>

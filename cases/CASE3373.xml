@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE3373</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="195">MS Ashmole 195, f. 23r</idno>
-&Forman003;
+<altIdentifier type="fn_number"><idno n="Forman003">Forman, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -69,6 +75,7 @@
 <p><date when="1598-03-28" n="Tuesday"/></p>
 <p><time when="12:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ep" evidence="internal" present="unclear"/>
@@ -92,9 +99,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/>Thomas Person and <lb/>Elizab. <foreign xml:lang="la">&VVowel;trum obtinebit</foreign> be<lb/>shop 1598 the 28 of march <lb/>&Tuesday; &inflmfl; at 10 &past; 12 the wom<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>mad the queston <foreign xml:lang="la">sine <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>sensu <lb/>marito</foreign>&slash;</p>
+ <p><lb/>Thomas Person and <lb/>Elizab. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>V</orig><reg>U</reg></choice>trum obtinebit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether he will obtain</seg><link type="is-translation-of" target="#foreign001 #translation001"/> be<lb/>shop 1598 the 28 of march <lb/><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> <choice><orig>in’ m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> at 10 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 12 the wom<choice><orig>ā</orig><reg>an</reg></choice> <lb/>mad the queston <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">sine <choice><orig><hi rend="overline">co</hi></orig><reg>con</reg></choice>sensu <lb/>marito</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">without the husband’s consent</seg><link type="is-translation-of" target="#foreign002 #translation002"/>/</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

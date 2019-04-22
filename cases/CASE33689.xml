@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE33689</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 148r</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-&wholeEntry;
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -66,6 +70,7 @@
 <p><date when="1608-07-05" n="Monday"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="unknown" ref="#place1"/>
@@ -83,6 +88,7 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-17">Sampling declaration added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,9 +96,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>I met m<hi rend="superscript">r</hi> H<choice><orig>&uover;</orig><reg>um</reg></choice>fry Robynson at <lb/><placeName xml:id="place1">Stony stratford</placeName> &amp; he told me <lb/><choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> kather. Robynson pyneth <lb/>&amp; c<choice><orig>&oover;</orig><reg>on</reg></choice>sumeth <choice><sic>aftr</sic><corr>after</corr></choice> my letting of <lb/>her blood &amp; physick. &IConsonant;uly 5 <lb/>h. 10. &antm; 1608</p>
+<p><lb/>I met m<hi rend="superscript">r</hi> H<choice><orig>ū</orig><reg>um</reg></choice>fry Robynson at <lb/><placeName xml:id="place1" key="PLACE825" resp="#mhawkins">Stony stratford</placeName> &amp; he told me <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> kather. Robynson pyneth <lb/>&amp; c<choice><orig>ō</orig><reg>on</reg></choice>sumeth <choice><sic>aftr</sic><corr>after</corr></choice> my letting of <lb/>her blood &amp; physick. <choice><orig>I</orig><reg>J</reg></choice>uly 5 <lb/>h. 10. <choice><orig>ant m</orig><reg>am</reg></choice> 1608</p>
 </div>
-&astroChartPartial;
+<figure type="astro" subtype="astroChartPartial"/>
 </body>
 </text>
 </TEI>

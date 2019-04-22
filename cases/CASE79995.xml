@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE79995</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-06-30">30 June 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="240">MS Ashmole 240, f. 79r</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers003">Various Papers, vol. 3</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0079r" to="0079r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#wbredon">William Bredon</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="wbredon">
+<persName><forename>William</forename> <surname>Bredon</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1">
+<persName><roleName>Duke of Buckingham</roleName></persName>
+<sex value="1">M</sex>
+<birth><date when="1592-08-28" xml:id="date1" exclude="#date2"/><date when="1593-08-28" xml:id="date2" exclude="#date1"/><time when="04:45:00"/></birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore="1623-11-07" notAfter="1628-08-23" cert="medium"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#wbredon"/>
+<cb:consultant ref="#wbredon"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="no"/>
+<cb:subject ref="#person1" present="no"/>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#person1"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2017-02-13">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-06-29">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-06-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-07-03">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-03-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change><change when="2019-04-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="biy0167.jpg" url="biy0167.jpg" n="79r"/>
+</facsimile>
+<text>
+<body>
+<figure type="astro" subtype="astroChart"/>
+<div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Natus est <placeName key="PLACE612" resp="#mhawkins">Buckinghamiensis</placeName> Dux. 28. Augusti Ho: 16. M. 45. <lb/>Ascensio ob. Horoscopi respondet 15.<hi rend="superscript">g</hi> 0 Virginis</p>
+<p><lb/>Directio horoscopi pervenit ad locum ♄. tempore deliqui<choice><orig>j</orig><reg>i</reg></choice> lunaris <lb/>10<hi rend="superscript">o</hi> <choice><orig>I</orig><reg>J</reg></choice>anuari<choice><orig>j</orig><reg>i</reg></choice> <choice><orig>v</orig><reg>u</reg></choice>ltimo. quem locum ♄ in transitu obtinuit quo <lb/>tempore interfectus est. <add place="inline"><foreign xml:lang="en">1592. or 1593</foreign></add></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>The Duke of Buckingham was born on 28 August at 16 hours and 45 minutes after noon. For the ascension of the horoscope answers to 15. [letter not understood] 0. of Virgo.</p>
+<p>The direction of the horoscope reaches the place of Saturn at the time of the lunar eclipse on 10 January last, which place of Saturn in transit showed at what time he was killed. 1592 or 1593.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+</body>
+</text>
+</TEI>

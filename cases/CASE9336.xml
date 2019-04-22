@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE9336</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="411">MS Ashmole 411, f. 89v</idno>
-&Forman006;
+<altIdentifier type="fn_number"><idno n="Forman006">Forman, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -59,7 +65,7 @@
 <sex value="1">M</sex>
 <age value="18">18</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="b">
 <persName><roleName>Mr</roleName> <surname>Brackenbury</surname></persName>
@@ -73,6 +79,7 @@
 <p><date when="1601-05-25" n="Monday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:questionNumber n="2"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
@@ -92,6 +99,8 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-01">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +108,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;hon hale of 18 yers <lb/>m<hi rend="superscript">r</hi> brockkenburyes man <rs type="address" xml:id="address1">in <lb/>chepsyd</rs> 25 may &Monday; p m at <lb/>2 Diz <foreign xml:lang="la">2<hi rend="superscript">a</hi> questo</foreign>&slash;</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>hon hale of 18 yers <lb/>m<hi rend="superscript">r</hi> brockkenburyes man <rs type="address" xml:id="address1" key="PLACE73" resp="#mhawkins">in <lb/>chepsyd</rs> 25 may <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> p m at <lb/>2 Diz <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">2<hi rend="superscript">a</hi> questo</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">2d question</seg><link type="is-translation-of" target="#foreign001 #translation001"/>/</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

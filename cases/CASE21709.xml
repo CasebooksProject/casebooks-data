@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE21709</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-11-23">23 November 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 179v/uR, f. 180r/uL, f. 180r/uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="415">MS Ashmole 415, ff. 179v-180r</idno>
-&Napier009;
+<altIdentifier type="fn_number"><idno n="Napier009">Napier, vol. 9</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -64,6 +68,7 @@
 <p><date when="1604-11-12" n="Monday"/></p>
 <p><time when="15:38:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l" evidence="internal"/>
@@ -80,6 +85,9 @@
 <change when="2014-09-30">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-09-04">Translation revised by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,13 +96,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Lane <del type="strikethrough">t</del> <lb/><foreign xml:lang="la">qu&aelig;rit &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>p&loopedr;</orig><reg>pre</reg></choice>stat <lb/>nubere <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> non <lb/>deus nos dirigat <lb/>consili&jVowel;s</foreign> nov<choice><orig>&eover;</orig><reg>em</reg></choice>b 12 <lb/>&Monday; hor 3. 30 p m <lb/>1604</p>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Lane <del type="strikethrough">t</del> <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig>p<hi rend="superscript">r</hi></orig><reg>pre</reg></choice>stat <lb/>nubere <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> non <lb/>deus nos dirigat <lb/>consili<choice><orig>j</orig><reg>i</reg></choice>s</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks whether it is better to marry or not: God direct us in our counsels</seg><link type="is-translation-of" target="#foreign001 #translation001"/> nov<choice><orig>ē</orig><reg>em</reg></choice>b 12 <lb/><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> hor 3. 30 p m <lb/>1604</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div><pb xml:id="f180r" n="180r" facs="#acb0379.jpg"/>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Lane <add place="supralinear"><rs type="address" xml:id="address1">of Horton</rs></add> <foreign xml:lang="la">qu&aelig;rit <lb/>an <del type="strikethrough">st</del> p<choice><orig>&loopedr;</orig><reg>re</reg></choice>stat ei nubere <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice></foreign> novemb. 12 &Monday; <lb/>hor. 3. 38 p m 1604.</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Lane <add place="supralinear"><rs type="address" xml:id="address1" key="PLACE1666" resp="#mhawkins">of Horton</rs></add> <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">quærit <lb/>an <del type="strikethrough">st</del> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>stat ei nubere <lb/><choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">asks whether it is better for her to marry or not</seg><link type="is-translation-of" target="#foreign002 #translation002"/> novemb. 12 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>hor. 3. 38 p m 1604.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>
 </body>
 </text>

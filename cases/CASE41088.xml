@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE41088</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-02-24">24 February 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="199">MS Ashmole 199, f. 76r</idno>
-&Napier022;
+<altIdentifier type="fn_number"><idno n="Napier022">Napier, vol. 22</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -74,6 +80,7 @@
 <p><date when="1613-03-29" n="Monday"/></p>
 <p><time when="14:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="no"/>
@@ -91,6 +98,8 @@
 <change when="2016-03-15">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-05">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,9 +107,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ane wickens <rs type="address" xml:id="address1">of Stoke <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">B</add></subst>ruen</rs> <lb/>2 y. at Aug <foreign xml:lang="la">nata</foreign> Aug. 2. <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice>. <lb/>hor 8 or 9 in <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> morning. 1611. <lb/>sent to me march 29. &Monday;. h. 2. <lb/>20 p m. 1613. <add place="marginRight">tooke it last night <lb/>about mydnight <lb/>was weaned <lb/>3 quarters <lb/>of a yere <lb/>since</add></p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ane wickens <rs type="address" xml:id="address1" key="PLACE1765" resp="#mhawkins">of Stoke <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">B</add></subst>ruen</rs> <lb/>2 y. at Aug <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> Aug. 2. <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice>. <lb/>hor 8 or 9 in <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> morning. 1611. <lb/>sent to me march 29. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice>. h. 2. <lb/>20 p m. 1613. <add place="marginRight">tooke it last night <lb/>about mydnight <lb/>was weaned <lb/>3 quarters <lb/>of a yere <lb/>since</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

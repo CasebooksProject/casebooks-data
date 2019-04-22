@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11816</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 55v</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,6 +76,7 @@
 <p><date when="1598-11-21" n="Tuesday"/></p>
 <p><time when="11:36:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -96,9 +101,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>novemb. 21. &TuesdayN; h. 11. 3<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">6</add></subst> <lb/><choice><sic>38.</sic><corr type="noText"/></choice> m. &Mres; &vVowel;&uConsonant;edales mead <lb/>came to &iConsonant;ustify her self. <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>shee was not <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> Childe <lb/>&amp; her <choice><orig>M<hi rend="superscript">r</hi></orig><reg>Master</reg></choice> with her &amp; to <lb/>chardg me <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> my speach. <lb/>Novemb. 21. &TuesdayN; h. 11 <lb/><subst><del type="over">40</del><add place="over">36</add></subst>. mi. 1598.</p>
+<p><lb/>novemb. 21. <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 11. 3<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">6</add></subst> <lb/><choice><sic>38.</sic><corr type="noText"/></choice> m. <choice><orig>M<hi rend="superscript">res</hi></orig><reg>Mrs</reg></choice> <choice><orig>v</orig><reg>u</reg></choice><choice><orig>u</orig><reg>v</reg></choice>edales mead <lb/>came to <choice><orig>i</orig><reg>j</reg></choice>ustify her self. <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>shee was not <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> Childe <lb/>&amp; her <choice><orig>M<hi rend="superscript">r</hi></orig><reg>Master</reg></choice> with her &amp; to <lb/>chardg me <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> my speach. <lb/>Novemb. 21. <choice><orig>die ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> h. 11 <lb/><subst><del type="over">40</del><add place="over">36</add></subst>. mi. 1598.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

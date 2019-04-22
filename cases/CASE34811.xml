@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE34811</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR, bR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 304r</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,6 +72,7 @@
 <p><date when="1609-02-01" n="Wednesday" evidence="external"/></p>
 <p><time when="13:40:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#person1"/>
@@ -77,18 +87,25 @@
 <change when="2015-04-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-13">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="aap0611.jpg" url="aap0611.jpg" n="304r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><foreign xml:lang="en">look <choice><sic>into t</sic><corr type="delText"/></choice> in the table</foreign> <lb/>de revolutionib<choice><orig>&uscon;</orig><reg>us</reg></choice> <foreign xml:lang="en">there I <lb/>find for 16 y</foreign> in anno bis <lb/>septili <foreign xml:lang="en">on hour hor 1. 42 m<choice><sic>or</sic><corr type="delText" cert="medium"/></choice><add place="supralinear">i</add> <lb/>56. seconds</foreign> subtrahenda Hanc <lb/><del type="strikethrough">hor&aover;</del> s<choice><orig>&uover;</orig><reg>um</reg></choice>m<choice><orig>&aover;</orig><reg>am</reg></choice> subtraho ab initio <lb/>temporis Dati vid<choice><orig>&etTironian;</orig><reg>et</reg></choice> a nulla <lb/>hora Hor. 0. m 57. p m. et <lb/>residu<choice><orig>&uover;</orig><reg>um</reg></choice> erit tempus revolutionis <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice> 1608.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><foreign xml:lang="en">look <choice><sic>into t</sic><corr type="delText"/></choice> in the table</foreign> <lb/>de revolutionib<choice><orig>ꝯ</orig><reg>us</reg></choice> <foreign xml:lang="en">there I <lb/>find for 16 y</foreign> in anno bis <lb/>septili <foreign xml:lang="en">on hour hor 1. 42 m<choice><sic>or</sic><corr type="delText" cert="medium"/></choice><add place="supralinear">i</add> <lb/>56. seconds</foreign> subtrahenda Hanc <lb/><del type="strikethrough">horā</del> s<choice><orig>ū</orig><reg>um</reg></choice>m<choice><orig>ā</orig><reg>am</reg></choice> subtraho ab initio <lb/>temporis Dati vid<choice><orig>⁊</orig><reg>et</reg></choice> a nulla <lb/>hora Hor. 0. m 57. p m. et <lb/>residu<choice><orig>ū</orig><reg>um</reg></choice> erit tempus revolutionis <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> 1608.</p>
 <p><lb/><foreign xml:lang="en">1. out of 24 houres. <lb/>remayne 23.</foreign></p>
-<p><lb/><choice><orig>&crossedp;</orig><reg>per</reg></choice>venit igit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>revolution ad <lb/>March. 13. <lb/>h. 23. 14. <add place="supralinear">m</add> 4 <add place="supralinear">sec.</add> <lb/><choice><orig>p meridiem</orig><reg>pm</reg></choice></p>
+<p><lb/><choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>venit igit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <lb/>revolution ad <lb/>March. 13. <lb/>h. 23. 14. <add place="supralinear">m</add> 4 <add place="supralinear">sec.</add> <lb/><choice><orig>p meridiem</orig><reg>pm</reg></choice></p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Look into the table of revolutions: there I find for 16 years [in the second seven year period?] one hour 42 minutes and 56 seconds to be subtracted. I subtract this total from the beginning of the time [and] date, to wit zero hours 57 minutes pm and the remainder will be the time of the revolution for the year 1608.</p>
+<p>1. Out of 24 hours 23 remain.</p>
+<p>The revolution therefore comes to 23 hours 14 minutes and 4 seconds after noon on 13 March.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

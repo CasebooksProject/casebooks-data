@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE60701</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -80,13 +89,14 @@
 <p><date when="1625-06-23" n="Thursday"/></p>
 <p><time when="20:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m1" evidence="internal"/>
 <cb:subject ref="#m1 #m2" present="no"/>
 <cb:item type="letter" evidence="inferred"/>
 <cb:topic key="financeAndProperty"><person sameAs="#m1"/><person sameAs="#m2"/></cb:topic>
-<cb:topic key="fortune"><person sameAs="#m1"/><person sameAs="#m2"/></cb:topic>
+<cb:topic key="generalFuture"><person sameAs="#m1"/><person sameAs="#m2"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -96,7 +106,8 @@
 <change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-07-29">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-02-28">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-13">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,14 +115,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Cosen Magdalen writeth <lb/>to know wheather they <lb/>shall live <choice><orig></orig><reg>pro</reg></choice>sperouslye <lb/>for her father hath made <lb/>the match &amp; will give <lb/><foreign xml:lang="la"><choice><orig>2000<hi rend="superscript">l</hi></orig><reg>2000 libra</reg></choice></foreign> portion <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <choice><orig>I</orig><reg>J</reg></choice>une <lb/>23. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">♃</add></subst></orig><reg type="gloss">Thursday</reg></choice>. h. 8 30 p m. 1625. <add place="infralinear"><choice><sic>M<hi rend="superscript">r</hi></sic><corr type="delText"/></choice> <del type="strikethrough">myston</del> M<hi rend="superscript">r</hi> mytton. her <lb/>sutor</add> <add place="infralinear"><choice><orig>I</orig><reg>J</reg></choice>une 20 he <lb/>came <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Th. mydleton to <placeName><choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> house</placeName></add></p>
+<p><lb/>Cosen Magdalen writeth <lb/>to know wheather they <lb/>shall live <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>sperouslye <lb/>for her father hath made <lb/>the match &amp; will give <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>2000<hi rend="superscript">l</hi></orig><reg>2000 libra</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">2000 pounds</seg><link type="is-translation-of" target="#foreign001 #translation001"/> portion <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her <choice><orig>I</orig><reg>J</reg></choice>une <lb/>23. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">♃</add></subst></orig><reg type="gloss">Thursday</reg></choice>. h. 8 30 p m. 1625. <add place="infralinear"><choice><sic>M<hi rend="superscript">r</hi></sic><corr type="delText"/></choice> <del type="strikethrough">myston</del> M<hi rend="superscript">r</hi> mytton. her <lb/>sutor</add> <add place="infralinear"><choice><orig>I</orig><reg>J</reg></choice>une 20 he <lb/>came <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Th. mydleton to <placeName><choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> house</placeName></add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 <div>
 <p><lb/>M<hi rend="superscript">r</hi> Mytton came</p>
 
-<p><lb/>the mariage ratifyed <choice><orig><choice><sic>Iue</sic><corr>Iune</corr></choice></orig><reg>June</reg></choice> 13 <foreign xml:lang="la">☾ sep ab <lb/>♀ vac ap ☍ ♄.</foreign></p>
-<p><lb/>M<hi rend="superscript">r</hi> Mitton came to <placeName>Luton</placeName> <choice><orig>I</orig><reg>J</reg></choice>une <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 20 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 11.</p>
+<p><lb/>the mariage ratifyed <choice><orig><choice><sic>Iue</sic><corr>Iune</corr></choice></orig><reg>June</reg></choice> 13 <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">☾ sep ab <lb/>♀ vac ap ☍ ♄.</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">the moon separating from Venus leaving the opposition of Saturn</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
+<p><lb/>M<hi rend="superscript">r</hi> Mitton came to <placeName key="PLACE442" resp="#mhawkins">Luton</placeName> <choice><orig>I</orig><reg>J</reg></choice>une <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 20 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 11.</p>
 </div>
 </body>
 </text>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26406</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-08-08">08 August 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="204">MS Ashmole 204, f. 41r</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers002">Various Papers, vol. 2</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0041r" to="0041r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="3"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="hq">
+<persName><forename>Hugh</forename> <surname>Quicke</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="q">
+<persName><surname evidence="inferred" type="married">Quicke</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
+<personGrp xml:id="anon1">
+<sex value="0">U</sex>
+</personGrp>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon3">
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="wife" active="#q" passive="#hq"/><relation name="neighbour" mutual="#hq #anon1"/><relation name="neighbour" mutual="#q #anon1"/><relation name="wife" active="#anon3" passive="#anon1"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1615-02-21" n="Tuesday"/></p>
+<p><time when="10:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rwallis"/>
+<cb:consultant ref="#rwallis"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#hq" evidence="internal" present="yes"/>
+<cb:querent ref="#q" evidence="internal"/>
+<cb:subject ref="#q" present="yes"/>
+<cb:object ref="#anon2 #anon3"/>
+<cb:topic key="troubled"><person sameAs="#q"/></cb:topic>
+<cb:topic key="mind"><person sameAs="#q"/></cb:topic>
+<cb:topic key="temptedAndSuicidal"><person sameAs="#q"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical"><person sameAs="#q"/></cb:topic>
+<cb:topic key="witchcraftSuspect"><person sameAs="#anon2"/><person sameAs="#anon3"/></cb:topic>
+<cb:info type="event" subtype="unclear"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-08-08">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-19">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-07">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-09-13">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-03-02">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-13">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aco0105.jpg" url="aco0105.jpg" n="41r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Hugh Quicke <rs type="address" xml:id="address1" key="PLACE636" resp="#mhawkins">of Clifton r<unclear cert="low" reason="faded">a</unclear><supplied reason="faded">i</supplied><unclear cert="low" reason="faded">g</unclear>nes</rs> came <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> his <lb/>wife, who was much trou<unclear cert="medium" reason="faded">ble</unclear><supplied reason="faded" cert="medium">d</supplied> in minde &amp; often times <lb/>tempted (shee sayd) <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an e<supplied reason="faded" cert="medium"><choice><orig>u</orig><reg>v</reg></choice></supplied>ill spirite to doe her <lb/>selfe a misc<supplied reason="faded">h</supplied>eife./ shee suspected a man &amp; his <lb/>wife in that <supplied reason="faded" cert="low">to</supplied><unclear cert="low" reason="faded">wne</unclear>./ &amp; when she<del type="cancelled"><gap reason="del" extent="2" unit="chars"/></del> came home from <lb/>mee she<del type="cancelled"><gap reason="del" extent="1" unit="chars"/></del> tould her neighbours that I shewed her <lb/>that <unclear cert="low" reason="hand">monster</unclear> in a glasse. but shee lyed./ <choice><orig>d. ♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> <lb/>h: 10. <choice><orig>ant: <supplied reason="faded" cert="medium">m</supplied></orig><reg>am</reg></choice>: Feb: 21. 1615. they came <choice><orig>v</orig><reg>u</reg></choice>nto me./</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

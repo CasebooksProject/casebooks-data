@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE43799</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-04-25">25 April 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, mR, bS-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="408">MS Ashmole 408, f. 158v</idno>
-&Napier025;
+<altIdentifier type="fn_number"><idno n="Napier025">Napier, vol. 25</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -53,7 +59,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="rb">
-<persName><roleName evidence="internal">Mr</roleName> <forename>Robert</forename> <surname>Burgess</surname></persName>
+<persName><roleName>Mr</roleName> <forename>Robert</forename> <surname>Burgess</surname></persName>
 <sex value="1">M</sex>
 <age value="52">52</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -64,6 +70,7 @@
 <p><date when="1616-08-29" n="Thursday"/></p>
 <p><time when="18:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rb"/>
@@ -81,6 +88,7 @@
 <change when="2015-06-12">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2015-11-12">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,11 +96,17 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Robart Burges <rs type="address" xml:id="address1">of Archester</rs> <lb/>52 y Aug. 29. &Thursday; h. 6 p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>6<note place="chart">a dead <lb/>palsye on <lb/><choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> left syde</note></p>
+<p><lb/>Robart Burges <rs type="address" xml:id="address1" key="PLACE1669" resp="#mhawkins">of Archester</rs> <lb/>52 y Aug. 29. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 6 p m <lb/>16<choice><orig>i</orig><reg>1</reg></choice>6<note place="chart">a dead <lb/>palsye on <lb/><choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> left syde</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
+
 <cb xml:id="colB" n="b"/>
+
+<div>
 <cb xml:id="colA" n="a"/>
+<head>master Burges</head>
+<p><lb/>he sayth <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> his sins be so great <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the c<choice><orig>ā</orig><reg>an</reg></choice>not be for<supplied reason="binding" cert="low">given</supplied> <lb/>&amp; weepeth often. not ripe witted but mopish all <gap reason="binding" extent="5" unit="chars"/> <lb/>memory sences &amp; wits &amp; gifts taken from him 2 ye<supplied reason="binding">res</supplied> <lb/>he was a good p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>acher. he <choice><sic>syth</sic><corr>sayth</corr></choice> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he hath s<choice><orig><hi rend="overline">y</hi></orig><reg>yn</reg></choice>ned <lb/>agaynst the holy ghost. cryeth out <choice><sic>agayst</sic><corr>agaynst</corr></choice> the temptat<supplied reason="binding">ion</supplied> <lb/>of sathan./</p>
+</div>
 </body>
 </text>
 </TEI>

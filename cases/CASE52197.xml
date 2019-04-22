@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE52197</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-12-17">17 December 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -62,13 +67,16 @@
 <sex value="1" evidence="conjecture" cert="medium">M</sex>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<listRelation><relation name="neighbour" mutual="#fv #p"/></listRelation>
+<listRelation>
+<relation name="neighbour" mutual="#fv #p"/>
+</listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1621-03-26" n="Monday"/></p>
-<p><time notBefore="14:00:00" notAfter="14:59:00"/></p>
+<p><time when="14:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#fv" evidence="internal"/>
@@ -86,7 +94,8 @@
 <change when="2016-05-18">Foliation corrected by <name xml:id="jyoung">John Young</name></change>
 <change when="2016-06-13">Checked by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-01">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,8 +103,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Francis Ventrys <lb/>wrote a most kind <lb/>letter boath concer<supplied reason="binding" cert="high">ning</supplied> <lb/>his owne love &amp; des<supplied reason="binding" cert="medium">yre</supplied> <lb/>to take physick of <lb/>me for his hea<supplied reason="binding" cert="low">d</supplied> <lb/>&amp; other infirmityes a<supplied reason="binding" cert="medium">nd</supplied> <lb/>also for his neigh<supplied reason="binding" cert="medium">bour</supplied> <lb/>page <rs type="address" xml:id="address1">of Sheaf<supplied reason="binding" cert="medium">ord</supplied></rs> <lb/>craveth pils</p>
-<p>march 26 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 2. <gap extent="unclear" reason="binding" cert="medium"/> <lb/>p m 162<choice><orig>i</orig><reg>1</reg></choice></p>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Francis Ventrys <lb/>wrote a most kind <lb/>letter boath concerning <lb/>his owne love &amp; desyres <lb/>to take physick of <lb/>me for his head <lb/>&amp; other infirmityes as <lb/>also for his neighb <lb/>page <rs type="address" xml:id="address1" key="PLACE489" resp="#mhawkins">of Sheaford</rs> <lb/>craveth pils</p>
+<p><lb/>march 26 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 2. 20 <lb/>p m 162<choice><orig>i</orig><reg>1</reg></choice></p>
 </div>
 </body>
 </text>

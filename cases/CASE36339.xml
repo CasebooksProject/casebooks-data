@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE36339</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="203">MS Ashmole 203, f. 125r</idno>
-&Napier016;
+<altIdentifier type="fn_number"><idno n="Napier016">Napier, vol. 16</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -73,6 +79,7 @@
 <p><date when="1609-08-08" n="Tuesday"/></p>
 <p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b" evidence="internal" present="unclear"/>
@@ -88,6 +95,8 @@
 <change when="2015-02-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-29">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,8 +104,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Burton <rs type="address" xml:id="address1">of <lb/>Bedford</rs> <del type="strikethrough">4</del> 50 y <lb/>Aug 8. &Tuesday; h. 11. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1609. <add place="inline"><foreign xml:lang="la">&vVowel;xor sine c<choice><orig>&oover;</orig><reg>on</reg></choice>sensu mariti</foreign></add><note place="chart">her husb. by fits furyous &amp; <lb/>c<choice><orig>&aover;</orig><reg>an</reg></choice>not but bra<unclear reason="hand" cert="low">wl</unclear>e <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her</note></p>
-</div>&astroChart;
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Burton <rs type="address" xml:id="address1" key="PLACE329" resp="#mhawkins">of <lb/>Bedford</rs> <del type="strikethrough">4</del> 50 y <lb/>Aug 8. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 11. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1609. <add place="inline"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>xor sine c<choice><orig>ō</orig><reg>on</reg></choice>sensu mariti</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the wife without the husband’s consent</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add><note place="chart">her husb. by fits furyous &amp; <lb/>c<choice><orig>ā</orig><reg>an</reg></choice>not but bra<unclear reason="hand" cert="low">wl</unclear>e <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her</note></p>
+</div><figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

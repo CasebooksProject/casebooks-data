@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE42402</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-04-24">24 April 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL-2, bR, bL-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="196">MS Ashmole 196, f. 105r</idno>
-&Napier024;
+<altIdentifier type="fn_number"><idno n="Napier024">Napier, vol. 24</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -67,11 +73,13 @@
 <p><date when="1615-09-15" n="Friday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b" evidence="internal" present="unclear"/>
 <cb:subject ref="#anon" present="no"/>
 <cb:topic key="pregnancy"><person sameAs="#anon"/></cb:topic>
+<cb:topic key="medicalCounsel"><person sameAs="#anon"/></cb:topic>
 <cb:topic key="dropsy"><person sameAs="#anon"/></cb:topic>
 <cb:topic key="unidentifiedMedical"><person sameAs="#anon"/></cb:topic>
 <cb:judgment/>
@@ -86,6 +94,8 @@
 <change when="2016-03-14">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-16">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,13 +103,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>a Wom<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" xml:id="address1">of Bedford</rs> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> m<hi rend="superscript">r</hi> Banyster <lb/>craved my Consell <foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> <lb/>grav. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> hydropid. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> mal<choice><orig>&aover;</orig><reg>am</reg></choice> <lb/>habeat</foreign> <choice><orig><hi rend="overline">septeb</hi></orig><reg>septemb</reg></choice>. 15 &Friday; h. 2. <del type="strikethrough">1<unclear cert="low" reason="del">5</unclear></del> <lb/>p m. 16<choice><orig>i</orig><reg>1</reg></choice>5</p>
+<p><lb/>a Wom<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" xml:id="address1" key="PLACE329" resp="#mhawkins">of Bedford</rs> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> m<hi rend="superscript">r</hi> Banyster <lb/>craved my Consell <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>grav. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> hydropid. <choice><orig>v<hi rend="superscript">l</hi></orig><reg>vel</reg></choice> mal<choice><orig>ā</orig><reg>am</reg></choice> <lb/>habeat</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether pregnant or whether she has a hydropsy or [illness?]</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <choice><orig><hi rend="overline">septeb</hi></orig><reg>septemb</reg></choice>. 15 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 2. <del type="strikethrough">1<unclear cert="low" reason="del">5</unclear></del> <lb/>p m. 16<choice><orig>i</orig><reg>1</reg></choice>5</p>
 </div>
 
 <div><cb xml:id="colB" n="b"/>
-<p><lb/>Wom<choice><orig>&aover;</orig><reg>an</reg></choice> <rs type="address" sameAs="#address1">of Bedford</rs> <lb/>36 y sept. 15 &Friday; h 2 p <lb/>m 1615</p>
+<p><lb/>Wom<choice><orig>ā</orig><reg>an</reg></choice> <rs type="address" sameAs="#address1" key="PLACE329" resp="#mhawkins">of Bedford</rs> <lb/>36 y sept. 15 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h 2 p <lb/>m 1615</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>
 </body>
 </text>

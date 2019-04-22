@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6138</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#jyoung">This entry is appended to <ref target="CASE6137" type="case">CASE6137</ref> (though wholly unrelated to it).</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-2</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 167v</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -36,14 +41,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -66,6 +72,7 @@
 <p><date when="1599-10-05" n="Friday" evidence="conjecture"/></p>
 <p><time when="12:00:00" evidence="conjecture"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -83,16 +90,22 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-20">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acn0360.jpg" url="acn0360.jpg" n="167v"/>
 </facsimile>
-<text xml:lang="la">
+<text>
 <body>
-<div>
-<p><lb/><hi rend="redInk">de lapid <choice><orig><hi rend="overline">philoco</hi></orig><reg>philosophico</reg></choice> qud <lb/>inde&slash;<note place="marginLeft">de lapide <lb/>Ph<choice><orig><hi rend="overline">loco</hi></orig><reg>ilosophico</reg></choice></note><note place="marginLeft">Antoni <rs type="address" xml:id="address1">in loth<lb/>beri</rs> a cloth <lb/>worker&slash;</note></hi></p>
+<div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><hi rend="redInk">de lapid <choice><orig><hi rend="overline">philoco</hi></orig><reg>philosophico</reg></choice> qud <lb/>inde/<note place="marginLeft">de lapide <lb/>Ph<choice><orig><hi rend="overline">loco</hi></orig><reg>ilosophico</reg></choice></note><note place="marginLeft">Antoni <rs type="address" xml:id="address1" key="PLACE170" resp="#mhawkins">in loth<lb/>beri</rs> a cloth <lb/>worker/</note></hi></p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Concerning the philsophers’s stone Anthony in Lathbury a cloth worker.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 </body>
 </text>
 </TEI>

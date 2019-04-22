@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE17269</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR, bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="221">MS Ashmole 221, f. 98v</idno>
-&Napier006;
+<altIdentifier type="fn_number"><idno n="Napier006">Napier, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -57,7 +63,7 @@
 <sex value="1">M</sex>
 <age value="31">31</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="l">
 <persName><roleName>Mrs</roleName> <surname>Longueville</surname></persName>
@@ -71,6 +77,7 @@
 <p><date when="1602-06-16" n="Wednesday"/></p>
 <p><time when="17:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#jy"/>
@@ -86,6 +93,7 @@
 <change when="2012-06-04">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,13 +101,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn younge <rs type="address" xml:id="address1">of <lb/>Brodwell</rs> 31. &Wednesday; <lb/><del type="strikethrough">h</del> &IConsonant;une 16 &Wednesday; hor. <lb/>5. p m. 1602.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn younge <rs type="address" xml:id="address1" key="PLACE607" resp="#mhawkins">of <lb/>Brodwell</rs> 31. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <lb/><del type="strikethrough">h</del> <choice><orig>I</orig><reg>J</reg></choice>une 16 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> hor. <lb/>5. p m. 1602.</p>
 </div>
-&astroChartPartial;
+<figure type="astro" subtype="astroChartPartial"/>
 <div><cb xml:id="colA" n="a"/>
-<p><lb/>&IConsonant;ohn younge &Mres; <lb/>longfilds man. <rs type="address" sameAs="#address1">of Brodwell</rs>.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn younge <choice><orig>M<hi rend="superscript">res</hi></orig><reg>Mrs</reg></choice> <lb/>longfilds man. <rs type="address" sameAs="#address1" key="PLACE607" resp="#mhawkins">of Brodwell</rs>.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

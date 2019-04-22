@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE5262</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 51v</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -95,6 +101,7 @@
 <p><date when="1599-04-23" n="Monday"/></p>
 <p><time when="10:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#eb #mm"/>
@@ -117,6 +124,8 @@
 <change when="2011-04-26">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-24">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -125,14 +134,14 @@
 <text xml:lang="en">
 <body>
 <div>
- <p><lb/>M<hi rend="superscript">rs</hi> Bellingam <rs type="address" xml:id="address1">of Kintchingt<choice><orig>&oover;</orig><reg>on</reg></choice></rs> <lb/>of 60 years 1599 the 23 of aprill <lb/>&Monday; &Anflmfl; at 50 &past; 10&slash;</p>
- <p><lb/>wher she shall overcom&flourish; her suet <lb/>in Lawe againste &IConsonant;ones and <lb/>the bishop of <placeName>gloster</placeName></p>
- <p><lb/>wher she shall obteine her suet <lb/>by a petition to the quen&slash;</p>
- <p><lb/>wher yt be best to goe into <placeName>somerset <lb/>shire</placeName> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her daughter&slash;</p>
- <p><lb/>Margaret m<choice><orig>&loopedr;</orig><reg>er</reg></choice>son&flourish; of 42 yers <foreign xml:lang="la">eod<choice><orig>&eover;</orig><reg>em</reg></choice> <lb/>tempore</foreign>&slash; wher she shall mend <lb/>her state or no&slash; &dash;</p>
- <p><lb/>Thomas of 33 a <choice><sic>a</sic><corr type="noText"/></choice> <choice><orig>bac<hi rend="superscript">r</hi></orig><reg>bachelor</reg></choice> &amp; marg of 43 a maid. c<choice><orig>&oover;</orig><reg>on</reg></choice>tract.</p>
+ <p><lb/>M<hi rend="superscript">rs</hi> Bellingam <rs type="address" xml:id="address1" key="PLACE1473" resp="#mhawkins">of Kintchingt<choice><orig>ō</orig><reg>on</reg></choice></rs> <lb/>of 60 years 1599 the 23 of aprill <lb/><choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <choice><orig>An’ m’</orig><reg>am</reg></choice> at 50 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 10/</p>
+ <p><lb/>wher she shall overcom’ her suet <lb/>in Lawe againste <choice><orig>I</orig><reg>J</reg></choice>ones and <lb/>the bishop of <placeName key="PLACE2262">gloster</placeName></p>
+ <p><lb/>wher she shall obteine her suet <lb/>by a petition to the quen/</p>
+ <p><lb/>wher yt be best to goe into <placeName key="PLACE2005" resp="#mhawkins">somerset <lb/>shire</placeName> <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> her daughter/</p>
+ <p><lb/>Margaret m<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>son’ of 42 yers <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">eod<choice><orig>ē</orig><reg>em</reg></choice> <lb/>tempore</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">at the same time</seg><link type="is-translation-of" target="#foreign001 #translation001"/>/ wher she shall mend <lb/>her state or no/ –</p>
+ <p><lb/>Thomas of 33 a <choice><sic>a</sic><corr type="noText"/></choice> <choice><orig>bac<hi rend="superscript">r</hi></orig><reg>bachelor</reg></choice> &amp; marg of 43 a maid. c<choice><orig>ō</orig><reg>on</reg></choice>tract.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

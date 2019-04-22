@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13241</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 101v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,13 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -60,6 +66,7 @@
 <p><date when="1597-07-25" n="Monday"/></p>
 <p><time when="18:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -75,16 +82,22 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-28">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-30">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ace0218.jpg" url="ace0218.jpg" n="101v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>1597. <foreign xml:lang="en"><choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/>i</del><add place="over">Iu</add></subst>ly</orig><reg>July</reg></choice> 25</foreign>. &MondayN;. <del type="strikethrough">post m</del> <lb/>post hor<choice><orig>&aover;</orig><reg>am</reg></choice> <choice><orig>scdam</orig><reg>secundam</reg></choice> <choice><sic>puebat</sic><corr>pluebat</corr></choice> magnis <lb/>et densis imbrib<choice><orig>&uscon;</orig><reg>us</reg></choice> et c<choice><orig>&oover;</orig><reg>on</reg></choice>tinuis <lb/>hic <placeName>Linffordi&jVowel;</placeName>. qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> qu&aelig; <lb/>causa.&slash; <subst><del type="strikethrough">7</del> <add place="supralinear">1<hi rend="superscript">a</hi></add></subst> hor. <del type="strikethrough">7</del> 6<hi rend="superscript">ta</hi> 15. m <lb/><choice><orig>post merid:</orig><reg>pm</reg></choice> qui dies erat pri<lb/>ma quadrat post &oppositionSymbol;.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>1597. <foreign xml:lang="en"><choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/>i</del><add place="over">Iu</add></subst>ly</orig><reg>July</reg></choice> 25</foreign>. <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice>. <del type="strikethrough">post m</del> <lb/>post hor<choice><orig>ā</orig><reg>am</reg></choice> <choice><orig>scdam</orig><reg>secundam</reg></choice> <choice><sic>puebat</sic><corr>pluebat</corr></choice> magnis <lb/>et densis imbrib<choice><orig>ꝯ</orig><reg>us</reg></choice> et c<choice><orig>ō</orig><reg>on</reg></choice>tinuis <lb/>hic <placeName key="PLACE685" resp="#mhawkins">Linffordi<choice><orig>j</orig><reg>i</reg></choice></placeName>. quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> quæ <lb/>causa./ <subst><del type="strikethrough">7</del> <add place="supralinear">1<hi rend="superscript">a</hi></add></subst> hor. <del type="strikethrough">7</del> 6<hi rend="superscript">ta</hi> 15. m <lb/><choice><orig>post merid:</orig><reg>pm</reg></choice> qui dies erat pri<lb/>ma quadrat post ☍.</p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Monday 25 July after the second hour it rained in great, dense and continuous showers here at Linford. It is asked for what cause. 6.15pm which was the day of the first [quadrature?] after the opposition.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

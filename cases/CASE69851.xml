@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE69851</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-03-30">30 March 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="194">MS Ashmole 194, p. 15</idno>
+<altIdentifier type="fn_number"><idno n="Napier047">Napier, vol. 47</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0015" to="0015"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="h">
+<persName><roleName>Lady</roleName> <surname>Hanmer</surname></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1629-12-18" n="Friday"/></p>
+<p><time when="08:30:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#h" evidence="internal"/>
+<cb:subject ref="#h" present="no"/>
+<cb:item type="urine"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#h"/></cb:topic>
+<cb:judgment/>
+<cb:info type="urine"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-03-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-06-12">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2017-07-25">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="ciq0051.jpg" url="ciq0051.jpg" n="15"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>The lady Han<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">m</add></subst>or sent her <lb/>water Dec<choice><orig>ē</orig><reg>em</reg></choice>b 18 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 8. 30 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1629</p><anchor xml:id="questionEnd"/>
+<milestone unit="judgment" spanTo="#judgmentEnd"/>
+<p><lb/>It would seeme <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> the terms <lb/>weare stopt &amp; turned <choice><orig>v</orig><reg>u</reg></choice>p to her <lb/>head</p><anchor xml:id="judgmentEnd"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="urineInfo" spanTo="#urineInfoEnd"/>
+<p><lb/>An aguish red <lb/>water</p><anchor xml:id="urineInfoEnd"/>
+</div>
+</body>
+</text>
+</TEI>

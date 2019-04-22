@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE36946</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="203">MS Ashmole 203, f. 225v</idno>
-&Napier016;
+<altIdentifier type="fn_number"><idno n="Napier016">Napier, vol. 16</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,12 +67,12 @@
 <p><date when="1610-01-26" n="Friday"/></p>
 <p><time when="11:25:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#tc" evidence="internal"/>
 <cb:subject ref="#tc" present="no"/>
 <cb:topic key="requestingTreatment"><person sameAs="#tc"/></cb:topic>
-<cb:treatment/>
 <cb:info type="financial"/>
 </cb:consultation>
 </settingDesc>
@@ -79,6 +83,7 @@
 <change when="2015-03-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-29">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -86,8 +91,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Syr Thomas Compton <lb/>sent to me for a bottle <lb/>of water cosmeticall oynt<lb/>ment cosmeticall. pils <del type="strikethrough">sto</del> <lb/><foreign xml:lang="la">coch &drachms;ii&jVowel; splenet &drachms;&jVowel; <unclear reason="hand" cert="low">olic</unclear> nucis <lb/>nosc gut iii&jVowel;</foreign> &IConsonant;an 26. &Friday; <lb/>h. 11. <add place="supralinear">25</add> &antm; 16<choice><orig>i</orig><reg>1</reg></choice>0.</p>
-<p><lb/>he gave me 20<hi rend="superscript">s</hi>.</p>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>Syr Thomas Compton <lb/>sent to me for a bottle <lb/>of water cosmeticall oynt<lb/>ment cosmeticall. pils <del type="strikethrough">sto</del> <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">coch ʒii<choice><orig>j</orig><reg>i</reg></choice> splenet ʒ<choice><orig>j</orig><reg>i</reg></choice> olei nucis <lb/><choice><sic>nosc</sic><corr cert="medium">mosc</corr></choice> gut iii<choice><orig>j</orig><reg>i</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">of cochia 3 drachms, splenetic 1 drachm, 4 drops of nutmeg oil</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <choice><orig>I</orig><reg>J</reg></choice>an 26. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <lb/>h. 11. <add place="supralinear">25</add> <choice><orig>ant m</orig><reg>am</reg></choice> 16<choice><orig>i</orig><reg>1</reg></choice>0.</p><anchor xml:id="questionEnd"/>
+<milestone unit="financialInfo" spanTo="#financialInfoEnd"/>
+<p><lb/>he gave me 20<hi rend="superscript">s</hi>.</p><anchor xml:id="financialInfoEnd"/>
 </div>
 </body>
 </text>

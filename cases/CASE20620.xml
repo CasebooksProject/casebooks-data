@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE20620</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-11-23">23 November 2012</date>
 </publicationStmt>
-<notesStmt><note type="editorial" resp="#rralley">A note on f. 140v of Ashmole 215, written on 24 May 1606, reads: &lsquo;<add place="supralinear"><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Temples <lb/>servants.</add> <add place="supralinear">boath of Stoe</add> <lb/>Dorothy Hickm<choice><orig>&aover;</orig><reg>an</reg></choice> <choice><sic>mayed</sic><corr>maryed</corr></choice> <lb/>halfe a yere since. <lb/><del type="strikethrough">Robart</del> Thomas Hickm<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/>her broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> shalbe <choice><sic>mayed</sic><corr>maryed</corr></choice> to morrow&rsquo;.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 140v of Ashmole 215, written on 24 May 1606, reads: ‘<add place="supralinear"><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Temples <lb/>servants.</add> <add place="supralinear">boath of Stoe</add> <lb/>Dorothy Hickm<choice><orig>ā</orig><reg>an</reg></choice> <choice><sic>mayed</sic><corr>maryed</corr></choice> <lb/>halfe a yere since. <lb/><del type="strikethrough">Robart</del> Thomas Hickm<choice><orig>ā</orig><reg>an</reg></choice> <lb/>her broth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> shalbe <choice><sic>mayed</sic><corr>maryed</corr></choice> to morrow’.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR-1</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="415">MS Ashmole 415, f. 14v</idno>
-&Napier009;
+<altIdentifier type="fn_number"><idno n="Napier009">Napier, vol. 9</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -58,7 +66,7 @@
 <persName><forename>Thomas</forename> <surname>Hickman</surname></persName>
 <sex value="1">M</sex>
 <age value="30">30</age>
-<occupation>Man (Servant)</occupation>
+<occupation>Man (servant)</occupation>
 </person>
 <person xml:id="t">
 <persName><genName>Old</genName> <roleName>Mrs</roleName> <surname>Temple</surname></persName>
@@ -74,6 +82,7 @@
 <p><date when="1604-02-21" n="Tuesday"/></p>
 <p><time when="13:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#th"/>
@@ -88,6 +97,7 @@
 <change when="2013-02-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,8 +105,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Thomas Hickm<choice><orig>&aover;</orig><reg>an</reg></choice> Old <lb/><choice><orig><hi rend="overline">mes</hi></orig><reg>Mrs</reg></choice> Temple m<choice><orig>&aover;</orig><reg>an</reg></choice> <lb/><add place="supralinear">30 y</add> feb <del type="strikethrough">r</del> 21. &Tuesday; hor 1. <lb/>p m 1604</p>
-<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> <choice><orig>&crossedp;</orig><reg>pro</reg></choice>fluvio ren<choice><orig>&uover;</orig><reg>um</reg></choice></foreign></p>
+<p><lb/>Thomas Hickm<choice><orig>ā</orig><reg>an</reg></choice> Old <lb/><choice><orig><hi rend="overline">mes</hi></orig><reg>Mrs</reg></choice> Temple m<choice><orig>ā</orig><reg>an</reg></choice> <lb/><add place="supralinear">30 y</add> feb <del type="strikethrough">r</del> 21. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> hor 1. <lb/>p m 1604</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>fluvio ren<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for the running of the reins</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
 </body>
 </text>

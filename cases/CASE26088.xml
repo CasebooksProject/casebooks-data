@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26088</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 55r</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0055r" to="0055r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname> <surname type="alternate">Sandy</surname></persName>
+<sex value="1">M</sex>
+<age value="43">43</age>
+<birth><date when="1559-05-04" n="Thursday"/><time when="23:15:00"/><placeName sameAs="#place1"/></birth>
+</person>
+<person xml:id="an">
+<persName><forename>Alexander</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="ab">
+<persName><forename>Agnes</forename> <surname type="maiden">Birchley</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<listRelation><relation name="son" active="#rnapier" passive="#an #ab"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#nativity"/>
+</textClass>
+<settingDesc>
+<p><date notBefore="1602-01-01" notAfter="1602-05-12" evidence="inferred"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier"/>
+<cb:subject ref="#rnapier" present="yes"/>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-02">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-14">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-12-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0141.jpg" url="acr0141.jpg" n="55r"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Richardus Na<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice><del type="strikethrough">s</del> alias Sandie <placeName xml:id="place1" key="PLACE956" resp="#mhawkins">Devoniensis</placeName> <lb/>filius Alexandri Na<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> et Agnetis Burchley <lb/><rs type="address" xml:id="address1" key="PLACE959" resp="#mhawkins">Excestriæ sub latitudine 5<subst><del type="over">2</del><add place="over"><choice><orig>i</orig><reg>1</reg></choice></add></subst>. in comitatu <lb/>devoni<choice><orig>j</orig><reg>i</reg></choice></rs> mai<choice><orig>j</orig><reg>i</reg></choice> 4 <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> die Ascensionis p m <lb/>quatenus divinare possumus hor. 11. 15 p <lb/>m. <del type="strikethrough">160</del> 1559. <foreign xml:lang="en">c<choice><orig>ō</orig><reg>om</reg></choice>pleate. this Ascension <lb/>day in the yeare of the lord 1602 I am full <lb/>43 yeares.</foreign></p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Richard Napier alias Sandy of Devon, the son of Alexander Napier and Agnes Birchley of Exeter under the latitude 54 in the county of Devon, Ascension Day Thursday 4 May 1559 at 11.15pm as best we can judge: this Ascension Day in the year of the Lord 1602 I am full 43 years complete.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

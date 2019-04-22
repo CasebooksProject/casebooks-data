@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE49440</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-10-02">02 October 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 139v/bR, f. 140v/uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="235">MS Ashmole 235, f. 139v, f. 140v</idno>
-&Napier030;
+<altIdentifier type="fn_number"><idno n="Napier030">Napier, vol. 30</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -70,6 +76,7 @@
 <p><date when="1619-08-05" n="Thursday"/></p>
 <p><time when="11:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -88,6 +95,7 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,11 +104,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Susan Hill <rs type="address" xml:id="address1">of <lb/>litlington</rs> 14 y <lb/>last &Sunday; at night <lb/>after sone se<supplied reason="binding">tting</supplied> <lb/>2 hours. came <lb/>to me Aug 5 &Thursday; <lb/>h. 11. ant</p>
+<p><lb/>Susan Hill <rs type="address" xml:id="address1" key="PLACE433" resp="#mhawkins">of <lb/>litlington</rs> 14 y <lb/>last <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> at night <lb/>after sone se<supplied reason="binding">tting</supplied> <lb/>2 hours. came <lb/>to me Aug 5 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <lb/>h. 11. ant</p>
 <pb xml:id="f140v" n="140v" facs="#abd0300.jpg"/>
-<p><lb/>Susan Hill <rs type="address" sameAs="#address1">of litlington</rs> <lb/>14 y Aug. 5 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&JupiterSymbol;</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 11. <lb/>&antm; 1619 <add place="infralinear">she was p<choice><orig>&loopedr;</orig><reg>re</reg></choice>sent</add></p>
+<p><lb/>Susan Hill <rs type="address" sameAs="#address1" key="PLACE433" resp="#mhawkins">of litlington</rs> <lb/>14 y Aug. 5 <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">♃</add></subst></orig><reg type="gloss">Thursday</reg></choice> h. 11. <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1619 <add place="infralinear">she was p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sent</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

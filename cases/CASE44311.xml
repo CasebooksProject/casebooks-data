@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE44311</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-06-07">07 June 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="198">MS Ashmole 198, f. 66r</idno>
-&Napier026;
+<altIdentifier type="fn_number"><idno n="Napier026">Napier, vol. 26</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -63,6 +67,7 @@
 <p><date when="1617-02-14" n="Friday"/></p>
 <p><time when="09:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -78,6 +83,7 @@
 <change when="2015-12-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -85,7 +91,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Burton <rs type="address" xml:id="address1"><subst><del type="over"><unclear cert="low" reason="del">ca</unclear></del><add place="over">of</add></subst> Bedford</rs> <lb/>came to me feb. 14. <choice><orig><choice><sic>&JupiterSymbol;</sic><corr>&VenusSymbol;</corr></choice></orig><reg type="gloss">Friday</reg></choice> <lb/>h. 9. 30 &antm;. 1617.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Burton <rs type="address" xml:id="address1" key="PLACE329" resp="#mhawkins"><subst><del type="over"><unclear cert="low" reason="del">ca</unclear></del><add place="over">of</add></subst> Bedford</rs> <lb/>came to me feb. 14. <choice><orig><choice><sic>♃</sic><corr>♀</corr></choice></orig><reg type="gloss">Friday</reg></choice> <lb/>h. 9. 30 <choice><orig>ant m</orig><reg>am</reg></choice>. 1617.</p>
 </div>
 </body>
 </text>

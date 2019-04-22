@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE20634</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-11-23">23 November 2012</date>
 </publicationStmt>
-<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 149v of Ashmole 215, written on 28 May 1606, reads: &lsquo;Se thomas Good<supplied reason="binding" cert="medium">dyn</supplied> <lb/>of Wicke<subst><del type="over">dg</del><add place="over">n</add></subst> a <lb/>young m<choice><orig>&aover;</orig><reg>an</reg></choice> he<gap extent="unclear" reason="binding"/> <lb/>dyed. in a we<gap extent="unclear" reason="binding"/> <lb/>2 yeres sinc. b<gap extent="unclear" reason="binding"/> <lb/>Shrovetyde. <lb/>&IConsonant;one Emmerton <lb/>of Wickin dy<supplied reason="binding">ed</supplied> <lb/>about the same <supplied reason="binding" cert="medium">tyme</supplied>&rsquo;.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="externalEvidence" resp="#rralley">A note on f. 149v of Ashmole 215, written on 28 May 1606, reads: ‘Se thomas Goodyn <lb/>of Wicke<subst><del type="over">dg</del><add place="over">n</add></subst> a <lb/>young m<choice><orig>ā</orig><reg>an</reg></choice> he <lb/>dyed. in a week <lb/>2 yeres sinc. before <lb/>Shrovetyde. <lb/><choice><orig>I</orig><reg>J</reg></choice>one Emmerton <lb/>of Wickin dyedv<lb/>about the same tyme ’.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR-1, bL, bR-2</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="415">MS Ashmole 415, f. 17r</idno>
-&Napier009;
+<altIdentifier type="fn_number"><idno n="Napier009">Napier, vol. 9</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -66,6 +72,7 @@
 <p><date when="1604-02-24" n="Friday"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#je"/>
@@ -83,6 +90,9 @@
 <change when="2013-02-05">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-13">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-14">Rechecked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,12 +100,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;one Emmerton <rs type="address" xml:id="address1">of <lb/>Wicken</rs> 20 y feb. <lb/>24 &Friday; hor. 10. &antm; <lb/>1604</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>one Emmerton <rs type="address" xml:id="address1" key="PLACE1807" resp="#mhawkins">of <lb/>Wicken</rs> 20 y feb. <lb/>24 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> hor. 10. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1604</p>
 </div>
 <cb xml:id="colA" n="a"/>
-&astroChartPartialDeleted;
+<figure type="astro" subtype="astroChartPartialDeleted"/>
 <cb xml:id="colB" n="b"/>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

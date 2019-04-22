@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE69274</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-10-25">25 October 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This entry may share a chart with <ref target="CASE69274" type="case">CASE69274</ref>.</note>
 </notesStmt>
@@ -36,9 +41,8 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
-<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -57,14 +61,14 @@
 </person>
 <person xml:id="n">
 <persName><roleName>Mr</roleName> <surname>Nodes</surname></persName>
-<sex value="2">F</sex>
+<sex value="1">M</sex>
 </person>
 <person xml:id="b1">
 <persName><roleName>Mr</roleName> <surname>Brograve</surname></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="b2">
-<persName><surname type="maiden">Brograve</surname></persName>
+<persName><surname type="maiden" evidence="inferred">Brograve</surname></persName>
 <sex value="2">F</sex>
 </person>
 <listRelation><relation name="daughter" active="#b2" passive="#b1"/><relation name="betrothed" mutual="#b2 #n"/></listRelation>
@@ -74,10 +78,11 @@
 <p><date when="1629-08-27" n="Thursday" evidence="inferred"/></p>
 <p><time notBefore="08:20:00" notAfter="20:50:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
-<cb:querent ref="#n"/>
+<cb:querent ref="#n" evidence="internal"/>
 <cb:subject ref="#n" present="yes"/>
 <cb:object ref="#b2"/>
 <cb:item type="urine"/>
@@ -93,7 +98,6 @@
 <change when="2016-10-25">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-08-03">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-09-01">Checked by <name xml:id="jedge">Joanne Edge</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

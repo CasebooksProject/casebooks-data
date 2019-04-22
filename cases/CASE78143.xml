@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE78143</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This interrogation is associated with the horary entry <ref type="case" target="CASE78144">CASE78144</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 411</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0411" to="0411"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogation"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="jb">
+<persName><forename>John</forename> <surname>Bell</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rb">
+<persName><forename>Robert</forename> <surname>Biddle</surname></persName>
+<sex value="1">M</sex>
+<occupation>Shoemaker</occupation>    
+</person>
+<person xml:id="b1">
+<persName><surname evidence="inferred" cert="low">Biddle</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="b2">
+<persName><surname evidence="inferred" cert="medium" type="maiden">Biddle</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="mother" active="#b1" passive="#rb"/>
+<relation name="sister" active="#b2" passive="#rb"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-08-28" n="Wednesday" evidence="external"/></p>
+<p><time when="13:50:00" evidence="external"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#jb"/>
+<cb:subject ref="#jb" present="unclear"/>
+<cb:object ref="#b1 #b2 #rb"/>
+<cb:topic key="lossAndTheft"><person sameAs="#jb"/><person sameAs="#b1"/><person sameAs="#b2"/><person sameAs="#rb"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-12-01">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-01-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0433.jpg" url="clq0433.jpg" n="411" width="5113" height="7216"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Bels house <lb/>broken &amp; to the value <lb/>of 140<add place="supralinear">l</add> stolen out <lb/>of coffers a doublet &amp; a <lb/>payre of hose Aug <subst><del type="strikethrough">18</del> <add place="marginRight">16</add></subst> <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 2. 30 p m 1633</p>
+<p><lb/><add place="infralinear">Rob: Bydle a shoemaker he his mother &amp; sister susp</add></p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

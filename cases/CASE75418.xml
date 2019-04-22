@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE75418</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="416">MS Ashmole 416, p. 417</idno>
+<altIdentifier type="fn_number"><idno n="Napier051">Napier, vol. 51</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0417" to="0417"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><genName>Young</genName> <roleName>Lady</roleName> <forename>Alice</forename> <surname>Bridgwater</surname></persName>
+<sex value="2">F</sex>
+<age value="12">12</age>
+</person>
+<person xml:id="rn" evidence="external">
+<persName><roleName>Sir</roleName> <forename>Robert</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="person1" evidence="external">
+<persName><roleName>Countess</roleName></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1632-09-09" n="Sunday"/></p>
+<p><time when="08:45:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rn #person1" evidence="external" present="no"/>
+<cb:subject ref="#ab" present="no"/>
+<cb:item type="letter" evidence="external"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ab"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-06">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-08">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-31">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acy0461.jpg" url="acy0461.jpg" n="417"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/>The young lady Alce <add place="supralinear">Edgerton</add> Bridgwater <lb/>12. y. Sept.: 9 . <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 8. 45 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1632</p>
+<anchor xml:id="questionEnd"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<milestone unit="judgment" spanTo="#judgmentEnd"/>
+<p><lb/>the mother</p>
+<anchor xml:id="judgmentEnd"/>
+</div>
+</body>
+</text>
+</TEI>

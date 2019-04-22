@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE77889</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 324</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0324" to="0324"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ea">
+<persName><roleName>Mrs</roleName> <forename>Eleanor</forename> <surname>Aylet</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<death><date notAfter="1633-07-18"/></death>
+</person>
+<person xml:id="e">
+<persName><forename>Elizabeth</forename></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="fs">
+<persName><forename>Faith</forename> <surname>Sage</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="rw">
+<persName><forename>Rebecca</forename> <surname>Wright</surname></persName>    
+<sex value="2">F</sex>
+</person>
+<person xml:id="a">
+<persName><surname evidence="inferred" cert="medium">Aylet</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>    
+</person>
+<listRelation>
+<relation name="husband" active="#anon1" passive="#ea" notAfter="1633-07-18"/>
+<relation name="husband" active="#a" passive="#ea"/>
+<relation name="daughter" active="#e" passive="#ea"/>
+<relation name="servant" active="#fs" passive="#ea" notAfter="1633-07-18"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-07-19" n="Friday"/></p>
+<p><time when="13:45:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ea"/>
+<cb:subject ref="#ea #e #fs #a" present="unclear"/>
+<cb:object ref="#rw"/>
+<cb:topic key="witchcraftSufferedMedical" evidence="internal"><person sameAs="#ea"/><person sameAs="#e"/><person sameAs="#fs"/></cb:topic>
+<cb:topic key="witchcraftSufferedNonMedical" evidence="internal"><person sameAs="#ea"/></cb:topic>
+<cb:topic key="witchcraftSuspect" evidence="internal"><person sameAs="#rw"/></cb:topic>
+<cb:topic key="notWell"><person sameAs="#e"/><person sameAs="#fs"/><person sameAs="#a"/></cb:topic>
+<cb:topic key="hot"><person sameAs="#ea"/><person sameAs="#a"/><person sameAs="#fs"/></cb:topic>
+<cb:topic key="sweating"><person sameAs="#fs"/></cb:topic>
+<cb:topic key="illness"><person sameAs="#ea"/></cb:topic>
+<cb:topic key="animalDeathAndDisease"><person sameAs="#ea"/></cb:topic>
+
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-11-27">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-01-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0347.jpg" url="clq0347.jpg" n="324" width="5113" height="7216"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Elenor Aylet <rs type="address" xml:id="address1" next="#address2" key="PLACE1016" resp="#mhawkins">of <lb/>magdalen laver</rs> 30 y <choice><orig>I</orig><reg>J</reg></choice>uly 19 <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 1. 45 p m 1633 <add place="inline"><rs type="address" xml:id="address2" prev="#address1" key="PLACE976" resp="#mhawkins">in Essex</rs>.</add></p>
+<p><lb/>supposeth her selfe to be <lb/>bewitched her first husb was <lb/>witched to Death she her Daughter <lb/>Elis: &amp; her old serv Fayth Sage <lb/><choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> is <choice><sic>mayed</sic><corr>maryed</corr></choice> not well</p>
+<p><lb/>was better till this fortnight sinc <lb/>Rebecca write was at her <lb/>house</p>
+<p><lb/>sinc hath bene troubled in her milke <lb/>&amp; making of cheese her milke sowrs <lb/>&amp; her cheese <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> an ill sent</p>
+<p><lb/>she hath a great heate <choice><orig>v</orig><reg>u</reg></choice>ppon her &amp; <lb/>is wonderous ill</p>
+<p><lb/>her daughter <choice><orig>m<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Elis. not <lb/>well</p>
+<p><lb/>her husb is troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a great heate <lb/>her old serv. maryed hath a great <lb/>heate &amp; sweat her cows in her <lb/>yard are taken lame &amp; there <lb/>milke dryed</p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13394</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 96v</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,12 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -70,13 +75,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date notBefore="1597-10-11"/></p>
+<p><date notBefore="1597-10-11" notAfter="1598-07-16" evidence="inferred" cert="medium"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="unclear"/>
 <cb:subject ref="#mp" present="no"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#mp"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#mp"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -86,6 +92,7 @@
 <change when="2012-02-10">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-05">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,9 +101,9 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/><choice><sic>Mathue</sic><corr type="delText"/></choice> <del type="strikethrough">Robinson the daug</del></p>
-<p><lb/>Mathue Patricke the daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of &IConsonant;ohn <lb/>Patricke was borne <rs type="date" xml:id="date1">1597. the 19 of <lb/>Septemb. &MondayN;</rs>. <foreign xml:lang="la"><choice><sic>int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></sic><corr type="delText"/></choice> <del type="strikethrough">11. et 12</del> h. 11. 10. 49 <lb/><add place="supralinear">in nocte p m</add> <add place="supralinear">1597.</add> qu&aelig; obi&jVowel;t 3<hi rend="superscript">bus</hi> post hebdom. <rs type="date" xml:id="date2">11 Octob. &MondayN;</rs>. <lb/><rs type="time" xml:id="time2">1 et 2<hi rend="superscript"><choice><orig>&uover;</orig><reg>um</reg></choice></hi> <choice><orig>post merid</orig><reg>pm</reg></choice></rs> <rs type="time" xml:id="time1">int<choice><orig><hi rend="superscript">r</hi>.</orig><reg>er</reg></choice> 11. et 12. nocte</rs>.</foreign></p>
+<p><lb/>Mathue Patricke the daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of <choice><orig>I</orig><reg>J</reg></choice>ohn <lb/>Patricke was borne <rs type="date" xml:id="date1">1597. the 19 of <lb/>Septemb. <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice></rs>. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><sic>int<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></sic><corr type="delText"/></choice> <del type="strikethrough">11. et 12</del> h. 11. 10. 49 <lb/><add place="supralinear">in nocte p m</add> <add place="supralinear">1597.</add> quæ obi<choice><orig>j</orig><reg>i</reg></choice>t 3<hi rend="superscript">bus</hi> post hebdom. <rs type="date" xml:id="date2">11 Octob. <choice><orig>die ☾</orig><reg>die Lunæ</reg><reg type="gloss">Monday</reg></choice></rs>. <lb/><rs type="time" xml:id="time2">1 et 2<hi rend="superscript"><choice><orig>ū</orig><reg>um</reg></choice></hi> <choice><orig>post merid</orig><reg>pm</reg></choice></rs> <rs type="time" xml:id="time1">int<choice><orig><hi rend="superscript">r</hi>.</orig><reg>er</reg></choice> 11. et 12. nocte</rs>.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">between 11. 10.49pm at night 1597. Who died three weeks later on Monday 11 October [between the?] 1st and 2d hour after noon between 11 and 12 at night</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

@@ -7,32 +7,38 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE29329</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">uR, uL-2</bibl>
+<bibl type="positionOnPage">f. 135r/uR, f. 135r/uL-2, f. 135v/uS</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="216">MS Ashmole 216, f. 135r</idno>
-&Napier010;
+<idno n="216">MS Ashmole 216, f. 135r-v</idno>
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
-<locus from="0135r" to="0135r"/>
+<locus from="0135r" to="0135v"/>
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -98,6 +104,7 @@
 <p><date when="1605-06-26" n="Wednesday"/></p>
 <p><time when="12:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
@@ -106,6 +113,7 @@
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jf"/></cb:topic>
 <cb:judgment/>
 <cb:info type="event" subtype="subsequentEvent"/>
+<cb:recipe/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -114,16 +122,19 @@
 <change when="2014-01-31">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="aag0279.jpg" url="aag0279.jpg" n="135r"/>
+<graphic xml:id="aag0280.jpg" url="aag0280.jpg" n="135v"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> &IConsonant;ane flood <rs type="address" xml:id="address1">of lecham<lb/>steede</rs>. 30 y &IConsonant;une 26. &Wednesday; h. 12 <lb/>&antm; 1605. my ladyes. <lb/>Daughter above 3 quarters <lb/>of a yere hath had 7 chi<gap reason="damage" extent="unclear"/> <lb/>the last Dyed. 16 weekes <lb/>aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; smothered.</p>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>ane flood <rs type="address" xml:id="address1" key="PLACE727" resp="#mhawkins">of lecham<lb/>steede</rs>. 30 y <choice><orig>I</orig><reg>J</reg></choice>une 26. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 12 <lb/><choice><orig>ant m</orig><reg>am</reg></choice> 1605. my ladyes. <lb/>Daughter above 3 quarters <lb/>of a yere hath had 7 chi<unclear cert="low" reason="hand">ld</unclear> <lb/>the last Dyed. 16 weekes <lb/>aft<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &amp; smothered.</p>
 </div>
 <cb xml:id="colA" n="a"/>
+<pb xml:id="f135v" n="135v" facs="#aag0280.jpg"/>
 </body>
 </text>
 </TEI>

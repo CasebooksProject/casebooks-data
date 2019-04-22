@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE65325</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-08-09">09 August 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE65324">CASE65324</ref>.</note>
 </notesStmt>
@@ -36,9 +41,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -76,6 +81,7 @@
 <p><date when="1628-02-06" n="Wednesday" evidence="inferred"/></p>
 <p><time notBefore="11:00:00" notAfter="13:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l" evidence="external" present="unclear"/>
@@ -91,7 +97,8 @@
 <change when="2016-08-09">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-08-25">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-12-21">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-15">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,11 +106,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Francis Latch <rs type="address" xml:id="address1">of <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>Strand in London</rs> borne <lb/> <foreign xml:lang="la">marti<choice><orig>j</orig><reg>i</reg></choice></foreign> 2. <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h 6 p 20 p m <lb/>1622. </p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Francis Latch <rs type="address" xml:id="address1" key="PLACE282" resp="#mhawkins">of <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <lb/>Strand in London</rs> borne <lb/> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">marti<choice><orig>j</orig><reg>i</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">March</seg><link type="is-translation-of" target="#foreign001 #translation001"/> 2. <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h 6 p 20 p m <lb/>1622. </p>
 
 <cb xml:id="colB" n="b"/>
 <p><lb/><del type="erased">M<hi rend="superscript">r</hi> Flatcher of Husba<supplied reason="binding">nd</supplied> <lb/>Crowly 22 y feb</del></p>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Franke Latch borne <lb/><rs type="address" sameAs="#address1">in the Strand in London</rs> <lb/>Martch 20 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 6. 20 p <lb/>m. 162<subst><del type="over">2</del><add place="over">3</add></subst> 1623.</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Franke Latch borne <lb/><rs type="address" sameAs="#address1" key="PLACE282" resp="#mhawkins">in the Strand in London</rs> <lb/>Martch 20 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 6. 20 p <lb/>m. 162<subst><del type="over">2</del><add place="over">3</add></subst> 1623.</p>
 </div>
 <figure type="astro" subtype="astroChartPartialDeleted"/>
 <figure type="astro" subtype="astroChart"/>

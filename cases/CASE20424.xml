@@ -7,13 +7,18 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE20424</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
-<notesStmt><note type="editorial" resp="#jyoung">This entry appears to have been added after the main Q1 entry, appearing partly between the question and chart for that entry and partly to the left of its chart.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="editorial" resp="#jyoung">This entry appears to have been added after the main entry in the upper left of the page, <ref target="CASE20423" type="case">CASE20423</ref>, appearing partly between the question and chart for that entry and partly to the left of its chart.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL-2</bibl>
 <msDesc>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="404">MS Ashmole 404, f. 296v</idno>
-&Napier005;
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -64,6 +68,7 @@
 <p><date when="1602-02-21" n="Sunday" evidence="external"/></p>
 <p><time notBefore="10:45:00" notAfter="14:15:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -80,6 +85,7 @@
 <change when="2014-01-17">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-08">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,9 +94,9 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/><del type="strikethrough">h 11. 40</del> h. 10. 45. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1602.</p>
-<p><lb/>Margery Britten came <lb/>to me to dinner at this tyme<note place="marginLeft"><foreign xml:lang="la">qu&aelig;ro <lb/>an pecu<lb/>nias acce<lb/>perit seu <lb/>potius an <lb/>falso curave<lb/>rit.</foreign></note></p>
+<p><lb/>Margery Britten came <lb/>to me to dinner at this tyme<note place="marginLeft"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quæro <lb/>an pecu<lb/>nias acce<lb/>perit seu <lb/>potius an <lb/>falso curave<lb/>rit.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">I ask whether she will receive the money or rather whether [he?] procured it falsely</seg><link type="is-translation-of" target="#foreign001 #translation001"/></note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

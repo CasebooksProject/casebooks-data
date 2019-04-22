@@ -7,15 +7,20 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE62758</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-11-30">30 November 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -34,15 +39,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#election"/>
@@ -62,6 +67,7 @@
 <settingDesc>
 <p><date notBefore-custom="1627-01-27T15:00:00" notAfter-custom="1627-01-29T11:25:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#es"/>
@@ -77,16 +83,21 @@
 <change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-04-04">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-06-12">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-02-13">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-04-30">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="cml0598.jpg" url="cml0598.jpg" n="283v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Ma<subst><del type="over">t</del><add place="over">r</add></subst>ti<choice><orig>j</orig><reg>i</reg></choice> <subst><del type="strikethrough">2</del> <add place="supralinear">11</add></subst> <choice><orig>♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice>. h. 6 <del type="cancelled"><gap reason="del" extent="1" unit="chars"/></del> 15 <choice><orig>a<supplied reason="binding" cert="low">nt m</supplied></orig><reg>am</reg></choice> <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> 6. 20 <add place="supralinear"><choice><orig><choice><sic>ant</sic><corr>ant m</corr></choice></orig><reg>am</reg></choice></add> 1627</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Ma<subst><del type="over">t</del><add place="over">r</add></subst>ti<choice><orig>j</orig><reg>i</reg></choice> <subst><del type="strikethrough">2</del> <add place="supralinear">11</add></subst> <choice><orig>♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice>. h. 6 <del type="cancelled"><gap reason="del" extent="1" unit="chars"/></del> 15 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/><choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> 6. 20 <add place="supralinear"><choice><orig><choice><sic>ant</sic><corr>ant m</corr></choice></orig><reg>am</reg></choice></add> 1627</p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Friday 11 March at 6.15am Sunday 6.20am 1627.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 <figure type="astro" subtype="astroChart"/>
 </body>
 </text>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26177</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="layout" resp="#jyoung">This page is upside down.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 118v</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0118v" to="0118v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ws">
+<persName><roleName>Dr</roleName> <forename>W.</forename> <surname>Shephard</surname></persName>
+<sex value="1">M</sex>
+<birth><date when="1563-02-25" n="Friday"/><time when="23:00:00"/><placeName sameAs="#place2"/></birth>
+</person>
+<person xml:id="ss">
+<persName><roleName>Mrs</roleName> <forename>Sara</forename> <surname type="married">Shephard</surname> <surname type="alternate">Hall</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="wife" active="#ss" passive="#ws"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1606-02-25" n="Tuesday"/></p>
+<p><time when="15:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ss"/>
+<cb:subject ref="#ss" present="yes"/>
+<cb:topic key="fertility"><person sameAs="#ss"/></cb:topic>
+<cb:topic key="problemCause"><person sameAs="#ss"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-07">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-28">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-16">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-09-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0270.jpg" url="acr0270.jpg" n="118v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Doctor W. Shep. maryed <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> to Saρah Hall <lb/>in <placeName xml:id="place1" key="PLACE1450" resp="#mhawkins">Acton</placeName> h 11. 30 <choice><orig>ant m</orig><reg>am</reg></choice>. 1600.</p>
+<p><lb/>D Shep. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <placeName xml:id="place2">litle hot in Buch</placeName>. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">in festo <lb/>Math</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">on the feast day of Matthew</seg><link type="is-translation-of" target="#foreign002 #translation002"/> feb. 25. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 11: p m. <del type="strikethrough">16</del> <del type="strikethrough">5</del> 1563.</p>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Sarah Sheph feb. 25 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 3. p <lb/>m. 1606. <add place="inline"><foreign xml:lang="la" xml:id="foreign003" decls="#original_source">quærit an filios habebit et <lb/>quid in causa quod n<choice><orig>ō</orig><reg>on</reg></choice> habeat</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">asks whether she will have sons and what the reason is that she has none</seg><link type="is-translation-of" target="#foreign003 #translation003"/></add> <add place="infralinear">the gentlewom<choice><orig>ā</orig><reg>an</reg></choice> in p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>senc</add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

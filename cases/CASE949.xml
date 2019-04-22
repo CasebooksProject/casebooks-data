@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE949</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="234">MS Ashmole 234, f. 132v</idno>
-&Forman001;
+<altIdentifier type="fn_number"><idno n="Forman001">Forman, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -66,6 +76,7 @@
 <p><date when="1596-12-10" n="Friday"/></p>
 <p><time when="14:54:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#mm"/>
@@ -85,6 +96,8 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-10-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-16">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,9 +105,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Margaret Morley <rs type="address" xml:id="address1">of <lb/>Lumbard streate</rs> of 25 yers <lb/>1596 the 10 of Decemb. &Friday; <lb/>&pmfl; at 5<subst><del type="over">5</del><add place="over">9</add></subst> &past; 2 <foreign xml:lang="la">&VVowel;trum sit <lb/>gra&uConsonant;ida et q<choice><orig><hi rend="overline">ua</hi></orig><reg>uan</reg></choice>do <choice><orig>&crossedp;</orig><reg>par</reg></choice>turiet <lb/>et &vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> sit mascul<choice><orig>&uscon;</orig><reg>us</reg></choice> aut <lb/>femina</foreign></p>
+<p><lb/>Margaret Morley <rs type="address" xml:id="address1" key="PLACE165" resp="#mhawkins">of <lb/>Lumbard streate</rs> of 25 yers <lb/>1596 the 10 of Decemb. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <lb/><choice><orig>p m’</orig><reg>pm</reg></choice> at 5<subst><del type="over">5</del><add place="over">9</add></subst> <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 2 <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>V</orig><reg>U</reg></choice>trum sit <lb/>gra<choice><orig>u</orig><reg>v</reg></choice>ida et q<choice><orig><hi rend="overline">ua</hi></orig><reg>uan</reg></choice>do <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>turiet <lb/>et <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> sit mascul<choice><orig>ꝯ</orig><reg>us</reg></choice> aut <lb/>femina</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Whether she is pregnant and when she will give birth and whether it will be male or female</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

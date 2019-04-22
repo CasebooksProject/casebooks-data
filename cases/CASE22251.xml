@@ -7,15 +7,20 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE22251</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-05-31">31 May 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -34,18 +39,26 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 <handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
 </handNotes>
 <langUsage>
-<language ident="en">English</language>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1630-06-23"><name sameAs="#srnapier">Richard Napier (the nephew)</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2" notBefore="1630-06-29" notAfter="1634-04-01"><name sameAs="#rnapier">Richard Napier</name> added information about subsequent events.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="rnapier">
@@ -75,11 +88,13 @@
 <p><date when="1630-06-23" n="Wednesday"/></p>
 <p><time when="20:15:00"/></p>
 <cb:consultation>
-<cb:consultant ref="#rnapier"/>
+<cb:astrologer resp="#mhawkins" ref="#srnapier"/>
+<cb:consultant ref="#srnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon1" present="unclear" evidence="conjecture"/>
 <cb:subject ref="#anon2" present="no"/>
 <cb:topic key="trust"><person sameAs="#anon2"/></cb:topic>
+<cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -90,17 +105,24 @@
 <change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-05-12">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-05-16">Checked by <name sameAs="#jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-04-09">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="afc0089.jpg" url="afc0089.jpg" n="34r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><handShift new="#srnapier"/>Quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> erit ser<choice><orig>u</orig><reg>v</reg></choice>us fidelis <lb/>&amp; Honestus. <foreign xml:lang="en"><choice><orig>I</orig><reg>J</reg></choice>une 23. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> hor. 8. 15. <lb/>p. m. 1630.</foreign></p>
-<p><lb/><handShift new="#rnapier"/><foreign xml:lang="en">Rich after he saw the <choice><orig></orig><reg>par</reg></choice>ty <lb/>did <choice><orig>v</orig><reg>u</reg></choice>tterly mislike not him</foreign></p>
-</div><figure type="astro" subtype="astroChart"/>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<milestone unit="question" spanTo="#questionEnd"/>
+<p change="#stage1"><lb/><handShift new="#srnapier"/>Quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> erit ser<choice><orig>u</orig><reg>v</reg></choice>us fidelis <lb/>&amp; Honestus. <foreign xml:lang="en"><choice><orig>I</orig><reg>J</reg></choice>une 23. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> hor. 8. 15. <lb/>p. m. 1630.</foreign></p><anchor xml:id="questionEnd"/>
+<milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><p change="#stage2"><lb/><handShift new="#rnapier"/><foreign xml:lang="en">Rich after he saw the <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ty <lb/>did <choice><orig>v</orig><reg>u</reg></choice>tterly mislike not him</foreign></p><anchor xml:id="subsequentEventInfoEnd"/>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p change="#stage1">[He/she] asks whether he will be a faithful and honest servant Wednesday 23 June 1630 at 8.15pm.</p>
+<p change="#stage2">Richard after he saw the party did utterly mislike not him.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

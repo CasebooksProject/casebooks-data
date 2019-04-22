@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE76427</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-08-18">18 August 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="214">MS Ashmole 214, p. 303</idno>
+<altIdentifier type="fn_number"><idno n="Napier052">Napier, vol. 52</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0303" to="0303"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="cl">
+<persName><forename>Charles</forename> <surname>Lane</surname></persName>
+<sex value="1">M</sex>
+<age value="13">13</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+<birth>
+<date when="1619-10-02" xml:id="date1" exclude="#date2"/>
+<date when="1620-10-02" xml:id="date2" exclude="#date1"/>
+</birth>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-02-08" n="Friday"/></p>
+<p><time when="16:25:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#cl" evidence="internal"/>
+<cb:subject ref="#cl" present="no"/>
+<cb:topic key="swelling"><person sameAs="#cl"/></cb:topic>
+<cb:topic key="throatMouth"><person sameAs="#cl"/></cb:topic>
+<cb:topic key="skin"><person sameAs="#cl"/></cb:topic>
+<cb:topic key="pain"><person sameAs="#cl"/></cb:topic>
+<cb:topic key="head"><person sameAs="#cl"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-02">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-08-18">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-08-21">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-11-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aaa0331.jpg" url="aaa0331.jpg" n="303"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Charles Lane <rs type="address" xml:id="address1" key="PLACE695" resp="#mhawkins">of Hanslop</rs> 13 y <lb/>the 2 of Octob last sente <lb/>feb 8 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 4. 25 p m 1633</p>
+<p><lb/>swelled about his necke <lb/>ever sinc Christ<choice><orig>ā</orig><reg>ma</reg></choice>s &amp; is <lb/>broken in 3 <subst><del type="over">t</del><add place="over">p</add></subst>laces &amp; likely <lb/>to break in another <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/>extreme payne in his head <lb/>&amp; necke feb 8 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 4. 25 p <lb/>m 1633.</p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE69794</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-10-25">25 October 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE69793">CASE69793</ref>.</note>
 </notesStmt>
@@ -36,9 +41,8 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
-<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,6 +76,7 @@
 <p><date when="1629-12-02" n="Wednesday" evidence="external"/></p>
 <p><time when="16:00:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#sd"/>
@@ -87,7 +92,8 @@
 <change when="2016-10-25">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-11-29">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-08-23">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-17">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,7 +101,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Sanders Dunc<choice><orig>ō</orig><reg>om</reg></choice>be <foreign xml:lang="la">natus</foreign> <lb/><rs type="address" xml:id="address1">at Battelsdon</rs> feb 22 <lb/>h. 23. 30 p m. 1582</p>
+<p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Sanders Dunc<choice><orig>ō</orig><reg>om</reg></choice>be <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/><rs type="address" xml:id="address1" key="PLACE327" resp="#mhawkins">at Battelsdon</rs> feb 22 <lb/>h. 23. 30 p m. 1582</p>
 </div><figure type="astro" subtype="astroChartDeleted"/>
 </body>
 </text>

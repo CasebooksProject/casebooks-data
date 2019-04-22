@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26085</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uS</bibl>
+<msDesc xml:id="original_source">
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 53v</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0053v" to="0053v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="qtail">
+        <glyphName>Q WITH TAIL</glyphName>
+        <mapping type="standard">q</mapping>
+        <mapping type="PUA">U+E8BF</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="la">Latin</language>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="k">
+<persName><surname type="married">Kempton</surname> <surname evidence="inferred" type="maiden">Napier</surname></persName>
+<sex value="2">F</sex>
+<age value="41">41</age>
+<birth><date when="1561-09-11"/><time notBefore="05:00:00" notAfter="06:00:00"/></birth>
+</person>
+<listRelation><relation name="sister" active="#k" passive="#rnapier"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1602-05-02" n="Sunday"/></p>
+<p><time when="07:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#k" evidence="internal"/>
+<cb:subject ref="#k" present="no"/>
+<cb:item type="urine"/>
+<cb:topic key="morbus" resp="#rnapier"><person sameAs="#k"/></cb:topic>
+<cb:topic key="problemCause"><person sameAs="#k"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-02">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-25">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-14">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-12-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0138.jpg" url="acr0138.jpg" n="53v"/>
+</facsimile>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Soror mea Kimpton <foreign xml:lang="en">4<subst><del type="over">0</del><add place="over"><choice><orig>i</orig><reg>1</reg></choice></add></subst> y c<choice><orig>ō</orig><reg>om</reg></choice>pleate <del type="strikethrough">feb. 8</del> <lb/>septemb last the <subst><del type="strikethrough">8</del> <add place="supralinear">11</add></subst> day <add place="supralinear">1602.</add> borne betwixt <lb/>5 &amp; 6 in the morning.</foreign> quærit morbi eius<choice><orig><g ref="#qtail"></g></orig><reg>que</reg></choice> caus<choice><orig>ā</orig><reg>am</reg></choice> seu potius misit <choice><orig>v</orig><reg>u</reg></choice>rin<choice><orig>ā</orig><reg>am</reg></choice> <lb/><choice><orig>v</orig><reg>u</reg></choice>t de morbo c<choice><orig>ō</orig><reg>on</reg></choice><choice><orig>i</orig><reg>j</reg></choice>ectur<choice><orig>ā</orig><reg>am</reg></choice> facerem Mai<choice><orig>j</orig><reg>i</reg></choice> <lb/>2. <choice><orig>☉</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice> hor. 7. 15. <choice><orig>ant m</orig><reg>am</reg></choice> 1602.</p>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>My sister Kempton of 41 years complete September last the 11th day 1602, born between 5 and 6 in the morning, asks about her disease and its cause, or rather she sent her urine that I might make a conjecture about the disease: Sunday 2 May 1602 at 7.15am.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

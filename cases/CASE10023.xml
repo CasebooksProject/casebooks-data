@@ -7,13 +7,18 @@
  <fileDesc>
  <titleStmt>
  <title xml:id="main_title">CASE10023</title>
- </titleStmt>
+ <funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
  <publicationStmt>
  <publisher>The Casebooks Project</publisher>
  <pubPlace>Cambridge</pubPlace>
  <date when="2010-11-05">05 November 2010</date>
  </publicationStmt>
- <sourceDesc>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
  <bibl type="positionOnPage">uR</bibl>
  <msDesc>
 <msIdentifier>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="195">MS Ashmole 195, f. 45v</idno>
-&Forman003;
+<altIdentifier type="fn_number"><idno n="Forman003">Forman, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
  </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -57,7 +63,7 @@
 <person xml:id="p1">
 <persName><surname>Palmer</surname></persName>
 <sex value="1">M</sex>
-<occupation>Apothecary</occupation>
+<occupation type="medicalPractitioner">Apothecary</occupation>
 <death><date when="1598-07-04" precision="medium" evidence="internal"/></death>
 </person>
 <person xml:id="p2">
@@ -71,6 +77,7 @@
 <p><date when="1598-04-29" n="Saturday"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman" evidence="conjecture" present="yes"/>
@@ -86,6 +93,8 @@
 <change when="2011-01-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,9 +102,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Palmer the Apoticary <foreign xml:lang="la">&VVowel;trum <lb/>Vi&uConsonant;it vel Moritur</foreign> 1598 the <lb/>29 of Aprill &Saturday; at 10 <choice><orig>an m<hi rend="superscript">r</hi></orig><reg>am</reg></choice> <lb/>his Sister told me first of him</p>
+<p><lb/>Palmer the Apoticary <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>V</orig><reg>U</reg></choice>trum <lb/>Vi<choice><orig>u</orig><reg>v</reg></choice>it vel Moritur</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Whether he will live or die</seg><link type="is-translation-of" target="#foreign001 #translation001"/> 1598 the <lb/>29 of Aprill <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> at 10 <choice><orig>an m<hi rend="superscript">r</hi></orig><reg>am</reg></choice> <lb/>his Sister told me first of him</p>
 </div>
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
  </body>
  </text>
 </TEI>

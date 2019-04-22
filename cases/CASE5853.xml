@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE5853</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="editorial" resp="#rralley">In this entry Forman confuses Elizabeth Howard with her sister Frances. The correct information has been supplied in the metadata.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-1</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 128v</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,6 +40,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -82,6 +88,7 @@
 <p><date when="1599-08-17" n="Friday"/></p>
 <p><time when="11:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#eh"/>
@@ -98,6 +105,7 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-24">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -106,8 +114,8 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Elizabeth hayword <lb/>of 32 years 1599 the 17 <lb/>of Aug &Friday; &inflmfl; 20 &past; x&jVowel;&slash; <lb/>Daughter of the L <unclear reason="hand" cert="high">Ambrolle</unclear> <lb/><foreign xml:lang="la"><choice><orig><hi rend="overline">Dna</hi></orig><reg>Domina</reg></choice> de <placeName>Kildare</placeName> qui supputata est <lb/>Conduce ell</foreign> L cobham&slash;</p>
-<p><lb/><foreign xml:lang="la">Soror illius est <choice><orig><hi rend="overline">dna</hi></orig><reg>domina</reg></choice> Southwell&slash;</foreign></p>
+<p><lb/>Elizabeth hayword <lb/>of 32 years 1599 the 17 <lb/>of Aug <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>in’ m’</orig><reg>in meridie</reg><reg type="gloss">around noon</reg></choice> 20 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> x<choice><orig>j</orig><reg>i</reg></choice>/ <lb/>Daughter of the L <unclear reason="hand" cert="high">Ambrolle</unclear> <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><hi rend="overline">Dna</hi></orig><reg>Domina</reg></choice> de Kildare qui supputata est <lb/>Conduce ell</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Lady Kildare who is expected to marry [word not understood]</seg><link type="is-translation-of" target="#foreign001 #translation001"/> L cobham/</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">Soror illius est <choice><orig><hi rend="overline">dna</hi></orig><reg>domina</reg></choice> Southwell/</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">Her sister is Lady Southwell</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
 </body>
 </text>

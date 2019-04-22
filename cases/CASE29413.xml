@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE29413</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="216">MS Ashmole 216, f. 149r</idno>
-&Napier010;
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -80,13 +84,14 @@
 <p><date when="1605-07-16" n="Tuesday"/></p>
 <p><time when="09:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon4" evidence="conjecture"/>
 <cb:subject ref="#anon4" present="yes"/>
 <cb:object ref="#anon1 #ig"/>
 <cb:topic key="clearingName"><person sameAs="#ig"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#ig"/><person sameAs="#anon1"/></cb:topic>
+<cb:topic key="witchcraftSuspect"><person sameAs="#ig"/><person sameAs="#anon1"/></cb:topic>
 
 </cb:consultation>
 </settingDesc>
@@ -97,6 +102,7 @@
 <change when="2014-02-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,9 +110,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Isbell Gravestocke <lb/>in <choice><orig>p&loopedr;</orig><reg>pre</reg></choice>senc <foreign xml:lang="la">qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <choice><sic><unclear cert="low" reason="hand">et</unclear></sic><corr type="noText"/></choice></foreign> <lb/>&IConsonant;uly. 16. &Tuesday; h. 9. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1605. <add place="inline"><foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> intention<choice><orig>&eover;</orig><reg>em</reg></choice> <lb/>habuit male<lb/>faciendi et occidendi</foreign> <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> shee c<choice><orig>&oover;</orig><reg>om</reg></choice><lb/>pounded <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <lb/>old women to <lb/>bewitch her child.</add><note place="chart">nothing was <lb/>sayd to her when shee came <lb/>before the &IConsonant;udge</note></p>
+<p><lb/>Isbell Gravestocke <lb/>in <choice><orig>p<hi rend="superscript">r</hi></orig><reg>pre</reg></choice>senc <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> <choice><sic><unclear cert="low" reason="hand">et</unclear></sic><corr type="noText"/></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">it is asked</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/><choice><orig>I</orig><reg>J</reg></choice>uly. 16. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 9. <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1605. <add place="inline"><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> intention<choice><orig>ē</orig><reg>em</reg></choice> <lb/>habuit male<lb/>faciendi et occidendi</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">whether she intends to injure and kill</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> shee c<choice><orig>ō</orig><reg>om</reg></choice><lb/>pounded <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the <lb/>old women to <lb/>bewitch her child.</add><note place="chart">nothing was <lb/>sayd to her when shee came <lb/>before the <choice><orig>I</orig><reg>J</reg></choice>udge</note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

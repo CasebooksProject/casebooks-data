@@ -7,15 +7,20 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE53319</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-03-22">22 March 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -34,9 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -90,16 +98,20 @@
 <change when="2016-03-22">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-05-17">Transcribed by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-08-01">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-04-25">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="aaw0286.jpg" url="aaw0286.jpg" n="133v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><foreign xml:lang="en">S Rob:</foreign> quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>stat <lb/>accipere dig qu<choice><orig>ā</orig><reg>an</reg></choice>d<choice><orig>ā</orig><reg>am</reg></choice> sibi <lb/><del type="strikethrough"> peci</del> pecuniar<choice><orig>ā</orig><reg>am</reg></choice> <choice><orig>g<hi rend="overline"><unclear reason="hand" cert="low">a</unclear></hi></orig><reg cert="low">gratiam</reg></choice> <lb/>oblat<choice><orig>ā</orig><reg>am</reg></choice> nov<choice><orig>ē</orig><reg>em</reg></choice>b 1. <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. <lb/>7 <choice><orig>ant m</orig><reg>am</reg></choice>. 162<choice><orig>i</orig><reg>1</reg></choice> <foreign xml:lang="en"><choice><orig></orig><reg>pro</reg></choice>pounded to M<hi rend="superscript">r</hi> Wallys</foreign></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><foreign xml:lang="en">S Rob:</foreign> quærit <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>stat <lb/>accipere dig qu<choice><orig>ā</orig><reg>an</reg></choice>d<choice><orig>ā</orig><reg>am</reg></choice> sibi <lb/><del type="strikethrough"><g ref="#crossedp"></g> peci</del> pecuniar<choice><orig>ā</orig><reg>am</reg></choice> <choice><orig>g<hi rend="overline"><unclear reason="hand" cert="low">a</unclear></hi></orig><reg cert="low">gratiam</reg></choice> <lb/>oblat<choice><orig>ā</orig><reg>am</reg></choice> nov<choice><orig>ē</orig><reg>em</reg></choice>b 1. <choice><orig>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. <lb/>7 <choice><orig>ant m</orig><reg>am</reg></choice>. 162<choice><orig>i</orig><reg>1</reg></choice> <foreign xml:lang="en"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>pounded to M<hi rend="superscript">r</hi> Wallys</foreign></p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Sir Robert asks whether it is better to accept a certain pecuniary dignity [and grace?] offered him  Thursday 1 November 1621 at 7am propounded to Mr Wallis.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 <figure type="astro" subtype="astroChart"/>
 </body>
 </text>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE40609</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-02-28">28 February 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="409">MS Ashmole 409, f. 207r</idno>
-&Napier021;
+<altIdentifier type="fn_number"><idno n="Napier021">Napier, vol. 21</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -70,6 +78,7 @@
 <p><date when="1612-11-17" n="Tuesday"/></p>
 <p><time when="11:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#g" evidence="internal" present="unclear"/>
@@ -92,7 +101,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>m<hi rend="superscript">r</hi> will: Greene<lb/>nough mynister <lb/>for a frend &amp; a gentle<lb/>wom<choice><orig>&aover;</orig><reg>an</reg></choice> of his acquant<lb/>tance <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> hath taken <lb/>mutch greefe &amp; is out <lb/>of tem<choice><orig>&crossedp;</orig><reg>per</reg></choice> in her <lb/>brayne for <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> her <lb/>frinds &amp; parents <lb/>would not bestowe <lb/>her on a <choice><orig>&crossedp;</orig><reg>par</reg></choice>ty <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she <lb/>loved nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 17 <choice><orig><choice><sic>&MoonSymbol;</sic><corr>&MarsSymbol;</corr></choice></orig><reg type="gloss">Tuesday</reg></choice> <lb/>h. 11. 30 &antm; <lb/>1612.</p>
+<p><lb/>m<hi rend="superscript">r</hi> will: Greene<lb/>nough mynister <lb/>for a frend &amp; a gentle<lb/>wom<choice><orig>ā</orig><reg>an</reg></choice> of his acquant<lb/>tance <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> hath taken <lb/>mutch greefe &amp; is out <lb/>of tem<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> in her <lb/>brayne for <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> her <lb/>frinds &amp; parents <lb/>would not bestowe <lb/>her on a <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>ty <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she <lb/>loved nov<choice><orig>ē</orig><reg>em</reg></choice>b. 17 <choice><orig><choice><sic>☾</sic><corr>♂</corr></choice></orig><reg type="gloss">Tuesday</reg></choice> <lb/>h. 11. 30 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1612.</p>
 </div>
 </body>
 </text>

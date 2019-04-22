@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE80088</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2018-10-02">2 October 2018</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">mL-2, mR, bS</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="405">MS Ashmole 405, f. 48r</idno>
+<altIdentifier type="fn_number"><idno n="Napier044">Napier, vol. 44</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0048r" to="0048r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="rk">
+<persName><roleName>Mr</roleName> <forename>Richard</forename> <surname>King</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="k">
+<persName><surname evidence="inferred" cert="medium">King</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="father" active="#rk" passive="#k"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1628-05-27" n="Tuesday"/></p>
+<p><time when="17:20:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rk" evidence="internal" present="no"/>
+<cb:subject ref="#k" present="no"/>
+<cb:item type="letter"/>
+<cb:topic key="fits"><person sameAs="#k"/></cb:topic>
+<cb:info type="financial"/>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-14">Template created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-07">Material previously compiled by <name xml:id="jedge">Joanne Edge</name> and <name xml:id="jyoung">John Young</name> transferred to template by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-10-02">Whole-manuscript file divided into individual NOTE files by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-10-17">Changed into an entry by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="abk0111.jpg" url="abk0111.jpg" n="48r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="financialInfo" spanTo="#financialInfoEnd"/>
+<p><lb/>M<hi rend="superscript">r</hi> Rich King sent me 20<hi rend="superscript">s</hi><anchor xml:id="financialInfoEnd"/> <milestone unit="question" spanTo="#questionEnd"/><lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a very kind letter.</p>
+<cb xml:id="colB" n="b"/>
+<p><lb/>May 27 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 5. <subst><del type="strikethrough">30</del> <add place="supralinear">20</add></subst> p m 1628.</p>
+<cb xml:id="colA" n="a"/>
+<p><lb/>M<hi rend="superscript">r</hi> Kings sonne had none of these <choice><orig>m<hi rend="superscript">r</hi></orig><reg>master</reg></choice> fits &amp; convulsions <lb/><choice><orig>v</orig><reg>u</reg></choice>ntill he had 60 buckets at the bath poured <choice><orig>v</orig><reg>u</reg></choice>ppon his <lb/>head.</p><anchor xml:id="questionEnd"/>
+<milestone unit="treatment" spanTo="#treatmentEnd"/>
+<p><lb/>Shave his head on the crowne &amp; make eyther <lb/>a blyst playster or els a c<choice><orig>ō</orig><reg>om</reg></choice>fortable playster <lb/>strenghtning his head</p><anchor xml:id="treatmentEnd"/>
+</div>
+</body>
+</text>
+</TEI>

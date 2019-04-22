@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE25211</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-03">03 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE25210">CASE25210</ref>.</note>
 </notesStmt>
@@ -25,7 +30,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="239">MS Ashmole 239, f. 96r, f. 95v</idno>
-&Napier018;
+<altIdentifier type="fn_number"><idno n="Napier018">Napier, vol. 18</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -38,8 +43,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,6 +76,7 @@
 <p><date when="1610-07-15" n="Sunday" evidence="external"/></p>
 <p><time when="12:30:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="yes"/>
@@ -88,6 +93,8 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-02">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -96,13 +103,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Hoddle <rs type="address" xml:id="address1">of Olny</rs> <del type="strikethrough">2 y</del> <lb/><foreign xml:lang="la">natus</foreign> feb 28. &Sunday; h 13: p m <lb/>1608</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Hoddle <rs type="address" xml:id="address1" key="PLACE775" resp="#mhawkins">of Olny</rs> <del type="strikethrough">2 y</del> <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> feb 28. <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h 13: p m <lb/>1608</p>
 </div>
-&astroChartPartialDeleted;
+<figure type="astro" subtype="astroChartPartialDeleted"/>
 <div><pb xml:id="f95v" n="95v" facs="#afp0210.jpg"/>
-<p><lb/>borne 28 feb. &IConsonant;ohn hodle <rs type="address" sameAs="#address1">of <lb/>olny</rs>. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">&SunSymbol;</add></subst></orig><reg type="gloss">Sunday</reg></choice> h. <del type="strikethrough">12. 2</del> 13. <lb/>p m 1608.</p>
+<p><lb/>borne 28 feb. <choice><orig>I</orig><reg>J</reg></choice>ohn hodle <rs type="address" sameAs="#address1" key="PLACE775" resp="#mhawkins">of <lb/>olny</rs>. <choice><orig><subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">☉</add></subst></orig><reg type="gloss">Sunday</reg></choice> h. <del type="strikethrough">12. 2</del> 13. <lb/>p m 1608.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

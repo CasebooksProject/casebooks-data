@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE17520</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-03-15">15 March 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="221">MS Ashmole 221, f. 140r</idno>
-&Napier006;
+<altIdentifier type="fn_number"><idno n="Napier006">Napier, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -75,6 +81,7 @@
 <p><date when="1602-07-17" n="Saturday"/></p>
 <p><time when="15:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m"/>
@@ -93,6 +100,8 @@
 <change when="2012-06-28">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-11">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -100,10 +109,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>younge <choice><orig><hi rend="overline">mres</hi></orig><reg>Mrs</reg></choice> Maunsell <lb/><rs type="address" xml:id="address1">of haversh<choice><orig>&aover;</orig><reg>am</reg></choice></rs>. <del type="strikethrough">30</del> 26 <lb/>y. &IConsonant;uly. 17. &Saturday; hor. <lb/>3. 15. p m. 1602. <add place="infralinear"><foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> gravida</foreign></add></p>
-<p><lb/><foreign xml:lang="la">&vVowel;tr<choice><orig>&uover;</orig><reg>um</reg></choice> Toby iter capescet <lb/><choice><sic>e</sic><corr type="delText"/></choice><del type="strikethrough"><gap reason="del" extent="1" unit="chars"/></del> ad domin<choice><orig>&uover;</orig><reg>um</reg></choice> su<choice><orig>&uover;</orig><reg>um</reg></choice></foreign></p>
+<p><lb/>younge <choice><orig><hi rend="overline">mres</hi></orig><reg>Mrs</reg></choice> Maunsell <lb/><rs type="address" xml:id="address1" key="PLACE701" resp="#mhawkins">of haversh<choice><orig>ā</orig><reg>am</reg></choice></rs>. <del type="strikethrough">30</del> 26 <lb/>y. <choice><orig>I</orig><reg>J</reg></choice>uly. 17. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> hor. <lb/>3. 15. p m. 1602. <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> gravida</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether pregnant</seg><link type="is-translation-of" target="#foreign001 #translation001"/></add></p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> Toby iter capescet <lb/><choice><sic>e</sic><corr type="delText"/></choice><del type="strikethrough"><gap reason="del" extent="1" unit="chars"/></del> ad domin<choice><orig>ū</orig><reg>um</reg></choice> su<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">whether Toby will undertake the journey to his master</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

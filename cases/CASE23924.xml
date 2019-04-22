@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE23924</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-29">29 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="237">MS Ashmole 237, f. 91v</idno>
-&Napier023;
+<altIdentifier type="fn_number"><idno n="Napier023">Napier, vol. 23</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -53,13 +59,13 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="rd">
-<persName><roleName>Mr</roleName> <forename>Robert</forename> <surname>D&rsquo;Oyly</surname></persName>
+<persName><roleName>Mr</roleName> <forename>Robert</forename> <surname>D’Oyly</surname></persName>
 <sex value="1">M</sex>
 <age value="47">47</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
 <person xml:id="d">
-<persName><surname evidence="inferred" cert="high">D&rsquo;Oyly</surname> <roleName>High Sheriff</roleName></persName>
+<persName><surname evidence="inferred" cert="high">D’Oyly</surname> <roleName>High Sheriff</roleName></persName>
 <sex value="1">M</sex>
 </person>
 <listRelation><relation name="father" active="#d" passive="#rd"/></listRelation>
@@ -69,6 +75,7 @@
 <p><date when="1614-09-12" n="Monday"/></p>
 <p><time when="06:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rd"/>
@@ -86,6 +93,7 @@
 <change when="2015-08-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -93,12 +101,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Robart D<subst><del type="over">a</del><add place="over">o</add></subst>ylie <rs type="address" xml:id="address1">of Adder<lb/>bery</rs> 47 y. Sept 12. &Monday; h. <lb/>6. &antm; 1614. <add place="infralinear">his father was high sheriffe <lb/>a gentlem<choice><orig>&aover;</orig><reg>an</reg></choice> hath two m<choice><orig>&aover;</orig><reg>an</reg></choice>ners</add></p>
+<p><lb/>Robart D<subst><del type="over">a</del><add place="over">o</add></subst>ylie <rs type="address" xml:id="address1" key="PLACE1829" resp="#mhawkins">of Adder<lb/>bery</rs> 47 y. Sept 12. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. <lb/>6. <choice><orig>ant m</orig><reg>am</reg></choice> 1614. <add place="infralinear">his father was high sheriffe <lb/>a gentlem<choice><orig>ā</orig><reg>an</reg></choice> hath two m<choice><orig>ā</orig><reg>an</reg></choice>ners</add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div><cb xml:id="colB" n="b"/>
-<p><lb/>M<hi rend="superscript">r</hi> Robart Doylie <lb/><rs type="address" sameAs="#address1">of Adderburye</rs> 47 y.</p>
+<p><lb/>M<hi rend="superscript">r</hi> Robart Doylie <lb/><rs type="address" sameAs="#address1" key="PLACE1829" resp="#mhawkins">of Adderburye</rs> 47 y.</p>
 </div>
 </body>
 </text>

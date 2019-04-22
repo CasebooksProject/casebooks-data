@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10107</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="195">MS Ashmole 195, f. 72r</idno>
-&Forman003;
+<altIdentifier type="fn_number"><idno n="Forman003">Forman, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -57,13 +67,14 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1598"/></p>
+<p><date notBefore="1597-11-23" notAfter="1599-02-08" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
 <cb:subject ref="#sforman" present="yes"/>
-<cb:topic key="fortune"><person sameAs="#sforman" resp="#mhawkins"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#sforman"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
 </settingDesc>
@@ -74,6 +85,7 @@
 <change when="2013-09-20">Topic coding updated by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -81,9 +93,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/><foreign xml:lang="la"><supplied reason="binding">Re</supplied>&uConsonant;olutio <choice><sic>Natiutatis</sic><corr>Nati&uConsonant;itatis</corr></choice> S f <choice><orig>&crossedp;</orig><reg>pro</reg></choice> <lb/><supplied reason="binding">Ann</supplied>o 1598.</foreign> the 31 Decemb 1597 &Saturday; <lb/><choice><orig><supplied reason="binding">p</supplied> m&flourish;</orig><reg>pm</reg></choice> at 7. after my own calculati<choice><orig>&oover;</orig><reg>on</reg></choice>&slash;</p>
+ <p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><supplied reason="binding">Re</supplied><choice><orig>u</orig><reg>v</reg></choice>olutio <choice><sic>Natiutatis</sic><corr>Nati<choice><orig>u</orig><reg>v</reg></choice>itatis</corr></choice> S f <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <lb/><supplied reason="binding">Ann</supplied>o 1598.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Revolution of the nativity of S. F. for the year 1598</seg><link type="is-translation-of" target="#foreign001 #translation001"/> the 31 Decemb 1597 <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> <lb/><choice><orig><supplied reason="binding">p</supplied> m’</orig><reg>pm</reg></choice> at 7. after my own calculati<choice><orig>ō</orig><reg>on</reg></choice>/</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

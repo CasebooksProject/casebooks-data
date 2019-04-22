@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE55710</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-06-07">07 June 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-2</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -59,14 +64,11 @@
 <residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <person xml:id="h2">
-<persName><surname evidence="inferred">Hanger</surname></persName>
+<persName><surname evidence="inferred" type="married">Hanger</surname></persName>
+<persName><roleName evidence="internal">Mrs</roleName> <surname evidence="internal">Edwards</surname></persName>
 <sex value="2">F</sex>
 <age value="54">54</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-</person>
-<person xml:id="e" evidence="internal">
-<persName><roleName>Mrs</roleName> <surname>Edwards</surname></persName>
-<sex value="2">F</sex>
 </person>
 <listRelation><relation name="wife" active="#h2" passive="#h1"/></listRelation>
 </listPerson>
@@ -75,13 +77,13 @@
 <p><date when="1623-03-10" n="Monday"/></p>
 <p><time when="11:39:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#h1" evidence="internal" present="unclear"/>
 <cb:subject ref="#h2" present="no"/>
-<cb:object ref="#e"/>
 <cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#h2"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#h2"/><person sameAs="#e"/></cb:topic>
+
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -93,7 +95,7 @@
 <change when="2016-06-07">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-08">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-08-19">Checked by <name xml:id="jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -101,7 +103,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>D<hi rend="superscript">r</hi> <add place="supralinear"><choice><sic>M<hi rend="overline">res</hi></sic><corr type="noText"/></choice></add> Hanger <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">for</add></subst> his wife <lb/><rs type="address" xml:id="address1">of Steaphington</rs> <subst><del type="strikethrough">45</del> <add place="supralinear">54</add></subst> y March <lb/>10 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 11. <choice><sic><del type="over">2<gap extent="1" unit="chars" reason="del"/></del><add place="over">39</add></sic><corr type="delText"/></choice> <add place="supralinear">39</add> <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1623. </p>
+<p><lb/>D<hi rend="superscript">r</hi> <add place="supralinear"><choice><sic>M<hi rend="overline">res</hi></sic><corr type="noText"/></choice></add> Hanger <subst><del type="over"><gap reason="del" unit="chars" extent="2"/></del><add place="over">for</add></subst> his wife <lb/><rs type="address" xml:id="address1" key="PLACE1284">of Steaphington</rs> <subst><del type="strikethrough">45</del> <add place="supralinear">54</add></subst> y March <lb/>10 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 11. <choice><sic><del type="over">2<gap extent="1" unit="chars" reason="del"/></del><add place="over">39</add></sic><corr type="delText"/></choice> <add place="supralinear">39</add> <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1623. </p>
 </div>
 </body>
 </text>

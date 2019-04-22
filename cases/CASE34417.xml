@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE34417</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 248v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,14 +39,19 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -52,14 +62,20 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="anon1">
+<person xml:id="a">
+<persName><forename>Alice</forename></persName>
 <sex value="2">F</sex>
 </person>
-<person xml:id="anon2">
+<person xml:id="anon">
 <sex value="1">M</sex>
 </person>
+<person xml:id="willoughby">
+<persName><roleName>Mr</roleName> <surname>Willoughby</surname></persName>
+<sex value="1">M</sex>
+<occupation type="medicalPractitioner" resp="#mhawkins">Medical practitioner</occupation>
+</person>
 <listRelation>
-<relation name="father" active="#anon2" passive="#anon1"/>
+<relation name="father" active="#anon" passive="#a"/>
 </listRelation>
 </listPerson>
 </particDesc>
@@ -67,11 +83,13 @@
 <p><date when="1608-11-15" n="Tuesday"/></p>
 <p><time notBefore="11:00:00" notAfter="11:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon2" evidence="internal" present="unclear"/>
-<cb:subject ref="#anon1" present="no"/>
-<cb:topic key="problemCause"><person sameAs="#anon1"/></cb:topic>
+<cb:querent ref="#willoughby" evidence="internal" present="unclear"/>
+<cb:subject ref="#a" present="unclear"/>
+<cb:topic key="problemCause"><person sameAs="#a"/></cb:topic>
+<cb:topic key="speechless"><person sameAs="#a"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -81,16 +99,25 @@
 <change when="2015-04-10">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-01-18">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-04-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-05-14">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-24">Translation revised by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="aap0500.jpg" url="aap0500.jpg" n="248v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>qu&aelig;rit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> de Alo<gap extent="4" unit="chars" reason="binding"/> <lb/>de causa m<supplied reason="binding" cert="medium">orbi</supplied> <lb/>et an sit v<gap extent="3" unit="chars" reason="binding"/> <lb/>pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filia <supplied reason="binding" cert="high">no</supplied><lb/>v<choice><orig>&eover;</orig><reg>em</reg></choice>ber 15 &Tuesday; h. 11 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1608</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> de Aloisia <lb/>de causa morbi <lb/>et an sit vitedis <lb/>pater <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> filia no<lb/>v<choice><orig>ē</orig><reg>em</reg></choice>ber 15 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 11 <choice><orig>ant <lb/>m</orig><reg>am</reg></choice> 1608 <add place="infralinear"><foreign xml:lang="en">M<hi rend="superscript">r</hi> Willoby did <lb/>move the quest <lb/>wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>it shall recover his speach</foreign></add></p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>It is asked concerning Alice what the cause of the disease is and whether it is [word not understood] the father for the daughter Tuesday 15 November 1608 at 11am. Mr Willoughby did move the question whether it shall recover his speech</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

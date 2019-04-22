@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26200</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-18">18 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="layout" resp="#jyoung">This entry is written sideways.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 127v</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0127v" to="0127v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ef">
+<persName><forename>Elizabeth</forename> <surname>Fortescue</surname></persName>
+<sex value="2">F</sex>
+<age value="64">64</age>
+</person>
+<person xml:id="hf">
+<persName><forename>Henry</forename> <surname>Fortescue</surname></persName>
+<sex value="1">M</sex>
+<age value="33">33</age>
+</person>
+<person xml:id="wf">
+<persName><forename>William</forename> <surname>Fortescue</surname></persName>
+<sex value="1">M</sex>
+<age value="36">36</age>
+</person>
+<person xml:id="tf">
+<persName><forename>Thomas</forename> <surname>Felton</surname></persName>
+<sex value="1">M</sex>
+<age value="44">44</age>
+</person>
+<listRelation><relation name="mother" active="#ef" passive="#hf #tf"/></listRelation>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1606-05-01" n="Thursday"/></p>
+<p><time when="08:15:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ef" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#ef" present="unclear"/>
+<cb:subject ref="#hf #wf #tf" present="no"/>
+<cb:topic key="maritalProspects"><person sameAs="#ef"/></cb:topic>
+<cb:topic key="fortune"><person sameAs="#hf"/></cb:topic>
+<cb:topic key="fortune" evidence="internal"><person sameAs="#wf"/><person sameAs="#tf"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-08-07">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-30">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-16">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0288.jpg" url="acr0288.jpg" n="127v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd1"/>
+<p><lb/>Elis foscue 64 y mai<choice><orig>j</orig><reg>i</reg></choice> 1: <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h 8 <lb/>15 <choice><orig>ant m</orig><reg>am</reg></choice> 1606</p>
+<p><lb/>Wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> best for her to mary <lb/>or noe./</p>
+<p><lb/>Henry fosc her sone 33. what <lb/>shalbe come of him</p><anchor xml:id="questionEnd1"/>
+<milestone unit="judgment" spanTo="#judgmentEnd1"/>
+<p><lb/>he shall doe well in tyme <lb/>for some office.</p><anchor xml:id="judgmentEnd1"/>
+<milestone unit="question" spanTo="#questionEnd2"/>
+<p><lb/>wyll fosc 36 y<anchor xml:id="questionEnd2"/> <milestone unit="judgment" spanTo="#judgmentEnd2"/>he shall do <lb/>reasonable well by some office</p><anchor xml:id="judgmentEnd2"/>
+<milestone unit="question" spanTo="#questionEnd3"/>
+<p><lb/>Thomas felton 44 y sone <lb/>of Elis fosc</p><anchor xml:id="questionEnd3"/>
+<milestone unit="judgment" spanTo="#judgmentEnd3"/>
+<p><lb/>he wyll not live long</p>
+<p><lb/>but will dye some 2 yeres <lb/>henc</p><anchor xml:id="judgmentEnd3"/>
+</div>
+</body>
+</text>
+</TEI>

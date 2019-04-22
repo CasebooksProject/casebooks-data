@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE34291</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 230v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -53,7 +59,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="rp">
-<persName><forename>Richard</forename> <surname>Pearce</surname></persName>
+<persName><forename>Richard</forename> <surname>Perpointe</surname></persName>
 <sex value="1">M</sex>
 <age value="33">33</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -62,8 +68,9 @@
 </particDesc>
 <settingDesc>
 <p><date when="1608-10-28" n="Friday"/></p>
-<p><time notBefore="13:00:00" notAfter="13:59:00"/></p>
+<p><time when="13:50:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rp"/>
@@ -82,6 +89,9 @@
 <change when="2015-04-07">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-01-08">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-05-14">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,7 +99,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Richard P<unclear cert="low" reason="copy">earce</unclear> <lb/><rs type="address" xml:id="address1">of <unclear cert="low" reason="copy">Hutching</unclear></rs> 33 y <lb/>maryed sinc he <gap reason="binding" unit="words" extent="1"/> <lb/>sick of <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> &IConsonant;aundes <lb/>Octob 28 &Friday; h. 1 <gap reason="binding" unit="chars" extent="2" cert="medium"/> <lb/>p m. 1608.</p>
+<p><lb/>Richard Pearepoynt <lb/><rs type="address" xml:id="address1" key="PLACE1145" resp="#mhawkins">of Hutching</rs>. 33 y <lb/>maryed sinc he was <lb/>sick of <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>aundes <lb/>Octob 28 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 1. 50 <lb/>p m. 1608.</p>
 </div>
 </body>
 </text>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE79890</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2015-01-09">09 January 2015</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">f. 2r/uS, f. 2v/uS</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="181">MS Ashmole 181, f. 2r-v</idno>
+<altIdentifier type="fn_number"><idno n="NapierPapers">Napier’s Papers</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0002r" to="0002v"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1596-08-13"><name sameAs="#sforman">Simon Forman</name> held the consultation and wrote out the entry as <ref target="CASE653" type="case">CASE653</ref>.</change>
+<change xml:id="stage2" notBefore="1597-01-01" notAfter="1634-04-01"><name sameAs="#rnapier">Richard Napier</name> copied the entry out, and possibly reworked its judgment.</change>
+</listChange>
+</creation>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="sforman">
+<persName><forename>Simon</forename> <surname>Forman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="anon1">
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+</person>
+<listRelation><relation name="wife" active="#anon1" passive="#anon2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1596-08-13" n="Friday" evidence="internal"/></p>
+<p><time when="14:45:00"/></p>
+<cb:consultation>
+<cb:consultant ref="#sforman"/>
+<cb:astrologer ref="#sforman #rnapier"/>
+<cb:practice name="forman"/>
+<cb:querent ref="#anon1" evidence="internal" present="unclear"/>
+<cb:subject ref="#anon2" present="no" consent="no"/>
+<cb:topic key="liveOrDieMedical" evidence="internal"><person sameAs="#anon2"/></cb:topic>
+<cb:judgment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-18">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-20">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-12">Checked by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acr0035.jpg" url="acr0035.jpg" n="2r"/>
+<graphic xml:id="acr0036.jpg" url="acr0036.jpg" n="2v"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><sic>husb. for the wife w<hi rend="superscript">th</hi>out consent</sic><corr type="delText" cert="medium"/></choice> <lb/>the wife for the husb <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice>out consent <lb/>wheth<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> he would live or dye 1596 <lb/>Aug. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> p m. 45 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 2.</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<pb xml:id="f2v" n="2v"/>
+</body>
+</text>
+</TEI>

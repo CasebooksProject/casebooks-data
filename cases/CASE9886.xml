@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE9886</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="411">MS Ashmole 411, f. 165r</idno>
-&Forman006;
+<altIdentifier type="fn_number"><idno n="Forman006">Forman, vol. 6</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -48,6 +54,12 @@
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1603-06-24"><name sameAs="#sforman">Simon Forman</name> held the consultation and probably wrote out the entry.</change>
+<change xml:id="stage2" notBefore="1603-09-05"><name sameAs="#unknown-z">Unidentified scribe (1603)</name> copied the entry out.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="sforman">
@@ -71,16 +83,15 @@
 <p><date when="1603-06-24" n="Friday"/></p>
 <p><time when="20:10:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#eg"/>
 <cb:subject ref="#eg" present="unclear"/>
-
-<cb:topic key="disease" resp="#sforman"><person sameAs="#eg" resp="#mhawkins"/></cb:topic>
+<cb:topic key="disease" resp="#sforman"><person sameAs="#eg"/></cb:topic>
 <cb:recipe/>
 <cb:judgment/>
 <cb:treatment/>
-
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -88,10 +99,12 @@
 <change when="2009-12-12">Data entered in Microsoft Excel spreadsheet by <name xml:id="rralley">Robert Ralley</name> as part of the Casebooks Pilot Project.</change>
 <change when="2010-07-05">XML file created by <name xml:id="mhawkins">Michael Hawkins</name> from Casebooks Pilot Project data.</change>
 <change when="2011-03-31">Transcribed by <name sameAs="#rralley">Robert Ralley</name>.</change>
-    <change when="2011-06-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2011-06-16">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-17">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-04">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,9 +112,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-    <p><lb/>Ellin Grimstone of 40 yeres <lb/><foreign xml:lang="la">nata</foreign> <rs type="date" xml:id="date1">1563 <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 21 of may <lb/>&Wednesday;</rs> <rs type="time" xml:id="time1"><choice><orig>a&flourish; m&flourish;</orig><reg>am</reg></choice> at 5</rs> questo 1603 <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 24 <lb/>of &IConsonant;une &Friday; &pmfl; <choice><sic>a</sic><corr>at</corr></choice> 10 &past; 8 diz <lb/><rs type="address" xml:id="address1">of Cambride</rs></p>
+<p><lb/>Ellin Grimstone of 40 yeres <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nata</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <rs type="date" xml:id="date1">1563 <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 21 of may <lb/><choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice></rs> <rs type="time" xml:id="time1"><choice><orig>a’ m’</orig><reg>am</reg></choice> at 5</rs> questo 1603 <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> 24 <lb/>of <choice><orig>I</orig><reg>J</reg></choice>une <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> <choice><sic>a</sic><corr>at</corr></choice> 10 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 8 diz <lb/><rs type="address" xml:id="address1" key="PLACE879" resp="#mhawkins">of Cambride</rs></p>
 </div>
-    &astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

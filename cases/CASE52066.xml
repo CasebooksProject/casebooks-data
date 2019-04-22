@@ -7,14 +7,19 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE52066</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-12-17">17 December 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">uL, mC, bR</bibl>
+<bibl type="positionOnPage">uL, mC, bL, bR</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -30,12 +35,17 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="3"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -43,6 +53,7 @@
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -65,13 +76,16 @@
 <p><date when="1621-02-22" n="Thursday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#b" evidence="internal"/>
 <cb:subject ref="#b" present="no"/>
-<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#b"/></cb:topic>
-<cb:topic key="requestingSigil" evidence="internal"><person sameAs="#b"/></cb:topic>
-<cb:treatment type="sigil"/>
+<cb:topic key="headPassions"><person sameAs="#b"/></cb:topic>
+<cb:topic key="melancholy"><person sameAs="#b"/></cb:topic>
+<cb:topic key="treatment"><person sameAs="#b"/></cb:topic>
+<cb:topic key="requestingPrayer"><person sameAs="#b"/></cb:topic>
+<cb:topic key="requestingSigil"><person sameAs="#b"/></cb:topic>
 <cb:judgment/>
 <cb:info type="event" subtype="previousConsultation"/>
 <cb:treatment/>
@@ -84,7 +98,10 @@
 <change when="2016-06-07">Checked and revised by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-15">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-01">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-12">Rechecked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-19">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,11 +109,18 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Brograve <rs type="address" xml:id="address1">of Braffyn <lb/>in Hartfordsheere hard by <lb/>Putchkinge</rs> 4<subst><del type="over">0</del><add place="over">5</add></subst> y feb. 22 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <lb/>h. 2. p m 162<choice><orig>i</orig><reg>1</reg></choice></p>
+<p><lb/><choice><orig>M<hi rend="overline">re</hi>s</orig><reg>Mrs</reg></choice> Brograve <rs type="address" xml:id="address1" key="PLACE1114" resp="#mhawkins">of Braffyn <lb/>in Hartfordsheere hard by <lb/>Putchkinge</rs> 4<subst><del type="over">0</del><add place="over">5</add></subst> y feb. 22 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <lb/>h. 2. p m 162<choice><orig>i</orig><reg>1</reg></choice></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
-<cb xml:id="colB" n="b"/>
-<cb xml:id="colC" n="c"/>
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>hed gydie full <lb/>of melancholy <lb/>would know what <lb/>tyme best for physick <lb/>&amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> she should <lb/>come over. &amp; craveth my prayers</p>
+</div>
+
+<cb xml:id="colA" n="a"/>
+<div><cb xml:id="colC" n="c"/>
+<p><lb/>would have to be <lb/>cast &amp; made the <lb/>24 of feb some <lb/>S of ♄. a f<unclear cert="low" reason="hand">ur</unclear> <lb/>&amp; more here <lb/>after</p>
+<p><lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> a note of there <lb/>vertues &amp; what <lb/>certenty of there <lb/>effects &amp; <del type="strikethrough">ve</del> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">o<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>atus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">operation</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>would know the best <lb/><choice><sic>tyes</sic><corr>tymes</corr></choice> for S of ♃ &amp; <lb/>&amp; the worst <choice><sic>tyes</sic><corr>tymes</corr></choice> <lb/>a fit tyme to come <choice><orig>v</orig><reg>u</reg></choice>nto <lb/>me</p>
+</div>
 </body>
 </text>
 </TEI>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE80071</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-03-15">15 March 2012</date>
+</publicationStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR-1</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="404">MS Ashmole 404, f. 149r</idno>
+<altIdentifier type="fn_number"><idno n="Napier005">Napier, vol. 5</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0149r" to="0149r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#interrogationTreatment"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ju">
+<persName><forename>John</forename> <surname>Uvedale</surname></persName>
+<sex value="1">M</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date notBefore-custom="1601-07-12T17:00:00" notAfter-custom="1601-07-13T06:00:00" evidence="inferred"/></p>
+<cb:consultation>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rnapier" evidence="conjecture" present="unclear"/>
+<cb:subject ref="#ju" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#ju"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2012-03-15">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-10-05">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="afw0315.jpg" url="afw0315.jpg" n="149r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>given to <choice><orig>I</orig><reg>J</reg></choice>ohn <choice><orig>V</orig><reg>U</reg></choice><choice><orig>u</orig><reg>v</reg></choice>dale <lb/>teriac lond ʒ<choice><orig>j</orig><reg>i</reg></choice><choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice>. Diascord ʒii<choice><orig>j</orig><reg>i</reg></choice> <lb/>aq angelic ℥i<choice><orig>j</orig><reg>i</reg></choice> Dragons ℥<choice><orig>j</orig><reg>i</reg></choice> <lb/><choice><sic>l</sic><corr type="noText"/></choice> angelic fortis ʒi<choice><orig>j</orig><reg>i</reg></choice>. syrup <lb/>viola<choice><orig>ꝝ</orig><reg>rum</reg></choice> ℥<choice><orig>j</orig><reg>i</reg></choice>. stags horne <lb/>gr ii<choice><orig>j</orig><reg>i</reg></choice>. <choice><orig>I</orig><reg>J</reg></choice>uly 12 <choice><orig>die ☉</orig><reg>die Solis</reg><reg type="gloss">Sunday</reg></choice> <lb/>hor. 5. p m. 160<choice><orig>i</orig><reg>1</reg></choice></p>
+</div>
+</body>
+</text>
+</TEI>

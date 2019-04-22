@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26001</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-23">23 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">mR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="174">MS Ashmole 174, p. 386</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0386" to="0386"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="t">
+<persName><roleName>Goodwife</roleName> <surname>Turney</surname></persName>
+<sex value="2">F</sex>
+<age value="60">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+
+<person xml:id="jt">
+<persName><forename>John</forename> <surname>Turney</surname></persName>
+<sex value="1">M</sex>
+<age value="55">55</age>
+</person>
+<person xml:id="anon1">
+<sex value="1">M</sex>
+<age value="22">22</age>
+</person>
+<person xml:id="gt">
+<persName><forename>George</forename> <surname>Turney</surname></persName>
+<sex value="1">M</sex>
+<age value="20">20</age>
+</person>
+<person xml:id="a">
+<persName><roleName>Pastor</roleName> <surname>Acader</surname></persName>
+<sex value="1">M</sex>
+<age value="20">20</age>
+</person>
+<person xml:id="anon2">
+<sex value="1">M</sex>
+<age value="32">32</age>
+<occupation>Husbandman</occupation>
+</person>
+<person xml:id="anon3">
+<sex value="2">F</sex>
+<age value="15">15</age>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1625-09-03" n="Saturday"/></p>
+<p><time when="13:20:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rwallis"/>
+<cb:consultant ref="#rwallis"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#t"/>
+<cb:subject ref="#t" present="unclear"/>
+<cb:topic key="plague"><person sameAs="#t"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-07-30">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-06">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-09">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-05-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acg0466.jpg" url="acg0466.jpg" n="386"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>The goodwife Turney <rs type="address" xml:id="address1" key="PLACE380" resp="#mhawkins">of Dunsta<lb type="hyphenated"/>ble</rs>. y. 60. <choice><orig>d. ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>. h: 1. 20. p: m: <lb/>Sept: 3. 1625 <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">pestilentia <lb/>Laborat.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">afflicted with plague</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<list><item><choice><orig>I</orig><reg>J</reg></choice>ohn Turney. 55 y.</item> <lb/><item>Another yong man. y. 22.</item> <lb/><item>Georg Turney. y. 20.</item> <lb/><item>Paster <unclear cert="low" reason="hand">Aca</unclear>der: y. 20</item> <lb/><item>An husbandm. y. 32</item> <lb/><item>A mayde y. 15.</item></list>
+</div>
+</body>
+</text>
+</TEI>

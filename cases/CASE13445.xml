@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13445</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="182">MS Ashmole 182, f. 126r</idno>
-&Napier002;
+<altIdentifier type="fn_number"><idno n="Napier002">Napier, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -30,12 +35,17 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -69,11 +79,12 @@
 <settingDesc>
 <p><date when="1601-05-04" n="Monday"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
 <cb:subject ref="#rnapier" present="yes"/>
-<cb:topic key="fortune" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
+<cb:topic key="generalFuture" evidence="inferred"><person sameAs="#rnapier"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -83,16 +94,21 @@
 <change when="2012-03-05">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-02">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="acm0271.jpg" url="acm0271.jpg" n="126r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/>Richardus Na<choice><orig>&crossedp;</orig><reg>per</reg></choice> filius Alexandri <del type="strikethrough">et Ag</del> <lb/>Na<choice><orig>&crossedp;</orig><reg>per</reg></choice><unclear cert="low" reason="hand">s</unclear> et Agnetis Burchly natus <rs type="address" xml:id="address1"><add place="lineEnd">in civitate</add> <lb/>Exoni&jVowel; in comitatu devoni&aelig;</rs> sub latitudine <lb/>52. <del type="strikethrough">16</del> <rs type="date" xml:id="date1">mai&jVowel; 4 die Ascensionis <choice><orig><hi rend="overline">Ihu<del type="strikethrough">s</del></hi></orig><reg>Jehu</reg></choice> <choice><orig>Ch<hi rend="overline">ri</hi></orig><reg>Christi</reg></choice> <lb/>salvatoris et redemptoris <choice><orig><hi rend="overline">nri</hi></orig><reg>nostri</reg></choice> <choice><orig><hi rend="overline">oi</hi>b&uscon;</orig><reg>omnibus</reg></choice> modis vene<lb/>randi &Thursday;</rs> <rs type="time" xml:id="time1">hor 7 septima. minutis 19. p m</rs> <lb/><rs type="date" sameAs="#date1">1559 in <choice><orig>p<hi rend="overline">rio</hi></orig><reg>primo</reg></choice> <choice><sic>An<hi rend="overline">no</hi></sic><corr>Anno</corr></choice> regni Elisabeth&aelig;</rs>. <lb/><del type="strikethrough">16</del> facta 1601. c<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> esset <foreign xml:lang="en">42 y c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>plete</foreign><note place="pageTop">vera supputatio</note></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Richardus Na<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> filius Alexandri <del type="strikethrough">et Ag</del> <lb/>Na<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice><unclear cert="low" reason="hand">s</unclear> et Agnetis Burchly natus <rs type="address" xml:id="address1" key="PLACE959"><add place="lineEnd">in civitate</add> <lb/>Exoni<choice><orig>j</orig><reg>i</reg></choice> in comitatu devoniæ</rs> sub latitudine <lb/>52. <del type="strikethrough">16</del> <rs type="date" xml:id="date1">mai<choice><orig>j</orig><reg>i</reg></choice> 4 die Ascensionis <choice><orig><hi rend="overline">Ihu<del type="strikethrough">s</del></hi></orig><reg>Jehu</reg></choice> <choice><orig>Ch<hi rend="overline">ri</hi></orig><reg>Christi</reg></choice> <lb/>salvatoris et redemptoris <choice><orig><hi rend="overline">nri</hi></orig><reg>nostri</reg></choice> <choice><orig><hi rend="overline">oi</hi>bꝯ</orig><reg>omnibus</reg></choice> modis vene<lb/>randi <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice></rs> <rs type="time" xml:id="time1">hor 7 septima. minutis 19. p m</rs> <lb/><rs type="date" sameAs="#date1">1559 in <choice><orig>p<hi rend="overline">rio</hi></orig><reg>primo</reg></choice> <choice><sic>An<hi rend="overline">no</hi></sic><corr>Anno</corr></choice> regni Elisabethæ</rs>. <lb/><del type="strikethrough">16</del> facta 1601. c<choice><orig><hi rend="overline">u</hi></orig><reg>um</reg></choice> esset <foreign xml:lang="en">42 y c<choice><orig><hi rend="overline">o</hi></orig><reg>om</reg></choice>plete</foreign><note place="pageTop">vera supputatio</note></p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Richard Napier the son of Alexander Napier and Agnes Birchley born in the city of Exeter in the county of Devon under the latitude 52 on Thursday 4 May 1559, the day of the ascension of Jesus Christ our saviour and redeemer, in all ways to be venerated,  at 19 minutes past the seventh hour pm in the first year of Elizabeth’s reign done in 1601 when he was 42 years complete truly calculated.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

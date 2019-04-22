@@ -7,15 +7,20 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE22162</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-05-31">31 May 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
@@ -33,9 +38,8 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
-<encodingDesc><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
-</encodingDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#srnapier">Richard Napier (the nephew)</handNote>
@@ -93,18 +97,23 @@
 <change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-05-10">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-05-15">Checked by <name sameAs="#jyoung">John Young</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-04-09">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="afc0063.jpg" url="afc0063.jpg" n="22r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <milestone unit="question" spanTo="#questionEnd"/>
 <p><lb/><handShift new="#srnapier"/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> iter erit Prosper<choice><orig>ū</orig><reg>um</reg></choice> <lb/>hor. 6. <choice><orig>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice> <foreign xml:lang="en"><choice><orig>I</orig><reg>J</reg></choice>une the 15 <choice><orig>an. m</orig><reg>am</reg></choice>. <lb/>1630.<anchor xml:id="questionEnd"/> <lb/><milestone unit="subsequentEventInfo" spanTo="#subsequentEventInfoEnd"/><handShift new="#rnapier"/>they went not neyther <lb/>would it have taken effect.</foreign></p>
 <anchor xml:id="subsequentEventInfoEnd"/>
-</div><figure type="astro" subtype="astroChart"/>
+</div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Whether the journey will be prosperous Tuesday 15 June 1630 at 6am. They went not neither would it have taken effect.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

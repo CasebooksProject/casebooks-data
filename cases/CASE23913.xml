@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE23913</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-29">29 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="237">MS Ashmole 237, f. 89v</idno>
-&Napier023;
+<altIdentifier type="fn_number"><idno n="Napier023">Napier, vol. 23</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,11 +76,12 @@
 <p><date when="1614-09-08" n="Thursday"/></p>
 <p><time when="10:38:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
 <cb:querent ref="#b" evidence="internal" present="yes"/>
-<cb:subject ref="#jb" present="no"/>
+<cb:subject ref="#jb" present="no" knowledge="yes"/>
 <cb:topic key="unidentifiedPassions"><person sameAs="#jb"/></cb:topic>
 </cb:consultation>
 </settingDesc>
@@ -88,6 +93,8 @@
 <change when="2015-08-14">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-07-06">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,10 +102,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>&IConsonant;ohn Bosse <rs type="address" xml:id="address1">of Berton</rs> 27 y <lb/>sept 8 &Thursday; h. 10. 38 &antm; <lb/>1614.</p>
+<p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Bosse <rs type="address" xml:id="address1" key="PLACE595" resp="#mhawkins">of Berton</rs> 27 y <lb/>sept 8 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 10. 38 <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1614.</p>
 <p><lb/>5 yeres ill.</p>
-<p><lb/>is growen very fatte &amp; of <lb/>a good c<choice><orig>&oover;</orig><reg>om</reg></choice>plexion.&slash;</p>
-<p><lb/><add place="supralinear">disobedyent &amp; &vVowel;nruly to his father.</add> <foreign xml:lang="la">pater inquirit</foreign> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> to be <lb/>helpen.</p>
+<p><lb/>is growen very fatte &amp; of <lb/>a good c<choice><orig>ō</orig><reg>om</reg></choice>plexion./</p>
+<p><lb/><add place="supralinear">disobedyent &amp; <choice><orig>v</orig><reg>u</reg></choice>nruly to his father.</add> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">pater inquirit</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the father enquires</seg><link type="is-translation-of" target="#foreign001 #translation001"/> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> to be <lb/>helpen.</p>
 <p><lb/>he was by his father willed to <lb/>come <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> him but he went <lb/>out of the way.</p>
 </div>
 </body>

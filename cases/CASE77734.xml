@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE77734</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2014-03-25">25 March 2014</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 271</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0271" to="0271"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="q">
+<persName><roleName>Mrs</roleName> <surname>Quicke</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="m">
+<persName><roleName>Lady</roleName> <forename>Magdalen</forename></persName>
+<sex value="2">F</sex>
+</person>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-06-28" n="Friday"/></p>
+<p><time when="11:20:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#q" evidence="internal" present="unclear"/>
+<cb:subject ref="#m" present="no"/>
+<cb:topic key="treatment"><person sameAs="#m"/></cb:topic>
+<cb:treatment/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2015-03-08">Transcription by <name xml:id="bbrogan">Boyd Brogan</name> converted to XML by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2015-04-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-03-09">Milestone coding added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2017-03-21">Rechecked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-08-27">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0294.jpg" url="clq0294.jpg" n="271"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<milestone unit="question" spanTo="#questionEnd"/>
+<p><lb/><choice><orig>m<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Quick <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><sic>expdiat</sic><corr>expediat</corr></choice> <choice><orig>D<hi rend="overline">næ</hi></orig><reg>Dominæ</reg></choice> <lb/>magd</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether it would be expedient for Lady Magdalen</seg><link type="is-translation-of" target="#foreign001 #translation001"/> to abstayne fr<choice><orig>ō</orig><reg>om</reg></choice> sup<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> &amp; <lb/>to Drink water <choice><orig>I</orig><reg>J</reg></choice>une 28 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. <lb/>11 20 <choice><orig>ant m</orig><reg>am</reg></choice>. 1633.</p>
+<anchor xml:id="questionEnd"/>
+</div>
+<div>
+<milestone unit="treatment" spanTo="#treatmentEnd"/>
+<p><lb/>a drye dyet drink of <lb/>verv. bitt celandyne <lb/>alo<unclear reason="hand" cert="low">e</unclear>s an ♏<choice><orig>j</orig><reg>i</reg></choice> op<unclear cert="low" reason="hand">nin</unclear>g <lb/>root<choice><orig>ꝭ</orig><reg>es</reg></choice> fenell <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>sly red Dock <lb/>root<choice><orig>ꝭ</orig><reg>es</reg></choice> an i<choice><orig>j</orig><reg>i</reg></choice> p<unclear reason="hand" cert="low">elr</unclear>y <add place="supralinear">roots</add> <unclear cert="low" reason="hand">oi</unclear>lac<choice><orig>ū</orig><reg>um</reg></choice>p. ℥i<choice><orig>j</orig><reg>i</reg></choice> <lb/>Angel ℥i<choice><orig>j</orig><reg>i</reg></choice> cut lig <choice><orig><hi rend="overline">scti</hi></orig><reg>sancti</reg></choice> sarsup <lb/>an <hi rend="overline">lib</hi> <choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice> aq <unclear reason="hand" cert="low">fontem</unclear> <hi rend="overline">lib</hi> 20 <lb/><unclear reason="hand" cert="low">som</unclear> anysi l<unclear reason="hand" cert="low">icut</unclear> <hi rend="overline">an lib</hi> <choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice></p>
+<anchor xml:id="treatmentEnd"/>
+</div>
+</body>
+</text>
+</TEI>

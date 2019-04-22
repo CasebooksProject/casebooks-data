@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13242</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-01-26">26 January 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 103r/uS, f. 102v/uS, f. 103v/uS</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="175">MS Ashmole 175, f. 103r, f. 102v, f. 103v</idno>
-&Napier001;
+<altIdentifier type="fn_number"><idno n="Napier001">Napier, vol. 1</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -32,12 +37,17 @@
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="1"/></layoutDesc></objectDesc></physDesc>
 </msDesc>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -70,6 +80,7 @@
 <p><date when="1597-03-19" n="Saturday"/></p>
 <p><time when="09:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rw" evidence="internal" present="unclear"/>
@@ -87,6 +98,8 @@
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-28">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-19">Page/column break coding updated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,19 +107,28 @@
 <graphic xml:id="ace0220.jpg" url="ace0220.jpg" n="102v"/>
 <graphic xml:id="ace0222.jpg" url="ace0222.jpg" n="103v"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><add place="marginLeft"><choice><sic>15</sic><corr type="noText"/></choice> 1597 <lb/>19. Mart. 9. 45. <lb/>mi. <choice><orig><choice><sic>ante</sic><corr>ante merid</corr></choice></orig><reg>am</reg></choice> <choice><orig>die <lb/>&SaturnSymbol;</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>.</add> Ric. W <choice><orig>&crossedp;</orig><reg>pro</reg></choice> matre qu&aelig; gravit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> &aelig;grota<lb/>bat et diu sed postea salut<choice><orig>&eover;</orig><reg>em</reg></choice> <choice><sic>obtiniit</sic><corr>obtinuit</corr></choice>.&slash;</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><add place="marginLeft"><choice><sic>15</sic><corr type="noText"/></choice> 1597 <lb/>19. Mart. 9. 45. <lb/>mi. <choice><orig><choice><sic>ante</sic><corr>ante merid</corr></choice></orig><reg>am</reg></choice> <choice><orig>die <lb/>♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>.</add> Ric. W <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> matre quæ gravit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> ægrota<lb/>bat et diu sed postea salut<choice><orig>ē</orig><reg>em</reg></choice> <choice><sic>obtiniit</sic><corr>obtinuit</corr></choice>./</p>
 </div>
-&astroChartDeleted;
-<div><pb xml:id="f102v" n="102v" facs="#ace0220.jpg"/>
-<p><lb/><foreign xml:lang="en"><add place="lineBeginning">1597.</add> R. Weather for his mother <lb/>19 March. 9. 45. m. <lb/><add place="marginLeft">&SaturdayN;:</add> <choice><orig>ant merid:</orig><reg>am</reg></choice></foreign></p>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Saturday 19 March 1597 at 9.45am Richard W. for his mother who was ill gravely and for a long time but later recovered her health.</p>
 </div>
-&astroChartDeleted;
-<div><pb xml:id="f103v" n="103v" facs="#ace0222.jpg"/>
-<p><lb/>Rich Weatherhead <choice><orig>&crossedp;</orig><reg>pro</reg></choice> matre qu&aelig; <lb/>gravit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> et diu &aelig;grotavit sed tand<choice><orig>&eover;</orig><reg>em</reg></choice> <lb/>deo grati&aelig; elapsa est et evasit incolu<lb/>mis. <foreign xml:lang="en">19 of Marche</foreign> 9. 45 m. &antm;. <lb/>&SaturdayN;. 1597. multas septimanas &aelig;grot</p>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChartDeleted"/>
+<div xml:lang="en"><pb xml:id="f102v" n="102v" facs="#ace0220.jpg"/>
+<p><lb/><add place="lineBeginning">1597.</add> R. Weather for his mother <lb/>19 March. 9. 45. m. <lb/><add place="marginLeft"><choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>:</add> <choice><orig>ant merid:</orig><reg>am</reg></choice></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChartDeleted"/>
+<div xml:id="foreign002" xml:lang="la" decls="#original_source"><pb xml:id="f103v" n="103v" facs="#ace0222.jpg"/>
+<p><lb/>Rich Weatherhead <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> matre quæ <lb/>gravit<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> et diu ægrotavit sed tand<choice><orig>ē</orig><reg>em</reg></choice> <lb/>deo gratiæ elapsa est et evasit incolu<lb/>mis. <foreign xml:lang="en">19 of Marche</foreign> 9. 45 m. <choice><orig>ant m</orig><reg>am</reg></choice>. <lb/><choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice>. 1597. multas septimanas ægrot</p>
+</div>
+<div xml:id="translation002" xml:lang="en" decls="#translation">
+<pb xml:id="f103v-t" n="103v"/>
+<p>Richard Wethered for his mother who was ill, gravely and for a long time, but at length, thanks be to God, escaped and got away safely: Saturday 19 March 1597 at 9.45am; she was sick for many weeks.</p>
+</div>
+<link type="is-translation-of" target="#foreign002 #translation002"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

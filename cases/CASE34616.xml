@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE34616</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 277v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -56,21 +62,18 @@
 <persName><roleName>Lady</roleName> <surname>Fortescue</surname></persName>
 <sex value="2">F</sex>
 </person>
-<person xml:id="person1">
-<persName><roleName>Lady</roleName></persName>
-<sex value="2">F</sex>
-</person>
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1608-12-25" n="Sunday"/></p>
 <p><time when="17:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#f" evidence="internal" present="no"/>
-<cb:subject ref="#person1" present="no"/>
-<cb:topic key="sickness" resp="#rnapier"><person sameAs="#person1"/></cb:topic>
+<cb:querent ref="#f" evidence="internal"/>
+<cb:subject ref="#f" present="no"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#f"/></cb:topic>
 <cb:judgment/>
 <cb:info type="event" subtype="subsequentEvent"/>
 </cb:consultation>
@@ -83,6 +86,7 @@
 <change when="2015-04-17">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-14">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -90,11 +94,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>The lady fort<unclear cert="medium" reason="binding">is</unclear><supplied reason="binding" cert="low">kue</supplied> <lb/>sent &vVowel;nto me <supplied reason="binding" cert="medium">Dec<choice><orig>&eover;</orig><reg>em</reg></choice>b.</supplied> <lb/>25 on christm<supplied reason="binding">as</supplied> <lb/>day <choice><sic>to</sic><corr type="noText"/></choice> &Sunday; h. 5 <unclear cert="medium" reason="binding">2</unclear><supplied reason="binding" cert="medium">0</supplied> <lb/><del type="strikethrough">ant</del> p m 1608 <lb/>that I would c<supplied reason="binding" cert="high">ome</supplied> <lb/>over to my lady <gap reason="binding" unit="words" extent="1" cert="medium"/> <lb/>the next day be<unclear cert="medium" reason="binding">c</unclear><supplied reason="binding" cert="high">ause</supplied> <lb/>she was sicke</p>
+<p><lb/>The lady fortiskue <lb/>sent <choice><orig>v</orig><reg>u</reg></choice>nto me Dec<choice><orig>ē</orig><reg>em</reg></choice>b. <lb/>25 on christmas <lb/>day <choice><sic>to</sic><corr type="noText"/></choice> <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 5. 20 <lb/><del type="strikethrough">ant</del> p m 1608 <lb/>that I would come <lb/>over to my lady as <lb/>the next day because <lb/>she was sicke</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>I excused <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I could not <lb/>come &vVowel;ntill the hol<unclear reason="binding" cert="medium">y</unclear> <lb/>days were ended be<supplied reason="binding" cert="low">cause</supplied> <lb/>I had invited my ne<gap reason="binding" unit="chars" extent="8"/> <lb/>but yet <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I would c<supplied reason="binding" cert="medium">ome</supplied> <lb/>if necessity required</p>
+<p><lb/>I excused <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I could not <lb/>come <choice><orig>v</orig><reg>u</reg></choice>ntill the holi<lb/>days were ended because <lb/>I had invited my neighb <lb/>but yet <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> I would come <lb/>if necessity required</p>
 </div>
 </body>
 </text>

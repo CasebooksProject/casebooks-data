@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6337</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 195r</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -55,7 +65,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="jt">
-<persName><forename><del type="redactedCancelled">John</del></forename> <surname><del type="redactedCancelled">Tr<gap extent="1" unit="chars" reason="del"/><unclear cert="low" reason="del">g</unclear><gap reason="del" unit="chars" extent="5"/></del></surname></persName>
+<persName><forename>John</forename> <surname>Tregunwelle</surname></persName>
 <sex value="1">M</sex>
 <residence sameAs="#address2" key="databaseNormalizedIDKey"/>
 </person>
@@ -69,6 +79,7 @@
 <p><date when="1599-11-14" n="Wednesday"/></p>
 <p><time when="17:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -86,6 +97,7 @@
 <change when="2011-07-14">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-30">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,11 +106,11 @@
 <text xml:lang="en">
 <body>
 <div>
-<head rend="centered"><foreign xml:lang="la">nota &slash;</foreign></head>
-<p><lb/>Questo wher <del type="redactedCancelled"><gap reason="del" unit="words" extent="2"/></del> <rs type="address" xml:id="address1">of <del type="redactedCancelled"><gap reason="del" unit="words" extent="2"/></del> in <del type="redactedCancelled"><gap reason="del" unit="words" extent="3"/> <add place="infralinear"><gap reason="del" unit="words" extent="1"/></add></del></rs> <lb/><choice><sic>somtms</sic><corr>somtims</corr></choice> of <placeName><unclear reason="hand" cert="medium">ch</unclear>e<choice><unclear reason="hand" cert="medium">n</unclear><unclear reason="hand" cert="medium">u</unclear></choice>son</placeName>&slash;. <foreign xml:lang="la">vult <del type="redactedCancelled"><gap reason="del" unit="words" extent="1"/></del> <lb/><unclear reason="hand" cert="medium">Ad</unclear><del type="redactedCancelled"><gap reason="del" unit="chars" extent="8"/></del> <unclear reason="blot" cert="low">si</unclear> <del type="redactedCancelled"><gap reason="del" unit="words" extent="1"/></del> <choice><orig>&crossedp;</orig><reg>pro</reg></choice> <del type="redactedCancelled"><gap reason="del" unit="words" extent="1"/> <lb/>alias <gap reason="del" unit="words" extent="1"/> wood c<choice><orig>&uover;</orig><reg>um</reg></choice> <unclear reason="del" cert="low"><choice><orig><hi rend="overline">Ihoe</hi></orig><reg>Johanne</reg></choice></unclear> <lb/>Tr<gap extent="1" unit="chars" reason="del"/><unclear cert="low" reason="del">g</unclear><gap reason="del" unit="chars" extent="5"/></del></foreign> <del type="redactedCancelled"><rs type="address" xml:id="address2">of milton</rs></del> <foreign xml:lang="la"><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>&oover;</orig><reg>on</reg></choice></foreign> <lb/>1599 the 14 of novemb &slash; &Wednesday; <choice><orig>p <lb/>m&flourish;</orig><reg>pm</reg></choice> at 30 &past; 5 <foreign xml:lang="la"><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice></foreign> noe &slash;</p>
+<head rend="center"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">nota /</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">note</seg><link type="is-translation-of" target="#foreign001 #translation001"/></head>
+<p><lb/>Questo wher <del type="redactedCancelled"><gap reason="del" unit="words" extent="2"/></del> <rs type="address" xml:id="address1">of <del type="redactedCancelled"><gap reason="del" unit="words" extent="2"/></del> in <del type="redactedCancelled">com’ <gap reason="del" unit="words" extent="2"/></del></rs> <del type="redactedCancelled">and</del> <lb/><choice><sic>somtms</sic><corr>somtims</corr></choice> of <placeName><unclear reason="hand" cert="medium">ch</unclear>e<choice><unclear reason="hand" cert="medium">n</unclear><unclear reason="hand" cert="medium">u</unclear></choice>son</placeName>/. <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">vult <del type="redactedCancelled"><unclear cert="low" reason="del">her<choice><orig>ē</orig><reg>em</reg></choice></unclear></del> <lb/><unclear reason="hand" cert="medium">Ad</unclear><del type="redactedCancelled"><gap reason="del" unit="chars" extent="8"/></del> <del type="redactedCancelled"><gap reason="del" extent="1" unit="chars"/></del><unclear reason="blot" cert="low">i</unclear> <del type="redactedCancelled"><gap reason="del" unit="words" extent="1"/></del> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <del type="redactedCancelled"><unclear cert="low" reason="del">Cor<gap extent="1" unit="chars" reason="del" cert="low"/>dg</unclear> <lb/>alias <gap reason="del" unit="words" extent="1"/> wood c<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig><hi rend="overline">Ihoe</hi></orig><reg>Johanne</reg></choice> <lb/>Treg<unclear cert="low" reason="del">union</unclear></del></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">will <del type="redactedCancelled">[several words illegible or not understood]</del> for <del type="redactedCancelled">[illegible word] otherwise [illegible word] wood with John Tregunion</del></seg><link type="is-translation-of" target="#foreign002 #translation002"/> <del type="redactedCancelled"><rs type="address" xml:id="address2" key="PLACE972">of milton</rs></del> <foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> n<choice><orig>ō</orig><reg>on</reg></choice></foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">or not</seg><link type="is-translation-of" target="#foreign003 #translation003"/> <lb/>1599 the 14 of novemb / <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> <choice><orig>p <lb/>m’</orig><reg>pm</reg></choice> at 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 5 <foreign xml:lang="la" xml:id="foreign004" decls="#original_source"><choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice></foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">or</seg><link type="is-translation-of" target="#foreign004 #translation004"/> noe /</p>
 </div>
 
-&astroChartBlank;
+<figure type="astro" subtype="astroChartBlank"/>
 </body>
 </text>
 </TEI>

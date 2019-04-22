@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE47255</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-08-11">11 August 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE47253">CASE47253</ref>.</note>
 </notesStmt>
@@ -25,7 +30,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="201">MS Ashmole 201, f. 215v</idno>
-&Napier028;
+<altIdentifier type="fn_number"><idno n="Napier028">Napier, vol. 28</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -37,8 +42,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -67,6 +71,7 @@
 <p><date when="1618-08-07" n="Friday" evidence="external"/></p>
 <p><time when="08:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ne"/>
@@ -82,6 +87,7 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-09-22">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -89,9 +95,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>nath Easton 20 y <lb/><rs type="address" xml:id="address1">of maydes murton</rs> <lb/>taken ever sinc <lb/>weddensd was <choice><orig><choice><sic>s&eover;nt</sic><corr>s&eover;net</corr></choice></orig><reg>sennet</reg></choice> <lb/>almost about 4 in <lb/>the after noone <lb/>every day. &Thursday; h <lb/>4 p m 1618.</p>
+<p><lb/>nath Easton 20 y <lb/><rs type="address" xml:id="address1" key="PLACE747" resp="#mhawkins">of maydes murton</rs> <lb/>taken ever sinc <lb/>weddensd was <choice><orig><choice><sic>sēnt</sic><corr>sēnet</corr></choice></orig><reg>sennet</reg></choice> <lb/>almost about 4 in <lb/>the after noone <lb/>every day. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h <lb/>4 p m 1618.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

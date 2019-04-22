@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE78292</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-10-23">23 October 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt>
+<note type="editorial" resp="#jyoung">This decumbiture is associated with the horary entry <ref type="case" target="CASE78294">CASE78294</ref>.</note>
+</notesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="211">MS Ashmole 211, p. 459</idno>
+<altIdentifier type="fn_number"><idno n="Napier053">Napier, vol. 53</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0459" to="0459"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#unknown-f">Unidentified Hand (1624–1634)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#decumbiture"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="unknown-f">
+<persName><roleName>Unidentified (1624–1634)</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ep">
+<persName><forename>Elizabeth</forename> <surname>Pet</surname></persName>
+<sex value="2">F</sex>
+<age value="18" unit="months">1 and a half</age>
+</person>
+<person xml:id="p">
+<persName><surname evidence="inferred" cert="medium">Pet</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation>
+<relation name="mother" active="#p" passive="#ep"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1633-09-21" n="Saturday" evidence="external"/></p>
+<p><time when="12:30:00" evidence="external"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#unknown-f"/>
+<cb:consultant ref="#unknown-f"/>
+<cb:practice name="napier"/>
+<cb:location type="querentVisitsPractitioner" evidence="external"/>
+<cb:querent ref="#p" evidence="internal" present="yes"/>
+<cb:subject ref="#ep" present="yes"/>
+<cb:topic key="lameness"><person sameAs="#ep"/></cb:topic>
+<cb:topic key="cannotStand"><person sameAs="#ep"/></cb:topic>
+<cb:topic key="cannotWalk"><person sameAs="#ep"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-23">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-10-23">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-12-07">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-01-25">Checked and split from 211-f0459-5 by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-02-06">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="clq0481.jpg" url="clq0481.jpg" n="459" width="5113" height="7216"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Elisab. Pett a Beggarwomas Childe. 1. y. <choice><orig><seg rend="cardo">ß</seg></orig><reg>semis</reg><reg type="gloss">half</reg></choice> <lb/>Septemb. 11. <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice>. h. 8. p m. 1633. stroken <lb/>suddenly lame <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> it can nether stand nor go</p>
+</div><figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

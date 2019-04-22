@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10249</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="202">MS Ashmole 202, f. 28r</idno>
-&Napier004;
+<altIdentifier type="fn_number"><idno n="Napier004">Napier, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -72,13 +78,15 @@
 <p><date when="1600-04-02" n="Wednesday"/></p>
 <p><time when="14:45:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ew"/>
 <cb:subject ref="#ew" present="unclear"/>
 <cb:object ref="#ab #ah"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ew"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#ew"/><person sameAs="#ab"/><person sameAs="#ah"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#ew"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#ab"/><person sameAs="#ah"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -98,9 +106,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis. Woodf. 26. <add place="supralinear">Aprill 2.</add> &WednesdayN; <lb/>h. 2. 45. p m: 1600 <lb/>sup shee is bewitched <lb/>An Buckingam &amp; her <lb/>daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Alce howet.<note place="chart"><p><lb/>wynd cholicke</p><p><lb/>a gurrion in her <lb/>belly</p></note></p>
+<p><lb/>Elis. Woodf. 26. <add place="supralinear">Aprill 2.</add> <choice><orig>die ☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice> <lb/>h. 2. 45. p m: 1600 <lb/>sup shee is bewitched <lb/>An Buckingam &amp; her <lb/>daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> Alce howet.<note place="chart"><p><lb/>wynd cholicke</p><p><lb/>a gurrion in her <lb/>belly</p></note></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

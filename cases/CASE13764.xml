@@ -7,22 +7,27 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13764</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="197">MS Ashmole 197, f. 36r</idno>
-&Napier008;
+<altIdentifier type="fn_number"><idno n="Napier008">Napier, vol. 8</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -72,6 +81,7 @@
 <p><date when="1603-05-26" n="Thursday" evidence="inferred"/></p>
 <p><time notBefore="06:30:00" notAfter="10:00:00" evidence="inferred"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rnapier"/>
@@ -88,19 +98,24 @@
 <change when="2012-10-22">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-04-03">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="cjk0089.jpg" url="cjk0089.jpg" n="36r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><del type="strikethrough">Eg</del> R Na<choice><orig>&crossedp;</orig><reg>per</reg></choice> contendit et <choice><orig><choice><sic>&crossedp;rox<lb/>xit</sic><corr>&crossedp;roxit</corr></choice></orig><reg>perroxit</reg></choice> <rs type="address" xml:id="address1">Dom<choice><orig>&uover;</orig><reg>um</reg></choice> <choice><orig>D<hi rend="overline">ni</hi></orig><reg>Domini</reg></choice> &IConsonant;ohannis fort<unclear cert="medium" reason="faded">e</unclear>skue</rs> <lb/><choice><orig><hi rend="overline">noie</hi></orig><reg>nomine</reg></choice> Blundelli &vVowel;t n<choice><orig>&uover;</orig><reg>um</reg></choice>mos <lb/>a Robinsono nobis in hac causa <lb/>favente a thesaurario recipe<lb/>rem<choice><orig>&uscon;</orig><reg>us</reg></choice>. Mai&jVowel; 13. <subst><del type="strikethrough">&JupiterSymbol;</del> <add place="supralinear">&FridayLatin;</add></subst> hor. 9. <choice><sic><subst><del type="over">15</del><add place="over">30</add></subst></sic><corr type="delText"/></choice> <add place="supralinear">30.</add> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1603. &FridayN; hor 9. 15. &antm; <lb/>1603.</p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/><del type="strikethrough">Eg</del> R Na<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> contendit et <choice><orig><choice><sic><g ref="#crossedp"></g>rox<lb/>xit</sic><corr><g ref="#crossedp"></g>roxit</corr></choice></orig><reg>perroxit</reg></choice> <rs type="address" xml:id="address1">Dom<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig>D<hi rend="overline">ni</hi></orig><reg>Domini</reg></choice> <choice><orig>I</orig><reg>J</reg></choice>ohannis fort<unclear cert="medium" reason="faded">e</unclear>skue</rs> <lb/><choice><orig><hi rend="overline">noie</hi></orig><reg>nomine</reg></choice> Blundelli <choice><orig>v</orig><reg>u</reg></choice>t n<choice><orig>ū</orig><reg>um</reg></choice>mos <lb/>a Robinsono nobis in hac causa <lb/>favente a thesaurario recipe<lb/>rem<choice><orig>ꝯ</orig><reg>us</reg></choice>. Mai<choice><orig>j</orig><reg>i</reg></choice> 13. <subst><del type="strikethrough">♃</del> <add place="supralinear"><choice><orig>♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice></add></subst> hor. 9. <choice><sic><subst><del type="over">15</del><add place="over">30</add></subst></sic><corr type="delText"/></choice> <add place="supralinear">30.</add> <choice><orig>ant <lb/>m</orig><reg>am</reg></choice>. 1603. <choice><orig>die ♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> hor 9. 15. <choice><orig>ant m</orig><reg>am</reg></choice> <lb/>1603.</p>
 </div>
-&astroChart;
-<div>
-<p><lb/><foreign xml:lang="en">I receaved <choice><orig>&thorn;<hi rend="superscript">e</hi></orig><reg>the</reg></choice>e mony <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>day he p<choice><orig>&loopedr;</orig><reg>re</reg></choice>sently assoone as <lb/>I spake gave me very good <lb/>words &amp; told me he was <unclear cert="high" reason="faded"><choice><orig>&crossedp;</orig><reg>pro</reg></choice></unclear><lb/>mised to have it &amp; bid me com <lb/>&amp; receave it &amp; I had it.</foreign></p>
+<figure type="astro" subtype="astroChart"/><div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>R. Napier journeyed and proceeded to the house of Mr John Fortescue in Blundell’s name so that we might receive money from the treasury from Robinson supporting us in this cause. Friday 13 May 1603 at 9.30am.</p>
 </div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<div xml:lang="en">
+<p><lb/>I receaved <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice>e mony <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>day he p<choice><orig><hi rend="superscript">r</hi></orig><reg>re</reg></choice>sently assoone as <lb/>I spake gave me very good <lb/>words &amp; told me he was <unclear cert="high" reason="faded"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice></unclear><lb/>mised to have it &amp; bid me com <lb/>&amp; receave it &amp; I had it.</p>
+</div>
+
 </body>
 </text>
 </TEI>

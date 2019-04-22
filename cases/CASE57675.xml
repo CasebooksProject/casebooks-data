@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE57675</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-02-10">10 February 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -65,6 +70,7 @@
 <p><date when="1624-02-10" n="Tuesday"/></p>
 <p><time when="14:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ac"/>
@@ -72,7 +78,7 @@
 <cb:topic key="head"><person sameAs="#ac"/></cb:topic>
 <cb:topic key="pain"><person sameAs="#ac"/></cb:topic>
 <cb:topic key="ears"><person sameAs="#ac"/></cb:topic>
-<cb:topic key="witchcraft" evidence="internal"><person sameAs="#ac"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins" evidence="internal"><person sameAs="#ac"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
 </cb:consultation>
@@ -83,7 +89,8 @@
 <change when="2016-04-19">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-10-17">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-05-18">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,7 +98,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Agnys Clarke <rs type="address" xml:id="address1">of litl<gap reason="binding" extent="5" unit="chars"/></rs> <lb/>38 y feb <subst><del type="strikethrough">1<subst><del type="over">2</del><add place="over">3</add></subst></del> <add place="supralinear"><choice><sic>1<unclear reason="blot" cert="high">0</unclear></sic><corr type="delText"/></choice> <add place="inline">10</add></add></subst> <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 2 3<supplied reason="binding">0</supplied> <lb/>p m. 1624 <add place="infralinear">extreme head ach <lb/>in her right <lb/>eare</add></p>
+<p><lb/>Agnys Clarke <rs type="address" xml:id="address1" key="PLACE433" resp="#mhawkins">of litlington</rs> <lb/>38 y feb <subst><del type="strikethrough">1<subst><del type="over">2</del><add place="over">3</add></subst></del> <add place="supralinear"><choice><sic>1<unclear reason="blot" cert="high">0</unclear></sic><corr type="delText"/></choice> <add place="inline">10</add></add></subst> <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 2 30 <lb/>p m. 1624 <add place="infralinear">extreme head ach <lb/>in her right <lb/>eare</add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

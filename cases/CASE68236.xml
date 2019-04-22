@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE68236</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-10-26">26 October 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 151v/uR, f. 151v/bL, f. 152r/uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -76,6 +81,7 @@
 <p><date when="1629-04-21" n="Tuesday"/></p>
 <p><time when="20:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier #unknown-f"/>
 <cb:consultant ref="#rnapier #unknown-f"/>
 <cb:practice name="napier"/>
 <cb:location type="querentVisitsPractitioner"/>
@@ -94,7 +100,8 @@
 <change when="2016-10-26">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-01-20">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-07-17">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-16">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -103,13 +110,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#rnapier"/>Will: Stoary <foreign xml:lang="la">natus</foreign> <lb/>at <placeName xml:id="place1">S<hi rend="superscript">t</hi> Albans</placeName> <lb/>Aug. 30. next 11 <foreign xml:lang="la">in <lb/>Hor<choice><orig>ā</orig><reg>am</reg></choice>. et 30 mi</foreign> a <lb/>m. <del type="strikethrough">162<gap extent="1" unit="chars" reason="del"/></del> <add place="infralinear">came to me</add> <lb/>Ap. 21. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. <lb/>20. p. m. 1629</p>
+<p><lb/><handShift new="#rnapier"/>Will: Stoary <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> <lb/>at <placeName xml:id="place1" key="PLACE1186" resp="#mhawkins">S<hi rend="superscript">t</hi> Albans</placeName> <lb/>Aug. 30. next 11 <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">in <lb/>Hor<choice><orig>ā</orig><reg>am</reg></choice>. et 30 mi</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">of the clock and 30 minutes</seg><link type="is-translation-of" target="#foreign002 #translation002"/> a <lb/>m. <del type="strikethrough">162<gap extent="1" unit="chars" reason="del"/></del> <add place="infralinear">came to me</add> <lb/>Ap. 21. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. <lb/>20. p. m. 1629</p>
 </div>
 <cb xml:id="colA" n="a"/>
 
 <div>
 <pb xml:id="f152r" n="152r"/>
-<p><lb/><handShift new="#unknown-f"/>Will. St<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">o</add></subst>arye <rs type="address" xml:id="address1">of S<hi rend="superscript">t</hi>. <lb/>Albans</rs></p>
+<p><lb/><handShift new="#unknown-f"/>Will. St<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">o</add></subst>arye <rs type="address" xml:id="address1" key="PLACE1186" resp="#mhawkins">of S<hi rend="superscript">t</hi>. <lb/>Albans</rs></p>
 </div>
 </body>
 </text>

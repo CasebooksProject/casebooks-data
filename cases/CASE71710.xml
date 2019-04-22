@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE71710</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-06-05">05 June 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">p. 213/uR, p. 214/uL, p. 214/bR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="232">MS Ashmole 232, pp. 213–214</idno>
+<altIdentifier type="fn_number"><idno n="Napier049">Napier, vol. 49</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0213" to="0214"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+<handNote sameAs="#unknown-f">Unidentified Hand (1624–1634)</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="unknown-f">
+<persName><roleName>Unidentified (1624–1634)</roleName></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ak">
+<persName><roleName>Mr</roleName> <forename>Anthony</forename> <surname>King</surname></persName>
+<sex value="1">M</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="rk">
+<persName><roleName>Mr</roleName> <forename>Richard</forename> <surname>King</surname></persName>
+<sex value="1">M</sex>
+<age value="60">60</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="bk">
+<persName><roleName>Mrs</roleName> <forename>Bridget</forename> <surname type="maiden">King</surname></persName>
+<sex value="2">F</sex>
+<age value="19">19</age>
+</person>
+<listRelation><relation name="daughter" active="#bk" passive="#rk"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1631-04-01" n="Friday"/></p>
+<p><time when="20:30:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier #unknown-f"/>
+<cb:consultant ref="#rnapier #unknown-f"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#rk" evidence="internal" present="no"/>
+<cb:subject ref="#ak #bk" present="no"/>
+<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ak"/><person sameAs="#bk"/></cb:topic>
+<cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#ak"/></cb:topic>
+<cb:judgment/>
+<cb:treatment/>
+<cb:treatment type="sigil"/>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-03-14">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-09">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-06-05">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-06-23">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-09-18">Checked and merged into one file by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2017-10-23">Rechecked by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-04-11">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="aas0238.jpg" url="aas0238.jpg" n="213"/>
+<graphic xml:id="aas0239.jpg" url="aas0239.jpg" n="214"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><handShift new="#rnapier"/>M<hi rend="superscript">r</hi> king <choice><sic>k</sic><corr type="noText"/></choice> King <rs type="address" xml:id="address1" key="PLACE1352" resp="#mhawkins">of Ashby <lb/>in Leycester sheere</rs> 60 <lb/>y Ap 1. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 8 30 <lb/>p m 1631</p>
+
+<pb xml:id="p214" n="214"/>
+<p><lb/><handShift new="#unknown-f"/><choice><orig>R<hi rend="overline">ichd</hi></orig><reg>Richard</reg></choice> Kinge <rs type="address" sameAs="#address1" key="PLACE1414" resp="#mhawkins">of Ashbye</rs> Sent <lb/>a letter for M<hi rend="superscript">r</hi>. Anthony &amp; <choice><orig>M<hi rend="superscript">res</hi></orig><reg>Mrs</reg></choice> <lb/>Bridgett Kinge. April. 1. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice>. h. 8. 30. <lb/>p m. 1631</p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<cb xml:id="colB" n="b"/>
+<p><lb/><handShift new="#rnapier"/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Bridget his Daughter <lb/>of M<hi rend="superscript">r</hi> King. 19 y. Ap 1. <lb/><choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h. 8 30 p m. 163<choice><orig>i</orig><reg>1</reg></choice></p>
+</div>
+</body>
+</text>
+</TEI>

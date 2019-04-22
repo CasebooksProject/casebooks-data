@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE3486</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="195">MS Ashmole 195, f. 38v</idno>
-&Forman003;
+<altIdentifier type="fn_number"><idno n="Forman003">Forman, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,8 +40,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
@@ -64,6 +68,7 @@
 <p><date when="1598-04-19" n="Wednesday"/></p>
 <p><time when="09:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman"/>
@@ -80,6 +85,7 @@
 <change when="2011-01-11">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,9 +93,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Questo 1598 the 19 of <lb/>Aprill &Wednesday;. <choice><orig>ante m&flourish;</orig><reg>am</reg></choice> at <lb/>15 &past; 9. <foreign xml:lang="la"><choice><sic>&vVowel;tren</sic><corr>&vVowel;trum</corr></choice> Kat gittens</foreign> &amp; <lb/>I <foreign xml:lang="la"><choice><sic>Conducimr</sic><corr>Conducimur</corr></choice> <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> non</foreign> I mo<lb/>ved the queston <choice><sic>fir</sic><corr type="noText"/></choice> to her <lb/>this Day at 10 &past; 8 in the <lb/>morning ferst she being <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <lb/>me&slash;</p>
+<p><lb/>Questo 1598 the 19 of <lb/>Aprill <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice>. <choice><orig>ante m’</orig><reg>am</reg></choice> at <lb/>15 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 9. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><sic><choice><orig>v</orig><reg>u</reg></choice>tren</sic><corr><choice><orig>v</orig><reg>u</reg></choice>trum</corr></choice> Kat gittens</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether Kate Gittens</seg><link type="is-translation-of" target="#foreign001 #translation001"/> &amp; <lb/>I <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><sic>Conducimr</sic><corr>Conducimur</corr></choice> <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice> non</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">will marry or not</seg><link type="is-translation-of" target="#foreign002 #translation002"/> I mo<lb/>ved the queston <choice><sic>fir</sic><corr type="noText"/></choice> to her <lb/>this Day at 10 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 8 in the <lb/>morning ferst she being <choice><orig>w<hi rend="superscript">t</hi></orig><reg>with</reg></choice> <lb/>me/</p>
 </div>
-&geoChart;
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

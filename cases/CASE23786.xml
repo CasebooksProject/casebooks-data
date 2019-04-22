@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE23786</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-04-29">29 April 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="237">MS Ashmole 237, f. 66v</idno>
-&Napier023;
+<altIdentifier type="fn_number"><idno n="Napier023">Napier, vol. 23</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#willoughby">Mr Willoughby</handNote>
@@ -48,6 +52,12 @@
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
 </textClass>
+<creation>
+<listChange ordered="true">
+<change xml:id="stage1" when="1614-08-09"><name sameAs="#willoughby">Mr Willoughby</name> held the consultation and wrote out the entry.</change>
+<change xml:id="stage2" notBefore="1614-08-10" notAfter="1634-04-01"><name sameAs="#rnapier">Richard Napier</name> added two remarks.</change>
+</listChange>
+</creation>
 <particDesc>
 <listPerson>
 <person xml:id="willoughby">
@@ -69,12 +79,14 @@
 <p><date when="1614-08-09" n="Tuesday"/></p>
 <p><time when="10:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#willoughby"/>
 <cb:consultant ref="#willoughby"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#es"/>
 <cb:subject ref="#es" present="unclear"/>
 <cb:topic key="illness" resp="#rnapier"><person sameAs="#es"/></cb:topic>
-<cb:topic key="girlOrBoy" evidence="internal"><person sameAs="#es"/></cb:topic>
+<cb:topic key="childbirth"><person sameAs="#es"/></cb:topic>
+<cb:topic key="girlOrBoy"><person sameAs="#es"/></cb:topic>
 
 </cb:consultation>
 </settingDesc>
@@ -88,6 +100,7 @@
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-08-02">Unidentified hand coded as Mr Willoughby by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-07-06">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,10 +108,13 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#willoughby"/>Elysabet Scarlet. y. 25 <lb/>August. 9. &Tuesday;. hor. <del type="strikethrough">9</del><choice><sic>. <subst><del type="over">4</del><add place="over">3</add></subst>0</sic><corr type="delText"/></choice> <add place="supralinear">10</add> <lb/>A. M. 1614.</p>
-<p><lb/>ill this .3. weeks &amp; neere <lb/>&vVowel;ppon her tyme <foreign xml:lang="la">qu&aelig;rit <lb/>tempus part<subst><del type="over"><unclear cert="low" reason="del">it</unclear></del><add place="over">u</add></subst>s <subst><del type="over">&amp;</del><add place="over">e</add></subst>t an sit mas <lb/>vell f&aelig;mina</foreign><note place="chart"><handShift new="#rnapier"/>great <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child. <lb/>big bodyed</note><handShift new="#willoughby"/></p>
+<p change="#stage1"><lb/><handShift new="#willoughby"/>Elysabet Scarlet. y. 25 <lb/>August. 9. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice>. hor. <del type="strikethrough">9</del><choice><sic>. <subst><del type="over">4</del><add place="over">3</add></subst>0</sic><corr type="delText"/></choice> <add place="supralinear">10</add> <lb/>A. M. 1614.</p>
+<p><lb/>ill this .3. weeks &amp; neere <lb/><choice><orig>v</orig><reg>u</reg></choice>ppon her tyme <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit <lb/>tempus part<subst><del type="over"><unclear cert="low" reason="del">it</unclear></del><add place="over">u</add></subst>s <subst><del type="over">&amp;</del><add place="over">e</add></subst>t an sit mas <lb/>vell fæmina</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">she asks the time of her delivery and whether it will be male or female</seg><link type="is-translation-of" target="#foreign001 #translation001"/><note place="chart" change="#stage2"><handShift new="#rnapier"/>great <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> child. <lb/>big bodyed</note><handShift new="#willoughby"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p change="#stage2"><lb/><handShift new="#rnapier"/>big bodyed</p>
+</div>
 </body>
 </text>
 </TEI>

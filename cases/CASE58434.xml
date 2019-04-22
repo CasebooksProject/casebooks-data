@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE58434</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-02-10">10 February 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 188v/uR, f. 189Ar/uL</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -58,7 +63,10 @@
 <sex value="2">F</sex>
 <age value="27">27</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
-<birth><date when="1597-07-11" n="Monday"/><time when="12:30:00"/><placeName sameAs="#place1"/></birth>
+<birth>
+<date when="1597-07-11" n="Monday"/>
+<time when="12:30:00"/><placeName sameAs="#place1"/>
+</birth>
 </person>
 </listPerson>
 </particDesc>
@@ -66,6 +74,7 @@
 <p><date when="1624-05-13" n="Thursday"/></p>
 <p><time when="18:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ep" evidence="internal"/>
@@ -82,7 +91,8 @@
 <change when="2016-05-25">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-11-24">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-05-18">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -91,7 +101,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elis. Pathloe <lb/><rs type="address" xml:id="address1">of Toddenham <lb/>in Glocester sheere</rs> <lb/>27 y <del type="strikethrough">next the 2<gap reason="del" extent="1" unit="chars"/></del> <add place="supralinear"><choice><sic>1<gap reason="hand" extent="1" unit="chars"/></sic><corr type="noText"/></choice></add> <lb/>borne act monday <lb/>in <placeName xml:id="place1">Oxford</placeName> h. 12. 30 <lb/>p m. the next act <lb/>munday <choice><orig>i</orig><reg>j</reg></choice>ust <del type="strikethrough"><gap reason="hand" extent="1" unit="chars"/></del> 2<gap reason="binding" extent="1" unit="chars"/> <lb/>but sent to me m<supplied reason="binding">ay</supplied> <lb/>13 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 6 p m <lb/>1624 <add place="infralinear"><choice><orig>I</orig><reg>J</reg></choice>uly 11 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 12. 30 p m 159<supplied reason="binding" cert="medium">7</supplied></add></p>
+<p><lb/>Elis. Pathloe <lb/><rs type="address" xml:id="address1" key="PLACE1069" resp="#mhawkins">of Toddenham <lb/>in Glocester sheere</rs> <lb/>27 y <del type="strikethrough">next the 2</del> <add place="supralinear"><choice><sic>1<gap reason="hand" extent="1" unit="chars"/></sic><corr type="noText"/></choice></add> <lb/>borne act monday <lb/>in <placeName xml:id="place1" key="PLACE1931" resp="#mhawkins">Oxford</placeName> h. 12. 30 <lb/>p m. the next act <lb/>munday <choice><orig>i</orig><reg>j</reg></choice>ust <del type="strikethrough"><gap reason="hand" extent="1" unit="chars"/></del> 27 y <lb/>but sent to me may <lb/>13 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 6 p m <lb/>1624 <add place="infralinear"><choice><orig>I</orig><reg>J</reg></choice>uly 11 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 12. 30 p m 1597</add></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 <pb xml:id="f189Ar" n="189Ar"/>

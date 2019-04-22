@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE50434</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-10-10">10 October 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="213">MS Ashmole 213, f. 150v</idno>
-&Napier031;
+<altIdentifier type="fn_number"><idno n="Napier031">Napier, vol. 31</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -75,6 +81,7 @@
 <p><date when="1620-03-25" n="Saturday"/></p>
 <p><time when="14:20:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#s" evidence="internal" present="unclear"/>
@@ -92,6 +99,7 @@
 <change when="2016-01-28">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,12 +107,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Will: Stampford <rs type="address" xml:id="address1">of <lb/>Teddington</rs> 3<subst><del type="over">2</del><add place="over"><choice><orig>i</orig><reg>1</reg></choice></add></subst> y a batch <lb/>borne on S<hi rend="superscript">t</hi> markes day <lb/>being fryday about <choice><sic>12</sic><corr type="delText"/></choice> <add place="supralinear">11. 30 ant</add> 31 y <lb/>a marke he had in his <lb/>forehead march 25 <choice><orig><choice><sic>h</sic><corr>&SaturnSymbol;</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor <lb/>2. 20 p m 1620 the falling <lb/>sicknes many kinds of it.</p>
+<p><lb/>Will: Stampford <rs type="address" xml:id="address1" key="PLACE521" resp="#mhawkins">of <lb/>Teddington</rs> 3<subst><del type="over">2</del><add place="over"><choice><orig>i</orig><reg>1</reg></choice></add></subst> y a batch <lb/>borne on S<hi rend="superscript">t</hi> markes day <lb/>being fryday about <choice><sic>12</sic><corr type="delText"/></choice> <add place="supralinear">11. 30 ant</add> 31 y <lb/>a marke he had in his <lb/>forehead march 25 <choice><orig><choice><sic>h</sic><corr>♄</corr></choice></orig><reg type="gloss">Saturday</reg></choice> hor <lb/>2. 20 p m 1620 the falling <lb/>sicknes many kinds of it.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>
 <div>
-<p><lb/>Will. Stampford <rs type="address" sameAs="#address1"><supplied reason="binding">of</supplied> <lb/>Teddington</rs> 3<supplied reason="binding" cert="medium">1 y</supplied> <lb/>march 25 &Saturday; <supplied reason="binding" cert="high">h 2.</supplied> <lb/>20 p m 1620</p>
+<p><lb/>Will. Stampford <rs type="address" sameAs="#address1" key="PLACE521" resp="#mhawkins"><supplied reason="binding">of</supplied> <lb/>Teddington</rs> 3<supplied reason="binding" cert="medium">1 y</supplied> <lb/>march 25 <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> <supplied reason="binding" cert="high">h 2.</supplied> <lb/>20 p m 1620</p>
 </div>
 </body>
 </text>

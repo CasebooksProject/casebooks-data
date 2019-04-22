@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE26011</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2013-07-23">23 July 2013</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">mL</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="174">MS Ashmole 174, p. 388</idno>
+<altIdentifier type="fn_number"><idno n="AssortedPapers001">Various Papers, vol. 1</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0388" to="0388"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+<physDesc><objectDesc><layoutDesc><layout columns="3"/></layoutDesc></objectDesc></physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rwallis">Robert Wallis</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<particDesc>
+<listPerson>
+<person xml:id="rwallis">
+<persName><forename>Robert</forename> <surname>Wallis</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ab">
+<persName><forename>Anne</forename> <surname>Bell</surname></persName>
+<sex value="2">F</sex>
+<age value="25">25</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+</listPerson>
+</particDesc>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<settingDesc>
+<p><date when="1625-09-14" n="Wednesday"/></p>
+<p><time when="09:50:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rwallis"/>
+<cb:consultant ref="#rwallis"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ab"/>
+<cb:subject ref="#ab" present="unclear"/>
+<cb:topic key="noCourses"><person sameAs="#ab"/></cb:topic>
+<cb:topic key="breasts"><person sameAs="#ab"/></cb:topic>
+<cb:topic key="back"><person sameAs="#ab"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2013-07-23">XML template file created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2013-07-30">Stub details transcribed by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2016-08-08">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-04-25">textClass coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-10-06">Transcribed by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-02-12">Checked by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-05-13">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="acg0468.jpg" url="acg0468.jpg" n="388"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>Anne Bell <rs type="address" xml:id="address1" key="PLACE698" resp="#mhawkins">of Hartwell</rs>. y <lb/>25. <choice><orig>d. ☿</orig><reg>die Mercurii</reg><reg type="gloss">Wednesday</reg></choice>. h: 9. 50. <choice><orig>ant: m</orig><reg>am</reg></choice>: Sept: <lb/>14. 1625 <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">non habuit menses <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> 4 hebdomadas. pectore, tergo<unclear cert="low" reason="hand"><choice><orig>q<unclear reason="hand" cert="low">’</unclear></orig><reg cert="medium">que</reg></choice></unclear> <lb/>gra<unclear cert="low" reason="hand"><choice><orig>u</orig><reg>v</reg></choice></unclear>ata. virgo <choice><orig>v</orig><reg>u</reg></choice>t ait</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">has not had her courses for four weeks. [Grown heavier in her back and chest?] A maiden as she says.</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+</body>
+</text>
+</TEI>

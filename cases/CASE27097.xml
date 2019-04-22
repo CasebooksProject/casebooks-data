@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE27097</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-11-11">11 November 2013</date>
 </publicationStmt>
-<notesStmt><note type="editorial" resp="#rralley">This nativity is associated with the horary entry <ref type="case" target="CASE27098">CASE27098</ref>.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="editorial" resp="#rralley">This nativity is associated with the horary entry <ref type="case" target="CASE27098">CASE27098</ref>. The year of birth given in it does not match Samuel Wilcox’s age in that horary entry or in any of his other horary entries.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="215">MS Ashmole 215, f. 101r</idno>
-&Napier011;
+<altIdentifier type="fn_number"><idno n="Napier011">Napier, vol. 11</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -35,14 +40,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#nativity"/>
@@ -56,20 +62,19 @@
 <person xml:id="sw">
 <persName><forename>Samuel</forename> <surname>Wilcox</surname></persName>
 <sex value="1">M</sex>
-<birth><date when="1603-11-27" n="Tuesday" sameAs="#date1"/><time when="12:30:00" sameAs="#time1"/></birth>
+
 </person>
-<person xml:id="anon">
-<sex value="0">U</sex>
-</person>
+
 </listPerson>
 </particDesc>
 <settingDesc>
 <p><date when="1606-04-10" n="Thursday" evidence="external"/></p>
 <p><time when="14:20:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#anon" evidence="inferred" present="unclear"/>
+<cb:querent ref="#sw"/>
 <cb:subject ref="#sw" present="unclear"/>
 <cb:topic key="fallingSickness"><person sameAs="#sw"/></cb:topic>
 </cb:consultation>
@@ -81,16 +86,22 @@
 <change when="2014-05-13">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-02-16">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-04-10">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="cmp0221.jpg" url="cmp0221.jpg" n="101r"/>
 </facsimile>
-<text xml:lang="la">
-<body><div>
-<p><lb/><supplied reason="binding">S</supplied>am Wilcock nat<choice><orig>&uscon;</orig><reg>us</reg></choice> <lb/><rs type="date" xml:id="date1"><supplied reason="binding">no</supplied>v<choice><orig>&eover;</orig><reg>em</reg></choice>b. 27 &TuesdayLatin;</rs> <rs type="time" xml:id="time1">h. 12. 30 p m</rs> <lb/><rs type="date" sameAs="#date1"><del type="strikethrough">160<subst><del type="over">6</del><add place="over">3</add></subst></del> 1603</rs>.<note place="chart">epilepsia</note></p>
+<text>
+<body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
+<p><lb/>Sam Wilcock nat<choice><orig>ꝯ</orig><reg>us</reg></choice> <lb/><rs type="date" xml:id="date1">Nov<choice><orig>ē</orig><reg>em</reg></choice>b. 27 <choice><orig>♂</orig><reg>die Martis</reg><reg type="gloss">Tuesday</reg></choice></rs> <rs type="time" xml:id="time1">h. 12. 30 p m</rs> <lb/><rs type="date" sameAs="#date1"><del type="strikethrough">160<subst><del type="over">6</del><add place="over">3</add></subst></del> 1603</rs>.<note place="chart">epilepsia</note></p>
 </div>
-&astroChart;
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Sam Wilcox born Tuesday 17 November 1603 at 12.30pm falling sickness.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

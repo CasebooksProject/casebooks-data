@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE5740</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 114r</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -46,7 +56,7 @@
 <language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<catRef target="#horaryGeomantic"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -69,6 +79,7 @@
 <p><date when="1599-07-27" n="Friday"/></p>
 <p><time when="09:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#ws"/>
@@ -89,6 +100,8 @@
 <change when="2011-10-24">Revised by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-24">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -97,11 +110,11 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>1599 27 &IConsonant;uli&jVowel; <lb/>30 &past; 9. <foreign xml:lang="la">pecunia</foreign>&slash;</p>
-<p><lb/><choice><orig><hi rend="overline">willm</hi></orig><reg>william</reg></choice> standdish <rs type="address" xml:id="address1">of selford in Sussex</rs> <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> Sampson fynian qui abscurrit</foreign> <lb/>he lai last <choice><sic>a</sic><corr>at</corr></choice> <placeName><placeName>Siddelsom mill</placeName> in <placeName>sussex</placeName></placeName></p>
+<p><lb/>1599 27 <choice><orig>I</orig><reg>J</reg></choice>uli<choice><orig>j</orig><reg>i</reg></choice> <lb/>30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 9. <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">pecunia</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for the money</seg><link type="is-translation-of" target="#foreign001 #translation001"/>/</p>
+<p><lb/><choice><orig><hi rend="overline">willm</hi></orig><reg>william</reg></choice> standdish <rs type="address" xml:id="address1" key="PLACE2095" resp="#mhawkins">of selford in Sussex</rs> <lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> Sampson fynian qui abscurrit</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">for Sampson Finian who ran away</seg><link type="is-translation-of" target="#foreign002 #translation002"/> <lb/>he lai last <choice><sic>a</sic><corr>at</corr></choice> <placeName key="PLACE2096" resp="#mhawkins"><placeName key="PLACE2096" resp="#mhawkins">Siddelsom mill</placeName> in <placeName key="PLACE2086" resp="#mhawkins">sussex</placeName></placeName></p>
 </div>
-&astroChart;
-&geoChart;
+<figure type="astro" subtype="astroChart"/>
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

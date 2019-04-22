@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE4946</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, uR-2</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 10r</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -46,7 +56,7 @@
 <language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<catRef target="#horaryGeomantic"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -74,6 +84,7 @@
 <p><date when="1599-02-22" n="Thursday"/></p>
 <p><time when="13:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#me" evidence="internal"/>
@@ -91,6 +102,8 @@
 <change when="2011-04-12">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-24">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -99,14 +112,14 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Margaret Edward&pluralLoop; <rs type="address" xml:id="address1">of bishops <lb/>gate stret</rs> <foreign xml:lang="la">fecit inquisisionem <lb/><choice><orig>&crossedp;</orig><reg>pro</reg></choice> Marya Richardson alias <lb/>goodridge</foreign> of 21 yers <foreign xml:lang="la">qui abscurit <lb/>a marito</foreign>. 1599 22 feb &Thursday; &pmfl; <lb/>at &jVowel;. <foreign xml:lang="la">&vVowel;bi est</foreign></p>
+<p><lb/>Margaret Edward<choice><orig>ꝭ</orig><reg>es</reg></choice> <rs type="address" xml:id="address1" key="PLACE42" resp="#mhawkins">of bishops <lb/>gate stret</rs> <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">fecit inquisisionem <lb/><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> Marya Richardson alias <lb/>goodridge</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">made an enquiry about Mary Richardson otherwise Goodridge</seg><link type="is-translation-of" target="#foreign001 #translation001"/> of 21 yers <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">qui abscurit <lb/>a marito</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">who ran away from her husband</seg><link type="is-translation-of" target="#foreign002 #translation002"/>. 1599 22 feb <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> <lb/>at <choice><orig>j</orig><reg>i</reg></choice>. <foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>bi est</foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">where she is</seg><link type="is-translation-of" target="#foreign003 #translation003"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div><cb xml:id="colB" n="b"/>
-<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> Maria Richardson &vVowel;t <lb/>antea abscur<choice><orig>&uover;</orig><reg>um</reg></choice></foreign> <lb/>at 1 pm 22 feb&slash;</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign004" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> Maria Richardson <choice><orig>v</orig><reg>u</reg></choice>t <lb/>antea abscur<choice><orig>ū</orig><reg>um</reg></choice></foreign><seg xml:id="translation004" decls="#translation" xml:lang="en">for the runaway Mary Richardson as before</seg><link type="is-translation-of" target="#foreign004 #translation004"/> <lb/>at 1 pm 22 feb/</p>
 </div>
-&geoChart;
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

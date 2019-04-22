@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE57853</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-02-10">10 February 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note resp="#ymartin" type="editorial">This interrogation is associated with the horary entry <ref target="CASE57852" type="case">CASE57852</ref>.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
@@ -34,9 +39,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -59,7 +68,7 @@
 <sex value="2">F</sex>
 </person>
 <person xml:id="w2">
-<persName><surname evidence="inferred" cert="low">Wentworth</surname></persName>
+<persName><surname evidence="inferred" type="maiden" cert="low">Wentworth</surname></persName>
 <sex value="2">F</sex>
 <birth><date when="1623-07-20"/><time when="04:30:00"/></birth>
 </person>
@@ -70,6 +79,7 @@
 <p><date when="1624-03-08" n="Monday" evidence="external"/></p>
 <p><time when="10:00:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#w1"/>
@@ -86,7 +96,6 @@
 <change when="2016-04-27">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-04-21">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-10-26">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,7 +103,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>feb 29 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <add place="supralinear">h 4. 30 p</add> my lady was <lb/>sorely vexed in <del type="strikethrough">her</del> the <lb/>fore <choice><orig></orig><reg>par</reg></choice>te of her head about the <lb/>top causing her ladyship to vomyt. <lb/>hath had many fits therof sinc <lb/><choice><orig>I</orig><reg>J</reg></choice>uly last <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she was brought a bed <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 20. <add place="supralinear">h. 4. 30 <choice><sic>h 4. 30</sic><corr type="noText"/></choice> <choice><orig>ant m</orig><reg>am</reg></choice></add>. <del type="strikethrough">but had</del> then a most <lb/>violent fit &amp; fyndeth most good by <lb/>covearing her head wth a pillow <lb/>made very hot</p>
+<p><lb/>feb 29 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <add place="supralinear">h 4. 30 p</add> my lady was <lb/>sorely vexed in <del type="strikethrough">her</del> the <lb/>fore <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>te of her head about the <lb/>top causing her ladyship to vomyt. <lb/>hath had many fits therof sinc <lb/><choice><orig>I</orig><reg>J</reg></choice>uly last <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> she was brought a bed <lb/><choice><orig>I</orig><reg>J</reg></choice>uly 20. <add place="supralinear">h. 4. 30 <choice><sic>h 4. 30</sic><corr type="noText"/></choice> <choice><orig>ant m</orig><reg>am</reg></choice></add>. <del type="strikethrough">but had</del> then a most <lb/>violent fit &amp; fyndeth most good by <lb/>covearing her head wth a pillow <lb/>made very hot</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE16313</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2012-09-12">12 September 2012</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="207">MS Ashmole 207, f. 211r</idno>
-&Napier007;
+<altIdentifier type="fn_number"><idno n="Napier007">Napier, vol. 7</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#gjames">Gerence James</handNote>
@@ -70,6 +74,7 @@
 <p><date when="1604-09-05" n="Wednesday"/></p>
 <p><time when="11:40:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#gjames #rnapier"/>
 <cb:consultant ref="#gjames #rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#eb"/>
@@ -87,6 +92,8 @@
 <change when="2013-03-21">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-12">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -94,10 +101,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><handShift new="#gjames"/>Elsabeth Berry <rs type="address" xml:id="address1">of Cranfield</rs> <lb/>38 y. Sept. 5 &Wednesday; ho. 11. 40 a m <lb/>1604</p>
+<p><lb/><handShift new="#gjames"/>Elsabeth Berry <rs type="address" xml:id="address1" key="PLACE375" resp="#mhawkins">of Cranfield</rs> <lb/>38 y. Sept. 5 <choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> ho. 11. 40 a m <lb/>1604</p>
 <p><lb/>A payne in her left syde</p>
-<p><lb/><handShift new="#rnapier"/><foreign xml:lang="la">qu&aelig;rit an sit gravida</foreign></p>
-<p><lb/>wanteth her termes six <lb/>weekes. &slash;</p>
+<p><lb/><handShift new="#rnapier"/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">quærit an sit gravida</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">she asks whether she is pregnant</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+<p><lb/>wanteth her termes six <lb/>weekes. /</p>
 </div>
 </body>
 </text>

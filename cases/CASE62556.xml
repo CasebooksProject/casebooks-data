@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE62556</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-11-30">30 November 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bR, bL</bibl>
 <msDesc>
@@ -33,9 +38,13 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -64,11 +73,12 @@
 <p><date when="1626-12-07" n="Thursday"/></p>
 <p><time when="13:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#r" evidence="internal"/>
 <cb:subject ref="#r" present="unclear"/>
-<cb:topic key="fortune"><person sameAs="#r"/></cb:topic>
+<cb:topic key="generalFuture"><person sameAs="#r"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -79,7 +89,8 @@
 <change when="2016-11-30">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-03-24">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2017-06-07">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-02-13">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-08-14">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -87,9 +98,8 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><foreign xml:lang="la"><choice><orig>D<hi rend="overline">us</hi></orig><reg>Dominus</reg></choice></foreign> Rudle <foreign xml:lang="la">quærit <lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig></orig><reg>pro</reg></choice>spere ei <gap reason="binding" extent="1" unit="words"/> <lb/>deo favente</foreign> De<supplied reason="binding">c<choice><orig>ē</orig><reg>em</reg></choice>b.</supplied> <lb/>7. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 1. p <supplied reason="binding">m</supplied> <lb/>1626.</p>
-</div>
-<figure type="astro" subtype="astroChart"/>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>D<hi rend="overline">us</hi></orig><reg>Dominus</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">Mr</seg><link type="is-translation-of" target="#foreign001 #translation001"/> Rudle <foreign xml:lang="la" xml:id="foreign002" decls="#original_source">quærit <lb/><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>spere ei Avenit <lb/>deo favente</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">asks whether it will go well with him by God’s favour</seg><link type="is-translation-of" target="#foreign002 #translation002"/> Dec<choice><orig>ē</orig><reg>em</reg></choice>b <lb/>7. <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 1. p m <lb/>1626.</p>
+</div><figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>
 </body>
 </text>

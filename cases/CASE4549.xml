@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE4549</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="195">MS Ashmole 195, f. 203v</idno>
-&Forman003;
+<altIdentifier type="fn_number"><idno n="Forman003">Forman, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -63,6 +69,7 @@
 <p><date when="1598-11-27" n="Monday"/></p>
 <p><time when="09:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#tc"/>
@@ -89,9 +96,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
- <p><lb/>M<hi rend="superscript">r</hi> T Conyeers 1598 the <lb/>27 novemb &Monday; &Anflmfl; at <del type="cancelled"><gap reason="binding" extent="1" unit="chars"/></del> 30 &past; 9 <lb/>whether the bargain he is a<lb/>bought shall be for his good <lb/>or for his harme</p>
+ <p><lb/>M<hi rend="superscript">r</hi> T Conyeers 1598 the <lb/>27 novemb <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <choice><orig>An’ m’</orig><reg>am</reg></choice> at <del type="cancelled"><gap reason="binding" extent="1" unit="chars"/></del> 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 9 <lb/>whether the bargain he is a<lb/>bought shall be for his good <lb/>or for his harme</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

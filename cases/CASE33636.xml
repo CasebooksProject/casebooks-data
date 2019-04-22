@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE33636</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-07-01">01 July 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="229">MS Ashmole 229, f. 139v</idno>
-&Napier013;
+<altIdentifier type="fn_number"><idno n="Napier013">Napier, vol. 13</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -68,6 +78,7 @@
 <persName><surname>Tongue</surname></persName>
 <sex value="1" cert="medium" evidence="conjecture">M</sex>
 <residence key="databaseNormalizedIDKey">of Stocke</residence>
+<occupation type="medicalPractitioner" resp="#mhawkins">Medical practitioner</occupation>
 </person>
 <listRelation><relation name="father" active="#m" passive="#cm"/></listRelation>
 </listPerson>
@@ -76,6 +87,7 @@
 <p><date when="1608-06-27" n="Monday"/></p>
 <p><time when="19:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m" evidence="internal" present="unclear"/>
@@ -94,6 +106,9 @@
 <change when="2016-03-24">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-07-20">Checked against new image by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-06-18">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -101,9 +116,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><sic><subst><del type="over">l</del><add place="over">C</add></subst>hystopher</sic><corr>Chrystopher</corr></choice> Mun <rs type="address" xml:id="address1">of <lb/>Woulv<choice><orig>&loopedr;</orig><reg>er</reg></choice>ton</rs> <subst><del type="over">3</del><add place="over">4</add></subst> y &IConsonant;un<supplied reason="binding">e</supplied> <lb/>27 &Monday; h. 7 p m <supplied reason="binding">1608</supplied> <add place="infralinear"><foreign xml:lang="la">pater <choice><orig>&crossedp;</orig><reg>pro</reg></choice> filio</foreign> extreme <unclear cert="medium" reason="binding">s</unclear><supplied reason="binding" cert="low">icke</supplied></add></p>
+<p><lb/><choice><sic><subst><del type="over">l</del><add place="over">C</add></subst>hystopher</sic><corr>Chrystopher</corr></choice> Mun <rs type="address" xml:id="address1" key="PLACE869" resp="#mhawkins">of <lb/>Woulv<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice>ton</rs> <subst><del type="over">3</del><add place="over">4</add></subst> y <choice><orig>I</orig><reg>J</reg></choice>un<supplied reason="binding">e</supplied> <lb/>27 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 7 p m <supplied reason="binding">1608</supplied> <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">pater <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> filio</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the father for the son</seg><link type="is-translation-of" target="#foreign001 #translation001"/> extreme <unclear cert="medium" reason="binding">s</unclear><supplied reason="binding" cert="low">icke</supplied></add></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

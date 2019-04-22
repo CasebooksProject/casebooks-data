@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE28861</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2013-08-21">21 August 2013</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt><note type="layout" resp="#jyoung">This entry begins in the top right-hand quadrant as a note added above <ref type="case" target="CASE28862">CASE28862</ref> and then continues in the lower left-hand quadrant. It may share the chart of CASE28862.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-1, bL</bibl>
@@ -23,7 +28,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="216">MS Ashmole 216, f. 73r</idno>
-&Napier010;
+<altIdentifier type="fn_number"><idno n="Napier010">Napier, vol. 10</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,6 +74,7 @@
 <p><date when="1605-04-30" n="Tuesday"/></p>
 <p><time when="07:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#c"/>
@@ -85,6 +96,7 @@
 <change when="2014-10-01">Checked against original by <name sameAs="#jyoung">John Young</name>.</change>
 <change when="2016-03-11">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -92,9 +104,9 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Goody Cowly <rs type="address" xml:id="address1">of our towne</rs> same tyme.</p>
+<p><lb/>Goody Cowly <rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">of our towne</rs> same tyme.</p>
 <cb xml:id="colA" n="a"/>
-<p><lb/>Goody Cowly a deadly payne in <lb/>the hynder <choice><orig>&crossedp;</orig><reg>par</reg></choice>te of her head <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>shee c<choice><orig>&aover;</orig><reg>an</reg></choice>not rest for it r<choice><orig>&uover;</orig><reg>un</reg></choice>neth <lb/>into her backe. <del type="strikethrough">&amp;</del> chill &amp; cold. <lb/>chest hard gyrded. Apr <subst><del type="over">2</del><add place="over">3</add></subst>0 <choice><sic>y</sic><corr type="delText"/></choice> <lb/><gap reason="binding" unit="chars" extent="2" cert="medium"/> Apr. &Tuesday; h. 7. &antm; 1605.</p>
+<p><lb/>Goody Cowly a deadly payne in <lb/>the hynder <choice><orig><g ref="#crossedp"></g></orig><reg>par</reg></choice>te of her head <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>shee c<choice><orig>ā</orig><reg>an</reg></choice>not rest for it r<choice><orig>ū</orig><reg>un</reg></choice>neth <lb/>into her backe. <del type="strikethrough">&amp;</del> chill &amp; cold. <lb/>chest hard gyrded. Apr <subst><del type="over">2</del><add place="over">3</add></subst>0 <choice><sic>y</sic><corr type="delText"/></choice> <lb/><gap reason="binding" unit="chars" extent="2" cert="medium"/> Apr. <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 7. <choice><orig>ant m</orig><reg>am</reg></choice> 1605.</p>
 </div>
 </body>
 </text>

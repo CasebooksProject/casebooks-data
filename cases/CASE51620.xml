@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE51620</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-11-03">03 November 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -82,6 +87,7 @@
 <p><date when="1620-09-28" n="Thursday"/></p>
 <p><time when="15:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#person1" evidence="internal"/>
@@ -98,7 +104,7 @@
 <change when="2016-01-15">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-07-13">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -108,14 +114,14 @@
 <body><div>
 <p><lb/>My Cosen she Marsh sent <lb/>me the lett<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> of S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> francis <lb/><del type="strikethrough">Long</del> Lee his lett<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">C</add></subst>osen to <lb/><del type="strikethrough">S<hi rend="superscript">r</hi></del> M<hi rend="superscript">r</hi> Bouth &amp; kine <lb/>to my Lord Purbecke sept 28. <lb/><choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 3. p m 1620. to goe the <lb/>end of this weeke to my lord Purbeck</p>
 <cb xml:id="colB" n="b"/>
-<p><lb/>troubled by fits <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> mutch melancholy <lb/>my Cosen came <lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> <placeName>London</placeName> but <lb/>yesterday.</p>
+<p><lb/>troubled by fits <lb/><choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> mutch melancholy <lb/>my Cosen came <lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> <placeName key="PLACE1" resp="#mhawkins">London</placeName> but <lb/>yesterday.</p>
 <p><lb/>My lord Purbecke <lb/>desyrous to have <lb/>me to come to him <lb/><choice><orig>v</orig><reg>u</reg></choice>ppon the high c<choice><orig>ō</orig><reg>om</reg></choice>m<lb/>mendation of S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> <lb/>francis Lee. <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <choice><sic>mayed</sic><corr>maryed</corr></choice></p>
 <cb xml:id="colA" n="a"/>
 </div>
 <figure type="astro" subtype="astroChart"/>
 <div>
-<p><lb/>my lord of <placeName>Burbeck</placeName> is at <lb/><rs type="address" xml:id="address1">Long Compton</rs> at my lord <lb/>of <placeName>North<choice><orig>ā</orig><reg>am</reg></choice>pton</placeName>s my lord doth <lb/>desyre he would come <choice><orig>v</orig><reg>u</reg></choice>nto <lb/>him</p>
-<p><lb/>my lord Comptons is gone <lb/>into <placeName>Wales</placeName>.</p>
+<p><lb/>my lord of Burbeck is at <lb/><rs type="address" xml:id="address1">Long Compton</rs> at my lord <lb/>of North<choice><orig>ā</orig><reg>am</reg></choice>ptons my lord doth <lb/>desyre he would come <choice><orig>v</orig><reg>u</reg></choice>nto <lb/>him</p>
+<p><lb/>my lord Comptons is gone <lb/>into <placeName key="PLACE2239" resp="#mhawkins">Wales</placeName>.</p>
 </div>
 </body>
 </text>

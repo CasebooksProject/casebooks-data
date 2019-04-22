@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE36684</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2014-10-07">07 October 2014</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, bR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="203">MS Ashmole 203, f. 180r</idno>
-&Napier016;
+<altIdentifier type="fn_number"><idno n="Napier016">Napier, vol. 16</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,8 +39,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -69,12 +73,13 @@
 <p><date when="1609-10-26" n="Thursday"/></p>
 <p><time when="17:38:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#l" evidence="internal" present="no"/>
 <cb:subject ref="#dl" present="no"/>
-<cb:topic key="requestingTreatment"><person sameAs="#dl"/></cb:topic>
-
+<cb:topic key="medicalCounsel"><person sameAs="#dl"/></cb:topic>
+<cb:topic key="requestingPrayer"><person sameAs="#dl"/></cb:topic>
 <cb:topic key="amissPassions" resp="#rnapier"><person sameAs="#dl"/></cb:topic>
 <cb:topic key="mind"><person sameAs="#dl"/></cb:topic>
 </cb:consultation>
@@ -94,11 +99,11 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Leate did write &vVowel;nto me <lb/>touching her daughter Denys. <lb/>that she is mended in <lb/>bodye but <choice><sic>anys</sic><corr>amys</corr></choice> in <lb/>mynd. Octob. 26 &Thursday; h. 5. 38 p m 1609</p>
+<p><lb/><choice><orig><hi rend="overline">Mres</hi></orig><reg>Mrs</reg></choice> Leate did write <choice><orig>v</orig><reg>u</reg></choice>nto me <lb/>touching her daughter Denys. <lb/>that she is mended in <lb/>bodye but <choice><sic>anys</sic><corr>amys</corr></choice> in <lb/>mynd. Octob. 26 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h. 5. 38 p m 1609</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 <div><cb xml:id="colB" n="b"/>
-<p><lb/>her <choice><sic>nother</sic><corr>mother</corr></choice> craveth <lb/><choice><sic>ny</sic><corr>my</corr></choice> helpe prayers <lb/>&amp; consell. &amp; is willing <lb/>to marry her but her <lb/>daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> myndeth it <lb/>not.&slash;</p>
+<p><lb/>her <choice><sic>nother</sic><corr>mother</corr></choice> craveth <lb/><choice><sic>ny</sic><corr>my</corr></choice> helpe prayers <lb/>&amp; consell. &amp; is willing <lb/>to marry her but her <lb/>daught<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> myndeth it <lb/>not./</p>
 </div>
 </body>
 </text>

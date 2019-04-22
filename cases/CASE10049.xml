@@ -7,23 +7,28 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE10049</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
- <notesStmt><note type="layout" resp="#jyoung">There is a preparatory geomantic chart in the left column, below <ref target="CASE2361" type="case">CASE2361</ref>; the question proper, the completed geomantic chart and the judgment are in the right column.</note></notesStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<notesStmt><note type="layout" resp="#jyoung">There is a preparatory geomantic chart in the left column, below <ref target="CASE2361" type="case">CASE2361</ref>; the question proper, the completed geomantic chart and the judgment are in the right column.</note></notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR-1, bL-1, uR-2</bibl>
-<msDesc>
+<msDesc xml:id="original_source">
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 192r</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -36,14 +41,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#sforman">Simon Forman</handNote>
 </handNotes>
 <langUsage>
 <language ident="la">Latin</language>
+<language ident="en">English</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#geomantic"/>
@@ -64,6 +70,7 @@
 <p><date when="1597-08-23" n="Tuesday"/></p>
 <p><time notBefore="13:45:00" notAfter="14:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#sforman" evidence="conjecture" present="yes"/>
@@ -78,21 +85,27 @@
 <change when="2010-12-20">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-03-26">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="ach0405.jpg" url="ach0405.jpg" n="192r"/>
 </facsimile>
-<text xml:lang="la">
+<text>
 <body>
-<div>
+<div xml:id="foreign001" xml:lang="la" decls="#original_source">
 <p rend="center"><lb/>Katerin stooe</p>
-<p><lb/>&VVowel;trum sit gra&uConsonant;ida n<choice><orig>&uover;</orig><reg>un</reg></choice>c <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice>n<choice><orig>&oover;</orig><reg>on</reg></choice></p>
+<p><lb/><choice><orig>V</orig><reg>U</reg></choice>trum sit gra<choice><orig>u</orig><reg>v</reg></choice>ida n<choice><orig>ū</orig><reg>un</reg></choice>c <choice><orig>n<hi rend="superscript">c</hi></orig><reg>nec</reg></choice>n<choice><orig>ō</orig><reg>on</reg></choice></p>
 </div>
+<div xml:id="translation001" xml:lang="en" decls="#translation">
+<p>Catherine Stoe.</p>
+<p>Whether she is pregnant now or not.</p>
+</div>
+<link type="is-translation-of" target="#foreign001 #translation001"/>
 <cb xml:id="colA" n="a"/>
-&geoChartPreliminary;
+<figure type="geo" subtype="geoChartPreliminary"/>
 <cb xml:id="colB" n="b"/>
-&geoChart;
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

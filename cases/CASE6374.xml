@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE6374</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL, uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="219">MS Ashmole 219, f. 200r</idno>
-&Forman004;
+<altIdentifier type="fn_number"><idno n="Forman004">Forman, vol. 4</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -46,7 +56,7 @@
 <language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
-<catRef target="#horary"/>
+<catRef target="#horaryGeomantic"/>
 </textClass>
 <particDesc>
 <listPerson>
@@ -73,6 +83,7 @@
 <p><date when="1599-11-23" n="Friday"/></p>
 <p><time when="07:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
 <cb:querent ref="#wr"/>
@@ -90,6 +101,7 @@
 <change when="2013-09-20">Topic coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-30">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -98,14 +110,14 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/><choice><orig>W<hi rend="overline">illm</hi></orig><reg>William</reg></choice> Ro<choice><orig>&crossedp;</orig><reg>per</reg></choice> gouldsmith 1559 <lb/>the 23 of novemb &Friday; <choice><orig>An <lb/>m&flourish;</orig><reg>am</reg></choice> at 30 &past; 7 <del type="strikethrough"><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> <del type="cancelled"><gap reason="del" unit="words" extent="2"/></del></foreign></del></p>
+<p><lb/><choice><orig>W<hi rend="overline">illm</hi></orig><reg>William</reg></choice> Ro<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice> gouldsmith 1559 <lb/>the 23 of novemb <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> <choice><orig>An <lb/>m’</orig><reg>am</reg></choice> at 30 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> 7 <del type="strikethrough"><foreign xml:lang="la"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <del type="cancelled"><gap reason="del" unit="words" extent="2"/></del></foreign></del></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 
 <div><cb xml:id="colB" n="b"/>
-<p><lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice> Ann Ro<choice><orig>&crossedp;</orig><reg>per</reg></choice>. &vVowel;t antea&slash; <lb/>Auri fabri</foreign> m<hi rend="superscript">rs</hi> cuer</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> Ann Ro<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>. <choice><orig>v</orig><reg>u</reg></choice>t antea/ <lb/>Auri fabri</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for Anne Roper as before. Goldsmith</seg><link type="is-translation-of" target="#foreign001 #translation001"/> m<hi rend="superscript">rs</hi> cuer</p>
 </div>
-&geoChart;
+<figure type="geo" subtype="geoChart"/>
 </body>
 </text>
 </TEI>

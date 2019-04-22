@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE38907</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-01-09">09 January 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">f. 194v/bR, f. 195r/uL, f. 195r/bR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="200">MS Ashmole 200, ff. 194v-195r</idno>
-&Napier020;
+<altIdentifier type="fn_number"><idno n="Napier020">Napier, vol. 20</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -61,7 +67,7 @@
 <person xml:id="s" evidence="internal">
 <persName><roleName>Goody</roleName> <surname>Stevenson</surname></persName>
 <sex value="2">F</sex>
-<occupation>Midwife</occupation>
+<occupation type="medicalPractitioner">Midwife</occupation>
 </person>
 <person xml:id="ew" evidence="internal">
 <persName><forename>Ellen</forename> <surname>Warner</surname></persName>
@@ -107,16 +113,17 @@
 <p><date when="1611-11-25" n="Monday"/></p>
 <p><time when="10:48:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#ag"/>
 <cb:subject ref="#ag" present="unclear"/>
 <cb:object ref="#s #dc #im #m4 #ew"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#ag"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#s"/><person sameAs="#dc"/><person sameAs="#im"/><person sameAs="#m4"/><person sameAs="#ew"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#s"/><person sameAs="#dc"/><person sameAs="#im"/><person sameAs="#m4"/><person sameAs="#ew"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
-<cb:info type="angel" subtype="Unspecified"/>
+<cb:info type="angel" subtype="Raphael"/>
 <cb:info type="angel" subtype="Raphael"/>
 </cb:consultation>
 </settingDesc>
@@ -129,6 +136,9 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-04-26">Page breaks linked to facsimile images by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-08">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -137,14 +147,14 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>An Gale <rs type="address" xml:id="address1">of Goldingt<supplied reason="binding">on</supplied></rs> <lb/>27 y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 25. &Monday; <lb/>h. 10. 30 &antm; 1611</p>
+<p><lb/>An Gale <rs type="address" xml:id="address1" key="PLACE819" resp="#mhawkins">of Goldington</rs> <lb/>27 y nov<choice><orig>ē</orig><reg>em</reg></choice>b. 25. <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> <lb/>h. 10. 30 <choice><orig>ant m</orig><reg>am</reg></choice> 1611</p>
 </div>
 
 <div>
 <pb xml:id="f195r" n="195r" facs="#ckk0409.jpg"/>
-<p><lb/>An Gale <rs type="address" sameAs="#address1">of Goldington</rs> <lb/>27. y nov<choice><orig>&eover;</orig><reg>em</reg></choice>b. 25 &Monday; h. 10 <choice><sic>10</sic><corr type="noText"/></choice> <lb/>48 &antm;. 1611.</p>
+<p><lb/>An Gale <rs type="address" sameAs="#address1" key="PLACE819" resp="#mhawkins">of Goldington</rs> <lb/>27. y nov<choice><orig>ē</orig><reg>em</reg></choice>b. 25 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 10 <choice><sic>10</sic><corr type="noText"/></choice> <lb/>48 <choice><orig>ant m</orig><reg>am</reg></choice>. 1611.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

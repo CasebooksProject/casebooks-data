@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE13108</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, bR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 274v</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -53,7 +59,7 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="e">
-<persName><roleName>Mrs</roleName> <surname>Ellet</surname></persName>
+<persName><roleName>Mrs</roleName> <surname>Elliot</surname></persName>
 <sex value="2">F</sex>
 <age value="43">43</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
@@ -69,6 +75,7 @@
 <p><date when="1600-02-21" n="Thursday"/></p>
 <p><time when="12:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#e"/>
@@ -95,6 +102,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -102,10 +110,10 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>febr. 2<choice><orig>i</orig><reg>1</reg></choice> &ThursdayN; h. 12. 30. <choice><sic>y</sic><corr type="noText"/></choice> <lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Ellet <rs type="address" xml:id="address1">of brockborow <lb/>parke</rs> &Mres; Middeltons sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><subst><del type="over">3</del><add place="over">4</add></subst>3 y. sick sinc Christide <lb/>of the stone in the b<subst><del type="over">l</del><add place="over">a</add></subst>ck &amp; <lb/>kidneys. &amp; voyded red gravell <lb/>&amp; troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the windines <lb/>of the stomack &amp; a wonder<lb/>full rheume salt &amp; bitter a <lb/>fat woman &amp; mutch pinched <lb/>about the harte. 1600</p>
+<p><lb/>febr. 2<choice><orig>i</orig><reg>1</reg></choice> <choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 12. 30. <choice><sic>y</sic><corr type="noText"/></choice> <lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Ellet <rs type="address" xml:id="address1" key="PLACE348" resp="#mhawkins">of brockborow <lb/>parke</rs> <choice><orig>M<hi rend="superscript">res</hi></orig><reg>Mrs</reg></choice> Middeltons sist<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><subst><del type="over">3</del><add place="over">4</add></subst>3 y. sick sinc Christide <lb/>of the stone in the b<subst><del type="over">l</del><add place="over">a</add></subst>ck &amp; <lb/>kidneys. &amp; voyded red gravell <lb/>&amp; troubled <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> the windines <lb/>of the stomack &amp; a wonder<lb/>full rheume salt &amp; bitter a <lb/>fat woman &amp; mutch pinched <lb/>about the harte. 1600</p>
 </div>
-&astroChartPartialDeleted;
-&astroChart;
+<figure type="astro" subtype="astroChartPartialDeleted"/>
+<figure type="astro" subtype="astroChart"/>
 <cb xml:id="colB" n="b"/>
 </body>
 </text>

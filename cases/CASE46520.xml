@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE46520</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-08-11">11 August 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL, uR-1</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="201">MS Ashmole 201, f. 79v</idno>
-&Napier028;
+<altIdentifier type="fn_number"><idno n="Napier028">Napier, vol. 28</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -65,6 +71,7 @@
 </person>
 <person xml:id="anon" evidence="internal">
 <sex value="2">F</sex>
+<occupation type="medicalPractitioner" resp="#mhawkins">Medical practitioner</occupation>
 </person>
 <person xml:id="p3">
 <persName><surname evidence="inferred" cert="high">Pedder</surname></persName>
@@ -81,6 +88,7 @@
 <p><date when="1618-04-30" n="Thursday"/></p>
 <p><time when="11:30:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#p1" evidence="internal"/>
@@ -93,7 +101,8 @@
 <cb:topic key="jealousy"><person sameAs="#p2"/></cb:topic>
 <cb:topic key="lunatic"><person sameAs="#p2"/></cb:topic>
 <cb:topic key="mad"><person sameAs="#p2"/></cb:topic>
-<cb:topic key="witchcraft"><person sameAs="#p2"/><person sameAs="#anon"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" resp="#mhawkins"><person sameAs="#p2"/></cb:topic>
+<cb:topic key="witchcraftSuspect" resp="#mhawkins"><person sameAs="#anon"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
 <cb:treatment/>
@@ -108,6 +117,8 @@
 <change when="2016-03-09">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-30">Tagging for medical practitioner added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -115,16 +126,16 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Podder <add place="supralinear">the younger</add> <rs type="address" xml:id="address1">of Potters <lb/>Perry</rs> 3<subst><del type="over">0</del><add place="over">3</add></subst> y Ap 30 &Thursday; h 11. <lb/>30 <choice><orig><choice><sic>p m</sic><corr>ant m</corr></choice></orig><reg>am</reg></choice> 1618.</p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Podder <add place="supralinear">the younger</add> <rs type="address" xml:id="address1" key="PLACE1729" resp="#mhawkins">of Potters <lb/>Perry</rs> 3<subst><del type="over">0</del><add place="over">3</add></subst> y Ap 30 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h 11. <lb/>30 <choice><orig><choice><sic>p m</sic><corr>ant m</corr></choice></orig><reg>am</reg></choice> 1618.</p>
 <p><lb/>hath not had the right course <lb/>of her body these 3 yers.</p>
-<p><lb/>feareth a c<choice><orig>&oover;</orig><reg>on</reg></choice>sumption <add place="lineEnd">&amp; what is good <lb/>to kepe her fr<choice><orig>&oover;</orig><reg>om</reg></choice> it</add></p>
+<p><lb/>feareth a c<choice><orig>ō</orig><reg>on</reg></choice>sumption <add place="lineEnd">&amp; what is good <lb/>to kepe her fr<choice><orig>ō</orig><reg>om</reg></choice> it</add></p>
 <p><lb/><choice><orig><choice><sic>vyyn</sic><corr>vryn</corr></choice></orig><reg>uryn</reg></choice> very good.</p>
-<p><lb/>would have a purge for <lb/>her selfe &amp; her husb. <lb/>who feareth his father disease <lb/>careth not for meate is &IConsonant;ealous <lb/>of his wife being very honest &amp; <lb/>chast. &amp; is <choice><sic>sometyes</sic><corr>sometymes</corr></choice> lunatick <lb/>&amp; mad 4 y. &amp; a halfe every 3 or <lb/>4 days.</p>
-<p><lb/>he thincketh <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he is bewitched <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/><del type="strikethrough">on</del> a wom<choice><orig>&aover;</orig><reg>an</reg></choice> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> gave his mother <lb/>physick.&slash;</p>
+<p><lb/>would have a purge for <lb/>her selfe &amp; her husb. <lb/>who feareth his father disease <lb/>careth not for meate is <choice><orig>I</orig><reg>J</reg></choice>ealous <lb/>of his wife being very honest &amp; <lb/>chast. &amp; is <choice><sic>sometyes</sic><corr>sometymes</corr></choice> lunatick <lb/>&amp; mad 4 y. &amp; a halfe every 3 or <lb/>4 days.</p>
+<p><lb/>he thincketh <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> he is bewitched <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> <lb/><del type="strikethrough">on</del> a wom<choice><orig>ā</orig><reg>an</reg></choice> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> gave his mother <lb/>physick./</p>
 </div>
 <div>
 <cb xml:id="colB" n="b"/>
-<p><lb/>&amp; M<hi rend="superscript">r</hi> Pedders w<unclear cert="low" reason="hand">at<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></unclear> Ap 30 &Thursday; h.</p>
+<p><lb/>&amp; M<hi rend="superscript">r</hi> Pedders w<unclear cert="low" reason="hand">at<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></unclear> Ap 30 <choice><orig>♃</orig><reg type="gloss">Thursday</reg></choice> h.</p>
 </div>
 </body>
 </text>

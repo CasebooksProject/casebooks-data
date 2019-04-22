@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE61712</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2016-11-30">30 November 2016</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <notesStmt>
 <note type="editorial" resp="#jyoung">This nativity is associated with the horary entry <ref type="case" target="CASE61710">CASE61710</ref>.</note>
 </notesStmt>
@@ -36,9 +41,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -75,6 +80,7 @@
 <p><date when="1626-03-04" n="Saturday" evidence="external"/></p>
 <p><time when="16:00:00" evidence="external"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#anon" evidence="inferred" present="no"/>
@@ -94,7 +100,8 @@
 <change when="2017-01-03">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-04-18">Checked and merged into one file by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2017-04-28">Rechecked by <name sameAs="#rralley">Robert Ralley</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-14">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -102,12 +109,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Th Browne <add place="supralinear"><rs type="address" xml:id="address1">of Woolly</rs></add> <choice><sic>bore</sic><corr>borne</corr></choice> <subst><del type="strikethrough">28</del> <add place="supralinear">27</add></subst> nov<choice><orig>ē</orig><reg>em</reg></choice>b <lb/><del type="strikethrough">☾ h</del> <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 12. 30 p m. <lb/>1625</p>
+<p><lb/>Th Browne <add place="supralinear"><rs type="address" xml:id="address1" key="PLACE1299" resp="#mhawkins">of Woolly</rs></add> <choice><sic>bore</sic><corr>borne</corr></choice> <subst><del type="strikethrough">28</del> <add place="supralinear">27</add></subst> nov<choice><orig>ē</orig><reg>em</reg></choice>b <lb/><del type="strikethrough">☾ h</del> <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 12. 30 p m. <lb/>1625</p>
 </div>
 <figure type="astro" subtype="astroChartPartialDeleted"/>
 <div>
 <cb xml:id="colB" n="b"/>
-<p><lb/>Thomas Browne <foreign xml:lang="la">natus</foreign> november <lb/><del type="strikethrough">☉ h</del> 27 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 12. 30 p m <lb/>1625</p>
+<p><lb/>Thomas Browne <foreign xml:lang="la" xml:id="foreign001" decls="#original_source">natus</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">born</seg><link type="is-translation-of" target="#foreign001 #translation001"/> november <lb/><del type="strikethrough">☉ h</del> 27 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> h. 12. 30 p m <lb/>1625</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 </body>

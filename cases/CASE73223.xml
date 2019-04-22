@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE73223</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2017-07-12">12 July 2017</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">uR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="212">MS Ashmole 212, p. 243</idno>
+<altIdentifier type="fn_number"><idno n="Napier050">Napier, vol. 50</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0243" to="0243"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+<language ident="la">Latin</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="w">
+<persName><roleName>Mrs</roleName> <surname>White</surname></persName>
+<sex value="2">F</sex>
+<age value="30">30</age>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="k">
+<persName><roleName>Mr</roleName> <surname>Kent</surname></persName>
+<sex value="1">M</sex>
+</person>
+<listRelation>
+<relation name="father-in-law" active="#k" passive="#w"/>
+</listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1631-10-21" n="Friday"/></p>
+<p><time when="12:00:00"/></p>
+<cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#w" evidence="internal" present="unclear"/>
+<cb:subject ref="#k" present="no" consent="no"/>
+<cb:topic key="palsy"><person sameAs="#k"/></cb:topic>
+<cb:topic key="speechless"><person sameAs="#k"/></cb:topic>
+<cb:topic key="stomach"><person sameAs="#k"/></cb:topic>
+<cb:topic key="costive"><person sameAs="#k"/></cb:topic>
+<cb:topic key="loins"><person sameAs="#k"/></cb:topic>
+<cb:topic key="stitch"><person sameAs="#k"/></cb:topic>
+<cb:topic key="stone"><person sameAs="#k"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2016-02-25">Facsimile coding added by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-09-02">Metadata updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2016-10-07">Images and folio numbers checked by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2017-07-12">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-07-28">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
+<change when="2017-08-29">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2018-05-17">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-08-22">Latin translated by <name xml:id="jyoung">John Young</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmj0282.jpg" url="cmj0282.jpg" n="243"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> white <rs type="address" xml:id="address1" key="PLACE1" resp="#mhawkins">of London</rs> <lb/>30. y. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h 12. 1631 <add place="infralinear"><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <choice><sic>soc<subst><del type="over"><gap reason="del" extent="1" unit="chars"/></del><add place="over">r</add></subst>o</sic><corr type="delText"/></choice> socro</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for his father-in-law</seg><link type="is-translation-of" target="#foreign001 #translation001"/> m<hi rend="superscript">r</hi> Kent <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>hath a dead <lb/>palsye <lb/>c<choice><orig>ā</orig><reg>an</reg></choice>not speake <lb/>to bed <choice><orig>v</orig><reg>u</reg></choice>nder<lb/>stood</add> <add place="marginLeft">a bad stomack <lb/>Costive onc in <lb/>5 days.</add> <add place="marginLeft">stomack.</add></p>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/>loynes &amp; stitch <lb/>stone</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> socrus para<lb/>lytic<choice><orig>ꝯ</orig><reg>us</reg></choice> sit mori<lb/>turus. sine <lb/>consensu</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">Whether his paralytic father-in-law will die. Without consent</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
+</div>
+</body>
+</text>
+</TEI>

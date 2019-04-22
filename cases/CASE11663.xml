@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE11663</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2011-07-22">22 July 2011</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="228">MS Ashmole 228, f. 23v</idno>
-&Napier003;
+<altIdentifier type="fn_number"><idno n="Napier003">Napier, vol. 3</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -33,6 +38,7 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -64,6 +70,7 @@
 <p><date when="1598-08-31" n="Thursday"/></p>
 <p><time when="12:55:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#wg" evidence="internal"/>
@@ -81,6 +88,7 @@
 <change when="2013-09-19">Shelfmark coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-06-14">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -88,12 +96,12 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><foreign xml:lang="la">William Greene <lb/>qu&aelig;rit dispos. et incli<lb/>nat et vit&aelig; stat<choice><orig>&uover;</orig><reg>um</reg></choice> et <lb/>morb<choice><orig>&uover;</orig><reg>um</reg></choice>.</foreign> Aug. 31. <choice><orig>die <lb/>&JupiterSymbol;</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 12. 55. mi.</p>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">William Greene <lb/>quærit dispos. et incli<lb/>nat et vitæ stat<choice><orig>ū</orig><reg>um</reg></choice> et <lb/>morb<choice><orig>ū</orig><reg>um</reg></choice>.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">asks his disposition and inclination and condition of life and disease</seg><link type="is-translation-of" target="#foreign001 #translation001"/> Aug. 31. <choice><orig>die <lb/>♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice> h. 12. 55. mi.</p>
 <space dim="vertical" extent="3" unit="lines"/>
 <p><lb/>1598.</p>
-<p><lb/>Will Grean <lb/><rs type="address" xml:id="address1">of this Towne</rs> <lb/><foreign xml:lang="la">qu&aelig;rit disp: et <lb/>vit&aelig; stat<choice><orig>&uover;</orig><reg>um</reg></choice>.</foreign> Aug. 31 <lb/>&ThursdayN;. hor. 12. 55. <choice><sic>p</sic><corr>p m</corr></choice>.</p>
+<p><lb/>Will Grean <lb/><rs type="address" xml:id="address1" key="PLACE685" resp="#mhawkins">of this Towne</rs> <lb/><foreign xml:lang="la" xml:id="foreign002" decls="#original_source">quærit disp: et <lb/>vitæ stat<choice><orig>ū</orig><reg>um</reg></choice>.</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">asks his disposition and condition of life</seg><link type="is-translation-of" target="#foreign002 #translation002"/> Aug. 31 <lb/><choice><orig>die ♃</orig><reg>die Jovis</reg><reg type="gloss">Thursday</reg></choice>. hor. 12. 55. <choice><sic>p</sic><corr>p m</corr></choice>.</p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>

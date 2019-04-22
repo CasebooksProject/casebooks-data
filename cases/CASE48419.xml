@@ -7,32 +7,38 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE48419</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-08-04">04 August 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">uR</bibl>
+<bibl type="positionOnPage">f. 207v/uR, f. 208r/bL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
 <settlement>Oxford</settlement>
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
-<idno n="230">MS Ashmole 230, f. 207v</idno>
-&Napier029;
+<idno n="230">MS Ashmole 230, ff. 207v-208r</idno>
+<altIdentifier type="fn_number"><idno n="Napier029">Napier, vol. 29</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
-<locus from="0207v" to="0207v"/>
+<locus from="0207v" to="0208r"/>
 <title sameAs="#main_title"/>
 </msItem>
 </msContents>
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -68,14 +74,17 @@
 <p><date when="1619-03-19" n="Friday"/></p>
 <p><time when="13:15:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#r"/>
 <cb:subject ref="#r" present="unclear"/>
+<cb:object ref="#anon"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#r"/></cb:topic>
+<cb:topic key="maritalProspects"><person sameAs="#r"/><person sameAs="#anon"/></cb:topic>
 <cb:judgment/>
 <cb:treatment/>
-
+<cb:info type="divination" subtype="dice"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -86,18 +95,22 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2016-05-22">Checked against new image by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-16">Checked against original by <name sameAs="#jedge">Joanne Edge</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
 <graphic xml:id="aau0422.jpg" url="aau0422.jpg" n="207v"/>
+<graphic xml:id="aau0423.jpg" url="aau0423.jpg" n="208r"/>
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Robynson <lb/><rs type="address" xml:id="address1">of Weston</rs> 22 <supplied reason="binding" cert="high">y</supplied> <lb/><subst><del type="over">I</del><add place="over">M</add></subst>arch. 19. &Friday; <supplied reason="binding" cert="high">h</supplied> <lb/>1. 15 p m 16<supplied reason="binding" cert="high">19</supplied></p>
-<p><lb/><add place="infralinear">affecteth <subst><del type="over"><gap reason="del" extent="2" unit="chars"/></del><add place="over">on</add></subst> <choice><orig>&thorn;<hi rend="superscript">t</hi></orig><reg>that</reg></choice> is fickle <gap extent="unclear" reason="binding"/> <lb/>she feareth will not h<gap extent="unclear" reason="binding"/></add></p>
+<p><lb/><choice><orig>M<hi rend="overline">res</hi></orig><reg>Mrs</reg></choice> Robynson <lb/><rs type="address" xml:id="address1" key="PLACE857" resp="#mhawkins">of Weston</rs> 22 y <lb/><subst><del type="over">I</del><add place="over">M</add></subst>arch. 19. <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h <lb/>1. 15 p m 1619</p>
+<p><lb/><add place="infralinear">affecteth <subst><del type="over"><gap reason="del" extent="2" unit="chars"/></del><add place="over">on</add></subst> <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> is fickle wh<choice><orig>ō</orig><reg>om</reg></choice><lb/>she feareth will not have her</add></p>
 </div>
-&astroChartPartialDeleted;
-&astroChart;
+<figure type="astro" subtype="astroChartPartialDeleted"/>
+<figure type="astro" subtype="astroChart"/>
+<pb xml:id="f208r" n="208r"/>
 </body>
 </text>
 </TEI>

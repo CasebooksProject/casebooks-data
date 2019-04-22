@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE54616</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2015-11-16">16 November 2015</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uR, bL</bibl>
 <msDesc>
@@ -33,9 +38,9 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-<samplingDecl xml:id="unlinked"><p>This file is a beta release. It will be updated when editorial work reconciling named individuals across the corpus is complete.</p></samplingDecl>
 </encodingDesc>
 <profileDesc>
 <handNotes>
@@ -83,6 +88,7 @@
 <p><date when="1622-07-14" n="Sunday"/></p>
 <p><time when="14:00:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#rn1" evidence="internal"/>
@@ -100,7 +106,7 @@
 <change when="2016-02-29">Transcribed by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
 <change when="2016-09-03">Checked by <name xml:id="rralley">Robert Ralley</name>.</change>
 <change when="2017-05-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
-<change when="2017-12-14">Preliminary unlinked data released by <name xml:id="casebooksProject">The Casebooks Project</name>.</change>
+<change when="2018-05-22">Checked against original by <name xml:id="jedge">Joanne Edge</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -108,7 +114,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob enquireth <lb/><foreign xml:lang="la"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> Debeat</foreign> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob. will <choice><sic>a<subst><del type="over">c</del><add place="over">d</add></subst>nit</sic><corr>admit</corr></choice> <lb/>of his daught for his <lb/>sone Robert. he will <lb/>give <foreign xml:lang="la"><choice><orig>3000<hi rend="superscript">l</hi></orig><reg>3000 libra</reg></choice></foreign> Dowrie &amp; <foreign xml:lang="la"><choice><orig>3000<supplied reason="binding"><hi rend="superscript">li</hi></supplied></orig><reg>3000 libra</reg></choice></foreign> <lb/>at his death. &amp; if he <lb/>have no son. he will <lb/><choice><sic>assue</sic><corr>assure</corr></choice> him <choice><orig><choice><sic>futh<hi rend="superscript">r</hi></sic><corr>furth<hi rend="superscript">r</hi></corr></choice></orig><reg>further</reg></choice> <foreign xml:lang="la"><choice><orig>800<hi rend="superscript">li</hi></orig><reg>800 libra</reg></choice></foreign> <gap extent="1" unit="words" reason="binding" cert="low"/> <lb/>land a yere <choice><orig>I</orig><reg>J</reg></choice>uly 14 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <lb/>h. 2. p m 1622 <add place="infralinear">&amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></add> I have any hope of do<unclear cert="medium" reason="binding">ing</unclear> <lb/>good to my lord Purbecke</p>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob enquireth <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> Debeat</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">whether he will have to</seg><link type="is-translation-of" target="#foreign001 #translation001"/> wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice> <lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> Rob. will <choice><sic>a<subst><del type="over">c</del><add place="over">d</add></subst>nit</sic><corr>admit</corr></choice> <lb/>of his daught for his <lb/>sone Robert. he will <lb/>give <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><orig>3000<hi rend="superscript">l</hi></orig><reg>3000 libra</reg></choice></foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">3000 pounds</seg><link type="is-translation-of" target="#foreign002 #translation002"/> Dowrie &amp; 3000 <lb/>at his death. &amp; if he <lb/>have no son. he will <lb/><choice><sic>assue</sic><corr>assure</corr></choice> him <choice><orig><choice><sic>futh<hi rend="superscript">r</hi></sic><corr>furth<hi rend="superscript">r</hi></corr></choice></orig><reg>further</reg></choice> <foreign xml:lang="la" xml:id="foreign003" decls="#original_source"><choice><orig>800<hi rend="superscript">li</hi></orig><reg>800 libra</reg></choice></foreign><seg xml:id="translation003" decls="#translation" xml:lang="en">800 pounds</seg><link type="is-translation-of" target="#foreign003 #translation003"/> <lb/>land a yere <choice><orig>I</orig><reg>J</reg></choice>uly 14 <choice><orig>☉</orig><reg type="gloss">Sunday</reg></choice> <lb/>h. 2. p m 1622 <add place="infralinear">&amp; wheath<choice><orig><hi rend="superscript">r</hi></orig><reg>er</reg></choice></add> I have any hope of doing <lb/>good to my lord Purbecke</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
 <cb xml:id="colA" n="a"/>

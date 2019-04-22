@@ -7,12 +7,17 @@
 <fileDesc>
 <titleStmt>
 <title xml:id="main_title">CASE2857</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
 </titleStmt>
 <publicationStmt>
 <publisher>The Casebooks Project</publisher>
 <pubPlace>Cambridge</pubPlace>
 <date when="2010-07-05">05 July 2010</date>
 </publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">bL</bibl>
 <msDesc>
@@ -22,7 +27,7 @@
 <repository>Bodleian Library</repository>
 <collection>Ashmole Mss</collection>
 <idno n="226">MS Ashmole 226, f. 257v</idno>
-&Forman002;
+<altIdentifier type="fn_number"><idno n="Forman002">Forman, vol. 2</idno></altIdentifier>
 </msIdentifier>
 <msContents>
 <msItem>
@@ -34,6 +39,11 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
 <encodingDesc>
 <samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
 </encodingDesc>
@@ -73,6 +83,7 @@
 <p><date when="1597-11-26" n="Saturday"/></p>
 <p><time when="13:05:00"/></p>
 <cb:consultation>
+<cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:questionNumber n="2"/>
 <cb:consultant ref="#sforman"/>
 <cb:practice name="forman"/>
@@ -94,6 +105,8 @@
 <change when="2011-02-23">Checked by <name sameAs="#rralley">Robert Ralley</name>.</change>
 <change when="2016-08-01">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2018-05-21">Latin translated by <name sameAs="#jyoung">John Young</name>.</change>
+<change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -102,9 +115,9 @@
 <text xml:lang="en">
 <body>
 <div>
-<p><lb/>Goodwif <lb/>Sammon <rs type="address" xml:id="address1">of Ratlif</rs><note place="marginLeft">21 nov</note> <lb/><foreign xml:lang="la"><choice><orig>&crossedp;</orig><reg>pro</reg></choice>marito suo.<note place="marginLeft">phillip Samm<choice><orig>&oover;</orig><reg>on</reg></choice></note> &vVowel;t antea <lb/>2<hi rend="superscript">a</hi> questo</foreign> the 26 of no<lb/>vemb. &Saturday; &pmfl; at 5 &past; &jVowel; <foreign xml:lang="la"><choice><sic>&vVowel;trun&flourish;</sic><corr>&vVowel;trum</corr></choice> sit vi&uConsonant;us vel mortius <lb/>aut <choice><orig><hi rend="overline">qua</hi></orig><reg>quan</reg></choice>do Rediet</foreign></p>
+<p><lb/>Goodwif <lb/>Sammon <rs type="address" xml:id="address1" key="PLACE1477" resp="#mhawkins">of Ratlif</rs><note place="marginLeft">21 nov</note> <lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source"><choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice>marito suo.<note place="marginLeft">phillip Samm<choice><orig>ō</orig><reg>on</reg></choice></note> <choice><orig>v</orig><reg>u</reg></choice>t antea <lb/>2<hi rend="superscript">a</hi> questo</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">for her husband Phillip Sammon as before: 2d question</seg><link type="is-translation-of" target="#foreign001 #translation001"/> the 26 of no<lb/>vemb. <choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice> <choice><orig>p m’</orig><reg>pm</reg></choice> at 5 <choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice> <choice><orig>j</orig><reg>i</reg></choice> <foreign xml:lang="la" xml:id="foreign002" decls="#original_source"><choice><sic><choice><orig>v</orig><reg>u</reg></choice>trun’</sic><corr><choice><orig>v</orig><reg>u</reg></choice>trum</corr></choice> sit vi<choice><orig>u</orig><reg>v</reg></choice>us vel mortius <lb/>aut <choice><orig><hi rend="overline">qua</hi></orig><reg>quan</reg></choice>do Rediet</foreign><seg xml:id="translation002" decls="#translation" xml:lang="en">whether he is alive or dead or when he will return</seg><link type="is-translation-of" target="#foreign002 #translation002"/></p>
 </div>
-&astroChart;
+<figure type="astro" subtype="astroChart"/>
 </body>
 </text>
 </TEI>
