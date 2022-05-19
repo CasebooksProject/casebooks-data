@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/casebooks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../schema/entities.dtd"> %entities; ]>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title xml:id="main_title">CASE80096</title>
+<funder>Wellcome Trust (Programme Grant 090619, 2010-14 and Strategic Award 104083, 2014-18)</funder>
+</titleStmt>
+<publicationStmt>
+<publisher>The Casebooks Project</publisher>
+<pubPlace>Cambridge</pubPlace>
+<date when="2012-09-12">12 September 2012</date>
+</publicationStmt>
+<seriesStmt>
+<title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
+<respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
+</seriesStmt>
+<sourceDesc>
+<bibl type="positionOnPage">bR</bibl>
+<msDesc>
+<msIdentifier>
+<country>UK</country>
+<settlement>Oxford</settlement>
+<repository>Bodleian Library</repository>
+<collection>Ashmole Mss</collection>
+<idno n="213">MS Ashmole 213, f. 141r</idno>
+<altIdentifier type="fn_number"><idno n="Napier031">Napier, vol. 31</idno></altIdentifier>
+</msIdentifier>
+<msContents>
+<msItem>
+<locus from="0141r" to="0141r"/>
+<title sameAs="#main_title"/>
+</msItem>
+</msContents>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
+</encodingDesc>
+<profileDesc>
+<handNotes>
+<handNote sameAs="#rnapier">Richard Napier</handNote>
+</handNotes>
+<langUsage>
+<language ident="en">English</language>
+</langUsage>
+<textClass xml:base="../master-lists/consultation-types.xml">
+<catRef target="#horary"/>
+</textClass>
+<particDesc>
+<listPerson>
+<person xml:id="rnapier">
+<persName><forename>Richard</forename> <surname>Napier</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ag">
+<persName><forename>Anne</forename> <surname>Gale</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey"/>
+</person>
+<person xml:id="b1">
+<persName><roleName>Goody</roleName> <surname type="married">Bonefild</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="b2">
+<persName><roleName>Goodman</roleName> <surname>Bonefild</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="ew">
+<persName><forename>Ellen</forename> <surname>Warner</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="dc">
+<persName><forename>Dorothy</forename> <surname>Cataline</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="wife" active="#b1" passive="#b2"/></listRelation>
+</listPerson>
+</particDesc>
+<settingDesc>
+<p><date when="1620-03-13" n="Monday" evidence="inferred"/></p>
+<p><time notAfter="10:25:00" evidence="inferred" cert="low"/></p>
+<cb:consultation>
+<cb:astrologer ref="#rnapier"/>
+<cb:consultant ref="#rnapier"/>
+<cb:practice name="napier"/>
+<cb:querent ref="#ag"/>
+<cb:subject ref="#ag" present="unclear"/>
+<cb:object ref="#b1 #ew #dc"/>
+<cb:topic key="witchcraftSufferedMedical"><person sameAs="#ag"/></cb:topic>
+<cb:topic key="witchcraftSuspect"><person sameAs="#b1"/><person sameAs="#ew"/><person sameAs="#dc"/></cb:topic>
+</cb:consultation>
+</settingDesc>
+</profileDesc>
+<revisionDesc>
+<change when="2014-10-14">Template created by <name xml:id="mhawkins">Michael Hawkins</name>.</change>
+<change when="2017-02-07">Material previously compiled by <name xml:id="jedge">Joanne Edge</name> and <name xml:id="jyoung">John Young</name> transferred to template by <name xml:id="rralley">Robert Ralley</name>.</change>
+<change when="2018-03-15">Material updated by <name xml:id="ymartin">Yvonne Martin-Portugues</name>.</change>
+<change when="2018-10-02">Whole-manuscript file divided into individual NOTE files by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2021-07-09">Converted to case file by <name sameAs="#rralley">Robert Ralley</name>.</change>
+</revisionDesc>
+</teiHeader>
+<facsimile>
+<graphic xml:id="cmn0299.jpg" url="cmn0299.jpg" n="141r"/>
+</facsimile>
+<text xml:lang="en">
+<body><div>
+<p><lb/>An Gale <rs type="address" xml:id="address1" key="PLACE395">of Goldingt<choice><orig>ō</orig><reg>on</reg></choice></rs> <lb/>looketh to be brought a <lb/>bed about our lady <lb/>day</p>
+<p><lb/>Goody Bonefild <lb/>&amp; her husb. suspected <lb/>had a sone sick <lb/>b<unclear cert="medium" reason="hand">urn</unclear>ed the hayre <lb/>&amp; mended &amp; on <lb/>goodm<choice><orig>ā</orig><reg>an</reg></choice> Bonefild <lb/>came &amp; on goody <lb/>is very testye <choice><orig>w<hi rend="superscript">th</hi></orig><reg>with</reg></choice> those <choice><orig>y<hi rend="superscript">t</hi></orig><reg>that</reg></choice> <lb/>be about her.</p>
+<p><lb/>Ellen<del type="strikethrough"><gap reason="del" extent="1" unit="chars"/></del> Warner susp. <lb/>Dorothy katlande <lb/>susp. <add place="infralinear">Ellen Warner.</add></p>
+
+</div>
+</body>
+</text>
+</TEI>

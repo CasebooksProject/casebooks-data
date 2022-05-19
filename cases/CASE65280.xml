@@ -67,6 +67,18 @@
 <time when="14:30:00"/>
 </birth>
 </person>
+<person xml:id="c1" evidence="internal">
+<persName><roleName>Judge</roleName> <surname>Coke</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="c2" evidence="internal">
+<persName><surname evidence="inferred" type="maiden">Coke</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="anon">
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="daughter" active="#c2" passive="#c1"/><relation name="wife" active="#c2" passive="#person1"/><relation name="mother" active="#anon" passive="#person1"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>

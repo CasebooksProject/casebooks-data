@@ -64,6 +64,9 @@
 <age value="45">45</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="anon">
+<sex value="0">U</sex>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -73,8 +76,9 @@
 <cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#jt"/>
-<cb:subject ref="#jt" present="unclear"/>
+<cb:location type="querentVisitsPractitioner"/>
+<cb:querent ref="#anon" evidence="internal" present="yes"/>
+<cb:subject ref="#jt" present="yes"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jt"/></cb:topic>
 <cb:topic key="unspecifiedPassions" evidence="internal"><person sameAs="#jt"/></cb:topic>
 <cb:judgment/>
@@ -98,7 +102,11 @@
 <p><lb/><choice><orig>I</orig><reg>J</reg></choice>ohn Thorpe <rs type="address" xml:id="address1" key="PLACE766" resp="#mhawkins">of newp</rs> <lb/>45 y march. 15 <choice><orig>☾</orig><reg type="gloss">Monday</reg></choice> h. 4 <lb/>p m 1613</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
-<cb xml:id="colB" n="b"/>
+
+<div><cb xml:id="colB" n="b"/>
+<p><lb/>was brought in a cart <lb/>fr<choice><orig>ō</orig><reg>om</reg></choice> <placeName key="PLACE588">Alsbury</placeName>.</p>
+</div>
+
 </body>
 </text>
 </TEI>

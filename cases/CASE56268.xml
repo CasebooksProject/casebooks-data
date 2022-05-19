@@ -39,13 +39,18 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -98,7 +103,11 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice> Thomas Comp<lb/>tons water brought <lb/>me may 9 <choice><orig>♀</orig><reg type="gloss">Friday</reg></choice> h <lb/>5 <choice><orig>ant m</orig><reg>am</reg></choice> 1623 <add place="infralinear">the serv for <choice><orig>y<hi rend="superscript">e</hi></orig><reg>the</reg></choice> master</add></p>
-</div><figure type="astro" subtype="astroChart"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">serv<choice><orig>ꝯ</orig><reg>us</reg></choice> <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> <choice><orig><hi rend="overline">do</hi></orig><reg>domino</reg></choice></foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the servant for the master</seg><link type="is-translation-of" target="#foreign001 #translation001"/>.</p>
+</div>
 </body>
 </text>
 </TEI>

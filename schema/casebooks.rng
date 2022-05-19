@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><grammar xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2018-11-26T15:00:46Z. .
+Schema generated from ODD source 2021-04-02T09:19:25Z. .
 TEI Edition: Version 3.3.1a. Last updated on
 	9th July 2018, revision 404f5be77
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.1a./
@@ -4679,7 +4679,7 @@ Suggested values include: 1] inline; 2] supralinear; 3] infralinear; 4] interlin
     <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@spanTo]">
       <sch:assert test="id(substring(@spanTo,2)) and following::*[@xml:id=substring(current()/@spanTo,2)]">
 The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current element <sch:name/>
-                  </sch:assert>
+         </sch:assert>
     </sch:rule>
   </pattern>
   <define name="tei_att.tableDecoration.attributes">
@@ -7174,65 +7174,45 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::tei:settingDesc and @n and not(@when)">ERROR: <name/>@n should only occur when the precise date (@when) is known</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-notAfter-gt-notBefore-full-constraint-rule-34">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@notBefore[. castable as xs:date] and @notAfter[. castable as xs:date]]">
-          <assert test="xs:date(@notAfter) &gt; xs:date(@notBefore)">ERROR: <name/>@notBefore must be less than @notAfter</assert>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-notAfter-gt-notBefore-constraint-rule-34">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@notBefore[. castable as xs:date or . castable as xs:gYearMonth or . castable as xs:gYear] and @notAfter[. castable as xs:date or . castable as xs:gYearMonth or . castable as xs:gYear]]">
+          <assert test="xs:date(string-join((tokenize(@notAfter,'-'),'01','01')[position() le 3],'-')) gt xs:date(string-join((tokenize(@notBefore,'-'),'01','01')[position() le 3],'-'))">ERROR: <name/>@notBefore must be less than @notAfter</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-notAfter-gt-notBefore-yearMonth-constraint-rule-35">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@notBefore[. castable as xs:gYearMonth] and @notAfter[. castable as xs:gYearMonth]]">
-          <assert test="xs:gYearMonth(@notAfter) &gt; xs:gYearMonth(@notBefore)">ERROR: <name/>@notBefore must be less than @notAfter</assert>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-to-gt-from-constraint-rule-35">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@to[. castable as xs:date or . castable as xs:gYearMonth or . castable as xs:gYear] and @from[. castable as xs:date or . castable as xs:gYearMonth or . castable as xs:gYear]]">
+          <assert test="xs:date(string-join((tokenize(@to,'-'),'01','01')[position() le 3],'-')) gt xs:date(string-join((tokenize(@from,'-'),'01','01')[position() le 3],'-'))">ERROR: <name/>@from must be less than @to</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-notAfter-gt-notBefore-year-constraint-rule-36">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@notBefore[. castable as xs:gYear] and @notAfter[. castable as xs:gYear]]">
-          <assert test="xs:gYear(@notAfter) &gt; xs:gYear(@notBefore)">ERROR: <name/>@notBefore must be less than @notAfter</assert>
-        </rule>
-      </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-to-gt-from-full-constraint-rule-37">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@to[. castable as xs:date] and @from[. castable as xs:date]]">
-          <assert test="xs:date(@to) &gt; xs:date(@from)">ERROR: <name/>@from must be less than @to</assert>
-        </rule>
-      </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-to-gt-from-yearMonth-constraint-rule-38">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@to[. castable as xs:gYearMonth] and @from[. castable as xs:gYearMonth]]">
-          <assert test="xs:gYearMonth(@to) &gt; xs:gYearMonth(@from)">ERROR: <name/>@from must be less than @to</assert>
-        </rule>
-      </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-to-gt-from-year-constraint-rule-39">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@to[. castable as xs:gYear] and @from[. castable as xs:gYear]]">
-          <assert test="xs:gYear(@to) &gt; xs:gYear(@from)">ERROR: <name/>@from must be less than @to</assert>
-        </rule>
-      </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-attr-custom-are-datetime-constraint-rule-40">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-attr-custom-are-datetime-constraint-rule-36">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@notBefore-custom|@notAfter-custom|@when-custom]">
           <report test="count((@notBefore-custom|@notAfter-custom|@when-custom)[not(. castable as xs:dateTime)])&gt;0">ERROR: <name/>@<value-of select="(@notBefore-custom|@notAfter-custom|@when-custom)[not(. castable as xs:dateTime)]/local-name()"/> is not a valid dateTime value</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-when-is-valid-constraint-rule-41">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-when-is-valid-constraint-rule-37">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@when]">
           <report test="not(matches(@when,'^\d\d\d\d(-(0[1-9]|1[012])|-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01]))*$'))">ERROR: <name/>@when is not a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
           <report test="matches(@when,'^\d\d\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])*$') and not(@when castable as xs:date)">ERROR: <name/>@when is not castable as a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-from-to-notAfter-notBefore-are-valid-constraint-rule-42">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-from-to-notAfter-notBefore-are-valid-constraint-rule-38">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[(@from|@to|@notAfter|@notBefore)]">
           <report test="(@from|@to|@notAfter|@notBefore)[normalize-space()][not(matches(.,'^\d\d\d\d(-(0[1-9]|1[012])|-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01]))*$'))]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore)[not(. castable as xs:date)]/local-name()"/> is not a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
           <report test="(@from|@to|@notAfter|@notBefore)[normalize-space()][matches(.,'^\d\d\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])*$')][not(. castable as xs:date)]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore)[normalize-space()][matches(.,'^\d\d\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])*$')][not(. castable as xs:date)]/local-name()"/> is not castable as a valid date (yyyy-mm-dd, yyyy-mm, yyyy)</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-settingDesc-date-year-check-constraint-rule-43">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-settingDesc-date-year-check-constraint-rule-39">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[ancestor::tei:settingDesc]">
           <let name="exception_dates" value="('1573-01-12','1575-12-29','1577-07-16','1581-02-02','1585-03-27','1594-03-02','1595-09-30', '1593-03-11', '1592-03-10')"/>
           <report test="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[not(.=$exception_dates)][number(tokenize(.,'-')[1]) &lt; 1587 or number(tokenize(.,'-')[1]) &gt;1676]">ERROR: <name/>@<value-of select="(@from|@to|@notAfter|@notBefore|@when|@notBefore-custom|@notAfter-custom|@when-custom)[number(tokenize(.,'-')[1]) &lt; 1596 or number(tokenize(.,'-')[1]) &gt;1676]/name()"/> is out of range. Expected year values should be 1587-1676</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-needs-datable-attr-constraint-rule-44">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-needs-datable-attr-constraint-rule-40">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date">
           <report test="count((@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) = 0">ERROR: <name/> needs a datable attribute</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-has-illegal-mix-datable-attrs-constraint-rule-45">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-date-date-has-illegal-mix-datable-attrs-constraint-rule-41">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:date[@when|@when-custom]">
           <report test="count((@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) &gt; 0">ERROR: <name/> has @when and <value-of select="string-join(for $x in (@notBefore,@notBefore-custom,@notAfter,@notAfter-custom) return concat('@',$x/local-name()),', ')"/>
                </report>
@@ -7434,12 +7414,12 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <ref name="tei_model.global"/>
         </choice>
       </zeroOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-metadata-time-no-children-constraint-rule-46">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-metadata-time-no-children-constraint-rule-42">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
           <report test="(ancestor::tei:settingDesc|ancestor::tei:death|ancestor::tei:birth) and (*|text()[normalize-space()])">ERROR: Time should not have any children or text within it</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-same-container-constraint-rule-47">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-same-container-constraint-rule-43">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
           <let name="current_time" value="."/>
           <let name="context" value="//ancestor::*[local-name()=('settingDesc','birth','death','event')][1]/local-name()"/>
@@ -7447,22 +7427,22 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <report test="normalize-space(@exclude) != '' and count(tokenize(@exclude,'\s+')[.=$all_times[not(@xml:id=$current_time/@xml:id)]/concat('#',@xml:id)]) != count(tokenize(@exclude,'\s+'))">ERROR: <name/>@exclude value(s) (<value-of select="tokenize(@exclude,'\s+')[not(.=$all_times[not(@xml:id=$current_time/@xml:id)]/concat('#',@xml:id))]"/>) does not point to <value-of select="$context"/>//time/@xml:id</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-points-to-self-constraint-rule-48">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-points-to-self-constraint-rule-44">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@exclude]">
           <report test="normalize-space(@exclude) != '' and tokenize(@exclude,'\s+')=concat('#',@xml:id)">ERROR: <name/>@exclude value (<value-of select="concat('#',@xml:id)"/>) points to same element as itself</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-not-xmlid-constraint-rule-49">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-not-xmlid-constraint-rule-45">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@exclude]">
           <report test="normalize-space(@exclude) != '' and not(@xml:id)">ERROR: <name/> needs @xml:id</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-xmlid-not-exclude-constraint-rule-50">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-xmlid-not-exclude-constraint-rule-46">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@xml:id]">
           <report test="not(@exclude)">ERROR: <name/> needs @exclude</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-xmlid-not-linked-to-same-container-constraint-rule-51">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-xmlid-not-linked-to-same-container-constraint-rule-47">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
           <let name="current_time" value="."/>
           <let name="context" value="//ancestor::*[local-name()=('settingDesc','birth','death','event')][1]/local-name()"/>
@@ -7470,7 +7450,7 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <report test="@exclude and not(concat('#',@xml:id) = $all_times/tokenize(@exclude,'\s+'))">ERROR: <name/> is not the target of any @exclude</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-missed-xmlid-constraint-rule-52">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-exclude-missed-xmlid-constraint-rule-48">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
           <let name="current_time" value="."/>
           <let name="context" value="//ancestor::*[local-name()=('settingDesc','birth','death','event')][1]/local-name()"/>
@@ -7478,7 +7458,7 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <report test="@exclude and normalize-space(@exclude)!='' and count( tokenize(@exclude,'\s+')[.= $all_times/concat('#',@xml:id)]) != count($all_times[@xml:id])-1">ERROR: <name/> does not link to (<value-of select="$all_times[not(@xml:id=$current_time/@xml:id)]/concat('#',@xml:id)[not(.=tokenize($current_time/@exclude,'\s+'))]"/>)</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-xmlid-not-in-all-other-times-constraint-rule-53">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-xmlid-not-in-all-other-times-constraint-rule-49">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
           <let name="current_time" value="."/>
           <let name="context" value="//ancestor::*[local-name()=('settingDesc','birth','death','event')][1]/local-name()"/>
@@ -7486,23 +7466,23 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           <report test="normalize-space(@xml:id)!='' and count($all_times[tokenize(@exclude,'\s+') = $current_time/concat('#',@xml:id)]) != count($all_times[not(@xml:id=$current_time/@xml:id)])">ERROR: <name/> is not the target of all the other <value-of select="$context"/>//time@exclude</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-notAfter-gt-notBefore-constraint-rule-54">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-notAfter-gt-notBefore-constraint-rule-50">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@notBefore and @notAfter]">
           <assert test="xs:time(@notAfter) &gt; xs:time(@notBefore)">ERROR: <name/>@notBefore must be less than @notAfter</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-to-gt-from-constraint-rule-55">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-to-gt-from-constraint-rule-51">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@to and @from]">
           <assert test="xs:time(@to) &gt; xs:time(@from)">ERROR: <name/>@from must be less than @to</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-has-illegal-mix-datable-attrs-constraint-rule-56">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-has-illegal-mix-datable-attrs-constraint-rule-52">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time[@when|@when-custom]">
           <report test="count((@notBefore,@notBefore-custom,@notAfter,@notAfter-custom)) &gt; 0">ERROR: <name/> has @when and <value-of select="string-join(for $x in (@notBefore,@notBefore-custom,@notAfter,@notAfter-custom) return concat('@',$x/local-name()),', ')"/>
                </report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-has-space-in-attrs-constraint-rule-57">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-time-time-has-space-in-attrs-constraint-rule-53">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:time">
           <let name="time_regex" value="'^((0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]:00|23:59:59)$'"/>
           <report test="(@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom,@from,@to)[normalize-space(.)][not(matches(.,$time_regex))]">ERROR: Invalid <value-of select="(ancestor::tei:birth|ancestor::tei:death|ancestor::tei:settingDesc)/local-name()"/> time/<value-of select="for $x in (@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom,@from,@to)[normalize-space(.)][not(matches(.,$time_regex))]/local-name() return concat('@',$x)"/> value '<value-of select="for $x in (@when,@when-custom,@notBefore,@notBefore-custom,@notAfter,@notAfter-custom,@from,@to)[normalize-space(.)][not(matches(.,$time_regex))] return $x"/>'.</report>
@@ -7628,34 +7608,34 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
     <element name="ref">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) supplies a link to another online location. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
       <ref name="tei_macro.paraContent"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-writing-link-to-us-with-domain-constraint-rule-58">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-writing-link-to-us-with-domain-constraint-rule-54">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref">
           <let name="target" value="replace(@target,'^(https*://)*(dev|www).magicandmedicine.hps.cam.ac.uk','')"/>
           <report test="matches(@target,'(dev|www).magicandmedicine.hps.cam.ac.uk')">ERROR: Links to our site should be entered using their absolute path (ie. <value-of select="if (matches($target,'^/')) then $target else '/using-our-edition/guide-to-reading-the-cases'"/>)</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-writing-link-to-xmlid-constraint-rule-59">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-writing-link-to-xmlid-constraint-rule-55">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^#')]">
           <assert test="replace(@target,'^#','') = //@xml:id">ERROR: ref/@target points to nonexistant xml:id value on the page (<value-of select="@target"/>)</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-target-not-site-self-mailto-constraint-rule-60">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-target-not-site-self-mailto-constraint-rule-56">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[not(@type) or normalize-space(@type)='']">
           <assert test="matches(@target,'^(https*://|/|mailto:|#)')">ERROR: ref without @type must point to external site, us or an email address using mailto:</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-pointing-to-case-constraint-rule-61">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-type-pointing-to-case-constraint-rule-57">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-(f\d\d\d\d[A-E]*[rv]*|p\d\d\d\d[A-E]*)-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')]">
           <assert test="@type='case'">ERROR: ref pointing to another case must have type="case"</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-case-filenames-in-live-constraint-rule-62">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-no-case-filenames-in-live-constraint-rule-58">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[matches(@target,'^(MS_Ashmole_)*\d\d\d-(f\d\d\d\d[A-E]*[rv]|p\d\d\d\d[A-E]*)-\d(\.xml)*$','i')]">
           <let name="location" value="replace(replace(base-uri(.),'file:',''),'^.*/casebooks-data/([^/]+)/.+$','$1')"/>
           <report test="$location='04-live'">ERROR: ref pointing to a case file rather than case number</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-type-case-must-point-to-case-constraint-rule-63">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-ref-ref-type-case-must-point-to-case-constraint-rule-59">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:ref[@type='case']">
           <assert test="matches(@target,'^(MS_Ashmole_)*\d\d\d-(f\d\d\d\d[A-E]*[rv]*|p\d\d\d\d[A-E]*)-\d(\.xml)*$','i') or matches(@target,'^CASE\d+$')">ERROR: ref/@type="case" must point to a valid case number or case filename</assert>
         </rule>
@@ -7744,7 +7724,7 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
           </group>
         </zeroOrMore>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-list-gloss-list-must-have-labels-constraint-rule-65">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-list-gloss-list-must-have-labels-constraint-rule-61">
         <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:list[@type='gloss']">
           <sch:assert test="tei:label">The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element</sch:assert>
         </sch:rule>
@@ -7771,23 +7751,25 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
       <ref name="tei_att.sortable.attributes"/>
       <optional>
         <attribute name="rend">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) values are "bulleted" (list items have a bullet before them), "simple" (list items have nothing special before them), "ordered" (list items have an automatically generated number before them). @rend should ONLY be used in site pages. It should NEVER be used in transcriptions.</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) values are "bulleted" (list items have a bullet before them), "simple" (list items have nothing special before them), "ordered" (list items have an automatically generated number before them) and "hangingIndent" (list items have a hanging indent). @rend should ONLY be used in site pages. It should NEVER be used in transcriptions.</a:documentation>
           <list>
             <oneOrMore>
               <choice>
                 <value>bulleted</value>
                 <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                <value>simple</value>
-                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                <value>unstyled-list</value>
-                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                <value>no-margin-left</value>
+                <value>hangingIndent</value>
                 <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                 <value>no-margin-bottom</value>
                 <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                <value>no-margin-left</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                 <value>shallow</value>
                 <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                <value>simple</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                 <value>tight</value>
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                <value>unstyled-list</value>
                 <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
               </choice>
             </oneOrMore>
@@ -7883,7 +7865,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
     <element name="note">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(note) records either an editorial note in the header or an authorial annotation in the body text. Editorial notes nest in notesStmt and have a resp value pointing to the editor responsible and any of the following type values: "blank" (for notes explaining when entries are wholly or substantially deleted, or have been abandoned), "dating" (for notes about apparent anomalies in dating such as the use of the Gregorian calendar or of Old Style dates that treat the year as beginning on 25 March), "editorial" (general notes about points of interpretation and ambiguity and records of general editorial intervention) "externalEvidence" (for notes recording remarks and updates elsewhere in the casebooks that are relevant to the case in question and that have provided information for its header), "interest" (notes that record interesting aspects of the entry or highlight entries of particular interest), "layout" (notes that explain complex layouts or unusual positioning of entries), "physical" (notes about the physical manuscript, from records of damage to oddities about binding). Authorial notes do not need a type value, just a place value indicating their placement. Values are "infralinear", "inline", "interlinear", "lineBeginning", "lineEnd", marginLeft", "marginRight", "pageTop", "pageBottom", or "chart" (for notes added inside an astrological chart). [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
       <ref name="tei_macro.specialPara"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-note-notesStmt-note-type-check-constraint-rule-66">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-note-notesStmt-note-type-check-constraint-rule-62">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:note[parent::tei:notesStmt]">
           <report test="not(@type=('blank','editorial','externalEvidence','interest','layout','physical','urlAlias','dating'))">ERROR: <name/>@type must be one of 'blank', 'editorial', 'externalEvidence', 'interest', 'layout', 'physical', 'urlAlias' or 'dating'</report>
         </rule>
@@ -7943,7 +7925,7 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       
       
       
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-graphic-ensure-url-equals-xml-id-constraint-rule-70">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-graphic-ensure-url-equals-xml-id-constraint-rule-66">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:graphic[parent::tei:facsimile]">
           <assert test="@url = @xml:id">ERROR: <name/>/@xml:id doesn't equal @url</assert>
         </rule>
@@ -7978,24 +7960,24 @@ Sample values include: 1] right; 2] left; 3] center; 4] indent0; 5] indent5; 6] 
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">demarcates a significant boundary within a given file. For Casebooks purposes, this can take two forms. In entries that have been transcribed in their entirety for whatever reason, it marks the beginning of a distinct section within the entry, with a unit value of "angelInfo", "divinationInfo", "financialInfo", "judgment", "previousConsultationEventInfo", "question", "recipe", "subsequentEventInfo", "treatment" or "urineInfo" (corresponding to the suffixes of the elements ascribed to the relevant sections in the header). In all these cases it should link by means of the spanTo value to a corresponding anchor (q.v.) marking the end of the section in question. Alternatively, it can take the unit value "book" in the extremely rare cases (at the time of writing this has only arisen once) where the component pages of an entry appear in separate volumes. [3.10.3. Milestone
 Elements]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-needs-sameAs-or-xmlid-constraint-rule-71">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-needs-sameAs-or-xmlid-constraint-rule-67">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:milestone[not(@sameAs|@xml:id|@spanTo)]">
           <assert test="@xml:id">ERROR: <name/> needs one of @xml:id, @sameAs or @spanTo</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-spanTo-constraint-rule-72">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-spanTo-constraint-rule-68">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:milestone[@spanTo]">
           <let name="text" value="ancestor::tei:text"/>
           <assert test="@spanTo = following::tei:anchor/concat('#',@xml:id)">ERROR: <name/>@spanTo must point to an anchor/@xml:id following it.</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-sameas-constraint-rule-73">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-sameas-constraint-rule-69">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:milestone[@sameAs]">
           <let name="text" value="ancestor::tei:text"/>
           <assert test="@sameAs = $text//tei:milestone/concat('#',@xml:id)">ERROR: <name/>@sameAs must point to another <name/>@xml:id</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-not-sameas-constraint-rule-74">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-milestone-milestone-not-sameas-constraint-rule-70">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:milestone[@xml:id]">
           <assert test="@n">ERROR: <name/> requires @n</assert>
         </rule>
@@ -8043,23 +8025,23 @@ Elements]</a:documentation>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(page beginning) marks the beginning of a new page in the document, and takes xml:id and n values as explained in the Guidelines. [3.10.3. Milestone
 Elements]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-pb-needs-sameAs-or-xmlid-constraint-rule-75">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-pb-needs-sameAs-or-xmlid-constraint-rule-71">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:pb[not(@sameAs)]">
           <assert test="@xml:id">ERROR: <name/> needs @xml:id or @sameAs</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-pb-sameas-constraint-rule-76">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-pb-sameas-constraint-rule-72">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:pb[@sameAs]">
           <let name="text" value="ancestor::tei:text"/>
           <assert test="@sameAs = $text//tei:pb/concat('#',@xml:id)">ERROR: <name/>@sameAs must point to another <name/>@xml:id</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-pb-not-sameas-constraint-rule-77">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-pb-not-sameas-constraint-rule-73">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:pb[@xml:id]">
           <assert test="@n">ERROR: <name/> requires @n</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-ensure-pb-n-matches-facsimile-graphic-n-constraint-rule-78">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-pb-ensure-pb-n-matches-facsimile-graphic-n-constraint-rule-74">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:pb">
           <assert test="@n = /tei:TEI/tei:facsimile/tei:graphic/@n">ERROR: <name/>/@n does not match any facsimile/graphic/@n value.</assert>
         </rule>
@@ -8124,18 +8106,18 @@ Elements 7.2.5. Speech Contents]</a:documentation>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(column beginning) marks the beginning of a new column in an entry that occupies more than one column. If (as is normally the case) there are only two columns on the page, it takes the xml:id value "colA" or "colB" and the n value "a" or "b". If there are three columns on the page (or part of it), it takes the xml:id value "colA", "colB" or "colC" and the n value "a", "b" or "c". [3.10.3. Milestone
 Elements]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-needs-sameAs-or-xmlid-constraint-rule-80">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-needs-sameAs-or-xmlid-constraint-rule-76">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:cb[not(@sameAs)]">
           <assert test="@xml:id">ERROR: <name/> needs @xml:id or @sameAs</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-sameas-constraint-rule-81">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-sameas-constraint-rule-77">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:cb[@sameAs]">
           <let name="text" value="ancestor::tei:text"/>
           <assert test="@sameAs = $text//tei:cb/concat('#',@xml:id)">ERROR: <name/>@sameAs must point to another <name/>@xml:id</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-not-sameas-constraint-rule-82">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cb-cb-not-sameas-constraint-rule-78">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:cb[@xml:id]">
           <assert test="@n">ERROR: <name/> requires @n</assert>
         </rule>
@@ -8244,7 +8226,7 @@ Elements]</a:documentation>
     <element name="title">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the title of the electronic document. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]</a:documentation>
       <ref name="tei_macro.paraContent"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-title-titleStmt-title-check-constraint-rule-83">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-title-titleStmt-title-check-constraint-rule-79">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:title[parent::tei:titleStmt][matches(document-uri(/),'/04-live/')]">
           <let name="documentID" value="/tei:TEI/@xml:id"/>
           <assert test=".=$documentID">ERROR: <name/> doesn't match TEI/@xml:id</assert>
@@ -8315,12 +8297,12 @@ Sample values include: 1] main; 2] sub (subordinate) ; 3] alt (alternate) ; 4] s
           <ref name="tei_model.global"/>
         </choice>
       </zeroOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-bibl-asterisk-in-bibl-constraint-rule-84">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-bibl-asterisk-in-bibl-constraint-rule-80">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:bibl">
           <report test="descendant::text()[contains(.,'*')]">ERROR: <name/> contains an asterisk</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-bibl-positionOnPage-constraint-rule-85">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-bibl-positionOnPage-constraint-rule-81">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:bibl[@type='positionOnPage']">
           <report test="exists(tokenize(.,',')[not(normalize-space(.)=('uS','uL','mL','bL','uR', 'mR', 'bR', 'bS', 'mS', 'mC', 'uC', 'bC'))][not(matches(normalize-space(.),'^(uS|uL|bL|uR|bR|uC|bC|mL|mC|mR|mS|bS)(-[1-9])*$'))][not(matches(normalize-space(.),'^(MS\s+Ashmole\s+\d+\s+)*(f\.\s+\d+[A-M]*[rv]|p\.\s+\d+[A-M]*)/(uS|uL|bL|uR|bR|uC|bC|mL|mC|mR|mS|bS)(-[1-9])*$'))])">ERROR: <name/> does not seem to contain a validly formatted positionOnPage data.</report>
         </rule>
@@ -8399,7 +8381,7 @@ Sample values include: 1] positionOnPage</a:documentation>
           </group>
         </zeroOrMore>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-lg-atleast1oflggapl-constraint-assert-50">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-lg-atleast1oflggapl-constraint-assert-46">
         <rule context="tei:lg">
           <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An lg element
         must contain at least one child l, lg or gap element.</sch:assert>
@@ -8585,7 +8567,7 @@ Sample values include: 1] positionOnPage</a:documentation>
           <ref name="tei_model.divBottom"/>
         </choice>
       </zeroOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-figure-ensure-figure-not-in-div-in-case-constraint-rule-86">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-figure-ensure-figure-not-in-div-in-case-constraint-rule-82">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:figure[ancestor::tei:div]">
           <report test="ancestor::tei:TEI/tei:teiHeader//cb:consultation">ERROR: <name/> must not be inside a div in a case file</report>
         </rule>
@@ -8957,7 +8939,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
     <element name="handNote">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(note on hand) identifies a person whose hand features in the original document, by means of a sameAs attribute pointing to that person’s xml:id value as recorded in listPerson. [10.7.2. Writing, Decoration, and Other Notations]</a:documentation>
       <ref name="tei_macro.specialPara"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-handNote-handNote-links-constraint-rule-87">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-handNote-handNote-links-constraint-rule-83">
         <rule xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:handNote[@sameAs]">
           <assert test="@sameAs = ancestor::tei:teiHeader//tei:listPerson/(tei:person|tei:personGrp)/concat('#',@xml:id)">ERROR: <name/>@sameAs must point to person (or personGrp) in listPerson</assert>
         </rule>
@@ -9012,7 +8994,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
     <element name="language">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) specifies a language used within the document. Permitted ident values: "el" (Greek), "en" (English), "fr" (French), "he" (Hebrew), "la" (Latin), "und" (undetermined). [2.4.2. Language Usage]</a:documentation>
       <ref name="tei_macro.phraseSeq.limited"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-language-language-check-constraint-rule-88">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-language-language-check-constraint-rule-84">
         <rule xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:language">
           <let name="current_language" value="."/>
           <let name="defined_languages" value="doc(replace(replace(base-uri(.),'file:',''),'/casebooks-data/.+$','/casebooks-data/master-lists/languages.xml'))//tei:list[@xml:id='languages']"/>
@@ -9026,13 +9008,13 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
           <report xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="string-length(normalize-space(string-join(./ancestor::tei:TEI/tei:text,'')))=0 and count(./ancestor::tei:TEI/tei:text//tei:gap)=0 and ./ancestor::tei:TEI/tei:teiHeader//tei:langUsage/tei:language">ERROR: Why is a language defined when the body contains no text?</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-language-language-gap-no-text-lang-other-than-und-constraint-rule-89">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-language-language-gap-no-text-lang-other-than-und-constraint-rule-85">
         <rule xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:language[not(@ident='und')]">
           <let name="languages" value="."/>
           <report test="string-length(normalize-space(string-join(./ancestor::tei:TEI/tei:text,'')))=0 and $languages">ERROR: <name/> Why is there a language other than 'und' when the body contains no text?</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-language-language-not-used-text-constraint-rule-90">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-language-language-not-used-text-constraint-rule-86">
         <rule xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:language">
           <let name="xmllang" value="ancestor::tei:TEI/descendant-or-self::*/@xml:lang"/>
           <report test="not(@ident=$xmllang)">ERROR: <name/>@ident="<value-of select="@ident"/>" is not used in the text</report>
@@ -9066,7 +9048,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
           <ref name="tei_catRef"/>
         </choice>
       </zeroOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-textClass-confirm-consultation-type-constraint-rule-91">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-textClass-confirm-consultation-type-constraint-rule-87">
         <rule xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:textClass">
           <assert test="count(tei:catRef)le 1">ERROR: A case file can only have one catRef.</assert>
         </rule>
@@ -9384,13 +9366,13 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
     <element name="change">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">documents significant stages in the creation, transcription, checking or processing of an electronic file (if in revisionDesc) or the original artefact (if in listChange). [2.6. The Revision Description 2.4.1. Creation 11.7. Identifying Changes and Revisions]</a:documentation>
       <ref name="tei_macro.specialPara"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-change-change-date-check-constraint-rule-92">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-change-change-date-check-constraint-rule-88">
         <rule xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:change[parent::tei:revisionDesc]">
           <report test="not(@when)">ERROR: <name/>@when is mandatory</report>
           <report test="@when &lt; '2009-01-01' or @when &gt;format-date(current-date(),'[Y0001]-[M01]-[D01]')">ERROR: <name/>@when must be between 2009-01-01 and today's date</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-change-change-in-listChange-needs-xmlid-constraint-rule-93">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-change-change-in-listChange-needs-xmlid-constraint-rule-89">
         <rule xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:change[parent::tei:listChange]">
           <report test="not(@xml:id)">ERROR: <name/>@xml:id is mandatory</report>
         </rule>
@@ -9510,7 +9492,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
     <element name="link">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements. [16.1. Links]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-link-ensure-targets-point-to-right-elements-constraint-rule-94">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-link-ensure-targets-point-to-right-elements-constraint-rule-90">
         <rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:link">
           <let name="target_vals" value="tokenize(normalize-space(@target),'\s+')"/>
           <let name="text_root" value="/tei:TEI/tei:text"/>
@@ -9519,7 +9501,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
           <assert test="exists($target_vals[.=$text_root//tei:*[@xml:id][@xml:lang='en']/concat('#',@xml:id)])">ERROR: one target value must point to the element containing the translation.</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-link-linkTargets3-constraint-assert-58">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-link-linkTargets3-constraint-assert-54">
         <rule context="tei:link">
           <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <sch:name/>
                </sch:assert>
@@ -9578,7 +9560,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
     <element name="seg">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(arbitrary segment) represents any segmentation of text below the chunk level. [16.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.5. Speech Contents]</a:documentation>
       <ref name="tei_macro.paraContent"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-seg-check-decls-if-exists-for-seg-constraint-rule-95">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-seg-check-decls-if-exists-for-seg-constraint-rule-91">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:seg">
           <let name="text_root" value="/tei:TEI/tei:text"/>
           <report test="@decls and not(@decls=('#translation'))">ERROR: invalid decls value.</report>
@@ -9900,7 +9882,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
           </oneOrMore>
         </choice>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-msItem-check-msItem-class-of-casenotes-constraint-rule-100">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-msItem-check-msItem-class-of-casenotes-constraint-rule-96">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:msItem[@class]">
           <let name="target_ids" value="tokenize(@class,'\s+')"/>
           <let name="full_path" value="replace(replace(base-uri(.),'file:',''),'/casebooks-data/.+$','/casebooks-data/master-lists/consultation-types.xml')"/>
@@ -10448,22 +10430,22 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
     <element name="persName">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains as many as appropriate of the component parts of a person’s name, i.e. roleName, forename, surname, genName, nameLink, name. [13.2.1. Personal Names]</a:documentation>
       <ref name="tei_macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-invalid-text-as-child-constraint-rule-101">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-invalid-text-as-child-constraint-rule-97">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:persName">
           <report test="(normalize-space(string-join(text(),'')))[not(.='')]">ERROR: <name/> should not have textual content directly within it</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-empty-constraint-rule-102">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-empty-constraint-rule-98">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:persName[not(normalize-space(.))]">
           <report test="not(normalize-space(.))">ERROR: <name/> is empty.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-with-persName-descendant-constraint-rule-103">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-with-persName-descendant-constraint-rule-99">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:persName[ancestor::tei:persName]">
           <report test="ancestor::tei:persName">ERROR: <name/> is within a persName.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-invalid-child-constraint-rule-104">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-persName-persName-invalid-child-constraint-rule-100">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:persName[*[not(local-name()[.=('surname','forename','roleName','nameLink','genName','name','addName')])]]">
           <report test="*[not(local-name()[.=('surname','forename','roleName','nameLink','genName','name','addName')])]">ERROR: Invalid child of <name/>. Shouldn't <value-of select="*[not(local-name()[.=('surname','forename','roleName','nameLink','genName','name','addName')])]/local-name()"/> be inside one of the name elements?</report>
         </rule>
@@ -10582,7 +10564,7 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
     <element name="genName">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(genName) contains standard formulae used to distinguish between people who otherwise have the same name but are from different generations. [13.2.1. Personal Names]</a:documentation>
       <ref name="tei_macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-genName-genName-type-only-allowed-in-master-lists-constraint-rule-105">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-genName-genName-type-only-allowed-in-master-lists-constraint-rule-101">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:genName[@type]">
           <report test="not(contains(document-uri(/),'master-lists'))">ERROR: @type is currently only used in the master name files</report>
         </rule>
@@ -10690,7 +10672,7 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
     <element name="roleName">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(role name) covers appellations such as ‘Mr’, ‘Mrs’, ‘Sir’, ‘Goodwife’, or other formulae besides personal names, job titles, or social or familial relations (e.g. ‘Mr Uvedales servant’, ‘Smiths cosen’) used to specify a person’s identity. [13.2.1. Personal Names]</a:documentation>
       <ref name="tei_macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-roleName-roleName-type-only-allowed-in-master-lists-constraint-rule-106">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-roleName-roleName-type-only-allowed-in-master-lists-constraint-rule-102">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:roleName[@type]">
           <report test="not(contains(document-uri(/),'master-lists'))">ERROR: @type is currently only used in the master name files</report>
         </rule>
@@ -10726,7 +10708,7 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
     <element name="placeName">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(place name) is used in the body text to mark up any specified location not representing the address of one or more of the participants. Where such place names need to be linked to from the header (for instance because they record places of birth, marriage or death), placeName takes an xml:id value of "place1" (or "place2", "place3" etc. if more than one occurs in a given file). No attribute is needed for place names not linked to from the header. [13.2.3. Place Names]</a:documentation>
       <ref name="tei_macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-placeName-placeName-constraint-rule-107">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-placeName-placeName-constraint-rule-103">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:placeName[@sameAs]">
           <let name="current_element" value="."/>
           <let name="rs_addresses" value="$current_element/ancestor::tei:TEI//(tei:rs[@type='address']|tei:placeName)/concat('#',@xml:id)"/>
@@ -11182,7 +11164,7 @@ Sample values include: 1] practicing; 2] clandestine; 3] patrilineal; 4] matrili
     <element name="occupation">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(occupation) describes a person’s occupation, using any of the terms recorded in the our occupations master list (occupations.xml) and beginning with a capital letter. [15.2.2. The Participant Description]</a:documentation>
       <ref name="tei_macro.specialPara"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-occupation-occupation-check-constraint-assert-63">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-occupation-occupation-check-constraint-assert-59">
         <rule context="tei:occupation">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="normalize-space(.) = doc(replace(replace(base-uri(.),'file:',''),'/casebooks-data/.+$','/casebooks-data/master-lists/occupations.xml'))//tei:item/tei:term">ERROR: <name/> is not valid</assert>
         </rule>
@@ -11248,7 +11230,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <ref name="tei_model.personLike"/>
         </zeroOrMore>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-org-org-needs-xmlid-constraint-rule-108">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-org-org-needs-xmlid-constraint-rule-104">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:org[parent::tei:listPerson]">
           <assert test="@xml:id">ERROR: <name/> needs @xml:id.</assert>
         </rule>
@@ -11258,7 +11240,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:listPerson) and @sameAs and not(@sameAs=//tei:listPerson/tei:org/concat('#',@xml:id))">ERROR: <name/>@sameAs does not seem to point to a valid org@xml:id.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-org-org-links-points-to-wrong-element-constraint-rule-109">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-org-org-links-points-to-wrong-element-constraint-rule-105">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:org[not(parent::tei:listPerson)]">
           <let name="target" value="@sameAs"/>
           <assert test="@sameAs=//tei:listPerson/tei:org/concat('#',@xml:id)">ERROR: <name/>@sameAs must point to a org@xml:id and not <value-of select="//*[concat('#',@xml:id)=$target]/name()"/>.</assert>
@@ -11335,7 +11317,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           </choice>
         </zeroOrMore>
       </choice>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-person-person-needs-xmlid-constraint-rule-110">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-person-person-needs-xmlid-constraint-rule-106">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:person[parent::tei:listPerson]">
           <assert test="@xml:id">ERROR: <name/> needs @xml:id.</assert>
         </rule>
@@ -11345,7 +11327,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:listPerson) and @sameAs and not(@sameAs=//tei:listPerson/tei:person/concat('#',@xml:id))">ERROR: <name/>@sameAs does not seem to point to a valid person@xml:id.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-person-person-links-points-to-wrong-element-constraint-rule-111">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-person-person-links-points-to-wrong-element-constraint-rule-107">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:person[not(parent::tei:listPerson)]">
           <let name="target" value="@sameAs"/>
           <assert test="@sameAs=//tei:listPerson/tei:person/concat('#',@xml:id)">ERROR: <name/>@sameAs must point to a person@xml:id and not <value-of select="//*[concat('#',@xml:id)=$target]/name()"/>.</assert>
@@ -11480,7 +11462,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           </choice>
         </zeroOrMore>
       </choice>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-personGrp-personGrp-needs-xmlid-constraint-rule-112">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-personGrp-personGrp-needs-xmlid-constraint-rule-108">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:personGrp[parent::tei:listPerson]">
           <assert test="@xml:id">ERROR: <name/> needs @xml:id.</assert>
         </rule>
@@ -11490,7 +11472,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(parent::tei:listPerson) and @sameAs and not(@sameAs=//tei:listPerson/tei:personGrp/concat('#',@xml:id))">ERROR: <name/>@sameAs does not seem to point to a valid <name/>@xml:id.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-personGrp-personGrp-links-points-to-wrong-element-constraint-rule-113">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-personGrp-personGrp-links-points-to-wrong-element-constraint-rule-109">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:personGrp[not(parent::tei:listPerson)]">
           <let name="target" value="@sameAs"/>
           <assert test="@sameAs=//tei:listPerson/tei:personGrp/concat('#',@xml:id)">ERROR: <name/>@sameAs must point to a personGrp@xml:id and not <value-of select="//*[concat('#',@xml:id)=$target]/name()"/>.</assert>
@@ -11583,7 +11565,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
       <optional>
         <ref name="tei_desc"/>
       </optional>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-needs-objects-constraint-assert-70">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-needs-objects-constraint-assert-66">
         <rule context="tei:relation">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count((@passive,@active,@mutual)) gt 0">ERROR: <name/> needs @active/@passive or @mutual</assert>
         </rule>
@@ -11603,22 +11585,22 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="tokenize(@passive,'\s+') = tokenize(@active,'\s+')">ERROR: <name/> contains a one or more repeated tokens @active and @passive</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-link-passive-constraint-assert-71">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-link-passive-constraint-assert-67">
         <rule context="tei:relation">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@passive,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@passive,'\s+'))">ERROR: <name/>@passive value(s) (<value-of select="string-join(for $x in tokenize(@passive,'\s+') return if (not($x = ancestor::tei:TEI//tei:listPerson//(tei:person|tei:org|tei:personGrp)/concat('#',@xml:id))) then $x else (),' ')"/>) does not point to listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-link-active-constraint-assert-72">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-link-active-constraint-assert-68">
         <rule context="tei:relation">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@active,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@active,'\s+'))">ERROR: <name/>@active value(s) (<value-of select="string-join(for $x in tokenize(@active,'\s+') return if (not($x = ancestor::tei:TEI//tei:listPerson//(tei:person|tei:org|tei:personGrp)/concat('#',@xml:id))) then $x else (),' ')"/>) does not point to listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-link-mutual-constraint-assert-73">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-link-mutual-constraint-assert-69">
         <rule context="tei:relation">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@mutual,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@mutual,'\s+'))">ERROR: <name/>@mutual value(s) (<value-of select="string-join(for $x in tokenize(@mutual,'\s+') return if (not($x = ancestor::tei:TEI//tei:listPerson//(tei:person|tei:org|tei:personGrp)/concat('#',@xml:id))) then $x else (),' ')"/>) does not point to listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-active-sex-constraint-rule-114">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-active-sex-constraint-rule-110">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:relation">
           <let name="relation_elm" value="."/>
           <let name="active" value="$relation_elm/tokenize(@active,'\s+')"/>
@@ -11627,7 +11609,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <assert test="every $x in $bodies[concat('#',@xml:id)=$active] satisfies $x/lower-case(tei:sex[1])= $relations//tei:form[@n=$relation_elm/@name]//replace(tei:gen,'^n$','u')">ERROR: The sex of <name/>@active (<value-of select="for $x in $bodies[concat('#',@xml:id)=$active] return if ($x/lower-case(tei:sex[1]) != $relations//tei:form[@n=$relation_elm/@name]//tei:gen) then $x/concat('#',@xml:id) else ()"/>) is wrong for relation@name</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-mutual-sex-constraint-rule-115">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-relation-mutual-sex-constraint-rule-111">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:relation">
           <let name="relation_elm" value="."/>
           <let name="mutual" value="$relation_elm/tokenize(@mutual,'\s+')"/>
@@ -11636,7 +11618,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <assert test="every $x in $bodies[concat('#',@xml:id)=$mutual] satisfies $x/lower-case(tei:sex[1])= $relations//tei:form[@n=$relation_elm/@name]//replace(tei:gen,'^n$','u')">ERROR: The sex of <name/>@mutual (<value-of select="for $x in $bodies[concat('#',@xml:id)=$mutual] return if ($x/lower-case(tei:sex[1]) != $relations//tei:form[@n=$relation_elm/@name]//tei:gen) then $x/concat('#',@xml:id) else ()"/>) is wrong for relation@name</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-reforkeyorname-constraint-assert-76">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-relation-reforkeyorname-constraint-assert-72">
         <rule context="tei:relation">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
         </rule>
@@ -12166,8 +12148,6 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
           <value>purse-bearer</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-          <value>purser</value>
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
           <value>receiverGeneral</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
           <value>rectorPastoral</value>
@@ -12339,12 +12319,12 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
     <element name="residence">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(residence) points where possible, by means of a sameAs value, to an rs element in the transcribed text marking up a participant’s address. If an address is given in an untranscribed portion of the entry, residence takes no sameAs value and contains a literal transcription of the address as given in the source. [15.2.2. The Participant Description]</a:documentation>
       <ref name="tei_macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-residence-residence-sameAs-constraint-rule-116">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-residence-residence-sameAs-constraint-rule-112">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:residence[@sameAs]">
           <assert test="replace(@sameAs,'#','')=(ancestor::tei:TEI/tei:text//tei:rs[@type='address']|ancestor::tei:TEI/tei:teiHeader//tei:residence)/@xml:id">ERROR: <name/>@sameAs must point to rs@type=address in body text</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-residence-residence-no-sameAs-constraint-rule-117">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-residence-residence-no-sameAs-constraint-rule-113">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:residence[not(@sameAs)]">
           <report test="not(@evidence=('internal','external')) and not((ancestor::tei:person|ancestor::tei:org|ancestor::tei:personGrp)/@evidence=('internal','external'))">ERROR: <name/> either needs @sameAs pointing to rs@xml:id in body text or to have @evidence=internal/external (or be in consultation@evidence=internal/external)</report>
         </rule>
@@ -12399,7 +12379,7 @@ Sample values include: 1] primary; 2] secondary; 3] temporary; 4] permanent</a:d
     <element name="sex">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">records a participant’s sex. [13.3.2.1. Personal Characteristics]</a:documentation>
       <ref name="tei_macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-sex-sex-value-text-not-match-constraint-assert-78">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-sex-sex-value-text-not-match-constraint-assert-74">
         <rule context="tei:sex">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="(@value='1' and .='M') or (@value='2' and .='F') or (@value='0' and .='U')"><name/>@value does not conform to what it should be according to content of the element</assert>
         </rule>
@@ -12584,7 +12564,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
           </zeroOrMore>
         </choice>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-trait-check-trait-name-constraint-assert-79">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-trait-check-trait-name-constraint-assert-75">
         <rule context="tei:trait">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="normalize-space(string-join(.//text(),'')) = doc(replace(replace(base-uri(.),'file:',''),'/casebooks-data/.+$','/casebooks-data/master-lists/traits.xml'))//tei:item/tei:label/normalize-space(string-join(descendant::text(),''))">ERROR: <value-of select="normalize-space(string-join(.//text(),''))"/> is not valid for <name/>
                </assert>
@@ -12648,7 +12628,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
       </attribute>
     </optional>
   </define>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.witnessed-wit-wit-ref-check-constraint-rule-118">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.witnessed-wit-wit-ref-check-constraint-rule-114">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@wit]">
       <let name="witness_xmlids" value="for $x in ./ancestor::tei:TEI/tei:teiHeader//tei:witness/@xml:id return concat('#',$x)"/>
       <let name="wit_ref" value="tokenize(@wit,'\s+')"/>
@@ -12718,19 +12698,19 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
           </choice>
         </zeroOrMore>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-app-app-count-distinct-child-wit-constraint-rule-119">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-app-app-count-distinct-child-wit-constraint-rule-115">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:app">
           <let name="witness_xmlids" value="for $x in ./ancestor::tei:TEI/tei:teiHeader//tei:witness/@xml:id return concat('#',$x)"/>
           <let name="wit_ref" value="child::tei:*/tokenize(@wit,'\s+')"/>
           <report test="$wit_ref[index-of($wit_ref,.)[2]]">ERROR: Repeated @wit value(s) (<value-of select="string-join($wit_ref[index-of($wit_ref,.)[2]],', ')"/>)</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-app-app-needs-one-lem-constraint-rule-120">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-app-app-needs-one-lem-constraint-rule-116">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:app">
           <report test="count(tei:lem)!=1">ERROR: <name/> must contain ONE lem element</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-app-app-needs-one-or-more-rdg-constraint-rule-121">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-app-app-needs-one-or-more-rdg-constraint-rule-117">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:app">
           <assert test="count(tei:rdg)&gt;=1">ERROR: <name/> must contain AT LEAST one rdg element</assert>
         </rule>
@@ -12928,7 +12908,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">apparatus appears outside the base text.</a:documentation>
         </choice>
       </attribute>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-variantEncoding-location-variantEncodingLocation-constraint-rule-122">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-variantEncoding-location-variantEncodingLocation-constraint-rule-118">
         <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:variantEncoding">
           <sch:assert test="(@location != 'external') or (@method != 'parallel-segmentation')">
               The @location value "external" is inconsistent with the
@@ -12948,30 +12928,30 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
         </oneOrMore>
       </group>
       <ns xmlns="http://purl.oclc.org/dsdl/schematron" prefix="cb" uri="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-filename-check-constraint-rule-123">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-filename-check-constraint-rule-119">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="/tei:TEI[matches(document-uri(/),'/04-live/')]">
           <let name="documentID" value="@xml:id"/>
           <assert test="matches($documentID,'^CASE\d+$')">ERROR: Problem with <name/>/@xml:id</assert>
           <assert test="tokenize(document-uri(/),'/')[last()]=concat($documentID,'.xml')">ERROR: Invalid filename or filename doesn't match TEI/@xml:id</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-language-gap-but-no-text-constraint-rule-124">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-language-gap-but-no-text-constraint-rule-120">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:TEI[tei:text//tei:gap][string-length(normalize-space(string-join(tei:text,'')))=0]">
           <let name="languages" value="tei:teiHeader//tei:langUsage/tei:language"/>
           <assert test="$languages[@ident='und']">ERROR: language@ident='und' needed for empty transcription with gap.</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-sameAs-needs-hash-constraint-rule-125">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-sameAs-needs-hash-constraint-rule-121">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@sameAs]">
           <report test="not(starts-with(@sameAs,'#'))">ERROR: <name/>@sameAs must start with '#' when pointing to @xml:id.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-needs-positionOnPage-constraint-rule-126">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-needs-positionOnPage-constraint-rule-122">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:TEI[descendant::cb:consultation]">
           <assert test="descendant::tei:bibl[@type='positionOnPage']">ERROR: Missing positionOnPage</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-if-change-attr-then-listChange-constraint-rule-127">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-TEI-if-change-attr-then-listChange-constraint-rule-123">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:TEI[descendant::tei:*[@change]]">
           <assert test="/tei:TEI/tei:teiHeader/tei:profileDesc/tei:creation/tei:listChange/tei:change">ERROR: You seem to be using @change on an element. That means you need to include listChange code in the header.</assert>
         </rule>
@@ -13173,7 +13153,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
           </group>
         </optional>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-div-check-decls-if-exists-constraint-rule-128">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-div-check-decls-if-exists-constraint-rule-124">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:div">
           <let name="text_root" value="/tei:TEI/tei:text"/>
           <report test="@decls and not(@decls=('#original_source','#translation'))">ERROR: invalid decls value.</report>
@@ -13375,7 +13355,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
       </attribute>
     </optional>
   </define>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.global.change-check-changes-pointers-constraint-rule-129">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.global.change-check-changes-pointers-constraint-rule-125">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:*[@change]">
       <let name="changes" value="tokenize(@change,'\s+')"/>
       <let name="root" value="ancestor::tei:TEI"/>
@@ -13401,12 +13381,12 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
     <element name="addSpan">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(added span of text) marks the beginning of a longer sequence of text added by an author, scribe, annotator or corrector (see also add). [11.3.1.4. Additions and Deletions]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-addSpan-spanTo-constraint-assert-88">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-addSpan-spanTo-constraint-assert-84">
         <rule context="tei:addSpan">
           <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@spanTo">The @spanTo attribute of <sch:name/> is required.</sch:assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-addSpan-spanTo_fr-constraint-assert-89">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-addSpan-spanTo_fr-constraint-assert-85">
         <rule context="tei:addSpan">
           <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@spanTo">L'attribut spanTo est requis.</sch:assert>
         </rule>
@@ -13497,7 +13477,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="handShift">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(change of hand) marks the point at which the hand of an entry changes (if the transcribed section is written in more than one hand), pointing to the identity of the new hand with the new attribute. [11.3.2.1. Document Hands]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-handShift-handShift-new-must-match-hand-xmlid-or-person-hand-sameas-xmlid-constraint-rule-130">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-handShift-handShift-new-must-match-hand-xmlid-or-person-hand-sameas-xmlid-constraint-rule-126">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:handShift[@new]">
           <let name="teiHeader" value="ancestor::tei:TEI/tei:teiHeader"/>
           <let name="hands" value="$teiHeader//tei:handNote"/>
@@ -13585,7 +13565,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
           <ref name="tei_model.milestoneLike"/>
         </choice>
       </oneOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subst-substContents1-constraint-assert-91">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subst-substContents1-constraint-assert-87">
         <rule context="tei:subst">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="child::tei:add and child::tei:del"><name/> must have at least one child add and at least one child del</assert>
         </rule>
@@ -13865,36 +13845,36 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
       </attribute>
     </optional>
   </define>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-participant-exclude-empty-constraint-rule-131">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-participant-exclude-empty-constraint-rule-127">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@exclude]">
       <report test="normalize-space(@exclude) = ''">ERROR: <name/>@exclude is empty</report>
     </rule>
   </pattern>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-participant-exclude-points-to-self-constraint-rule-132">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-participant-exclude-points-to-self-constraint-rule-128">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@exclude]">
       <report test="tokenize(@exclude,'\s+')=concat('#',@xml:id)">ERROR: <name/>@exclude value (<value-of select="concat('#',@xml:id)"/>) points to same element as itself</report>
     </rule>
   </pattern>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-exclude-not-xmlid-constraint-rule-133">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-exclude-not-xmlid-constraint-rule-129">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@exclude]">
       <report test="not(@xml:id)">ERROR: <name/> with @exclude needs @xml:id</report>
     </rule>
   </pattern>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-exclude-link-constraint-rule-134">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-exclude-link-constraint-rule-130">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@exclude and normalize-space(@exclude) != '']">
       <let name="elem" value="."/>
       <let name="other_elems" value="ancestor::tei:settingDesc//cb:*[local-name()=local-name($elem)][not(@xml:id=$elem/@xml:id)]"/>
       <assert test="every $exclude in $elem/tokenize(@exclude,'\s+') satisfies $exclude = $other_elems/concat('#',@xml:id)">ERROR: <name/>@exclude value(s) (<value-of select="$elem/tokenize(@exclude,'\s+')[not(.=$other_elems/concat('#',@xml:id))]"/>) does not point to a valid <name/>/@xml:id</assert>
     </rule>
   </pattern>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-xmlid-not-target-constraint-rule-135">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-xmlid-not-target-constraint-rule-131">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@xml:id]">
       <let name="elem" value="."/>
       <let name="other_elems" value="ancestor::tei:settingDesc//cb:*[local-name()=local-name($elem)][not(@xml:id=$elem/@xml:id)]"/>
       <assert test="concat('#',$elem/@xml:id) = $other_elems/tokenize(@exclude,'\s+')">ERROR: <name/>@xml:id must be the target of another <name/>@exclude</assert>
     </rule>
   </pattern>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-elem-xmlid-not-in-all-other-elem-constraint-rule-136">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.linking-cb-elem-xmlid-not-in-all-other-elem-constraint-rule-132">
     <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@xml:id]">
       <let name="elem" value="."/>
       <let name="all_elems" value="ancestor::cb:consultation//cb:*[local-name()=local-name($elem)][@exclude]"/>
@@ -14014,7 +13994,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
       </list>
     </attribute>
   </define>
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.participants-present-must-be-same-constraint-rule-137">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-att.casebooks.participants-present-must-be-same-constraint-rule-133">
     <rule xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:*[local-name()=('querent','subject','object')][@present]">
       <let name="refs" value="tokenize(@ref,'\s+')"/>
       <let name="present_vals" value="distinct-values(//cb:*[local-name()=('querent','subject','object')][tokenize(@ref,'\s+')=$refs]/@present)"/>
@@ -14026,12 +14006,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="consultant" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(consultant) points, by means of the ref attribute, to the xml:id value of the person conducting the consultation.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-consultant-consultant-links-constraint-assert-96">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-consultant-consultant-links-constraint-assert-92">
         <rule context="cb:consultant">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@ref,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@ref,'\s+'))">ERROR: <name/> does not point to a valid listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-consultant-consultant-repeated-ref-constraint-assert-97">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-consultant-consultant-repeated-ref-constraint-assert-93">
         <rule context="cb:consultant">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(distinct-values(tokenize(@ref,'\s+'))) = count(tokenize(@ref,'\s+'))">ERROR: <name/>@ref contains a repeated value</assert>
         </rule>
@@ -14044,12 +14024,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="astrologer" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(astrologer) points, by means of the ref attribute, to the xml:id value of the person conducting the astrological portions of the case.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-astrologer-astrologer-links-constraint-assert-98">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-astrologer-astrologer-links-constraint-assert-94">
         <rule context="cb:astrologer">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@ref,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@ref,'\s+'))">ERROR: <name/> does not point to a valid listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-astrologer-astrologer-repeated-ref-constraint-assert-99">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-astrologer-astrologer-repeated-ref-constraint-assert-95">
         <rule context="cb:astrologer">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(distinct-values(tokenize(@ref,'\s+'))) = count(tokenize(@ref,'\s+'))">ERROR: <name/>@ref contains a repeated value</assert>
         </rule>
@@ -14148,24 +14128,24 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="location" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(location) records, where possible, where the practitioner was at the time of the consultation, either in absolute terms or relative to the querent.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-ref-needs-hash-constraint-rule-138">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-ref-needs-hash-constraint-rule-134">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@ref]">
           <report test="not(starts-with(@ref,'#'))">ERROR: cb:location@ref must start with '#' when pointing to @xml:id.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-ref-must-point-to-rs-xmlid-constraint-rule-139">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-ref-must-point-to-rs-xmlid-constraint-rule-135">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@ref]">
           <assert test="replace(@ref,'#','')=ancestor::tei:TEI/tei:text//(tei:rs[@type='address']|tei:placeName)/@xml:id">ERROR: <name/>@ref must point to rs@type=address or placeName in body text</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-practitionerReceivesMessage-needs-ref-constraint-rule-140">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-practitionerReceivesMessage-needs-ref-constraint-rule-136">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('practitionerReceivesMessage','neutralGround')]">
           <let name="querent" value="./ancestor::cb:consultation//cb:querent"/>
           <let name="subject" value="./ancestor::cb:consultation//cb:subject[tokenize(@ref,'\s+')=$querent[not(@present)]/tokenize(@ref,'\s+')]"/>
           <report test="not(@ref) or normalize-space(@ref)=''">ERROR: <name/>@type='<value-of select="@type"/>' requires @ref</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-needs-cb-querent-present-constraint-rule-141">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-needs-cb-querent-present-constraint-rule-137">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('neutralGround','practitionerVisitsQuerent','querentVisitsPractitioner','unknown')]">
           <let name="elem" value="."/>
           <let name="querent" value="./ancestor::cb:consultation//cb:querent"/>
@@ -14174,7 +14154,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
           <assert test="$default_present_vals[. = 'yes']">ERROR: At least one querent must have @present='yes' if the location is '<value-of select="$elem/@type"/>'</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-needs-cb-querent-present2-constraint-rule-142">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-needs-cb-querent-present2-constraint-rule-138">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('practitionerReceivesMessage')]">
           <let name="elem" value="."/>
           <let name="querent" value="./ancestor::cb:consultation//cb:querent"/>
@@ -14183,7 +14163,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
           <assert test="$default_present_vals[. = 'no']">ERROR: At least one querent must have @present='no' if the location is '<value-of select="$elem/@type"/>'</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-querentSendsSubject-constraint-rule-143">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-cblocation-cb-location-querentSendsSubject-constraint-rule-139">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:location[@type=('querentSendsSubject')]">
           <let name="elem" value="."/>
           <let name="querents" value="./ancestor::cb:consultation//cb:querent"/>
@@ -14228,12 +14208,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="messenger" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(messenger) points, where relevant, to the person acting as messenger from querent to practitioner, using the ref value.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-messenger-messenger-links-constraint-assert-104">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-messenger-messenger-links-constraint-assert-100">
         <rule context="cb:messenger">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@ref,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@ref,'\s+'))">ERROR: <name/> does not point to a valid listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-messenger-messenger-repeated-ref-constraint-assert-105">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-messenger-messenger-repeated-ref-constraint-assert-101">
         <rule context="cb:messenger">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(distinct-values(tokenize(@ref,'\s+'))) = count(tokenize(@ref,'\s+'))">ERROR: <name/>@ref contains a repeated value</assert>
         </rule>
@@ -14263,22 +14243,22 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="info" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(additional information) records the presence of information about events relevant to the case, financial transactions associated with it, the condition of the patient’s urine, or Napier’s reliance on divination or angelic advice in formulating a diagnosis or prognosis.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-angel-needs-subtype-constraint-rule-144">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-angel-needs-subtype-constraint-rule-140">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@type=('angel')]">
           <report test="not(@subtype=('Aladiah','Asariel','Gabriel','Michael','Raphael','Uriel','Unspecified'))">ERROR: cb:info@type='angel' needs @subtype with the angel name ('Aladiah','Asariel', 'Gabriel', 'Michael', 'Raphael', 'Uriel' or 'Unspecified' are presently supported).</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-divination-needs-subtype-constraint-rule-145">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-divination-needs-subtype-constraint-rule-141">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@type=('divination')]">
           <report test="not(@subtype=('dice'))">ERROR: cb:info@type='divination' needs @subtype with the value 'dice'.</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-event-needs-subtype-constraint-rule-146">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-event-needs-subtype-constraint-rule-142">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@type=('event')]">
           <report test="not(normalize-space(@subtype)=('previousConsultation','subsequentEvent','unclear'))">ERROR: Missing @subtype with value previousConsultation, subsequentEvent or unclear</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-n-not-needed-constraint-rule-147">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-info-consultation-info-n-not-needed-constraint-rule-143">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:info[@subtype]">
           <report test="not(@type=('angel','event', 'divination'))">ERROR: cb:info@subtype must only be used when @type is 'angel', 'diviniation' or 'event'</report>
         </rule>
@@ -14337,12 +14317,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="object" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(object) points to any person(s) who is/are not among the principal participant(s) but is/are highly relevant to the case, e.g. prospective spouses or suspected thieves or witches.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-object-object-links-constraint-assert-106">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-object-object-links-constraint-assert-102">
         <rule context="cb:object">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@ref,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@ref,'\s+'))">ERROR: <name/> does not point to a valid listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-object-object-repeated-ref-constraint-assert-107">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-object-object-repeated-ref-constraint-assert-103">
         <rule context="cb:object">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(distinct-values(tokenize(@ref,'\s+'))) = count(tokenize(@ref,'\s+'))">ERROR: <name/>@ref contains a repeated value</assert>
         </rule>
@@ -14364,31 +14344,31 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="querent" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(querent) points to the person(s) asking the question by means of the ref attribute.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-links-constraint-assert-108">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-links-constraint-assert-104">
         <rule context="cb:querent">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@ref,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@ref,'\s+'))">ERROR: <name/> does not point to a valid listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-repeated-ref-constraint-assert-109">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-repeated-ref-constraint-assert-105">
         <rule context="cb:querent">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(distinct-values(tokenize(@ref,'\s+'))) = count(tokenize(@ref,'\s+'))">ERROR: <name/>@ref contains a repeated value</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-not-subject-needs-evidence-constraint-rule-148">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-not-subject-needs-evidence-constraint-rule-144">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[not(@evidence)]">
           <let name="querent_tokens" value="tokenize(@ref,'\s+')"/>
           <let name="subject_tokens" value="ancestor::*:consultation//*:subject/tokenize(@ref,'\s+')"/>
           <report test="not(every $token in $querent_tokens satisfies $token = $subject_tokens)">ERROR: <name/> where any token in @ref is not subject needs @evidence</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-not-subject-needs-present-constraint-rule-149">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-not-subject-needs-present-constraint-rule-145">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[not(@present)]">
           <let name="querent_tokens" value="tokenize(@ref,'\s+')"/>
           <let name="subject_tokens" value="ancestor::cb:consultation//cb:subject/tokenize(@ref,'\s+')"/>
           <report test="not(every $token in $querent_tokens satisfies $token = $subject_tokens)">ERROR: <name/>@present needed where any token in @ref is not subject</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-inferred-logic-constraint-rule-150">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-inferred-logic-constraint-rule-146">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[@evidence='inferred'][count(tokenize(@ref,'\s+'))=1]">
           <let name="querent_tokens" value="tokenize(@ref,'\s+')"/>
           <let name="subject_tokens" value="ancestor::cb:consultation//cb:subject/tokenize(@ref,'\s+')"/>
@@ -14396,12 +14376,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
           <report test="$querent_person_elems[tei:persName] or $querent_tokens = $subject_tokens">ERROR: If <name/>@evidence='inferred' the querent must be anonymous and not a subject</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-inferred-ref-count-constraint-rule-151">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-querent-inferred-ref-count-constraint-rule-147">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[@evidence='inferred']">
           <assert test="count(tokenize(@ref,'\s+'))=1">ERROR: <name/>/@ref must contain a single token if @evidence='inferred'</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-conflicting-inferred-present-values-constraint-rule-152">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-querent-conflicting-inferred-present-values-constraint-rule-148">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:querent[not(@present)]">
           <let name="refs" value="tokenize(@ref,'\s+')"/>
           <let name="present_vals" value="distinct-values(//cb:subject[tokenize(@ref,'\s+')=$refs]/@present)"/>
@@ -14455,17 +14435,17 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
     <element name="subject" ns="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subject) points, by means of the ref attribute, to the participant about whom or in whose interests the question is being asked.</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subject-subject-links-constraint-assert-112">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subject-subject-links-constraint-assert-108">
         <rule context="cb:subject">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(for $x in tokenize(@ref,'\s+') return //tei:listPerson//(tei:person|tei:org|tei:personGrp)[concat('#',@xml:id)=$x] ) = count(tokenize(@ref,'\s+'))">ERROR: <name/> does not point to a valid listPerson//person, org or personGrp</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subject-subject-repeated-ref-constraint-assert-113">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subject-subject-repeated-ref-constraint-assert-109">
         <rule context="cb:subject">
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(distinct-values(tokenize(@ref,'\s+'))) = count(tokenize(@ref,'\s+'))">ERROR: <name/>@ref contains a repeated value</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subject-subject-needs-present-constraint-rule-153">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-subject-subject-needs-present-constraint-rule-149">
         <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:subject">
           <report test="not(@present)">ERROR: <name/>@present needed</report>
         </rule>
@@ -14523,12 +14503,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number) ; 4] lineN
           <report xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(child::tei:person|child::tei:org|child::tei:personGrp)=0">ERROR: <name/> requires a person/org/personGrp inside it</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-key-unknown-needs-reason-constraint-rule-154">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-topic-key-unknown-needs-reason-constraint-rule-150">
         <rule xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:topic[@key='unknown']">
           <report test="not(@reason)">ERROR: cb:topic@key='unknown' needs @reason</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-ensure-person-sameAs-only-occurs-once-in-topic-constraint-rule-155">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="casebooks-topic-ensure-person-sameAs-only-occurs-once-in-topic-constraint-rule-151">
         <rule xmlns:cb="http://www.magicandmedicine.hps.cam.ac.uk/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="cb:topic[tei:person|tei:org|tei:personGrp]">
           <let name="tokens" value="(tei:person|tei:org|tei:personGrp)/tokenize(@sameAs,'\s+')"/>
           <let name="repeated_tokens" value="$tokens[index-of($tokens,.)[2]]"/>

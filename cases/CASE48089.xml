@@ -64,10 +64,18 @@
 <age value="40">40</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="p" evidence="internal">
+<persName><surname evidence="inferred" cert="medium">Porter</surname></persName>
+<sex value="1">M</sex>
+</person>
 <person xml:id="tv" evidence="internal">
 <persName><forename>Thomas</forename> <surname>Vans</surname></persName>
 <sex value="1">M</sex>
 </person>
+<person xml:id="anon" evidence="internal">
+<sex value="2">F</sex>
+</person>
+<relation name="husband" active="#p" passive="#jp" evidence="internal"/>
 </listPerson>
 </particDesc>
 <settingDesc>

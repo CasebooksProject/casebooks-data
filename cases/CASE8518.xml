@@ -67,8 +67,11 @@
 </listPerson>
 </particDesc>
 <settingDesc>
-<p><date when="1600-12-09" n="Tuesday" evidence="inferred"/></p>
-<p><time notBefore="08:00:00" notAfter="11:30:00" cert="medium" resp="#rralley" evidence="inferred"/></p>
+<p><date when="1600-12-09" n="Tuesday"/></p>
+<p><time when="08:30:00" xml:id="time1" exclude="#time2 #time3 #time4" evidence="inferred"/>
+<time when="09:30:00" xml:id="time2" exclude="#time1 #time3 #time4" evidence="inferred"/>
+<time when="10:30:00" xml:id="time3" exclude="#time1 #time2 #time4" evidence="inferred"/>
+<time when="11:30:00" xml:id="time4" exclude="#time1 #time2 #time3" evidence="inferred"/></p>
 <cb:consultation>
 <cb:astrologer resp="#mhawkins" ref="#sforman"/>
 <cb:consultant ref="#sforman"/>
@@ -95,7 +98,7 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/><gap reason="damage" unit="chars" extent="10"/>rels <lb/><gap reason="damage" extent="1" unit="lines"/> 9. <lb/><gap reason="damage" extent="15" unit="chars"/> at <lb/><gap reason="damage" extent="10" unit="chars"/> <rs type="address" xml:id="address1" key="PLACE156" resp="#mhawkins">at ledden <lb/><supplied reason="damage" cert="high" resp="#rralley">h</supplied>alle</rs></p>
+<p><lb/><gap reason="damage" unit="chars" extent="10"/>rels <lb/>of <gap reason="damage" extent="1" unit="lines"/> <supplied reason="damage" cert="low">1600 the</supplied> 9. <lb/><unclear cert="low" reason="binding">of</unclear> Dec<choice><orig>ē</orig><reg>em</reg></choice><supplied reason="damage">b</supplied> <supplied reason="damage" cert="medium"><choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice></supplied> <gap reason="damage" extent="unclear" cert="low"/> at <lb/>30 <supplied reason="damage" cert="medium"><choice><orig>p</orig><reg>post</reg><reg type="gloss">past</reg></choice></supplied> <gap reason="damage" extent="2" unit="chars"/> <gap extent="unclear" reason="damage" cert="medium"/> <rs type="address" xml:id="address1" key="PLACE156" resp="#mhawkins">at ledden <lb/><supplied reason="damage" cert="high" resp="#rralley">h</supplied>alle</rs></p>
 </div>
 </body>
 </text>

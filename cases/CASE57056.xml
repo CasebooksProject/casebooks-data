@@ -19,7 +19,7 @@
 <respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
 </seriesStmt>
 <sourceDesc>
-<bibl type="positionOnPage">uL-1</bibl>
+<bibl type="positionOnPage">uL</bibl>
 <msDesc>
 <msIdentifier>
 <country>UK</country>
@@ -64,6 +64,14 @@
 <age value="58">58</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="mb">
+<persName><roleName>Mrs</roleName> <forename>Mary</forename> <surname evidence="inferred" type="married">Burgoyne</surname></persName>
+<sex value="2">F</sex>
+<age value="58">58</age>
+</person>
+<listRelation>
+<relation name="wife" active="#mb" passive="#b"/>
+</listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -73,10 +81,11 @@
 <cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#b"/>
-<cb:subject ref="#b" present="unclear"/>
-<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#b"/></cb:topic>
+<cb:querent ref="#b #mb"/>
+<cb:subject ref="#b #mb" present="unclear"/>
+<cb:topic key="unspecifiedMedical" evidence="inferred"><person sameAs="#b"/><person sameAs="#mb"/></cb:topic>
 <cb:treatment/>
+<cb:judgment/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -87,6 +96,7 @@
 <change when="2016-08-02">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2016-12-01">Checked by <name xml:id="jyoung">John Young</name>.</change>
 <change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2020-01-15">CASE57057 merged with this one as the same entry by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -95,6 +105,10 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/>M<hi rend="superscript">r</hi> Burg <rs type="address" xml:id="address1" key="PLACE513" resp="#mhawkins">of Sutton</rs> 58 y Sept 10 <lb/><choice><orig>☿</orig><reg type="gloss">Wednesday</reg></choice> h. 3. 30 p m 1623.</p>
+</div>
+
+<div>
+<p><lb/>his wife <choice><orig>M<hi rend="superscript">r</hi>es</orig><reg>Mrs</reg></choice> Mary 58 y.</p>
 </div>
 </body>
 </text>

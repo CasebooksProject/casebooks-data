@@ -63,18 +63,22 @@
 <persName><forename>Richard</forename> <surname>Napier</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="m">
+<person xml:id="m1">
 <persName><roleName>Mrs</roleName> <surname>Mansell</surname></persName>
 <sex value="2">F</sex>
 </person>
-<person xml:id="h">
-<persName><surname>Haselwood</surname> <surname evidence="inferred" type="maiden">Mansell</surname></persName>
+<person xml:id="m2">
+<persName><surname evidence="inferred" type="maiden">Mansell</surname></persName>
 <sex value="2">F</sex>
 <age value="18">18</age>
 <birth><date when="1590-03-26" xml:id="date1" exclude="#date2"/><date when="1591-03-26" xml:id="date2" exclude="#date1"/></birth>
 <death><date when="1609-03-24" evidence="internal"/></death>
 </person>
-<listRelation><relation name="daughter" active="#h" passive="#m"/></listRelation>
+<person xml:id="h1">
+<persName><surname>Haselwood</surname> <surname evidence="inferred" type="maiden">Mansell</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="daughter" active="#m2 #h1" passive="#m1"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -84,10 +88,12 @@
 <cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#m" evidence="internal" present="unclear"/>
-<cb:subject ref="#h" present="no" consent="no"/>
-<cb:topic key="sickness" resp="#rnapier"><person sameAs="#h"/></cb:topic>
-<cb:topic key="plague"><person sameAs="#h"/></cb:topic>
+<cb:querent ref="#m1" evidence="internal" present="unclear"/>
+<cb:subject ref="#m2" present="no"/>
+<cb:subject ref="#h1" present="no" consent="no"/>
+<cb:topic key="sickness" resp="#rnapier"><person sameAs="#m2"/></cb:topic>
+<cb:topic key="plague"><person sameAs="#m2"/></cb:topic>
+<cb:topic key="unknown" reason="notGiven"><person sameAs="#h1"/></cb:topic>
 <cb:info type="event" subtype="subsequentEvent"/>
 
 </cb:consultation>

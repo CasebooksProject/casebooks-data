@@ -38,16 +38,20 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
-
 <encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+<charDecl><glyph xml:id="crossedp">
+        <glyphName>CROSSED LOWERCASE P</glyphName>
+        <mapping type="standard">p</mapping>
+        <mapping type="PUA">U+E670</mapping>
+    </glyph></charDecl>
+<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl><ab xml:id="translation">Translation of normalised text provided by The Casebooks Project</ab></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
+<language ident="la">Latin</language>
 </langUsage>
 <textClass xml:base="../master-lists/consultation-types.xml">
 <catRef target="#horary"/>
@@ -64,11 +68,12 @@
 <age value="50">50</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
-<person xml:id="anon" evidence="internal">
+<person xml:id="anon">
+<persName><surname evidence="inferred" type="maiden" cert="medium">Richardson</surname></persName>
 <sex value="2">F</sex>
 </person>
 <listRelation>
-<relation name="daughter" active="#anon" passive="#r" evidence="internal"/>
+<relation name="daughter" active="#anon" passive="#r"/>
 </listRelation>
 </listPerson>
 </particDesc>
@@ -106,6 +111,9 @@
 <p><lb/>Goody Richardson <lb/><rs type="address" xml:id="address1" key="PLACE766" resp="#mhawkins">of newp</rs>. 50 march <lb/>16 <choice><orig>♂</orig><reg type="gloss">Tuesday</reg></choice> h. 4 p m <lb/>1619 aguish water</p>
 </div>
 <figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/><foreign xml:lang="la" xml:id="foreign001" decls="#original_source">filia <choice><orig><g ref="#crossedp"></g></orig><reg>pro</reg></choice> matre sine <lb/>consensu.</foreign><seg xml:id="translation001" decls="#translation" xml:lang="en">the daughter for the mother without consent</seg><link type="is-translation-of" target="#foreign001 #translation001"/></p>
+</div>
 </body>
 </text>
 </TEI>

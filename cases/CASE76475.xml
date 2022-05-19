@@ -18,6 +18,9 @@
 <title level="s">The casebooks of Simon Forman and Richard Napier, 1596–1634: a digital edition</title>
 <respStmt><name>Lauren Kassell</name><name>Michael Hawkins</name><name>Robert Ralley</name><name>John Young</name><name>Joanne Edge</name><name>Janet Yvonne Martin-Portugues</name><name>Natalie Kaoukji</name><resp>(eds.)</resp></respStmt>
 </seriesStmt>
+<notesStmt>
+<note type="editorial" resp="#rralley">The letter by Sir George Peckham is <ref target="NOTE912" type="note">NOTE912</ref>.</note>
+</notesStmt>
 <sourceDesc>
 <bibl type="positionOnPage">uL</bibl>
 <msDesc>
@@ -44,7 +47,7 @@
 </encodingDesc>
 <profileDesc>
 <handNotes>
-<handNote sameAs="#unknown-f">Unidentified Hand (1624–1634)</handNote>
+<handNote sameAs="#rruddle">Ralph Ruddle</handNote>
 </handNotes>
 <langUsage>
 <language ident="en">English</language>
@@ -54,8 +57,8 @@
 </textClass>
 <particDesc>
 <listPerson>
-<person xml:id="unknown-f">
-<persName><roleName>Unidentified (1624–1634)</roleName></persName>
+<person xml:id="rruddle">
+<persName><forename>Ralph</forename> <surname>Ruddle</surname></persName>
 <sex value="1">M</sex>
 </person>
 <person xml:id="jc">
@@ -78,14 +81,14 @@
 <p><date when="1633-02-16" n="Saturday"/></p>
 <p><time when="20:00:00"/></p>
 <cb:consultation>
-<cb:astrologer resp="#mhawkins" ref="#unknown-f"/>
-<cb:consultant ref="#unknown-f"/>
+<cb:astrologer resp="#mhawkins" ref="#rruddle"/>
+<cb:consultant ref="#rruddle"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#gp #t" evidence="internal" present="no"/>
 <cb:subject ref="#jc" present="no"/>
-<cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jc"/></cb:topic>
-<cb:item type="letter" evidence="internal"/>
-<cb:judgment/>
+<cb:topic key="pain"><person sameAs="#jc"/></cb:topic>
+<cb:topic key="head"><person sameAs="#jc"/></cb:topic>
+<cb:item type="letter"/>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -96,6 +99,8 @@
 <change when="2017-08-18">XML template file created by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-10-11">Transcribed by <name xml:id="jedge">Joanne Edge</name>.</change>
 <change when="2017-11-20">Checked by <name xml:id="jyoung">John Young</name>.</change>
+<change when="2021-05-07">Note added by <name sameAs="#rralley">Robert Ralley</name>.</change>
+<change when="2021-10-11">Unidentified hand identified as Ruddle's by <name sameAs="#rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>
@@ -104,7 +109,12 @@
 <text xml:lang="en">
 <body><div>
 <p><lb/>S<choice><orig><hi rend="superscript">r</hi></orig><reg>ir</reg></choice>. Gervase Clyfton <rs type="address" xml:id="address1">of Clyfton Basset <lb/>in Notinghamshire</rs>. 50. y. Febr. 16. <lb/><choice><orig>♄</orig><reg type="gloss">Saturday</reg></choice>. h. 8. <choice><orig>p. mer</orig><reg>pm</reg></choice>. 1633</p>
-</div><figure type="astro" subtype="astroChart"/>
+</div>
+<figure type="astro" subtype="astroChart"/>
+<div>
+<p><lb/><choice><orig>S<hi rend="superscript">r</hi></orig><reg>Sir</reg></choice> George Peckham &amp; M<hi rend="superscript">rs</hi> <lb/>Throckmorton writte Letters <lb/>in his Behalfe.</p>
+<p><lb/>much pained in his head <lb/>is of a sanguine <choice><orig>Compl<hi rend="overline">exn</hi></orig><reg>Compexion</reg></choice></p>
+</div>
 </body>
 </text>
 </TEI>

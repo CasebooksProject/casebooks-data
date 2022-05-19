@@ -67,13 +67,17 @@
 <person xml:id="m">
 <persName><roleName>Goody</roleName> <surname>Morgan</surname></persName>
 <sex value="2">F</sex>
-<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
 </person>
 <person xml:id="anon" evidence="inferred">
 <sex value="0">U</sex>
 </person>
+<person xml:id="g">
+<persName><surname evidence="inferred" cert="medium">Gale</surname></persName>
+<sex value="2">F</sex>
+<residence sameAs="#address1" key="databaseNormalizedIDKey" evidence="inferred"/>
+</person>
 <listRelation>
-<relation name="daughter" active="#ag" passive="#m"/>
+<relation name="daughter" active="#ag" passive="#g"/><relation name="daughter" active="#g" passive="#m"/>
 </listRelation>
 </listPerson>
 </particDesc>

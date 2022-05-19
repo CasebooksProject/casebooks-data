@@ -59,16 +59,14 @@
 <sex value="1">M</sex>
 </person>
 <person xml:id="m1">
-<persName><roleName>Mr</roleName> <surname>Mansell</surname></persName>
-<sex value="1">M</sex>
+<persName><roleName>Mrs</roleName> <surname>Mansell</surname></persName>
+<sex value="2">F</sex>
 </person>
 <person xml:id="m2">
 <persName><surname evidence="inferred">Mansell</surname></persName>
 <sex value="1">M</sex>
 </person>
-<person xml:id="anon">
-<sex value="2">F</sex>
-</person>
+
 <listRelation><relation name="son" active="#m2" passive="#m1"/></listRelation>
 </listPerson>
 </particDesc>
@@ -80,9 +78,10 @@
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
 <cb:querent ref="#m1" evidence="internal" present="unclear"/>
+<cb:subject ref="#m1" cert="low" present="unclear"/>
 <cb:subject ref="#m2" present="no" consent="no"/>
-<cb:object ref="#anon" cert="low"/>
-<cb:topic key="maritalProspects" cert="low"><person sameAs="#m2"/><person sameAs="#anon"/></cb:topic>
+<cb:topic key="maritalProspects" cert="low"><person sameAs="#m1"/></cb:topic>
+<cb:topic key="unknown" reason="notUnderstood"><person sameAs="#m2"/></cb:topic>
 </cb:consultation>
 </settingDesc>
 </profileDesc>
@@ -100,10 +99,10 @@
 </facsimile>
 <text>
 <body><div xml:id="foreign001" xml:lang="la" decls="#original_source">
-<p><lb/>Quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> a <choice><orig>dn<hi rend="overline">o</hi></orig><reg>domino</reg></choice> Mansell <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>futura sit <gap extent="1" unit="chars" reason="hand"/><unclear cert="low" reason="hand">r</unclear>pul. Ap. 3. <choice><orig>♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> <lb/>h. 3. p m 1612. <add place="inline">sine consens. fili<choice><orig>j</orig><reg>i</reg></choice></add></p>
+<p><lb/>Quærit<choice><orig><hi rend="superscript">r</hi></orig><reg>ur</reg></choice> a <choice><orig>dn<hi rend="overline">a</hi></orig><reg>domina</reg></choice> Mansell <choice><orig>v</orig><reg>u</reg></choice>tr<choice><orig>ū</orig><reg>um</reg></choice> <lb/>futura sit <subst><del type="over"><unclear cert="low" reason="del">w</unclear></del><add place="over">co</add></subst>pul. Ap. 3. <choice><orig>♀</orig><reg>die Veneris</reg><reg type="gloss">Friday</reg></choice> <lb/>h. 3. p m 1612. <add place="inline">sine consens. fili<choice><orig>j</orig><reg>i</reg></choice></add></p>
 </div>
 <div xml:id="translation001" xml:lang="en" decls="#translation">
-<p>It is asked by Mr Mansell whether the [prospective wife?] will be [word not understood] Friday 3 April 1612 at 3pm without the son’s consent.</p>
+<p>It is asked by Mrs Mansell whether she will be [word not understood] Friday 3 April 1612 at 3pm without the son’s consent.</p>
 </div>
 <link type="is-translation-of" target="#foreign001 #translation001"/>
 <figure type="astro" subtype="astroChart"/>

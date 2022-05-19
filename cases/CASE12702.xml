@@ -38,14 +38,12 @@
 </msDesc>
 </sourceDesc>
 </fileDesc>
+<encodingDesc>
 <charDecl><glyph xml:id="crossedp">
         <glyphName>CROSSED LOWERCASE P</glyphName>
         <mapping type="standard">p</mapping>
         <mapping type="PUA">U+E670</mapping>
-    </glyph></charDecl>
-<encodingDesc>
-<samplingDecl xml:id="standardSampling"><p>Only the ‘question’ section of each consultation has been transcribed. This is the part of the entry that typically features the date and time of the consultation, the patient’s name, and an indication of the nature of the enquiry. Often, it also includes further details such as the querent’s identity if he or she is not the same person as the patient, the patient’s age, address, occupation and relation to the querent or any third parties mentioned. In the vast majority of cases, this information is contained within the first paragraph of the record although it is not uncommon, especially in Napier’s entries, for this information to be scattered throughout the entry.</p></samplingDecl>
-</encodingDesc>
+    </glyph></charDecl><samplingDecl xml:id="wholeEntry"><p>This entry has been transcribed in its entirety, with the exception of any charts or astrological notes.</p></samplingDecl></encodingDesc>
 <profileDesc>
 <handNotes>
 <handNote sameAs="#rnapier">Richard Napier</handNote>
@@ -109,11 +107,15 @@
 </facsimile>
 <text xml:lang="en">
 <body><div>
-<p><lb/>Elisabeth Hartwell <rs type="address" xml:id="address1" key="PLACE585" resp="#mhawkins">of <lb/>Astwood</rs> onc <choice><orig>M<hi rend="superscript"><hi rend="overline">r</hi>s</hi></orig><reg>Mrs</reg></choice> <choice><orig>V</orig><reg>U</reg></choice><choice><orig>u</orig><reg>v</reg></choice>edales <lb/>servant. 25 y. <choice><orig>v</orig><reg>u</reg></choice>nmaried. <lb/>hath clum<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>s of bloode in <lb/>her mouthe 15 of Sept <lb/><choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> h. 1. 15 p m. 1599<note place="chart">cl<choice><orig>ū</orig><reg>um</reg></choice>pers of blood in her <lb/>mouth</note></p>
+<p><lb/><milestone unit="question" spanTo="#questionEnd"/>Elisabeth Hartwell <rs type="address" xml:id="address1" key="PLACE585" resp="#mhawkins">of <lb/>Astwood</rs> onc <choice><orig>M<hi rend="superscript"><hi rend="overline">r</hi>s</hi></orig><reg>Mrs</reg></choice> <choice><orig>V</orig><reg>U</reg></choice><choice><orig>u</orig><reg>v</reg></choice>edales <lb/>servant. 25 y. <choice><orig>v</orig><reg>u</reg></choice>nmaried. <lb/>hath clum<choice><orig><g ref="#crossedp"></g></orig><reg>per</reg></choice>s of bloode in <lb/>her mouthe 15 of Sept <lb/><choice><orig>die ♄</orig><reg>die Saturni</reg><reg type="gloss">Saturday</reg></choice> h. 1. 15 p m. 1599<note place="chart">cl<choice><orig>ū</orig><reg>um</reg></choice>pers of blood in her <lb/>mouth</note><anchor xml:id="questionEnd"/></p>
 </div>
 <figure type="astro" subtype="astroChart"/>
-
-
+<div>
+<p><lb/><milestone unit="judgment" spanTo="#judgmentEnd"/>keepeth her bed ever since satter<lb/>day last. some feare it to <lb/>be a plurisy some an impost <lb/>very hot &amp; sweateth mutch <lb/>It is of ♂ in ♋ &amp; ☉ in ♎. <lb/>they thought shee would have <lb/>died.<anchor xml:id="judgmentEnd"/></p>
+<p><lb/><milestone unit="urineInfo" spanTo="#urineInfoEnd"/>her <choice><orig>wat<hi rend="superscript">r</hi></orig><reg>water</reg></choice> of a good colour <del type="strikethrough">he</del> <lb/>thick hath motes heares &amp; dust. <lb/>costive <add place="interlinear">her water was to <lb/>hie coloured. &amp; had black <lb/>humours</add><anchor xml:id="urineInfoEnd"/></p>
+<p><lb/><milestone unit="treatment" spanTo="#treatmentEnd"/>I gave her Diaturb. ʒj. a <lb/>lytle rubarb. 3 of scam. <lb/>decoct. ℥j. <del type="strikethrough">deco</del> endive ℥j.<anchor xml:id="treatmentEnd"/></p>
+<p><lb/><milestone unit="financialInfo" spanTo="#financialInfoEnd"/>gratis./<anchor xml:id="financialInfoEnd"/></p>
+</div>
 </body>
 </text>
 </TEI>

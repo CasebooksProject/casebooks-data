@@ -64,6 +64,10 @@
 <age value="40">40</age>
 <residence sameAs="#address1" key="databaseNormalizedIDKey"/>
 </person>
+<person xml:id="rt" evidence="external">
+<persName><forename>Robert</forename> <surname>Thomson</surname></persName>
+<sex value="1">M</sex>
+</person>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -73,8 +77,9 @@
 <cb:astrologer resp="#mhawkins" ref="#rnapier"/>
 <cb:consultant ref="#rnapier"/>
 <cb:practice name="napier"/>
-<cb:querent ref="#jc"/>
-<cb:subject ref="#jc" present="unclear"/>
+<cb:querent ref="#rt" evidence="external" present="no"/>
+<cb:subject ref="#jc" present="no"/>
+<cb:item type="letter" evidence="external"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#jc"/></cb:topic>
 <cb:judgment/>
 <cb:info type="urine"/>
@@ -89,6 +94,7 @@
 <change when="2016-03-25">Facsimile coding added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2017-02-15">Page position coding updated by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
 <change when="2018-06-27">Links to places authority file added by <name sameAs="#mhawkins">Michael Hawkins</name>.</change>
+<change when="2021-10-07">Header updated by <name xml:id="rralley">Robert Ralley</name>.</change>
 </revisionDesc>
 </teiHeader>
 <facsimile>

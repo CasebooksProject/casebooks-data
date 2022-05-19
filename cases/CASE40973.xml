@@ -70,7 +70,36 @@
 <person xml:id="anon">
 <sex value="2">F</sex>
 </person>
-<listRelation><relation name="father" active="#m" passive="#rm"/></listRelation>
+<person xml:id="mb" evidence="internal">
+<persName><forename>Margery</forename> <surname>Bagly</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="jp" evidence="internal">
+<persName><forename>Joan</forename> <surname>Pearson</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="g1" evidence="internal">
+<persName><surname>Godfrey</surname></persName>
+<sex value="1">M</sex>
+<death><date notAfter="1613-02-28" evidence="inferred"/></death>
+</person>
+<person xml:id="g2" evidence="internal">
+<persName><surname evidence="inferred" type="married">Godfrey</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="em" evidence="internal">
+<persName><roleName>Widow</roleName> <forename>Elizabeth</forename> <surname>Man</surname></persName>
+<sex value="2">F</sex>
+</person>
+<person xml:id="hf" evidence="internal">
+<persName><forename>Henry</forename> <surname>Freeman</surname></persName>
+<sex value="1">M</sex>
+</person>
+<person xml:id="f" evidence="internal">
+<persName><surname evidence="inferred" cert="low">Freeman</surname></persName>
+<sex value="2">F</sex>
+</person>
+<listRelation><relation name="father" active="#m" passive="#rm"/><relation name="wife" active="#g2" passive="#g1" evidence="internal"/><relation name="mother" active="#f" passive="#hf" evidence="internal"/></listRelation>
 </listPerson>
 </particDesc>
 <settingDesc>
@@ -82,7 +111,11 @@
 <cb:practice name="napier"/>
 <cb:querent ref="#rm #anon"/>
 <cb:subject ref="#rm #anon" present="unclear"/>
+<cb:object ref="#mb #jp #g2 #em #hf #f"/>
 <cb:topic key="unspecifiedMedical" evidence="internal"><person sameAs="#rm"/><person sameAs="#anon"/></cb:topic>
+<cb:topic key="animalDeathAndDisease" evidence="internal"><person sameAs="#rm"/></cb:topic>
+<cb:topic key="witchcraftSufferedMedical" evidence="internal"><person sameAs="#rm"/><person sameAs="#anon"/></cb:topic>
+<cb:topic key="witchcraftSuspect" evidence="internal"><person sameAs="#mb"/><person sameAs="#jp"/><person sameAs="#g2"/><person sameAs="#em"/><person sameAs="#hf"/><person sameAs="#f"/></cb:topic>
 <cb:judgment/>
 <cb:info type="angel" subtype="Raphael"/>
 </cb:consultation>
